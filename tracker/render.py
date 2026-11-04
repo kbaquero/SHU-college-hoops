@@ -78,6 +78,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .warn{background:color-mix(in srgb,var(--accent) 10%,var(--card));border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));border-radius:10px;padding:10px 14px;font-size:13px;margin-top:16px}
 .warn ul{margin:4px 0 0;padding-left:18px}
 .games td{font-size:12px;padding:3px 12px}
+.games th{font-size:10px;padding:6px 12px 3px}
 svg text{fill:var(--mute);font-size:11px}
 #chart{padding-top:4px}
 #chart svg{display:block}
@@ -200,8 +201,8 @@ const rows = Object.keys(I).map(t => {
   tr.innerHTML = COLS.map(c => `<td${c.num === false ? '' : ' class="n"'}>${c.html(t, b, i)}</td>`).join('');
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
-  dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${i.owners.length ? ownList(i.owners) : '<span class="sep">nobody</span>'}</span></div><div class="scroll"><table class="games"><tbody>` +
-    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${g.date}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td>${esc(g.opp_name)}</td><td>${kinds[g.kind]}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td></tr>`).join('') : '<tr><td>No completed games yet</td></tr>') +
+  dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${i.owners.length ? ownList(i.owners) : '<span class="sep">nobody</span>'}</span></div><div class="scroll"><table class="games"><thead><tr><th>Date</th><th>Opponent</th><th>Result</th><th class="n">Pts</th><th>Type</th></tr></thead><tbody>` +
+    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${new Date(g.date + 'T12:00:00').toLocaleDateString('en-US', {month: 'short', day: 'numeric'})}</td><td>${g.home === false && !g.neutral ? '<span class="at">at</span> ' : g.neutral ? '<span class="at">vs</span> ' : ''}${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${kinds[g.kind]}</td></tr>`).join('') : '<tr><td>No completed games yet</td></tr>') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   return {t, b, i, tr, dr};
