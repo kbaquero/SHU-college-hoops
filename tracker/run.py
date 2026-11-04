@@ -15,6 +15,39 @@ ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 
 
+def todays_games(results, owners, today):
+    """Pool teams' games on `today` (Eastern date), one row per game even when both teams are picked."""
+    games = {}
+    for team, b in results.items():
+        for g in b.get("games", []):
+            if g.get("date") != today:
+                continue
+            row = games.setdefault(g["id"], {
+                "id": g["id"], "start": g.get("start", ""), "tbd": bool(g.get("time_tbd")),
+                "tv": g.get("tv", ""), "neutral": bool(g.get("neutral")), "completed": g["completed"],
+                "kind": g.get("kind", ""), "sides": {}})
+            row["sides"][team] = {"pool": True, "home": bool(g.get("home")), "owners": owners.get(team, []),
+                                  "won": g.get("won"), "score": g.get("score", ""), "opp": g.get("opp_name", "")}
+    out = []
+    for row in games.values():
+        sides = row.pop("sides")
+        teams = list(sides.items())
+        if len(teams) == 1:   # opponent isn't in anyone's lineup
+            name, s = teams[0]
+            teams.append((s["opp"], {"pool": False, "home": not s["home"] and not row["neutral"], "owners": []}))
+        teams.sort(key=lambda kv: kv[1]["home"])           # away team first, home team second
+        row["away"], row["home"] = ({"team": n, **s} for n, s in teams[:2])
+        if row["start"] and not row["tbd"]:
+            t = dt.datetime.fromisoformat(row["start"])
+            row["time"] = t.strftime("%I:%M %p").lstrip("0")
+        else:
+            row["time"] = "TBD"
+        out.append(row)
+    out.sort(key=lambda r: (r["time"] == "TBD", r["start"]))
+    label = dt.date.fromisoformat(today).strftime("%a, %b %d").replace(" 0", " ")
+    return {"date": today, "label": label, "games": out}
+
+
 def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS):
     get_schedule = get_schedule or (lambda tid: espn.schedule(tid, C.SEASON))
     get_team_list = get_team_list or espn.team_list
@@ -92,6 +125,8 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS):
         for t in picks:
             owners.setdefault(t, []).append(e)
 
+    data_today = todays_games(results, owners, today)
+
     data = {
         "updated": now.strftime("%Y-%m-%d %H:%M %Z"),
         "season": C.SEASON,
@@ -100,6 +135,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS):
         "team_info": {t: {"conf": by_name[t]["conf"], "salary": by_name[t]["salary"],
                           "owners": owners.get(t, [])} for t in picked},
         "history": history,
+        "today": data_today,
         "warnings": sorted(set(warnings)),
     }
     docs.mkdir(exist_ok=True)

@@ -1,9 +1,30 @@
 """Thin client for ESPN's public (unofficial) college basketball JSON endpoints."""
 import json, time, urllib.request, urllib.error
+import datetime as dt
+from zoneinfo import ZoneInfo
 
 from .config import ESPN_BASE
 
 UA = {"User-Agent": "Mozilla/5.0 (pool-tracker)"}
+ET = ZoneInfo("America/New_York")
+
+
+def _when(iso):
+    """ESPN gives UTC times; the pool lives on Eastern time (a 9 PM ET tip is already 'tomorrow' in UTC)."""
+    try:
+        t = dt.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(ET)
+        return t.date().isoformat(), t.isoformat()
+    except (ValueError, AttributeError):
+        return (iso or "")[:10], ""
+
+
+def _tv(comp):
+    names = []
+    for b in comp.get("broadcasts") or []:
+        n = (b.get("media") or {}).get("shortName") or ", ".join(b.get("names") or [])
+        if n and n not in names:
+            names.append(n)
+    return ", ".join(names)
 
 
 def fetch_json(url, retries=3):
@@ -67,9 +88,15 @@ def parse_event(ev, team_id, season_type):
     won = me.get("winner")
     if won is None and completed and my_score is not None and opp_score is not None:
         won = my_score > opp_score
+    day, start = _when(ev.get("date", ""))
     return {
         "id": str(ev.get("id")),
-        "date": ev.get("date", "")[:10],
+        "date": day,
+        "start": start,
+        "time_tbd": ev.get("timeValid") is False or "TBD" in str(status.get("type", {}).get("detail", "")),
+        "home": me.get("homeAway") == "home",
+        "neutral": bool(comp.get("neutralSite")),
+        "tv": _tv(comp),
         "season_type": int(st or season_type),
         "completed": completed,
         "won": bool(won) if completed else None,
@@ -93,4 +120,4 @@ def schedule(team_id, season):
             if g:
                 games[g["id"]] = g
         time.sleep(0.3)
-    return sorted(games.values(), key=lambda g: g["date"])
+    return sorted(games.values(), key=lambda g: (g["date"], g.get("start", "")))

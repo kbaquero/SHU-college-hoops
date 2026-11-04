@@ -43,7 +43,7 @@ def score_team(team, games, conf_of, d1_ids, manual_seed=None):
     """Return a breakdown dict for one pool team."""
     my_conf = team["conf"]
     b = {"nonconf_w": 0, "nonconf_l": 0, "conf_w": 0, "conf_l": 0, "ct_w": 0, "ct_l": 0,
-         "ct_champ": False, "seed": manual_seed, "ncaa_w": [], "ncaa_out": False,
+         "ct_champ": False, "seed": manual_seed, "ncaa_w": [], "ncaa_out": False, "w": 0, "l": 0,
          "pts_reg": 0, "pts_ct": 0, "pts_ncaa": 0, "total": 0, "games": [], "warnings": []}
     ct_games, ncaa_seen = [], False
     for g in games:
@@ -51,6 +51,7 @@ def score_team(team, games, conf_of, d1_ids, manual_seed=None):
         pts = 0
         if g["completed"]:
             w = g["won"]
+            b["w" if w else "l"] += 1
             if kind == "nonconf":
                 b["nonconf_w" if w else "nonconf_l"] += 1
                 if w and (C.COUNT_NON_D1_WINS or g["opp_id"] in d1_ids):

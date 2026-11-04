@@ -112,6 +112,44 @@ class Parsing(unittest.TestCase):
         self.assertIsNone(p["won"])
 
 
+class TodaysGames(unittest.TestCase):
+    def test_late_tip_is_eastern_date_and_time(self):
+        ev = {"id": "500", "date": "2026-11-05T02:00Z", "timeValid": True,
+              "competitions": [{"neutralSite": False, "status": {"type": {"completed": False, "detail": "Wed, November 4th at 9:00 PM EST"}},
+                                "broadcasts": [{"media": {"shortName": "ESPN2"}}],
+                                "competitors": [{"id": "150", "homeAway": "home", "team": {"id": "150", "displayName": "Duke Blue Devils"}},
+                                                {"id": "2", "homeAway": "away", "team": {"id": "2", "displayName": "Auburn Tigers"}}]}]}
+        p = parse_event(ev, "150", 2)
+        self.assertEqual((p["date"], p["home"], p["tv"], p["time_tbd"]), ("2026-11-04", True, "ESPN2", False))
+
+    def test_both_pool_teams_one_row_and_lone_team_row(self):
+        from tracker.run import todays_games
+        mk = lambda gid, start, home, opp, tbd=False: {"id": gid, "date": "2026-11-04", "start": start, "time_tbd": tbd,
+                                                      "home": home, "neutral": False, "tv": "", "completed": False,
+                                                      "won": None, "score": "", "opp_name": opp, "kind": "nonconf"}
+        results = {"Duke": {"games": [mk("1", "2026-11-04T21:00:00-05:00", True, "Florida Gators")]},
+                   "Florida": {"games": [mk("1", "2026-11-04T21:00:00-05:00", False, "Duke Blue Devils")]},
+                   "Navy": {"games": [mk("2", "2026-11-04T19:00:00-05:00", False, "Army Black Knights"),
+                                      {**mk("3", "2026-11-05T19:00:00-05:00", True, "x"), "date": "2026-11-05"}]},
+                   "Siena": {"games": [mk("4", "", True, "Marist Red Foxes", tbd=True)]}}
+        owners = {"Duke": ["Kevin B.", "Joe H."], "Florida": ["Kevin B."], "Navy": ["Kevin B."], "Siena": ["Kevin B."]}
+        t = todays_games(results, owners, "2026-11-04")
+        self.assertEqual(t["label"], "Wed, Nov 4")
+        self.assertEqual([g["id"] for g in t["games"]], ["2", "1", "4"])       # by tip time, TBD last
+        navy, big, siena = t["games"]
+        self.assertEqual((navy["time"], navy["away"]["team"], navy["home"]["team"], navy["home"]["pool"]),
+                         ("7:00 PM", "Navy", "Army Black Knights", False))
+        self.assertEqual((big["away"]["team"], big["home"]["team"], big["home"]["owners"]), ("Florida", "Duke", ["Kevin B.", "Joe H."]))
+        self.assertEqual(siena["time"], "TBD")
+
+    def test_overall_record_counts_every_game(self):
+        games = [g("1", "2026-11-05", True, "2"), g("2", "2027-01-05", False, "153"),
+                 g("3", "2027-03-20", True, "2", 3, "Men's Basketball Championship - 1st Round", seed="4"),
+                 g("4", "2027-03-22", False, "2", 3, "Men's Basketball Championship - 2nd Round")]
+        b = score_team(TEAM, games, CONF_OF, D1)
+        self.assertEqual((b["w"], b["l"]), (2, 2))
+
+
 class Resolution(unittest.TestCase):
     def test_name_matching(self):
         rows = [{"team": n, "espn_id": ""} for n in

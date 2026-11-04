@@ -37,6 +37,20 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
+.h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
+.game{display:grid;grid-template-columns:76px 1fr auto;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
+.game:last-child{border-bottom:0}
+.gtime{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px}
+.gtv{color:var(--mute);font-size:12px;text-align:right;padding-top:2px}
+.side{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
+.side+.side{margin-top:3px}
+.side .nm{font-weight:400;color:var(--mute)}
+.side.pool .nm{font-weight:650;color:var(--ink)}
+.own{font-size:12px;color:var(--mute)}
+.at{font-size:12px;color:var(--mute);margin-right:2px}
+.empty{padding:12px 14px;color:var(--mute)}
+.sm{display:none}
+@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:62px 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
@@ -45,6 +59,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .entry-row td:first-child::before{content:"▸ ";color:var(--mute)}
 .entry-row.open td:first-child::before{content:"▾ "}
 .detail td{background:var(--chip);padding:0}
+#standings .detail .scroll{max-width:min(926px,calc(100vw - 34px - env(safe-area-inset-left) - env(safe-area-inset-right)))}
 .detail table th,.detail table td{padding:6px 12px;font-size:13px}
 .scroll{overflow-x:auto}
 .chip{display:inline-block;background:var(--chip);border-radius:4px;padding:0 6px;font-size:12px;color:var(--mute)}
@@ -64,8 +79,12 @@ svg text{fill:var(--mute);font-size:11px}
 
 <h2>Standings</h2>
 <div class="card scroll"><table id="standings"><thead><tr>
-<th class="rank">#</th><th>Entry</th><th class="n">Points</th><th class="n">Since last</th><th>Top team</th>
+<th class="rank">#</th><th>Entry</th><th class="n">Points</th><th class="n"><span class="lg">Since last</span><span class="sm">+/−</span></th><th class="n">Record</th>
 </tr></thead><tbody></tbody></table></div>
+
+<h2>Today's games <span class="h2sub" id="today-label"></span></h2>
+<div class="card" id="today"></div>
+<p class="sub">From this morning's update, so it won't show live scores. Times are Eastern.</p>
 
 <h2>Points over time</h2>
 <div class="card"><div id="chart"></div></div>
@@ -85,16 +104,17 @@ $('#updated').textContent = 'Updated ' + D.updated;
 if (D.warnings.length) $('#warnings').innerHTML = '<div class="warn"><b>Needs attention</b><ul>' + D.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>';
 
 const T = D.teams, I = D.team_info;
-const rec = b => b ? `${b.nonconf_w + b.conf_w + b.ct_w}-${b.nonconf_l + b.conf_l + b.ct_l}` : '–';
+const wl = b => b ? [b.w ?? (b.nonconf_w + b.conf_w + b.ct_w), b.l ?? (b.nonconf_l + b.conf_l + b.ct_l)] : [0, 0];
+const rec = b => b ? wl(b).join('-') : '–';
 const roundName = {playin:'Play-in', r64:'R64', r32:'R32', s16:'S16', e8:'E8', f4:'F4', final:'Title'};
 const chg = c => c == null ? '<span class="sub">–</span>' : c > 0 ? `<span class="up">+${c}</span>` : c < 0 ? `<span class="down">${c}</span>` : '<span class="sub">0</span>';
 
 // standings
 const sb = $('#standings tbody');
 D.standings.forEach(s => {
-  const top = s.teams[0];
+  const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
   const tr = document.createElement('tr'); tr.className = 'entry-row';
-  tr.innerHTML = `<td class="rank">${s.rank}</td><td><b>${esc(s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td>${top ? esc(top) + ' <span class="chip">' + (T[top]?.total ?? 0) + '</span>' : ''}</td>`;
+  tr.innerHTML = `<td class="rank">${s.rank}</td><td><b>${esc(s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
     s.teams.map(t => { const b = T[t]; return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${rec(b)}</td><td class="n">${b ? b.conf_w + '-' + b.conf_l : '–'}</td><td class="n">${b ? b.pts_reg : 0}</td><td class="n">${b ? b.pts_ct : 0}</td><td class="n">${b ? b.pts_ncaa : 0}</td><td class="n"><b>${b ? b.total : 0}</b></td></tr>`; }).join('') +
@@ -102,6 +122,22 @@ D.standings.forEach(s => {
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   sb.append(tr, dr);
 });
+
+// today's games
+(function today() {
+  const td = D.today || {games: []};
+  $('#today-label').textContent = td.label ? '· ' + td.label : '';
+  const el = $('#today');
+  if (!td.games.length) { el.innerHTML = '<div class="empty">No picked teams play today.</div>'; return; }
+  const side = (s, prefix, g) => {
+    const res = g.completed && s.pool ? (s.won ? ' <span class="up">W</span> ' : ' <span class="down">L</span> ') + esc(s.score) : '';
+    const own = s.pool ? `<span class="own">${s.owners.length} ${s.owners.length === 1 ? 'entry' : 'entries'}: ${esc(s.owners.join(', '))}</span>` : '';
+    return `<div class="side${s.pool ? ' pool' : ''}">${prefix}<span class="nm">${esc(s.team)}</span>${res}${own}</div>`;
+  };
+  el.innerHTML = td.games.map(g => `<div class="game"><div class="gtime">${g.completed ? 'Final' : esc(g.time)}</div><div>` +
+    side(g.away, '', g) + side(g.home, `<span class="at">${g.neutral ? 'vs' : 'at'}</span>`, g) +
+    `</div><div class="gtv">${esc(g.tv || '')}</div></div>`).join('');
+})();
 
 // teams: sortable table. Each column: label, sort value, cell html, numeric?, first-click direction
 const z = b => b || {nonconf_w:0, nonconf_l:0, conf_w:0, conf_l:0, ct_w:0, ct_l:0, pts_reg:0, pts_ct:0, pts_ncaa:0, total:0, ncaa_w:[], games:[]};
@@ -111,7 +147,7 @@ const COLS = [
    html:(t, b) => esc(t) + (b.ct_champ ? ' <span class="chip">Conf champ</span>' : '') + (b.ncaa_w.length ? ' <span class="chip">' + roundName[b.ncaa_w[b.ncaa_w.length - 1]] + '</span>' : '')},
   {label:'Conf', num:false, dir:1, val:(t, b, i) => i.conf, html:(t, b, i) => i.conf},
   {label:'$', dir:-1, val:(t, b, i) => i.salary, html:(t, b, i) => i.salary},
-  {label:'Overall', dir:-1, val:(t, b) => recVal(b.nonconf_w + b.conf_w + b.ct_w, b.nonconf_l + b.conf_l + b.ct_l), html:(t, b) => `${b.nonconf_w + b.conf_w + b.ct_w}-${b.nonconf_l + b.conf_l + b.ct_l}`},
+  {label:'Overall', dir:-1, val:(t, b) => recVal(...wl(b)), html:(t, b) => rec(b)},
   {label:'Conf', dir:-1, val:(t, b) => recVal(b.conf_w, b.conf_l), html:(t, b) => `${b.conf_w}-${b.conf_l}`},
   {label:'Conf T', dir:-1, val:(t, b) => recVal(b.ct_w, b.ct_l), html:(t, b) => `${b.ct_w}-${b.ct_l}`},
   {label:'Seed', dir:1, val:(t, b) => b.seed || null, html:(t, b) => b.seed || '–'},
