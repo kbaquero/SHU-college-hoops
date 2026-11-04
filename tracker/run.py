@@ -122,6 +122,8 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
     # history: one snapshot per day, used for "change since last update"
     history = [h for h in prev.get("history", []) if h["date"] != today]
     baseline = history[-1]["totals"] if history else {}
+    # rank each entry held at the last daily snapshot (same tie rule: 1, 2, 3, 3, 5 ...)
+    prev_rank = {e: 1 + sum(1 for x in baseline.values() if x > v) for e, v in baseline.items()}
     history.append({"date": today, "totals": totals})
     history = history[-200:]
 
@@ -132,6 +134,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
         standings.append({
             "rank": rank, "entry": e, "total": totals[e],
             "change": totals[e] - baseline[e] if e in baseline else None,
+            "move": prev_rank[e] - rank if e in prev_rank else None,   # + = moved up, - = moved down
             "salary": sum(by_name[t]["salary"] for t in entries[e]),
             "teams": sorted(entries[e], key=lambda t: -results.get(t, {}).get("total", 0)),
         })

@@ -221,6 +221,8 @@ class Pipeline(unittest.TestCase):
             d2 = R.run(get_schedule=sched, get_team_list=lambda: [], get_lines=lambda d: {},
                        now=dt.datetime(2026, 11, 11, 6, 0), docs=tmp)
             self.assertEqual(d2["standings"][0]["change"], 0)
+            self.assertEqual(d2["standings"][0]["move"], 0)
+            self.assertIsNone(d["standings"][0]["move"])          # first day: nothing to compare
             self.assertEqual(len(d2["history"]), 2)
         finally:
             shutil.copytree(data_bak, ROOT / "data", dirs_exist_ok=True)

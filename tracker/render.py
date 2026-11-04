@@ -37,6 +37,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
+.mv{font-size:11px;font-weight:600;margin-left:5px;font-variant-numeric:tabular-nums;vertical-align:1px}
 .h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
 .game{display:grid;grid-template-columns:76px 1fr auto;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
 .game:last-child{border-bottom:0}
@@ -118,6 +119,7 @@ const T = D.teams, I = D.team_info;
 const wl = b => b ? [b.w ?? (b.nonconf_w + b.conf_w + b.ct_w), b.l ?? (b.nonconf_l + b.conf_l + b.ct_l)] : [0, 0];
 const rec = b => b ? wl(b).join('-') : '–';
 const roundName = {playin:'Play-in', r64:'R64', r32:'R32', s16:'S16', e8:'E8', f4:'F4', final:'Title'};
+const mv = m => !m ? '' : m > 0 ? `<span class="mv up" title="Up ${m} since last update">▲${m}</span>` : `<span class="mv down" title="Down ${-m} since last update">▼${-m}</span>`;
 const chg = c => c == null ? '<span class="sub">–</span>' : c > 0 ? `<span class="up">+${c}</span>` : c < 0 ? `<span class="down">${c}</span>` : '<span class="sub">0</span>';
 
 // standings
@@ -125,7 +127,7 @@ const sb = $('#standings tbody');
 D.standings.forEach(s => {
   const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
   const tr = document.createElement('tr'); tr.className = 'entry-row';
-  tr.innerHTML = `<td class="rank">${s.rank}</td><td><b>${esc(s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
+  tr.innerHTML = `<td class="rank">${s.rank}${mv(s.move)}</td><td><b>${esc(s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
     s.teams.map(t => { const b = T[t]; return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${rec(b)}</td><td class="n">${b ? b.conf_w + '-' + b.conf_l : '–'}</td><td class="n">${b ? b.pts_reg : 0}</td><td class="n">${b ? b.pts_ct : 0}</td><td class="n">${b ? b.pts_ncaa : 0}</td><td class="n"><b>${b ? b.total : 0}</b></td></tr>`; }).join('') +
