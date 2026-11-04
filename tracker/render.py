@@ -87,7 +87,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <h2>Standings</h2>
 <div class="card scroll"><table id="standings"><thead><tr>
-<th class="rank">#</th><th>Entry</th><th class="n">Points</th><th class="n"><span class="lg">Since last</span><span class="sm">+/−</span></th><th class="n">Record</th>
+<th class="rank">#</th><th>Entry</th><th class="n">Points</th><th class="n"><span class="lg" title="Points gained since the last daily update">Δ since last</span><span class="sm" title="Points gained since the last daily update">Δ</span></th><th class="n">Record</th>
 </tr></thead><tbody></tbody></table></div>
 
 <h2>Today's games <span class="h2sub" id="today-label"></span></h2>
