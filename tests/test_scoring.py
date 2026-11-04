@@ -142,6 +142,10 @@ class Pipeline(unittest.TestCase):
             for i, r in enumerate(rows):
                 r["espn_id"], r["espn_name"] = str(1000 + i), r["team"]
             TM.save_teams(rows)
+            # the test uses its own single entry so it doesn't depend on the real league file
+            picks = ["Duke", "Michigan", "Kansas St.", "St. John's", "Florida",
+                     "Howard", "Navy", "Siena", "Mercyhurst", "SIUE"]
+            (ROOT / "data" / "entries.csv").write_text("entry,team\n" + "".join(f"Kevin,{t}\n" for t in picks))
             ids = {r["team"]: r["espn_id"] for r in rows}
             duke = ids["Duke"]
 
