@@ -1,0 +1,39 @@
+name: Update standings
+
+on:
+  schedule:
+    - cron: "47 10 * * *"   # 10:47 UTC = 5:47 AM Eastern (6:47 AM during daylight time)
+  workflow_dispatch:         # "Run workflow" button for manual updates
+  push:
+    paths: ["data/**"]       # re-score right away when you edit entries or seeds
+
+permissions:
+  contents: write
+
+concurrency:
+  group: standings
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Update standings
+        run: python -m tracker.run
+      - name: Commit results
+        run: |
+          git config user.name "standings-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs data/teams.csv
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update standings $(date -u +%F)"
+            git push
+          fi
