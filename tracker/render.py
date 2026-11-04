@@ -46,7 +46,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .side+.side{margin-top:3px}
 .side .nm{font-weight:400;color:var(--mute)}
 .side.pool .nm{font-weight:650;color:var(--ink)}
-.own{font-size:12px;color:var(--mute)}
+.own{font-size:12px;color:var(--accent);font-weight:500}
 .at{font-size:12px;color:var(--mute);margin-right:2px}
 .empty{padding:12px 14px;color:var(--mute)}
 .sm{display:none}
