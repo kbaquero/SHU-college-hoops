@@ -77,8 +77,9 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .chip{display:inline-block;background:var(--chip);border-radius:4px;padding:0 6px;font-size:12px;color:var(--mute)}
 .warn{background:color-mix(in srgb,var(--accent) 10%,var(--card));border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));border-radius:10px;padding:10px 14px;font-size:13px;margin-top:16px}
 .warn ul{margin:4px 0 0;padding-left:18px}
-.games td{font-size:12px;padding:3px 12px}
-.games th{font-size:10px;padding:6px 12px 3px}
+.detail .games td{font-size:12px;padding:4px 12px}
+.detail .games th{font-size:10px;padding:6px 12px 3px}
+@media (max-width:520px){.detail .games th,.detail .games td{padding-left:5px;padding-right:5px}.detail .games th:first-child,.detail .games td:first-child{padding-left:12px}.detail .games th:last-child,.detail .games td:last-child{padding-right:12px}.detail .games td:nth-child(2){white-space:normal;min-width:6em}}
 svg text{fill:var(--mute);font-size:11px}
 #chart{padding-top:4px}
 #chart svg{display:block}
@@ -118,7 +119,7 @@ svg text{fill:var(--mute);font-size:11px}
 <h2>Teams</h2>
 <div class="card scroll"><table id="teams"><thead><tr>
 </tr></thead><tbody></tbody></table></div>
-<p class="sub">Tap a column header to sort, and tap it again to reverse. Reg = non-conference wins ×1 + conference wins ×2. Conf T = conference tournament wins ×2, +5 for the title. NCAA = seed points + round wins. Results from ESPN; disputes go by ncaa.com.</p>
+<p class="sub">Tap a column header to sort, and tap it again to reverse. Reg = non-conference wins ×1 + conference wins ×2. Conf T = conference tournament wins ×2, +5 for the title. NCAA = seed points + round wins. Game types in each team's log: NC non-conference, C conference, CT conference tournament, NCAA NCAA tournament, PS other postseason (NIT and similar, no points). Results from ESPN; disputes go by ncaa.com.</p>
 </main>
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -193,7 +194,7 @@ const COLS = [
   {label:'Pts/$', dir:-1, val:(t, b, i) => b.total / i.salary, html:(t, b, i) => (b.total / i.salary).toFixed(1)},
   {label:'Picked', dir:-1, val:(t, b, i) => i.owners.length, html:(t, b, i) => `<span title="${esc(i.owners.join(', '))}">${i.owners.length}</span>`},
 ];
-const kinds = {nonconf:'Non-conf', conf:'Conf', conf_tourney:'Conf tourney', ncaa:'NCAA', other_post:'Other post'};
+const kinds = {nonconf:'NC', conf:'C', conf_tourney:'CT', ncaa:'NCAA', other_post:'PS'};
 const tb = $('#teams tbody'), headRow = $('#teams thead tr');
 const rows = Object.keys(I).map(t => {
   const b = z(T[t]), i = I[t];
@@ -202,7 +203,7 @@ const rows = Object.keys(I).map(t => {
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
   dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${i.owners.length ? ownList(i.owners) : '<span class="sep">nobody</span>'}</span></div><div class="scroll"><table class="games"><thead><tr><th>Date</th><th>Opponent</th><th>Result</th><th class="n">Pts</th><th>Type</th></tr></thead><tbody>` +
-    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${new Date(g.date + 'T12:00:00').toLocaleDateString('en-US', {month: 'short', day: 'numeric'})}</td><td>${g.home === false && !g.neutral ? '<span class="at">at</span> ' : g.neutral ? '<span class="at">vs</span> ' : ''}${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${kinds[g.kind]}</td></tr>`).join('') : '<tr><td>No completed games yet</td></tr>') +
+    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${+g.date.slice(5, 7)}/${+g.date.slice(8, 10)}</td><td>${g.home === false && !g.neutral ? '<span class="at">at</span> ' : g.neutral ? '<span class="at">vs</span> ' : ''}${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${kinds[g.kind]}</td></tr>`).join('') : '<tr><td colspan="5" style="white-space:normal">No completed games yet</td></tr>') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   return {t, b, i, tr, dr};
