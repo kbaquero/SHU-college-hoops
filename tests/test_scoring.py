@@ -142,6 +142,14 @@ class TodaysGames(unittest.TestCase):
         self.assertEqual((big["away"]["team"], big["home"]["team"], big["home"]["owners"]), ("Florida", "Duke", ["Kevin B.", "Joe H."]))
         self.assertEqual(siena["time"], "TBD")
 
+    def test_spread_text(self):
+        from tracker.espn import _line
+        self.assertEqual(_line([{"details": "DUKE -7.5", "overUnder": 151.5}]), "DUKE -7.5")
+        self.assertEqual(_line([{"details": "EVEN"}]), "Even")
+        self.assertEqual(_line([{"details": "OFF"}]), "")
+        self.assertEqual(_line([{"spread": -3.0}]), "Spread -3")
+        self.assertEqual(_line(None), "")
+
     def test_overall_record_counts_every_game(self):
         games = [g("1", "2026-11-05", True, "2"), g("2", "2027-01-05", False, "153"),
                  g("3", "2027-03-20", True, "2", 3, "Men's Basketball Championship - 1st Round", seed="4"),
@@ -190,7 +198,7 @@ class Pipeline(unittest.TestCase):
             def sched(tid):
                 return [g("a" + tid, "2026-11-05", True, "999"),
                         g("b" + tid, "2027-01-10", tid == duke, ids["Virginia"] if tid == duke else "999")]
-            d = R.run(get_schedule=sched, get_team_list=lambda: [],
+            d = R.run(get_schedule=sched, get_team_list=lambda: [], get_lines=lambda d: {},
                       now=dt.datetime(2026, 11, 10, 6, 0), docs=tmp)
             self.assertEqual(d["standings"][0]["entry"], "Kevin")
             self.assertEqual(d["teams"]["Duke"]["total"], 1 + 2)
@@ -199,7 +207,7 @@ class Pipeline(unittest.TestCase):
             self.assertIn("SHU College Hoops Pool", html)
             self.assertIn('rel="manifest"', html)
             # second day: change since last update is computed
-            d2 = R.run(get_schedule=sched, get_team_list=lambda: [],
+            d2 = R.run(get_schedule=sched, get_team_list=lambda: [], get_lines=lambda d: {},
                        now=dt.datetime(2026, 11, 11, 6, 0), docs=tmp)
             self.assertEqual(d2["standings"][0]["change"], 0)
             self.assertEqual(len(d2["history"]), 2)

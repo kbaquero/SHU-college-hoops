@@ -48,9 +48,10 @@ def todays_games(results, owners, today):
     return {"date": today, "label": label, "games": out}
 
 
-def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS):
+def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=None):
     get_schedule = get_schedule or (lambda tid: espn.schedule(tid, C.SEASON))
     get_team_list = get_team_list or espn.team_list
+    get_lines = get_lines or espn.day_lines
     now = now or dt.datetime.now(ZoneInfo("America/New_York"))
     warnings = []
 
@@ -126,6 +127,13 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS):
             owners.setdefault(t, []).append(e)
 
     data_today = todays_games(results, owners, today)
+    if data_today["games"]:
+        try:
+            lines = get_lines(today)
+        except Exception:   # spreads are a nice-to-have; never fail the update over them
+            lines = {}
+        for g in data_today["games"]:
+            g["line"] = lines.get(g["id"], "")
 
     data = {
         "updated": now.strftime("%Y-%m-%d %H:%M %Z"),

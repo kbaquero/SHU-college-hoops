@@ -42,6 +42,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .game:last-child{border-bottom:0}
 .gtime{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px;white-space:nowrap}
 .gtv{color:var(--mute);font-size:12px;text-align:right;padding-top:2px}
+.line{display:block;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
 .side{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
 .side+.side{margin-top:3px}
 .side .nm{font-weight:400;color:var(--mute)}
@@ -50,7 +51,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .at{font-size:12px;color:var(--mute);margin-right:2px}
 .empty{padding:12px 14px;color:var(--mute)}
 .sm{display:none}
-@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.3em 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
+@media (max-width:520px){.line{display:inline;margin-right:8px}.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.3em 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
@@ -84,7 +85,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <h2>Today's games <span class="h2sub" id="today-label"></span></h2>
 <div class="card" id="today"></div>
-<p class="sub">From this morning's update, so it won't show live scores. Times are Eastern.</p>
+<p class="sub">From this morning's update, so it won't show live scores or line moves. Times are Eastern. Spreads come from ESPN and are missing for games without a posted line.</p>
 
 <h2>Points over time</h2>
 <div class="card"><div id="chart"></div></div>
@@ -136,7 +137,7 @@ D.standings.forEach(s => {
   };
   el.innerHTML = td.games.map(g => `<div class="game"><div class="gtime">${g.completed ? 'Final' : esc(g.time)}</div><div>` +
     side(g.away, '', g) + side(g.home, `<span class="at">${g.neutral ? 'vs' : 'at'}</span>`, g) +
-    `</div><div class="gtv">${esc(g.tv || '')}</div></div>`).join('');
+    `</div><div class="gtv">${g.line ? `<span class="line">${esc(g.line)}</span>` : ''}${esc(g.tv || '')}</div></div>`).join('');
 })();
 
 // teams: sortable table. Each column: label, sort value, cell html, numeric?, first-click direction

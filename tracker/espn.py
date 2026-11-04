@@ -121,3 +121,27 @@ def schedule(team_id, season):
                 games[g["id"]] = g
         time.sleep(0.3)
     return sorted(games.values(), key=lambda g: (g["date"], g.get("start", "")))
+
+
+def _line(odds):
+    """Best-effort spread text from an ESPN odds entry, e.g. 'DUKE -7.5'."""
+    if not odds:
+        return ""
+    o = odds[0] if isinstance(odds, list) else odds
+    d = (o.get("details") or "").strip()
+    if d and d.lower() not in ("off", "n/a"):
+        return "Even" if d.upper() == "EVEN" else d
+    sp = o.get("spread")
+    return f"Spread {sp:+g}" if isinstance(sp, (int, float)) else ""
+
+
+def day_lines(day):
+    """{event_id: spread text} for every Division I game ESPN lists on `day` (YYYY-MM-DD, Eastern)."""
+    data = fetch_json(f"{ESPN_BASE}/scoreboard?dates={day.replace('-', '')}&groups=50&limit=500")
+    out = {}
+    for ev in data.get("events", []):
+        comp = (ev.get("competitions") or [{}])[0]
+        line = _line(comp.get("odds"))
+        if line:
+            out[str(ev.get("id"))] = line
+    return out
