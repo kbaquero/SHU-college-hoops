@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 15:44 EST",
+ "updated": "2026-11-04 15:48 EST",
  "season": 2027,
  "standings": [
   {
@@ -51858,7 +51858,8 @@
      "score": "",
      "opp": "Maryland Eastern Shore Hawks"
     },
-    "time": "7:00 PM"
+    "time": "7:00 PM",
+    "line": "HPU -34.5"
    },
    {
     "id": "401928853",
@@ -51885,7 +51886,8 @@
      "score": "",
      "opp": "Virginia Lynchburg Dragons"
     },
-    "time": "7:00 PM"
+    "time": "7:00 PM",
+    "line": ""
    },
    {
     "id": "401926142",
@@ -51913,7 +51915,8 @@
      "score": "",
      "opp": "Concordia Chicago Cougars"
     },
-    "time": "7:00 PM"
+    "time": "7:00 PM",
+    "line": ""
    },
    {
     "id": "401926151",
@@ -51940,7 +51943,8 @@
      "score": "",
      "opp": "Webster Gorloks"
     },
-    "time": "7:30 PM"
+    "time": "7:30 PM",
+    "line": ""
    },
    {
     "id": "401925893",
@@ -51967,7 +51971,8 @@
      "score": "",
      "opp": "Randolph Wildcats"
     },
-    "time": "8:00 PM"
+    "time": "8:00 PM",
+    "line": ""
    },
    {
     "id": "401917512",
@@ -52000,7 +52005,8 @@
      "score": "",
      "opp": "North Dakota State Bison"
     },
-    "time": "10:00 PM"
+    "time": "10:00 PM",
+    "line": "SMC -12.5"
    },
    {
     "id": "401917514",
@@ -52027,7 +52033,8 @@
      "home": true,
      "owners": []
     },
-    "time": "10:00 PM"
+    "time": "10:00 PM",
+    "line": "LMU -8.5"
    }
   ]
  },
