@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 15:58 EST",
+ "updated": "2026-11-04 16:06 EST",
  "season": 2027,
  "standings": [
   {
@@ -7,6 +7,7 @@
    "entry": "Dennis S.",
    "total": 9,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "SMU",
@@ -26,6 +27,7 @@
    "entry": "Mike L.",
    "total": 8,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Clemson",
@@ -45,6 +47,7 @@
    "entry": "Connor C. & Conor G.",
    "total": 7,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Louisville",
@@ -64,6 +67,7 @@
    "entry": "Joe H.",
    "total": 7,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Duke",
@@ -83,6 +87,7 @@
    "entry": "Ben D.",
    "total": 6,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Virginia Tech",
@@ -102,6 +107,7 @@
    "entry": "Chris C.",
    "total": 6,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Louisville",
@@ -121,6 +127,7 @@
    "entry": "Drew & Bob D.",
    "total": 6,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "UCLA",
@@ -140,6 +147,7 @@
    "entry": "Jason H.",
    "total": 6,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Michigan",
@@ -159,6 +167,7 @@
    "entry": "Mike C.",
    "total": 6,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "SMU",
@@ -178,6 +187,7 @@
    "entry": "Sean F.",
    "total": 6,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "North Carolina",
@@ -197,6 +207,7 @@
    "entry": "Kevin B.",
    "total": 5,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Duke",
@@ -216,6 +227,7 @@
    "entry": "Sean P.",
    "total": 5,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "N.C. State",
@@ -235,6 +247,7 @@
    "entry": "Marty C.",
    "total": 4,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Indiana",
@@ -254,6 +267,7 @@
    "entry": "Dan P.",
    "total": 3,
    "change": null,
+   "move": null,
    "salary": 100,
    "teams": [
     "Iowa",
