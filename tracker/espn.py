@@ -18,9 +18,8 @@ def fetch_json(url, retries=3):
             time.sleep(2 * (attempt + 1))
 
 
-def team_list():
-    """All Division I teams ESPN knows about: list of dicts with id + name variants."""
-    data = fetch_json(f"{ESPN_BASE}/teams?groups=50&limit=1000")
+def _teams(url):
+    data = fetch_json(url)
     out = []
     for lg in data.get("sports", [{}])[0].get("leagues", []):
         for t in lg.get("teams", []):
@@ -28,6 +27,12 @@ def team_list():
             out.append({k: t.get(k, "") for k in
                         ("id", "location", "displayName", "shortDisplayName", "nickname", "abbreviation", "name")})
     return out
+
+
+def team_list(full=False):
+    """Teams ESPN knows about. Default: its Division I group. full=True: every team, which also
+    catches schools still transitioning to Division I that ESPN leaves out of that group."""
+    return _teams(f"{ESPN_BASE}/teams?limit=2000" if full else f"{ESPN_BASE}/teams?groups=50&limit=1000")
 
 
 def _score(c):

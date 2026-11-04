@@ -24,6 +24,11 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS):
     teams = load_teams()
     if any(not t.get("espn_id") for t in teams):
         unresolved = resolve_espn_ids(teams, get_team_list())
+        if unresolved and get_team_list is espn.team_list:
+            try:
+                unresolved = resolve_espn_ids(teams, espn.team_list(full=True))
+            except RuntimeError as e:
+                warnings.append(f"Full ESPN team list unavailable ({e})")
         save_teams(teams)
         if unresolved:
             warnings.append("Couldn't match these pool teams to ESPN (fill in espn_id in data/teams.csv): "

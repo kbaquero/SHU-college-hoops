@@ -60,9 +60,12 @@ def resolve_espn_ids(rows, espn_teams):
     for r in rows:
         if r.get("espn_id"):
             continue
-        key = norm(ALIASES.get(r["team"], r["team"]))
-        ids = index.get(key, set()) - taken
+        ids = set()
+        for name in (ALIASES.get(r["team"]), r["team"]):   # try the alias, then the pool's own spelling
+            if name and len(ids) != 1:
+                ids = index.get(norm(name), set()) - taken
         if len(ids) != 1:
+            key = norm(ALIASES.get(r["team"], r["team"]))
             close = difflib.get_close_matches(key, index.keys(), n=2, cutoff=0.88)
             cands = set().union(*(index[c] for c in close)) - taken if close else set()
             ids = cands if len(cands) == 1 else set()
