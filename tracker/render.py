@@ -52,6 +52,8 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .own{font-size:12px;color:var(--accent);font-weight:500}
 .at{font-size:12px;color:var(--mute);margin-right:2px}
 .empty{padding:12px 14px;color:var(--mute)}
+.pickedby{padding:8px 12px 4px;font-size:12px;color:var(--mute);white-space:normal}
+#teams .detail .pickedby,#teams .detail .scroll{position:sticky;left:0;max-width:min(926px,calc(100vw - 34px - env(safe-area-inset-left) - env(safe-area-inset-right)))}.pickedby .own{font-size:13px}
 .sc{font-variant-numeric:tabular-nums;color:var(--mute);min-width:1.6em}
 .sc.win{color:var(--ink);font-weight:700}
 .side.lost .nm{opacity:.75}
@@ -196,7 +198,7 @@ const rows = Object.keys(I).map(t => {
   tr.innerHTML = COLS.map(c => `<td${c.num === false ? '' : ' class="n"'}>${c.html(t, b, i)}</td>`).join('');
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
-  dr.innerHTML = `<td colspan="${COLS.length}"><div class="scroll"><table class="games"><tbody>` +
+  dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${esc(i.owners.join(', ')) || 'nobody'}</span></div><div class="scroll"><table class="games"><tbody>` +
     (gs.length ? gs.slice().reverse().map(g => `<tr><td>${g.date}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td>${esc(g.opp_name)}</td><td>${kinds[g.kind]}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td></tr>`).join('') : '<tr><td>No completed games yet</td></tr>') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
