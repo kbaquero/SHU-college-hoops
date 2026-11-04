@@ -5,7 +5,7 @@ on:
     - cron: "47 10 * * *"   # 10:47 UTC = 5:47 AM Eastern (6:47 AM during daylight time)
   workflow_dispatch:         # "Run workflow" button for manual updates
   push:
-    paths: ["data/**", "tracker/**"]   # re-score right away when entries, seeds or code change
+    paths: ["data/**", "tracker/**", "tests/**", ".github/**"]   # re-score when entries, seeds or code change
 
 permissions:
   contents: write
