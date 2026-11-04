@@ -60,6 +60,28 @@ def todays_games(results, owners, today):
     return {"date": today, "label": label, "games": out}
 
 
+def rebuild_history(results, entries, today):
+    """Morning snapshots for every day from the first game until yesterday. A snapshot dated D counts
+    points from games played before D, matching what the morning update on D would have shown.
+    (Seed points aren't tied to a game, so this is only exact before Selection Sunday.)"""
+    dated = [(g["date"], g.get("pts", 0), t) for t, b in results.items() for g in b.get("games", [])
+             if g.get("completed") and g.get("date")]
+    if not dated:
+        return []
+    first = min(d for d, _, _ in dated)
+    day, end, out = dt.date.fromisoformat(first), dt.date.fromisoformat(today), []
+    while day < end:
+        d = day.isoformat()
+        team_pts = {}
+        for gd, pts, t in dated:
+            if gd < d:
+                team_pts[t] = team_pts.get(t, 0) + pts
+        out.append({"date": d, "totals": {e: sum(team_pts.get(t, 0) for t in picks) for e, picks in entries.items()},
+                    "rebuilt": True})
+        day += dt.timedelta(days=1)
+    return out
+
+
 def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=None):
     get_schedule = get_schedule or (lambda tid: espn.schedule(tid, C.SEASON))
     get_team_list = get_team_list or espn.team_list
@@ -121,6 +143,8 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
 
     # history: one snapshot per day, used for "change since last update"
     history = [h for h in prev.get("history", []) if h["date"] != today]
+    if not history:   # no earlier snapshots (first run, or lost history): rebuild them from the game logs
+        history = rebuild_history(results, entries, today)
     baseline = history[-1]["totals"] if history else {}
     # rank each entry held at the last daily snapshot (same tie rule: 1, 2, 3, 3, 5 ...)
     prev_rank = {e: 1 + sum(1 for x in baseline.values() if x > v) for e, v in baseline.items()}

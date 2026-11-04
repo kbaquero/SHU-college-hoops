@@ -159,6 +159,14 @@ class TodaysGames(unittest.TestCase):
         self.assertEqual((g["home"]["team"], g["home"]["final"], g["home"]["pts"], g["home"]["won"]), ("Navy", 39, 0, False))
         self.assertEqual((g["away"]["team"], g["away"]["final"], g["away"]["won"], g["away"]["pool"]), ("George Washington", 91, True, False))
 
+    def test_rebuild_history_from_game_logs(self):
+        from tracker.run import rebuild_history
+        mk = lambda d, pts: {"date": d, "pts": pts, "completed": True}
+        res = {"Duke": {"games": [mk("2026-11-02", 1), mk("2026-11-03", 1)]}, "Navy": {"games": [mk("2026-11-03", 2)]}}
+        h = rebuild_history(res, {"Kevin": ["Duke", "Navy"], "Joe": ["Navy"]}, "2026-11-04")
+        self.assertEqual([x["date"] for x in h], ["2026-11-02", "2026-11-03"])
+        self.assertEqual([x["totals"] for x in h], [{"Kevin": 0, "Joe": 0}, {"Kevin": 1, "Joe": 0}])
+
     def test_overall_record_counts_every_game(self):
         games = [g("1", "2026-11-05", True, "2"), g("2", "2027-01-05", False, "153"),
                  g("3", "2027-03-20", True, "2", 3, "Men's Basketball Championship - 1st Round", seed="4"),
@@ -222,8 +230,10 @@ class Pipeline(unittest.TestCase):
                        now=dt.datetime(2026, 11, 11, 6, 0), docs=tmp)
             self.assertEqual(d2["standings"][0]["change"], 0)
             self.assertEqual(d2["standings"][0]["move"], 0)
-            self.assertIsNone(d["standings"][0]["move"])          # first day: nothing to compare
-            self.assertEqual(len(d2["history"]), 2)
+            self.assertEqual(d["standings"][0]["move"], 0)        # first run rebuilds earlier days from game logs
+            self.assertEqual(d["history"][0]["date"], "2026-11-05")       # first game day
+            self.assertEqual(d["history"][-2]["totals"]["Kevin"], 10)    # rebuilt Nov 9 snapshot: the ten Nov 5 wins
+            self.assertEqual(len(d2["history"]), len(d["history"]) + 1)
         finally:
             shutil.copytree(data_bak, ROOT / "data", dirs_exist_ok=True)
             shutil.rmtree(tmp); shutil.rmtree(data_bak)
