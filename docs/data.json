@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 13:24 EST",
+ "updated": "2026-11-04 13:26 EST",
  "season": 2027,
  "standings": [
   {
@@ -3657,7 +3657,7 @@
      "headline": "",
      "conf_flag": null,
      "seed": null,
-     "kind": "nonconf",
+     "kind": "conf",
      "pts": 0
     },
     {
@@ -3732,7 +3732,7 @@
      "headline": "",
      "conf_flag": null,
      "seed": null,
-     "kind": "nonconf",
+     "kind": "conf",
      "pts": 0
     },
     {
@@ -3852,7 +3852,7 @@
      "headline": "",
      "conf_flag": null,
      "seed": null,
-     "kind": "nonconf",
+     "kind": "conf",
      "pts": 0
     },
     {
@@ -3882,7 +3882,7 @@
      "headline": "",
      "conf_flag": null,
      "seed": null,
-     "kind": "nonconf",
+     "kind": "conf",
      "pts": 0
     }
    ]
@@ -4934,7 +4934,5 @@
    }
   }
  ],
- "warnings": [
-  "Couldn't match these pool teams to ESPN (fill in espn_id in data/teams.csv): Queens, Lindenwood, Southern Indiana"
- ]
+ "warnings": []
 }
