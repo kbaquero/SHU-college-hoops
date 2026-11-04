@@ -44,7 +44,10 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .game:last-child{border-bottom:0}
 .gtime{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px;white-space:nowrap}
 .gtv{color:var(--mute);font-size:12px;text-align:right;padding-top:2px}
-.line{display:block;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.line{display:block;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.meta span+span::before{content:' · '}
+.game>div{min-width:0}
+.meta span{white-space:nowrap}
 .side{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
 .side+.side{margin-top:3px}
 .side .nm{font-weight:400;color:var(--mute)}
@@ -62,7 +65,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .ptsb.pos{color:var(--good)}
 .gtime.dim{color:var(--mute);font-weight:400}
 .sm{display:none}
-@media (max-width:520px){.line{display:inline;margin-right:8px}.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.3em 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
+@media (max-width:520px){.line{display:inline}.gtv{display:flex;flex-wrap:wrap;gap:0 10px}.meta{display:contents}.meta span+span::before{content:none}.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.3em 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
@@ -153,6 +156,7 @@ D.standings.forEach(s => {
 });
 
 // game lists (today = upcoming from this morning, yesterday = finals)
+const kindName = {nonconf:'Non-conference', conf:'Conference', conf_tourney:'Conference tournament', ncaa:'NCAA tournament', other_post:'Postseason'};
 function gameList(td, el, labelEl, emptyMsg, finals) {
   td = td || {games: []};
   labelEl.textContent = td.label ? '· ' + td.label : '';
@@ -166,7 +170,8 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   };
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);
-    const right = finals ? '' : (g.line ? `<span class="line">${esc(g.line)}</span>` : '') + esc(g.tv || '');
+    const meta = [finals ? '' : g.tv, kindName[g.kind]].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('');
+    const right = (!finals && g.line ? `<span class="line">${esc(g.line)}</span>` : '') + `<span class="meta">${meta}</span>`;
     return `<div class="game"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div><div>` +
       side(g.away, '', g) + side(g.home, `<span class="at">${g.neutral ? 'vs' : 'at'}</span>`, g) +
       `</div><div class="gtv">${right}</div></div>`;
