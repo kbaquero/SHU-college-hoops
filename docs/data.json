@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 15:52 EST",
+ "updated": "2026-11-04 15:58 EST",
  "season": 2027,
  "standings": [
   {
@@ -54311,7 +54311,9 @@
      "team": "Maryland Eastern Shore",
      "pool": false,
      "home": false,
-     "owners": []
+     "owners": [],
+     "final": null,
+     "won": null
     },
     "home": {
      "team": "High Point",
@@ -54323,7 +54325,10 @@
      ],
      "won": null,
      "score": "",
-     "opp": "Maryland Eastern Shore"
+     "opp": "Maryland Eastern Shore",
+     "pts": 0,
+     "final": null,
+     "opp_final": null
     },
     "time": "7:00 PM",
     "line": "HPU -34.5"
@@ -54340,7 +54345,9 @@
      "team": "Virginia Lynchburg",
      "pool": false,
      "home": false,
-     "owners": []
+     "owners": [],
+     "final": null,
+     "won": null
     },
     "home": {
      "team": "Morgan St.",
@@ -54351,7 +54358,10 @@
      ],
      "won": null,
      "score": "",
-     "opp": "Virginia Lynchburg"
+     "opp": "Virginia Lynchburg",
+     "pts": 0,
+     "final": null,
+     "opp_final": null
     },
     "time": "7:00 PM",
     "line": ""
@@ -54368,7 +54378,9 @@
      "team": "Concordia Chicago",
      "pool": false,
      "home": false,
-     "owners": []
+     "owners": [],
+     "final": null,
+     "won": null
     },
     "home": {
      "team": "SIUE",
@@ -54380,7 +54392,10 @@
      ],
      "won": null,
      "score": "",
-     "opp": "Concordia Chicago"
+     "opp": "Concordia Chicago",
+     "pts": 0,
+     "final": null,
+     "opp_final": null
     },
     "time": "7:00 PM",
     "line": ""
@@ -54397,7 +54412,9 @@
      "team": "Webster",
      "pool": false,
      "home": false,
-     "owners": []
+     "owners": [],
+     "final": null,
+     "won": null
     },
     "home": {
      "team": "Southeast Missouri",
@@ -54408,7 +54425,10 @@
      ],
      "won": null,
      "score": "",
-     "opp": "Webster"
+     "opp": "Webster",
+     "pts": 0,
+     "final": null,
+     "opp_final": null
     },
     "time": "7:30 PM",
     "line": ""
@@ -54425,7 +54445,9 @@
      "team": "Randolph",
      "pool": false,
      "home": false,
-     "owners": []
+     "owners": [],
+     "final": null,
+     "won": null
     },
     "home": {
      "team": "Norfolk St.",
@@ -54436,7 +54458,10 @@
      ],
      "won": null,
      "score": "",
-     "opp": "Randolph"
+     "opp": "Randolph",
+     "pts": 0,
+     "final": null,
+     "opp_final": null
     },
     "time": "8:00 PM",
     "line": ""
@@ -54458,7 +54483,10 @@
      ],
      "won": null,
      "score": "",
-     "opp": "Saint Mary's"
+     "opp": "Saint Mary's",
+     "pts": 0,
+     "final": null,
+     "opp_final": null
     },
     "home": {
      "team": "Saint Mary's",
@@ -54470,7 +54498,10 @@
      ],
      "won": null,
      "score": "",
-     "opp": "North Dakota St."
+     "opp": "North Dakota St.",
+     "pts": 0,
+     "final": null,
+     "opp_final": null
     },
     "time": "10:00 PM",
     "line": "SMC -12.5"
@@ -54492,16 +54523,334 @@
      ],
      "won": null,
      "score": "",
-     "opp": "Loyola Marymount"
+     "opp": "Loyola Marymount",
+     "pts": 0,
+     "final": null,
+     "opp_final": null
     },
     "home": {
      "team": "Loyola Marymount",
      "pool": false,
      "home": true,
-     "owners": []
+     "owners": [],
+     "final": null,
+     "won": null
     },
     "time": "10:00 PM",
     "line": "LMU -8.5"
+   }
+  ]
+ },
+ "yesterday": {
+  "date": "2026-11-03",
+  "label": "Tue, Nov 3",
+  "games": [
+   {
+    "id": "401906848",
+    "start": "2026-11-03T18:00:00-05:00",
+    "tbd": false,
+    "tv": "SEC Network",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "Wofford",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Dan P."
+     ],
+     "won": false,
+     "score": "59-90",
+     "opp": "Tennessee",
+     "pts": 0,
+     "final": 59,
+     "opp_final": 90
+    },
+    "home": {
+     "team": "Tennessee",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Sean F."
+     ],
+     "won": true,
+     "score": "90-59",
+     "opp": "Wofford",
+     "pts": 1,
+     "final": 90,
+     "opp_final": 59
+    },
+    "time": "6:00 PM"
+   },
+   {
+    "id": "401920376",
+    "start": "2026-11-03T19:00:00-05:00",
+    "tbd": false,
+    "tv": "ACCNX",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "Coppin St.",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "final": 54,
+     "won": false
+    },
+    "home": {
+     "team": "Virginia Tech",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Ben D."
+     ],
+     "won": true,
+     "score": "88-54",
+     "opp": "Coppin St.",
+     "pts": 1,
+     "final": 88,
+     "opp_final": 54
+    },
+    "time": "7:00 PM"
+   },
+   {
+    "id": "401909551",
+    "start": "2026-11-03T19:00:00-05:00",
+    "tbd": false,
+    "tv": "ACCNX",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "Wagner",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Mike C."
+     ],
+     "won": false,
+     "score": "50-76",
+     "opp": "Boston College",
+     "pts": 0,
+     "final": 50,
+     "opp_final": 76
+    },
+    "home": {
+     "team": "Boston College",
+     "pool": false,
+     "home": true,
+     "owners": [],
+     "final": 76,
+     "won": true
+    },
+    "time": "7:00 PM"
+   },
+   {
+    "id": "401920806",
+    "start": "2026-11-03T20:00:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "Alabama St.",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Mike C.",
+      "Jason H.",
+      "Sean P."
+     ],
+     "won": false,
+     "score": "66-97",
+     "opp": "Texas A&M",
+     "pts": 0,
+     "final": 66,
+     "opp_final": 97
+    },
+    "home": {
+     "team": "Texas A&M",
+     "pool": false,
+     "home": true,
+     "owners": [],
+     "final": 97,
+     "won": true
+    },
+    "time": "8:00 PM"
+   },
+   {
+    "id": "401929372",
+    "start": "2026-11-03T20:00:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "Arkansas Pine Bluff",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "final": 61,
+     "won": false
+    },
+    "home": {
+     "team": "Arkansas",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Chris C.",
+      "Mike C.",
+      "Connor C. & Conor G.",
+      "Marty C.",
+      "Ben D.",
+      "Dan P."
+     ],
+     "won": true,
+     "score": "106-61",
+     "opp": "Arkansas Pine Bluff",
+     "pts": 1,
+     "final": 106,
+     "opp_final": 61
+    },
+    "time": "8:00 PM"
+   },
+   {
+    "id": "401920702",
+    "start": "2026-11-03T20:00:00-05:00",
+    "tbd": false,
+    "tv": "BTN",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "Lipscomb",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Ben D."
+     ],
+     "won": false,
+     "score": "54-76",
+     "opp": "Iowa",
+     "pts": 0,
+     "final": 54,
+     "opp_final": 76
+    },
+    "home": {
+     "team": "Iowa",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Dan P."
+     ],
+     "won": true,
+     "score": "76-54",
+     "opp": "Lipscomb",
+     "pts": 1,
+     "final": 76,
+     "opp_final": 54
+    },
+    "time": "8:00 PM"
+   },
+   {
+    "id": "401909796",
+    "start": "2026-11-03T20:00:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "South Dakota St.",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "final": 68,
+     "won": true
+    },
+    "home": {
+     "team": "Kansas St.",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Kevin B."
+     ],
+     "won": false,
+     "score": "66-68",
+     "opp": "South Dakota St.",
+     "pts": 0,
+     "final": 66,
+     "opp_final": 68
+    },
+    "time": "8:00 PM"
+   },
+   {
+    "id": "401921808",
+    "start": "2026-11-03T20:00:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "LSU New Orleans",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "final": 57,
+     "won": false
+    },
+    "home": {
+     "team": "LSU",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Mike C."
+     ],
+     "won": true,
+     "score": "100-57",
+     "opp": "LSU New Orleans",
+     "pts": 1,
+     "final": 100,
+     "opp_final": 57
+    },
+    "time": "8:00 PM"
+   },
+   {
+    "id": "401929624",
+    "start": "2026-11-03T22:00:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": true,
+    "kind": "nonconf",
+    "away": {
+     "team": "Chapman",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "final": 66,
+     "won": false
+    },
+    "home": {
+     "team": "UC Irvine",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Connor C. & Conor G."
+     ],
+     "won": true,
+     "score": "92-66",
+     "opp": "Chapman",
+     "pts": 1,
+     "final": 92,
+     "opp_final": 66
+    },
+    "time": "10:00 PM"
    }
   ]
  },
