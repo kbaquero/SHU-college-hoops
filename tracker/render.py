@@ -75,8 +75,16 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .warn ul{margin:4px 0 0;padding-left:18px}
 .games td{font-size:12px;padding:3px 12px}
 svg text{fill:var(--mute);font-size:11px}
-.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--mute);padding:0 12px 12px}
-.legend i{display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+#chart{padding-top:4px}
+#chart svg{display:block}
+.legend{display:flex;flex-wrap:wrap;gap:4px 6px;font-size:12px;padding:2px 10px 12px}
+.legend button{all:unset;cursor:pointer;color:var(--ink);padding:3px 7px;border-radius:5px;border:1px solid transparent;white-space:nowrap}
+.legend button:hover{background:var(--chip)}
+.legend button:focus-visible{outline:2px solid var(--accent)}
+.legend button.on{border-color:var(--line);background:var(--chip);font-weight:600}
+.legend button.off{color:var(--mute);opacity:.6}
+.legend button.clear{color:var(--accent);font-weight:600}
+.legend i{display:inline-block;width:12px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
 </style>
 </head>
 <body>
@@ -100,6 +108,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <h2>Points over time</h2>
 <div class="card"><div id="chart"></div></div>
+<p class="sub">Tap names to highlight their lines, and tap again to clear.</p>
 
 <h2>Teams</h2>
 <div class="card scroll"><table id="teams"><thead><tr>
@@ -216,21 +225,43 @@ headRow.addEventListener('click', e => {
 });
 sortTeams();
 
-// chart: top 8 entries over time
+// chart: every entry over time. Tap names in the legend to highlight them.
 (function chart() {
   const H = D.history, el = $('#chart');
   if (H.length < 2) { el.innerHTML = '<p class="sub" style="padding:12px">The chart fills in after a couple of daily updates.</p>'; return; }
-  const top = D.standings.slice(0, 8).map(s => s.entry);
-  const colors = ['#c2410c', '#2563eb', '#15803d', '#9333ea', '#ca8a04', '#0891b2', '#db2777', '#4b5563'];
-  const W = 900, Ht = 260, P = {l: 40, r: 12, t: 12, b: 24};
-  const max = Math.max(1, ...H.flatMap(h => top.map(e => h.totals[e] || 0)));
-  const x = i => P.l + (W - P.l - P.r) * i / (H.length - 1);
-  const y = v => Ht - P.b - (Ht - P.t - P.b) * v / max;
-  let s = `<svg viewBox="0 0 ${W} ${Ht}" width="100%" role="img" aria-label="Points over time for the top entries">`;
-  for (let k = 0; k <= 4; k++) { const v = Math.round(max * k / 4); s += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`; }
-  s += `<text x="${P.l}" y="${Ht - 6}">${H[0].date}</text><text x="${W - P.r}" y="${Ht - 6}" text-anchor="end">${H[H.length - 1].date}</text>`;
-  top.forEach((e, j) => { s += `<polyline fill="none" stroke="${colors[j]}" stroke-width="2" points="${H.map((h, i) => x(i) + ',' + y(h.totals[e] || 0)).join(' ')}"/>`; });
-  el.innerHTML = s + '</svg><div class="legend">' + top.map((e, j) => `<span><i style="background:${colors[j]}"></i>${esc(e)}</span>`).join('') + '</div>';
+  const ents = D.standings.map(s => s.entry);
+  const colors = ['#e8590c', '#1c7ed6', '#2f9e44', '#ae3ec9', '#f08c00', '#0c8599', '#e64980',
+                  '#4263eb', '#66a80f', '#c92a2a', '#868e96', '#7950f2', '#a87b4f', '#15aabf'];
+  const col = j => colors[j % colors.length];
+  const sel = new Set();
+  const fmt = d => new Date(d + 'T12:00:00').toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
+  function draw() {
+    const W = Math.max(280, el.clientWidth), Ht = W < 520 ? 220 : 280, P = {l: 34, r: 14, t: 14, b: 26};
+    const raw = Math.max(1, ...H.flatMap(h => ents.map(e => h.totals[e] || 0)));
+    const mag = 10 ** Math.floor(Math.log10(raw / 5)), step = [1, 2, 5, 10].map(m => m * mag).find(v => v >= raw / 5) || 1;
+    const stepI = Math.max(1, Math.round(step)), max = Math.ceil(raw / stepI) * stepI;
+    const x = i => P.l + (W - P.l - P.r) * i / (H.length - 1);
+    const y = v => Ht - P.b - (Ht - P.t - P.b) * v / max;
+    let s = `<svg width="${W}" height="${Ht}" viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Points over time for every entry">`;
+    for (let v = 0; v <= max; v += stepI) { s += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`; }
+    s += `<text x="${P.l}" y="${Ht - 6}">${fmt(H[0].date)}</text><text x="${W - P.r}" y="${Ht - 6}" text-anchor="end">${fmt(H[H.length - 1].date)}</text>`;
+    const order = ents.map((e, j) => j).sort((a, b) => sel.has(ents[a]) - sel.has(ents[b]));   // highlighted lines on top
+    order.forEach(j => {
+      const e = ents[j], on = sel.has(e), dim = sel.size && !on;
+      s += `<polyline fill="none" stroke="${col(j)}" stroke-width="${on ? 3.5 : 2}" stroke-linejoin="round" opacity="${dim ? .12 : .9}" points="${H.map((h, i) => x(i) + ',' + y(h.totals[e] || 0)).join(' ')}"><title>${esc(e)}</title></polyline>`;
+      if (on) { const v = H[H.length - 1].totals[e] || 0; s += `<circle cx="${x(H.length - 1)}" cy="${y(v)}" r="4" fill="${col(j)}"/>`; }
+    });
+    el.innerHTML = s + '</svg><div class="legend">' + ents.map((e, j) =>
+      `<button type="button" class="${sel.has(e) ? 'on' : sel.size ? 'off' : ''}" data-e="${esc(e)}" aria-pressed="${sel.has(e)}"><i style="background:${col(j)}"></i>${esc(e)}</button>`).join('') +
+      (sel.size ? '<button type="button" class="clear" data-clear="1">Show all</button>' : '') + '</div>';
+  }
+  el.addEventListener('click', e => {
+    const b = e.target.closest('.legend button'); if (!b) return;
+    if (b.dataset.clear) sel.clear(); else { const n = b.dataset.e; sel.has(n) ? sel.delete(n) : sel.add(n); }
+    draw();
+  });
+  let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
+  draw();
 })();
 </script>
 </body>
