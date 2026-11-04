@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-04 13:36 EST",
+ "updated": "2026-11-04 13:39 EST",
  "season": 2027,
  "standings": [
   {
    "rank": 1,
-   "entry": "Dennis Sedaille",
+   "entry": "Dennis S.",
    "total": 9,
    "change": null,
    "salary": 100,
@@ -23,7 +23,7 @@
   },
   {
    "rank": 2,
-   "entry": "Mike LoMauro",
+   "entry": "Mike L.",
    "total": 8,
    "change": null,
    "salary": 100,
@@ -42,7 +42,7 @@
   },
   {
    "rank": 3,
-   "entry": "Connor & Conor",
+   "entry": "Connor C. & Conor G.",
    "total": 7,
    "change": null,
    "salary": 100,
@@ -61,7 +61,7 @@
   },
   {
    "rank": 3,
-   "entry": "Joe Haines",
+   "entry": "Joe H.",
    "total": 7,
    "change": null,
    "salary": 100,
@@ -80,7 +80,7 @@
   },
   {
    "rank": 5,
-   "entry": "Ben Derda",
+   "entry": "Ben D.",
    "total": 6,
    "change": null,
    "salary": 100,
@@ -99,7 +99,7 @@
   },
   {
    "rank": 5,
-   "entry": "Chris Costello",
+   "entry": "Chris C.",
    "total": 6,
    "change": null,
    "salary": 100,
@@ -118,7 +118,7 @@
   },
   {
    "rank": 5,
-   "entry": "Drew & Bob Derda",
+   "entry": "Drew & Bob D.",
    "total": 6,
    "change": null,
    "salary": 100,
@@ -137,7 +137,7 @@
   },
   {
    "rank": 5,
-   "entry": "Jason Haines",
+   "entry": "Jason H.",
    "total": 6,
    "change": null,
    "salary": 100,
@@ -156,7 +156,7 @@
   },
   {
    "rank": 5,
-   "entry": "Mike Costello",
+   "entry": "Mike C.",
    "total": 6,
    "change": null,
    "salary": 100,
@@ -175,7 +175,7 @@
   },
   {
    "rank": 5,
-   "entry": "Sean Foy",
+   "entry": "Sean F.",
    "total": 6,
    "change": null,
    "salary": 100,
@@ -194,7 +194,7 @@
   },
   {
    "rank": 11,
-   "entry": "Kevin Baquero",
+   "entry": "Kevin B.",
    "total": 5,
    "change": null,
    "salary": 100,
@@ -213,7 +213,7 @@
   },
   {
    "rank": 11,
-   "entry": "Sean Palamarik",
+   "entry": "Sean P.",
    "total": 5,
    "change": null,
    "salary": 100,
@@ -232,7 +232,7 @@
   },
   {
    "rank": 13,
-   "entry": "Marty Costello",
+   "entry": "Marty C.",
    "total": 4,
    "change": null,
    "salary": 100,
@@ -251,7 +251,7 @@
   },
   {
    "rank": 14,
-   "entry": "Dan Paustian",
+   "entry": "Dan P.",
    "total": 3,
    "change": null,
    "salary": 100,
@@ -38703,614 +38703,614 @@
    "conf": "SWAC",
    "salary": 5,
    "owners": [
-    "Mike Costello",
-    "Jason Haines",
-    "Sean Palamarik"
+    "Mike C.",
+    "Jason H.",
+    "Sean P."
    ]
   },
   "Arizona": {
    "conf": "B12",
    "salary": 17,
    "owners": [
-    "Dan Paustian"
+    "Dan P."
    ]
   },
   "Arizona St.": {
    "conf": "B12",
    "salary": 10,
    "owners": [
-    "Joe Haines",
-    "Connor & Conor",
-    "Ben Derda",
-    "Jason Haines",
-    "Drew & Bob Derda"
+    "Joe H.",
+    "Connor C. & Conor G.",
+    "Ben D.",
+    "Jason H.",
+    "Drew & Bob D."
    ]
   },
   "Arkansas": {
    "conf": "SEC",
    "salary": 14,
    "owners": [
-    "Chris Costello",
-    "Mike Costello",
-    "Connor & Conor",
-    "Marty Costello",
-    "Ben Derda",
-    "Dan Paustian"
+    "Chris C.",
+    "Mike C.",
+    "Connor C. & Conor G.",
+    "Marty C.",
+    "Ben D.",
+    "Dan P."
    ]
   },
   "BYU": {
    "conf": "B12",
    "salary": 13,
    "owners": [
-    "Dennis Sedaille",
-    "Marty Costello",
-    "Mike LoMauro"
+    "Dennis S.",
+    "Marty C.",
+    "Mike L."
    ]
   },
   "Baylor": {
    "conf": "B12",
    "salary": 13,
    "owners": [
-    "Chris Costello",
-    "Mike Costello"
+    "Chris C.",
+    "Mike C."
    ]
   },
   "Buffalo": {
    "conf": "MAC",
    "salary": 7,
    "owners": [
-    "Marty Costello"
+    "Marty C."
    ]
   },
   "Clemson": {
    "conf": "ACC",
    "salary": 12,
    "owners": [
-    "Mike LoMauro"
+    "Mike L."
    ]
   },
   "Colgate": {
    "conf": "PL",
    "salary": 6,
    "owners": [
-    "Marty Costello",
-    "Jason Haines",
-    "Sean Palamarik"
+    "Marty C.",
+    "Jason H.",
+    "Sean P."
    ]
   },
   "Connecticut": {
    "conf": "BE",
    "salary": 16,
    "owners": [
-    "Chris Costello",
-    "Mike Costello",
-    "Joe Haines",
-    "Dan Paustian",
-    "Jason Haines",
-    "Drew & Bob Derda"
+    "Chris C.",
+    "Mike C.",
+    "Joe H.",
+    "Dan P.",
+    "Jason H.",
+    "Drew & Bob D."
    ]
   },
   "Duke": {
    "conf": "ACC",
    "salary": 18,
    "owners": [
-    "Joe Haines",
-    "Kevin Baquero"
+    "Joe H.",
+    "Kevin B."
    ]
   },
   "Florida": {
    "conf": "SEC",
    "salary": 18,
    "owners": [
-    "Joe Haines",
-    "Jason Haines",
-    "Kevin Baquero"
+    "Joe H.",
+    "Jason H.",
+    "Kevin B."
    ]
   },
   "Florida A&M": {
    "conf": "SWAC",
    "salary": 5,
    "owners": [
-    "Sean Foy"
+    "Sean F."
    ]
   },
   "Florida Gulf Coast": {
    "conf": "ASun",
    "salary": 6,
    "owners": [
-    "Dan Paustian"
+    "Dan P."
    ]
   },
   "Georgetown": {
    "conf": "BE",
    "salary": 10,
    "owners": [
-    "Connor & Conor"
+    "Connor C. & Conor G."
    ]
   },
   "Georgia": {
    "conf": "SEC",
    "salary": 12,
    "owners": [
-    "Dennis Sedaille"
+    "Dennis S."
    ]
   },
   "Grand Canyon": {
    "conf": "MWC",
    "salary": 12,
    "owners": [
-    "Sean Foy"
+    "Sean F."
    ]
   },
   "High Point": {
    "conf": "BSth",
    "salary": 11,
    "owners": [
-    "Drew & Bob Derda",
-    "Mike LoMauro"
+    "Drew & Bob D.",
+    "Mike L."
    ]
   },
   "Howard": {
    "conf": "MEAC",
    "salary": 7,
    "owners": [
-    "Mike Costello",
-    "Sean Palamarik",
-    "Kevin Baquero"
+    "Mike C.",
+    "Sean P.",
+    "Kevin B."
    ]
   },
   "Illinois": {
    "conf": "B10",
    "salary": 17,
    "owners": [
-    "Sean Palamarik"
+    "Sean P."
    ]
   },
   "Incarnate Word": {
    "conf": "Slnd",
    "salary": 5,
    "owners": [
-    "Dan Paustian"
+    "Dan P."
    ]
   },
   "Indiana": {
    "conf": "B10",
    "salary": 12,
    "owners": [
-    "Marty Costello"
+    "Marty C."
    ]
   },
   "Iona": {
    "conf": "MC",
    "salary": 6,
    "owners": [
-    "Dennis Sedaille",
-    "Jason Haines"
+    "Dennis S.",
+    "Jason H."
    ]
   },
   "Iowa": {
    "conf": "B10",
    "salary": 12,
    "owners": [
-    "Dan Paustian"
+    "Dan P."
    ]
   },
   "Jacksonville": {
    "conf": "ASun",
    "salary": 6,
    "owners": [
-    "Chris Costello"
+    "Chris C."
    ]
   },
   "James Madison": {
    "conf": "SB",
    "salary": 8,
    "owners": [
-    "Connor & Conor"
+    "Connor C. & Conor G."
    ]
   },
   "Kansas St.": {
    "conf": "B12",
    "salary": 9,
    "owners": [
-    "Kevin Baquero"
+    "Kevin B."
    ]
   },
   "LIU": {
    "conf": "NEC",
    "salary": 6,
    "owners": [
-    "Chris Costello",
-    "Connor & Conor",
-    "Drew & Bob Derda"
+    "Chris C.",
+    "Connor C. & Conor G.",
+    "Drew & Bob D."
    ]
   },
   "LSU": {
    "conf": "SEC",
    "salary": 11,
    "owners": [
-    "Mike Costello"
+    "Mike C."
    ]
   },
   "Le Moyne": {
    "conf": "NEC",
    "salary": 5,
    "owners": [
-    "Joe Haines"
+    "Joe H."
    ]
   },
   "Lehigh": {
    "conf": "PL",
    "salary": 6,
    "owners": [
-    "Chris Costello"
+    "Chris C."
    ]
   },
   "Lipscomb": {
    "conf": "ASun",
    "salary": 7,
    "owners": [
-    "Ben Derda"
+    "Ben D."
    ]
   },
   "Louisville": {
    "conf": "ACC",
    "salary": 15,
    "owners": [
-    "Chris Costello",
-    "Connor & Conor"
+    "Chris C.",
+    "Connor C. & Conor G."
    ]
   },
   "Marist": {
    "conf": "MC",
    "salary": 5,
    "owners": [
-    "Marty Costello",
-    "Dan Paustian",
-    "Mike LoMauro"
+    "Marty C.",
+    "Dan P.",
+    "Mike L."
    ]
   },
   "Marquette": {
    "conf": "BE",
    "salary": 13,
    "owners": [
-    "Sean Palamarik"
+    "Sean P."
    ]
   },
   "Maryland": {
    "conf": "B10",
    "salary": 11,
    "owners": [
-    "Mike Costello"
+    "Mike C."
    ]
   },
   "McNeese": {
    "conf": "Slnd",
    "salary": 9,
    "owners": [
-    "Dennis Sedaille",
-    "Sean Palamarik"
+    "Dennis S.",
+    "Sean P."
    ]
   },
   "Mercyhurst": {
    "conf": "NEC",
    "salary": 5,
    "owners": [
-    "Chris Costello",
-    "Joe Haines",
-    "Kevin Baquero"
+    "Chris C.",
+    "Joe H.",
+    "Kevin B."
    ]
   },
   "Miami FL": {
    "conf": "ACC",
    "salary": 14,
    "owners": [
-    "Marty Costello",
-    "Dan Paustian",
-    "Jason Haines",
-    "Drew & Bob Derda"
+    "Marty C.",
+    "Dan P.",
+    "Jason H.",
+    "Drew & Bob D."
    ]
   },
   "Michigan": {
    "conf": "B10",
    "salary": 13,
    "owners": [
-    "Joe Haines",
-    "Connor & Conor",
-    "Ben Derda",
-    "Jason Haines",
-    "Kevin Baquero"
+    "Joe H.",
+    "Connor C. & Conor G.",
+    "Ben D.",
+    "Jason H.",
+    "Kevin B."
    ]
   },
   "Mississippi St.": {
    "conf": "SEC",
    "salary": 11,
    "owners": [
-    "Drew & Bob Derda"
+    "Drew & Bob D."
    ]
   },
   "Montana St.": {
    "conf": "BSky",
    "salary": 8,
    "owners": [
-    "Marty Costello"
+    "Marty C."
    ]
   },
   "Morehead St.": {
    "conf": "OVC",
    "salary": 5,
    "owners": [
-    "Sean Foy"
+    "Sean F."
    ]
   },
   "Morgan St.": {
    "conf": "MEAC",
    "salary": 5,
    "owners": [
-    "Sean Foy"
+    "Sean F."
    ]
   },
   "N.C. State": {
    "conf": "ACC",
    "salary": 11,
    "owners": [
-    "Sean Palamarik"
+    "Sean P."
    ]
   },
   "NJIT": {
    "conf": "AE",
    "salary": 5,
    "owners": [
-    "Mike LoMauro"
+    "Mike L."
    ]
   },
   "Navy": {
    "conf": "PL",
    "salary": 6,
    "owners": [
-    "Kevin Baquero"
+    "Kevin B."
    ]
   },
   "Norfolk St.": {
    "conf": "MEAC",
    "salary": 5,
    "owners": [
-    "Joe Haines"
+    "Joe H."
    ]
   },
   "North Carolina": {
    "conf": "ACC",
    "salary": 13,
    "owners": [
-    "Sean Foy"
+    "Sean F."
    ]
   },
   "North Dakota St.": {
    "conf": "Sum",
    "salary": 7,
    "owners": [
-    "Jason Haines"
+    "Jason H."
    ]
   },
   "Oklahoma": {
    "conf": "SEC",
    "salary": 13,
    "owners": [
-    "Sean Palamarik"
+    "Sean P."
    ]
   },
   "Penn": {
    "conf": "Ivy",
    "salary": 8,
    "owners": [
-    "Ben Derda"
+    "Ben D."
    ]
   },
   "Presbyterian": {
    "conf": "BSth",
    "salary": 6,
    "owners": [
-    "Chris Costello",
-    "Connor & Conor"
+    "Chris C.",
+    "Connor C. & Conor G."
    ]
   },
   "Providence": {
    "conf": "BE",
    "salary": 12,
    "owners": [
-    "Ben Derda"
+    "Ben D."
    ]
   },
   "Queens": {
    "conf": "ASun",
    "salary": 7,
    "owners": [
-    "Drew & Bob Derda"
+    "Drew & Bob D."
    ]
   },
   "Robert Morris": {
    "conf": "Horz",
    "salary": 8,
    "owners": [
-    "Ben Derda"
+    "Ben D."
    ]
   },
   "SIUE": {
    "conf": "OVC",
    "salary": 5,
    "owners": [
-    "Mike LoMauro",
-    "Kevin Baquero"
+    "Mike L.",
+    "Kevin B."
    ]
   },
   "SMU": {
    "conf": "ACC",
    "salary": 11,
    "owners": [
-    "Mike Costello",
-    "Dennis Sedaille"
+    "Mike C.",
+    "Dennis S."
    ]
   },
   "Saint Louis": {
    "conf": "A10",
    "salary": 11,
    "owners": [
-    "Dennis Sedaille"
+    "Dennis S."
    ]
   },
   "Saint Mary's": {
    "conf": "WCC",
    "salary": 10,
    "owners": [
-    "Dennis Sedaille",
-    "Ben Derda"
+    "Dennis S.",
+    "Ben D."
    ]
   },
   "Samford": {
    "conf": "SC",
    "salary": 7,
    "owners": [
-    "Mike LoMauro"
+    "Mike L."
    ]
   },
   "Seton Hall": {
    "conf": "BE",
    "salary": 11,
    "owners": [
-    "Dennis Sedaille"
+    "Dennis S."
    ]
   },
   "Siena": {
    "conf": "MC",
    "salary": 5,
    "owners": [
-    "Drew & Bob Derda",
-    "Kevin Baquero"
+    "Drew & Bob D.",
+    "Kevin B."
    ]
   },
   "Southeast Missouri": {
    "conf": "OVC",
    "salary": 5,
    "owners": [
-    "Joe Haines"
+    "Joe H."
    ]
   },
   "Southern": {
    "conf": "SWAC",
    "salary": 5,
    "owners": [
-    "Dennis Sedaille",
-    "Joe Haines",
-    "Jason Haines"
+    "Dennis S.",
+    "Joe H.",
+    "Jason H."
    ]
   },
   "St. John's": {
    "conf": "BE",
    "salary": 14,
    "owners": [
-    "Marty Costello",
-    "Mike LoMauro",
-    "Kevin Baquero"
+    "Marty C.",
+    "Mike L.",
+    "Kevin B."
    ]
   },
   "Tennessee": {
    "conf": "SEC",
    "salary": 15,
    "owners": [
-    "Sean Foy"
+    "Sean F."
    ]
   },
   "UC Irvine": {
    "conf": "BW",
    "salary": 9,
    "owners": [
-    "Connor & Conor"
+    "Connor C. & Conor G."
    ]
   },
   "UCLA": {
    "conf": "B10",
    "salary": 13,
    "owners": [
-    "Chris Costello",
-    "Sean Foy",
-    "Drew & Bob Derda",
-    "Mike LoMauro"
+    "Chris C.",
+    "Sean F.",
+    "Drew & Bob D.",
+    "Mike L."
    ]
   },
   "UNC Wilmington": {
    "conf": "CAA",
    "salary": 9,
    "owners": [
-    "Connor & Conor"
+    "Connor C. & Conor G."
    ]
   },
   "Vanderbilt": {
    "conf": "SEC",
    "salary": 15,
    "owners": [
-    "Mike LoMauro"
+    "Mike L."
    ]
   },
   "Vermont": {
    "conf": "AE",
    "salary": 7,
    "owners": [
-    "Mike Costello",
-    "Sean Foy",
-    "Marty Costello",
-    "Ben Derda",
-    "Sean Palamarik",
-    "Drew & Bob Derda"
+    "Mike C.",
+    "Sean F.",
+    "Marty C.",
+    "Ben D.",
+    "Sean P.",
+    "Drew & Bob D."
    ]
   },
   "Villanova": {
    "conf": "BE",
    "salary": 13,
    "owners": [
-    "Sean Foy"
+    "Sean F."
    ]
   },
   "Virginia Tech": {
    "conf": "ACC",
    "salary": 11,
    "owners": [
-    "Ben Derda"
+    "Ben D."
    ]
   },
   "Wagner": {
    "conf": "NEC",
    "salary": 5,
    "owners": [
-    "Mike Costello"
+    "Mike C."
    ]
   },
   "Weber St.": {
    "conf": "BSky",
    "salary": 6,
    "owners": [
-    "Dan Paustian"
+    "Dan P."
    ]
   },
   "West Virginia": {
    "conf": "B12",
    "salary": 12,
    "owners": [
-    "Sean Foy",
-    "Sean Palamarik"
+    "Sean F.",
+    "Sean P."
    ]
   },
   "Wisconsin": {
    "conf": "B10",
    "salary": 12,
    "owners": [
-    "Dennis Sedaille"
+    "Dennis S."
    ]
   },
   "Wofford": {
    "conf": "SC",
    "salary": 5,
    "owners": [
-    "Dan Paustian"
+    "Dan P."
    ]
   }
  },
@@ -39318,20 +39318,20 @@
   {
    "date": "2026-11-04",
    "totals": {
-    "Chris Costello": 6,
-    "Mike Costello": 6,
-    "Dennis Sedaille": 9,
-    "Joe Haines": 7,
-    "Sean Foy": 6,
-    "Connor & Conor": 7,
-    "Marty Costello": 4,
-    "Ben Derda": 6,
-    "Dan Paustian": 3,
-    "Jason Haines": 6,
-    "Sean Palamarik": 5,
-    "Drew & Bob Derda": 6,
-    "Mike LoMauro": 8,
-    "Kevin Baquero": 5
+    "Chris C.": 6,
+    "Mike C.": 6,
+    "Dennis S.": 9,
+    "Joe H.": 7,
+    "Sean F.": 6,
+    "Connor C. & Conor G.": 7,
+    "Marty C.": 4,
+    "Ben D.": 6,
+    "Dan P.": 3,
+    "Jason H.": 6,
+    "Sean P.": 5,
+    "Drew & Bob D.": 6,
+    "Mike L.": 8,
+    "Kevin B.": 5
    }
   }
  ],
