@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-04 16:11 EST",
+ "updated": "2026-11-04 16:15 EST",
  "season": 2027,
  "standings": [
   {
    "rank": 1,
    "entry": "Dennis S.",
    "total": 9,
-   "change": null,
-   "move": null,
+   "change": 0,
+   "move": 0,
    "salary": 100,
    "teams": [
     "SMU",
@@ -26,8 +26,8 @@
    "rank": 2,
    "entry": "Mike L.",
    "total": 8,
-   "change": null,
-   "move": null,
+   "change": 0,
+   "move": 0,
    "salary": 100,
    "teams": [
     "Clemson",
@@ -46,8 +46,8 @@
    "rank": 3,
    "entry": "Connor C. & Conor G.",
    "total": 7,
-   "change": null,
-   "move": null,
+   "change": 2,
+   "move": 3,
    "salary": 100,
    "teams": [
     "Louisville",
@@ -66,8 +66,8 @@
    "rank": 3,
    "entry": "Joe H.",
    "total": 7,
-   "change": null,
-   "move": null,
+   "change": 0,
+   "move": 0,
    "salary": 100,
    "teams": [
     "Duke",
@@ -86,8 +86,8 @@
    "rank": 5,
    "entry": "Ben D.",
    "total": 6,
-   "change": null,
-   "move": null,
+   "change": 2,
+   "move": 6,
    "salary": 100,
    "teams": [
     "Virginia Tech",
@@ -106,8 +106,8 @@
    "rank": 5,
    "entry": "Chris C.",
    "total": 6,
-   "change": null,
-   "move": null,
+   "change": 1,
+   "move": 1,
    "salary": 100,
    "teams": [
     "Louisville",
@@ -126,8 +126,8 @@
    "rank": 5,
    "entry": "Drew & Bob D.",
    "total": 6,
-   "change": null,
-   "move": null,
+   "change": 0,
+   "move": -1,
    "salary": 100,
    "teams": [
     "UCLA",
@@ -146,8 +146,8 @@
    "rank": 5,
    "entry": "Jason H.",
    "total": 6,
-   "change": null,
-   "move": null,
+   "change": 0,
+   "move": -1,
    "salary": 100,
    "teams": [
     "Michigan",
@@ -166,8 +166,8 @@
    "rank": 5,
    "entry": "Mike C.",
    "total": 6,
-   "change": null,
-   "move": null,
+   "change": 2,
+   "move": 6,
    "salary": 100,
    "teams": [
     "SMU",
@@ -186,8 +186,8 @@
    "rank": 5,
    "entry": "Sean F.",
    "total": 6,
-   "change": null,
-   "move": null,
+   "change": 1,
+   "move": 1,
    "salary": 100,
    "teams": [
     "North Carolina",
@@ -206,8 +206,8 @@
    "rank": 11,
    "entry": "Kevin B.",
    "total": 5,
-   "change": null,
-   "move": null,
+   "change": 0,
+   "move": -5,
    "salary": 100,
    "teams": [
     "Duke",
@@ -226,8 +226,8 @@
    "rank": 11,
    "entry": "Sean P.",
    "total": 5,
-   "change": null,
-   "move": null,
+   "change": 0,
+   "move": -5,
    "salary": 100,
    "teams": [
     "N.C. State",
@@ -246,8 +246,8 @@
    "rank": 13,
    "entry": "Marty C.",
    "total": 4,
-   "change": null,
-   "move": null,
+   "change": 1,
+   "move": 0,
    "salary": 100,
    "teams": [
     "Indiana",
@@ -266,8 +266,8 @@
    "rank": 14,
    "entry": "Dan P.",
    "total": 3,
-   "change": null,
-   "move": null,
+   "change": 2,
+   "move": 0,
    "salary": 100,
    "teams": [
     "Iowa",
@@ -54290,6 +54290,66 @@
  },
  "history": [
   {
+   "date": "2026-11-01",
+   "totals": {
+    "Chris C.": 0,
+    "Mike C.": 0,
+    "Dennis S.": 0,
+    "Joe H.": 0,
+    "Sean F.": 0,
+    "Connor C. & Conor G.": 0,
+    "Marty C.": 0,
+    "Ben D.": 0,
+    "Dan P.": 0,
+    "Jason H.": 0,
+    "Sean P.": 0,
+    "Drew & Bob D.": 0,
+    "Mike L.": 0,
+    "Kevin B.": 0
+   },
+   "rebuilt": true
+  },
+  {
+   "date": "2026-11-02",
+   "totals": {
+    "Chris C.": 0,
+    "Mike C.": 0,
+    "Dennis S.": 0,
+    "Joe H.": 0,
+    "Sean F.": 0,
+    "Connor C. & Conor G.": 0,
+    "Marty C.": 0,
+    "Ben D.": 0,
+    "Dan P.": 0,
+    "Jason H.": 0,
+    "Sean P.": 0,
+    "Drew & Bob D.": 1,
+    "Mike L.": 1,
+    "Kevin B.": 0
+   },
+   "rebuilt": true
+  },
+  {
+   "date": "2026-11-03",
+   "totals": {
+    "Chris C.": 5,
+    "Mike C.": 4,
+    "Dennis S.": 9,
+    "Joe H.": 7,
+    "Sean F.": 5,
+    "Connor C. & Conor G.": 5,
+    "Marty C.": 3,
+    "Ben D.": 4,
+    "Dan P.": 1,
+    "Jason H.": 6,
+    "Sean P.": 5,
+    "Drew & Bob D.": 6,
+    "Mike L.": 8,
+    "Kevin B.": 5
+   },
+   "rebuilt": true
+  },
+  {
    "date": "2026-11-04",
    "totals": {
     "Chris C.": 6,
@@ -54551,7 +54611,7 @@
      "won": null
     },
     "time": "10:00 PM",
-    "line": "LMU -8.5"
+    "line": "LMU -7.5"
    }
   ]
  },
