@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 13:23 EST",
+ "updated": "2026-11-04 13:24 EST",
  "season": 2027,
  "standings": [
   {
@@ -4935,6 +4935,6 @@
   }
  ],
  "warnings": [
-  "Couldn't match these pool teams to ESPN (fill in espn_id in data/teams.csv): Queens, Lindenwood, Southern Indiana, LSU New Orleans, St. Thomas"
+  "Couldn't match these pool teams to ESPN (fill in espn_id in data/teams.csv): Queens, Lindenwood, Southern Indiana"
  ]
 }
