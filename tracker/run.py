@@ -15,8 +15,16 @@ ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 
 
+def _pts_pair(score):
+    try:
+        a, b = (int(x) for x in score.split("-"))
+        return a, b
+    except (ValueError, AttributeError):
+        return None, None
+
+
 def todays_games(results, owners, today):
-    """Pool teams' games on `today` (Eastern date), one row per game even when both teams are picked."""
+    """Pool teams' games on `today` (an Eastern date), one row per game even when both teams are picked."""
     games = {}
     for team, b in results.items():
         for g in b.get("games", []):
@@ -26,15 +34,19 @@ def todays_games(results, owners, today):
                 "id": g["id"], "start": g.get("start", ""), "tbd": bool(g.get("time_tbd")),
                 "tv": g.get("tv", ""), "neutral": bool(g.get("neutral")), "completed": g["completed"],
                 "kind": g.get("kind", ""), "sides": {}})
+            mine, theirs = _pts_pair(g.get("score", ""))
             row["sides"][team] = {"pool": True, "home": bool(g.get("home")), "owners": owners.get(team, []),
-                                  "won": g.get("won"), "score": g.get("score", ""), "opp": g.get("opp_name", "")}
+                                  "won": g.get("won"), "score": g.get("score", ""), "opp": g.get("opp_name", ""),
+                                  "pts": g.get("pts", 0), "final": mine, "opp_final": theirs}
     out = []
     for row in games.values():
         sides = row.pop("sides")
         teams = list(sides.items())
         if len(teams) == 1:   # opponent isn't in anyone's lineup
             name, s = teams[0]
-            teams.append((s["opp"], {"pool": False, "home": not s["home"] and not row["neutral"], "owners": []}))
+            teams.append((s["opp"], {"pool": False, "home": not s["home"] and not row["neutral"], "owners": [],
+                                     "final": s.get("opp_final"),
+                                     "won": (not s["won"]) if s.get("won") is not None else None}))
         teams.sort(key=lambda kv: kv[1]["home"])           # away team first, home team second
         row["away"], row["home"] = ({"team": n, **s} for n, s in teams[:2])
         if row["start"] and not row["tbd"]:
@@ -130,6 +142,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
             owners.setdefault(t, []).append(e)
 
     data_today = todays_games(results, owners, today)
+    data_yesterday = todays_games(results, owners, (now.date() - dt.timedelta(days=1)).isoformat())
     if data_today["games"]:
         try:
             lines = get_lines(today)
@@ -147,6 +160,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
                           "owners": owners.get(t, [])} for t in picked},
         "history": history,
         "today": data_today,
+        "yesterday": data_yesterday,
         "warnings": sorted(set(warnings)),
     }
     docs.mkdir(exist_ok=True)

@@ -50,6 +50,12 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .own{font-size:12px;color:var(--accent);font-weight:500}
 .at{font-size:12px;color:var(--mute);margin-right:2px}
 .empty{padding:12px 14px;color:var(--mute)}
+.sc{font-variant-numeric:tabular-nums;color:var(--mute);min-width:1.6em}
+.sc.win{color:var(--ink);font-weight:700}
+.side.lost .nm{opacity:.75}
+.ptsb{font-size:12px;font-weight:600;padding:0 6px;border-radius:4px;background:var(--chip);color:var(--mute);font-variant-numeric:tabular-nums}
+.ptsb.pos{color:var(--good)}
+.gtime.dim{color:var(--mute);font-weight:400}
 .sm{display:none}
 @media (max-width:520px){.line{display:inline;margin-right:8px}.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.3em 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
@@ -86,6 +92,10 @@ svg text{fill:var(--mute);font-size:11px}
 <h2>Today's games <span class="h2sub" id="today-label"></span></h2>
 <div class="card" id="today"></div>
 <p class="sub">From this morning's update, so it won't show live scores or line moves. Times are Eastern. Spreads come from ESPN and are missing for games without a posted line.</p>
+
+<h2>Yesterday's games <span class="h2sub" id="yesterday-label"></span></h2>
+<div class="card" id="yesterday"></div>
+<p class="sub">Final scores with the pool points each picked team earned.</p>
 
 <h2>Points over time</h2>
 <div class="card"><div id="chart"></div></div>
@@ -124,21 +134,28 @@ D.standings.forEach(s => {
   sb.append(tr, dr);
 });
 
-// today's games
-(function today() {
-  const td = D.today || {games: []};
-  $('#today-label').textContent = td.label ? '· ' + td.label : '';
-  const el = $('#today');
-  if (!td.games.length) { el.innerHTML = '<div class="empty">No picked teams play today.</div>'; return; }
+// game lists (today = upcoming from this morning, yesterday = finals)
+function gameList(td, el, labelEl, emptyMsg, finals) {
+  td = td || {games: []};
+  labelEl.textContent = td.label ? '· ' + td.label : '';
+  if (!td.games.length) { el.innerHTML = `<div class="empty">${emptyMsg}</div>`; return; }
   const side = (s, prefix, g) => {
-    const res = g.completed && s.pool ? (s.won ? ' <span class="up">W</span> ' : ' <span class="down">L</span> ') + esc(s.score) : '';
     const own = s.pool ? `<span class="own">${esc(s.owners.join(', '))}</span>` : '';
-    return `<div class="side${s.pool ? ' pool' : ''}">${prefix}<span class="nm">${esc(s.team)}</span>${res}${own}</div>`;
+    let sc = '', pts = '';
+    if (g.completed && s.final != null) sc = `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>`;
+    if (g.completed && s.pool) pts = `<span class="ptsb${s.pts > 0 ? ' pos' : ''}">${s.pts > 0 ? '+' + s.pts : 0}</span>`;
+    return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}">${prefix}<span class="nm">${esc(s.team)}</span>${sc}${pts}${own}</div>`;
   };
-  el.innerHTML = td.games.map(g => `<div class="game"><div class="gtime">${g.completed ? 'Final' : esc(g.time)}</div><div>` +
-    side(g.away, '', g) + side(g.home, `<span class="at">${g.neutral ? 'vs' : 'at'}</span>`, g) +
-    `</div><div class="gtv">${g.line ? `<span class="line">${esc(g.line)}</span>` : ''}${esc(g.tv || '')}</div></div>`).join('');
-})();
+  el.innerHTML = td.games.map(g => {
+    const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);
+    const right = finals ? '' : (g.line ? `<span class="line">${esc(g.line)}</span>` : '') + esc(g.tv || '');
+    return `<div class="game"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div><div>` +
+      side(g.away, '', g) + side(g.home, `<span class="at">${g.neutral ? 'vs' : 'at'}</span>`, g) +
+      `</div><div class="gtv">${right}</div></div>`;
+  }).join('');
+}
+gameList(D.today, $('#today'), $('#today-label'), 'No picked teams play today.', false);
+gameList(D.yesterday, $('#yesterday'), $('#yesterday-label'), 'No picked teams played yesterday.', true);
 
 // teams: sortable table. Each column: label, sort value, cell html, numeric?, first-click direction
 const z = b => b || {nonconf_w:0, nonconf_l:0, conf_w:0, conf_l:0, ct_w:0, ct_l:0, pts_reg:0, pts_ct:0, pts_ncaa:0, total:0, ncaa_w:[], games:[]};
@@ -168,7 +185,7 @@ const rows = Object.keys(I).map(t => {
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
   dr.innerHTML = `<td colspan="${COLS.length}"><div class="scroll"><table class="games"><tbody>` +
-    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${g.date}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td>${esc(g.opp_name)}</td><td>${kinds[g.kind]}</td><td class="n">${g.pts ? '+' + g.pts : ''}</td></tr>`).join('') : '<tr><td>No completed games yet</td></tr>') +
+    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${g.date}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td>${esc(g.opp_name)}</td><td>${kinds[g.kind]}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td></tr>`).join('') : '<tr><td>No completed games yet</td></tr>') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   return {t, b, i, tr, dr};

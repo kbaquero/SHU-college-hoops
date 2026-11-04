@@ -150,6 +150,15 @@ class TodaysGames(unittest.TestCase):
         self.assertEqual(_line([{"spread": -3.0}]), "Spread -3")
         self.assertEqual(_line(None), "")
 
+    def test_final_scores_and_points_for_yesterday(self):
+        from tracker.run import todays_games
+        res = {"Navy": {"games": [{"id": "9", "date": "2026-11-03", "start": "2026-11-03T19:00:00-05:00", "time_tbd": False,
+                                   "home": True, "neutral": False, "tv": "", "completed": True, "won": False,
+                                   "score": "39-91", "opp_name": "George Washington", "kind": "nonconf", "pts": 0}]}}
+        g = todays_games(res, {"Navy": ["Kevin B."]}, "2026-11-03")["games"][0]
+        self.assertEqual((g["home"]["team"], g["home"]["final"], g["home"]["pts"], g["home"]["won"]), ("Navy", 39, 0, False))
+        self.assertEqual((g["away"]["team"], g["away"]["final"], g["away"]["won"], g["away"]["pool"]), ("George Washington", 91, True, False))
+
     def test_overall_record_counts_every_game(self):
         games = [g("1", "2026-11-05", True, "2"), g("2", "2027-01-05", False, "153"),
                  g("3", "2027-03-20", True, "2", 3, "Men's Basketball Championship - 1st Round", seed="4"),
