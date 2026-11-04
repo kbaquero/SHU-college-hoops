@@ -50,7 +50,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .at{font-size:12px;color:var(--mute);margin-right:2px}
 .empty{padding:12px 14px;color:var(--mute)}
 .sm{display:none}
-@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:62px 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
+@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:62px 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
@@ -131,7 +131,7 @@ D.standings.forEach(s => {
   if (!td.games.length) { el.innerHTML = '<div class="empty">No picked teams play today.</div>'; return; }
   const side = (s, prefix, g) => {
     const res = g.completed && s.pool ? (s.won ? ' <span class="up">W</span> ' : ' <span class="down">L</span> ') + esc(s.score) : '';
-    const own = s.pool ? `<span class="own">${s.owners.length} ${s.owners.length === 1 ? 'entry' : 'entries'}: ${esc(s.owners.join(', '))}</span>` : '';
+    const own = s.pool ? `<span class="own">${esc(s.owners.join(', '))}</span>` : '';
     return `<div class="side${s.pool ? ' pool' : ''}">${prefix}<span class="nm">${esc(s.team)}</span>${res}${own}</div>`;
   };
   el.innerHTML = td.games.map(g => `<div class="game"><div class="gtime">${g.completed ? 'Final' : esc(g.time)}</div><div>` +
