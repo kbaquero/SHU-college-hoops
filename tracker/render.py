@@ -64,7 +64,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <h2>Standings</h2>
 <div class="card scroll"><table id="standings"><thead><tr>
-<th class="rank">#</th><th>Entry</th><th class="n">Points</th><th class="n">Since last</th><th class="n">Salary</th><th>Top team</th>
+<th class="rank">#</th><th>Entry</th><th class="n">Points</th><th class="n">Since last</th><th>Top team</th>
 </tr></thead><tbody></tbody></table></div>
 
 <h2>Points over time</h2>
@@ -94,9 +94,9 @@ const sb = $('#standings tbody');
 D.standings.forEach(s => {
   const top = s.teams[0];
   const tr = document.createElement('tr'); tr.className = 'entry-row';
-  tr.innerHTML = `<td class="rank">${s.rank}</td><td><b>${esc(s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${s.salary}</td><td>${top ? esc(top) + ' <span class="chip">' + (T[top]?.total ?? 0) + '</span>' : ''}</td>`;
+  tr.innerHTML = `<td class="rank">${s.rank}</td><td><b>${esc(s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td>${top ? esc(top) + ' <span class="chip">' + (T[top]?.total ?? 0) + '</span>' : ''}</td>`;
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
-  dr.innerHTML = `<td colspan="6"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
+  dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
     s.teams.map(t => { const b = T[t]; return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${rec(b)}</td><td class="n">${b ? b.conf_w + '-' + b.conf_l : '–'}</td><td class="n">${b ? b.pts_reg : 0}</td><td class="n">${b ? b.pts_ct : 0}</td><td class="n">${b ? b.pts_ncaa : 0}</td><td class="n"><b>${b ? b.total : 0}</b></td></tr>`; }).join('') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
