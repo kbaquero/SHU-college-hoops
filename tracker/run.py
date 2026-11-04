@@ -70,6 +70,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
     by_name = {t["team"]: t for t in teams}
     conf_of = {t["espn_id"]: t["conf"] for t in teams if t.get("espn_id")}
     d1_ids = set(conf_of)
+    name_of = {t["espn_id"]: t["team"] for t in teams if t.get("espn_id")}
 
     entries, problems = load_entries(teams)
     warnings += problems
@@ -89,6 +90,8 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
             games = None
         if games is None:
             continue
+        for g in games:   # league-list name for D-I opponents ("Loyola Marymount"), ESPN's short name otherwise
+            g["opp_name"] = name_of.get(g["opp_id"]) or g.get("opp_short") or g["opp_name"]
         b = score_team(t, games, conf_of, d1_ids, seeds.get(name))
         warnings += b.pop("warnings")
         results[name] = b

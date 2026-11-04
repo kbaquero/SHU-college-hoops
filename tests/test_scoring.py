@@ -202,6 +202,8 @@ class Pipeline(unittest.TestCase):
                       now=dt.datetime(2026, 11, 10, 6, 0), docs=tmp)
             self.assertEqual(d["standings"][0]["entry"], "Kevin")
             self.assertEqual(d["teams"]["Duke"]["total"], 1 + 2)
+            vgames = [x for x in d["teams"]["Duke"]["games"] if x["opp_id"] == ids["Virginia"]]
+            self.assertEqual(vgames[0]["opp_name"], "Virginia")   # league-list name, not ESPN's long name
             self.assertEqual(d["standings"][0]["total"], 10 * 1 + 2)
             html = (tmp / "index.html").read_text()
             self.assertIn("SHU College Hoops Pool", html)

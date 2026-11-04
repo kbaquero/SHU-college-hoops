@@ -102,6 +102,7 @@ def parse_event(ev, team_id, season_type):
         "won": bool(won) if completed else None,
         "opp_id": str(opp.get("id") or opp.get("team", {}).get("id")),
         "opp_name": opp.get("team", {}).get("displayName") or opp.get("team", {}).get("location", "?"),
+        "opp_short": opp.get("team", {}).get("location") or opp.get("team", {}).get("shortDisplayName") or "",
         "score": f"{my_score}-{opp_score}" if completed else "",
         "headline": notes,
         "conf_flag": comp.get("conferenceCompetition"),
