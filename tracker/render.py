@@ -50,6 +50,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .side .nm{font-weight:400;color:var(--mute)}
 .side.pool .nm{font-weight:650;color:var(--ink)}
 .own{font-size:12px;color:var(--accent);font-weight:500}
+.own .sep{color:var(--mute);font-weight:400}
 .at{font-size:12px;color:var(--mute);margin-right:2px}
 .empty{padding:12px 14px;color:var(--mute)}
 .pickedby{padding:8px 12px 4px;font-size:12px;color:var(--mute);white-space:normal}
@@ -128,6 +129,7 @@ $('#updated').textContent = 'Updated ' + D.updated;
 if (D.warnings.length) $('#warnings').innerHTML = '<div class="warn"><b>Needs attention</b><ul>' + D.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>';
 
 const T = D.teams, I = D.team_info;
+const ownList = a => a.map(esc).join('<span class="sep">, </span>');   // names in accent, commas muted
 const wl = b => b ? [b.w ?? (b.nonconf_w + b.conf_w + b.ct_w), b.l ?? (b.nonconf_l + b.conf_l + b.ct_l)] : [0, 0];
 const rec = b => b ? wl(b).join('-') : '–';
 const roundName = {playin:'Play-in', r64:'R64', r32:'R32', s16:'S16', e8:'E8', f4:'F4', final:'Title'};
@@ -154,7 +156,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   labelEl.textContent = td.label ? '· ' + td.label : '';
   if (!td.games.length) { el.innerHTML = `<div class="empty">${emptyMsg}</div>`; return; }
   const side = (s, prefix, g) => {
-    const own = s.pool ? `<span class="own">${esc(s.owners.join(', '))}</span>` : '';
+    const own = s.pool ? `<span class="own">${ownList(s.owners)}</span>` : '';
     let sc = '', pts = '';
     if (g.completed && s.final != null) sc = `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>`;
     if (g.completed && s.pool) pts = `<span class="ptsb${s.pts > 0 ? ' pos' : ''}">${s.pts > 0 ? '+' + s.pts : 0}</span>`;
@@ -198,7 +200,7 @@ const rows = Object.keys(I).map(t => {
   tr.innerHTML = COLS.map(c => `<td${c.num === false ? '' : ' class="n"'}>${c.html(t, b, i)}</td>`).join('');
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
-  dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${esc(i.owners.join(', ')) || 'nobody'}</span></div><div class="scroll"><table class="games"><tbody>` +
+  dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${i.owners.length ? ownList(i.owners) : '<span class="sep">nobody</span>'}</span></div><div class="scroll"><table class="games"><tbody>` +
     (gs.length ? gs.slice().reverse().map(g => `<tr><td>${g.date}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td>${esc(g.opp_name)}</td><td>${kinds[g.kind]}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td></tr>`).join('') : '<tr><td>No completed games yet</td></tr>') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
