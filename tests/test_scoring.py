@@ -403,3 +403,36 @@ class MorningCutoff(unittest.TestCase):
         finally:
             shutil.copytree(bak, ROOT / "data", dirs_exist_ok=True)
             shutil.rmtree(tmp); shutil.rmtree(bak)
+
+
+class ScoreboardOverridesStaleSchedule(unittest.TestCase):
+    def test_full_run_uses_scoreboard_final(self):
+        from tracker import run as R
+        tmp, bak = Path(tempfile.mkdtemp()), Path(tempfile.mkdtemp())
+        shutil.copytree(ROOT / "data", bak, dirs_exist_ok=True)
+        try:
+            rows = TM.load_teams()
+            for i, r in enumerate(rows):
+                r["espn_id"] = str(1000 + i)
+            TM.save_teams(rows)
+            ids = {r["team"]: r["espn_id"] for r in rows}
+            (ROOT / "data" / "entries.csv").write_text("entry,team\n" + "".join(f"Kevin,{t}\n" for t in
+                ["Duke", "Michigan", "Kansas St.", "St. John's", "Florida", "Howard", "Navy", "Siena", "Mercyhurst", "SIUE"]))
+
+            def sched(tid):
+                out = [g("y" + tid, "2026-11-03", True, "999")]
+                if tid == ids["SIUE"]:   # the team schedule still thinks tonight's game is in progress
+                    out.append({**g("t1", "2026-11-04", None, "999"), "completed": False, "home": True})
+                return out
+            board = {"t1": {"state": "post", "completed": True, "line": "", "detail": "Final/OT", "headline": "",
+                            "scores": {ids["SIUE"]: 85, "999": 61}, "winners": {ids["SIUE"]: True, "999": False}, "records": {}}}
+            d = R.run(get_schedule=sched, get_team_list=lambda: [], get_lines=lambda day: board if day == "2026-11-04" else {},
+                      now=dt.datetime(2026, 11, 4, 21, 13), docs=tmp)
+            game = d["today"]["games"][0]
+            siue = game["home"]
+            self.assertEqual((game["completed"], game["final_label"], siue["final"], siue["pts"], siue["record"]),
+                             (True, "Final OT", 85, 1, "2-0"))
+            self.assertEqual(d["teams"]["SIUE"]["total"], 1)   # still not in the standings until tomorrow
+        finally:
+            shutil.copytree(bak, ROOT / "data", dirs_exist_ok=True)
+            shutil.rmtree(tmp); shutil.rmtree(bak)

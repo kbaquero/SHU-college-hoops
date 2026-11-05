@@ -203,6 +203,8 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
                         side["record"] = _bump(side["record"], side.get("won"))
                 else:
                     side["record"] = (info.get("records") or {}).get(side.get("id", ""), "")
+        if block is data_today and isinstance(board, dict):
+            apply_board(block["games"], {k: v for k, v in board.items() if isinstance(v, dict)}, now)   # schedules can lag; the scoreboard is fresher
 
     data = {
         "updated": now.strftime("%Y-%m-%d %H:%M %Z"),
@@ -238,24 +240,14 @@ def _clock(detail):
     return "Halftime" if d.lower() in ("half", "halftime") else d or "In progress"
 
 
-def update_scores(get_board=None, now=None, docs=DOCS):
-    """Evening update: refresh only Today's games (finals, scores, preview points, latest pregame spread).
-    Standings and everything else keep their morning numbers."""
-    get_board = get_board or espn.day_board
-    now = now or dt.datetime.now(ZoneInfo("America/New_York"))
-    path = docs / "data.json"
-    if not path.exists():
-        return None
-    data = json.loads(path.read_text())
-    td = data.get("today") or {}
-    if not td.get("games"):
-        return data
-    board = get_board(td["date"])   # the morning's date, so 12-1 AM runs still finish off "today"
+def apply_board(games, board, now):
+    """Apply ESPN's live scoreboard to Today's games: newer pregame lines, in-progress snapshots,
+    and finals (scores, points preview, records). Returns True if anything changed."""
     teams = load_teams()
     id_of = {t["team"]: t["espn_id"] for t in teams if t.get("espn_id")}
     d1 = set(id_of.values())
     changed = False
-    for g in td["games"]:
+    for g in games:
         info = board.get(g["id"])
         if not info:
             continue
@@ -296,6 +288,23 @@ def update_scores(get_board=None, now=None, docs=DOCS):
                 s["pts"] = game_points(g.get("kind"), won, g.get("round"), info.get("headline", ""), opp in d1)
         g["completed"] = True
         changed = True
+    return changed
+
+
+def update_scores(get_board=None, now=None, docs=DOCS):
+    """Evening update: refresh only Today's games (finals, scores, preview points, latest pregame spread).
+    Standings and everything else keep their morning numbers."""
+    get_board = get_board or espn.day_board
+    now = now or dt.datetime.now(ZoneInfo("America/New_York"))
+    path = docs / "data.json"
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
+    td = data.get("today") or {}
+    if not td.get("games"):
+        return data
+    board = get_board(td["date"])   # the morning's date, so 12-1 AM runs still finish off "today"
+    changed = apply_board(td["games"], board, now)
     if changed:
         data["scores_updated"] = now.strftime("%-I:%M %p")
         path.write_text(json.dumps(data, indent=1))
