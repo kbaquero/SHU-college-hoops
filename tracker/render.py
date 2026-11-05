@@ -37,7 +37,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
-@media (max-width:350px){#standings>tbody>tr.entry-row>td{font-size:13px}#standings .tot{font-size:14px}#standings .mv{margin-left:3px}}
+@media (max-width:350px){#standings>tbody>tr.entry-row>td{font-size:13px}#standings .tot{font-size:14px}#standings .mvc{width:2.1em;padding-left:4px}}
 .notes{font-size:13px;color:var(--mute);margin-top:10px;line-height:1.5}
 .notes p{margin:0 0 8px}
 .notes .nh{margin:12px 0 4px;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
@@ -52,7 +52,9 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #ptr.busy #ptr-icon{animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 #standings>thead th:nth-child(n+3),#standings>tbody>tr.entry-row>td:nth-child(n+3){text-align:center}
-.mv{font-size:11px;font-weight:600;margin-left:5px;font-variant-numeric:tabular-nums;vertical-align:1px}
+.mv{font-size:11px;font-weight:600;font-variant-numeric:tabular-nums;vertical-align:1px}
+.rk{display:inline-block;min-width:1.3em;text-align:right}
+.mvc{display:inline-block;width:2.2em;padding-left:5px;white-space:nowrap}
 .h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
 #yesterday .game{grid-template-columns:48px 1fr}
 .game{display:grid;grid-template-columns:84px 1fr;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
@@ -98,14 +100,13 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .ptsb.pos{color:var(--good)}
 .gtime.dim{color:var(--mute);font-weight:400}
 .sm{display:none}
-@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.6em 1fr}#yesterday .game{grid-template-columns:3.2em 1fr}}
+@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:48px}#standings>thead th:nth-child(4){width:34px}#standings>thead th:nth-child(5){width:50px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.6em 1fr}#yesterday .game{grid-template-columns:3.2em 1fr}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
 .entry-row{cursor:pointer}
 .entry-row:hover td{background:var(--chip)}
-.entry-row td:first-child::before{content:"▸ ";color:var(--mute)}
-.entry-row.open td:first-child::before{content:"▾ "}
+.entry-row.open>td{background:var(--chip)}
 .detail td{background:var(--chip);padding:0}
 #standings .detail .scroll{max-width:min(926px,calc(100vw - 34px - env(safe-area-inset-left) - env(safe-area-inset-right)))}
 .detail table th,.detail table td{padding:6px 12px;font-size:13px}
@@ -252,7 +253,7 @@ const sb = $('#standings tbody');
 D.standings.forEach(s => {
   const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
   const tr = document.createElement('tr'); tr.className = 'entry-row';
-  tr.innerHTML = `<td class="rank">${s.rank}${mv(s.move)}</td><td><b>${esc(s.full || s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
+  tr.innerHTML = `<td class="rank"><span class="rk">${s.rank}</span><span class="mvc">${mv(s.move)}</span></td><td><b>${esc(s.full || s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
     s.teams.map(t => { const b = T[t]; return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${rec(b)}</td><td class="n">${b ? b.conf_w + '-' + b.conf_l : '–'}</td><td class="n">${b ? b.pts_reg : 0}</td><td class="n">${b ? b.pts_ct : 0}</td><td class="n">${b ? b.pts_ncaa : 0}</td><td class="n"><b>${b ? b.total : 0}</b></td></tr>`; }).join('') +
