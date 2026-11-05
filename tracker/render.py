@@ -74,6 +74,9 @@ h2.withnote{margin-bottom:2px}
 .game{display:grid;grid-template-columns:84px 1fr;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
 .game:last-child{border-bottom:0}
 .gtime{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px;white-space:nowrap}
+.gsite,.gevent{font-size:11px;color:var(--mute);line-height:1.3;margin-top:4px;overflow-wrap:anywhere}
+.gevent{color:var(--ink);font-weight:500}
+.gsite+.gevent{margin-top:1px}
 .gline{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:6px}
 .gtv{color:var(--mute);font-size:12px;margin-top:2px}
 .gline,.gtv{overflow-wrap:anywhere}
@@ -302,7 +305,8 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? esc(g.final_label || 'Final') : finals ? 'No result'
       : g.live ? `<span class="lvclock">${esc(g.live.detail)}</span><span class="lvasof">as of ${esc(g.live.as_of)}</span>` : esc(g.time);
-    const under = (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
+    const where = (g.neutral ? '<div class="gsite">Neutral site</div>' : '') + (g.event ? `<div class="gevent">${esc(g.event)}</div>` : '');
+    const under = where + (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
     const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
     const type = label ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(label)}</span></div>` : '';
     return `<div class="game"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +

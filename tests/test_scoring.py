@@ -472,3 +472,13 @@ class SharePreview(unittest.TestCase):
         tie = {"standings": [{"rank": 1, "entry": e, "total": 3} for e in ["A", "B", "C", "D"]]}
         self.assertEqual(share_description(tie), "Leaders: A & B +2 (3 pts)")
         self.assertEqual(share_description({}), "Season-long standings for the SHU College Hoops Pool")
+
+
+class EventLabels(unittest.TestCase):
+    def test_event_label(self):
+        from tracker.run import event_label
+        self.assertEqual(event_label("Big East Tournament - Quarterfinal", "conf_tourney"), "Big East Tournament · Quarterfinal")
+        self.assertEqual(event_label("Champions Classic", "nonconf"), "Champions Classic")
+        self.assertEqual(event_label("Men's Basketball Championship - East Region - Sweet 16", "ncaa"), "East Region")
+        self.assertEqual(event_label("Men's Basketball Championship - Final Four", "ncaa"), "")
+        self.assertEqual(event_label("", "conf"), "")

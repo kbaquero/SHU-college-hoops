@@ -2,7 +2,7 @@
 
 Usage:  python -m tracker.run            (normal run against ESPN)
 """
-import json, sys, datetime as dt
+import json, re, sys, datetime as dt
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -13,6 +13,19 @@ from .render import render_html
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
+
+
+def event_label(headline, kind=""):
+    """Short event name for the game lists, from ESPN's game note:
+    'Big East Tournament - Quarterfinal' -> 'Big East Tournament · Quarterfinal'
+    'Men's Basketball Championship - East Region - Sweet 16' -> 'East Region' (the round is already on the tag)."""
+    parts = [p.strip() for p in (headline or "").split(" | ")[0].split(" - ") if p.strip()]
+    if not parts:
+        return ""
+    if kind == "ncaa":
+        parts = [p for p in parts if not re.search(r"men's basketball championship|ncaa", p, re.I)
+                 and ncaa_round(p) is None]
+    return " · ".join(parts)
 
 
 def _pts_pair(score):
@@ -34,7 +47,8 @@ def todays_games(results, owners, today):
                 "id": g["id"], "start": g.get("start", ""), "tbd": bool(g.get("time_tbd")),
                 "tv": g.get("tv", ""), "neutral": bool(g.get("neutral")), "completed": g["completed"],
                 "kind": g.get("kind", ""), "round": g.get("round"),
-                "final_label": espn.final_label(g.get("status_detail", "")), "sides": {}})
+                "final_label": espn.final_label(g.get("status_detail", "")),
+                "event": event_label(g.get("headline", ""), g.get("kind", "")), "sides": {}})
             mine, theirs = _pts_pair(g.get("score", ""))
             row["sides"][team] = {"pool": True, "home": bool(g.get("home")), "owners": owners.get(team, []),
                                   "won": g.get("won"), "score": g.get("score", ""), "opp": g.get("opp_name", ""),
@@ -256,6 +270,9 @@ def apply_board(games, board, now):
             continue
         if info.get("state") == "pre" and info.get("line") and info["line"] != g.get("line"):
             g["line"] = info["line"]          # newer pregame line; frozen once the game tips
+            changed = True
+        if not g.get("event") and info.get("headline"):
+            g["event"] = event_label(info["headline"], g.get("kind", ""))
             changed = True
         if g.get("completed"):
             continue
