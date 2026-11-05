@@ -4522,7 +4522,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -4532,10 +4532,9 @@
      "home": false,
      "owners": [],
      "id": "2693",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 59
+     "final": 65,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Southeast Missouri",
@@ -4544,22 +4543,17 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Webster",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 90,
      "opp_final": null,
      "opp_id": "2693",
-     "record": "1-0",
-     "live": 78
+     "record": "2-0"
     },
     "time": "7:30 PM",
-    "line": "",
-    "live": {
-     "detail": "3:52 2nd",
-     "as_of": "9:20 PM"
-    }
+    "line": ""
    },
    {
     "id": "401925893",
@@ -4567,7 +4561,7 @@
     "tbd": false,
     "tv": "",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -4577,10 +4571,9 @@
      "home": false,
      "owners": [],
      "id": "3153",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 34
+     "final": 71,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Norfolk St.",
@@ -4589,22 +4582,17 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Randolph",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 78,
      "opp_final": null,
      "opp_id": "3153",
-     "record": "1-0",
-     "live": 41
+     "record": "2-0"
     },
     "time": "8:00 PM",
-    "line": "",
-    "live": {
-     "detail": "18:35 2nd",
-     "as_of": "9:20 PM"
-    }
+    "line": ""
    },
    {
     "id": "401917512",
@@ -4612,7 +4600,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -4623,14 +4611,14 @@
      "owners": [
       "Jason H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Saint Mary's",
      "pts": 0,
-     "final": null,
+     "final": 64,
      "opp_final": null,
      "opp_id": "2608",
-     "record": "1-0"
+     "record": "1-1"
     },
     "home": {
      "team": "Saint Mary's",
@@ -4640,14 +4628,14 @@
       "Dennis S.",
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "North Dakota St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 105,
      "opp_final": null,
      "opp_id": "2449",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "10:00 PM",
     "line": "SMC -13.5"
@@ -4658,7 +4646,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -4669,14 +4657,14 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Loyola Marymount",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 96,
      "opp_final": null,
      "opp_id": "2351",
-     "record": "1-0"
+     "record": "2-0"
     },
     "home": {
      "team": "Loyola Marymount",
@@ -4684,9 +4672,9 @@
      "home": true,
      "owners": [],
      "id": "2351",
-     "final": null,
-     "won": null,
-     "record": "0-0"
+     "final": 95,
+     "won": false,
+     "record": "0-1"
     },
     "time": "10:00 PM",
     "line": "LMU -5.5"
@@ -5069,5 +5057,6 @@
    }
   ]
  },
- "warnings": []
+ "warnings": [],
+ "scores_updated": "4:22 AM"
 }
