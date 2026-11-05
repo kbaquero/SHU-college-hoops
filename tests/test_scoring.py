@@ -353,3 +353,18 @@ class EveningLive(unittest.TestCase):
             self.assertEqual(d["today"]["games"][0]["home"]["record"], "3-0")
         finally:
             (ROOT / "data" / "teams.csv").write_bytes(bak)
+
+
+class Overtime(unittest.TestCase):
+    def test_labels(self):
+        from tracker.espn import final_label
+        from tracker.run import _clock
+        self.assertEqual([final_label(x) for x in ["Final", "Final/OT", "Final/2OT", "Final/3OT", ""]],
+                         ["Final", "Final OT", "Final 2OT", "Final 3OT", "Final"])
+        self.assertEqual((_clock("2:31 - OT"), _clock("0:45 - 2OT")), ("2:31 OT", "0:45 2OT"))
+
+    def test_parse_keeps_status_detail(self):
+        ev = {"id": "7", "date": "2026-11-05T00:00Z", "competitions": [{"status": {"type": {"completed": True, "shortDetail": "Final/2OT"}},
+              "competitors": [{"id": "150", "winner": True, "score": "99", "team": {"id": "150"}},
+                              {"id": "2", "winner": False, "score": "97", "team": {"id": "2"}}]}]}
+        self.assertEqual(parse_event(ev, "150", 2)["status_detail"], "Final/2OT")

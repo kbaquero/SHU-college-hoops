@@ -33,7 +33,8 @@ def todays_games(results, owners, today):
             row = games.setdefault(g["id"], {
                 "id": g["id"], "start": g.get("start", ""), "tbd": bool(g.get("time_tbd")),
                 "tv": g.get("tv", ""), "neutral": bool(g.get("neutral")), "completed": g["completed"],
-                "kind": g.get("kind", ""), "round": g.get("round"), "sides": {}})
+                "kind": g.get("kind", ""), "round": g.get("round"),
+                "final_label": espn.final_label(g.get("status_detail", "")), "sides": {}})
             mine, theirs = _pts_pair(g.get("score", ""))
             row["sides"][team] = {"pool": True, "home": bool(g.get("home")), "owners": owners.get(team, []),
                                   "won": g.get("won"), "score": g.get("score", ""), "opp": g.get("opp_name", ""),
@@ -224,7 +225,7 @@ def _bump(record, won):
 
 def _clock(detail):
     """ESPN's in-game status, tidied: '8:12 - 2nd Half' -> '8:12 2nd', 'Halftime' stays."""
-    d = (detail or "").replace(" - ", " ").replace(" Half", "").strip()
+    d = (detail or "").replace(" - ", " ").replace(" Half", "").replace("1st OT", "OT").strip()
     return "Halftime" if d.lower() in ("half", "halftime") else d or "In progress"
 
 
@@ -272,6 +273,7 @@ def update_scores(get_board=None, now=None, docs=DOCS):
         if g.get("kind") == "ncaa" and not g.get("round"):
             g["round"] = ncaa_round(info.get("headline", ""))
         g.pop("live", None)
+        g["final_label"] = espn.final_label(info.get("detail", ""))
         for k, s in enumerate(sides):
             me, opp = ids[k], ids[1 - k]
             s.pop("live", None)

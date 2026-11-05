@@ -255,7 +255,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
       `<span class="at">${prefix}</span><span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
   };
   el.innerHTML = td.games.map(g => {
-    const when = g.completed ? 'Final' : finals ? 'No result'
+    const when = g.completed ? esc(g.final_label || 'Final') : finals ? 'No result'
       : g.live ? `<span class="lvclock">${esc(g.live.detail)}</span><span class="lvasof">as of ${esc(g.live.as_of)}</span>` : esc(g.time);
     const under = (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
     const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
@@ -296,7 +296,7 @@ const rows = Object.keys(I).map(t => {
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
   dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${i.owners.length ? ownList(i.owners) : '<span class="sep">nobody</span>'}</span></div><div class="scroll"><table class="games"><thead><tr><th>Date</th><th>Opponent</th><th>Result</th><th class="n">Pts</th><th>Type</th></tr></thead><tbody>` +
-    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${+g.date.slice(5, 7)}/${+g.date.slice(8, 10)}</td><td>${g.home === false && !g.neutral ? '<span class="at">at</span> ' : g.neutral ? '<span class="at">vs</span> ' : ''}${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${g.kind === 'ncaa' && roundName[g.round] ? roundName[g.round] : kinds[g.kind]}</td></tr>`).join('') : '<tr><td colspan="5" style="white-space:normal">No completed games yet</td></tr>') +
+    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${+g.date.slice(5, 7)}/${+g.date.slice(8, 10)}</td><td>${g.home === false && !g.neutral ? '<span class="at">at</span> ' : g.neutral ? '<span class="at">vs</span> ' : ''}${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}${/OT/i.test(g.status_detail || '') ? ` <span class="sub">${esc((g.status_detail.match(/\d*OT/i) || ['OT'])[0])}</span>` : ''}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${g.kind === 'ncaa' && roundName[g.round] ? roundName[g.round] : kinds[g.kind]}</td></tr>`).join('') : '<tr><td colspan="5" style="white-space:normal">No completed games yet</td></tr>') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   return {t, b, i, tr, dr};

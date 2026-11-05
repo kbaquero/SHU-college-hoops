@@ -1,5 +1,5 @@
 """Thin client for ESPN's public (unofficial) college basketball JSON endpoints."""
-import json, time, urllib.request, urllib.error
+import json, re, time, urllib.request, urllib.error
 import datetime as dt
 from zoneinfo import ZoneInfo
 
@@ -16,6 +16,12 @@ def _when(iso):
         return t.date().isoformat(), t.isoformat()
     except (ValueError, AttributeError):
         return (iso or "")[:10], ""
+
+
+def final_label(detail):
+    """'Final/OT' -> 'Final OT', 'Final/2OT' -> 'Final 2OT', anything else -> 'Final'."""
+    m = re.search(r"(\d*)\s*OT\b", detail or "", re.I)
+    return f"Final {m.group(1)}OT" if m else "Final"
 
 
 def _tv(comp):
@@ -106,6 +112,7 @@ def parse_event(ev, team_id, season_type):
         "score": f"{my_score}-{opp_score}" if completed else "",
         "headline": notes,
         "conf_flag": comp.get("conferenceCompetition"),
+        "status_detail": status.get("type", {}).get("shortDetail") or status.get("type", {}).get("detail") or "",
         "seed": seed,
     }
 
