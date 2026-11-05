@@ -172,6 +172,7 @@ def day_board(day):
             "line": _line(comp.get("odds")), "records": recs, "scores": scores, "winners": winners,
             "state": stype.get("state", ""),            # pre / in / post
             "completed": bool(stype.get("completed")),
+            "detail": stype.get("shortDetail") or stype.get("detail") or "",   # e.g. "Halftime", "8:12 - 2nd Half"
             "headline": " | ".join(n.get("headline", "") for n in comp.get("notes", []) if n.get("headline")),
         }
     return out

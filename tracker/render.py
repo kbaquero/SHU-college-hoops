@@ -54,6 +54,10 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .gtv{color:var(--mute);font-size:12px;margin-top:2px}
 .gline,.gtv{overflow-wrap:anywhere}
 .gtype{margin:7px 0 0 24px;line-height:1}
+.lvclock{display:block;color:var(--accent);font-size:13px;white-space:normal}
+.lvasof{display:block;color:var(--mute);font-size:11px;font-weight:400;margin-top:1px}
+.sc.lv{color:var(--mute)}
+.sc.lv.lead{color:var(--ink);font-weight:600}
 .tag{display:inline-block;font-size:10px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;padding:4px 7px;border-radius:4px;
   color:var(--tagc,var(--mute));background:color-mix(in srgb,var(--tagc,var(--mute)) 13%,transparent)}
 .k-nonconf{--tagc:var(--mute)}
@@ -241,14 +245,18 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   const side = (s, prefix, g) => {
     const rc = s.record ? `<span class="trec">${esc(s.record)}</span>` : '';
     // score + points cells only exist once a game is final, so upcoming games give names the full width
-    const sc = !g.completed ? '' : s.final != null ? `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>` : '<span class="sc"></span>';
-    const pts = !g.completed ? '' : s.pool ? `<span class="ptsb${s.pts > 0 ? ' pos' : ''}">${s.pts > 0 ? '+' + s.pts : 0}</span>` : '<span></span>';
+    const live = !g.completed && g.live;
+    const other = s === g.away ? g.home : g.away;
+    const sc = live ? `<span class="sc lv${s.live != null && other.live != null && s.live > other.live ? ' lead' : ''}">${s.live ?? ''}</span>`
+             : !g.completed ? '' : s.final != null ? `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>` : '<span class="sc"></span>';
+    const pts = live ? '<span></span>' : !g.completed ? '' : s.pool ? `<span class="ptsb${s.pts > 0 ? ' pos' : ''}">${s.pts > 0 ? '+' + s.pts : 0}</span>` : '<span></span>';
     const own = s.pool && s.owners.length ? `<div class="own">${ownList(s.owners)}</div>` : '';
-    return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}${g.completed ? ' fin' : ''}">` +
+    return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}${g.completed || live ? ' fin' : ''}">` +
       `<span class="at">${prefix}</span><span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
   };
   el.innerHTML = td.games.map(g => {
-    const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);
+    const when = g.completed ? 'Final' : finals ? 'No result'
+      : g.live ? `<span class="lvclock">${esc(g.live.detail)}</span><span class="lvasof">as of ${esc(g.live.as_of)}</span>` : esc(g.time);
     const under = (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
     const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
     const type = label ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(label)}</span></div>` : '';

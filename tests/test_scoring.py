@@ -314,3 +314,42 @@ class EveningScores(unittest.TestCase):
         self.assertEqual(game_points("conf_tourney", True, headline="ACC Tournament - Semifinal"), 2)
         self.assertEqual(game_points("ncaa", True, "s16"), 6)
         self.assertEqual(game_points("other_post", True), 0)
+
+
+class EveningLive(unittest.TestCase):
+    def test_live_snapshot_then_final_bumps_records(self):
+        from tracker.run import update_scores, _bump, _clock
+        self.assertEqual((_bump("3-1", True), _bump("3-1", False), _bump("", True)), ("4-1", "3-2", ""))
+        self.assertEqual((_clock("Halftime"), _clock("8:12 - 2nd Half"), _clock("")), ("Halftime", "8:12 2nd", "In progress"))
+        rows = TM.load_teams()
+        bak = (ROOT / "data" / "teams.csv").read_bytes()
+        try:
+            for i, r in enumerate(rows):
+                r["espn_id"] = r["espn_id"] or str(5000 + i)
+            TM.save_teams(rows)
+            duke = next(r["espn_id"] for r in rows if r["team"] == "Duke")
+            tmp = Path(tempfile.mkdtemp())
+            game = {"id": "1", "start": "", "tbd": False, "tv": "", "neutral": False, "completed": False, "kind": "conf",
+                    "round": None, "time": "7:00 PM", "line": "DUKE -9.5",
+                    "away": {"team": "Army", "pool": False, "home": False, "owners": [], "id": "999", "record": "0-2"},
+                    "home": {"team": "Duke", "pool": True, "home": True, "owners": ["Kevin B."], "record": "2-0"}}
+            (tmp / "data.json").write_text(json.dumps({"updated": "x", "today": {"date": "2026-11-04", "games": [game]},
+                "yesterday": {"games": []}, "standings": [], "teams": {}, "team_info": {}, "history": [], "warnings": []}))
+            half = {"1": {"state": "in", "completed": False, "line": "", "detail": "Halftime",
+                          "scores": {duke: 40, "999": 31}, "winners": {}, "headline": ""}}
+            d = update_scores(get_board=lambda day: half, now=dt.datetime(2026, 11, 4, 20, 7), docs=tmp)
+            g = d["today"]["games"][0]
+            self.assertEqual((g["live"]["detail"], g["home"]["live"], g["away"]["live"], g["completed"], g["line"]),
+                             ("Halftime", 40, 31, False, "DUKE -9.5"))
+            self.assertIn("lvclock", (tmp / "index.html").read_text())
+            final = {"1": {"state": "post", "completed": True, "line": "", "detail": "Final",
+                           "scores": {duke: 77, "999": 70}, "winners": {duke: True, "999": False}, "headline": ""}}
+            d = update_scores(get_board=lambda day: final, now=dt.datetime(2026, 11, 4, 21, 7), docs=tmp)
+            g = d["today"]["games"][0]
+            self.assertNotIn("live", g)
+            self.assertEqual((g["home"]["record"], g["away"]["record"], g["home"]["pts"], g["home"]["final"]), ("3-0", "0-3", 2, 77))
+            # a later run must not count the result twice
+            d = update_scores(get_board=lambda day: final, now=dt.datetime(2026, 11, 4, 22, 7), docs=tmp)
+            self.assertEqual(d["today"]["games"][0]["home"]["record"], "3-0")
+        finally:
+            (ROOT / "data" / "teams.csv").write_bytes(bak)

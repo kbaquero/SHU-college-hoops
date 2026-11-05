@@ -213,6 +213,21 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
     return data
 
 
+def _bump(record, won):
+    """'3-1' + a win -> '4-1'. Leaves unknown records alone."""
+    try:
+        w, l = (int(x) for x in record.split("-"))
+    except (ValueError, AttributeError):
+        return record
+    return f"{w + 1}-{l}" if won else f"{w}-{l + 1}" if won is False else record
+
+
+def _clock(detail):
+    """ESPN's in-game status, tidied: '8:12 - 2nd Half' -> '8:12 2nd', 'Halftime' stays."""
+    d = (detail or "").replace(" - ", " ").replace(" Half", "").strip()
+    return "Halftime" if d.lower() in ("half", "halftime") else d or "In progress"
+
+
 def update_scores(get_board=None, now=None, docs=DOCS):
     """Evening update: refresh only Today's games (finals, scores, preview points, latest pregame spread).
     Standings and everything else keep their morning numbers."""
@@ -237,20 +252,35 @@ def update_scores(get_board=None, now=None, docs=DOCS):
         if info.get("state") == "pre" and info.get("line") and info["line"] != g.get("line"):
             g["line"] = info["line"]          # newer pregame line; frozen once the game tips
             changed = True
-        if not info.get("completed") or g.get("completed"):
+        if g.get("completed"):
             continue
         sides = (g["away"], g["home"])
         ids = [id_of.get(s["team"], "") if s["pool"] else s.get("id", "") for s in sides]
         scores, winners = info.get("scores", {}), info.get("winners", {})
+        if info.get("state") == "in" and not info.get("completed"):
+            # caught mid-game: keep a snapshot of the score and clock as of this update
+            live = {"detail": _clock(info.get("detail", "")), "as_of": now.strftime("%-I:%M %p")}
+            snap = [scores.get(i) for i in ids]
+            if snap != [s.get("live") for s in sides] or live["detail"] != (g.get("live") or {}).get("detail"):
+                for s, v in zip(sides, snap):
+                    s["live"] = v
+                g["live"] = live
+                changed = True
+            continue
+        if not info.get("completed"):
+            continue
         if g.get("kind") == "ncaa" and not g.get("round"):
             g["round"] = ncaa_round(info.get("headline", ""))
+        g.pop("live", None)
         for k, s in enumerate(sides):
             me, opp = ids[k], ids[1 - k]
+            s.pop("live", None)
             s["final"] = scores.get(me)
             won = winners.get(me)
             if won is None and s["final"] is not None and scores.get(opp) is not None:
                 won = s["final"] > scores[opp]
             s["won"] = won
+            s["record"] = _bump(s.get("record", ""), won)
             if s["pool"]:
                 s["pts"] = game_points(g.get("kind"), won, g.get("round"), info.get("headline", ""), opp in d1)
         g["completed"] = True
