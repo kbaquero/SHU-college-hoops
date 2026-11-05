@@ -7,7 +7,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import config as C, espn
-from .teams import load_teams, save_teams, resolve_espn_ids, load_entries, load_seeds
+from .teams import load_teams, save_teams, resolve_espn_ids, load_entries, load_seeds, load_full_names
 from .scoring import score_team, game_points, ncaa_round
 from .render import render_html
 
@@ -154,12 +154,13 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
     history.append({"date": today, "totals": totals})
     history = history[-200:]
 
+    full_names = load_full_names()
     ranked = sorted(entries, key=lambda e: (-totals[e], e))
     standings = []
     for i, e in enumerate(ranked):
         rank = 1 + sum(1 for x in ranked if totals[x] > totals[e])
         standings.append({
-            "rank": rank, "entry": e, "total": totals[e],
+            "rank": rank, "entry": e, "full": full_names.get(e, e), "total": totals[e],
             "change": totals[e] - baseline[e] if e in baseline else None,
             "move": prev_rank[e] - rank if e in prev_rank else None,   # + = moved up, - = moved down
             "salary": sum(by_name[t]["salary"] for t in entries[e]),

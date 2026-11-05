@@ -37,6 +37,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
+@media (max-width:350px){#standings>tbody>tr.entry-row>td{font-size:13px}#standings .tot{font-size:14px}#standings .mv{margin-left:3px}}
 .notes{font-size:13px;color:var(--mute);margin-top:10px;line-height:1.5}
 .notes p{margin:0 0 8px}
 .notes .nh{margin:12px 0 4px;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
@@ -251,7 +252,7 @@ const sb = $('#standings tbody');
 D.standings.forEach(s => {
   const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
   const tr = document.createElement('tr'); tr.className = 'entry-row';
-  tr.innerHTML = `<td class="rank">${s.rank}${mv(s.move)}</td><td><b>${esc(s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
+  tr.innerHTML = `<td class="rank">${s.rank}${mv(s.move)}</td><td><b>${esc(s.full || s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
     s.teams.map(t => { const b = T[t]; return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${rec(b)}</td><td class="n">${b ? b.conf_w + '-' + b.conf_l : '–'}</td><td class="n">${b ? b.pts_reg : 0}</td><td class="n">${b ? b.pts_ct : 0}</td><td class="n">${b ? b.pts_ncaa : 0}</td><td class="n"><b>${b ? b.total : 0}</b></td></tr>`; }).join('') +

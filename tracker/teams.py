@@ -115,3 +115,15 @@ def load_seeds():
                 if r.get("team") and r.get("seed"):
                     seeds[r["team"].strip()] = int(r["seed"])
     return seeds
+
+
+def load_full_names():
+    """Optional data/names.csv (entry,full_name): full names shown only in the standings table."""
+    p = DATA / "names.csv"
+    out = {}
+    if p.exists():
+        with open(p, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                if r.get("entry") and r.get("full_name"):
+                    out[r["entry"].strip()] = r["full_name"].strip()
+    return out
