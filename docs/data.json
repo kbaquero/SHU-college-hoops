@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 16:57 EST",
+ "updated": "2026-11-04 19:36 EST",
  "season": 2027,
  "standings": [
   {
@@ -54386,8 +54386,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "2379",
      "final": null,
-     "won": null
+     "won": null,
+     "record": "0-1"
     },
     "home": {
      "team": "High Point",
@@ -54402,10 +54404,12 @@
      "opp": "Maryland Eastern Shore",
      "pts": 0,
      "final": null,
-     "opp_final": null
+     "opp_final": null,
+     "opp_id": "2379",
+     "record": "1-0"
     },
     "time": "7:00 PM",
-    "line": "HPU -34.5"
+    "line": ""
    },
    {
     "id": "401928853",
@@ -54420,8 +54424,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "3229",
      "final": null,
-     "won": null
+     "won": null,
+     "record": ""
     },
     "home": {
      "team": "Morgan St.",
@@ -54435,7 +54441,9 @@
      "opp": "Virginia Lynchburg",
      "pts": 0,
      "final": null,
-     "opp_final": null
+     "opp_final": null,
+     "opp_id": "3229",
+     "record": "1-0"
     },
     "time": "7:00 PM",
     "line": ""
@@ -54453,8 +54461,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "2151",
      "final": null,
-     "won": null
+     "won": null,
+     "record": ""
     },
     "home": {
      "team": "SIUE",
@@ -54469,7 +54479,9 @@
      "opp": "Concordia Chicago",
      "pts": 0,
      "final": null,
-     "opp_final": null
+     "opp_final": null,
+     "opp_id": "2151",
+     "record": "1-0"
     },
     "time": "7:00 PM",
     "line": ""
@@ -54487,8 +54499,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "2693",
      "final": null,
-     "won": null
+     "won": null,
+     "record": ""
     },
     "home": {
      "team": "Southeast Missouri",
@@ -54502,7 +54516,9 @@
      "opp": "Webster",
      "pts": 0,
      "final": null,
-     "opp_final": null
+     "opp_final": null,
+     "opp_id": "2693",
+     "record": "1-0"
     },
     "time": "7:30 PM",
     "line": ""
@@ -54520,8 +54536,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "3153",
      "final": null,
-     "won": null
+     "won": null,
+     "record": ""
     },
     "home": {
      "team": "Norfolk St.",
@@ -54535,7 +54553,9 @@
      "opp": "Randolph",
      "pts": 0,
      "final": null,
-     "opp_final": null
+     "opp_final": null,
+     "opp_id": "3153",
+     "record": "1-0"
     },
     "time": "8:00 PM",
     "line": ""
@@ -54560,7 +54580,9 @@
      "opp": "Saint Mary's",
      "pts": 0,
      "final": null,
-     "opp_final": null
+     "opp_final": null,
+     "opp_id": "2608",
+     "record": "1-0"
     },
     "home": {
      "team": "Saint Mary's",
@@ -54575,7 +54597,9 @@
      "opp": "North Dakota St.",
      "pts": 0,
      "final": null,
-     "opp_final": null
+     "opp_final": null,
+     "opp_id": "2449",
+     "record": "1-0"
     },
     "time": "10:00 PM",
     "line": "SMC -12.5"
@@ -54600,18 +54624,22 @@
      "opp": "Loyola Marymount",
      "pts": 0,
      "final": null,
-     "opp_final": null
+     "opp_final": null,
+     "opp_id": "2351",
+     "record": "1-0"
     },
     "home": {
      "team": "Loyola Marymount",
      "pool": false,
      "home": true,
      "owners": [],
+     "id": "2351",
      "final": null,
-     "won": null
+     "won": null,
+     "record": "0-0"
     },
     "time": "10:00 PM",
-    "line": "LMU -7.5"
+    "line": "LMU -5.5"
    }
   ]
  },
@@ -54639,7 +54667,9 @@
      "opp": "Tennessee",
      "pts": 0,
      "final": 59,
-     "opp_final": 90
+     "opp_final": 90,
+     "opp_id": "2633",
+     "record": "0-1"
     },
     "home": {
      "team": "Tennessee",
@@ -54653,7 +54683,9 @@
      "opp": "Wofford",
      "pts": 1,
      "final": 90,
-     "opp_final": 59
+     "opp_final": 59,
+     "opp_id": "2747",
+     "record": "1-0"
     },
     "time": "6:00 PM"
    },
@@ -54670,8 +54702,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "2154",
      "final": 54,
-     "won": false
+     "won": false,
+     "record": "0-1"
     },
     "home": {
      "team": "Virginia Tech",
@@ -54685,7 +54719,9 @@
      "opp": "Coppin St.",
      "pts": 1,
      "final": 88,
-     "opp_final": 54
+     "opp_final": 54,
+     "opp_id": "2154",
+     "record": "1-0"
     },
     "time": "7:00 PM"
    },
@@ -54709,15 +54745,19 @@
      "opp": "Boston College",
      "pts": 0,
      "final": 50,
-     "opp_final": 76
+     "opp_final": 76,
+     "opp_id": "103",
+     "record": "0-1"
     },
     "home": {
      "team": "Boston College",
      "pool": false,
      "home": true,
      "owners": [],
+     "id": "103",
      "final": 76,
-     "won": true
+     "won": true,
+     "record": "1-0"
     },
     "time": "7:00 PM"
    },
@@ -54743,15 +54783,19 @@
      "opp": "Texas A&M",
      "pts": 0,
      "final": 66,
-     "opp_final": 97
+     "opp_final": 97,
+     "opp_id": "245",
+     "record": "0-1"
     },
     "home": {
      "team": "Texas A&M",
      "pool": false,
      "home": true,
      "owners": [],
+     "id": "245",
      "final": 97,
-     "won": true
+     "won": true,
+     "record": "1-0"
     },
     "time": "8:00 PM"
    },
@@ -54768,8 +54812,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "2029",
      "final": 61,
-     "won": false
+     "won": false,
+     "record": "0-1"
     },
     "home": {
      "team": "Arkansas",
@@ -54788,7 +54834,9 @@
      "opp": "Arkansas Pine Bluff",
      "pts": 1,
      "final": 106,
-     "opp_final": 61
+     "opp_final": 61,
+     "opp_id": "2029",
+     "record": "1-0"
     },
     "time": "8:00 PM"
    },
@@ -54812,7 +54860,9 @@
      "opp": "Iowa",
      "pts": 0,
      "final": 54,
-     "opp_final": 76
+     "opp_final": 76,
+     "opp_id": "2294",
+     "record": "0-2"
     },
     "home": {
      "team": "Iowa",
@@ -54826,7 +54876,9 @@
      "opp": "Lipscomb",
      "pts": 1,
      "final": 76,
-     "opp_final": 54
+     "opp_final": 54,
+     "opp_id": "288",
+     "record": "1-0"
     },
     "time": "8:00 PM"
    },
@@ -54843,8 +54895,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "2571",
      "final": 68,
-     "won": true
+     "won": true,
+     "record": "1-0"
     },
     "home": {
      "team": "Kansas St.",
@@ -54858,7 +54912,9 @@
      "opp": "South Dakota St.",
      "pts": 0,
      "final": 66,
-     "opp_final": 68
+     "opp_final": 68,
+     "opp_id": "2571",
+     "record": "0-1"
     },
     "time": "8:00 PM"
    },
@@ -54875,8 +54931,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "2443",
      "final": 57,
-     "won": false
+     "won": false,
+     "record": "0-1"
     },
     "home": {
      "team": "LSU",
@@ -54890,7 +54948,9 @@
      "opp": "LSU New Orleans",
      "pts": 1,
      "final": 100,
-     "opp_final": 57
+     "opp_final": 57,
+     "opp_id": "2443",
+     "record": "1-0"
     },
     "time": "8:00 PM"
    },
@@ -54907,8 +54967,10 @@
      "pool": false,
      "home": false,
      "owners": [],
+     "id": "411",
      "final": 66,
-     "won": false
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "UC Irvine",
@@ -54922,7 +54984,9 @@
      "opp": "Chapman",
      "pts": 1,
      "final": 92,
-     "opp_final": 66
+     "opp_final": 66,
+     "opp_id": "411",
+     "record": "1-0"
     },
     "time": "10:00 PM"
    }
