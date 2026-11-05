@@ -37,6 +37,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
+#standings .detail th:not(:first-child),#standings .detail td:not(:first-child){text-align:center}
 @media (max-width:350px){#standings>tbody>tr.entry-row>td{font-size:13px}#standings .tot{font-size:14px}#standings .mvc{width:2.1em;padding-left:4px}}
 .notes{font-size:13px;color:var(--mute);margin-top:10px;line-height:1.5}
 .notes p{margin:0 0 8px}
