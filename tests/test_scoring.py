@@ -222,7 +222,7 @@ class Pipeline(unittest.TestCase):
 
             def sched(tid):
                 return [g("a" + tid, "2026-11-05", True, "999"),
-                        g("b" + tid, "2027-01-10", tid == duke, ids["Virginia"] if tid == duke else "999")]
+                        g("b" + tid, "2026-11-08", tid == duke, ids["Virginia"] if tid == duke else "999")]
             d = R.run(get_schedule=sched, get_team_list=lambda: [], get_lines=lambda d: {},
                       now=dt.datetime(2026, 11, 10, 6, 0), docs=tmp)
             self.assertEqual(d["standings"][0]["entry"], "Kevin")
@@ -240,7 +240,7 @@ class Pipeline(unittest.TestCase):
             self.assertEqual(d2["standings"][0]["move"], 0)
             self.assertEqual(d["standings"][0]["move"], 0)        # first run rebuilds earlier days from game logs
             self.assertEqual(d["history"][0]["date"], "2026-11-05")       # first game day
-            self.assertEqual(d["history"][-2]["totals"]["Kevin"], 10)    # rebuilt Nov 9 snapshot: the ten Nov 5 wins
+            self.assertEqual(d["history"][-2]["totals"]["Kevin"], 12)    # rebuilt Nov 9 snapshot: Nov 5 wins + Duke's Nov 8 win
             self.assertEqual(len(d2["history"]), len(d["history"]) + 1)
         finally:
             shutil.copytree(data_bak, ROOT / "data", dirs_exist_ok=True)
@@ -368,3 +368,38 @@ class Overtime(unittest.TestCase):
               "competitors": [{"id": "150", "winner": True, "score": "99", "team": {"id": "150"}},
                               {"id": "2", "winner": False, "score": "97", "team": {"id": "2"}}]}]}
         self.assertEqual(parse_event(ev, "150", 2)["status_detail"], "Final/2OT")
+
+
+class MorningCutoff(unittest.TestCase):
+    def test_todays_finals_stay_out_of_standings(self):
+        from tracker import run as R
+        tmp = Path(tempfile.mkdtemp())
+        bak = Path(tempfile.mkdtemp())
+        shutil.copytree(ROOT / "data", bak, dirs_exist_ok=True)
+        try:
+            rows = TM.load_teams()
+            for i, r in enumerate(rows):
+                r["espn_id"] = str(1000 + i)
+            TM.save_teams(rows)
+            ids = {r["team"]: r["espn_id"] for r in rows}
+            picks = ["Duke", "Michigan", "Kansas St.", "St. John's", "Florida", "Howard", "Navy", "Siena", "Mercyhurst", "SIUE"]
+            (ROOT / "data" / "entries.csv").write_text("entry,team\n" + "".join(f"Kevin,{t}\n" for t in picks))
+
+            def sched(tid):
+                out = [g("y" + tid, "2026-11-03", True, "999")]                  # yesterday: counts
+                if tid == ids["SIUE"]:
+                    out.append({**g("t" + tid, "2026-11-04", True, "999"), "home": True})   # finished tonight: doesn't
+                return out
+            d = R.run(get_schedule=sched, get_team_list=lambda: [], get_lines=lambda day: {},
+                      now=dt.datetime(2026, 11, 4, 21, 0), docs=tmp)
+            self.assertEqual(d["standings"][0]["total"], 10)
+            self.assertEqual(d["teams"]["SIUE"]["total"], 1)
+            self.assertEqual((d["teams"]["SIUE"]["w"], d["teams"]["SIUE"]["l"]), (1, 0))
+            game = d["today"]["games"][0]
+            siue = game["home"] if game["home"]["team"] == "SIUE" else game["away"]
+            self.assertEqual((game["completed"], siue["pts"], siue["record"]), (True, 1, "2-0"))
+            self.assertEqual(d["through"], "Tue, Nov 3")
+            self.assertEqual(d["history"][-1]["totals"]["Kevin"], 10)          # tonight's snapshot = this morning
+        finally:
+            shutil.copytree(bak, ROOT / "data", dirs_exist_ok=True)
+            shutil.rmtree(tmp); shutil.rmtree(bak)

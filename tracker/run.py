@@ -115,6 +115,8 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
 
     picked = sorted({t for picks in entries.values() for t in picks})
     results = {}
+    today = now.date().isoformat()
+    todays = {}
     for name in picked:
         t = by_name[name]
         if not t.get("espn_id"):
@@ -129,9 +131,13 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
             continue
         for g in games:   # league-list name for D-I opponents ("Loyola Marymount"), ESPN's short name otherwise
             g["opp_name"] = name_of.get(g["opp_id"]) or g.get("opp_short") or g["opp_name"]
-        b = score_team(t, games, conf_of, d1_ids, seeds.get(name))
+        # Standings count only games before today (Eastern), so a full run at any hour matches the morning
+        # numbers; today's games are shown separately and become official in tomorrow morning's update.
+        b = score_team(t, [g for g in games if g["date"] < today], conf_of, d1_ids, seeds.get(name))
         warnings += b.pop("warnings")
         results[name] = b
+        live = score_team(t, games, conf_of, d1_ids, seeds.get(name))
+        todays[name] = {"games": [g for g in live["games"] if g["date"] == today]}
 
     # keep yesterday's numbers for any team whose fetch failed
     prev = {}
@@ -141,7 +147,6 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
         if name not in results and name in prev.get("teams", {}):
             results[name] = prev["teams"][name]
 
-    today = now.date().isoformat()
     totals = {e: sum(results.get(t, {}).get("total", 0) for t in picks) for e, picks in entries.items()}
 
     # history: one snapshot per day, used for "change since last update"
@@ -172,7 +177,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
         for t in picks:
             owners.setdefault(t, []).append(e)
 
-    data_today = todays_games(results, owners, today)
+    data_today = todays_games(todays, owners, today)
     data_yesterday = todays_games(results, owners, (now.date() - dt.timedelta(days=1)).isoformat())
     # spreads (today) and opponents' records (both days) come from ESPN's daily scoreboard
     # spreads already captured by earlier runs (morning or evening); kept once ESPN drops a line at tip-off
@@ -194,11 +199,14 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
                 if side["pool"]:
                     b = results.get(side["team"], {})
                     side["record"] = f'{b.get("w", 0)}-{b.get("l", 0)}' if b else ""
+                    if block is data_today and g["completed"]:   # standings records stop at this morning
+                        side["record"] = _bump(side["record"], side.get("won"))
                 else:
                     side["record"] = (info.get("records") or {}).get(side.get("id", ""), "")
 
     data = {
         "updated": now.strftime("%Y-%m-%d %H:%M %Z"),
+        "through": (now.date() - dt.timedelta(days=1)).strftime("%a, %b %d").replace(" 0", " "),
         "season": C.SEASON,
         "standings": standings,
         "teams": results,
