@@ -40,6 +40,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #standings>thead th:nth-child(n+3),#standings>tbody>tr.entry-row>td:nth-child(n+3){text-align:center}
 .mv{font-size:11px;font-weight:600;margin-left:5px;font-variant-numeric:tabular-nums;vertical-align:1px}
 .h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
+#yesterday .game{grid-template-columns:48px 1fr auto}
 .game{display:grid;grid-template-columns:76px 1fr auto;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
 .game:last-child{border-bottom:0}
 .gtime{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px;white-space:nowrap}
@@ -49,8 +50,13 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .game>div{min-width:0}
 .trec{font-size:11px;font-weight:400;color:var(--mute);margin-left:5px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .meta span{white-space:nowrap}
-.side{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
-.side+.side{margin-top:3px}
+.sides{max-width:440px}
+.side{display:grid;grid-template-columns:1.2em minmax(0,1fr);column-gap:6px;align-items:baseline}
+.side.fin{grid-template-columns:1.2em minmax(0,1fr) auto 2.3em}
+.side+.side{margin-top:4px}
+.side .own{grid-column:2 / -1;margin-top:1px}
+.side .sc{text-align:right;min-width:1.8em}
+.side .ptsb{justify-self:start}
 .side .nm{font-weight:400;color:var(--mute)}
 .side.pool .nm{font-weight:650;color:var(--ink)}
 .own{font-size:12px;color:var(--accent);font-weight:500}
@@ -66,7 +72,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .ptsb.pos{color:var(--good)}
 .gtime.dim{color:var(--mute);font-weight:400}
 .sm{display:none}
-@media (max-width:520px){.line{display:inline}.gtv{display:flex;flex-wrap:wrap;gap:0 10px}.meta{display:contents}.meta span+span::before{content:none}.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.3em 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
+@media (max-width:520px){.line{display:inline}.gtv{display:flex;flex-wrap:wrap;gap:0 10px}.meta{display:contents}.meta span+span::before{content:none}.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.3em 1fr}#yesterday .game{grid-template-columns:3.2em 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
@@ -162,20 +168,22 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   td = td || {games: []};
   labelEl.textContent = td.label ? '· ' + td.label : '';
   if (!td.games.length) { el.innerHTML = `<div class="empty">${emptyMsg}</div>`; return; }
+  // one team: [at] name + record ........ score  pts   (entry names on the line below)
   const side = (s, prefix, g) => {
-    const own = s.pool ? `<span class="own">${ownList(s.owners)}</span>` : '';
-    let sc = '', pts = '';
-    if (g.completed && s.final != null) sc = `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>`;
-    if (g.completed && s.pool) pts = `<span class="ptsb${s.pts > 0 ? ' pos' : ''}">${s.pts > 0 ? '+' + s.pts : 0}</span>`;
     const rc = s.record ? `<span class="trec">${esc(s.record)}</span>` : '';
-    return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}">${prefix}<span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
+    // score + points cells only exist once a game is final, so upcoming games give names the full width
+    const sc = !g.completed ? '' : s.final != null ? `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>` : '<span class="sc"></span>';
+    const pts = !g.completed ? '' : s.pool ? `<span class="ptsb${s.pts > 0 ? ' pos' : ''}">${s.pts > 0 ? '+' + s.pts : 0}</span>` : '<span></span>';
+    const own = s.pool && s.owners.length ? `<div class="own">${ownList(s.owners)}</div>` : '';
+    return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}${g.completed ? ' fin' : ''}">` +
+      `<span class="at">${prefix}</span><span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
   };
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);
     const meta = [finals ? '' : g.tv, kindName[g.kind]].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('');
     const right = (!finals && g.line ? `<span class="line">${esc(g.line)}</span>` : '') + `<span class="meta">${meta}</span>`;
-    return `<div class="game"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div><div>` +
-      side(g.away, '', g) + side(g.home, `<span class="at">${g.neutral ? 'vs' : 'at'}</span>`, g) +
+    return `<div class="game"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div><div class="sides">` +
+      side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) +
       `</div><div class="gtv">${right}</div></div>`;
   }).join('');
 }
