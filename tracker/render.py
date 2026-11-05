@@ -70,11 +70,10 @@ h2.withnote{margin-bottom:2px}
 .rk{display:inline-block;width:24px;text-align:center}
 .mvc{display:inline-block;width:2.2em;padding-left:5px;white-space:nowrap}
 .h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
-#yesterday .game{grid-template-columns:48px 1fr}
 .game{display:grid;grid-template-columns:84px 1fr;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
 .game:last-child{border-bottom:0}
 .gtime{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px;white-space:nowrap}
-.gsite,.gevent{font-size:11px;color:var(--mute);line-height:1.3;margin-top:4px;overflow-wrap:anywhere}
+.gsite,.gevent{font-size:11px;color:var(--mute);line-height:1.3;margin-top:4px;overflow-wrap:break-word;hyphens:auto}
 .gevent{color:var(--ink);font-weight:500}
 .gsite+.gevent{margin-top:1px}
 .gline{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:6px}
@@ -117,7 +116,7 @@ h2.withnote{margin-bottom:2px}
 .ptsb.pos{color:var(--good)}
 .gtime.dim{color:var(--mute);font-weight:400}
 .sm{display:none}
-@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:48px}#standings>thead th:nth-child(4){width:34px}#standings>thead th:nth-child(5){width:50px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.6em 1fr}#yesterday .game{grid-template-columns:3.2em 1fr}}
+@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:48px}#standings>thead th:nth-child(4){width:34px}#standings>thead th:nth-child(5){width:50px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.6em 1fr}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
