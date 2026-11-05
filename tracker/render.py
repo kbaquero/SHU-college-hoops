@@ -37,6 +37,13 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
+.notes{font-size:13px;color:var(--mute);margin-top:10px;line-height:1.5}
+.notes p{margin:0 0 8px}
+.notes .nh{margin:12px 0 4px;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.notes dl{display:grid;grid-template-columns:max-content 1fr;gap:3px 12px;margin:0 0 4px}
+.notes dt{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.notes dd{margin:0}
+.notes .src{margin-top:12px}
 #ptr{position:fixed;left:0;right:0;top:0;z-index:10;display:flex;justify-content:center;align-items:center;height:48px;padding-top:env(safe-area-inset-top);transform:translateY(-100%);opacity:0;pointer-events:none}
 #ptr .pill{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:500;color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.12)}
 #ptr-icon{display:inline-block;transition:transform .15s}
@@ -148,7 +155,26 @@ svg text{fill:var(--mute);font-size:11px}
 <h2>Teams</h2>
 <div class="card scroll"><table id="teams"><thead><tr>
 </tr></thead><tbody></tbody></table></div>
-<p class="sub">Tap a column header to sort, and tap it again to reverse. Reg = non-conference wins ×1 + conference wins ×2. Conf T = conference tournament wins ×2, +5 for the title. NCAA = seed points + round wins. Game types in each team's log: NC non-conference, C conference, CT conference tournament, NCAA NCAA tournament (shown by round: Play-in, R64, R32, S16, E8, F4, Title), PS other postseason (NIT and similar, no points). Results from ESPN; disputes go by ncaa.com.</p>
+<div class="notes">
+  <p>Tap a column header to sort, and tap it again to reverse. Tap a team to see its game log.</p>
+  <p class="nh">Points</p>
+  <dl>
+    <dt>Reg</dt><dd>Non-conference wins ×1, conference wins ×2</dd>
+    <dt>Conf T</dt><dd>Conference tournament wins ×2, +5 for the title</dd>
+    <dt>NCAA</dt><dd>Seed points + tournament wins:<br>
+      Seed: 1 → 8 · 2–4 → 6 · 5–8 → 4 · 9–16 → 2<br>
+      Wins: Play-in or R64 → 2 · R32 → 4 · S16 → 6 · E8 → 8 · F4 → 10 · Title → 12</dd>
+  </dl>
+  <p class="nh">Game types in the log</p>
+  <dl>
+    <dt>NC</dt><dd>Non-conference</dd>
+    <dt>C</dt><dd>Conference</dd>
+    <dt>CT</dt><dd>Conference tournament</dd>
+    <dt>R64…</dt><dd>NCAA tournament, shown by round: Play-in, R64, R32, S16, E8, F4, Title</dd>
+    <dt>PS</dt><dd>Other postseason (NIT and similar), no points</dd>
+  </dl>
+  <p class="src">Results from ESPN. Disputes go by ncaa.com.</p>
+</div>
 </main>
 <script id="data" type="application/json">__DATA__</script>
 <script>
