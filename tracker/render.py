@@ -47,6 +47,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .line{display:block;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
 .meta span+span::before{content:' · '}
 .game>div{min-width:0}
+.trec{font-size:11px;font-weight:400;color:var(--mute);margin-left:5px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .meta span{white-space:nowrap}
 .side{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
 .side+.side{margin-top:3px}
@@ -166,7 +167,8 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
     let sc = '', pts = '';
     if (g.completed && s.final != null) sc = `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>`;
     if (g.completed && s.pool) pts = `<span class="ptsb${s.pts > 0 ? ' pos' : ''}">${s.pts > 0 ? '+' + s.pts : 0}</span>`;
-    return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}">${prefix}<span class="nm">${esc(s.team)}</span>${sc}${pts}${own}</div>`;
+    const rc = s.record ? `<span class="trec">${esc(s.record)}</span>` : '';
+    return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}">${prefix}<span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
   };
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);

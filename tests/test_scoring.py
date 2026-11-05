@@ -167,6 +167,13 @@ class TodaysGames(unittest.TestCase):
         self.assertEqual([x["date"] for x in h], ["2026-11-02", "2026-11-03"])
         self.assertEqual([x["totals"] for x in h], [{"Kevin": 0, "Joe": 0}, {"Kevin": 1, "Joe": 0}])
 
+    def test_scoreboard_record(self):
+        from tracker.espn import _record
+        self.assertEqual(_record({"records": [{"name": "overall", "type": "total", "summary": "3-1"},
+                                              {"name": "Home", "type": "home", "summary": "2-0"}]}), "3-1")
+        self.assertEqual(_record({"records": [{"type": "home", "summary": "2-0"}, {"type": "total", "summary": "4-2"}]}), "4-2")
+        self.assertEqual(_record({}), "")
+
     def test_overall_record_counts_every_game(self):
         games = [g("1", "2026-11-05", True, "2"), g("2", "2027-01-05", False, "153"),
                  g("3", "2027-03-20", True, "2", 3, "Men's Basketball Championship - 1st Round", seed="4"),

@@ -37,7 +37,8 @@ def todays_games(results, owners, today):
             mine, theirs = _pts_pair(g.get("score", ""))
             row["sides"][team] = {"pool": True, "home": bool(g.get("home")), "owners": owners.get(team, []),
                                   "won": g.get("won"), "score": g.get("score", ""), "opp": g.get("opp_name", ""),
-                                  "pts": g.get("pts", 0), "final": mine, "opp_final": theirs}
+                                  "pts": g.get("pts", 0), "final": mine, "opp_final": theirs,
+                                  "opp_id": g.get("opp_id", "")}
     out = []
     for row in games.values():
         sides = row.pop("sides")
@@ -45,6 +46,7 @@ def todays_games(results, owners, today):
         if len(teams) == 1:   # opponent isn't in anyone's lineup
             name, s = teams[0]
             teams.append((s["opp"], {"pool": False, "home": not s["home"] and not row["neutral"], "owners": [],
+                                     "id": s.get("opp_id", ""),
                                      "final": s.get("opp_final"),
                                      "won": (not s["won"]) if s.get("won") is not None else None}))
         teams.sort(key=lambda kv: kv[1]["home"])           # away team first, home team second
@@ -85,7 +87,7 @@ def rebuild_history(results, entries, today):
 def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=None):
     get_schedule = get_schedule or (lambda tid: espn.schedule(tid, C.SEASON))
     get_team_list = get_team_list or espn.team_list
-    get_lines = get_lines or espn.day_lines
+    get_lines = get_lines or espn.day_board
     now = now or dt.datetime.now(ZoneInfo("America/New_York"))
     warnings = []
 
@@ -170,13 +172,26 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
 
     data_today = todays_games(results, owners, today)
     data_yesterday = todays_games(results, owners, (now.date() - dt.timedelta(days=1)).isoformat())
-    if data_today["games"]:
+    # spreads (today) and opponents' records (both days) come from ESPN's daily scoreboard
+    for block in (data_today, data_yesterday):
+        if not block["games"]:
+            continue
         try:
-            lines = get_lines(today)
-        except Exception:   # spreads are a nice-to-have; never fail the update over them
-            lines = {}
-        for g in data_today["games"]:
-            g["line"] = lines.get(g["id"], "")
+            board = get_lines(block["date"])
+        except Exception:   # nice-to-have; never fail the update over it
+            board = {}
+        for g in block["games"]:
+            info = board.get(g["id"]) or {}
+            if isinstance(info, str):   # tolerate a plain {event: spread} mapping
+                info = {"line": info}
+            if block is data_today:
+                g["line"] = info.get("line", "")
+            for side in (g["away"], g["home"]):
+                if side["pool"]:
+                    b = results.get(side["team"], {})
+                    side["record"] = f'{b.get("w", 0)}-{b.get("l", 0)}' if b else ""
+                else:
+                    side["record"] = (info.get("records") or {}).get(side.get("id", ""), "")
 
     data = {
         "updated": now.strftime("%Y-%m-%d %H:%M %Z"),

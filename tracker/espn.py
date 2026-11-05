@@ -136,13 +136,31 @@ def _line(odds):
     return f"Spread {sp:+g}" if isinstance(sp, (int, float)) else ""
 
 
-def day_lines(day):
-    """{event_id: spread text} for every Division I game ESPN lists on `day` (YYYY-MM-DD, Eastern)."""
+def _record(c):
+    """Overall W-L from a scoreboard competitor, e.g. '3-1'."""
+    recs = c.get("records") or c.get("record") or []
+    if isinstance(recs, dict):
+        recs = [recs]
+    for want in ("total", "overall", None):
+        for r in recs:
+            if want is None or r.get("type") == want or r.get("name") == want:
+                v = r.get("summary") or r.get("displayValue")
+                if v:
+                    return v
+    return ""
+
+
+def day_board(day):
+    """{event_id: {"line": spread text, "records": {team_id: 'W-L'}}} for Division I games on `day`."""
     data = fetch_json(f"{ESPN_BASE}/scoreboard?dates={day.replace('-', '')}&groups=50&limit=500")
     out = {}
     for ev in data.get("events", []):
         comp = (ev.get("competitions") or [{}])[0]
-        line = _line(comp.get("odds"))
-        if line:
-            out[str(ev.get("id"))] = line
+        recs = {}
+        for c in comp.get("competitors", []):
+            tid = str(c.get("id") or c.get("team", {}).get("id"))
+            r = _record(c)
+            if r:
+                recs[tid] = r
+        out[str(ev.get("id"))] = {"line": _line(comp.get("odds")), "records": recs}
     return out
