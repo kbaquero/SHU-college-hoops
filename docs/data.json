@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05 07:57 EST",
+ "updated": "2026-11-05 13:17 EST",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -4638,7 +4638,7 @@
      "record": "1-0"
     },
     "time": "5:00 PM",
-    "line": "MCN -1.5"
+    "line": "MCN -2.5"
    },
    {
     "id": "401920960",
@@ -4680,45 +4680,6 @@
     "line": ""
    },
    {
-    "id": "401919732",
-    "start": "2026-11-05T18:00:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": false,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "away": {
-     "team": "Chicago St.",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "2130",
-     "final": null,
-     "won": null,
-     "record": "0-1"
-    },
-    "home": {
-     "team": "Incarnate Word",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Dan P."
-     ],
-     "won": null,
-     "score": "",
-     "opp": "Chicago St.",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
-     "opp_id": "2130",
-     "record": "0-1"
-    },
-    "time": "6:00 PM",
-    "line": "UIW -7.5"
-   },
-   {
     "id": "401916287",
     "start": "2026-11-05T18:00:00-05:00",
     "tbd": false,
@@ -4755,7 +4716,7 @@
      "record": "1-0"
     },
     "time": "6:00 PM",
-    "line": "IU -27.5"
+    "line": "IU -29.5"
    },
    {
     "id": "401909726",
@@ -4794,7 +4755,7 @@
      "record": "1-0"
     },
     "time": "6:00 PM",
-    "line": "VAN -17.5"
+    "line": "VAN -18.5"
    },
    {
     "id": "401919804",
@@ -4960,7 +4921,46 @@
      "record": "0-1"
     },
     "time": "7:00 PM",
-    "line": "HOW -6.5"
+    "line": "HOW -9.5"
+   },
+   {
+    "id": "401919732",
+    "start": "2026-11-05T19:00:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "away": {
+     "team": "Chicago St.",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "2130",
+     "final": null,
+     "won": null,
+     "record": "0-1"
+    },
+    "home": {
+     "team": "Incarnate Word",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Dan P."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Chicago St.",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2130",
+     "record": "0-1"
+    },
+    "time": "7:00 PM",
+    "line": "UIW -8.5"
    },
    {
     "id": "401920864",
@@ -5045,7 +5045,7 @@
      "record": "0-1"
     },
     "time": "7:00 PM",
-    "line": "COR -1.5"
+    "line": "LEH -1.5"
    },
    {
     "id": "401921084",
@@ -5086,7 +5086,7 @@
      "record": "0-1"
     },
     "time": "7:00 PM",
-    "line": "MRST -3.5"
+    "line": "MRST -4.5"
    },
    {
     "id": "401919823",
@@ -5127,7 +5127,7 @@
      "record": "1-0"
     },
     "time": "7:00 PM",
-    "line": "ND -19.5"
+    "line": "ND -21.5"
    },
    {
     "id": "401921219",
@@ -5210,7 +5210,7 @@
      "record": "0-0"
     },
     "time": "7:00 PM",
-    "line": "FAIR -1.5"
+    "line": "UVM -1.5"
    },
    {
     "id": "401920377",
@@ -5249,7 +5249,7 @@
      "record": "1-0"
     },
     "time": "7:00 PM",
-    "line": "VT -21.5"
+    "line": "VT -20.5"
    },
    {
     "id": "401906792",
@@ -5328,7 +5328,7 @@
      "record": "1-0"
     },
     "time": "8:00 PM",
-    "line": "DUKE -40.5"
+    "line": "DUKE -41.5"
    },
    {
     "id": "401906770",
@@ -5375,7 +5375,7 @@
      "record": "1-0"
     },
     "time": "8:00 PM",
-    "line": "FLA -33.5"
+    "line": "FLA -35.5"
    },
    {
     "id": "401909491",
@@ -5414,7 +5414,7 @@
      "record": "1-0"
     },
     "time": "8:00 PM",
-    "line": "CREI -26.5"
+    "line": "CREI -29.5"
    },
    {
     "id": "401918968",
