@@ -37,22 +37,28 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
+#ptr{position:fixed;left:0;right:0;top:0;z-index:10;display:flex;justify-content:center;align-items:center;height:48px;padding-top:env(safe-area-inset-top);transform:translateY(-100%);opacity:0;pointer-events:none}
+#ptr .pill{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:500;color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.12)}
+#ptr-icon{display:inline-block;transition:transform .15s}
+#ptr.ready #ptr-icon{transform:rotate(180deg)}
+#ptr.busy #ptr-icon{animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 #standings>thead th:nth-child(n+3),#standings>tbody>tr.entry-row>td:nth-child(n+3){text-align:center}
 .mv{font-size:11px;font-weight:600;margin-left:5px;font-variant-numeric:tabular-nums;vertical-align:1px}
 .h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
-#yesterday .game{grid-template-columns:48px 1fr auto}
-.game{display:grid;grid-template-columns:76px 1fr auto;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
+#yesterday .game{grid-template-columns:48px 1fr}
+.game{display:grid;grid-template-columns:84px 1fr;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
 .game:last-child{border-bottom:0}
 .gtime{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px;white-space:nowrap}
-.gtv{color:var(--mute);font-size:12px;text-align:right;padding-top:2px}
-.line{display:block;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
-.meta span+span::before{content:' · '}
+.gline{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:6px}
+.gtv{color:var(--mute);font-size:12px;margin-top:2px}
+.gline,.gtv{overflow-wrap:anywhere}
+.gtype{color:var(--mute);font-size:12px;margin:5px 0 0 24px}
 .game>div{min-width:0}
 .trec{font-size:11px;font-weight:400;color:var(--mute);margin-left:5px;font-variant-numeric:tabular-nums;white-space:nowrap}
-.meta span{white-space:nowrap}
 .sides{max-width:440px}
-.side{display:grid;grid-template-columns:1.2em minmax(0,1fr);column-gap:6px;align-items:baseline}
-.side.fin{grid-template-columns:1.2em minmax(0,1fr) auto 2.3em}
+.side{display:grid;grid-template-columns:18px minmax(0,1fr);column-gap:6px;align-items:baseline}
+.side.fin{grid-template-columns:18px minmax(0,1fr) auto 2.3em}
 .side+.side{margin-top:4px}
 .side .own{grid-column:2 / -1;margin-top:1px}
 .side .sc{text-align:right;min-width:1.8em}
@@ -72,7 +78,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .ptsb.pos{color:var(--good)}
 .gtime.dim{color:var(--mute);font-weight:400}
 .sm{display:none}
-@media (max-width:520px){.line{display:inline}.gtv{display:flex;flex-wrap:wrap;gap:0 10px}.meta{display:contents}.meta span+span::before{content:none}.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.3em 1fr}#yesterday .game{grid-template-columns:3.2em 1fr}.gtv{grid-column:2;text-align:left;padding-top:0}}
+@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:52px}#standings>thead th:nth-child(4){width:46px}#standings>thead th:nth-child(5){width:56px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.6em 1fr}#yesterday .game{grid-template-columns:3.2em 1fr}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
@@ -104,6 +110,7 @@ svg text{fill:var(--mute);font-size:11px}
 </style>
 </head>
 <body>
+<div id="ptr" aria-hidden="true"><div class="pill"><span id="ptr-icon">↓</span><span id="ptr-text">Pull to refresh</span></div></div>
 <main>
 <h1><img src="icons/icon-180.png" alt="">SHU College Hoops Pool</h1>
 <div class="sub" id="updated"></div>
@@ -134,6 +141,59 @@ svg text{fill:var(--mute);font-size:11px}
 <script id="data" type="application/json">__DATA__</script>
 <script>
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+
+// Fresh standings without force-closing the app:
+// 1) whenever the app comes back on screen, check for a newer update and reload if there is one
+// 2) pull down from the top of the page to reload on demand
+(function freshness() {
+  let lastCheck = Date.now();
+  async function checkForUpdate() {
+    try {
+      const r = await fetch('data.json?t=' + Date.now(), {cache: 'no-store'});
+      if (!r.ok) return;
+      const fresh = await r.json();
+      if (fresh.updated !== D.updated) location.reload();
+    } catch (e) { /* offline: keep showing what we have */ }
+  }
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && Date.now() - lastCheck > 30000) { lastCheck = Date.now(); checkForUpdate(); }
+  });
+  window.addEventListener('pageshow', e => { if (e.persisted) checkForUpdate(); });
+
+  const ptr = document.getElementById('ptr'), txt = document.getElementById('ptr-text');
+  const TRIGGER = 70;
+  let startY = null, dist = 0, busy = false;
+  const show = d => {
+    const p = Math.min(d, 110);
+    ptr.style.transform = `translateY(${p - 48}px)`;
+    ptr.style.opacity = Math.min(1, p / TRIGGER);
+    ptr.classList.toggle('ready', d >= TRIGGER);
+    txt.textContent = d >= TRIGGER ? 'Release to refresh' : 'Pull to refresh';
+  };
+  const reset = () => { ptr.style.transition = 'transform .2s, opacity .2s'; ptr.style.transform = ''; ptr.style.opacity = ''; ptr.classList.remove('ready');
+                        setTimeout(() => ptr.style.transition = '', 220); };
+  window.addEventListener('touchstart', e => {
+    if (busy || window.scrollY > 0 || e.touches.length !== 1) { startY = null; return; }
+    startY = e.touches[0].clientY; dist = 0;
+  }, {passive: true});
+  window.addEventListener('touchmove', e => {
+    if (startY == null) return;
+    const dy = e.touches[0].clientY - startY;
+    if (dy <= 0 || window.scrollY > 0) { dist = 0; show(0); return; }
+    dist = dy * 0.5;   // resistance, like native pull-to-refresh
+    show(dist);
+  }, {passive: true});
+  window.addEventListener('touchend', () => {
+    if (startY == null) return;
+    startY = null;
+    if (dist >= TRIGGER) {
+      busy = true; ptr.classList.remove('ready'); ptr.classList.add('busy'); txt.textContent = 'Refreshing…'; show(TRIGGER);
+      ptr.classList.remove('ready');
+      setTimeout(() => location.reload(), 250);
+    } else reset();
+    dist = 0;
+  });
+})();
 const D = JSON.parse(document.getElementById('data').textContent);
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -180,11 +240,10 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   };
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);
-    const meta = [finals ? '' : g.tv, kindName[g.kind]].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('');
-    const right = (!finals && g.line ? `<span class="line">${esc(g.line)}</span>` : '') + `<span class="meta">${meta}</span>`;
-    return `<div class="game"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div><div class="sides">` +
-      side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) +
-      `</div><div class="gtv">${right}</div></div>`;
+    const under = finals ? '' : (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (g.tv ? `<div class="gtv">${esc(g.tv)}</div>` : '');
+    const type = kindName[g.kind] ? `<div class="gtype">${esc(kindName[g.kind])}</div>` : '';
+    return `<div class="game"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
+      side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) + type + `</div></div>`;
   }).join('');
 }
 gameList(D.today, $('#today'), $('#today-label'), 'No picked teams play today.', false);
