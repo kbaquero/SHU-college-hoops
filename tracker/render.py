@@ -78,7 +78,6 @@ h2.withnote{margin-bottom:2px}
 .gtv{color:var(--mute);font-size:12px;margin-top:2px}
 .gline,.gtv{overflow-wrap:anywhere}
 .gtype{margin:7px 0 0 24px;line-height:1}
-.nsite{display:inline-block;font-size:9px;font-weight:700;line-height:1;padding:2px 4px;border:1px solid var(--line);border-radius:3px;color:var(--mute);vertical-align:1px}
 .lvclock{display:block;color:var(--accent);font-size:13px;white-space:normal}
 .lvasof{display:block;color:var(--mute);font-size:11px;font-weight:400;margin-top:1px}
 .sc.lv{color:var(--mute)}
@@ -342,7 +341,7 @@ const rows = Object.keys(I).map(t => {
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
   dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${i.owners.length ? ownList(i.owners) : '<span class="sep">nobody</span>'}</span></div><div class="scroll"><table class="games"><thead><tr><th>Date</th><th>Opponent</th><th>Result</th><th class="n">Pts</th><th>Type</th></tr></thead><tbody>` +
-    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${+g.date.slice(5, 7)}/${+g.date.slice(8, 10)}</td><td>${g.neutral ? '<span class="nsite" title="Neutral site">N</span> ' : `<span class="at">${g.home === false ? 'at' : 'vs'}</span> `}${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}${/OT/i.test(g.status_detail || '') ? ` <span class="sub">${esc((g.status_detail.match(/\d*OT/i) || ['OT'])[0])}</span>` : ''}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${g.kind === 'ncaa' && roundName[g.round] ? roundName[g.round] : kinds[g.kind]}</td></tr>`).join('') : '<tr><td colspan="5" style="white-space:normal">No completed games yet</td></tr>') +
+    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${+g.date.slice(5, 7)}/${+g.date.slice(8, 10)}</td><td><span class="at"${g.neutral ? ' title="Neutral site"' : ''}>${g.neutral ? 'N' : g.home === false ? 'at' : 'vs'}</span> ${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}${/OT/i.test(g.status_detail || '') ? ` <span class="sub">${esc((g.status_detail.match(/\d*OT/i) || ['OT'])[0])}</span>` : ''}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${g.kind === 'ncaa' && roundName[g.round] ? roundName[g.round] : kinds[g.kind]}</td></tr>`).join('') : '<tr><td colspan="5" style="white-space:normal">No completed games yet</td></tr>') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   return {t, b, i, tr, dr};
