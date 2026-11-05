@@ -83,7 +83,6 @@ h2.withnote{margin-bottom:2px}
 .gline,.gtv{overflow-wrap:anywhere}
 .gtype{margin:7px 0 0 24px;line-height:1}
 .lvclock{display:block;color:var(--accent);font-size:13px;white-space:normal}
-.lvasof{display:block;color:var(--mute);font-size:11px;font-weight:400;margin-top:1px}
 .sc.lv{color:var(--mute)}
 .sc.lv.lead{color:var(--ink);font-weight:600}
 .tag{display:inline-block;font-size:10px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;padding:4px 7px;border-radius:4px;
@@ -163,7 +162,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <h2>Today's games <span class="h2sub" id="today-label"></span></h2>
 <div class="card" id="today"></div>
-<p class="sub"><span id="scores-note"></span>Scores update about hourly in the evening; points become official in the next morning's update. Times are Eastern. Spreads are the last pregame line from ESPN and are missing for games without one.</p>
+<p class="sub">Scores update about hourly in the evening; points become official in the next morning's update. Times are Eastern. Spreads are the last pregame line from ESPN and are missing for games without one.</p>
 
 <h2>Yesterday's games <span class="h2sub" id="yesterday-label"></span></h2>
 <div class="card" id="yesterday"></div>
@@ -308,7 +307,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   };
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? esc(g.final_label || 'Final') : finals ? 'No result'
-      : g.live ? `<span class="lvclock">${esc(g.live.detail)}</span><span class="lvasof">as of ${esc(g.live.as_of)}</span>` : esc(g.time);
+      : g.live ? `<span class="lvclock">${esc(g.live.detail)}</span>` : esc(g.time);
     // a named event says enough on its own; "Neutral site" only labels unnamed neutral-site games
     const where = g.event ? `<div class="gevent">${esc(g.event)}</div>` : g.neutral ? '<div class="gsite">Neutral site</div>' : '';
     const under = where + (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
@@ -319,7 +318,8 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   }).join('');
 }
 gameList(D.today, $('#today'), $('#today-label'), 'No picked teams play today.', false);
-if (D.scores_updated) $('#scores-note').textContent = `Scores as of ${D.scores_updated}. `;
+// one timestamp for the whole list, once any game has started
+if (D.scores_updated && (D.today?.games || []).some(g => g.live || g.completed)) $('#today-label').textContent += ` · as of ${D.scores_updated}`;
 gameList(D.yesterday, $('#yesterday'), $('#yesterday-label'), 'No picked teams played yesterday.', true);
 
 // teams: sortable table. Each column: label, sort value, cell html, numeric?, first-click direction

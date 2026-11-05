@@ -225,6 +225,9 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
 
     data = {
         "updated": now.strftime("%Y-%m-%d %H:%M %Z"),
+        # full runs during the evening also refresh Today's games, so they stamp the scores time too
+        **({"scores_updated": now.strftime("%-I:%M %p")}
+           if any(g.get("live") or g["completed"] for g in data_today["games"]) else {}),
         "through": (pool_day - dt.timedelta(days=1)).strftime("%a, %b %d").replace(" 0", " "),
         "season": C.SEASON,
         "standings": standings,

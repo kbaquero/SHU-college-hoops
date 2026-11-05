@@ -299,7 +299,7 @@ class EveningScores(unittest.TestCase):
             self.assertEqual((navy["team"], navy["pts"]), ("Navy", 7))
             self.assertEqual((g["3"]["completed"], g["3"]["line"]), (False, "SIENA -3.5"))
             self.assertEqual(d["scores_updated"], "9:47 PM")
-            self.assertIn("Scores as of", (tmp / "index.html").read_text())
+            self.assertIn("· as of ${D.scores_updated}", (tmp / "index.html").read_text())
             # a run with nothing new doesn't rewrite the files
             before = (tmp / "data.json").read_text()
             update_scores(get_board=lambda day: board, now=dt.datetime(2026, 11, 4, 22, 47), docs=tmp)
