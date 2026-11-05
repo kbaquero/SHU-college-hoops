@@ -53,7 +53,15 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .gline{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:6px}
 .gtv{color:var(--mute);font-size:12px;margin-top:2px}
 .gline,.gtv{overflow-wrap:anywhere}
-.gtype{color:var(--mute);font-size:12px;margin:5px 0 0 24px}
+.gtype{margin:7px 0 0 24px;line-height:1}
+.tag{display:inline-block;font-size:10px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;padding:4px 7px;border-radius:4px;
+  color:var(--tagc,var(--mute));background:color-mix(in srgb,var(--tagc,var(--mute)) 13%,transparent)}
+.k-nonconf{--tagc:var(--mute)}
+.k-conf{--tagc:#2563eb}
+.k-conf_tourney{--tagc:#7c3aed}
+.k-ncaa{--tagc:#a16207}
+.k-other_post{--tagc:var(--mute)}
+@media (prefers-color-scheme:dark){.k-conf{--tagc:#60a5fa}.k-conf_tourney{--tagc:#a78bfa}.k-ncaa{--tagc:#facc15}}
 .game>div{min-width:0}
 .trec{font-size:11px;font-weight:400;color:var(--mute);margin-left:5px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .sides{max-width:440px}
@@ -241,7 +249,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);
     const under = finals ? '' : (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (g.tv ? `<div class="gtv">${esc(g.tv)}</div>` : '');
-    const type = kindName[g.kind] ? `<div class="gtype">${esc(kindName[g.kind])}</div>` : '';
+    const type = kindName[g.kind] ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(kindName[g.kind])}</span></div>` : '';
     return `<div class="game"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
       side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) + type + `</div></div>`;
   }).join('');
