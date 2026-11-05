@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05 17:06 EST",
+ "updated": "2026-11-05 17:09 EST",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -4627,7 +4627,7 @@
      "opp_final": null,
      "opp_id": "249",
      "record": "1-0",
-     "live": 8
+     "live": 13
     },
     "home": {
      "team": "North Texas",
@@ -4643,8 +4643,8 @@
     "time": "5:00 PM",
     "line": "MCN -2.5",
     "live": {
-     "detail": "17:15 1st",
-     "as_of": "5:06 PM"
+     "detail": "16:13 1st",
+     "as_of": "5:09 PM"
     }
    },
    {
@@ -4725,7 +4725,7 @@
      "record": "1-0"
     },
     "time": "6:00 PM",
-    "line": "IU -31.5"
+    "line": "IU -29.5"
    },
    {
     "id": "401909726",
