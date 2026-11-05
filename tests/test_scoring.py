@@ -461,3 +461,14 @@ class DayRollover(unittest.TestCase):
         finally:
             shutil.copytree(bak, ROOT / "data", dirs_exist_ok=True)
             shutil.rmtree(tmp); shutil.rmtree(bak)
+
+
+class SharePreview(unittest.TestCase):
+    def test_description(self):
+        from tracker.render import share_description, render_html
+        one = {"through": "Wed, Nov 4", "standings": [{"rank": 1, "entry": "Mike L.", "full": "Mike LoMauro", "total": 10},
+                                                      {"rank": 2, "entry": "Joe H.", "total": 9}]}
+        self.assertEqual(share_description(one), "Leader: Mike LoMauro (10 pts) · Standings through Wed, Nov 4")
+        tie = {"standings": [{"rank": 1, "entry": e, "total": 3} for e in ["A", "B", "C", "D"]]}
+        self.assertEqual(share_description(tie), "Leaders: A & B +2 (3 pts)")
+        self.assertEqual(share_description({}), "Season-long standings for the SHU College Hoops Pool")

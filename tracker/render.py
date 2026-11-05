@@ -1,4 +1,5 @@
 """Builds the standings page as one self-contained HTML file (data embedded)."""
+import html
 import json
 
 TEMPLATE = r"""<!doctype html>
@@ -7,7 +8,17 @@ TEMPLATE = r"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SHU College Hoops Pool</title>
-<meta name="description" content="Season-long standings for the SHU College Hoops Pool">
+<meta name="description" content="__OG_DESC__">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHU College Hoops Pool">
+<meta property="og:title" content="SHU College Hoops Pool">
+<meta property="og:description" content="__OG_DESC__">
+<meta property="og:url" content="https://kbaquero.github.io/SHU-college-hoops/">
+<meta property="og:image" content="https://kbaquero.github.io/SHU-college-hoops/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Basketball icon with the title SHU College Hoops Pool">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
@@ -403,6 +414,17 @@ sortTeams();
 """
 
 
+def share_description(data):
+    """One line for link previews, e.g. 'Leader: Mike LoMauro (10 pts) · Standings through Wed, Nov 4'."""
+    st = data.get("standings") or []
+    if not st:
+        return "Season-long standings for the SHU College Hoops Pool"
+    top = [s for s in st if s["rank"] == 1]
+    names = " & ".join(s.get("full") or s["entry"] for s in top[:2]) + (f" +{len(top) - 2}" if len(top) > 2 else "")
+    lead = f'{"Leaders" if len(top) > 1 else "Leader"}: {names} ({top[0]["total"]} pts)'
+    return lead + (f' · Standings through {data["through"]}' if data.get("through") else "")
+
+
 def render_html(data):
     blob = json.dumps(data).replace("</", "<\\/")
-    return TEMPLATE.replace("__DATA__", blob)
+    return TEMPLATE.replace("__OG_DESC__", html.escape(share_description(data), quote=True)).replace("__DATA__", blob)
