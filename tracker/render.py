@@ -53,7 +53,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 @keyframes spin{to{transform:rotate(360deg)}}
 #standings>thead th:nth-child(n+3),#standings>tbody>tr.entry-row>td:nth-child(n+3){text-align:center}
 .mv{font-size:11px;font-weight:600;font-variant-numeric:tabular-nums;vertical-align:1px}
-.rk{display:inline-block;min-width:1.3em;text-align:right}
+.rk{display:inline-block;width:24px;text-align:center}
 .mvc{display:inline-block;width:2.2em;padding-left:5px;white-space:nowrap}
 .h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
 #yesterday .game{grid-template-columns:48px 1fr}
@@ -139,7 +139,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <h2>Standings</h2>
 <div class="card scroll"><table id="standings"><thead><tr>
-<th class="rank">#</th><th>Entry</th><th class="n">Points</th><th class="n"><span class="lg" title="Points gained since the last daily update">Δ since last</span><span class="sm" title="Points gained since the last daily update">Δ</span></th><th class="n">Record</th>
+<th class="rank"><span class="rk">#</span></th><th>Entry</th><th class="n">Points</th><th class="n"><span class="lg" title="Points gained since the last daily update">Δ since last</span><span class="sm" title="Points gained since the last daily update">Δ</span></th><th class="n">Record</th>
 </tr></thead><tbody></tbody></table></div>
 
 <h2>Today's games <span class="h2sub" id="today-label"></span></h2>
