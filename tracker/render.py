@@ -355,7 +355,8 @@ sortTeams();
 (function chart() {
   const H = D.history, el = $('#chart');
   if (H.length < 2) { el.innerHTML = '<p class="sub" style="padding:12px">The chart fills in after a couple of daily updates.</p>'; return; }
-  const ents = D.standings.map(s => s.entry);
+  // alphabetical, so the legend is easy to scan and each entry keeps the same color as the standings change
+  const ents = D.standings.map(s => s.entry).sort((a, b) => a.localeCompare(b));
   const colors = ['#e8590c', '#1c7ed6', '#2f9e44', '#ae3ec9', '#f08c00', '#0c8599', '#e64980',
                   '#4263eb', '#66a80f', '#c92a2a', '#868e96', '#7950f2', '#a87b4f', '#15aabf'];
   const col = j => colors[j % colors.length];
