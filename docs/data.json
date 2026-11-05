@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 21:13 EST",
+ "updated": "2026-11-04 21:16 EST",
  "through": "Tue, Nov 3",
  "season": 2027,
  "standings": [
@@ -4443,7 +4443,7 @@
     "tbd": false,
     "tv": "",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -4453,8 +4453,8 @@
      "home": false,
      "owners": [],
      "id": "3229",
-     "final": null,
-     "won": null,
+     "final": 58,
+     "won": false,
      "record": ""
     },
     "home": {
@@ -4464,14 +4464,14 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "95-58",
      "opp": "Virginia Lynchburg",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 95,
+     "opp_final": 58,
      "opp_id": "3229",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "7:00 PM",
     "line": ""
@@ -4482,7 +4482,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -4492,8 +4492,8 @@
      "home": false,
      "owners": [],
      "id": "2151",
-     "final": null,
-     "won": null,
+     "final": 61,
+     "won": false,
      "record": ""
     },
     "home": {
@@ -4504,14 +4504,14 @@
       "Mike L.",
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "85-61",
      "opp": "Concordia Chicago",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 85,
+     "opp_final": 61,
      "opp_id": "2151",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "7:00 PM",
     "line": ""
@@ -4534,7 +4534,8 @@
      "id": "2693",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 59
     },
     "home": {
      "team": "Southeast Missouri",
@@ -4550,10 +4551,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2693",
-     "record": "1-0"
+     "record": "1-0",
+     "live": 73
     },
     "time": "7:30 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "5:07 2nd",
+     "as_of": "9:16 PM"
+    }
    },
    {
     "id": "401925893",
@@ -4573,7 +4579,8 @@
      "id": "3153",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 34
     },
     "home": {
      "team": "Norfolk St.",
@@ -4589,10 +4596,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "3153",
-     "record": "1-0"
+     "record": "1-0",
+     "live": 35
     },
     "time": "8:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "Halftime",
+     "as_of": "9:16 PM"
+    }
    },
    {
     "id": "401917512",
