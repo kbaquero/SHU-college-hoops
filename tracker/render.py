@@ -144,7 +144,7 @@ svg text{fill:var(--mute);font-size:11px}
 <h2>Teams</h2>
 <div class="card scroll"><table id="teams"><thead><tr>
 </tr></thead><tbody></tbody></table></div>
-<p class="sub">Tap a column header to sort, and tap it again to reverse. Reg = non-conference wins ×1 + conference wins ×2. Conf T = conference tournament wins ×2, +5 for the title. NCAA = seed points + round wins. Game types in each team's log: NC non-conference, C conference, CT conference tournament, NCAA NCAA tournament, PS other postseason (NIT and similar, no points). Results from ESPN; disputes go by ncaa.com.</p>
+<p class="sub">Tap a column header to sort, and tap it again to reverse. Reg = non-conference wins ×1 + conference wins ×2. Conf T = conference tournament wins ×2, +5 for the title. NCAA = seed points + round wins. Game types in each team's log: NC non-conference, C conference, CT conference tournament, NCAA NCAA tournament (shown by round: Play-in, R64, R32, S16, E8, F4, Title), PS other postseason (NIT and similar, no points). Results from ESPN; disputes go by ncaa.com.</p>
 </main>
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -231,6 +231,7 @@ D.standings.forEach(s => {
 });
 
 // game lists (today = upcoming from this morning, yesterday = finals)
+const roundLong = {playin:'Play-in', r64:'Round of 64', r32:'Round of 32', s16:'Sweet 16', e8:'Elite Eight', f4:'Final Four', final:'National Championship'};
 const kindName = {nonconf:'Non-conference', conf:'Conference', conf_tourney:'Conference tournament', ncaa:'NCAA tournament', other_post:'Postseason'};
 function gameList(td, el, labelEl, emptyMsg, finals) {
   td = td || {games: []};
@@ -249,7 +250,8 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);
     const under = finals ? '' : (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (g.tv ? `<div class="gtv">${esc(g.tv)}</div>` : '');
-    const type = kindName[g.kind] ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(kindName[g.kind])}</span></div>` : '';
+    const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
+    const type = label ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(label)}</span></div>` : '';
     return `<div class="game"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
       side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) + type + `</div></div>`;
   }).join('');
@@ -285,7 +287,7 @@ const rows = Object.keys(I).map(t => {
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
   dr.innerHTML = `<td colspan="${COLS.length}"><div class="pickedby">Picked by <span class="own">${i.owners.length ? ownList(i.owners) : '<span class="sep">nobody</span>'}</span></div><div class="scroll"><table class="games"><thead><tr><th>Date</th><th>Opponent</th><th>Result</th><th class="n">Pts</th><th>Type</th></tr></thead><tbody>` +
-    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${+g.date.slice(5, 7)}/${+g.date.slice(8, 10)}</td><td>${g.home === false && !g.neutral ? '<span class="at">at</span> ' : g.neutral ? '<span class="at">vs</span> ' : ''}${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${kinds[g.kind]}</td></tr>`).join('') : '<tr><td colspan="5" style="white-space:normal">No completed games yet</td></tr>') +
+    (gs.length ? gs.slice().reverse().map(g => `<tr><td>${+g.date.slice(5, 7)}/${+g.date.slice(8, 10)}</td><td>${g.home === false && !g.neutral ? '<span class="at">at</span> ' : g.neutral ? '<span class="at">vs</span> ' : ''}${esc(g.opp_name)}</td><td>${g.won ? '<span class="up">W</span>' : '<span class="down">L</span>'} ${g.score}</td><td class="n">${g.pts ? '+' + g.pts : 0}</td><td>${g.kind === 'ncaa' && roundName[g.round] ? roundName[g.round] : kinds[g.kind]}</td></tr>`).join('') : '<tr><td colspan="5" style="white-space:normal">No completed games yet</td></tr>') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   return {t, b, i, tr, dr};

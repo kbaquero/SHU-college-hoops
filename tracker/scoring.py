@@ -84,7 +84,8 @@ def score_team(team, games, conf_of, d1_ids, manual_seed=None):
                 else:
                     b["ncaa_out"] = True
                 b["pts_ncaa"] += pts
-        b["games"].append({**g, "kind": kind, "pts": pts})
+        b["games"].append({**g, "kind": kind, "pts": pts,
+                           "round": ncaa_round(g.get("headline") or "") if kind == "ncaa" else None})
 
     # Conference tournament title: won the final (by label), or won out and has since reached the NCAAs
     if ct_games:

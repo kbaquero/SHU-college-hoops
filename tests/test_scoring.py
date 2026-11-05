@@ -55,6 +55,7 @@ class Scoring(unittest.TestCase):
         self.assertEqual(b["pts_ct"], 6 + 5)
         self.assertEqual(b["seed"], 1)
         self.assertEqual(b["pts_ncaa"], 8 + 2 + 4 + 6 + 8 + 10 + 12)
+        self.assertEqual([x["round"] for x in b["games"] if x["kind"] == "ncaa"], ["r64", "r32", "s16", "e8", "f4", "final"])
 
     def test_semifinal_loss_not_champ(self):
         games = [g("10", "2027-03-12", True, "153", 3, "ACC Tournament - Quarterfinal"),

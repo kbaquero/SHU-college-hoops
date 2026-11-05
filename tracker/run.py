@@ -33,7 +33,7 @@ def todays_games(results, owners, today):
             row = games.setdefault(g["id"], {
                 "id": g["id"], "start": g.get("start", ""), "tbd": bool(g.get("time_tbd")),
                 "tv": g.get("tv", ""), "neutral": bool(g.get("neutral")), "completed": g["completed"],
-                "kind": g.get("kind", ""), "sides": {}})
+                "kind": g.get("kind", ""), "round": g.get("round"), "sides": {}})
             mine, theirs = _pts_pair(g.get("score", ""))
             row["sides"][team] = {"pool": True, "home": bool(g.get("home")), "owners": owners.get(team, []),
                                   "won": g.get("won"), "score": g.get("score", ""), "opp": g.get("opp_name", ""),
