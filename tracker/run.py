@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 
 from . import config as C, espn
 from .teams import load_teams, save_teams, resolve_espn_ids, load_entries, load_seeds
-from .scoring import score_team
+from .scoring import score_team, game_points, ncaa_round
 from .render import render_html
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -173,6 +173,9 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
     data_today = todays_games(results, owners, today)
     data_yesterday = todays_games(results, owners, (now.date() - dt.timedelta(days=1)).isoformat())
     # spreads (today) and opponents' records (both days) come from ESPN's daily scoreboard
+    # spreads already captured by earlier runs (morning or evening); kept once ESPN drops a line at tip-off
+    saved_lines = {g["id"]: g["line"] for blk in ("today", "yesterday")
+                   for g in (prev.get(blk) or {}).get("games", []) if g.get("line")}
     for block in (data_today, data_yesterday):
         if not block["games"]:
             continue
@@ -184,8 +187,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
             info = board.get(g["id"]) or {}
             if isinstance(info, str):   # tolerate a plain {event: spread} mapping
                 info = {"line": info}
-            if block is data_today:
-                g["line"] = info.get("line", "")
+            g["line"] = (info.get("line") if block is data_today else "") or saved_lines.get(g["id"], "")
             for side in (g["away"], g["home"]):
                 if side["pool"]:
                     b = results.get(side["team"], {})
@@ -211,7 +213,60 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
     return data
 
 
+def update_scores(get_board=None, now=None, docs=DOCS):
+    """Evening update: refresh only Today's games (finals, scores, preview points, latest pregame spread).
+    Standings and everything else keep their morning numbers."""
+    get_board = get_board or espn.day_board
+    now = now or dt.datetime.now(ZoneInfo("America/New_York"))
+    path = docs / "data.json"
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
+    td = data.get("today") or {}
+    if not td.get("games"):
+        return data
+    board = get_board(td["date"])   # the morning's date, so 12-1 AM runs still finish off "today"
+    teams = load_teams()
+    id_of = {t["team"]: t["espn_id"] for t in teams if t.get("espn_id")}
+    d1 = set(id_of.values())
+    changed = False
+    for g in td["games"]:
+        info = board.get(g["id"])
+        if not info:
+            continue
+        if info.get("state") == "pre" and info.get("line") and info["line"] != g.get("line"):
+            g["line"] = info["line"]          # newer pregame line; frozen once the game tips
+            changed = True
+        if not info.get("completed") or g.get("completed"):
+            continue
+        sides = (g["away"], g["home"])
+        ids = [id_of.get(s["team"], "") if s["pool"] else s.get("id", "") for s in sides]
+        scores, winners = info.get("scores", {}), info.get("winners", {})
+        if g.get("kind") == "ncaa" and not g.get("round"):
+            g["round"] = ncaa_round(info.get("headline", ""))
+        for k, s in enumerate(sides):
+            me, opp = ids[k], ids[1 - k]
+            s["final"] = scores.get(me)
+            won = winners.get(me)
+            if won is None and s["final"] is not None and scores.get(opp) is not None:
+                won = s["final"] > scores[opp]
+            s["won"] = won
+            if s["pool"]:
+                s["pts"] = game_points(g.get("kind"), won, g.get("round"), info.get("headline", ""), opp in d1)
+        g["completed"] = True
+        changed = True
+    if changed:
+        data["scores_updated"] = now.strftime("%-I:%M %p")
+        path.write_text(json.dumps(data, indent=1))
+        (docs / "index.html").write_text(render_html(data))
+    return data
+
+
 if __name__ == "__main__":
+    if "--scores" in sys.argv:
+        d = update_scores()
+        print("Scores updated" if d and d.get("scores_updated") else "No score changes")
+        sys.exit(0)
     d = run()
     print(f"Updated {d['updated']}: {len(d['standings'])} entries, {len(d['teams'])} teams")
     for s in d["standings"][:10]:

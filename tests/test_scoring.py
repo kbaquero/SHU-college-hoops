@@ -249,3 +249,68 @@ class Pipeline(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EveningScores(unittest.TestCase):
+    def _today(self, tmp, ids):
+        from tracker.run import todays_games
+        mk = lambda gid, home, opp, oid, kind, headline="": {
+            "id": gid, "date": "2026-11-04", "start": "2026-11-04T19:00:00-05:00", "time_tbd": False, "home": home,
+            "neutral": False, "tv": "ESPN+", "completed": False, "won": None, "score": "", "opp_name": opp,
+            "opp_id": oid, "kind": kind, "headline": headline}
+        results = {"Duke": {"games": [mk("1", True, "Army", "999", "nonconf")], "w": 1, "l": 0},
+                   "Navy": {"games": [mk("2", False, "Virginia", ids["Virginia"], "conf_tourney")], "w": 0, "l": 1},
+                   "Siena": {"games": [mk("3", True, "Marist", ids["Marist"], "conf")], "w": 0, "l": 0}}
+        owners = {"Duke": ["Kevin B."], "Navy": ["Kevin B."], "Siena": ["Kevin B."]}
+        today = todays_games(results, owners, "2026-11-04")
+        for g in today["games"]:
+            g["line"] = {"1": "DUKE -20.5", "2": "", "3": "SIENA -2"}[g["id"]]
+        data = {"updated": "2026-11-04 05:47 EST", "today": today, "yesterday": {"games": []}, "standings": [],
+                "teams": {}, "team_info": {}, "history": [], "warnings": []}
+        (tmp / "data.json").write_text(json.dumps(data))
+
+    def test_finals_points_and_spreads(self):
+        from tracker.run import update_scores
+        rows = TM.load_teams()
+        ids = {r["team"]: r["espn_id"] or str(5000 + i) for i, r in enumerate(rows)}
+        bak = (ROOT / "data" / "teams.csv").read_bytes()
+        try:
+            for r in rows:
+                r["espn_id"] = ids[r["team"]]
+            TM.save_teams(rows)
+            tmp = Path(tempfile.mkdtemp())
+            self._today(tmp, ids)
+            board = {
+                # Duke won (non-conference) -> +1; game over so its morning line is kept
+                "1": {"state": "post", "completed": True, "line": "", "scores": {ids["Duke"]: 81, "999": 60},
+                      "winners": {ids["Duke"]: True, "999": False}, "headline": ""},
+                # Navy won a conference tournament final -> +2 +5
+                "2": {"state": "post", "completed": True, "line": "", "scores": {ids["Navy"]: 70, ids["Virginia"]: 66},
+                      "winners": {ids["Navy"]: True, ids["Virginia"]: False}, "headline": "Patriot League Tournament - Final"},
+                # Siena hasn't tipped: newer pregame line replaces the morning one
+                "3": {"state": "pre", "completed": False, "line": "SIENA -3.5", "scores": {}, "winners": {}, "headline": ""},
+            }
+            d = update_scores(get_board=lambda day: board, now=dt.datetime(2026, 11, 4, 21, 47), docs=tmp)
+            g = {x["id"]: x for x in d["today"]["games"]}
+            duke = g["1"]["home"]
+            self.assertEqual((g["1"]["completed"], duke["final"], duke["won"], duke["pts"], g["1"]["line"]), (True, 81, True, 1, "DUKE -20.5"))
+            self.assertEqual((g["1"]["away"]["final"], g["1"]["away"]["won"]), (60, False))
+            navy = g["2"]["away"]
+            self.assertEqual((navy["team"], navy["pts"]), ("Navy", 7))
+            self.assertEqual((g["3"]["completed"], g["3"]["line"]), (False, "SIENA -3.5"))
+            self.assertEqual(d["scores_updated"], "9:47 PM")
+            self.assertIn("Scores as of", (tmp / "index.html").read_text())
+            # a run with nothing new doesn't rewrite the files
+            before = (tmp / "data.json").read_text()
+            update_scores(get_board=lambda day: board, now=dt.datetime(2026, 11, 4, 22, 47), docs=tmp)
+            self.assertEqual((tmp / "data.json").read_text(), before)
+        finally:
+            (ROOT / "data" / "teams.csv").write_bytes(bak)
+
+    def test_game_points(self):
+        from tracker.scoring import game_points
+        self.assertEqual(game_points("conf", True), 2)
+        self.assertEqual(game_points("conf", False), 0)
+        self.assertEqual(game_points("conf_tourney", True, headline="ACC Tournament - Semifinal"), 2)
+        self.assertEqual(game_points("ncaa", True, "s16"), 6)
+        self.assertEqual(game_points("other_post", True), 0)

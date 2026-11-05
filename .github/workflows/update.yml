@@ -2,8 +2,15 @@ name: Update standings
 
 on:
   schedule:
-    - cron: "47 10 * * *"   # 10:47 UTC = 5:47 AM Eastern (6:47 AM during daylight time)
+    - cron: "47 10 * * *"   # full update: 10:47 UTC = 5:47 AM Eastern (6:47 AM during daylight time)
+    - cron: "7 0-6 * * *"   # evening scores: hourly 7:07 PM-1:07 AM Eastern (8:07 PM-2:07 AM during daylight time)
   workflow_dispatch:         # "Run workflow" button for manual updates
+    inputs:
+      mode:
+        description: "full = rescore everything; scores = only refresh Today's games"
+        type: choice
+        options: [full, scores]
+        default: full
   push:
     paths: ["data/**", "tracker/**", "tests/**", ".github/**"]   # re-score when entries, seeds or code change
 
@@ -24,8 +31,15 @@ jobs:
           python-version: "3.12"
       - name: Run tests
         run: python -m unittest discover -s tests -v
-      - name: Update standings
-        run: python -m tracker.run
+      - name: Update
+        env:
+          EVENING: ${{ (github.event_name == 'schedule' && github.event.schedule != '47 10 * * *') || inputs.mode == 'scores' }}
+        run: |
+          if [ "$EVENING" = "true" ]; then
+            python -m tracker.run --scores     # Today's games only; standings stay at the morning numbers
+          else
+            python -m tracker.run              # full rescore
+          fi
       - name: Commit results
         run: |
           git config user.name "standings-bot"
@@ -34,6 +48,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "Update standings $(date -u +%F)"
+            if [ "${{ (github.event_name == 'schedule' && github.event.schedule != '47 10 * * *') || inputs.mode == 'scores' }}" = "true" ]; then
+              git commit -m "Update scores $(date -u +'%F %H:%M') UTC"
+            else
+              git commit -m "Update standings $(date -u +%F)"
+            fi
             git push
           fi

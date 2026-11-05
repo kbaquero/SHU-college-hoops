@@ -35,6 +35,21 @@ def classify(g, my_conf, conf_of):
     return "conf" if same_conf else "nonconf"
 
 
+def game_points(kind, won, round_=None, headline="", opp_is_d1=True):
+    """Pool points for one finished game, from its type and result (used for evening score previews)."""
+    if not won:
+        return 0
+    if kind == "nonconf":
+        return C.PTS_NONCONF_WIN if (C.COUNT_NON_D1_WINS or opp_is_d1) else 0
+    if kind == "conf":
+        return C.PTS_CONF_WIN
+    if kind == "conf_tourney":
+        return C.PTS_CONF_TOURNEY_WIN + (C.PTS_CONF_TOURNEY_CHAMP if CONF_FINAL.search(headline or "") else 0)
+    if kind == "ncaa":
+        return C.PTS_NCAA_ROUND.get(round_ or ncaa_round(headline or ""), 0)
+    return 0
+
+
 def seed_points(seed):
     return C.PTS_SEED.get(seed, C.PTS_SEED_DEFAULT)
 

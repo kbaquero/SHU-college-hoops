@@ -156,11 +156,22 @@ def day_board(day):
     out = {}
     for ev in data.get("events", []):
         comp = (ev.get("competitions") or [{}])[0]
-        recs = {}
+        recs, scores, winners = {}, {}, {}
         for c in comp.get("competitors", []):
             tid = str(c.get("id") or c.get("team", {}).get("id"))
             r = _record(c)
             if r:
                 recs[tid] = r
-        out[str(ev.get("id"))] = {"line": _line(comp.get("odds")), "records": recs}
+            sc = _score(c)
+            if sc is not None:
+                scores[tid] = sc
+            if c.get("winner") is not None:
+                winners[tid] = bool(c.get("winner"))
+        stype = (comp.get("status") or ev.get("status") or {}).get("type", {})
+        out[str(ev.get("id"))] = {
+            "line": _line(comp.get("odds")), "records": recs, "scores": scores, "winners": winners,
+            "state": stype.get("state", ""),            # pre / in / post
+            "completed": bool(stype.get("completed")),
+            "headline": " | ".join(n.get("headline", "") for n in comp.get("notes", []) if n.get("headline")),
+        }
     return out

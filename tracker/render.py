@@ -131,7 +131,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <h2>Today's games <span class="h2sub" id="today-label"></span></h2>
 <div class="card" id="today"></div>
-<p class="sub">From this morning's update, so it won't show live scores or line moves. Times are Eastern. Spreads come from ESPN and are missing for games without a posted line.</p>
+<p class="sub"><span id="scores-note"></span>Scores update about hourly in the evening; points become official in the next morning's update. Times are Eastern. Spreads are the last pregame line from ESPN and are missing for games without one.</p>
 
 <h2>Yesterday's games <span class="h2sub" id="yesterday-label"></span></h2>
 <div class="card" id="yesterday"></div>
@@ -160,7 +160,7 @@ if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catc
       const r = await fetch('data.json?t=' + Date.now(), {cache: 'no-store'});
       if (!r.ok) return;
       const fresh = await r.json();
-      if (fresh.updated !== D.updated) location.reload();
+      if (fresh.updated !== D.updated || fresh.scores_updated !== D.scores_updated) location.reload();
     } catch (e) { /* offline: keep showing what we have */ }
   }
   document.addEventListener('visibilitychange', () => {
@@ -249,7 +249,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   };
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? 'Final' : finals ? 'No result' : esc(g.time);
-    const under = finals ? '' : (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (g.tv ? `<div class="gtv">${esc(g.tv)}</div>` : '');
+    const under = (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
     const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
     const type = label ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(label)}</span></div>` : '';
     return `<div class="game"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
@@ -257,6 +257,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   }).join('');
 }
 gameList(D.today, $('#today'), $('#today-label'), 'No picked teams play today.', false);
+if (D.scores_updated) $('#scores-note').textContent = `Scores as of ${D.scores_updated}. `;
 gameList(D.yesterday, $('#yesterday'), $('#yesterday-label'), 'No picked teams played yesterday.', true);
 
 // teams: sortable table. Each column: label, sort value, cell html, numeric?, first-click direction
