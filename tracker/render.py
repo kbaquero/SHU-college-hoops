@@ -305,7 +305,8 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   el.innerHTML = td.games.map(g => {
     const when = g.completed ? esc(g.final_label || 'Final') : finals ? 'No result'
       : g.live ? `<span class="lvclock">${esc(g.live.detail)}</span><span class="lvasof">as of ${esc(g.live.as_of)}</span>` : esc(g.time);
-    const where = (g.neutral ? '<div class="gsite">Neutral site</div>' : '') + (g.event ? `<div class="gevent">${esc(g.event)}</div>` : '');
+    // a named event says enough on its own; "Neutral site" only labels unnamed neutral-site games
+    const where = g.event ? `<div class="gevent">${esc(g.event)}</div>` : g.neutral ? '<div class="gsite">Neutral site</div>' : '';
     const under = where + (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
     const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
     const type = label ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(label)}</span></div>` : '';
