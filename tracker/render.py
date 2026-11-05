@@ -72,6 +72,8 @@ h2.withnote{margin-bottom:2px}
 .h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
 .game{display:grid;grid-template-columns:84px 1fr;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
 .game:last-child{border-bottom:0}
+.narrow .game{grid-template-columns:3.2em 1fr}
+.narrow.ot .game{grid-template-columns:4.6em 1fr}
 .gtime{font-variant-numeric:tabular-nums;font-weight:600;padding-top:1px;white-space:nowrap}
 .gsite,.gevent{font-size:11px;color:var(--mute);line-height:1.3;margin-top:4px;overflow-wrap:break-word;hyphens:auto}
 .gevent{color:var(--ink);font-weight:500}
@@ -288,6 +290,9 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   td = td || {games: []};
   labelEl.textContent = td.label ? '· ' + td.label : '';
   if (!td.games.length) { el.innerHTML = `<div class="empty">${emptyMsg}</div>`; return; }
+  // finals-only lists stay narrow on days without event names; any named event widens the whole list
+  el.classList.toggle('narrow', finals && !td.games.some(g => g.event));
+  el.classList.toggle('ot', td.games.some(g => /OT/.test(g.final_label || '')));
   // one team: [at] name + record ........ score  pts   (entry names on the line below)
   const side = (s, prefix, g) => {
     const rc = s.record ? `<span class="trec">${esc(s.record)}</span>` : '';
