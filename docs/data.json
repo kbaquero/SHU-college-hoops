@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05 16:59 EST",
+ "updated": "2026-11-05 17:03 EST",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -4610,6 +4610,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "McNeese",
      "pool": true,
@@ -4625,7 +4626,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "249",
-     "record": "1-0"
+     "record": "1-0",
+     "live": 3
     },
     "home": {
      "team": "North Texas",
@@ -4635,10 +4637,15 @@
      "id": "249",
      "final": null,
      "won": null,
-     "record": "1-0"
+     "record": "1-0",
+     "live": 0
     },
     "time": "5:00 PM",
-    "line": "MCN -2.5"
+    "line": "MCN -2.5",
+    "live": {
+     "detail": "18:30 1st",
+     "as_of": "5:03 PM"
+    }
    },
    {
     "id": "401920960",
@@ -4650,6 +4657,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Virginia Lynchburg",
      "pool": false,
@@ -4689,6 +4697,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Bellarmine",
      "pool": false,
@@ -4728,6 +4737,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Wake Forest",
      "pool": false,
@@ -4767,6 +4777,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "LIU",
      "pool": true,
@@ -4814,6 +4825,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Buffalo",
      "pool": true,
@@ -4853,6 +4865,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Fort Valley State",
      "pool": false,
@@ -4892,6 +4905,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Howard",
      "pool": true,
@@ -4933,6 +4947,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Chicago St.",
      "pool": false,
@@ -4972,6 +4987,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "America East-Metro Challenge",
     "away": {
      "team": "NJIT",
      "pool": true,
@@ -5018,6 +5034,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Cornell",
      "pool": false,
@@ -5057,6 +5074,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "America East-Metro Challenge",
     "away": {
      "team": "UMBC",
      "pool": false,
@@ -5098,6 +5116,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Mercyhurst",
      "pool": true,
@@ -5139,6 +5158,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Delaware St.",
      "pool": false,
@@ -5178,6 +5198,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "America East-Metro Challenge",
     "away": {
      "team": "Vermont",
      "pool": true,
@@ -5222,6 +5243,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Mercer",
      "pool": false,
@@ -5261,6 +5283,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Northwestern St.",
      "pool": false,
@@ -5300,6 +5323,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Coastal Carolina",
      "pool": false,
@@ -5340,6 +5364,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Jacksonville",
      "pool": true,
@@ -5387,6 +5412,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Le Moyne",
      "pool": true,
@@ -5426,6 +5452,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "VMI",
      "pool": false,
@@ -5466,6 +5493,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Penn",
      "pool": true,
@@ -5511,6 +5539,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Cal Poly",
      "pool": false,
@@ -5556,6 +5585,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Maryland Eastern Shore",
      "pool": false,
@@ -5596,6 +5626,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Virginia Lynchburg",
      "pool": false,
@@ -5635,6 +5666,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Concordia Chicago",
      "pool": false,
@@ -5675,6 +5707,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Webster",
      "pool": false,
@@ -5714,6 +5747,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Randolph",
      "pool": false,
@@ -5753,6 +5787,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "North Dakota St.",
      "pool": true,
@@ -5799,6 +5834,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
+    "event": "",
     "away": {
      "team": "Queens",
      "pool": true,
