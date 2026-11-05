@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 20:50 EST",
+ "updated": "2026-11-04 20:59 EST",
  "season": 2027,
  "standings": [
   {
@@ -24,14 +24,15 @@
    ]
   },
   {
-   "rank": 2,
+   "rank": 1,
    "entry": "Mike L.",
    "full": "Mike LoMauro",
-   "total": 8,
-   "change": 0,
-   "move": 0,
+   "total": 9,
+   "change": 1,
+   "move": 1,
    "salary": 100,
    "teams": [
+    "SIUE",
     "Clemson",
     "UCLA",
     "BYU",
@@ -39,7 +40,6 @@
     "Vanderbilt",
     "High Point",
     "Samford",
-    "SIUE",
     "Marist",
     "NJIT"
    ]
@@ -172,6 +172,27 @@
   },
   {
    "rank": 5,
+   "entry": "Kevin B.",
+   "full": "Kevin Baquero",
+   "total": 6,
+   "change": 1,
+   "move": 1,
+   "salary": 100,
+   "teams": [
+    "SIUE",
+    "Duke",
+    "Michigan",
+    "St. John's",
+    "Florida",
+    "Kansas St.",
+    "Howard",
+    "Navy",
+    "Siena",
+    "Mercyhurst"
+   ]
+  },
+  {
+   "rank": 5,
    "entry": "Mike C.",
    "full": "Mike Costello",
    "total": 6,
@@ -213,33 +234,12 @@
    ]
   },
   {
-   "rank": 11,
-   "entry": "Kevin B.",
-   "full": "Kevin Baquero",
-   "total": 5,
-   "change": 0,
-   "move": -5,
-   "salary": 100,
-   "teams": [
-    "Duke",
-    "Michigan",
-    "St. John's",
-    "Florida",
-    "SIUE",
-    "Kansas St.",
-    "Howard",
-    "Navy",
-    "Siena",
-    "Mercyhurst"
-   ]
-  },
-  {
-   "rank": 11,
+   "rank": 12,
    "entry": "Sean P.",
    "full": "Sean Palamarik",
    "total": 5,
    "change": 0,
-   "move": -5,
+   "move": -6,
    "salary": 100,
    "teams": [
     "N.C. State",
@@ -12909,7 +12909,7 @@
      "score": "",
      "headline": "",
      "conf_flag": null,
-     "status_detail": "3:20 - 2nd",
+     "status_detail": "0:30 - 2nd",
      "seed": null,
      "kind": "nonconf",
      "pts": 0,
@@ -32128,7 +32128,7 @@
      "score": "",
      "headline": "",
      "conf_flag": null,
-     "status_detail": "11:18 - 2nd",
+     "status_detail": "7:03 - 2nd",
      "seed": null,
      "kind": "nonconf",
      "pts": 0,
@@ -35037,7 +35037,7 @@
      "score": "",
      "headline": "",
      "conf_flag": null,
-     "status_detail": "4:18 - 1st",
+     "status_detail": "0:40 - 1st",
      "seed": null,
      "kind": "nonconf",
      "pts": 0,
@@ -41623,7 +41623,7 @@
    ]
   },
   "SIUE": {
-   "nonconf_w": 1,
+   "nonconf_w": 2,
    "nonconf_l": 0,
    "conf_w": 0,
    "conf_l": 0,
@@ -41633,12 +41633,12 @@
    "seed": null,
    "ncaa_w": [],
    "ncaa_out": false,
-   "w": 1,
+   "w": 2,
    "l": 0,
-   "pts_reg": 1,
+   "pts_reg": 2,
    "pts_ct": 0,
    "pts_ncaa": 0,
-   "total": 1,
+   "total": 2,
    "games": [
     {
      "id": "401926141",
@@ -41672,18 +41672,18 @@
      "neutral": false,
      "tv": "ESPN+",
      "season_type": 2,
-     "completed": false,
-     "won": null,
+     "completed": true,
+     "won": true,
      "opp_id": "2151",
      "opp_name": "Concordia Chicago",
      "opp_short": "Concordia Chicago",
-     "score": "",
+     "score": "85-61",
      "headline": "",
      "conf_flag": null,
-     "status_detail": "0:56 - 2nd",
+     "status_detail": "Final",
      "seed": null,
      "kind": "nonconf",
-     "pts": 0,
+     "pts": 1,
      "round": null
     },
     {
@@ -46880,7 +46880,7 @@
      "score": "",
      "headline": "",
      "conf_flag": null,
-     "status_detail": "14:39 - 2nd",
+     "status_detail": "11:56 - 2nd",
      "seed": null,
      "kind": "nonconf",
      "pts": 0,
@@ -59312,8 +59312,8 @@
     "Jason H.": 6,
     "Sean P.": 5,
     "Drew & Bob D.": 6,
-    "Mike L.": 8,
-    "Kevin B.": 5
+    "Mike L.": 9,
+    "Kevin B.": 6
    }
   }
  ],
@@ -59406,7 +59406,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -59416,8 +59416,8 @@
      "home": false,
      "owners": [],
      "id": "2151",
-     "final": null,
-     "won": null,
+     "final": 61,
+     "won": false,
      "record": ""
     },
     "home": {
@@ -59428,14 +59428,14 @@
       "Mike L.",
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "85-61",
      "opp": "Concordia Chicago",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 85,
+     "opp_final": 61,
      "opp_id": "2151",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "7:00 PM",
     "line": ""
