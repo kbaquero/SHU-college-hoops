@@ -436,3 +436,28 @@ class ScoreboardOverridesStaleSchedule(unittest.TestCase):
         finally:
             shutil.copytree(bak, ROOT / "data", dirs_exist_ok=True)
             shutil.rmtree(tmp); shutil.rmtree(bak)
+
+
+class DayRollover(unittest.TestCase):
+    def test_after_midnight_is_still_the_previous_evening(self):
+        from tracker import run as R
+        tmp, bak = Path(tempfile.mkdtemp()), Path(tempfile.mkdtemp())
+        shutil.copytree(ROOT / "data", bak, dirs_exist_ok=True)
+        try:
+            rows = TM.load_teams()
+            for i, r in enumerate(rows):
+                r["espn_id"] = str(1000 + i)
+            TM.save_teams(rows)
+            (ROOT / "data" / "entries.csv").write_text("entry,team\n" + "".join(f"Kevin,{t}\n" for t in
+                ["Duke", "Michigan", "Kansas St.", "St. John's", "Florida", "Howard", "Navy", "Siena", "Mercyhurst", "SIUE"]))
+            sched = lambda tid: [g("a" + tid, "2026-11-03", True, "999"), g("b" + tid, "2026-11-04", True, "999")]
+            late = R.run(get_schedule=sched, get_team_list=lambda: [], get_lines=lambda d: {},
+                         now=dt.datetime(2026, 11, 5, 0, 10), docs=tmp)          # 12:10 AM Thursday
+            self.assertEqual((late["through"], late["today"]["date"], late["standings"][0]["total"]), ("Tue, Nov 3", "2026-11-04", 10))
+            morning = R.run(get_schedule=sched, get_team_list=lambda: [], get_lines=lambda d: {},
+                            now=dt.datetime(2026, 11, 5, 5, 50), docs=tmp)        # 5:50 AM Thursday
+            self.assertEqual((morning["through"], morning["today"]["date"], morning["standings"][0]["total"]), ("Wed, Nov 4", "2026-11-05", 20))
+            self.assertEqual(morning["standings"][0]["change"], 10)
+        finally:
+            shutil.copytree(bak, ROOT / "data", dirs_exist_ok=True)
+            shutil.rmtree(tmp); shutil.rmtree(bak)

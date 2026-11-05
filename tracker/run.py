@@ -115,7 +115,10 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
 
     picked = sorted({t for picks in entries.values() for t in picks})
     results = {}
-    today = now.date().isoformat()
+    # The pool's day rolls over at 5 AM Eastern, not midnight: runs between midnight and 5 AM still belong to
+    # the previous evening, so late games finish in Today's games and the standings only move each morning.
+    pool_day = (now - dt.timedelta(hours=5)).date()
+    today = pool_day.isoformat()
     todays = {}
     for name in picked:
         t = by_name[name]
@@ -178,7 +181,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
             owners.setdefault(t, []).append(e)
 
     data_today = todays_games(todays, owners, today)
-    data_yesterday = todays_games(results, owners, (now.date() - dt.timedelta(days=1)).isoformat())
+    data_yesterday = todays_games(results, owners, (pool_day - dt.timedelta(days=1)).isoformat())
     # spreads (today) and opponents' records (both days) come from ESPN's daily scoreboard
     # spreads already captured by earlier runs (morning or evening); kept once ESPN drops a line at tip-off
     saved_lines = {g["id"]: g["line"] for blk in ("today", "yesterday")
@@ -208,7 +211,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
 
     data = {
         "updated": now.strftime("%Y-%m-%d %H:%M %Z"),
-        "through": (now.date() - dt.timedelta(days=1)).strftime("%a, %b %d").replace(" 0", " "),
+        "through": (pool_day - dt.timedelta(days=1)).strftime("%a, %b %d").replace(" 0", " "),
         "season": C.SEASON,
         "standings": standings,
         "teams": results,

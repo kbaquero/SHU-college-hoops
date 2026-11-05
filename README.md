@@ -93,3 +93,16 @@ How games are classified:
   flagged. The next run catches up.
 - Run locally: `python -m tracker.run` (Python 3.9+, no packages to install).
   Tests: `python -m unittest discover -s tests`.
+
+## Update schedule
+
+- **Morning (about 5:50 AM Eastern):** full update. Standings, Δ, rank arrows, chart and team logs count games
+  through the previous day. The pool's day rolls over at 5 AM Eastern, so late games always land in the next
+  morning's update.
+- **Evenings (hourly, about 7 PM to 1 AM Eastern):** only Today's games changes: finals, in-progress snapshots,
+  pregame spreads. Standings keep the morning numbers.
+- **Any push to `data/`, `tracker/`, `tests/` or `.github/`** runs a full update, which is safe at any hour.
+
+GitHub's own cron schedules (in the workflow) often fire late or get skipped, so two Claude scheduled tasks
+("SHU pool – morning standings nudge" and "SHU pool – evening scores nudge") also push a timestamp to
+`data/.tick` on that schedule to start the workflow. Either path produces the same result.
