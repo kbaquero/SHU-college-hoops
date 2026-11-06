@@ -196,7 +196,7 @@ td .ptsb{font-size:14px;padding:1px 7px}
 .entry-row{cursor:pointer}
 .entry-row:hover td{background:var(--chip)}
 .entry-row.open>td{background:var(--chip)}
-.detail tr.rollup td{border-top:2px solid var(--line);border-bottom:0;font-weight:650;color:var(--ink)}
+.detail tr.rollup td{background:var(--head2);border-top:1px solid var(--line);border-bottom:0;font-weight:650;color:var(--ink)}  /* same tint as the header above: bookends the team list */
 /* expand hint: a small muted chevron riding after the entry name; turns down when the row is open */
 .chev{display:inline-block;width:9px;height:9px;margin-left:6px;vertical-align:1px;color:var(--mute);opacity:.7;transition:transform .15s}
 .chev svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
