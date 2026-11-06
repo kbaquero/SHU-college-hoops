@@ -193,6 +193,14 @@ h2.withnote{margin-bottom:2px}
 svg text{fill:var(--mute);font-size:11px}
 #chart{padding-top:4px}
 #chart svg{display:block}
+#value svg{display:block;touch-action:manipulation}
+#value text{font-size:11px;fill:var(--mute)}
+.vkey{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--mute);padding:0 12px 4px}
+.vkey i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.vkey i.dash{width:16px;height:0;border-radius:0;border-top:2px dashed var(--mute);vertical-align:3px}
+.vinfo{border-top:1px solid var(--line);padding:9px 12px 11px;font-size:13px;color:var(--mute);min-height:20px}
+.vinfo b{color:var(--ink)}
+
 .legend{display:flex;flex-wrap:wrap;gap:4px 6px;font-size:12px;padding:2px 10px 12px}
 .legend button{all:unset;cursor:pointer;color:var(--ink);padding:3px 7px;border-radius:5px;border:1px solid transparent;white-space:nowrap}
 .legend button:hover{background:var(--chip)}
@@ -265,6 +273,9 @@ svg text{fill:var(--mute);font-size:11px}
 <h2>Points over time</h2>
 <div class="card"><div id="chart"></div></div>
 <p class="sub">Tap names to highlight their lines, and tap again to clear.</p>
+<h2>Value</h2>
+<div class="card"><div id="value"></div><div id="value-info" class="vinfo">Tap a dot to see the team.</div></div>
+<p class="sub">Every picked team: salary vs. points so far. Dots above the dashed line are beating the pool's average points per dollar; below it, falling short. Early in the season most teams sit on top of each other, and they spread out as games pile up.</p>
 
 </section>
 </main>
@@ -526,6 +537,68 @@ function renderMyCard(me) {
   el.hidden = false;
 }
 
+// value: salary vs points for every picked team, against the pool's average points per dollar
+(function valueChart() {
+  const el = $('#value'), info = $('#value-info');
+  const pts = Object.keys(I).filter(t => I[t].owners.length).map(t => ({t, sal: I[t].salary, pts: z(T[t]).total, own: I[t].owners}));
+  if (!pts.length) { el.innerHTML = ''; info.hidden = true; return; }
+  const rate = pts.reduce((a, d) => a + d.pts, 0) / pts.reduce((a, d) => a + d.sal, 0);
+  let me = '', active = null, placed = [];
+  function draw() {
+    const W = Math.max(280, el.clientWidth), s0 = Math.min(...pts.map(d => d.sal)) - 1, s1 = Math.max(...pts.map(d => d.sal)) + 1;
+    // teams on the same salary and points share a spot: pack them in a small grid around it, the viewer's on top
+    const groups = {};
+    pts.forEach(d => (groups[d.sal + ':' + d.pts] ||= []).push(d));
+    const R = W < 360 ? 3.2 : W < 520 ? 3.6 : 4.2, gap = R * 2 + 1.6;
+    const perRow = Math.max(2, Math.floor((W - 48) / (s1 - s0) / gap));
+    const half = Math.max(0, ...Object.values(groups).map(l => (Math.ceil(l.length / Math.min(l.length, perRow)) - 1) / 2 * gap)) + R;
+    const Ht = (W < 520 ? 230 : 280) + half * 2, P = {l: 34, r: 14, t: 8 + half, b: 36 + half};
+    const raw = Math.max(2, ...pts.map(d => d.pts), rate * s1);
+    const step = raw <= 5 ? 1 : raw <= 12 ? 2 : raw <= 30 ? 5 : 10, max = Math.ceil(raw / step) * step;
+    const x = v => P.l + (W - P.l - P.r) * (v - s0) / (s1 - s0), y = v => Ht - P.b - (Ht - P.t - P.b) * v / max;
+    let g = `<svg width="${W}" height="${Ht}" viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Salary versus points for every picked team">`;
+    for (let v = 0; v <= max; v += step) g += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+    const xs = (s1 - s0) > 12 ? 2 : 1;
+    for (let v = Math.ceil(s0 / xs) * xs; v <= s1; v += xs) g += `<text x="${x(v)}" y="${Ht - 26}" text-anchor="middle">$${v}</text>`;
+    g += `<text x="${(P.l + W - P.r) / 2}" y="${Ht - 6}" text-anchor="middle">Salary</text>`;
+    g += `<line x1="${x(s0)}" y1="${y(rate * s0)}" x2="${x(s1)}" y2="${y(rate * s1)}" stroke="currentColor" opacity=".45" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+    placed = [];
+    Object.values(groups).forEach(list => {
+      list.sort((a, b) => a.t.localeCompare(b.t));
+      const n = list.length, cols = Math.min(n, perRow), rowsN = Math.ceil(n / cols);
+      list.forEach((d, k) => {
+        const c = k % cols, r = Math.floor(k / cols), inRow = Math.min(cols, n - r * cols);
+        placed.push({d, cx: x(d.sal) + (c - (inRow - 1) / 2) * gap, cy: y(d.pts) - (r - (rowsN - 1) / 2) * gap});
+      });
+    });
+    const mine = p => me && p.d.own.includes(me);
+    placed.sort((a, b) => mine(a) - mine(b) || (active === b.d) - (active === a.d));
+    placed.forEach(p => {
+      const on = mine(p), sel = active === p.d;
+      g += `<circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${sel ? R + 2 : R}" style="fill:${on ? 'var(--me)' : 'var(--mute)'}" opacity="${on || sel ? 1 : me ? .35 : .6}"${sel ? ' stroke="var(--ink)" stroke-width="1.5"' : ''}/>`;
+    });
+    el.innerHTML = g + '</svg><div class="vkey">' + (me ? '<span><i style="background:var(--me)"></i>Your teams</span><span><i style="background:var(--mute);opacity:.5"></i>Other picked teams</span>' : '<span><i style="background:var(--mute)"></i>Picked teams</span>') +
+      `<span><i class="dash"></i>Pool average (${rate.toFixed(2)} pts per $)</span></div>`;
+  }
+  function describe(d) {
+    if (!d) { info.innerHTML = 'Tap a dot to see the team.'; return; }
+    const exp = rate * d.sal, diff = d.pts - exp;
+    info.innerHTML = `<b>${esc(d.t)}</b> · $${d.sal} · <b>${d.pts}</b> pt${d.pts === 1 ? '' : 's'} (${diff >= 0 ? '+' : ''}${diff.toFixed(1)} vs. average) · picked by ${ownList(d.own)}`;
+    info.querySelectorAll('.o').forEach(n => n.classList.toggle('me', n.dataset.o === me));
+  }
+  el.addEventListener('click', e => {
+    const svg = el.querySelector('svg'); if (!svg) return;
+    const b = svg.getBoundingClientRect(), px = e.clientX - b.left, py = e.clientY - b.top;
+    let best = null, bd = 18 * 18;   // forgiving hit area: nearest dot within 18px
+    placed.forEach(p => { const dd = (p.cx - px) ** 2 + (p.cy - py) ** 2; if (dd < bd) { bd = dd; best = p.d; } });
+    active = best === active ? null : best; describe(active); draw();
+  });
+  window.valueFollowMe = m => { me = m || ''; draw(); describe(active); };
+  window.valueRedraw = draw;
+  let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
+  draw();
+})();
+
 // "Viewing as": each visitor picks their entry once; it's remembered on this device only (no accounts)
 (function viewingAs() {
   const KEY = 'shu-hoops-me', pick = $('#me');
@@ -559,6 +632,7 @@ function renderMyCard(me) {
       tr.nextElementSibling?.classList.toggle('mine', on);
     });
     window.chartFollowMe?.(me);
+    window.valueFollowMe?.(me);
     renderMyCard(me);
   }
   let me = store.get();
@@ -580,7 +654,7 @@ function renderMyCard(me) {
     try { localStorage.setItem(KEY, name); } catch (e) {}
     // links like …/#games open that tab; the hash is then cleared so the browser never jumps to a same-named element
     if (location.hash) history.replaceState(null, '', location.pathname + location.search);
-    if (name === 'trends') window.chartRedraw?.();
+    if (name === 'trends') { window.chartRedraw?.(); window.valueRedraw?.(); }
     if (changed && scroll) window.scrollTo(0, 0);
   }
   let saved = ''; try { saved = localStorage.getItem(KEY) || ''; } catch (e) {}
