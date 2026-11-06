@@ -29,8 +29,8 @@ TEMPLATE = r"""<!doctype html>
 <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd;--live:#dc2626}
-@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45;--live:#e5484d}}
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd;--live:#dc2626;--g1b:#e6f4ea;--g1t:#1e7a3e;--g2b:#c3e8cf;--g2t:#14632f;--g3b:#9ddcb0;--g3t:#0f4a22;--g4b:#5cc27f;--g4t:#062a12;--g5b:#1f9d4f;--g5t:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45;--live:#e5484d;--g1b:#17291e;--g1t:#7ad99a;--g2b:#1d4a2c;--g2t:#a7f0bf;--g3b:#22603a;--g3t:#dcfce7;--g4b:#2e8a4f;--g4t:#f0fdf4;--g5b:#3cc06b;--g5t:#06170c}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 main{max-width:960px;margin:0 auto;padding:calc(24px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
@@ -178,15 +178,26 @@ h2.withnote{margin-bottom:2px}
 .side.lost .nm{opacity:.75}
 .ptsb{font-size:12px;font-weight:600;padding:0 6px;border-radius:4px;background:var(--chip);color:var(--mute);font-variant-numeric:tabular-nums}
 .ptsb.pos{color:var(--good)}
+/* points earned: one green, deeper for bigger hauls (+1 through +5 and up) */
+.ptsb.g1{background:var(--g1b);color:var(--g1t)}.ptsb.g2{background:var(--g2b);color:var(--g2t)}
+.ptsb.g3{background:var(--g3b);color:var(--g3t)}.ptsb.g4{background:var(--g4b);color:var(--g4t)}.ptsb.g5{background:var(--g5b);color:var(--g5t)}
+td .ptsb{font-size:14px;padding:1px 7px}
 .gtime.dim{color:var(--mute);font-weight:400}
-.sm{display:none}
-@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:48px}#standings>thead th:nth-child(4){width:34px}#standings>thead th:nth-child(5){width:50px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.6em 1fr}}
+.sm{display:none}.xs{display:none}
+@media (max-width:360px){.xw{display:none}.xs{display:inline}#standings>thead th:nth-child(3),#standings>thead th:nth-child(5){width:auto}}
+@media (max-width:520px){.lg{display:none}.sm{display:inline}#standings th,#standings>thead th,#standings>tbody>tr.entry-row>td{padding:9px 6px}#standings>thead th:first-child,#standings>tbody>tr.entry-row>td:first-child{padding-left:10px}#standings .rank{width:auto;padding-right:0!important;white-space:nowrap}#standings>tbody>tr.entry-row>td:nth-child(2),#standings>thead th:nth-child(2){padding-left:6px;padding-right:2px}#standings>thead th:nth-child(3){width:48px}#standings>thead th:nth-child(4){width:44px}#standings td .ptsb{font-size:13px;padding:1px 5px}#standings>thead th:nth-child(5){width:50px}#standings>tbody>tr.entry-row>td:nth-child(2){white-space:normal}.game{grid-template-columns:5.6em 1fr}}
 .rank{width:44px;color:var(--mute);font-variant-numeric:tabular-nums}
 .tot{font-weight:700;font-size:16px}
 .up{color:var(--good)}.down{color:var(--bad)}
 .entry-row{cursor:pointer}
 .entry-row:hover td{background:var(--chip)}
 .entry-row.open>td{background:var(--chip)}
+/* expand hint: a small muted chevron riding after the entry name; turns down when the row is open */
+.chev{display:inline-block;width:9px;height:9px;margin-left:6px;vertical-align:1px;color:var(--mute);opacity:.7;transition:transform .15s}
+.chev svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.nw{white-space:nowrap}
+.entry-row.open .chev{transform:rotate(90deg);opacity:1}
+@media (prefers-reduced-motion:reduce){.chev{transition:none}}
 .detail td{background:var(--chip);padding:0}
 #standings .detail .scroll{max-width:min(926px,calc(100vw - 34px - env(safe-area-inset-left) - env(safe-area-inset-right)))}
 .detail table th,.detail table td{padding:6px 12px;font-size:13px}
@@ -233,7 +244,7 @@ svg text{fill:var(--mute);font-size:11px}
 <h2 class="withnote">Standings</h2>
 <div class="h2note" id="standings-label"></div>
 <div class="card scroll"><table id="standings"><thead><tr>
-<th class="rank"><span class="rk">#</span></th><th>Entry</th><th class="n">Points</th><th class="n"><span class="lg" title="Points gained since the last daily update">Δ since last</span><span class="sm" title="Points gained since the last daily update">Δ</span></th><th class="n">Record</th>
+<th class="rank"><span class="rk">#</span></th><th>Entry</th><th class="n"><span class="xw">Points</span><span class="xs">Pts</span></th><th class="n" id="daycol">Today</th><th class="n"><span class="xw">Record</span><span class="xs">W-L</span></th>
 </tr></thead><tbody></tbody></table></div>
 
 </section>
@@ -346,7 +357,7 @@ const D = JSON.parse(document.getElementById('data').textContent);
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 $('#updated').textContent = 'Updated ' + D.updated;
-if (D.through) $('#standings-label').textContent = `Through games of ${D.through} · Updates each morning`;
+
 if (D.warnings.length) $('#warnings').innerHTML = '<div class="warn"><b>Needs attention</b><ul>' + D.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>';
 
 const T = D.teams, I = D.team_info;
@@ -354,18 +365,60 @@ const ownList = a => a.map(n => `<span class="o" data-o="${esc(n)}">${esc(n)}</s
 const wl = b => b ? [b.w ?? (b.nonconf_w + b.conf_w + b.ct_w), b.l ?? (b.nonconf_l + b.conf_l + b.ct_l)] : [0, 0];
 const rec = b => b ? wl(b).join('-') : '–';
 const roundName = {playin:'Play-in', r64:'R64', r32:'R32', s16:'S16', e8:'E8', f4:'F4', final:'Title'};
-const mv = m => !m ? '' : m > 0 ? `<span class="mv up" title="Up ${m} since last update">▲${m}</span>` : `<span class="mv down" title="Down ${-m} since last update">▼${-m}</span>`;
+const glvl = n => Math.min(n, 5);
+const pb = n => `<span class="ptsb${n > 0 ? ' pos g' + glvl(n) : ''}">${n > 0 ? '+' + n : 0}</span>`;
+const mv = m => !m ? '' : m > 0 ? `<span class="mv up" title="Up ${m} since this morning">▲${m}</span>` : `<span class="mv down" title="Down ${-m} since this morning">▼${-m}</span>`;
 const chg = c => c == null ? '<span class="sub">–</span>' : c > 0 ? `<span class="up">+${c}</span>` : c < 0 ? `<span class="down">${c}</span>` : '<span class="sub">0</span>';
+
+// live standings: this morning's official totals plus tonight's finals (in-progress games don't count).
+// The morning run stays the source of truth and re-scores everything the next day.
+const ST = D.standings.map(s => {
+  let today = null, w = 0, l = 0;
+  (D.today?.games || []).filter(g => g.completed).forEach(g => [g.away, g.home].forEach(sd => {
+    if (sd.pool && (sd.owners || []).includes(s.entry)) { today = (today || 0) + (sd.pts || 0); sd.won ? w++ : l++; }
+  }));
+  const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0) + w, L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0) + l;
+  return {...s, morningRank: s.rank, today, live: s.total + (today || 0), W, L};
+}).sort((a, b) => b.live - a.live || (a.full || a.entry).localeCompare(b.full || b.entry));
+// 5 AM-noon ET the column looks back ("Yesterday", with yesterday's gains and rank moves). It turns into "Today" at noon,
+// or earlier the moment one of today's games goes final, so new points always sit next to the column that explains them.
+const finalsToday = (D.today?.games || []).some(g => g.completed);
+const etHour = () => +new Intl.DateTimeFormat('en-US', {timeZone: 'America/New_York', hour: 'numeric', hourCycle: 'h23'}).format(new Date());
+const isMorning = () => (h => h >= 5 && h < 12)(etHour()) && !finalsToday;
+const MORNING = isMorning();
+ST.forEach((s, i) => { s.rank = i && s.live === ST[i - 1].live ? ST[i - 1].rank : i + 1; s.move = MORNING ? s.move : s.morningRank - s.rank; });
+$('#daycol').innerHTML = MORNING ? '<span title="Points gained yesterday"><span class="lg">Yesterday</span><span class="sm">Yest.</span></span>' : '<span title="Points from games that have gone final today">Today</span>';
+setInterval(() => { if (isMorning() !== MORNING) location.reload(); }, 60000);   // flip at noon without a manual refresh
+$('#standings-label').textContent = MORNING
+  ? (D.through ? `Through games of ${D.through} · ▲▼ vs. the day before` : '')
+  : finalsToday ? `Live${D.scores_updated ? ' as of ' + D.scores_updated : ''} · counts finals only · ▲▼ since this morning`
+  : D.through ? `Through games of ${D.through} · Today fills in as games go final` : '';
+const CHEV = '<span class="chev" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M3.5 1.5L7 5l-3.5 3.5"/></svg></span>';
+const nameWithChev = n => { const i = n.lastIndexOf(' '); return esc(n.slice(0, i + 1)) + `<span class="nw">${esc(n.slice(i + 1))}${CHEV}</span>`; };
+const todayCell = s => MORNING ? (s.change == null ? '<span class="sub">–</span>' : pb(s.change)) : pb(s.today || 0);
+
+// each team's numbers including today's finals, for the expandable breakdown
+const z = b => b || {nonconf_w:0, nonconf_l:0, conf_w:0, conf_l:0, ct_w:0, ct_l:0, pts_reg:0, pts_ct:0, pts_ncaa:0, total:0, ncaa_w:[], games:[]};
+const TT = {};
+(D.today?.games || []).filter(g => g.completed).forEach(g => [g.away, g.home].forEach(sd => {
+  if (!sd.pool) return;
+  const x = TT[sd.team] ||= {w: 0, l: 0, cw: 0, cl: 0, reg: 0, ct: 0, ncaa: 0};
+  sd.won ? x.w++ : x.l++;
+  if (g.kind === 'conf') sd.won ? x.cw++ : x.cl++;
+  x[g.kind === 'ncaa' ? 'ncaa' : g.kind === 'conf_tourney' ? 'ct' : 'reg'] += sd.pts || 0;
+}));
+const teamNow = t => { const b = z(T[t]), x = TT[t] || {w: 0, l: 0, cw: 0, cl: 0, reg: 0, ct: 0, ncaa: 0}, [w, l] = wl(T[t]);
+  return {rec: `${w + x.w}-${l + x.l}`, conf: `${b.conf_w + x.cw}-${b.conf_l + x.cl}`, reg: b.pts_reg + x.reg, ct: b.pts_ct + x.ct, ncaa: b.pts_ncaa + x.ncaa, total: b.total + x.reg + x.ct + x.ncaa}; };
 
 // standings
 const sb = $('#standings tbody');
-D.standings.forEach(s => {
-  const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
+ST.forEach(s => {
+  const W = s.W, L = s.L;
   const tr = document.createElement('tr'); tr.className = 'entry-row'; tr.dataset.entry = s.entry;
-  tr.innerHTML = `<td class="rank"><span class="rk">${s.rank}</span><span class="mvc">${mv(s.move)}</span></td><td><b>${esc(s.full || s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
+  tr.innerHTML = `<td class="rank"><span class="rk">${s.rank}</span><span class="mvc">${mv(s.move)}</span></td><td><b>${nameWithChev(s.full || s.entry)}</b></td><td class="n tot">${s.live}</td><td class="n">${todayCell(s)}</td><td class="n">${W}-${L}</td>`;
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
-    s.teams.map(t => { const b = T[t]; return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${rec(b)}</td><td class="n">${b ? b.conf_w + '-' + b.conf_l : '–'}</td><td class="n">${b ? b.pts_reg : 0}</td><td class="n">${b ? b.pts_ct : 0}</td><td class="n">${b ? b.pts_ncaa : 0}</td><td class="n"><b>${b ? b.total : 0}</b></td></tr>`; }).join('') +
+    s.teams.map(t => { const n = teamNow(t); return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${n.rec}</td><td class="n">${n.conf}</td><td class="n">${n.reg}</td><td class="n">${n.ct}</td><td class="n">${n.ncaa}</td><td class="n"><b>${n.total}</b></td></tr>`; }).join('') +
     `</tbody></table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   sb.append(tr, dr);
@@ -389,7 +442,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
     const other = s === g.away ? g.home : g.away;
     const sc = live ? `<span class="sc lv${s.live != null && other.live != null && s.live > other.live ? ' lead' : ''}">${s.live ?? ''}</span>`
              : !g.completed ? '' : s.final != null ? `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>` : '<span class="sc"></span>';
-    const pts = live ? '<span></span>' : !g.completed ? '' : s.pool ? `<span class="ptsb${s.pts > 0 ? ' pos' : ''}">${s.pts > 0 ? '+' + s.pts : 0}</span>` : '<span></span>';
+    const pts = live ? '<span></span>' : !g.completed ? '' : s.pool ? pb(s.pts || 0) : '<span></span>';
     const own = s.pool && s.owners.length ? `<div class="own">${ownList(s.owners)}</div>` : '';
     return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}${g.completed || live ? ' fin' : ''}">` +
       `<span class="at">${prefix}</span><span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
@@ -412,7 +465,6 @@ if (D.scores_updated && (D.today?.games || []).some(g => g.live || g.completed))
 gameList(D.yesterday, $('#yesterday'), $('#yesterday-label'), 'No picked teams played yesterday.', true);
 
 // teams: sortable table. Each column: label, sort value, cell html, numeric?, first-click direction
-const z = b => b || {nonconf_w:0, nonconf_l:0, conf_w:0, conf_l:0, ct_w:0, ct_l:0, pts_reg:0, pts_ct:0, pts_ncaa:0, total:0, ncaa_w:[], games:[]};
 const recVal = (w, l) => w * 1000 - l;   // most wins first, fewer losses breaks ties
 const COLS = [
   {label:'Team', num:false, dir:1, val:(t) => t.toLowerCase(),
@@ -516,14 +568,14 @@ sortTeams();
 // summary card for the picked entry, at the top of the Standings tab
 const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
 function renderMyCard(me) {
-  const el = $('#mycard'), s = D.standings.find(x => x.entry === me);
+  const el = $('#mycard'), s = ST.find(x => x.entry === me);
   if (!s) {   // nobody picked yet: point them at the picker instead of hiding the card
     el.innerHTML = `<div class="mycard mc-empty" role="button" tabindex="0"><span class="mc-e1">Your Daily Summary</span><span class="mc-e2">Pick your entry above to see tonight's scores and yesterday's results for just your teams.</span></div>`;
     const open = () => { const p = $('#me'); p.focus(); try { p.showPicker(); } catch (e) {} };
     el.firstChild.onclick = open; el.firstChild.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
     el.hidden = false; return;
   }
-  const tied = D.standings.filter(x => x.rank === s.rank).length > 1;
+  const tied = ST.filter(x => x.rank === s.rank).length > 1;
   // one row per side the entry owns: team · vs/at opponent · score · pts · status
   const rows = (td, finals) => (td?.games || []).flatMap(g => [[g.away, g.home, false], [g.home, g.away, true]]
     .filter(([m]) => m.pool && (m.owners || []).includes(me)).map(([m, o, isHome]) => {
@@ -532,7 +584,7 @@ function renderMyCard(me) {
       let sc = '', cls = '';
       if (g.completed && m.final != null) { sc = `${m.won ? 'W' : 'L'} ${m.final}-${o.final}`; cls = m.won ? 'lead' : 'trail'; }
       else if (live && m.live != null) { sc = `${m.live}-${o.live ?? 0}`; cls = m.live > (o.live ?? 0) ? 'lead' : m.live < (o.live ?? 0) ? 'trail' : ''; }
-      const pts = g.completed ? `<span class="ptsb${m.pts > 0 ? ' pos' : ''}">${m.pts > 0 ? '+' + m.pts : 0}</span>` : '<span></span>';
+      const pts = g.completed ? pb(m.pts || 0) : '<span></span>';
       const st = g.completed ? esc(g.final_label || 'Final') : live ? esc(g.live.detail) : finals ? 'No result' : esc(g.time || '');
       return {pts: g.completed ? (m.pts || 0) : 0,
         html: `<div class="mc-g"><span class="t">${esc(m.team)}<i>${vs} ${esc(o.team)}</i></span><span class="s ${cls}">${sc}</span>${pts}<span class="st${live ? ' live' : ''}">${st}</span></div>`};
@@ -541,7 +593,7 @@ function renderMyCard(me) {
   const started = (D.today?.games || []).some(g => g.live || g.completed);
   const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>` : '';
   const ysum = yest.reduce((a, r) => a + r.pts, 0);
-  el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">${esc(s.full || s.entry)}</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}</span></div>` +
+  el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">${esc(s.full || s.entry)}</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
     sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today) +
     sec('Yesterday', (ysum > 0 ? '+' : '') + ysum + ' pts', yest) + '</div>';
   el.hidden = false;
