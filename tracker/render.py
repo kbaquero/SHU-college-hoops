@@ -317,7 +317,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
     return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}${g.completed || live ? ' fin' : ''}">` +
       `<span class="at">${prefix}</span><span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
   };
-  el.innerHTML = td.games.map(g => {
+  el.innerHTML = td.games.map((g, idx) => {
     const when = g.completed ? esc(g.final_label || 'Final') : finals ? 'No result'
       : g.live ? `<span class="lvclock">${esc(g.live.detail)}</span>` : esc(g.time);
     // a named event says enough on its own; "Neutral site" only labels unnamed neutral-site games
@@ -325,7 +325,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
     const under = where + (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
     const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
     const type = label ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(label)}</span></div>` : '';
-    return `<div class="game"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
+    return `<div class="game" data-idx="${idx}"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
       side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) + type + `</div></div>`;
   }).join('');
 }
@@ -449,6 +449,12 @@ sortTeams();
       tr.nextElementSibling?.classList.toggle('me', on);
     });
     document.querySelectorAll('.o[data-o]').forEach(n => n.classList.toggle('me', n.dataset.o === me));
+    // the viewer's games float to the top of Today's and Yesterday's lists (otherwise original order)
+    ['#today', '#yesterday'].forEach(id => {
+      const list = $(id), games = [...list.querySelectorAll(':scope > .game')];
+      games.sort((x, y) => (!!y.querySelector('.o.me') - !!x.querySelector('.o.me')) || (x.dataset.idx - y.dataset.idx))
+           .forEach(g => list.append(g));
+    });
     document.querySelectorAll('#teams tr.entry-row[data-owners]').forEach(tr => {
       const on = !!me && JSON.parse(tr.dataset.owners).includes(me);
       tr.classList.toggle('mine', on);
