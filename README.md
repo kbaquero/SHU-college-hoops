@@ -105,6 +105,9 @@ How games are classified:
 - **The standings' third column** reads "Yesterday" (last night's gains, arrows vs. the day before) from 5 AM until
   noon Eastern, then "Today" (points from today's finals, arrows vs. this morning). It switches earlier if one of
   today's games goes final before noon.
+- **The last column** pairs with it: "Tonight" (how many of the entry's teams play today) in the morning, then "Playing"
+  (teams with a game not yet final; a red dot if one is live). Once NCAA seeds are entered in March it becomes
+  "Alive" (teams still in the tournament). Records live in each entry's expanded breakdown.
 - **Any push to `data/`, `tracker/`, `tests/` or `.github/`** runs a full update, which is safe at any hour.
 
 GitHub's own cron schedules (in the workflow) often fire late or get skipped, so two Claude scheduled tasks

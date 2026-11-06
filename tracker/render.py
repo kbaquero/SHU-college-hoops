@@ -142,10 +142,11 @@ h2.withnote{margin-bottom:2px}
 .gtype{margin:7px 0 0 24px;line-height:1}
 .lvclock{display:block;color:var(--ink);font-size:13px;font-weight:600;white-space:normal}
 /* live = sports-app convention: red LIVE pill with a pulsing dot; the accent color stays for selection and taps */
+.livedot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--live);margin-right:5px;vertical-align:2px;animation:livepulse 1.6s ease-in-out infinite}
 .livepill{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:750;letter-spacing:.07em;line-height:1;color:#fff;background:var(--live);padding:3px 6px 3px 5px;border-radius:4px;margin-bottom:4px}
 .livepill::before{content:"";width:5px;height:5px;border-radius:50%;background:#fff;animation:livepulse 1.6s ease-in-out infinite}
 @keyframes livepulse{50%{opacity:.3}}
-@media (prefers-reduced-motion:reduce){.livepill::before,.mc-g .st.live::before{animation:none}}
+@media (prefers-reduced-motion:reduce){.livedot,.livepill::before,.mc-g .st.live::before{animation:none}}
 .sc.lv{color:var(--mute)}
 .sc.lv.lead{color:var(--ink);font-weight:600}
 .tag{display:inline-block;font-size:10px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;padding:4px 7px;border-radius:4px;
@@ -244,7 +245,7 @@ svg text{fill:var(--mute);font-size:11px}
 <h2 class="withnote">Standings <span class="h2sub" id="standings-when"></span></h2>
 <div class="h2note" id="standings-label"></div>
 <div class="card scroll"><table id="standings"><thead><tr>
-<th class="rank"><span class="rk">#</span></th><th>Entry</th><th class="n"><span class="xw">Points</span><span class="xs">Pts</span></th><th class="n" id="daycol">Today</th><th class="n"><span class="xw">Record</span><span class="xs">W-L</span></th>
+<th class="rank"><span class="rk">#</span></th><th>Entry</th><th class="n"><span class="xw">Points</span><span class="xs">Pts</span></th><th class="n" id="daycol">Today</th><th class="n" id="lastcol">Back</th>
 </tr></thead><tbody></tbody></table></div>
 
 </section>
@@ -425,6 +426,21 @@ $('#standings-label').textContent = STALE ? 'Morning update on its way · ▲▼
   : finalsToday ? 'Finals only · ▲▼ since this morning' : 'Today fills in as games go final';
 const CHEV = '<span class="chev" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M3.5 1.5L7 5l-3.5 3.5"/></svg></span>';
 const nameWithChev = n => { const i = n.lastIndexOf(' '); return esc(n.slice(0, i + 1)) + `<span class="nw">${esc(n.slice(i + 1))}${CHEV}</span>`; };
+// last column: points behind the leader all season; once the NCAA field is set (seeds in), teams still alive in it
+const ALIVE = Object.values(T).some(b => b && b.seed != null);
+// "Playing": how many of the entry's teams still have a game today (not final yet); a red dot if one is live right now
+ST.forEach(s => {
+  s.alive = s.teams.filter(t => T[t]?.seed != null && !T[t].ncaa_out).length;
+  s.left = 0; s.liveNow = false;
+  if (!STALE) (D.today?.games || []).filter(g => !g.completed).forEach(g => [g.away, g.home].forEach(sd => {
+    if (sd.pool && (sd.owners || []).includes(s.entry)) { s.left++; if (g.live) s.liveNow = true; }
+  }));
+});
+const playCell = s => s.left ? `${s.liveNow ? '<i class="livedot" title="A game is live"></i>' : ''}${s.left}` : '<span class="sub">–</span>';
+// before the switch (paired with "Yest.") it previews tonight; after it (paired with "Today") it's who's still playing
+$('#lastcol').innerHTML = ALIVE ? '<span title="Teams still in the NCAA tournament">Alive</span>'
+  : MORNING ? '<span title="Teams with a game today">Tonight</span>'
+  : '<span title="Teams with a game still to finish today"><span class="xw">Playing</span><span class="xs">Play</span></span>';
 const todayCell = s => MORNING ? (s.change == null ? '<span class="sub">–</span>' : pb(s.change)) : pb(s.today || 0);
 
 const z = b => b || {nonconf_w:0, nonconf_l:0, conf_w:0, conf_l:0, ct_w:0, ct_l:0, pts_reg:0, pts_ct:0, pts_ncaa:0, total:0, ncaa_w:[], games:[]};
@@ -435,8 +451,9 @@ const teamNow = t => { const b = z(T[t]), [w, l] = wl(T[t]);
 const sb = $('#standings tbody');
 ST.forEach(s => {
   const W = s.W, L = s.L;
+  const last = ALIVE ? `<span title="Teams still in the NCAA tournament">${s.alive}</span>` : playCell(s);
   const tr = document.createElement('tr'); tr.className = 'entry-row'; tr.dataset.entry = s.entry;
-  tr.innerHTML = `<td class="rank"><span class="rk">${s.rank}</span><span class="mvc">${mv(s.move)}</span></td><td><b>${nameWithChev(s.full || s.entry)}</b></td><td class="n tot">${s.live}</td><td class="n">${todayCell(s)}</td><td class="n">${W}-${L}</td>`;
+  tr.innerHTML = `<td class="rank"><span class="rk">${s.rank}</span><span class="mvc">${mv(s.move)}</span></td><td><b>${nameWithChev(s.full || s.entry)}</b></td><td class="n tot">${s.live}</td><td class="n">${todayCell(s)}</td><td class="n">${last}</td>`;
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
     s.teams.map(t => { const n = teamNow(t); return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${n.rec}</td><td class="n">${n.conf}</td><td class="n">${n.reg}</td><td class="n">${n.ct}</td><td class="n">${n.ncaa}</td><td class="n"><b>${n.total}</b></td></tr>`; }).join('') +
