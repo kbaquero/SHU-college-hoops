@@ -29,8 +29,8 @@ TEMPLATE = r"""<!doctype html>
 <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8}
-@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830}}
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 main{max-width:960px;margin:0 auto;padding:calc(24px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
@@ -48,6 +48,17 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
+.viewas{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:13px;color:var(--mute)}
+.viewas select{font:inherit;font-size:14px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 28px 5px 10px;
+  appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);
+  background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;background-size:5px 5px;background-repeat:no-repeat;max-width:62vw}
+.has-me .viewas select{border-color:var(--me);color:var(--me);font-weight:600}
+#standings tr.entry-row.me>td{background:var(--metint)}
+#standings tr.entry-row.me>td:first-child{box-shadow:inset 3px 0 0 var(--me)}
+#standings tr.entry-row.me b{color:var(--me)}
+.o.me{color:var(--me);background:var(--metint);border-radius:4px;padding:0 4px;margin:0 -1px;font-weight:650}
+#teams tr.entry-row.mine>td{background:var(--metint)}
+#teams tr.entry-row.mine>td:first-child{box-shadow:inset 3px 0 0 var(--me)}
 h2.withnote{margin-bottom:2px}
 .h2note{font-size:13px;color:var(--mute);margin:0 0 10px}
 #standings .detail th:not(:first-child),#standings .detail td:not(:first-child){text-align:center}
@@ -152,6 +163,7 @@ svg text{fill:var(--mute);font-size:11px}
 <main>
 <h1><img src="icons/icon-180.png" alt="">SHU College Hoops Pool</h1>
 <div class="sub" id="updated"></div>
+<div class="viewas"><label for="me">Viewing as</label><select id="me"><option value="">Pick your entry…</option></select></div>
 <div id="warnings"></div>
 
 <h2 class="withnote">Standings</h2>
@@ -261,7 +273,7 @@ if (D.through) $('#standings-label').textContent = `Through games of ${D.through
 if (D.warnings.length) $('#warnings').innerHTML = '<div class="warn"><b>Needs attention</b><ul>' + D.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>';
 
 const T = D.teams, I = D.team_info;
-const ownList = a => a.map(esc).join('<span class="sep">, </span>');   // names in accent, commas muted
+const ownList = a => a.map(n => `<span class="o" data-o="${esc(n)}">${esc(n)}</span>`).join('<span class="sep">, </span>');   // names in accent, commas muted
 const wl = b => b ? [b.w ?? (b.nonconf_w + b.conf_w + b.ct_w), b.l ?? (b.nonconf_l + b.conf_l + b.ct_l)] : [0, 0];
 const rec = b => b ? wl(b).join('-') : '–';
 const roundName = {playin:'Play-in', r64:'R64', r32:'R32', s16:'S16', e8:'E8', f4:'F4', final:'Title'};
@@ -272,7 +284,7 @@ const chg = c => c == null ? '<span class="sub">–</span>' : c > 0 ? `<span cla
 const sb = $('#standings tbody');
 D.standings.forEach(s => {
   const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
-  const tr = document.createElement('tr'); tr.className = 'entry-row';
+  const tr = document.createElement('tr'); tr.className = 'entry-row'; tr.dataset.entry = s.entry;
   tr.innerHTML = `<td class="rank"><span class="rk">${s.rank}</span><span class="mvc">${mv(s.move)}</span></td><td><b>${esc(s.full || s.entry)}</b></td><td class="n tot">${s.total}</td><td class="n">${chg(s.change)}</td><td class="n">${W}-${L}</td>`;
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
@@ -345,7 +357,7 @@ const kinds = {nonconf:'NC', conf:'C', conf_tourney:'CT', ncaa:'NCAA', other_pos
 const tb = $('#teams tbody'), headRow = $('#teams thead tr');
 const rows = Object.keys(I).map(t => {
   const b = z(T[t]), i = I[t];
-  const tr = document.createElement('tr'); tr.className = 'entry-row';
+  const tr = document.createElement('tr'); tr.className = 'entry-row'; tr.dataset.owners = JSON.stringify(i.owners);
   tr.innerHTML = COLS.map(c => `<td${c.num === false ? '' : ' class="n"'}>${c.html(t, b, i)}</td>`).join('');
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   const gs = b.games.filter(g => g.completed);
@@ -412,11 +424,43 @@ sortTeams();
   }
   el.addEventListener('click', e => {
     const b = e.target.closest('.legend button'); if (!b) return;
+    touched = true;
     if (b.dataset.clear) sel.clear(); else { const n = b.dataset.e; sel.has(n) ? sel.delete(n) : sel.add(n); }
     draw();
   });
+  let touched = false;
+  window.chartFollowMe = me => { if (touched) return; sel.clear(); if (me && ents.includes(me)) sel.add(me); draw(); };
   let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
   draw();
+})();
+
+// "Viewing as": each visitor picks their entry once; it's remembered on this device only (no accounts)
+(function viewingAs() {
+  const KEY = 'shu-hoops-me', pick = $('#me');
+  const store = {get: () => { try { return localStorage.getItem(KEY) || ''; } catch (e) { return ''; } },
+                 set: v => { try { v ? localStorage.setItem(KEY, v) : localStorage.removeItem(KEY); } catch (e) {} }};
+  const byName = [...D.standings].sort((a, b) => (a.full || a.entry).localeCompare(b.full || b.entry));
+  pick.insertAdjacentHTML('beforeend', byName.map(s => `<option value="${esc(s.entry)}">${esc(s.full || s.entry)}</option>`).join(''));
+  function apply(me) {
+    document.body.classList.toggle('has-me', !!me);
+    document.querySelectorAll('#standings tr.entry-row').forEach(tr => {
+      const on = tr.dataset.entry === me;
+      tr.classList.toggle('me', on);
+      tr.nextElementSibling?.classList.toggle('me', on);
+    });
+    document.querySelectorAll('.o[data-o]').forEach(n => n.classList.toggle('me', n.dataset.o === me));
+    document.querySelectorAll('#teams tr.entry-row[data-owners]').forEach(tr => {
+      const on = !!me && JSON.parse(tr.dataset.owners).includes(me);
+      tr.classList.toggle('mine', on);
+      tr.nextElementSibling?.classList.toggle('mine', on);
+    });
+    window.chartFollowMe?.(me);
+  }
+  let me = store.get();
+  if (me && !D.standings.some(s => s.entry === me)) me = '';   // entry renamed or removed
+  pick.value = me;
+  apply(me);
+  pick.addEventListener('change', () => { me = pick.value; store.set(me); apply(me); });
 })();
 </script>
 </body>
