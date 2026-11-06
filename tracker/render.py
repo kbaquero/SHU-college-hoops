@@ -48,6 +48,41 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:hover,#teams th[aria-sort=ascending] button,#teams th[aria-sort=descending] button{color:var(--ink)}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
+/* tabs: bottom bar on phones, sticky segmented bar on wide screens */
+#tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:2px;padding:5px 8px calc(5px + env(safe-area-inset-bottom));
+  background:color-mix(in srgb,var(--card) 90%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+#tabs button{all:unset;flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 0 3px;font-size:11px;font-weight:600;
+  color:var(--mute);cursor:pointer;border-radius:10px;-webkit-tap-highlight-color:transparent}
+#tabs svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#tabs button[aria-selected=true]{color:var(--accent)}
+#tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+main{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
+.panel>h2:first-child,.panel>#mycard+h2,.panel>#mycard[hidden]+h2{margin-top:22px}
+@media (min-width:760px){
+  #tabs{position:sticky;top:0;bottom:auto;margin:18px 0 0;padding:4px;border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--card) 92%,transparent)}
+  #tabs button{flex-direction:row;justify-content:center;gap:8px;font-size:14px;padding:9px 0}
+  #tabs svg{width:18px;height:18px}
+  #tabs button[aria-selected=true]{background:var(--chip);color:var(--ink)}
+  main{padding-bottom:64px}
+}
+/* summary card for the picked entry */
+.mycard{margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:inset 4px 0 0 var(--me)}
+.mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 4px 18px}
+.mc-name{font-weight:700;color:var(--me);font-size:17px}
+.mc-rank{font-size:15px;font-weight:700;white-space:nowrap}.mc-rank .mv{margin-left:4px}
+.mc-stats{display:flex;gap:16px;padding:0 14px 12px 18px;font-size:13px;color:var(--mute)}
+.mc-stats b{color:var(--ink);font-size:15px;font-variant-numeric:tabular-nums;margin-right:3px}
+.mc-sec{border-top:1px solid var(--line);padding:10px 14px 10px 18px}
+.mc-h{display:flex;justify-content:space-between;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-bottom:6px}
+.mc-h span:last-child{text-transform:none;letter-spacing:0;font-weight:400}
+.mc-g{display:grid;grid-template-columns:minmax(0,1fr) 5.2em 2.3em 4.6em;gap:8px;align-items:baseline;font-size:14px;padding:3px 0}
+.mc-g .t{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mc-g .t i{font-style:normal;font-weight:400;color:var(--mute);font-size:12px;margin-left:4px}
+.mc-g .s{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}.mc-g .s.lead{font-weight:650}.mc-g .s.trail{color:var(--mute)}
+.mc-g .st{font-size:12px;color:var(--mute);text-align:right;white-space:nowrap}.mc-g .st.live{color:var(--accent)}
+@media (max-width:360px){.mc-g{grid-template-columns:minmax(0,1fr) 4.9em 2.2em 4.4em;gap:6px;font-size:13px}
+  .mc-g .t{white-space:normal}.mc-g .t i{display:block;margin-left:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+
 .viewas{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:13px;color:var(--mute)}
 .viewas select{font:inherit;font-size:14px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 28px 5px 10px;
   appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);
@@ -172,12 +207,19 @@ svg text{fill:var(--mute);font-size:11px}
 <div class="viewas"><label for="me">Viewing as</label><select id="me"><option value="">Pick your entry…</option></select></div>
 <div id="warnings"></div>
 
+<nav id="tabs" aria-label="Sections" role="tablist"><button type="button" data-tab="standings" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V10M12 20V4M18 20v-7" /></svg><span>Standings</span></button><button type="button" data-tab="games" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5v17M6.3 5.8c2.6 3.2 2.6 9.2 0 12.4M17.7 5.8c-2.6 3.2-2.6 9.2 0 12.4"/></svg><span>Games</span></button><button type="button" data-tab="teams" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="0.6"/></svg><span>Teams</span></button><button type="button" data-tab="trends" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l5-6 4 3 7-8"/><path d="M15 6h5v5"/></svg><span>Trends</span></button></nav>
+
+<section class="panel" data-panel="standings">
+<div id="mycard" hidden></div>
 <h2 class="withnote">Standings</h2>
 <div class="h2note" id="standings-label"></div>
 <div class="card scroll"><table id="standings"><thead><tr>
 <th class="rank"><span class="rk">#</span></th><th>Entry</th><th class="n">Points</th><th class="n"><span class="lg" title="Points gained since the last daily update">Δ since last</span><span class="sm" title="Points gained since the last daily update">Δ</span></th><th class="n">Record</th>
 </tr></thead><tbody></tbody></table></div>
 
+</section>
+
+<section class="panel" data-panel="games">
 <h2>Today's games <span class="h2sub" id="today-label"></span></h2>
 <div class="card" id="today"></div>
 <p class="sub">Scores update about hourly in the evening; points become official in the next morning's update. Times are Eastern. Spreads are the last pregame line from ESPN and are missing for games without one.</p>
@@ -186,10 +228,9 @@ svg text{fill:var(--mute);font-size:11px}
 <div class="card" id="yesterday"></div>
 <p class="sub">Final scores with the pool points each picked team earned.</p>
 
-<h2>Points over time</h2>
-<div class="card"><div id="chart"></div></div>
-<p class="sub">Tap names to highlight their lines, and tap again to clear.</p>
+</section>
 
+<section class="panel" data-panel="teams">
 <h2>Teams</h2>
 <div class="card scroll"><table id="teams"><thead><tr>
 </tr></thead><tbody></tbody></table></div>
@@ -214,6 +255,14 @@ svg text{fill:var(--mute);font-size:11px}
   </dl>
   <p class="src">Results from ESPN. Disputes go by ncaa.com.</p>
 </div>
+</section>
+
+<section class="panel" data-panel="trends">
+<h2>Points over time</h2>
+<div class="card"><div id="chart"></div></div>
+<p class="sub">Tap names to highlight their lines, and tap again to clear.</p>
+
+</section>
 </main>
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -436,9 +485,42 @@ sortTeams();
   });
   let touched = false;
   window.chartFollowMe = me => { if (touched) return; sel.clear(); if (me && ents.includes(me)) sel.add(me); draw(); };
+  window.chartRedraw = draw;   // the Trends tab redraws on show (a hidden panel has no width)
   let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
   draw();
 })();
+
+// summary card for the picked entry, at the top of the Standings tab
+const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
+function renderMyCard(me) {
+  const el = $('#mycard'), s = D.standings.find(x => x.entry === me);
+  if (!s) { el.hidden = true; el.innerHTML = ''; return; }
+  const tied = D.standings.filter(x => x.rank === s.rank).length > 1;
+  const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
+  const dl = s.change == null ? '–' : s.change > 0 ? `<span class="up">+${s.change}</span>` : s.change;
+  // one row per side the entry owns: team · vs/at opponent · score · pts · status
+  const rows = (td, finals) => (td?.games || []).flatMap(g => [[g.away, g.home, false], [g.home, g.away, true]]
+    .filter(([m]) => m.pool && (m.owners || []).includes(me)).map(([m, o, isHome]) => {
+      const live = !g.completed && g.live;
+      const vs = g.neutral ? 'vs' : isHome ? 'vs' : 'at';
+      let sc = '', cls = '';
+      if (g.completed && m.final != null) { sc = `${m.won ? 'W' : 'L'} ${m.final}-${o.final}`; cls = m.won ? 'lead' : 'trail'; }
+      else if (live && m.live != null) { sc = `${m.live}-${o.live ?? 0}`; cls = m.live > (o.live ?? 0) ? 'lead' : m.live < (o.live ?? 0) ? 'trail' : ''; }
+      const pts = g.completed ? `<span class="ptsb${m.pts > 0 ? ' pos' : ''}">${m.pts > 0 ? '+' + m.pts : 0}</span>` : '<span></span>';
+      const st = g.completed ? esc(g.final_label || 'Final') : live ? esc(g.live.detail) : finals ? 'No result' : esc(g.time || '');
+      return {pts: g.completed ? (m.pts || 0) : 0,
+        html: `<div class="mc-g"><span class="t">${esc(m.team)}<i>${vs} ${esc(o.team)}</i></span><span class="s ${cls}">${sc}</span>${pts}<span class="st${live ? ' live' : ''}">${st}</span></div>`};
+    }));
+  const today = rows(D.today, false), yest = rows(D.yesterday, true);
+  const started = (D.today?.games || []).some(g => g.live || g.completed);
+  const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>` : '';
+  const ysum = yest.reduce((a, r) => a + r.pts, 0);
+  el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">${esc(s.full || s.entry)}</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
+    `<div class="mc-stats"><span><b>${s.total}</b>pts</span><span><b>${dl}</b>Δ</span><span><b>${W}-${L}</b>record</span></div>` +
+    sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today) +
+    sec('Yesterday', (ysum > 0 ? '+' : '') + ysum + ' pts', yest) + '</div>';
+  el.hidden = false;
+}
 
 // "Viewing as": each visitor picks their entry once; it's remembered on this device only (no accounts)
 (function viewingAs() {
@@ -473,12 +555,35 @@ sortTeams();
       tr.nextElementSibling?.classList.toggle('mine', on);
     });
     window.chartFollowMe?.(me);
+    renderMyCard(me);
   }
   let me = store.get();
   if (me && !D.standings.some(s => s.entry === me)) me = '';   // entry renamed or removed
   pick.value = me;
   apply(me);
   pick.addEventListener('change', () => { me = pick.value; store.set(me); apply(me); });
+})();
+// tabs: chosen by the link (#games etc.), else the last one used on this device, else Standings
+(function tabs() {
+  const KEY = 'shu-hoops-tab', names = ['standings', 'games', 'teams', 'trends'];
+  const btns = [...document.querySelectorAll('#tabs button')], panels = [...document.querySelectorAll('.panel')];
+  let cur = null;
+  function show(name, scroll) {
+    if (!names.includes(name)) name = 'standings';
+    const changed = name !== cur; cur = name;
+    btns.forEach(b => b.setAttribute('aria-selected', b.dataset.tab === name));
+    panels.forEach(p => p.hidden = p.dataset.panel !== name);
+    try { localStorage.setItem(KEY, name); } catch (e) {}
+    // links like …/#games open that tab; the hash is then cleared so the browser never jumps to a same-named element
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    if (name === 'trends') window.chartRedraw?.();
+    if (changed && scroll) window.scrollTo(0, 0);
+  }
+  let saved = ''; try { saved = localStorage.getItem(KEY) || ''; } catch (e) {}
+  show(location.hash.slice(1) || saved, false);
+  if (scrollY) scrollTo(0, 0);   // a #standings/#teams link would otherwise land on the same-named table
+  btns.forEach(b => b.addEventListener('click', () => show(b.dataset.tab, true)));
+  window.addEventListener('hashchange', () => { if (location.hash) show(location.hash.slice(1), true); });
 })();
 </script>
 </body>
