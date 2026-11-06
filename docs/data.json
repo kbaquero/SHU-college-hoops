@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 21:37 EST",
- "scores_updated": "9:37 PM",
+ "updated": "2026-11-05 21:43 EST",
+ "scores_updated": "9:43 PM",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -4829,11 +4829,11 @@
       "Marty C."
      ],
      "won": false,
-     "score": "",
+     "score": "61-80",
      "opp": "Pittsburgh",
      "pts": 0,
      "final": 61,
-     "opp_final": null,
+     "opp_final": 80,
      "opp_id": "221",
      "record": "0-2"
     },
@@ -4845,7 +4845,7 @@
      "id": "221",
      "final": 80,
      "won": true,
-     "record": "3-0"
+     "record": "2-0"
     },
     "time": "7:00 PM",
     "line": "PITT -17.5"
@@ -5274,7 +5274,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5285,10 +5285,9 @@
      "home": false,
      "owners": [],
      "id": "2466",
-     "final": null,
-     "won": null,
-     "record": "0-1",
-     "live": 44
+     "final": 44,
+     "won": false,
+     "record": "0-2"
     },
     "home": {
      "team": "Mississippi St.",
@@ -5297,22 +5296,17 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "82-44",
      "opp": "Northwestern St.",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 82,
+     "opp_final": 44,
      "opp_id": "2466",
-     "record": "1-0",
-     "live": 82
+     "record": "2-0"
     },
     "time": "7:30 PM",
-    "line": "MSST -21.5",
-    "live": {
-     "detail": "0:00 2nd",
-     "as_of": "9:37 PM"
-    }
+    "line": "MSST -21.5"
    },
    {
     "id": "401909563",
@@ -5352,13 +5346,13 @@
      "opp_final": null,
      "opp_id": "324",
      "record": "1-0",
-     "live": 70
+     "live": 73
     },
     "time": "8:00 PM",
     "line": "DUKE -40.5",
     "live": {
-     "detail": "14:42 2nd",
-     "as_of": "9:37 PM"
+     "detail": "12:34 2nd",
+     "as_of": "9:43 PM"
     }
    },
    {
@@ -5387,7 +5381,7 @@
      "opp_final": null,
      "opp_id": "57",
      "record": "1-0",
-     "live": 50
+     "live": 52
     },
     "home": {
      "team": "Florida",
@@ -5411,8 +5405,8 @@
     "time": "8:00 PM",
     "line": "FLA -37.5",
     "live": {
-     "detail": "4:53 2nd",
-     "as_of": "9:37 PM"
+     "detail": "3:19 2nd",
+     "as_of": "9:43 PM"
     }
    },
    {
@@ -5441,7 +5435,7 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "0-1",
-     "live": 40
+     "live": 42
     },
     "home": {
      "team": "Creighton",
@@ -5452,13 +5446,13 @@
      "final": null,
      "won": null,
      "record": "1-0",
-     "live": 68
+     "live": 78
     },
     "time": "8:00 PM",
     "line": "CREI -29.5",
     "live": {
-     "detail": "7:50 2nd",
-     "as_of": "9:37 PM"
+     "detail": "5:33 2nd",
+     "as_of": "9:43 PM"
     }
    },
    {
@@ -5481,7 +5475,7 @@
      "final": null,
      "won": null,
      "record": "1-0",
-     "live": 46
+     "live": 53
     },
     "home": {
      "team": "SMU",
@@ -5499,13 +5493,13 @@
      "opp_final": null,
      "opp_id": "2678",
      "record": "1-0",
-     "live": 64
+     "live": 72
     },
     "time": "8:00 PM",
     "line": "SMU -24.5",
     "live": {
-     "detail": "11:04 2nd",
-     "as_of": "9:37 PM"
+     "detail": "8:29 2nd",
+     "as_of": "9:43 PM"
     }
    },
    {
@@ -5534,7 +5528,7 @@
      "opp_final": null,
      "opp_id": "356",
      "record": "0-0",
-     "live": 30
+     "live": 35
     },
     "home": {
      "team": "Illinois",
@@ -5551,13 +5545,13 @@
      "opp_final": null,
      "opp_id": "219",
      "record": "1-0",
-     "live": 53
+     "live": 58
     },
     "time": "8:30 PM",
     "line": "ILL -30.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:37 PM"
+     "detail": "18:07 2nd",
+     "as_of": "9:43 PM"
     }
    },
    {
