@@ -70,7 +70,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 }
 /* summary card for the picked entry */
 .mycard{margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:inset 4px 0 0 var(--me)}
-.mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 4px 18px}
+.mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 11px 18px}
 .mc-name{font-weight:700;color:var(--me);font-size:17px}
 .mc-rank{font-size:15px;font-weight:700;white-space:nowrap}.mc-rank .mv{margin-left:4px}
 .mc-stats{display:flex;gap:16px;padding:0 14px 12px 18px;font-size:13px;color:var(--mute)}
@@ -512,8 +512,6 @@ function renderMyCard(me) {
   const el = $('#mycard'), s = D.standings.find(x => x.entry === me);
   if (!s) { el.hidden = true; el.innerHTML = ''; return; }
   const tied = D.standings.filter(x => x.rank === s.rank).length > 1;
-  const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
-  const dl = s.change == null ? '–' : s.change > 0 ? `<span class="up">+${s.change}</span>` : s.change;
   // one row per side the entry owns: team · vs/at opponent · score · pts · status
   const rows = (td, finals) => (td?.games || []).flatMap(g => [[g.away, g.home, false], [g.home, g.away, true]]
     .filter(([m]) => m.pool && (m.owners || []).includes(me)).map(([m, o, isHome]) => {
@@ -532,7 +530,6 @@ function renderMyCard(me) {
   const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>` : '';
   const ysum = yest.reduce((a, r) => a + r.pts, 0);
   el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">${esc(s.full || s.entry)}</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
-    `<div class="mc-stats"><span><b>${s.total}</b>pts</span><span><b>${dl}</b>Δ</span><span><b>${W}-${L}</b>record</span></div>` +
     sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today) +
     sec('Yesterday', (ysum > 0 ? '+' : '') + ysum + ' pts', yest) + '</div>';
   el.hidden = false;
