@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 21:47 EST",
- "scores_updated": "9:47 PM",
+ "updated": "2026-11-05 21:49 EST",
+ "scores_updated": "9:49 PM",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -5352,7 +5352,7 @@
     "line": "DUKE -40.5",
     "live": {
      "detail": "11:46 2nd",
-     "as_of": "9:47 PM"
+     "as_of": "9:49 PM"
     }
    },
    {
@@ -5381,7 +5381,7 @@
      "opp_final": null,
      "opp_id": "57",
      "record": "1-0",
-     "live": 56
+     "live": 57
     },
     "home": {
      "team": "Florida",
@@ -5405,8 +5405,8 @@
     "time": "8:00 PM",
     "line": "FLA -37.5",
     "live": {
-     "detail": "0:59 2nd",
-     "as_of": "9:47 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:49 PM"
     }
    },
    {
@@ -5435,7 +5435,7 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "0-1",
-     "live": 44
+     "live": 46
     },
     "home": {
      "team": "Creighton",
@@ -5451,8 +5451,8 @@
     "time": "8:00 PM",
     "line": "CREI -29.5",
     "live": {
-     "detail": "4:09 2nd",
-     "as_of": "9:47 PM"
+     "detail": "3:36 2nd",
+     "as_of": "9:49 PM"
     }
    },
    {
@@ -5498,8 +5498,8 @@
     "time": "8:00 PM",
     "line": "SMU -24.5",
     "live": {
-     "detail": "7:46 2nd",
-     "as_of": "9:47 PM"
+     "detail": "7:42 2nd",
+     "as_of": "9:49 PM"
     }
    },
    {
@@ -5550,8 +5550,8 @@
     "time": "8:30 PM",
     "line": "ILL -30.5",
     "live": {
-     "detail": "16:13 2nd",
-     "as_of": "9:47 PM"
+     "detail": "15:52 2nd",
+     "as_of": "9:49 PM"
     }
    },
    {
