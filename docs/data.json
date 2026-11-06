@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 22:18 EST",
- "scores_updated": "10:18 PM",
+ "updated": "2026-11-05 22:34 EST",
+ "scores_updated": "10:34 PM",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -5314,7 +5314,7 @@
     "tbd": false,
     "tv": "ACC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5325,10 +5325,9 @@
      "home": false,
      "owners": [],
      "id": "324",
-     "final": null,
-     "won": null,
-     "record": "0-1",
-     "live": 50
+     "final": 52,
+     "won": false,
+     "record": "0-2"
     },
     "home": {
      "team": "Duke",
@@ -5338,22 +5337,17 @@
       "Joe H.",
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "113-52",
      "opp": "Coastal Carolina",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 113,
+     "opp_final": 52,
      "opp_id": "324",
-     "record": "1-0",
-     "live": 111
+     "record": "2-0"
     },
     "time": "8:00 PM",
-    "line": "DUKE -40.5",
-    "live": {
-     "detail": "1:23 2nd",
-     "as_of": "10:18 PM"
-    }
+    "line": "DUKE -40.5"
    },
    {
     "id": "401906770",
@@ -5490,7 +5484,7 @@
     "tbd": false,
     "tv": "FS1",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5502,15 +5496,14 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "70-112",
      "opp": "Illinois",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 70,
+     "opp_final": 112,
      "opp_id": "356",
-     "record": "0-0",
-     "live": 57
+     "record": "0-1"
     },
     "home": {
      "team": "Illinois",
@@ -5519,22 +5512,17 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "112-70",
      "opp": "Penn",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 112,
+     "opp_final": 70,
      "opp_id": "219",
-     "record": "1-0",
-     "live": 104
+     "record": "2-0"
     },
     "time": "8:30 PM",
-    "line": "ILL -30.5",
-    "live": {
-     "detail": "3:31 2nd",
-     "as_of": "10:18 PM"
-    }
+    "line": "ILL -30.5"
    },
    {
     "id": "401909739",
@@ -5574,7 +5562,7 @@
      "record": "0-1"
     },
     "time": "10:30 PM",
-    "line": "ARIZ -30.5"
+    "line": "ARIZ -31.5"
    }
   ]
  },
