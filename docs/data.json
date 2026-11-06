@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 21:49 EST",
- "scores_updated": "9:49 PM",
+ "updated": "2026-11-05 21:53 EST",
+ "scores_updated": "9:53 PM",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -5328,7 +5328,7 @@
      "final": null,
      "won": null,
      "record": "0-1",
-     "live": 27
+     "live": 31
     },
     "home": {
      "team": "Duke",
@@ -5346,13 +5346,13 @@
      "opp_final": null,
      "opp_id": "324",
      "record": "1-0",
-     "live": 77
+     "live": 81
     },
     "time": "8:00 PM",
     "line": "DUKE -40.5",
     "live": {
-     "detail": "11:46 2nd",
-     "as_of": "9:49 PM"
+     "detail": "9:36 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -5361,7 +5361,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5373,15 +5373,14 @@
      "owners": [
       "Chris C."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "57-88",
      "opp": "Florida",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 57,
+     "opp_final": 88,
      "opp_id": "57",
-     "record": "1-0",
-     "live": 57
+     "record": "1-1"
     },
     "home": {
      "team": "Florida",
@@ -5392,22 +5391,17 @@
       "Jason H.",
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "88-57",
      "opp": "Jacksonville",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 88,
+     "opp_final": 57,
      "opp_id": "294",
-     "record": "1-0",
-     "live": 88
+     "record": "2-0"
     },
     "time": "8:00 PM",
-    "line": "FLA -37.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:49 PM"
-    }
+    "line": "FLA -37.5"
    },
    {
     "id": "401909491",
@@ -5435,7 +5429,7 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "0-1",
-     "live": 46
+     "live": 48
     },
     "home": {
      "team": "Creighton",
@@ -5446,13 +5440,13 @@
      "final": null,
      "won": null,
      "record": "1-0",
-     "live": 79
+     "live": 80
     },
     "time": "8:00 PM",
     "line": "CREI -29.5",
     "live": {
-     "detail": "3:36 2nd",
-     "as_of": "9:49 PM"
+     "detail": "3:22 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -5493,13 +5487,13 @@
      "opp_final": null,
      "opp_id": "2678",
      "record": "1-0",
-     "live": 72
+     "live": 75
     },
     "time": "8:00 PM",
     "line": "SMU -24.5",
     "live": {
-     "detail": "7:42 2nd",
-     "as_of": "9:49 PM"
+     "detail": "6:48 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -5528,7 +5522,7 @@
      "opp_final": null,
      "opp_id": "356",
      "record": "0-0",
-     "live": 35
+     "live": 41
     },
     "home": {
      "team": "Illinois",
@@ -5545,13 +5539,13 @@
      "opp_final": null,
      "opp_id": "219",
      "record": "1-0",
-     "live": 67
+     "live": 69
     },
     "time": "8:30 PM",
     "line": "ILL -30.5",
     "live": {
-     "detail": "15:52 2nd",
-     "as_of": "9:49 PM"
+     "detail": "13:33 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
