@@ -356,7 +356,16 @@ if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catc
 const D = JSON.parse(document.getElementById('data').textContent);
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-$('#updated').textContent = 'Updated ' + D.updated;
+// "Updated 10:34 PM" today, "Updated yesterday, 5:52 AM", otherwise "Updated Nov 3, 5:52 AM" (Eastern)
+$('#updated').textContent = 'Updated ' + (() => {
+  const m = /^(\d{4})-(\d\d)-(\d\d) (\d\d):(\d\d)/.exec(D.updated || ''); if (!m) return D.updated;
+  const h = +m[4], time = `${h % 12 || 12}:${m[5]} ${h < 12 ? 'AM' : 'PM'}`;
+  const et = d => new Intl.DateTimeFormat('en-CA', {timeZone: 'America/New_York'}).format(d);
+  const day = `${m[1]}-${m[2]}-${m[3]}`, now = new Date();
+  if (day === et(now)) return time;
+  if (day === et(new Date(now - 864e5))) return 'yesterday, ' + time;
+  return new Date(day + 'T12:00:00').toLocaleDateString('en-US', {month: 'short', day: 'numeric'}) + ', ' + time;
+})();
 
 if (D.warnings.length) $('#warnings').innerHTML = '<div class="warn"><b>Needs attention</b><ul>' + D.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>';
 
