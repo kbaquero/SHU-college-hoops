@@ -56,7 +56,12 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #standings tr.entry-row.me>td{background:var(--metint)}
 #standings tr.entry-row.me>td:first-child{box-shadow:inset 3px 0 0 var(--me)}
 #standings tr.entry-row.me b{color:var(--me)}
-.game.mylast{border-bottom:3px solid color-mix(in srgb,var(--me) 35%,var(--line))}
+.game.mine{--ow:2px;--oc:color-mix(in srgb,var(--me) 55%,transparent);box-shadow:inset var(--ow) 0 0 var(--oc),inset calc(-1*var(--ow)) 0 0 var(--oc)}
+.game.mine.myfirst{box-shadow:inset var(--ow) 0 0 var(--oc),inset calc(-1*var(--ow)) 0 0 var(--oc),inset 0 var(--ow) 0 var(--oc)}
+.game.mine.mylast{box-shadow:inset var(--ow) 0 0 var(--oc),inset calc(-1*var(--ow)) 0 0 var(--oc),inset 0 calc(-1*var(--ow)) 0 var(--oc)}
+.game.mine.myfirst.mylast{box-shadow:inset 0 0 0 var(--ow) var(--oc)}
+.card>.game.mine.myfirst:first-child{border-top-left-radius:10px;border-top-right-radius:10px}
+.card>.game.mine.mylast:last-child{border-bottom-left-radius:10px;border-bottom-right-radius:10px}
 .o.me{color:var(--me);background:var(--metint);border-radius:4px;padding:0 4px;margin:0 -1px;font-weight:650}
 #teams tr.entry-row.mine>td{background:var(--metint)}
 #teams tr.entry-row.mine>td:first-child{box-shadow:inset 3px 0 0 var(--me)}
@@ -456,9 +461,11 @@ sortTeams();
       games.sort((x, y) => (!!y.querySelector('.o.me') - !!x.querySelector('.o.me')) || (x.dataset.idx - y.dataset.idx))
            .forEach(g => list.append(g));
       // a heavier divider under the viewer's last game, only when other games follow
+      // outline the viewer's block of games: sides on each, top on the first, bottom on the last
       const mine = games.filter(g => g.querySelector('.o.me'));
-      games.forEach(g => g.classList.remove('mylast'));
-      if (mine.length && mine.length < games.length) mine[mine.length - 1].classList.add('mylast');
+      games.forEach(g => g.classList.remove('mine', 'myfirst', 'mylast'));
+      mine.forEach(g => g.classList.add('mine'));
+      if (mine.length) { mine[0].classList.add('myfirst'); mine[mine.length - 1].classList.add('mylast'); }
     });
     document.querySelectorAll('#teams tr.entry-row[data-owners]').forEach(tr => {
       const on = !!me && JSON.parse(tr.dataset.owners).includes(me);
