@@ -49,16 +49,19 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .arr{font-size:10px}
 /* tabs: bottom bar on phones, sticky segmented bar on wide screens */
-#tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:2px;padding:5px 8px calc(5px + env(safe-area-inset-bottom));
+#tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:repeat(4,1fr);gap:2px;padding:6px 8px calc(4px + env(safe-area-inset-bottom));
   background:color-mix(in srgb,var(--card) 90%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
-#tabs button{all:unset;flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 0 3px;font-size:11px;font-weight:600;
+#tabs button{all:unset;flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 0 6px;font-size:11px;font-weight:600;
   color:var(--mute);cursor:pointer;border-radius:10px;-webkit-tap-highlight-color:transparent}
 #tabs svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 #tabs button[aria-selected=true]{color:var(--accent)}
+/* league name under the buttons: lifts them clear of the iPhone home-indicator swipe zone */
+.tabfoot{grid-column:1/-1;text-align:center;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);opacity:.7;padding:6px 0 2px;pointer-events:none;user-select:none;-webkit-user-select:none}
 #tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
-main{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
+main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .panel>h2:first-child,.panel>#mycard+h2,.panel>#mycard[hidden]+h2{margin-top:22px}
 @media (min-width:760px){
+  .tabfoot{display:none}
   #tabs{position:sticky;top:0;bottom:auto;margin:18px 0 0;padding:4px;border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--card) 92%,transparent)}
   #tabs button{flex-direction:row;justify-content:center;gap:8px;font-size:14px;padding:9px 0}
   #tabs svg{width:18px;height:18px}
@@ -79,6 +82,7 @@ main{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
 .mc-g .t{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .mc-g .t i{font-style:normal;font-weight:400;color:var(--mute);font-size:12px;margin-left:4px}
 .mc-g .s{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}.mc-g .s.lead{font-weight:650}.mc-g .s.trail{color:var(--mute)}
+.mc-g .ptsb{justify-self:center;min-width:0}
 .mc-g .st{font-size:12px;color:var(--mute);text-align:right;white-space:nowrap}.mc-g .st.live{color:var(--accent)}
 @media (max-width:360px){.mc-g{grid-template-columns:minmax(0,1fr) 4.9em 2.2em 4.4em;gap:6px;font-size:13px}
   .mc-g .t{white-space:normal}.mc-g .t i{display:block;margin-left:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
@@ -207,7 +211,7 @@ svg text{fill:var(--mute);font-size:11px}
 <div class="viewas"><label for="me">Viewing as</label><select id="me"><option value="">Pick your entry…</option></select></div>
 <div id="warnings"></div>
 
-<nav id="tabs" aria-label="Sections" role="tablist"><button type="button" data-tab="standings" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V10M12 20V4M18 20v-7" /></svg><span>Standings</span></button><button type="button" data-tab="games" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5v17M6.3 5.8c2.6 3.2 2.6 9.2 0 12.4M17.7 5.8c-2.6 3.2-2.6 9.2 0 12.4"/></svg><span>Games</span></button><button type="button" data-tab="teams" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="0.6"/></svg><span>Teams</span></button><button type="button" data-tab="trends" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l5-6 4 3 7-8"/><path d="M15 6h5v5"/></svg><span>Trends</span></button></nav>
+<nav id="tabs" aria-label="Sections" role="tablist"><button type="button" data-tab="standings" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V10M12 20V4M18 20v-7" /></svg><span>Standings</span></button><button type="button" data-tab="games" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5v17M6.3 5.8c2.6 3.2 2.6 9.2 0 12.4M17.7 5.8c-2.6 3.2-2.6 9.2 0 12.4"/></svg><span>Games</span></button><button type="button" data-tab="teams" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="0.6"/></svg><span>Teams</span></button><button type="button" data-tab="trends" role="tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l5-6 4 3 7-8"/><path d="M15 6h5v5"/></svg><span>Trends</span></button><div class="tabfoot" aria-hidden="true">SHU College Hoops Pool · 2026–27</div></nav>
 
 <section class="panel" data-panel="standings">
 <div id="mycard" hidden></div>
