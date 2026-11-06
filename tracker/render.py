@@ -86,7 +86,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .mc-g .s{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}.mc-g .s.lead{font-weight:650}.mc-g .s.trail{color:var(--mute)}
 .mc-g .ptsb{justify-self:center;min-width:0}
 .mc-g .st{font-size:12px;color:var(--mute);text-align:right;white-space:nowrap}.mc-g .st.live{color:var(--ink);font-weight:600}.mc-g .st.live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--live);margin-right:5px;vertical-align:1px;animation:livepulse 1.6s ease-in-out infinite}
-@media (max-width:360px){.mc-g{grid-template-columns:minmax(0,1fr) 4.9em 2.2em 4.4em;gap:6px;font-size:13px}
+@media (max-width:360px){.mc-g{grid-template-columns:minmax(0,1fr) 5.6em 2.2em 4.2em;gap:6px;font-size:13px}
   .mc-g .t{white-space:normal}.mc-g .t i{display:block;margin-left:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
 
 .viewas{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:13px;color:var(--mute)}
@@ -241,7 +241,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <section class="panel" data-panel="standings">
 <div id="mycard" hidden></div>
-<h2 class="withnote">Standings</h2>
+<h2 class="withnote">Standings <span class="h2sub" id="standings-when"></span></h2>
 <div class="h2note" id="standings-label"></div>
 <div class="card scroll"><table id="standings"><thead><tr>
 <th class="rank"><span class="rk">#</span></th><th>Entry</th><th class="n"><span class="xw">Points</span><span class="xs">Pts</span></th><th class="n" id="daycol">Today</th><th class="n"><span class="xw">Record</span><span class="xs">W-L</span></th>
@@ -389,10 +389,10 @@ const MORNING = isMorning();
 ST.forEach((s, i) => { s.rank = i && s.live === ST[i - 1].live ? ST[i - 1].rank : i + 1; s.move = MORNING ? s.move : s.morningRank - s.rank; });
 $('#daycol').innerHTML = MORNING ? '<span title="Points gained yesterday"><span class="lg">Yesterday</span><span class="sm">Yest.</span></span>' : '<span title="Points from games that have gone final today">Today</span>';
 setInterval(() => { if (isMorning() !== MORNING) location.reload(); }, 60000);   // flip at noon without a manual refresh
-$('#standings-label').textContent = MORNING
-  ? (D.through ? `Through games of ${D.through} · ▲▼ vs. the day before` : '')
-  : finalsToday ? `Live${D.scores_updated ? ' as of ' + D.scores_updated : ''} · counts finals only · ▲▼ since this morning`
-  : D.through ? `Through games of ${D.through} · Today fills in as games go final` : '';
+// when the numbers are from goes in the header (like Today's games); what the arrows/column mean goes underneath
+$('#standings-when').textContent = !MORNING && finalsToday ? `· Live${D.scores_updated ? ' as of ' + D.scores_updated : ''}` : D.through ? `· Through ${D.through}` : '';
+$('#standings-label').textContent = MORNING ? '▲▼ vs. the day before'
+  : finalsToday ? 'Finals only · ▲▼ since this morning' : 'Today fills in as games go final';
 const CHEV = '<span class="chev" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M3.5 1.5L7 5l-3.5 3.5"/></svg></span>';
 const nameWithChev = n => { const i = n.lastIndexOf(' '); return esc(n.slice(0, i + 1)) + `<span class="nw">${esc(n.slice(i + 1))}${CHEV}</span>`; };
 const todayCell = s => MORNING ? (s.change == null ? '<span class="sub">–</span>' : pb(s.change)) : pb(s.today || 0);
@@ -593,7 +593,7 @@ function renderMyCard(me) {
   const started = (D.today?.games || []).some(g => g.live || g.completed);
   const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>` : '';
   const ysum = yest.reduce((a, r) => a + r.pts, 0);
-  el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">${esc(s.full || s.entry)}</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
+  el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">Daily Summary</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
     sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today) +
     sec('Yesterday', (ysum > 0 ? '+' : '') + ysum + ' pts', yest) + '</div>';
   el.hidden = false;
