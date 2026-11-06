@@ -29,8 +29,8 @@ TEMPLATE = r"""<!doctype html>
 <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd}
-@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45}}
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd;--live:#dc2626}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45;--live:#e5484d}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 main{max-width:960px;margin:0 auto;padding:calc(24px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
@@ -85,7 +85,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .mc-g .t i{font-style:normal;font-weight:400;color:var(--mute);font-size:12px;margin-left:4px}
 .mc-g .s{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}.mc-g .s.lead{font-weight:650}.mc-g .s.trail{color:var(--mute)}
 .mc-g .ptsb{justify-self:center;min-width:0}
-.mc-g .st{font-size:12px;color:var(--mute);text-align:right;white-space:nowrap}.mc-g .st.live{color:var(--accent)}
+.mc-g .st{font-size:12px;color:var(--mute);text-align:right;white-space:nowrap}.mc-g .st.live{color:var(--ink);font-weight:600}.mc-g .st.live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--live);margin-right:5px;vertical-align:1px;animation:livepulse 1.6s ease-in-out infinite}
 @media (max-width:360px){.mc-g{grid-template-columns:minmax(0,1fr) 4.9em 2.2em 4.4em;gap:6px;font-size:13px}
   .mc-g .t{white-space:normal}.mc-g .t i{display:block;margin-left:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
 
@@ -140,7 +140,12 @@ h2.withnote{margin-bottom:2px}
 .gtv{color:var(--mute);font-size:12px;margin-top:2px}
 .gline,.gtv{overflow-wrap:anywhere}
 .gtype{margin:7px 0 0 24px;line-height:1}
-.lvclock{display:block;color:var(--accent);font-size:13px;white-space:normal}
+.lvclock{display:block;color:var(--ink);font-size:13px;font-weight:600;white-space:normal}
+/* live = sports-app convention: red LIVE pill with a pulsing dot; the accent color stays for selection and taps */
+.livepill{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:750;letter-spacing:.07em;line-height:1;color:#fff;background:var(--live);padding:3px 6px 3px 5px;border-radius:4px;margin-bottom:4px}
+.livepill::before{content:"";width:5px;height:5px;border-radius:50%;background:#fff;animation:livepulse 1.6s ease-in-out infinite}
+@keyframes livepulse{50%{opacity:.3}}
+@media (prefers-reduced-motion:reduce){.livepill::before,.mc-g .st.live::before{animation:none}}
 .sc.lv{color:var(--mute)}
 .sc.lv.lead{color:var(--ink);font-weight:600}
 .tag{display:inline-block;font-size:10px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;padding:4px 7px;border-radius:4px;
@@ -391,7 +396,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   };
   el.innerHTML = td.games.map((g, idx) => {
     const when = g.completed ? esc(g.final_label || 'Final') : finals ? 'No result'
-      : g.live ? `<span class="lvclock">${esc(g.live.detail)}</span>` : esc(g.time);
+      : g.live ? `<span class="livepill">LIVE</span><span class="lvclock">${esc(g.live.detail)}</span>` : esc(g.time);
     // a named event says enough on its own; "Neutral site" only labels unnamed neutral-site games
     const where = g.event ? `<div class="gevent">${esc(g.event)}</div>` : g.neutral ? '<div class="gsite">Neutral site</div>' : '';
     const under = where + (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
