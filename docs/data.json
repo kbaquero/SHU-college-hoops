@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-05 23:12 EST",
- "scores_updated": "11:12 PM",
+ "scores_updated": "1:24 AM",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -5530,7 +5530,7 @@
     "tbd": false,
     "tv": "truTV",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5541,10 +5541,9 @@
      "home": false,
      "owners": [],
      "id": "13",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 17
+     "final": 84,
+     "won": false,
+     "record": "1-1"
     },
     "home": {
      "team": "Arizona",
@@ -5553,22 +5552,17 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Cal Poly",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 104,
      "opp_final": null,
      "opp_id": "13",
-     "record": "0-1",
-     "live": 27
+     "record": "1-1"
     },
     "time": "10:30 PM",
-    "line": "ARIZ -31.5",
-    "live": {
-     "detail": "9:37 1st",
-     "as_of": "11:12 PM"
-    }
+    "line": "ARIZ -31.5"
    }
   ]
  },
