@@ -70,6 +70,8 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 }
 /* summary card for the picked entry */
 .mycard{margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:inset 4px 0 0 var(--me)}
+.mc-empty{display:block;padding:14px 16px 14px 18px;border:1.5px dashed var(--line);box-shadow:none;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mc-empty span{display:block}.mc-e1{font-weight:700;font-size:16px}.mc-e2{font-size:13px;color:var(--mute);margin-top:3px;line-height:1.4}
 .mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 11px 18px}
 .mc-name{font-weight:700;color:var(--me);font-size:17px}
 .mc-rank{font-size:15px;font-weight:700;white-space:nowrap}.mc-rank .mv{margin-left:4px}
@@ -510,7 +512,12 @@ sortTeams();
 const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
 function renderMyCard(me) {
   const el = $('#mycard'), s = D.standings.find(x => x.entry === me);
-  if (!s) { el.hidden = true; el.innerHTML = ''; return; }
+  if (!s) {   // nobody picked yet: point them at the picker instead of hiding the card
+    el.innerHTML = `<div class="mycard mc-empty" role="button" tabindex="0"><span class="mc-e1">Your Daily Summary</span><span class="mc-e2">Pick your entry above to see tonight's scores and yesterday's results for just your teams.</span></div>`;
+    const open = () => { const p = $('#me'); p.focus(); try { p.showPicker(); } catch (e) {} };
+    el.firstChild.onclick = open; el.firstChild.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
+    el.hidden = false; return;
+  }
   const tied = D.standings.filter(x => x.rank === s.rank).length > 1;
   // one row per side the entry owns: team · vs/at opponent · score · pts · status
   const rows = (td, finals) => (td?.games || []).flatMap(g => [[g.away, g.home, false], [g.home, g.away, true]]
