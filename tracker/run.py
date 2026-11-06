@@ -330,6 +330,7 @@ def update_scores(get_board=None, now=None, docs=DOCS):
     changed = apply_board(td["games"], board, now)
     if changed:
         data["scores_updated"] = now.strftime("%-I:%M %p")
+        data["updated"] = now.strftime("%Y-%m-%d %H:%M %Z")   # header and "as of" always agree
         path.write_text(json.dumps(data, indent=1))
         (docs / "index.html").write_text(render_html(data))
     return data

@@ -250,11 +250,11 @@ svg text{fill:var(--mute);font-size:11px}
 </section>
 
 <section class="panel" data-panel="games">
-<h2>Today's games <span class="h2sub" id="today-label"></span></h2>
+<h2><span id="today-h">Today's games</span> <span class="h2sub" id="today-label"></span></h2>
 <div class="card" id="today"></div>
 <p class="sub">Scores update about hourly in the evening; points become official in the next morning's update. Times are Eastern. Spreads are the last pregame line from ESPN and are missing for games without one.</p>
 
-<h2>Yesterday's games <span class="h2sub" id="yesterday-label"></span></h2>
+<h2><span id="yesterday-h">Yesterday's games</span> <span class="h2sub" id="yesterday-label"></span></h2>
 <div class="card" id="yesterday"></div>
 <p class="sub">Final scores with the pool points each picked team earned.</p>
 
@@ -409,15 +409,19 @@ const ST = D.standings.map(s => {
 // 5 AM-noon ET the column looks back ("Yesterday", with yesterday's gains and rank moves). It turns into "Today" at noon,
 // or earlier the moment one of today's games goes final, so new points always sit next to the column that explains them.
 const finalsToday = (D.today?.games || []).some(g => g.completed);
+// STALE: the pool's day (rolls over at 5 AM ET) has moved past the data's "today", i.e. the morning update is running late.
+// Then "today's" games are really yesterday's, so every label shifts back a day until the update lands.
+const poolDay = new Intl.DateTimeFormat('en-CA', {timeZone: 'America/New_York'}).format(new Date(Date.now() - 5 * 36e5));
+const STALE = !!D.today?.date && D.today.date < poolDay;
 const etHour = () => +new Intl.DateTimeFormat('en-US', {timeZone: 'America/New_York', hour: 'numeric', hourCycle: 'h23'}).format(new Date());
-const isMorning = () => (h => h >= 5 && h < 12)(etHour()) && !finalsToday;
+const isMorning = () => (h => h >= 5 && h < 12)(etHour()) && !finalsToday && !STALE;
 const MORNING = isMorning();
 ST.forEach((s, i) => { s.rank = i && s.live === ST[i - 1].live ? ST[i - 1].rank : i + 1; s.move = MORNING ? s.move : s.morningRank - s.rank; });
-$('#daycol').innerHTML = MORNING ? '<span title="Points gained yesterday"><span class="lg">Yesterday</span><span class="sm">Yest.</span></span>' : '<span title="Points from games that have gone final today">Today</span>';
+$('#daycol').innerHTML = MORNING || STALE ? '<span title="Points gained yesterday"><span class="lg">Yesterday</span><span class="sm">Yest.</span></span>' : '<span title="Points from games that have gone final today">Today</span>';
 setInterval(() => { if (isMorning() !== MORNING) location.reload(); }, 60000);   // flip at noon without a manual refresh
 // when the numbers are from goes in the header (like Today's games); what the arrows/column mean goes underneath
-$('#standings-when').textContent = !MORNING && finalsToday ? `· Live${D.scores_updated ? ' as of ' + D.scores_updated : ''}` : D.through ? `· Through ${D.through}` : '';
-$('#standings-label').textContent = MORNING ? '▲▼ vs. the day before'
+$('#standings-when').textContent = STALE ? `· Through ${D.today.label}` : !MORNING && finalsToday ? `· Live${D.scores_updated ? ' as of ' + D.scores_updated : ''}` : D.through ? `· Through ${D.through}` : '';
+$('#standings-label').textContent = STALE ? 'Morning update on its way · ▲▼ vs. the day before' : MORNING ? '▲▼ vs. the day before'
   : finalsToday ? 'Finals only · ▲▼ since this morning' : 'Today fills in as games go final';
 const CHEV = '<span class="chev" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M3.5 1.5L7 5l-3.5 3.5"/></svg></span>';
 const nameWithChev = n => { const i = n.lastIndexOf(' '); return esc(n.slice(0, i + 1)) + `<span class="nw">${esc(n.slice(i + 1))}${CHEV}</span>`; };
@@ -476,6 +480,7 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
       side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) + type + `</div></div>`;
   }).join('');
 }
+if (STALE) { $('#today-h').textContent = "Yesterday's games"; $('#yesterday-h').textContent = 'Earlier games'; }
 gameList(D.today, $('#today'), $('#today-label'), 'No picked teams play today.', false);
 // one timestamp for the whole list, once any game has started
 if (D.scores_updated && (D.today?.games || []).some(g => g.live || g.completed)) $('#today-label').textContent += ` · as of ${D.scores_updated}`;
@@ -616,8 +621,8 @@ function renderMyCard(me) {
   const started = (D.today?.games || []).some(g => g.live || g.completed);
   const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>` : '';
   el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">Daily Summary</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
-    sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today) +
-    sec('Yesterday', '', yest) + '</div>';
+    sec(STALE ? 'Yesterday' : 'Today', started && !STALE && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today) +
+    sec(STALE ? (D.yesterday?.label || 'Earlier') : 'Yesterday', '', yest) + '</div>';
   el.hidden = false;
 }
 
