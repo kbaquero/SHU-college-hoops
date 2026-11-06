@@ -56,6 +56,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #standings tr.entry-row.me>td{background:var(--metint)}
 #standings tr.entry-row.me>td:first-child{box-shadow:inset 3px 0 0 var(--me)}
 #standings tr.entry-row.me b{color:var(--me)}
+.game.mylast{border-bottom:3px solid color-mix(in srgb,var(--me) 35%,var(--line))}
 .o.me{color:var(--me);background:var(--metint);border-radius:4px;padding:0 4px;margin:0 -1px;font-weight:650}
 #teams tr.entry-row.mine>td{background:var(--metint)}
 #teams tr.entry-row.mine>td:first-child{box-shadow:inset 3px 0 0 var(--me)}
@@ -454,6 +455,10 @@ sortTeams();
       const list = $(id), games = [...list.querySelectorAll(':scope > .game')];
       games.sort((x, y) => (!!y.querySelector('.o.me') - !!x.querySelector('.o.me')) || (x.dataset.idx - y.dataset.idx))
            .forEach(g => list.append(g));
+      // a heavier divider under the viewer's last game, only when other games follow
+      const mine = games.filter(g => g.querySelector('.o.me'));
+      games.forEach(g => g.classList.remove('mylast'));
+      if (mine.length && mine.length < games.length) mine[mine.length - 1].classList.add('mylast');
     });
     document.querySelectorAll('#teams tr.entry-row[data-owners]').forEach(tr => {
       const on = !!me && JSON.parse(tr.dataset.owners).includes(me);
