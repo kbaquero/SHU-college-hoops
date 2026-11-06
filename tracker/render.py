@@ -473,7 +473,7 @@ sortTeams();
   const sel = new Set();
   const fmt = d => new Date(d + 'T12:00:00').toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
   function draw() {
-    const W = Math.max(280, el.clientWidth), Ht = W < 520 ? 220 : 280, P = {l: 34, r: 14, t: 14, b: 26};
+    const W = Math.max(280, el.clientWidth), Ht = W < 520 ? 220 : 280, P = {l: 48, r: 14, t: 14, b: 26};
     const raw = Math.max(1, ...H.flatMap(h => ents.map(e => h.totals[e] || 0)));
     const mag = 10 ** Math.floor(Math.log10(raw / 5)), step = [1, 2, 5, 10].map(m => m * mag).find(v => v >= raw / 5) || 1;
     const stepI = Math.max(1, Math.round(step)), max = Math.ceil(raw / stepI) * stepI;
@@ -481,6 +481,7 @@ sortTeams();
     const y = v => Ht - P.b - (Ht - P.t - P.b) * v / max;
     let s = `<svg width="${W}" height="${Ht}" viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Points over time for every entry">`;
     for (let v = 0; v <= max; v += stepI) { s += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`; }
+    s += `<text transform="translate(13 ${(P.t + Ht - P.b) / 2}) rotate(-90)" text-anchor="middle">Points</text>`;
     s += `<text x="${P.l}" y="${Ht - 6}">${fmt(H[0].date)}</text><text x="${W - P.r}" y="${Ht - 6}" text-anchor="end">${fmt(H[H.length - 1].date)}</text>`;
     const order = ents.map((e, j) => j).sort((a, b) => sel.has(ents[a]) - sel.has(ents[b]));   // highlighted lines on top
     order.forEach(j => {
@@ -552,7 +553,7 @@ function renderMyCard(me) {
     const R = W < 360 ? 3.2 : W < 520 ? 3.6 : 4.2, gap = R * 2 + 1.6;
     const perRow = Math.max(2, Math.floor((W - 48) / (s1 - s0) / gap));
     const half = Math.max(0, ...Object.values(groups).map(l => (Math.ceil(l.length / Math.min(l.length, perRow)) - 1) / 2 * gap)) + R;
-    const Ht = (W < 520 ? 230 : 280) + half * 2, P = {l: 34, r: 14, t: 8 + half, b: 36 + half};
+    const Ht = (W < 520 ? 230 : 280) + half * 2, P = {l: 48, r: 14, t: 8 + half, b: 36 + half};
     const raw = Math.max(2, ...pts.map(d => d.pts), rate * s1);
     const step = raw <= 5 ? 1 : raw <= 12 ? 2 : raw <= 30 ? 5 : 10, max = Math.ceil(raw / step) * step;
     const x = v => P.l + (W - P.l - P.r) * (v - s0) / (s1 - s0), y = v => Ht - P.b - (Ht - P.t - P.b) * v / max;
@@ -561,6 +562,7 @@ function renderMyCard(me) {
     const xs = (s1 - s0) > 12 ? 2 : 1;
     for (let v = Math.ceil(s0 / xs) * xs; v <= s1; v += xs) g += `<text x="${x(v)}" y="${Ht - 26}" text-anchor="middle">$${v}</text>`;
     g += `<text x="${(P.l + W - P.r) / 2}" y="${Ht - 6}" text-anchor="middle">Salary</text>`;
+    g += `<text transform="translate(13 ${(P.t + Ht - P.b) / 2}) rotate(-90)" text-anchor="middle">Points</text>`;
     g += `<line x1="${x(s0)}" y1="${y(rate * s0)}" x2="${x(s1)}" y2="${y(rate * s1)}" stroke="currentColor" opacity=".45" stroke-width="1.5" stroke-dasharray="5 4"/>`;
     placed = [];
     Object.values(groups).forEach(list => {
