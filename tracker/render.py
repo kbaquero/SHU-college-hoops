@@ -75,7 +75,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .mycard{margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:inset 4px 0 0 var(--me)}
 .mc-empty{display:block;padding:14px 16px 14px 18px;border:1.5px dashed var(--line);box-shadow:none;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .mc-empty span{display:block}.mc-e1{font-weight:700;font-size:16px}.mc-e2{font-size:13px;color:var(--mute);margin-top:3px;line-height:1.4}
-.mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 11px 18px}
+.mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 11px 14px;margin-left:4px;background:var(--head)}  /* tinted like table headers; the 4px margin keeps the blue edge visible */
 .mc-name{font-weight:700;color:var(--ink);font-size:17px}
 .mc-rank{font-size:15px;font-weight:700;white-space:nowrap}.mc-rank .mv{margin-left:4px}
 .mc-stats{display:flex;gap:16px;padding:0 14px 12px 18px;font-size:13px;color:var(--mute)}
