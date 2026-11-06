@@ -361,6 +361,23 @@ $('#updated').textContent = 'Updated ' + D.updated;
 if (D.warnings.length) $('#warnings').innerHTML = '<div class="warn"><b>Needs attention</b><ul>' + D.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>';
 
 const T = D.teams, I = D.team_info;
+// fold today's finals into each team's numbers so every table and chart is live (finals only).
+// The morning run re-scores from scratch, so this never double counts: standings only cover games before today.
+(D.today?.games || []).filter(g => g.completed).forEach(g => [[g.away, g.home], [g.home, g.away]].forEach(([sd, o]) => {
+  if (!sd.pool || !I[sd.team]) return;
+  const b = T[sd.team] ||= {nonconf_w:0, nonconf_l:0, conf_w:0, conf_l:0, ct_w:0, ct_l:0, ct_champ:false, ncaa_w:[], w:0, l:0, pts_reg:0, pts_ct:0, pts_ncaa:0, total:0, games:[]};
+  if (b.games.some(x => x.id === g.id)) return;
+  const k = g.kind, won = !!sd.won, pts = sd.pts || 0;
+  if (b.w != null) won ? b.w++ : b.l++;
+  if (k === 'conf') won ? b.conf_w++ : b.conf_l++;
+  else if (k === 'conf_tourney') won ? b.ct_w++ : b.ct_l++;
+  else if (k === 'nonconf') won ? b.nonconf_w++ : b.nonconf_l++;
+  if (k === 'ncaa' && won && g.round) b.ncaa_w.push(g.round);
+  b[k === 'ncaa' ? 'pts_ncaa' : k === 'conf_tourney' ? 'pts_ct' : 'pts_reg'] += pts;
+  b.total += pts;
+  b.games.push({id: g.id, date: D.today.date, completed: true, won, home: g.neutral ? null : sd === g.home, neutral: g.neutral,
+    opp_name: o.team, score: `${sd.final}-${o.final}`, status_detail: g.final_label || 'Final', kind: k, round: g.round, pts});
+}));
 const ownList = a => a.map(n => `<span class="o" data-o="${esc(n)}">${esc(n)}</span>`).join('<span class="sep">, </span>');   // names in accent, commas muted
 const wl = b => b ? [b.w ?? (b.nonconf_w + b.conf_w + b.ct_w), b.l ?? (b.nonconf_l + b.conf_l + b.ct_l)] : [0, 0];
 const rec = b => b ? wl(b).join('-') : '–';
@@ -377,7 +394,7 @@ const ST = D.standings.map(s => {
   (D.today?.games || []).filter(g => g.completed).forEach(g => [g.away, g.home].forEach(sd => {
     if (sd.pool && (sd.owners || []).includes(s.entry)) { today = (today || 0) + (sd.pts || 0); sd.won ? w++ : l++; }
   }));
-  const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0) + w, L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0) + l;
+  const W = s.teams.reduce((a, t) => a + wl(T[t])[0], 0), L = s.teams.reduce((a, t) => a + wl(T[t])[1], 0);
   return {...s, morningRank: s.rank, today, live: s.total + (today || 0), W, L};
 }).sort((a, b) => b.live - a.live || (a.full || a.entry).localeCompare(b.full || b.entry));
 // 5 AM-noon ET the column looks back ("Yesterday", with yesterday's gains and rank moves). It turns into "Today" at noon,
@@ -397,18 +414,9 @@ const CHEV = '<span class="chev" aria-hidden="true"><svg viewBox="0 0 10 10"><pa
 const nameWithChev = n => { const i = n.lastIndexOf(' '); return esc(n.slice(0, i + 1)) + `<span class="nw">${esc(n.slice(i + 1))}${CHEV}</span>`; };
 const todayCell = s => MORNING ? (s.change == null ? '<span class="sub">–</span>' : pb(s.change)) : pb(s.today || 0);
 
-// each team's numbers including today's finals, for the expandable breakdown
 const z = b => b || {nonconf_w:0, nonconf_l:0, conf_w:0, conf_l:0, ct_w:0, ct_l:0, pts_reg:0, pts_ct:0, pts_ncaa:0, total:0, ncaa_w:[], games:[]};
-const TT = {};
-(D.today?.games || []).filter(g => g.completed).forEach(g => [g.away, g.home].forEach(sd => {
-  if (!sd.pool) return;
-  const x = TT[sd.team] ||= {w: 0, l: 0, cw: 0, cl: 0, reg: 0, ct: 0, ncaa: 0};
-  sd.won ? x.w++ : x.l++;
-  if (g.kind === 'conf') sd.won ? x.cw++ : x.cl++;
-  x[g.kind === 'ncaa' ? 'ncaa' : g.kind === 'conf_tourney' ? 'ct' : 'reg'] += sd.pts || 0;
-}));
-const teamNow = t => { const b = z(T[t]), x = TT[t] || {w: 0, l: 0, cw: 0, cl: 0, reg: 0, ct: 0, ncaa: 0}, [w, l] = wl(T[t]);
-  return {rec: `${w + x.w}-${l + x.l}`, conf: `${b.conf_w + x.cw}-${b.conf_l + x.cl}`, reg: b.pts_reg + x.reg, ct: b.pts_ct + x.ct, ncaa: b.pts_ncaa + x.ncaa, total: b.total + x.reg + x.ct + x.ncaa}; };
+const teamNow = t => { const b = z(T[t]), [w, l] = wl(T[t]);
+  return {rec: `${w}-${l}`, conf: `${b.conf_w}-${b.conf_l}`, reg: b.pts_reg, ct: b.pts_ct, ncaa: b.pts_ncaa, total: b.total}; };
 
 // standings
 const sb = $('#standings tbody');
