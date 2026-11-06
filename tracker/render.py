@@ -468,7 +468,7 @@ gameList(D.yesterday, $('#yesterday'), $('#yesterday-label'), 'No picked teams p
 const recVal = (w, l) => w * 1000 - l;   // most wins first, fewer losses breaks ties
 const COLS = [
   {label:'Team', num:false, dir:1, val:(t) => t.toLowerCase(),
-   html:(t, b) => esc(t) + (b.ct_champ ? ' <span class="chip">Conf champ</span>' : '') + (b.ncaa_w.length ? ' <span class="chip">' + roundName[b.ncaa_w[b.ncaa_w.length - 1]] + '</span>' : '')},
+   html:(t, b) => nameWithChev(t) + (b.ct_champ ? ' <span class="chip">Conf champ</span>' : '') + (b.ncaa_w.length ? ' <span class="chip">' + roundName[b.ncaa_w[b.ncaa_w.length - 1]] + '</span>' : '')},
   {label:'Conf', num:false, dir:1, val:(t, b, i) => i.conf, html:(t, b, i) => i.conf},
   {label:'$', dir:-1, val:(t, b, i) => i.salary, html:(t, b, i) => i.salary},
   {label:'Overall', dir:-1, val:(t, b) => recVal(...wl(b)), html:(t, b) => rec(b)},
