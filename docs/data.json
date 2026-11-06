@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 21:43 EST",
- "scores_updated": "9:43 PM",
+ "updated": "2026-11-05 21:47 EST",
+ "scores_updated": "9:47 PM",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -5328,7 +5328,7 @@
      "final": null,
      "won": null,
      "record": "0-1",
-     "live": 26
+     "live": 27
     },
     "home": {
      "team": "Duke",
@@ -5346,13 +5346,13 @@
      "opp_final": null,
      "opp_id": "324",
      "record": "1-0",
-     "live": 73
+     "live": 77
     },
     "time": "8:00 PM",
     "line": "DUKE -40.5",
     "live": {
-     "detail": "12:34 2nd",
-     "as_of": "9:43 PM"
+     "detail": "11:46 2nd",
+     "as_of": "9:47 PM"
     }
    },
    {
@@ -5381,7 +5381,7 @@
      "opp_final": null,
      "opp_id": "57",
      "record": "1-0",
-     "live": 52
+     "live": 56
     },
     "home": {
      "team": "Florida",
@@ -5400,13 +5400,13 @@
      "opp_final": null,
      "opp_id": "294",
      "record": "1-0",
-     "live": 84
+     "live": 88
     },
     "time": "8:00 PM",
     "line": "FLA -37.5",
     "live": {
-     "detail": "3:19 2nd",
-     "as_of": "9:43 PM"
+     "detail": "0:59 2nd",
+     "as_of": "9:47 PM"
     }
    },
    {
@@ -5435,7 +5435,7 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "0-1",
-     "live": 42
+     "live": 44
     },
     "home": {
      "team": "Creighton",
@@ -5446,13 +5446,13 @@
      "final": null,
      "won": null,
      "record": "1-0",
-     "live": 78
+     "live": 79
     },
     "time": "8:00 PM",
     "line": "CREI -29.5",
     "live": {
-     "detail": "5:33 2nd",
-     "as_of": "9:43 PM"
+     "detail": "4:09 2nd",
+     "as_of": "9:47 PM"
     }
    },
    {
@@ -5498,8 +5498,8 @@
     "time": "8:00 PM",
     "line": "SMU -24.5",
     "live": {
-     "detail": "8:29 2nd",
-     "as_of": "9:43 PM"
+     "detail": "7:46 2nd",
+     "as_of": "9:47 PM"
     }
    },
    {
@@ -5545,13 +5545,13 @@
      "opp_final": null,
      "opp_id": "219",
      "record": "1-0",
-     "live": 58
+     "live": 67
     },
     "time": "8:30 PM",
     "line": "ILL -30.5",
     "live": {
-     "detail": "18:07 2nd",
-     "as_of": "9:43 PM"
+     "detail": "16:13 2nd",
+     "as_of": "9:47 PM"
     }
    },
    {
