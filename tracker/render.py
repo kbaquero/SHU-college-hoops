@@ -497,10 +497,14 @@ const rows = Object.keys(I).map(t => {
   return {t, b, i, tr, dr};
 });
 let sortCol = COLS.findIndex(c => c.label === 'Total'), sortDir = -1;
+// the viewer's teams sit on top until they sort by a column themselves
+let teamsMe = '', userSorted = false;
 headRow.innerHTML = COLS.map((c, k) => `<th${c.num === false ? '' : ' class="n"'}><button type="button" data-k="${k}">${c.label}<span class="arr"></span></button></th>`).join('');
 function sortTeams() {
   const c = COLS[sortCol], tot = COLS.find(x => x.label === 'Total');
+  const mineFirst = (x, y) => userSorted || !teamsMe ? 0 : y.i.owners.includes(teamsMe) - x.i.owners.includes(teamsMe);
   rows.sort((x, y) => {
+    const m = mineFirst(x, y); if (m) return m;
     const a = c.val(x.t, x.b, x.i), b = c.val(y.t, y.b, y.i);
     if ((a == null) !== (b == null)) return a == null ? 1 : -1;   // blanks (e.g. no seed yet) always last
     const d = a == null ? 0 : typeof a === 'string' ? a.localeCompare(b) : a - b;
@@ -515,10 +519,12 @@ function sortTeams() {
 headRow.addEventListener('click', e => {
   const btn = e.target.closest('button'); if (!btn) return;
   const k = +btn.dataset.k;
-  if (k === sortCol) sortDir = -sortDir; else { sortCol = k; sortDir = COLS[k].dir; }
+  if (k === sortCol && userSorted) sortDir = -sortDir; else if (k !== sortCol) { sortCol = k; sortDir = COLS[k].dir; }
+  userSorted = true;
   sortTeams();
 });
 sortTeams();
+window.teamsFollowMe = m => { teamsMe = m || ''; sortTeams(); };
 
 // chart: every entry over time. Tap names in the legend to highlight them.
 (function chart() {
@@ -693,6 +699,7 @@ function renderMyCard(me) {
       tr.classList.toggle('mine', on);
       tr.nextElementSibling?.classList.toggle('mine', on);
     });
+    window.teamsFollowMe?.(me);
     window.chartFollowMe?.(me);
     window.valueFollowMe?.(me);
     renderMyCard(me);
