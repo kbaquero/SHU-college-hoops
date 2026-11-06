@@ -29,8 +29,8 @@ TEMPLATE = r"""<!doctype html>
 <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd;--live:#dc2626;--g1b:#e6f4ea;--g1t:#1e7a3e;--g2b:#c3e8cf;--g2t:#14632f;--g3b:#9ddcb0;--g3t:#0f4a22;--g4b:#5cc27f;--g4t:#062a12;--g5b:#1f9d4f;--g5t:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45;--live:#e5484d;--g1b:#17291e;--g1t:#7ad99a;--g2b:#1d4a2c;--g2t:#a7f0bf;--g3b:#22603a;--g3t:#dcfce7;--g4b:#2e8a4f;--g4t:#f0fdf4;--g5b:#3cc06b;--g5t:#06170c}}
+:root{--bg:#f6f5f1;--card:#fff;--head:#f4f2ec;--head2:#e7e4dc;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd;--live:#dc2626;--g1b:#e6f4ea;--g1t:#1e7a3e;--g2b:#c3e8cf;--g2t:#14632f;--g3b:#9ddcb0;--g3t:#0f4a22;--g4b:#5cc27f;--g4t:#062a12;--g5b:#1f9d4f;--g5t:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--head:#23262c;--head2:#30333b;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45;--live:#e5484d;--g1b:#17291e;--g1t:#7ad99a;--g2b:#1d4a2c;--g2t:#a7f0bf;--g3b:#22603a;--g3t:#dcfce7;--g4b:#2e8a4f;--g4t:#f0fdf4;--g5b:#3cc06b;--g5t:#06170c}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 main{max-width:960px;margin:0 auto;padding:calc(24px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
@@ -42,6 +42,9 @@ h2{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute
 table{width:100%;border-collapse:collapse}
 th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
 th{font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+/* header rows get a light tint so they read apart from data rows; nested tables sit on a tinted row, so a step deeper */
+thead th{background:var(--head)}
+.detail thead th{background:var(--head2)}
 tr:last-child td{border-bottom:0}
 td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 #teams th button{all:unset;cursor:pointer;white-space:nowrap}
