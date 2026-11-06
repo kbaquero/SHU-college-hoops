@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 22:43 EST",
- "scores_updated": "10:43 PM",
+ "updated": "2026-11-05 22:47 EST",
+ "scores_updated": "10:47 PM",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -5561,13 +5561,13 @@
      "opp_final": null,
      "opp_id": "13",
      "record": "0-1",
-     "live": 1
+     "live": 4
     },
     "time": "10:30 PM",
     "line": "ARIZ -31.5",
     "live": {
-     "detail": "19:05 1st",
-     "as_of": "10:43 PM"
+     "detail": "17:50 1st",
+     "as_of": "10:47 PM"
     }
    }
   ]
