@@ -193,6 +193,7 @@ td .ptsb{font-size:14px;padding:1px 7px}
 .entry-row{cursor:pointer}
 .entry-row:hover td{background:var(--chip)}
 .entry-row.open>td{background:var(--chip)}
+.detail tr.rollup td{border-top:2px solid var(--line);border-bottom:0;font-weight:650;color:var(--ink)}
 /* expand hint: a small muted chevron riding after the entry name; turns down when the row is open */
 .chev{display:inline-block;width:9px;height:9px;margin-left:6px;vertical-align:1px;color:var(--mute);opacity:.7;transition:transform .15s}
 .chev svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
@@ -447,6 +448,13 @@ const z = b => b || {nonconf_w:0, nonconf_l:0, conf_w:0, conf_l:0, ct_w:0, ct_l:
 const teamNow = t => { const b = z(T[t]), [w, l] = wl(T[t]);
   return {rec: `${w}-${l}`, conf: `${b.conf_w}-${b.conf_l}`, reg: b.pts_reg, ct: b.pts_ct, ncaa: b.pts_ncaa, total: b.total}; };
 
+// totals row under each entry's teams: overall record, conference record and points by type
+const rollup = s => {
+  const n = s.teams.map(teamNow), sum = k => n.reduce((a, x) => a + x[k], 0);
+  const wlSum = k => n.reduce((a, x) => { const [w, l] = x[k].split('-').map(Number); return [a[0] + w, a[1] + l]; }, [0, 0]).join('-');
+  return `<tfoot><tr class="rollup"><td>Total</td><td class="n">${s.teams.reduce((a, t) => a + I[t].salary, 0)}</td><td class="n">${wlSum('rec')}</td><td class="n">${wlSum('conf')}</td><td class="n">${sum('reg')}</td><td class="n">${sum('ct')}</td><td class="n">${sum('ncaa')}</td><td class="n"><b>${sum('total')}</b></td></tr></tfoot>`;
+};
+
 // standings
 const sb = $('#standings tbody');
 ST.forEach(s => {
@@ -457,7 +465,7 @@ ST.forEach(s => {
   const dr = document.createElement('tr'); dr.className = 'detail'; dr.hidden = true;
   dr.innerHTML = `<td colspan="5"><div class="scroll"><table><thead><tr><th>Team</th><th class="n">$</th><th class="n">Record</th><th class="n">Conf</th><th class="n">Reg</th><th class="n">Conf T</th><th class="n">NCAA</th><th class="n">Total</th></tr></thead><tbody>` +
     s.teams.map(t => { const n = teamNow(t); return `<tr><td>${esc(t)} <span class="chip">${I[t].conf}</span></td><td class="n">${I[t].salary}</td><td class="n">${n.rec}</td><td class="n">${n.conf}</td><td class="n">${n.reg}</td><td class="n">${n.ct}</td><td class="n">${n.ncaa}</td><td class="n"><b>${n.total}</b></td></tr>`; }).join('') +
-    `</tbody></table></div></td>`;
+    `</tbody>${rollup(s)}</table></div></td>`;
   tr.onclick = () => { dr.hidden = !dr.hidden; tr.classList.toggle('open'); };
   sb.append(tr, dr);
 });
