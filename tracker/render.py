@@ -592,10 +592,9 @@ function renderMyCard(me) {
   const today = rows(D.today, false), yest = rows(D.yesterday, true);
   const started = (D.today?.games || []).some(g => g.live || g.completed);
   const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>` : '';
-  const ysum = yest.reduce((a, r) => a + r.pts, 0);
   el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">Daily Summary</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
     sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today) +
-    sec('Yesterday', (ysum > 0 ? '+' : '') + ysum + ' pts', yest) + '</div>';
+    sec('Yesterday', '', yest) + '</div>';
   el.hidden = false;
 }
 
