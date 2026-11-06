@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 22:02 EST",
- "scores_updated": "10:02 PM",
+ "updated": "2026-11-05 22:10 EST",
+ "scores_updated": "10:10 PM",
  "through": "Wed, Nov 4",
  "season": 2027,
  "standings": [
@@ -5328,7 +5328,7 @@
      "final": null,
      "won": null,
      "record": "0-1",
-     "live": 36
+     "live": 45
     },
     "home": {
      "team": "Duke",
@@ -5346,13 +5346,13 @@
      "opp_final": null,
      "opp_id": "324",
      "record": "1-0",
-     "live": 92
+     "live": 102
     },
     "time": "8:00 PM",
     "line": "DUKE -40.5",
     "live": {
-     "detail": "7:31 2nd",
-     "as_of": "10:02 PM"
+     "detail": "4:21 2nd",
+     "as_of": "10:10 PM"
     }
    },
    {
@@ -5422,11 +5422,11 @@
       "Joe H."
      ],
      "won": false,
-     "score": "",
+     "score": "55-83",
      "opp": "Creighton",
      "pts": 0,
      "final": 55,
-     "opp_final": null,
+     "opp_final": 83,
      "opp_id": "156",
      "record": "0-2"
     },
@@ -5438,7 +5438,7 @@
      "id": "156",
      "final": 83,
      "won": true,
-     "record": "3-0"
+     "record": "2-0"
     },
     "time": "8:00 PM",
     "line": "CREI -29.5"
@@ -5463,7 +5463,7 @@
      "final": null,
      "won": null,
      "record": "1-0",
-     "live": 58
+     "live": 70
     },
     "home": {
      "team": "SMU",
@@ -5481,13 +5481,13 @@
      "opp_final": null,
      "opp_id": "2678",
      "record": "1-0",
-     "live": 84
+     "live": 93
     },
     "time": "8:00 PM",
     "line": "SMU -24.5",
     "live": {
-     "detail": "3:52 2nd",
-     "as_of": "10:02 PM"
+     "detail": "0:12 2nd",
+     "as_of": "10:10 PM"
     }
    },
    {
@@ -5516,7 +5516,7 @@
      "opp_final": null,
      "opp_id": "356",
      "record": "0-0",
-     "live": 49
+     "live": 53
     },
     "home": {
      "team": "Illinois",
@@ -5533,13 +5533,13 @@
      "opp_final": null,
      "opp_id": "219",
      "record": "1-0",
-     "live": 80
+     "live": 90
     },
     "time": "8:30 PM",
     "line": "ILL -30.5",
     "live": {
-     "detail": "10:54 2nd",
-     "as_of": "10:02 PM"
+     "detail": "7:59 2nd",
+     "as_of": "10:10 PM"
     }
    },
    {
