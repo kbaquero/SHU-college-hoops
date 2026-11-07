@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 22:49 EST",
- "scores_updated": "10:49 PM",
+ "updated": "2026-11-07 00:47 EST",
+ "scores_updated": "12:47 AM",
  "through": "Thu, Nov 5",
  "season": 2027,
  "standings": [
@@ -6000,7 +6000,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6011,10 +6011,9 @@
      "home": false,
      "owners": [],
      "id": "2458",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 55
+     "final": 63,
+     "won": false,
+     "record": "1-1"
     },
     "home": {
      "team": "Arizona St.",
@@ -6027,22 +6026,17 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "90-63",
      "opp": "Northern Colorado",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 90,
+     "opp_final": 63,
      "opp_id": "2458",
-     "record": "1-0",
-     "live": 80
+     "record": "2-0"
     },
     "time": "9:00 PM",
-    "line": "ASU -19.5",
-    "live": {
-     "detail": "4:20 2nd",
-     "as_of": "10:49 PM"
-    }
+    "line": "ASU -19.5"
    },
    {
     "id": "401921739",
@@ -6050,7 +6044,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6061,10 +6055,9 @@
      "home": false,
      "owners": [],
      "id": "2437",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 58
+     "final": 67,
+     "won": false,
+     "record": "1-1"
     },
     "home": {
      "team": "BYU",
@@ -6075,22 +6068,17 @@
       "Marty C.",
       "Mike L."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "108-67",
      "opp": "Nebraska Omaha",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 108,
+     "opp_final": 67,
      "opp_id": "2437",
-     "record": "1-0",
-     "live": 101
+     "record": "2-0"
     },
     "time": "9:00 PM",
-    "line": "BYU -33.5",
-    "live": {
-     "detail": "4:00 2nd",
-     "as_of": "10:49 PM"
-    }
+    "line": "BYU -33.5"
    },
    {
     "id": "401909797",
@@ -6098,7 +6086,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6109,10 +6097,9 @@
      "home": false,
      "owners": [],
      "id": "2463",
-     "final": null,
-     "won": null,
-     "record": "0-1",
-     "live": 56
+     "final": 78,
+     "won": false,
+     "record": "0-2"
     },
     "home": {
      "team": "Kansas St.",
@@ -6121,22 +6108,17 @@
      "owners": [
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "95-78",
      "opp": "CSUN",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 95,
+     "opp_final": 78,
      "opp_id": "2463",
-     "record": "0-1",
-     "live": 74
+     "record": "1-1"
     },
     "time": "9:00 PM",
-    "line": "KSU -10.5",
-    "live": {
-     "detail": "7:41 2nd",
-     "as_of": "10:49 PM"
-    }
+    "line": "KSU -10.5"
    },
    {
     "id": "401921719",
@@ -6144,7 +6126,7 @@
     "tbd": false,
     "tv": "ACC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6156,15 +6138,14 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "57-83",
      "opp": "Miami FL",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 57,
+     "opp_final": 83,
      "opp_id": "2390",
-     "record": "0-1",
-     "live": 39
+     "record": "0-2"
     },
     "home": {
      "team": "Miami FL",
@@ -6176,22 +6157,17 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "83-57",
      "opp": "Wagner",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 83,
+     "opp_final": 57,
      "opp_id": "2681",
-     "record": "0-1",
-     "live": 65
+     "record": "1-1"
     },
     "time": "9:00 PM",
-    "line": "MIA -38.5",
-    "live": {
-     "detail": "7:12 2nd",
-     "as_of": "10:49 PM"
-    }
+    "line": "MIA -38.5"
    },
    {
     "id": "401919040",
@@ -6199,7 +6175,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6211,15 +6187,14 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "68-118",
      "opp": "Oklahoma St.",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 68,
+     "opp_final": 118,
      "opp_id": "197",
-     "record": "2-0",
-     "live": 60
+     "record": "2-1"
     },
     "home": {
      "team": "Oklahoma St.",
@@ -6227,17 +6202,12 @@
      "home": true,
      "owners": [],
      "id": "197",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 106
+     "final": 118,
+     "won": true,
+     "record": "2-0"
     },
     "time": "9:00 PM",
-    "line": "OKST -17.5",
-    "live": {
-     "detail": "4:34 2nd",
-     "as_of": "10:49 PM"
-    }
+    "line": "OKST -17.5"
    },
    {
     "id": "401921061",
@@ -6245,7 +6215,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6257,15 +6227,14 @@
      "owners": [
       "Jason H."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "70-79",
      "opp": "San Francisco",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 70,
+     "opp_final": 79,
      "opp_id": "2539",
-     "record": "1-1",
-     "live": 31
+     "record": "1-2"
     },
     "home": {
      "team": "San Francisco",
@@ -6273,17 +6242,12 @@
      "home": true,
      "owners": [],
      "id": "2539",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 45
+     "final": 79,
+     "won": true,
+     "record": "2-0"
     },
     "time": "10:00 PM",
-    "line": "SF -8.5",
-    "live": {
-     "detail": "Halftime",
-     "as_of": "10:49 PM"
-    }
+    "line": "SF -8.5"
    },
    {
     "id": "401922219",
@@ -6291,7 +6255,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6302,10 +6266,9 @@
      "home": false,
      "owners": [],
      "id": "2454",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 5
+     "final": 63,
+     "won": false,
+     "record": "1-1"
     },
     "home": {
      "team": "UCLA",
@@ -6317,22 +6280,17 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "114-63",
      "opp": "North Florida",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 114,
+     "opp_final": 63,
      "opp_id": "2454",
-     "record": "1-0",
-     "live": 12
+     "record": "2-0"
     },
     "time": "10:30 PM",
-    "line": "UCLA -31.5",
-    "live": {
-     "detail": "15:23 1st",
-     "as_of": "10:49 PM"
-    }
+    "line": "UCLA -31.5"
    }
   ]
  },
