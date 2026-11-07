@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 21:34 EST",
- "scores_updated": "9:34 PM",
+ "updated": "2026-11-06 22:49 EST",
+ "scores_updated": "10:49 PM",
  "through": "Thu, Nov 5",
  "season": 2027,
  "standings": [
@@ -5703,7 +5703,7 @@
     "tbd": false,
     "tv": "TNT",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5720,15 +5720,14 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "85-77",
      "opp": "Michigan",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 85,
+     "opp_final": 77,
      "opp_id": "130",
-     "record": "1-0",
-     "live": 56
+     "record": "2-0"
     },
     "home": {
      "team": "Michigan",
@@ -5741,22 +5740,17 @@
       "Jason H.",
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "77-85",
      "opp": "Connecticut",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 77,
+     "opp_final": 85,
      "opp_id": "41",
-     "record": "1-0",
-     "live": 40
+     "record": "1-1"
     },
     "time": "8:00 PM",
-    "line": "CONN -7.5",
-    "live": {
-     "detail": "14:44 2nd",
-     "as_of": "9:34 PM"
-    }
+    "line": "CONN -7.5"
    },
    {
     "id": "401921809",
@@ -5764,7 +5758,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5775,10 +5769,9 @@
      "home": false,
      "owners": [],
      "id": "2640",
-     "final": null,
-     "won": null,
-     "record": "0-1",
-     "live": 42
+     "final": 51,
+     "won": false,
+     "record": "0-2"
     },
     "home": {
      "team": "LSU",
@@ -5787,22 +5780,17 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "92-51",
      "opp": "Texas Southern",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 92,
+     "opp_final": 51,
      "opp_id": "2640",
-     "record": "1-0",
-     "live": 65
+     "record": "2-0"
     },
     "time": "8:00 PM",
-    "line": "LSU -35.5",
-    "live": {
-     "detail": "11:14 2nd",
-     "as_of": "9:34 PM"
-    }
+    "line": "LSU -35.5"
    },
    {
     "id": "401909523",
@@ -5810,7 +5798,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5821,10 +5809,9 @@
      "home": false,
      "owners": [],
      "id": "2174",
-     "final": null,
-     "won": null,
-     "record": "0-0",
-     "live": 24
+     "final": 32,
+     "won": false,
+     "record": "0-1"
     },
     "home": {
      "team": "Marquette",
@@ -5833,22 +5820,17 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "93-32",
      "opp": "Detroit Mercy",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 93,
+     "opp_final": 32,
      "opp_id": "2174",
-     "record": "1-0",
-     "live": 68
+     "record": "2-0"
     },
     "time": "8:00 PM",
-    "line": "MARQ -32.5",
-    "live": {
-     "detail": "7:54 2nd",
-     "as_of": "9:34 PM"
-    }
+    "line": "MARQ -32.5"
    },
    {
     "id": "401906802",
@@ -5856,7 +5838,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5867,10 +5849,9 @@
      "home": false,
      "owners": [],
      "id": "2400",
-     "final": null,
-     "won": null,
-     "record": "0-0",
-     "live": 43
+     "final": 57,
+     "won": false,
+     "record": "0-1"
     },
     "home": {
      "team": "Oklahoma",
@@ -5879,22 +5860,17 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "84-57",
      "opp": "Mississippi Valley St.",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 84,
+     "opp_final": 57,
      "opp_id": "2400",
-     "record": "0-1",
-     "live": 65
+     "record": "1-1"
     },
     "time": "8:00 PM",
-    "line": "OU -40.5",
-    "live": {
-     "detail": "6:16 2nd",
-     "as_of": "9:34 PM"
-    }
+    "line": "OU -40.5"
    },
    {
     "id": "401928823",
@@ -5902,7 +5878,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5914,15 +5890,14 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "56-79",
      "opp": "Illinois Chicago",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 56,
+     "opp_final": 79,
      "opp_id": "82",
-     "record": "0-1",
-     "live": 44
+     "record": "0-2"
     },
     "home": {
      "team": "Illinois Chicago",
@@ -5930,17 +5905,12 @@
      "home": true,
      "owners": [],
      "id": "82",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 64
+     "final": 79,
+     "won": true,
+     "record": "2-0"
     },
     "time": "8:00 PM",
-    "line": "UIC -10.5",
-    "live": {
-     "detail": "7:21 2nd",
-     "as_of": "9:34 PM"
-    }
+    "line": "UIC -10.5"
    },
    {
     "id": "401919048",
@@ -5948,7 +5918,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5962,15 +5932,14 @@
       "Joe H.",
       "Jason H."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "54-106",
      "opp": "TCU",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 54,
+     "opp_final": 106,
      "opp_id": "2628",
-     "record": "0-1",
-     "live": 34
+     "record": "0-2"
     },
     "home": {
      "team": "TCU",
@@ -5978,17 +5947,12 @@
      "home": true,
      "owners": [],
      "id": "2628",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 67
+     "final": 106,
+     "won": true,
+     "record": "2-0"
     },
     "time": "8:00 PM",
-    "line": "TCU -26.5",
-    "live": {
-     "detail": "12:45 2nd",
-     "as_of": "9:34 PM"
-    }
+    "line": "TCU -26.5"
    },
    {
     "id": "401920726",
@@ -5996,7 +5960,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6007,10 +5971,9 @@
      "home": false,
      "owners": [],
      "id": "2197",
-     "final": null,
-     "won": null,
-     "record": "0-1",
-     "live": 20
+     "final": 47,
+     "won": false,
+     "record": "0-2"
     },
     "home": {
      "team": "Iowa",
@@ -6019,22 +5982,17 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "91-47",
      "opp": "Eastern Illinois",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 91,
+     "opp_final": 47,
      "opp_id": "2197",
-     "record": "1-0",
-     "live": 41
+     "record": "2-0"
     },
     "time": "8:30 PM",
-    "line": "IOWA -34.5",
-    "live": {
-     "detail": "19:24 2nd",
-     "as_of": "9:34 PM"
-    }
+    "line": "IOWA -34.5"
    },
    {
     "id": "401921732",
@@ -6056,7 +6014,7 @@
      "final": null,
      "won": null,
      "record": "1-0",
-     "live": 20
+     "live": 55
     },
     "home": {
      "team": "Arizona St.",
@@ -6077,13 +6035,13 @@
      "opp_final": null,
      "opp_id": "2458",
      "record": "1-0",
-     "live": 37
+     "live": 80
     },
     "time": "9:00 PM",
     "line": "ASU -19.5",
     "live": {
-     "detail": "4:41 1st",
-     "as_of": "9:34 PM"
+     "detail": "4:20 2nd",
+     "as_of": "10:49 PM"
     }
    },
    {
@@ -6106,7 +6064,7 @@
      "final": null,
      "won": null,
      "record": "1-0",
-     "live": 18
+     "live": 58
     },
     "home": {
      "team": "BYU",
@@ -6125,13 +6083,13 @@
      "opp_final": null,
      "opp_id": "2437",
      "record": "1-0",
-     "live": 40
+     "live": 101
     },
     "time": "9:00 PM",
     "line": "BYU -33.5",
     "live": {
-     "detail": "6:08 1st",
-     "as_of": "9:34 PM"
+     "detail": "4:00 2nd",
+     "as_of": "10:49 PM"
     }
    },
    {
@@ -6154,7 +6112,7 @@
      "final": null,
      "won": null,
      "record": "0-1",
-     "live": 22
+     "live": 56
     },
     "home": {
      "team": "Kansas St.",
@@ -6171,13 +6129,13 @@
      "opp_final": null,
      "opp_id": "2463",
      "record": "0-1",
-     "live": 39
+     "live": 74
     },
     "time": "9:00 PM",
     "line": "KSU -10.5",
     "live": {
-     "detail": "5:33 1st",
-     "as_of": "9:34 PM"
+     "detail": "7:41 2nd",
+     "as_of": "10:49 PM"
     }
    },
    {
@@ -6206,7 +6164,7 @@
      "opp_final": null,
      "opp_id": "2390",
      "record": "0-1",
-     "live": 12
+     "live": 39
     },
     "home": {
      "team": "Miami FL",
@@ -6226,13 +6184,13 @@
      "opp_final": null,
      "opp_id": "2681",
      "record": "0-1",
-     "live": 22
+     "live": 65
     },
     "time": "9:00 PM",
     "line": "MIA -38.5",
     "live": {
-     "detail": "9:38 1st",
-     "as_of": "9:34 PM"
+     "detail": "7:12 2nd",
+     "as_of": "10:49 PM"
     }
    },
    {
@@ -6261,7 +6219,7 @@
      "opp_final": null,
      "opp_id": "197",
      "record": "2-0",
-     "live": 15
+     "live": 60
     },
     "home": {
      "team": "Oklahoma St.",
@@ -6272,13 +6230,13 @@
      "final": null,
      "won": null,
      "record": "1-0",
-     "live": 39
+     "live": 106
     },
     "time": "9:00 PM",
     "line": "OKST -17.5",
     "live": {
-     "detail": "6:09 1st",
-     "as_of": "9:34 PM"
+     "detail": "4:34 2nd",
+     "as_of": "10:49 PM"
     }
    },
    {
@@ -6306,7 +6264,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2539",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 31
     },
     "home": {
      "team": "San Francisco",
@@ -6316,10 +6275,15 @@
      "id": "2539",
      "final": null,
      "won": null,
-     "record": "1-0"
+     "record": "1-0",
+     "live": 45
     },
     "time": "10:00 PM",
-    "line": "SF -8.5"
+    "line": "SF -8.5",
+    "live": {
+     "detail": "Halftime",
+     "as_of": "10:49 PM"
+    }
    },
    {
     "id": "401922219",
@@ -6340,7 +6304,8 @@
      "id": "2454",
      "final": null,
      "won": null,
-     "record": "1-0"
+     "record": "1-0",
+     "live": 5
     },
     "home": {
      "team": "UCLA",
@@ -6359,10 +6324,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2454",
-     "record": "1-0"
+     "record": "1-0",
+     "live": 12
     },
     "time": "10:30 PM",
-    "line": "UCLA -31.5"
+    "line": "UCLA -31.5",
+    "live": {
+     "detail": "15:23 1st",
+     "as_of": "10:49 PM"
+    }
    }
   ]
  },
