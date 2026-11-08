@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07 11:37 EST",
+ "updated": "2026-11-08 00:50 EST",
  "through": "Fri, Nov 6",
  "season": 2027,
  "standings": [
@@ -5933,7 +5933,7 @@
     "tbd": false,
     "tv": "ACCNX",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5945,14 +5945,14 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Louisville",
      "pts": 0,
-     "final": null,
+     "final": 57,
      "opp_final": null,
      "opp_id": "97",
-     "record": "1-1"
+     "record": "1-2"
     },
     "home": {
      "team": "Louisville",
@@ -5962,14 +5962,14 @@
       "Chris C.",
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Morehead St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 107,
      "opp_final": null,
      "opp_id": "2413",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "12:00 PM",
     "line": "LOU -37.5"
@@ -5980,7 +5980,7 @@
     "tbd": false,
     "tv": "FloSports",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -5994,14 +5994,14 @@
       "Jason H.",
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Drexel",
      "pts": 0,
-     "final": null,
+     "final": 74,
      "opp_final": null,
      "opp_id": "2182",
-     "record": "0-1"
+     "record": "0-2"
     },
     "home": {
      "team": "Drexel",
@@ -6009,9 +6009,9 @@
      "home": true,
      "owners": [],
      "id": "2182",
-     "final": null,
-     "won": null,
-     "record": "0-1"
+     "final": 77,
+     "won": true,
+     "record": "1-1"
     },
     "time": "2:00 PM",
     "line": "DREX -1.5"
@@ -6022,7 +6022,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6034,14 +6034,14 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "East Carolina",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 78,
      "opp_final": null,
      "opp_id": "151",
-     "record": "1-0"
+     "record": "2-0"
     },
     "home": {
      "team": "East Carolina",
@@ -6049,9 +6049,9 @@
      "home": true,
      "owners": [],
      "id": "151",
-     "final": null,
-     "won": null,
-     "record": "1-0"
+     "final": 75,
+     "won": false,
+     "record": "1-1"
     },
     "time": "2:00 PM",
     "line": "UNCW -5.5"
@@ -6062,7 +6062,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6073,9 +6073,9 @@
      "home": false,
      "owners": [],
      "id": "299",
-     "final": null,
-     "won": null,
-     "record": "0-1"
+     "final": 70,
+     "won": false,
+     "record": "0-2"
     },
     "home": {
      "team": "Montana St.",
@@ -6084,14 +6084,14 @@
      "owners": [
       "Marty C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Long Beach St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 83,
      "opp_final": null,
      "opp_id": "299",
-     "record": "0-1"
+     "record": "1-1"
     },
     "time": "3:00 PM",
     "line": "MTST -10.5"
@@ -6102,7 +6102,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6116,14 +6116,14 @@
       "Connor C. & Conor G.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "La Salle",
      "pts": 0,
-     "final": null,
+     "final": 80,
      "opp_final": null,
      "opp_id": "2325",
-     "record": "0-2"
+     "record": "0-3"
     },
     "home": {
      "team": "La Salle",
@@ -6131,9 +6131,9 @@
      "home": true,
      "owners": [],
      "id": "2325",
-     "final": null,
-     "won": null,
-     "record": "0-1"
+     "final": 88,
+     "won": true,
+     "record": "1-1"
     },
     "time": "3:30 PM",
     "line": "LAS -4.5"
@@ -6144,7 +6144,7 @@
     "tbd": false,
     "tv": "NEC Front Row",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6155,8 +6155,8 @@
      "home": false,
      "owners": [],
      "id": "130195",
-     "final": null,
-     "won": null,
+     "final": 50,
+     "won": false,
      "record": ""
     },
     "home": {
@@ -6168,14 +6168,14 @@
       "Joe H.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Penn State Shenango",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 89,
      "opp_final": null,
      "opp_id": "130195",
-     "record": "0-2"
+     "record": "1-2"
     },
     "time": "4:00 PM",
     "line": ""
@@ -6186,7 +6186,7 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6198,14 +6198,14 @@
      "owners": [
       "Mike L."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "UNLV",
      "pts": 0,
-     "final": null,
+     "final": 79,
      "opp_final": null,
      "opp_id": "2439",
-     "record": "1-0"
+     "record": "1-1"
     },
     "home": {
      "team": "UNLV",
@@ -6213,9 +6213,9 @@
      "home": true,
      "owners": [],
      "id": "2439",
-     "final": null,
-     "won": null,
-     "record": "1-0"
+     "final": 88,
+     "won": true,
+     "record": "2-0"
     },
     "time": "4:00 PM",
     "line": "UNLV -11.5"
@@ -6226,7 +6226,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6237,9 +6237,9 @@
      "home": false,
      "owners": [],
      "id": "265",
-     "final": null,
-     "won": null,
-     "record": "0-1"
+     "final": 71,
+     "won": false,
+     "record": "0-2"
     },
     "home": {
      "team": "High Point",
@@ -6249,14 +6249,14 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Washington St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 83,
      "opp_final": null,
      "opp_id": "265",
-     "record": "2-0"
+     "record": "3-0"
     },
     "time": "5:00 PM",
     "line": "HPU -13.5"
@@ -6267,7 +6267,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6280,14 +6280,14 @@
       "Mike L.",
       "Kevin B."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Lipscomb",
      "pts": 0,
-     "final": null,
+     "final": 77,
      "opp_final": null,
      "opp_id": "288",
-     "record": "2-0"
+     "record": "2-1"
     },
     "home": {
      "team": "Lipscomb",
@@ -6296,14 +6296,14 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "SIUE",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 78,
      "opp_final": null,
      "opp_id": "2565",
-     "record": "0-2"
+     "record": "1-2"
     },
     "time": "5:00 PM",
     "line": "LIP -8.5"
@@ -6314,7 +6314,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6326,14 +6326,14 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Niagara",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 73,
      "opp_final": null,
      "opp_id": "315",
-     "record": "2-0"
+     "record": "3-0"
     },
     "home": {
      "team": "Niagara",
@@ -6341,9 +6341,9 @@
      "home": true,
      "owners": [],
      "id": "315",
-     "final": null,
-     "won": null,
-     "record": "0-1"
+     "final": 67,
+     "won": false,
+     "record": "0-2"
     },
     "time": "6:30 PM",
     "line": "NIA -3.5"
@@ -6354,7 +6354,7 @@
     "tbd": false,
     "tv": "FS1",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6366,14 +6366,14 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Nebraska",
      "pts": 0,
-     "final": null,
+     "final": 58,
      "opp_final": null,
      "opp_id": "158",
-     "record": "1-0"
+     "record": "1-1"
     },
     "home": {
      "team": "Nebraska",
@@ -6381,9 +6381,9 @@
      "home": false,
      "owners": [],
      "id": "158",
-     "final": null,
-     "won": null,
-     "record": "1-0"
+     "final": 67,
+     "won": true,
+     "record": "2-0"
     },
     "time": "7:00 PM",
     "line": "NEB -2.5"
@@ -6394,7 +6394,7 @@
     "tbd": false,
     "tv": "Peacock",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6406,14 +6406,14 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Georgetown",
      "pts": 0,
-     "final": null,
+     "final": 74,
      "opp_final": null,
      "opp_id": "46",
-     "record": "1-0"
+     "record": "1-1"
     },
     "home": {
      "team": "Georgetown",
@@ -6422,14 +6422,14 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Maryland",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 86,
      "opp_final": null,
      "opp_id": "120",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "7:30 PM",
     "line": "MD -3.5"
@@ -6440,7 +6440,7 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6451,9 +6451,9 @@
      "home": false,
      "owners": [],
      "id": "2065",
-     "final": null,
-     "won": null,
-     "record": "0-2"
+     "final": 81,
+     "won": false,
+     "record": "0-3"
     },
     "home": {
      "team": "Grand Canyon",
@@ -6462,14 +6462,14 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Bethune Cookman",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 99,
      "opp_final": null,
      "opp_id": "2065",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "8:00 PM",
     "line": "GCU -21.5"
@@ -6480,7 +6480,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6491,9 +6491,9 @@
      "home": false,
      "owners": [],
      "id": "3084",
-     "final": null,
-     "won": null,
-     "record": "1-0"
+     "final": 101,
+     "won": true,
+     "record": "2-0"
     },
     "home": {
      "team": "Weber St.",
@@ -6502,14 +6502,14 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Utah Valley",
      "pts": 0,
-     "final": null,
+     "final": 93,
      "opp_final": null,
      "opp_id": "3084",
-     "record": "0-1"
+     "record": "0-2"
     },
     "time": "9:00 PM",
     "line": "UVU -7.5"
@@ -6520,7 +6520,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6531,9 +6531,9 @@
      "home": false,
      "owners": [],
      "id": "23",
-     "final": null,
-     "won": null,
-     "record": "1-0"
+     "final": 79,
+     "won": false,
+     "record": "1-1"
     },
     "home": {
      "team": "UC Irvine",
@@ -6542,14 +6542,14 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "San Jose St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 91,
      "opp_final": null,
      "opp_id": "23",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "10:00 PM",
     "line": "UCI -8.5"
@@ -7612,5 +7612,6 @@
    }
   ]
  },
- "warnings": []
+ "warnings": [],
+ "scores_updated": "12:50 AM"
 }
