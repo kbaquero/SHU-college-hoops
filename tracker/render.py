@@ -297,7 +297,7 @@ svg text{fill:var(--mute);font-size:11px}
 <div class="card"><div id="chart"></div></div>
 <p class="sub">Tap names to highlight their lines, and tap again to clear.</p>
 <h2 class="withnote">Points behind the leader</h2>
-<div class="h2note" id="behind-note"></div>
+<div class="h2note">The leader sits on the top line at 0</div>
 <div class="card"><div id="behind"></div></div>
 <h2>Value</h2>
 <div class="card"><div id="value"></div><div id="value-info" class="vinfo">Tap a dot to see the team.</div></div>
@@ -624,29 +624,16 @@ function lineChart({el, series, value, invert, ylab, aria, empty}) {
   return {follow(me) { if (touched) return; sel.clear(); if (me && ents.includes(me)) sel.add(me); draw(); }, redraw: draw};
 }
 
-// Points behind the leader: day by day for now; once the season is 4+ weeks old it steps week by week
-// (the last snapshot of each week, plus the latest day) so the line stays readable.
-const WEEKLY_AFTER_DAYS = 28;
-const behindSeries = (() => {
-  const H = D.history || [];
-  if (H.length < 2) return H;
-  const days = (new Date(H[H.length - 1].date) - new Date(H[0].date)) / 864e5;
-  if (days < WEEKLY_AFTER_DAYS) return H;
-  const wk = d => { const t = new Date(d + 'T12:00:00'); t.setDate(t.getDate() - t.getDay()); return t.toISOString().slice(0, 10); };   // weeks start Sunday
-  const out = [];
-  H.forEach((h, i) => { if (i === H.length - 1 || wk(h.date) !== wk(H[i + 1].date)) out.push(h); });
-  return [H[0], ...out.filter(h => h !== H[0])];
-})();
+// Points behind the leader: day by day, like the chart above, so both tell the same story
 const charts = [
   lineChart({el: $('#chart'), series: D.history || [], value: (h, e) => h.totals[e] || 0, ylab: 'Points',
     aria: 'Points over time for every entry', empty: 'The chart fills in after a couple of daily updates.'}),
-  lineChart({el: $('#behind'), series: behindSeries, invert: true, ylab: 'Points behind',
+  lineChart({el: $('#behind'), series: D.history || [], invert: true, ylab: 'Points behind',
     value: (h, e) => Math.max(...Object.values(h.totals)) - (h.totals[e] || 0),
     aria: 'Points behind the leader over time for every entry', empty: 'The chart fills in after a couple of daily updates.'}),
 ];
 window.chartFollowMe = me => charts.forEach(c => c.follow(me));
-window.chartRedraw = () => charts.forEach(c => c.redraw());
-$('#behind-note').textContent = (behindSeries === D.history ? 'Day by day' : 'Week by week') + ' · the leader sits on the top line at 0';   // the Trends tab redraws on show (a hidden panel has no width)
+window.chartRedraw = () => charts.forEach(c => c.redraw());   // the Trends tab redraws on show (a hidden panel has no width)
 
 // summary card for the picked entry, at the top of the Standings tab
 const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
