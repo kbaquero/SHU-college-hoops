@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-08 20:15 EST",
- "scores_updated": "8:15 PM",
+ "updated": "2026-11-08 22:48 EST",
+ "scores_updated": "10:48 PM",
  "through": "Sat, Nov 7",
  "season": 2027,
  "standings": [
@@ -6872,7 +6872,7 @@
     "tbd": false,
     "tv": "FloSports",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6884,15 +6884,14 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "73-104",
      "opp": "William & Mary",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 73,
+     "opp_final": 104,
      "opp_id": "2729",
-     "record": "2-0",
-     "live": 71
+     "record": "2-1"
     },
     "home": {
      "team": "William & Mary",
@@ -6900,17 +6899,12 @@
      "home": true,
      "owners": [],
      "id": "2729",
-     "final": null,
-     "won": null,
-     "record": "1-0",
-     "live": 100
+     "final": 104,
+     "won": true,
+     "record": "2-0"
     },
     "time": "6:00 PM",
-    "line": "W&M -9.5",
-    "live": {
-     "detail": "1:46 2nd",
-     "as_of": "8:15 PM"
-    }
+    "line": "W&M -9.5"
    },
    {
     "id": "401920134",
@@ -6958,7 +6952,7 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6970,15 +6964,14 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "60-79",
      "opp": "UTEP",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 60,
+     "opp_final": 79,
      "opp_id": "2638",
-     "record": "0-2",
-     "live": 32
+     "record": "0-3"
     },
     "home": {
      "team": "UTEP",
@@ -6986,17 +6979,12 @@
      "home": true,
      "owners": [],
      "id": "2638",
-     "final": null,
-     "won": null,
-     "record": "0-1",
-     "live": 51
+     "final": 79,
+     "won": true,
+     "record": "1-1"
     },
     "time": "7:00 PM",
-    "line": "UTEP -12.5",
-    "live": {
-     "detail": "17:35 2nd",
-     "as_of": "8:15 PM"
-    }
+    "line": "UTEP -12.5"
    }
   ]
  },
