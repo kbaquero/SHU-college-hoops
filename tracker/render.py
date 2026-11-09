@@ -125,6 +125,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 #teams tr.entry-row.mine>td{background:var(--metint)}
 #teams tr.entry-row.mine>td:first-child{box-shadow:inset 3px 0 0 var(--me)}
 h2.withnote{margin-bottom:2px}
+.tnote{margin:8px 2px 0}
 .h2note{font-size:13px;color:var(--mute);margin:0 0 10px}
 #standings .detail th:not(:first-child),#standings .detail td:not(:first-child){text-align:center}
 @media (max-width:350px){#standings>tbody>tr.entry-row>td{font-size:13px}#standings .tot{font-size:14px}#standings .mvc{width:2.1em;padding-left:4px}}
@@ -262,11 +263,11 @@ svg text{fill:var(--mute);font-size:11px}
 <section class="panel" data-panel="standings">
 <div id="mycard" hidden></div>
 <div id="gotd" hidden></div>
-<h2 class="withnote">Standings <span class="h2sub" id="standings-when"></span></h2>
-<div class="h2note" id="standings-label"></div>
+<h2>Standings <span class="h2sub" id="standings-when"></span></h2>
 <div class="card scroll"><table id="standings"><thead><tr>
 <th class="rank"><span class="rk">#</span></th><th>Entry</th><th class="n"><span class="xw">Points</span><span class="xs">Pts</span></th><th class="n" id="daycol">Today</th><th class="n" id="lastcol">Back</th>
 </tr></thead><tbody></tbody></table></div>
+<p class="sub tnote" id="standings-label"></p>
 
 </section>
 
