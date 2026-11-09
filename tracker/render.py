@@ -296,6 +296,9 @@ svg text{fill:var(--mute);font-size:11px}
 <h2>Points over time</h2>
 <div class="card"><div id="chart"></div></div>
 <p class="sub">Tap names to highlight their lines, and tap again to clear.</p>
+<h2 class="withnote">Points behind the leader</h2>
+<div class="h2note" id="behind-note"></div>
+<div class="card"><div id="behind"></div></div>
 <h2>Value</h2>
 <div class="card"><div id="value"></div><div id="value-info" class="vinfo">Tap a dot to see the team.</div></div>
 <p class="sub">Every picked team: salary vs. points so far. Dots above the dashed line are beating the pool's average points per dollar; below it, falling short. Early in the season most teams sit on top of each other, and they spread out as games pile up.</p>
@@ -577,9 +580,10 @@ sortTeams();
 window.teamsFollowMe = m => { teamsMe = m || ''; sortTeams(); };
 
 // chart: every entry over time. Tap names in the legend to highlight them.
-(function chart() {
-  const H = D.history, el = $('#chart');
-  if (H.length < 2) { el.innerHTML = '<p class="sub" style="padding:12px">The chart fills in after a couple of daily updates.</p>'; return; }
+// line charts over the daily history: one line per entry, alphabetical legend, tap names to highlight
+function lineChart({el, series, value, invert, ylab, aria, empty}) {
+  const H = series;
+  if (H.length < 2) { el.innerHTML = `<p class="sub" style="padding:12px">${empty}</p>`; return {follow() {}, redraw() {}}; }
   // alphabetical, so the legend is easy to scan and each entry keeps the same color as the standings change
   const ents = D.standings.map(s => s.entry).sort((a, b) => a.localeCompare(b));
   const colors = ['#e8590c', '#1c7ed6', '#2f9e44', '#ae3ec9', '#f08c00', '#0c8599', '#e64980',
@@ -589,37 +593,60 @@ window.teamsFollowMe = m => { teamsMe = m || ''; sortTeams(); };
   const fmt = d => new Date(d + 'T12:00:00').toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
   function draw() {
     const W = Math.max(280, el.clientWidth), Ht = W < 520 ? 220 : 280, P = {l: 48, r: 14, t: 14, b: 26};
-    const raw = Math.max(1, ...H.flatMap(h => ents.map(e => h.totals[e] || 0)));
+    const raw = Math.max(1, ...H.flatMap(h => ents.map(e => value(h, e))));
     const mag = 10 ** Math.floor(Math.log10(raw / 5)), step = [1, 2, 5, 10].map(m => m * mag).find(v => v >= raw / 5) || 1;
     const stepI = Math.max(1, Math.round(step)), max = Math.ceil(raw / stepI) * stepI;
     const x = i => P.l + (W - P.l - P.r) * i / (H.length - 1);
-    const y = v => Ht - P.b - (Ht - P.t - P.b) * v / max;
-    let s = `<svg width="${W}" height="${Ht}" viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Points over time for every entry">`;
+    const y = v => invert ? P.t + (Ht - P.t - P.b) * v / max : Ht - P.b - (Ht - P.t - P.b) * v / max;
+    let s = `<svg width="${W}" height="${Ht}" viewBox="0 0 ${W} ${Ht}" role="img" aria-label="${aria}">`;
     for (let v = 0; v <= max; v += stepI) { s += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`; }
-    s += `<text transform="translate(13 ${(P.t + Ht - P.b) / 2}) rotate(-90)" text-anchor="middle">Points</text>`;
+    s += `<text transform="translate(13 ${(P.t + Ht - P.b) / 2}) rotate(-90)" text-anchor="middle">${ylab}</text>`;
     s += `<text x="${P.l}" y="${Ht - 6}">${fmt(H[0].date)}</text><text x="${W - P.r}" y="${Ht - 6}" text-anchor="end">${fmt(H[H.length - 1].date)}</text>`;
     const order = ents.map((e, j) => j).sort((a, b) => sel.has(ents[a]) - sel.has(ents[b]));   // highlighted lines on top
     order.forEach(j => {
       const e = ents[j], on = sel.has(e), dim = sel.size && !on;
-      s += `<polyline fill="none" stroke="${col(j)}" stroke-width="${on ? 3.5 : 2}" stroke-linejoin="round" opacity="${dim ? .12 : .9}" points="${H.map((h, i) => x(i) + ',' + y(h.totals[e] || 0)).join(' ')}"><title>${esc(e)}</title></polyline>`;
-      if (on) { const v = H[H.length - 1].totals[e] || 0; s += `<circle cx="${x(H.length - 1)}" cy="${y(v)}" r="4" fill="${col(j)}"/>`; }
+      s += `<polyline fill="none" stroke="${col(j)}" stroke-width="${on ? 3.5 : 2}" stroke-linejoin="round" opacity="${dim ? .12 : .9}" points="${H.map((h, i) => x(i) + ',' + y(value(h, e))).join(' ')}"><title>${esc(e)}</title></polyline>`;
+      if (on) s += `<circle cx="${x(H.length - 1)}" cy="${y(value(H[H.length - 1], e))}" r="4" fill="${col(j)}"/>`;
     });
     el.innerHTML = s + '</svg><div class="legend">' + ents.map((e, j) =>
       `<button type="button" class="${sel.has(e) ? 'on' : sel.size ? 'off' : ''}" data-e="${esc(e)}" aria-pressed="${sel.has(e)}"><i style="background:${col(j)}"></i>${esc(e)}</button>`).join('') +
       (sel.size ? '<button type="button" class="clear" data-clear="1">Show all</button>' : '') + '</div>';
   }
+  let touched = false;
   el.addEventListener('click', e => {
     const b = e.target.closest('.legend button'); if (!b) return;
     touched = true;
     if (b.dataset.clear) sel.clear(); else { const n = b.dataset.e; sel.has(n) ? sel.delete(n) : sel.add(n); }
     draw();
   });
-  let touched = false;
-  window.chartFollowMe = me => { if (touched) return; sel.clear(); if (me && ents.includes(me)) sel.add(me); draw(); };
-  window.chartRedraw = draw;   // the Trends tab redraws on show (a hidden panel has no width)
   let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
   draw();
+  return {follow(me) { if (touched) return; sel.clear(); if (me && ents.includes(me)) sel.add(me); draw(); }, redraw: draw};
+}
+
+// Points behind the leader: day by day for now; once the season is 4+ weeks old it steps week by week
+// (the last snapshot of each week, plus the latest day) so the line stays readable.
+const WEEKLY_AFTER_DAYS = 28;
+const behindSeries = (() => {
+  const H = D.history || [];
+  if (H.length < 2) return H;
+  const days = (new Date(H[H.length - 1].date) - new Date(H[0].date)) / 864e5;
+  if (days < WEEKLY_AFTER_DAYS) return H;
+  const wk = d => { const t = new Date(d + 'T12:00:00'); t.setDate(t.getDate() - t.getDay()); return t.toISOString().slice(0, 10); };   // weeks start Sunday
+  const out = [];
+  H.forEach((h, i) => { if (i === H.length - 1 || wk(h.date) !== wk(H[i + 1].date)) out.push(h); });
+  return [H[0], ...out.filter(h => h !== H[0])];
 })();
+const charts = [
+  lineChart({el: $('#chart'), series: D.history || [], value: (h, e) => h.totals[e] || 0, ylab: 'Points',
+    aria: 'Points over time for every entry', empty: 'The chart fills in after a couple of daily updates.'}),
+  lineChart({el: $('#behind'), series: behindSeries, invert: true, ylab: 'Points behind',
+    value: (h, e) => Math.max(...Object.values(h.totals)) - (h.totals[e] || 0),
+    aria: 'Points behind the leader over time for every entry', empty: 'The chart fills in after a couple of daily updates.'}),
+];
+window.chartFollowMe = me => charts.forEach(c => c.follow(me));
+window.chartRedraw = () => charts.forEach(c => c.redraw());
+$('#behind-note').textContent = (behindSeries === D.history ? 'Day by day' : 'Week by week') + ' · the leader sits on the top line at 0';   // the Trends tab redraws on show (a hidden panel has no width)
 
 // summary card for the picked entry, at the top of the Standings tab
 const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
