@@ -1,16 +1,36 @@
 {
- "updated": "2026-11-08 22:48 EST",
- "scores_updated": "10:48 PM",
- "through": "Sat, Nov 7",
+ "updated": "2026-11-09 07:51 EST",
+ "through": "Sun, Nov 8",
  "season": 2027,
  "standings": [
   {
    "rank": 1,
+   "entry": "Mike L.",
+   "full": "Mike LoMauro",
+   "total": 18,
+   "change": 2,
+   "move": 1,
+   "salary": 100,
+   "teams": [
+    "High Point",
+    "Clemson",
+    "UCLA",
+    "BYU",
+    "St. John's",
+    "Vanderbilt",
+    "SIUE",
+    "Samford",
+    "Marist",
+    "NJIT"
+   ]
+  },
+  {
+   "rank": 2,
    "entry": "Dennis S.",
    "full": "Dennis Sedaille",
    "total": 17,
    "change": 0,
-   "move": 0,
+   "move": -1,
    "salary": 100,
    "teams": [
     "SMU",
@@ -26,31 +46,10 @@
    ]
   },
   {
-   "rank": 2,
-   "entry": "Mike L.",
-   "full": "Mike LoMauro",
-   "total": 16,
-   "change": 1,
-   "move": 0,
-   "salary": 100,
-   "teams": [
-    "High Point",
-    "Clemson",
-    "UCLA",
-    "BYU",
-    "Vanderbilt",
-    "SIUE",
-    "St. John's",
-    "Samford",
-    "Marist",
-    "NJIT"
-   ]
-  },
-  {
    "rank": 3,
    "entry": "Drew & Bob D.",
    "full": "Drew & Bob Derda",
-   "total": 15,
+   "total": 16,
    "change": 1,
    "move": 0,
    "salary": 100,
@@ -63,17 +62,38 @@
     "Queens",
     "Miami FL",
     "Vermont",
-    "LIU",
-    "Siena"
+    "Siena",
+    "LIU"
    ]
   },
   {
-   "rank": 3,
+   "rank": 4,
+   "entry": "Kevin B.",
+   "full": "Kevin Baquero",
+   "total": 15,
+   "change": 3,
+   "move": 2,
+   "salary": 100,
+   "teams": [
+    "Duke",
+    "St. John's",
+    "Florida",
+    "Navy",
+    "SIUE",
+    "Michigan",
+    "Kansas St.",
+    "Howard",
+    "Siena",
+    "Mercyhurst"
+   ]
+  },
+  {
+   "rank": 4,
    "entry": "Sean F.",
    "full": "Sean Foy",
    "total": 15,
-   "change": 2,
-   "move": 1,
+   "change": 0,
+   "move": -1,
    "salary": 100,
    "teams": [
     "Morgan St.",
@@ -89,11 +109,11 @@
    ]
   },
   {
-   "rank": 5,
+   "rank": 6,
    "entry": "Joe H.",
    "full": "Joe Haines",
    "total": 14,
-   "change": 1,
+   "change": 0,
    "move": -1,
    "salary": 100,
    "teams": [
@@ -110,12 +130,12 @@
    ]
   },
   {
-   "rank": 6,
+   "rank": 7,
    "entry": "Chris C.",
    "full": "Chris Costello",
    "total": 12,
-   "change": 2,
-   "move": 4,
+   "change": 0,
+   "move": -1,
    "salary": 100,
    "teams": [
     "Louisville",
@@ -131,12 +151,12 @@
    ]
   },
   {
-   "rank": 6,
+   "rank": 7,
    "entry": "Connor C. & Conor G.",
    "full": "Connor Coughlin & Conor Gleba",
    "total": 12,
-   "change": 4,
-   "move": 8,
+   "change": 0,
+   "move": -1,
    "salary": 100,
    "teams": [
     "Louisville",
@@ -152,33 +172,12 @@
    ]
   },
   {
-   "rank": 6,
-   "entry": "Kevin B.",
-   "full": "Kevin Baquero",
-   "total": 12,
-   "change": 1,
-   "move": 2,
-   "salary": 100,
-   "teams": [
-    "Duke",
-    "Florida",
-    "SIUE",
-    "Michigan",
-    "Kansas St.",
-    "St. John's",
-    "Howard",
-    "Navy",
-    "Mercyhurst",
-    "Siena"
-   ]
-  },
-  {
-   "rank": 6,
+   "rank": 7,
    "entry": "Mike C.",
    "full": "Mike Costello",
    "total": 12,
    "change": 0,
-   "move": 0,
+   "move": -1,
    "salary": 100,
    "teams": [
     "SMU",
@@ -194,12 +193,12 @@
    ]
   },
   {
-   "rank": 6,
+   "rank": 7,
    "entry": "Sean P.",
    "full": "Sean Palamarik",
    "total": 12,
    "change": 0,
-   "move": 0,
+   "move": -1,
    "salary": 100,
    "teams": [
     "N.C. State",
@@ -219,8 +218,8 @@
    "entry": "Ben D.",
    "full": "Ben Derda",
    "total": 11,
-   "change": 1,
-   "move": -1,
+   "change": 0,
+   "move": 0,
    "salary": 100,
    "teams": [
     "Virginia Tech",
@@ -241,7 +240,7 @@
    "full": "Jason Haines",
    "total": 11,
    "change": 0,
-   "move": -3,
+   "move": 0,
    "salary": 100,
    "teams": [
     "Arizona St.",
@@ -257,18 +256,18 @@
    ]
   },
   {
-   "rank": 13,
+   "rank": 11,
    "entry": "Marty C.",
    "full": "Marty Costello",
-   "total": 10,
+   "total": 11,
    "change": 1,
-   "move": -1,
+   "move": 2,
    "salary": 100,
    "teams": [
     "Indiana",
     "BYU",
-    "Miami FL",
     "St. John's",
+    "Miami FL",
     "Arkansas",
     "Montana St.",
     "Marist",
@@ -281,9 +280,9 @@
    "rank": 14,
    "entry": "Dan P.",
    "full": "Dan Paustian",
-   "total": 9,
-   "change": 0,
-   "move": -2,
+   "total": 10,
+   "change": 1,
+   "move": 0,
    "salary": 100,
    "teams": [
     "Iowa",
@@ -293,8 +292,8 @@
     "Arkansas",
     "Florida Gulf Coast",
     "Marist",
-    "Weber St.",
     "Wofford",
+    "Weber St.",
     "Incarnate Word"
    ]
   }
@@ -477,7 +476,7 @@
   },
   "Arkansas": {
    "nonconf_w": 1,
-   "nonconf_l": 0,
+   "nonconf_l": 1,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -487,7 +486,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 1,
-   "l": 0,
+   "l": 1,
    "pts_reg": 1,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -514,6 +513,29 @@
      "seed": null,
      "kind": "nonconf",
      "pts": 1,
+     "round": null
+    },
+    {
+     "id": "401920424",
+     "date": "2026-11-08",
+     "start": "2026-11-08T13:00:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": true,
+     "tv": "ESPN",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "258",
+     "opp_name": "Virginia",
+     "opp_short": "Virginia",
+     "score": "72-91",
+     "headline": "Skyscanner Capital Showcase",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
      "round": null
     }
    ]
@@ -1599,7 +1621,7 @@
   },
   "Incarnate Word": {
    "nonconf_w": 0,
-   "nonconf_l": 2,
+   "nonconf_l": 3,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -1609,7 +1631,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 0,
-   "l": 2,
+   "l": 3,
    "pts_reg": 0,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -1653,6 +1675,29 @@
      "opp_name": "Chicago St.",
      "opp_short": "Chicago State",
      "score": "54-66",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
+     "round": null
+    },
+    {
+     "id": "401929352",
+     "date": "2026-11-08",
+     "start": "2026-11-08T19:00:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": false,
+     "tv": "MW+",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2638",
+     "opp_name": "UTEP",
+     "opp_short": "UTEP",
+     "score": "60-79",
      "headline": "",
      "conf_flag": null,
      "status_detail": "Final",
@@ -1731,7 +1776,7 @@
   },
   "Iona": {
    "nonconf_w": 2,
-   "nonconf_l": 0,
+   "nonconf_l": 1,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -1741,7 +1786,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 2,
-   "l": 0,
+   "l": 1,
    "pts_reg": 2,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -1791,6 +1836,29 @@
      "seed": null,
      "kind": "nonconf",
      "pts": 1,
+     "round": null
+    },
+    {
+     "id": "401924646",
+     "date": "2026-11-08",
+     "start": "2026-11-08T12:00:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": false,
+     "tv": "Peacock",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2599",
+     "opp_name": "St. John's",
+     "opp_short": "St. John's",
+     "score": "65-104",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
      "round": null
     }
    ]
@@ -2282,7 +2350,7 @@
   },
   "Lehigh": {
    "nonconf_w": 1,
-   "nonconf_l": 1,
+   "nonconf_l": 2,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -2292,7 +2360,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 1,
-   "l": 1,
+   "l": 2,
    "pts_reg": 1,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -2342,6 +2410,29 @@
      "seed": null,
      "kind": "nonconf",
      "pts": 1,
+     "round": null
+    },
+    {
+     "id": "401911306",
+     "date": "2026-11-08",
+     "start": "2026-11-08T14:00:00-05:00",
+     "time_tbd": false,
+     "home": true,
+     "neutral": false,
+     "tv": "ESPN+",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "225",
+     "opp_name": "Brown",
+     "opp_short": "Brown",
+     "score": "55-65",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
      "round": null
     }
    ]
@@ -2503,7 +2594,7 @@
   },
   "Marist": {
    "nonconf_w": 1,
-   "nonconf_l": 1,
+   "nonconf_l": 2,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -2513,7 +2604,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 1,
-   "l": 1,
+   "l": 2,
    "pts_reg": 1,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -2563,6 +2654,29 @@
      "seed": null,
      "kind": "nonconf",
      "pts": 1,
+     "round": null
+    },
+    {
+     "id": "401921687",
+     "date": "2026-11-08",
+     "start": "2026-11-08T13:00:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": false,
+     "tv": "ESPN+",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2349",
+     "opp_name": "UMass Lowell",
+     "opp_short": "UMass Lowell",
+     "score": "61-63",
+     "headline": "America East-Metro Challenge",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
      "round": null
     }
    ]
@@ -3363,7 +3477,7 @@
    ]
   },
   "NJIT": {
-   "nonconf_w": 0,
+   "nonconf_w": 1,
    "nonconf_l": 2,
    "conf_w": 0,
    "conf_l": 0,
@@ -3373,12 +3487,12 @@
    "seed": null,
    "ncaa_w": [],
    "ncaa_out": false,
-   "w": 0,
+   "w": 1,
    "l": 2,
-   "pts_reg": 0,
+   "pts_reg": 1,
    "pts_ct": 0,
    "pts_ncaa": 0,
-   "total": 0,
+   "total": 1,
    "games": [
     {
      "id": "401911185",
@@ -3425,11 +3539,34 @@
      "kind": "nonconf",
      "pts": 0,
      "round": null
+    },
+    {
+     "id": "401920865",
+     "date": "2026-11-08",
+     "start": "2026-11-08T16:00:00-05:00",
+     "time_tbd": false,
+     "home": true,
+     "neutral": false,
+     "tv": "ESPN+",
+     "season_type": 2,
+     "completed": true,
+     "won": true,
+     "opp_id": "2612",
+     "opp_name": "Saint Peter's",
+     "opp_short": "Saint Peter's",
+     "score": "54-52",
+     "headline": "America East-Metro Challenge",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 1,
+     "round": null
     }
    ]
   },
   "Navy": {
-   "nonconf_w": 1,
+   "nonconf_w": 2,
    "nonconf_l": 1,
    "conf_w": 0,
    "conf_l": 0,
@@ -3439,12 +3576,12 @@
    "seed": null,
    "ncaa_w": [],
    "ncaa_out": false,
-   "w": 1,
+   "w": 2,
    "l": 1,
-   "pts_reg": 1,
+   "pts_reg": 2,
    "pts_ct": 0,
    "pts_ncaa": 0,
-   "total": 1,
+   "total": 2,
    "games": [
     {
      "id": "401911208",
@@ -3491,12 +3628,35 @@
      "kind": "nonconf",
      "pts": 1,
      "round": null
+    },
+    {
+     "id": "401921220",
+     "date": "2026-11-08",
+     "start": "2026-11-08T13:00:00-05:00",
+     "time_tbd": false,
+     "home": true,
+     "neutral": false,
+     "tv": "ESPN+, Patriot League TV",
+     "season_type": 2,
+     "completed": true,
+     "won": true,
+     "opp_id": "3164",
+     "opp_name": "Central Penn",
+     "opp_short": "Central Penn",
+     "score": "102-46",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 1,
+     "round": null
     }
    ]
   },
   "Norfolk St.": {
    "nonconf_w": 2,
-   "nonconf_l": 0,
+   "nonconf_l": 1,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -3506,7 +3666,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 2,
-   "l": 0,
+   "l": 1,
    "pts_reg": 2,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -3556,6 +3716,29 @@
      "seed": null,
      "kind": "nonconf",
      "pts": 1,
+     "round": null
+    },
+    {
+     "id": "401925894",
+     "date": "2026-11-08",
+     "start": "2026-11-08T18:00:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": false,
+     "tv": "FloSports",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2729",
+     "opp_name": "William & Mary",
+     "opp_short": "William & Mary",
+     "score": "73-104",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
      "round": null
     }
    ]
@@ -3628,7 +3811,7 @@
   },
   "North Dakota St.": {
    "nonconf_w": 1,
-   "nonconf_l": 2,
+   "nonconf_l": 3,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -3638,7 +3821,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 1,
-   "l": 2,
+   "l": 3,
    "pts_reg": 1,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -3705,6 +3888,29 @@
      "opp_name": "San Francisco",
      "opp_short": "San Francisco",
      "score": "70-79",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
+     "round": null
+    },
+    {
+     "id": "401920134",
+     "date": "2026-11-08",
+     "start": "2026-11-08T18:00:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": false,
+     "tv": "ESPN+",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2934",
+     "opp_name": "Cal St. Bakersfield",
+     "opp_short": "Cal State Bakersfield",
+     "score": "80-91",
      "headline": "",
      "conf_flag": null,
      "status_detail": "Final",
@@ -4334,7 +4540,7 @@
   },
   "Saint Mary's": {
    "nonconf_w": 2,
-   "nonconf_l": 0,
+   "nonconf_l": 1,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -4344,7 +4550,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 2,
-   "l": 0,
+   "l": 1,
    "pts_reg": 2,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -4394,6 +4600,29 @@
      "seed": null,
      "kind": "nonconf",
      "pts": 1,
+     "round": null
+    },
+    {
+     "id": "401911453",
+     "date": "2026-11-08",
+     "start": "2026-11-08T16:30:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": true,
+     "tv": "MW+",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2440",
+     "opp_name": "Nevada",
+     "opp_short": "Nevada",
+     "score": "95-96",
+     "headline": "Lake Tahoe Classic",
+     "conf_flag": null,
+     "status_detail": "Final/OT",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
      "round": null
     }
    ]
@@ -4531,7 +4760,7 @@
    ]
   },
   "Siena": {
-   "nonconf_w": 0,
+   "nonconf_w": 1,
    "nonconf_l": 1,
    "conf_w": 0,
    "conf_l": 0,
@@ -4541,12 +4770,12 @@
    "seed": null,
    "ncaa_w": [],
    "ncaa_out": false,
-   "w": 0,
+   "w": 1,
    "l": 1,
-   "pts_reg": 0,
+   "pts_reg": 1,
    "pts_ct": 0,
    "pts_ncaa": 0,
-   "total": 0,
+   "total": 1,
    "games": [
     {
      "id": "401923269",
@@ -4570,12 +4799,35 @@
      "kind": "nonconf",
      "pts": 0,
      "round": null
+    },
+    {
+     "id": "401924734",
+     "date": "2026-11-08",
+     "start": "2026-11-08T13:00:00-05:00",
+     "time_tbd": false,
+     "home": true,
+     "neutral": false,
+     "tv": "ESPN+",
+     "season_type": 2,
+     "completed": true,
+     "won": true,
+     "opp_id": "163",
+     "opp_name": "Princeton",
+     "opp_short": "Princeton",
+     "score": "82-68",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 1,
+     "round": null
     }
    ]
   },
   "Southeast Missouri": {
    "nonconf_w": 2,
-   "nonconf_l": 0,
+   "nonconf_l": 1,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -4585,7 +4837,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 2,
-   "l": 0,
+   "l": 1,
    "pts_reg": 2,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -4636,12 +4888,35 @@
      "kind": "nonconf",
      "pts": 1,
      "round": null
+    },
+    {
+     "id": "401921820",
+     "date": "2026-11-08",
+     "start": "2026-11-08T13:00:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": false,
+     "tv": "SECN+",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2579",
+     "opp_name": "South Carolina",
+     "opp_short": "South Carolina",
+     "score": "68-78",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
+     "round": null
     }
    ]
   },
   "Southern": {
    "nonconf_w": 0,
-   "nonconf_l": 2,
+   "nonconf_l": 3,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -4651,7 +4926,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 0,
-   "l": 2,
+   "l": 3,
    "pts_reg": 0,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -4702,11 +4977,34 @@
      "kind": "nonconf",
      "pts": 0,
      "round": null
+    },
+    {
+     "id": "401927362",
+     "date": "2026-11-08",
+     "start": "2026-11-08T15:00:00-05:00",
+     "time_tbd": false,
+     "home": false,
+     "neutral": false,
+     "tv": "ESPN+",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2181",
+     "opp_name": "Drake",
+     "opp_short": "Drake",
+     "score": "68-75",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
+     "round": null
     }
    ]
   },
   "St. John's": {
-   "nonconf_w": 1,
+   "nonconf_w": 2,
    "nonconf_l": 0,
    "conf_w": 0,
    "conf_l": 0,
@@ -4716,12 +5014,12 @@
    "seed": null,
    "ncaa_w": [],
    "ncaa_out": false,
-   "w": 1,
+   "w": 2,
    "l": 0,
-   "pts_reg": 1,
+   "pts_reg": 2,
    "pts_ct": 0,
    "pts_ncaa": 0,
-   "total": 1,
+   "total": 2,
    "games": [
     {
      "id": "401920679",
@@ -4738,6 +5036,29 @@
      "opp_name": "Monmouth",
      "opp_short": "Monmouth",
      "score": "78-63",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 1,
+     "round": null
+    },
+    {
+     "id": "401924646",
+     "date": "2026-11-08",
+     "start": "2026-11-08T12:00:00-05:00",
+     "time_tbd": false,
+     "home": true,
+     "neutral": false,
+     "tv": "Peacock",
+     "season_type": 2,
+     "completed": true,
+     "won": true,
+     "opp_id": "314",
+     "opp_name": "Iona",
+     "opp_short": "Iona",
+     "score": "104-65",
      "headline": "",
      "conf_flag": null,
      "status_detail": "Final",
@@ -5057,7 +5378,7 @@
   },
   "Vermont": {
    "nonconf_w": 1,
-   "nonconf_l": 1,
+   "nonconf_l": 2,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -5067,7 +5388,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 1,
-   "l": 1,
+   "l": 2,
    "pts_reg": 1,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -5117,6 +5438,29 @@
      "seed": null,
      "kind": "nonconf",
      "pts": 1,
+     "round": null
+    },
+    {
+     "id": "401920692",
+     "date": "2026-11-08",
+     "start": "2026-11-08T14:00:00-05:00",
+     "time_tbd": false,
+     "home": true,
+     "neutral": false,
+     "tv": "ESPN+",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2514",
+     "opp_name": "Quinnipiac",
+     "opp_short": "Quinnipiac",
+     "score": "76-79",
+     "headline": "America East-Metro Challenge",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 0,
      "round": null
     }
    ]
@@ -5518,7 +5862,7 @@
    ]
   },
   "Wofford": {
-   "nonconf_w": 0,
+   "nonconf_w": 1,
    "nonconf_l": 2,
    "conf_w": 0,
    "conf_l": 0,
@@ -5528,12 +5872,12 @@
    "seed": null,
    "ncaa_w": [],
    "ncaa_out": false,
-   "w": 0,
+   "w": 1,
    "l": 2,
-   "pts_reg": 0,
+   "pts_reg": 1,
    "pts_ct": 0,
    "pts_ncaa": 0,
-   "total": 0,
+   "total": 1,
    "games": [
     {
      "id": "401906848",
@@ -5579,6 +5923,29 @@
      "seed": null,
      "kind": "nonconf",
      "pts": 0,
+     "round": null
+    },
+    {
+     "id": "401926210",
+     "date": "2026-11-08",
+     "start": "2026-11-08T14:00:00-05:00",
+     "time_tbd": false,
+     "home": true,
+     "neutral": false,
+     "tv": "ESPN+",
+     "season_type": 2,
+     "completed": true,
+     "won": true,
+     "opp_id": "2019",
+     "opp_name": "Allen",
+     "opp_short": "Allen",
+     "score": "100-67",
+     "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "kind": "nonconf",
+     "pts": 1,
      "round": null
     }
    ]
@@ -6355,9 +6722,828 @@
     "Mike L.": 16,
     "Kevin B.": 12
    }
+  },
+  {
+   "date": "2026-11-09",
+   "totals": {
+    "Chris C.": 12,
+    "Mike C.": 12,
+    "Dennis S.": 17,
+    "Joe H.": 14,
+    "Sean F.": 15,
+    "Connor C. & Conor G.": 12,
+    "Marty C.": 11,
+    "Ben D.": 11,
+    "Dan P.": 10,
+    "Jason H.": 11,
+    "Sean P.": 12,
+    "Drew & Bob D.": 16,
+    "Mike L.": 18,
+    "Kevin B.": 15
+   }
   }
  ],
  "today": {
+  "date": "2026-11-09",
+  "label": "Mon, Nov 9",
+  "games": [
+   {
+    "id": "401925662",
+    "start": "2026-11-09T18:00:00-05:00",
+    "tbd": false,
+    "tv": "",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Georgia Gwinnett",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "134891",
+     "final": null,
+     "won": null,
+     "record": ""
+    },
+    "home": {
+     "team": "Alabama St.",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Mike C.",
+      "Jason H.",
+      "Sean P."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Georgia Gwinnett",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "134891",
+     "record": "0-1"
+    },
+    "time": "6:00 PM",
+    "line": ""
+   },
+   {
+    "id": "401911009",
+    "start": "2026-11-09T18:30:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Penn State Schuylkill",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "128344",
+     "final": null,
+     "won": null,
+     "record": ""
+    },
+    "home": {
+     "team": "Buffalo",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Marty C."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Penn State Schuylkill",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "128344",
+     "record": "0-2"
+    },
+    "time": "6:30 PM",
+    "line": ""
+   },
+   {
+    "id": "401921180",
+    "start": "2026-11-09T18:30:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Howard",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Mike C.",
+      "Sean P.",
+      "Kevin B."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Penn",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "219",
+     "record": "1-1"
+    },
+    "home": {
+     "team": "Penn",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Ben D."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Howard",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "47",
+     "record": "0-1"
+    },
+    "time": "6:30 PM",
+    "line": "PENN -5.5"
+   },
+   {
+    "id": "401909718",
+    "start": "2026-11-09T18:30:00-05:00",
+    "tbd": false,
+    "tv": "FS1",
+    "neutral": true,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "Bad Boy Mowers Series",
+    "away": {
+     "team": "Syracuse",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "183",
+     "final": null,
+     "won": null,
+     "record": "2-0"
+    },
+    "home": {
+     "team": "Indiana",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Marty C."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Syracuse",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "183",
+     "record": "2-0"
+    },
+    "time": "6:30 PM",
+    "line": "IU -5.5"
+   },
+   {
+    "id": "401918074",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "ACCNX",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "North Dakota",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "155",
+     "final": null,
+     "won": null,
+     "record": "1-1"
+    },
+    "home": {
+     "team": "Clemson",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Mike L."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "North Dakota",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "155",
+     "record": "2-0"
+    },
+    "time": "7:00 PM",
+    "line": "CLEM -21.5"
+   },
+   {
+    "id": "401920686",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "truTV",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Wagner",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Mike C."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Connecticut",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "41",
+     "record": "0-2"
+    },
+    "home": {
+     "team": "Connecticut",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Chris C.",
+      "Mike C.",
+      "Joe H.",
+      "Dan P.",
+      "Jason H.",
+      "Drew & Bob D."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Wagner",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2681",
+     "record": "2-0"
+    },
+    "time": "7:00 PM",
+    "line": "CONN -38.5"
+   },
+   {
+    "id": "401906781",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Florida Gulf Coast",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Dan P."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Georgia",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "61",
+     "record": "1-1"
+    },
+    "home": {
+     "team": "Georgia",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Dennis S."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Florida Gulf Coast",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "526",
+     "record": "2-0"
+    },
+    "time": "7:00 PM",
+    "line": "UGA -22.5"
+   },
+   {
+    "id": "401920877",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Kansas City",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "140",
+     "final": null,
+     "won": null,
+     "record": "1-1"
+    },
+    "home": {
+     "team": "Jacksonville",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Chris C."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Kansas City",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "140",
+     "record": "1-1"
+    },
+    "time": "7:00 PM",
+    "line": "JAX -5.5"
+   },
+   {
+    "id": "401919806",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "FloSports",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "LIU",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Chris C.",
+      "Connor C. & Conor G.",
+      "Drew & Bob D."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Towson",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "119",
+     "record": "0-3"
+    },
+    "home": {
+     "team": "Towson",
+     "pool": false,
+     "home": true,
+     "owners": [],
+     "id": "119",
+     "final": null,
+     "won": null,
+     "record": "0-2"
+    },
+    "time": "7:00 PM",
+    "line": "TOW -4.5"
+   },
+   {
+    "id": "401919781",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "NEC Front Row",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Elmira",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "347",
+     "final": null,
+     "won": null,
+     "record": ""
+    },
+    "home": {
+     "team": "Le Moyne",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Joe H."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Elmira",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "347",
+     "record": "0-2"
+    },
+    "time": "7:00 PM",
+    "line": ""
+   },
+   {
+    "id": "401921720",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "ACC Network",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "North Florida",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "2454",
+     "final": null,
+     "won": null,
+     "record": "1-1"
+    },
+    "home": {
+     "team": "Miami FL",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Marty C.",
+      "Dan P.",
+      "Jason H.",
+      "Drew & Bob D."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "North Florida",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2454",
+     "record": "1-1"
+    },
+    "time": "7:00 PM",
+    "line": "MIA -34.5"
+   },
+   {
+    "id": "401906849",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Radford",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "2515",
+     "final": null,
+     "won": null,
+     "record": "0-2"
+    },
+    "home": {
+     "team": "Tennessee",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Sean F."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Radford",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2515",
+     "record": "1-0"
+    },
+    "time": "7:00 PM",
+    "line": "TENN -28.5"
+   },
+   {
+    "id": "401919016",
+    "start": "2026-11-09T19:30:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Florida A&M",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Sean F."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "UAB",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "5",
+     "record": "0-2"
+    },
+    "home": {
+     "team": "UAB",
+     "pool": false,
+     "home": true,
+     "owners": [],
+     "id": "5",
+     "final": null,
+     "won": null,
+     "record": "1-1"
+    },
+    "time": "7:30 PM",
+    "line": "UAB -16.5"
+   },
+   {
+    "id": "401925032",
+    "start": "2026-11-09T19:30:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "College of Biblical Studies",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "128256",
+     "final": null,
+     "won": null,
+     "record": ""
+    },
+    "home": {
+     "team": "McNeese",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Dennis S.",
+      "Sean P."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "College of Biblical Studies",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "128256",
+     "record": "1-1"
+    },
+    "time": "7:30 PM",
+    "line": ""
+   },
+   {
+    "id": "401906793",
+    "start": "2026-11-09T19:30:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Jackson St.",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "2296",
+     "final": null,
+     "won": null,
+     "record": "1-1"
+    },
+    "home": {
+     "team": "Mississippi St.",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Drew & Bob D."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Jackson St.",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2296",
+     "record": "2-0"
+    },
+    "time": "7:30 PM",
+    "line": "MSST -23.5"
+   },
+   {
+    "id": "401921810",
+    "start": "2026-11-09T20:00:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Louisiana Tech",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "2348",
+     "final": null,
+     "won": null,
+     "record": "2-0"
+    },
+    "home": {
+     "team": "LSU",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Mike C."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Louisiana Tech",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2348",
+     "record": "2-0"
+    },
+    "time": "8:00 PM",
+    "line": "LSU -30.5"
+   },
+   {
+    "id": "401906803",
+    "start": "2026-11-09T20:00:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "North Alabama",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "2453",
+     "final": null,
+     "won": null,
+     "record": "2-0"
+    },
+    "home": {
+     "team": "Oklahoma",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Sean P."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "North Alabama",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2453",
+     "record": "1-1"
+    },
+    "time": "8:00 PM",
+    "line": "OU -27.5"
+   },
+   {
+    "id": "401921815",
+    "start": "2026-11-09T20:00:00-05:00",
+    "tbd": false,
+    "tv": "SECN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "SIUE",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Mike L.",
+      "Kevin B."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Missouri",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "142",
+     "record": "2-1"
+    },
+    "home": {
+     "team": "Missouri",
+     "pool": false,
+     "home": true,
+     "owners": [],
+     "id": "142",
+     "final": null,
+     "won": null,
+     "record": "1-1"
+    },
+    "time": "8:00 PM",
+    "line": "MIZ -29.5"
+   },
+   {
+    "id": "401920887",
+    "start": "2026-11-09T21:00:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": true,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Seton Hall",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Dennis S."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Charlotte",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2429",
+     "record": "2-0"
+    },
+    "home": {
+     "team": "Charlotte",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "2429",
+     "final": null,
+     "won": null,
+     "record": "2-0"
+    },
+    "time": "9:00 PM",
+    "line": "HALL -5.5"
+   }
+  ]
+ },
+ "yesterday": {
   "date": "2026-11-08",
   "label": "Sun, Nov 8",
   "games": [
@@ -6985,639 +8171,6 @@
     },
     "time": "7:00 PM",
     "line": "UTEP -12.5"
-   }
-  ]
- },
- "yesterday": {
-  "date": "2026-11-07",
-  "label": "Sat, Nov 7",
-  "games": [
-   {
-    "id": "401918948",
-    "start": "2026-11-07T12:00:00-05:00",
-    "tbd": false,
-    "tv": "ACCNX",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Morehead St.",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Sean F."
-     ],
-     "won": false,
-     "score": "57-107",
-     "opp": "Louisville",
-     "pts": 0,
-     "final": 57,
-     "opp_final": 107,
-     "opp_id": "97",
-     "record": "1-2"
-    },
-    "home": {
-     "team": "Louisville",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Chris C.",
-      "Connor C. & Conor G."
-     ],
-     "won": true,
-     "score": "107-57",
-     "opp": "Morehead St.",
-     "pts": 1,
-     "final": 107,
-     "opp_final": 57,
-     "opp_id": "2413",
-     "record": "2-0"
-    },
-    "time": "12:00 PM",
-    "line": "LOU -37.5"
-   },
-   {
-    "id": "401920770",
-    "start": "2026-11-07T14:00:00-05:00",
-    "tbd": false,
-    "tv": "FloSports",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Colgate",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Marty C.",
-      "Jason H.",
-      "Sean P."
-     ],
-     "won": false,
-     "score": "74-77",
-     "opp": "Drexel",
-     "pts": 0,
-     "final": 74,
-     "opp_final": 77,
-     "opp_id": "2182",
-     "record": "0-2"
-    },
-    "home": {
-     "team": "Drexel",
-     "pool": false,
-     "home": true,
-     "owners": [],
-     "id": "2182",
-     "final": 77,
-     "won": true,
-     "record": "1-1"
-    },
-    "time": "2:00 PM",
-    "line": "DREX -1.5"
-   },
-   {
-    "id": "401918977",
-    "start": "2026-11-07T14:00:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "UNC Wilmington",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Connor C. & Conor G."
-     ],
-     "won": true,
-     "score": "78-75",
-     "opp": "East Carolina",
-     "pts": 1,
-     "final": 78,
-     "opp_final": 75,
-     "opp_id": "151",
-     "record": "2-0"
-    },
-    "home": {
-     "team": "East Carolina",
-     "pool": false,
-     "home": true,
-     "owners": [],
-     "id": "151",
-     "final": 75,
-     "won": false,
-     "record": "1-1"
-    },
-    "time": "2:00 PM",
-    "line": "UNCW -5.5"
-   },
-   {
-    "id": "401924264",
-    "start": "2026-11-07T15:00:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Long Beach St.",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "299",
-     "final": 70,
-     "won": false,
-     "record": "0-2"
-    },
-    "home": {
-     "team": "Montana St.",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Marty C."
-     ],
-     "won": true,
-     "score": "83-70",
-     "opp": "Long Beach St.",
-     "pts": 1,
-     "final": 83,
-     "opp_final": 70,
-     "opp_id": "299",
-     "record": "1-1"
-    },
-    "time": "3:00 PM",
-    "line": "MTST -10.5"
-   },
-   {
-    "id": "401919805",
-    "start": "2026-11-07T15:30:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "LIU",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Chris C.",
-      "Connor C. & Conor G.",
-      "Drew & Bob D."
-     ],
-     "won": false,
-     "score": "80-88",
-     "opp": "La Salle",
-     "pts": 0,
-     "final": 80,
-     "opp_final": 88,
-     "opp_id": "2325",
-     "record": "0-3"
-    },
-    "home": {
-     "team": "La Salle",
-     "pool": false,
-     "home": true,
-     "owners": [],
-     "id": "2325",
-     "final": 88,
-     "won": true,
-     "record": "1-1"
-    },
-    "time": "3:30 PM",
-    "line": "LAS -4.5"
-   },
-   {
-    "id": "401919824",
-    "start": "2026-11-07T16:00:00-05:00",
-    "tbd": false,
-    "tv": "NEC Front Row",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Penn State Shenango",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "130195",
-     "final": 50,
-     "won": false,
-     "record": ""
-    },
-    "home": {
-     "team": "Mercyhurst",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Chris C.",
-      "Joe H.",
-      "Kevin B."
-     ],
-     "won": true,
-     "score": "89-50",
-     "opp": "Penn State Shenango",
-     "pts": 1,
-     "final": 89,
-     "opp_final": 50,
-     "opp_id": "130195",
-     "record": "1-2"
-    },
-    "time": "4:00 PM",
-    "line": ""
-   },
-   {
-    "id": "401924912",
-    "start": "2026-11-07T16:00:00-05:00",
-    "tbd": false,
-    "tv": "MW+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Samford",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Mike L."
-     ],
-     "won": false,
-     "score": "79-88",
-     "opp": "UNLV",
-     "pts": 0,
-     "final": 79,
-     "opp_final": 88,
-     "opp_id": "2439",
-     "record": "1-1"
-    },
-    "home": {
-     "team": "UNLV",
-     "pool": false,
-     "home": true,
-     "owners": [],
-     "id": "2439",
-     "final": 88,
-     "won": true,
-     "record": "2-0"
-    },
-    "time": "4:00 PM",
-    "line": "UNLV -11.5"
-   },
-   {
-    "id": "401920411",
-    "start": "2026-11-07T17:00:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Washington St.",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "265",
-     "final": 71,
-     "won": false,
-     "record": "0-2"
-    },
-    "home": {
-     "team": "High Point",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Drew & Bob D.",
-      "Mike L."
-     ],
-     "won": true,
-     "score": "83-71",
-     "opp": "Washington St.",
-     "pts": 1,
-     "final": 83,
-     "opp_final": 71,
-     "opp_id": "265",
-     "record": "3-0"
-    },
-    "time": "5:00 PM",
-    "line": "HPU -13.5"
-   },
-   {
-    "id": "401920703",
-    "start": "2026-11-07T17:00:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "SIUE",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Mike L.",
-      "Kevin B."
-     ],
-     "won": false,
-     "score": "77-78",
-     "opp": "Lipscomb",
-     "pts": 0,
-     "final": 77,
-     "opp_final": 78,
-     "opp_id": "288",
-     "record": "2-1"
-    },
-    "home": {
-     "team": "Lipscomb",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Ben D."
-     ],
-     "won": true,
-     "score": "78-77",
-     "opp": "SIUE",
-     "pts": 1,
-     "final": 78,
-     "opp_final": 77,
-     "opp_id": "2565",
-     "record": "1-2"
-    },
-    "time": "5:00 PM",
-    "line": "LIP -8.5"
-   },
-   {
-    "id": "401924843",
-    "start": "2026-11-07T18:30:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Morgan St.",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Sean F."
-     ],
-     "won": true,
-     "score": "73-67",
-     "opp": "Niagara",
-     "pts": 1,
-     "final": 73,
-     "opp_final": 67,
-     "opp_id": "315",
-     "record": "3-0"
-    },
-    "home": {
-     "team": "Niagara",
-     "pool": false,
-     "home": true,
-     "owners": [],
-     "id": "315",
-     "final": 67,
-     "won": false,
-     "record": "0-2"
-    },
-    "time": "6:30 PM",
-    "line": "NIA -3.5"
-   },
-   {
-    "id": "401909532",
-    "start": "2026-11-07T19:00:00-05:00",
-    "tbd": false,
-    "tv": "FS1",
-    "neutral": true,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "Basketball Hall of Fame Tip-Off",
-    "away": {
-     "team": "Providence",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Ben D."
-     ],
-     "won": false,
-     "score": "58-67",
-     "opp": "Nebraska",
-     "pts": 0,
-     "final": 58,
-     "opp_final": 67,
-     "opp_id": "158",
-     "record": "1-1"
-    },
-    "home": {
-     "team": "Nebraska",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "158",
-     "final": 67,
-     "won": true,
-     "record": "2-0"
-    },
-    "time": "7:00 PM",
-    "line": "NEB -2.5"
-   },
-   {
-    "id": "401909513",
-    "start": "2026-11-07T19:30:00-05:00",
-    "tbd": false,
-    "tv": "Peacock",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Maryland",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Mike C."
-     ],
-     "won": false,
-     "score": "74-86",
-     "opp": "Georgetown",
-     "pts": 0,
-     "final": 74,
-     "opp_final": 86,
-     "opp_id": "46",
-     "record": "1-1"
-    },
-    "home": {
-     "team": "Georgetown",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Connor C. & Conor G."
-     ],
-     "won": true,
-     "score": "86-74",
-     "opp": "Maryland",
-     "pts": 1,
-     "final": 86,
-     "opp_final": 74,
-     "opp_id": "120",
-     "record": "2-0"
-    },
-    "time": "7:30 PM",
-    "line": "MD -3.5"
-   },
-   {
-    "id": "401911345",
-    "start": "2026-11-07T20:00:00-05:00",
-    "tbd": false,
-    "tv": "MW+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Bethune Cookman",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "2065",
-     "final": 81,
-     "won": false,
-     "record": "0-3"
-    },
-    "home": {
-     "team": "Grand Canyon",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Sean F."
-     ],
-     "won": true,
-     "score": "99-81",
-     "opp": "Bethune Cookman",
-     "pts": 1,
-     "final": 99,
-     "opp_final": 81,
-     "opp_id": "2065",
-     "record": "2-0"
-    },
-    "time": "8:00 PM",
-    "line": "GCU -21.5"
-   },
-   {
-    "id": "401920435",
-    "start": "2026-11-07T21:00:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Utah Valley",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "3084",
-     "final": 101,
-     "won": true,
-     "record": "2-0"
-    },
-    "home": {
-     "team": "Weber St.",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Dan P."
-     ],
-     "won": false,
-     "score": "93-101",
-     "opp": "Utah Valley",
-     "pts": 0,
-     "final": 93,
-     "opp_final": 101,
-     "opp_id": "3084",
-     "record": "0-2"
-    },
-    "time": "9:00 PM",
-    "line": "UVU -7.5"
-   },
-   {
-    "id": "401911470",
-    "start": "2026-11-07T22:00:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "San Jose St.",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "23",
-     "final": 79,
-     "won": false,
-     "record": "1-1"
-    },
-    "home": {
-     "team": "UC Irvine",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Connor C. & Conor G."
-     ],
-     "won": true,
-     "score": "91-79",
-     "opp": "San Jose St.",
-     "pts": 1,
-     "final": 91,
-     "opp_final": 79,
-     "opp_id": "23",
-     "record": "2-0"
-    },
-    "time": "10:00 PM",
-    "line": "UCI -8.5"
    }
   ]
  },
