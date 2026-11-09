@@ -75,12 +75,26 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .mycard{margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:inset 4px 0 0 var(--me)}
 .mc-empty{display:block;padding:14px 16px 14px 18px;border:1.5px dashed var(--line);box-shadow:none;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .mc-empty span{display:block}.mc-e1{font-weight:700;font-size:16px}.mc-e2{font-size:13px;color:var(--mute);margin-top:3px;line-height:1.4}
+.gotd{margin:14px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.gd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 14px;background:var(--head);font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.gd-top b{color:var(--ink);font-weight:750;white-space:nowrap}.gd-top b em{font-style:normal;color:#f59e0b;margin-right:5px}
+.gd-top .st{text-transform:none;letter-spacing:0;font-weight:500;font-size:12px;text-align:right;display:flex;align-items:center;gap:6px;justify-content:flex-end;flex-wrap:wrap}
+.gd-top .st .livepill{margin:0}
+.gd-m{display:grid;grid-template-columns:max-content minmax(0,1fr) auto;gap:6px 12px;padding:10px 14px 11px;align-items:baseline}
+.gd-t{font-size:15px;font-weight:700;white-space:nowrap}.gd-t i{font-style:normal;font-weight:400;font-size:12px;color:var(--mute);margin-left:5px}
+.gd-t.lose{color:var(--mute);font-weight:600}
+.gd-own{font-size:13px;color:var(--accent);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.gd-own .sep{color:var(--mute)}
+.gd-sc{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}.gd-sc.lose{color:var(--mute);font-weight:600}
+@media (max-width:380px){.gd-m{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense;gap:2px 10px}.gd-own{grid-column:1/-1;margin-bottom:6px}}   /* small phones: owners drop under the team, score stays beside it */
 .mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 11px 14px;margin-left:4px;background:var(--head)}  /* tinted like table headers; the 4px margin keeps the blue edge visible */
 .mc-name{font-weight:700;color:var(--ink);font-size:17px}
 .mc-rank{font-size:15px;font-weight:700;white-space:nowrap}.mc-rank .mv{margin-left:4px}
 .mc-stats{display:flex;gap:16px;padding:0 14px 12px 18px;font-size:13px;color:var(--mute)}
 .mc-stats b{color:var(--ink);font-size:15px;font-variant-numeric:tabular-nums;margin-right:3px}
 .mc-sec{border-top:1px solid var(--line);padding:10px 14px 10px 18px}
+.mc-g .t.wide{grid-column:1/4}.mc-g .t.wide i{display:inline!important;margin-left:4px!important}
+.mc-y{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.mc-y .ysum{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;text-transform:none;letter-spacing:0;color:var(--ink);font-variant-numeric:tabular-nums}
 .mc-none{font-size:14px;color:var(--mute)}
 .mc-h{display:flex;justify-content:space-between;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-bottom:6px}
 .mc-h span:last-child{text-transform:none;letter-spacing:0;font-weight:400}
@@ -247,6 +261,7 @@ svg text{fill:var(--mute);font-size:11px}
 
 <section class="panel" data-panel="standings">
 <div id="mycard" hidden></div>
+<div id="gotd" hidden></div>
 <h2 class="withnote">Standings <span class="h2sub" id="standings-when"></span></h2>
 <div class="h2note" id="standings-label"></div>
 <div class="card scroll"><table id="standings"><thead><tr>
@@ -513,6 +528,35 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   }).join('');
 }
 if (STALE) { $('#today-h').textContent = "Yesterday's games"; $('#yesterday-h').textContent = 'Earlier games'; }
+// Game of the Day: today's game with the most at stake for the pool. Stakes = entries involved
+// + 3 per head-to-head pair (the smaller side, after dropping anyone who owns both teams, since they can't lose)
+// + closeness (spread up to 3: +3, up to 7: +2, up to 12: +1). Ties go to the earlier tip.
+(function gameOfTheDay() {
+  const el = $('#gotd'), games = STALE ? [] : (D.today?.games || []);
+  const own = sd => sd.pool ? (sd.owners || []) : [];
+  const spread = g => { const m = /-(\d+(\.\d+)?)/.exec(g.line || ''); return m ? +m[1] : 99; };
+  const close = sp => sp <= 3 ? 3 : sp <= 7 ? 2 : sp <= 12 ? 1 : 0;
+  const scored = games.map(g => {
+    const a = own(g.away), h = own(g.home), both = a.filter(e => h.includes(e));
+    const n = new Set([...a, ...h]).size, h2h = Math.min(a.length - both.length, h.length - both.length);
+    return {g, n, stakes: n + 3 * h2h + close(spread(g))};
+  }).filter(x => x.n >= 2)
+    .sort((a, b) => b.stakes - a.stakes || (a.g.start || '').localeCompare(b.g.start || ''));
+  if (!scored.length) { el.hidden = true; return; }
+  const {g, n} = scored[0], live = !g.completed && g.live, fin = g.completed;
+  const sc = sd => fin ? sd.final : live ? sd.live : null;
+  const side = (sd, other) => {
+    const v = sc(sd), lose = fin && !sd.won;
+    // one line per team: name + record, its pool owners, score
+    return `<span class="gd-t${lose ? ' lose' : ''}">${esc(sd.team)}${sd.record ? `<i>${esc(sd.record)}</i>` : ''}</span>` +
+      `<span class="gd-own">${ownList(own(sd)) || '<span class="sep">–</span>'}</span><span class="gd-sc${lose ? ' lose' : ''}">${v ?? ''}</span>`;
+  };
+  const status = fin ? esc(g.final_label || 'Final') : live ? `<span class="livepill">LIVE</span>${esc(g.live.detail)}` : esc(g.time || '');
+  const info = [status, !fin && !live && g.line && esc(g.line)].filter(Boolean).join('<span class="sep">·</span>');   // compact: status, plus the spread before tip
+  el.innerHTML = `<div class="gotd"><div class="gd-top"><b><em>★</em>Game of the Day</b><span class="st">${info}</span></div>` +
+    `<div class="gd-m">${side(g.away, g.home)}${side(g.home, g.away)}</div></div>`;
+  el.hidden = false;
+})();
 gameList(D.today, $('#today'), $('#today-label'), 'No picked teams play today.', false);
 // one timestamp for the whole list, once any game has started
 if (D.scores_updated && (D.today?.games || []).some(g => g.live || g.completed)) $('#today-label').textContent += ` · as of ${D.scores_updated}`;
@@ -657,8 +701,12 @@ function renderMyCard(me) {
       else if (live && m.live != null) { sc = `${m.live}-${o.live ?? 0}`; cls = m.live > (o.live ?? 0) ? 'lead' : m.live < (o.live ?? 0) ? 'trail' : ''; }
       const pts = g.completed ? pb(m.pts || 0) : '<span></span>';
       const st = g.completed ? esc(g.final_label || 'Final') : live ? esc(g.live.detail) : finals ? 'No result' : esc(g.time || '');
-      return {pts: g.completed ? (m.pts || 0) : 0,
-        html: `<div class="mc-g"><span class="t">${esc(m.team)}<i>${vs} ${esc(o.team)}</i></span><span class="s ${cls}">${sc}</span>${pts}<span class="st${live ? ' live' : ''}">${st}</span></div>`};
+      const team = `${esc(m.team)}<i>${vs} ${esc(o.team)}</i>`;
+      return {pts: g.completed ? (m.pts || 0) : 0, done: g.completed, won: !!m.won,
+        // before tip there's no score or points yet, so the matchup gets that space instead of being cut off
+        html: sc || g.completed
+          ? `<div class="mc-g"><span class="t">${team}</span><span class="s ${cls}">${sc}</span>${pts}<span class="st${live ? ' live' : ''}">${st}</span></div>`
+          : `<div class="mc-g"><span class="t wide">${team}</span><span class="st">${st}</span></div>`};
     }));
   const today = rows(D.today, false), yest = rows(D.yesterday, true);
   const started = (D.today?.games || []).some(g => g.live || g.completed);
@@ -666,9 +714,12 @@ function renderMyCard(me) {
   // Time decides what's worth the space: mornings lead with last night's results (and preview today);
   // from noon, or the first final, it's just today. Yesterday stays in the Games tab.
   const todaySec = () => sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today);
+  // after the switch, yesterday shrinks to one line: the day's record and points
+  const ydone = yest.filter(r => r.done), yw = ydone.filter(r => r.won).length, ypts = ydone.reduce((a, r) => a + r.pts, 0);
+  const yline = ydone.length ? `<div class="mc-sec mc-y"><span>Yesterday</span><span class="ysum">${yw}-${ydone.length - yw}${pb(ypts)}</span></div>` : '';
   const body = STALE ? sec('Yesterday', '', today) + sec(D.yesterday?.label || 'Earlier', '', yest)
     : MORNING ? sec('Yesterday', '', yest) + todaySec()
-    : todaySec();
+    : todaySec() + yline;
   el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">Daily Summary</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
     (body || `<div class="mc-sec mc-none">No games today</div>`) + '</div>';
   el.hidden = false;

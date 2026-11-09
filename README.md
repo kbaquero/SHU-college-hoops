@@ -109,7 +109,11 @@ How games are classified:
   (teams with a game not yet final; a red dot if one is live). Once NCAA seeds are entered in March it becomes
   "Alive" (teams still in the tournament). Records live in each entry's expanded breakdown.
 - **The Daily Summary** leads with yesterday's results in the morning (plus today's games as a preview), then
-  shows only today from noon (or the first final). Yesterday's results stay on the Games tab.
+  shows today plus a one-line yesterday (record and points) from noon (or the first final). Full results stay on the
+  Games tab.
+- **Game of the Day** (Standings tab, under the summary): today's game with the most at stake for the pool: entries
+  involved, plus 3 per head-to-head pair (owners of both teams don't count), plus closeness (spread ≤3: +3, ≤7: +2,
+  ≤12: +1). Hidden when no game involves two or more entries.
 - **Any push to `data/`, `tracker/`, `tests/` or `.github/`** runs a full update, which is safe at any hour.
 
 GitHub's own cron schedules (in the workflow) often fire late or get skipped, so two Claude scheduled tasks
