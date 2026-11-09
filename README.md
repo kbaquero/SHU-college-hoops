@@ -111,9 +111,11 @@ How games are classified:
 - **The Daily Summary** leads with yesterday's results in the morning (plus today's games as a preview), then
   shows today plus a one-line yesterday (record and points) from noon (or the first final). Full results stay on the
   Games tab.
-- **Game of the Day** (Standings tab, under the summary): today's game with the most at stake for the pool: entries
-  involved, plus 3 per head-to-head pair (owners of both teams don't count), plus closeness (spread ≤3: +3, ≤7: +2,
-  ≤12: +1). Hidden when no game involves two or more entries.
+- **Game of the Day** (Standings tab under the summary; marked in gold on the Games tab): today's game with the most
+  at stake for the pool. Stakes = (entries involved + 3 per head-to-head pair) × what a win is worth, plus closeness.
+  Head-to-head pairs are the smaller side, not counting anyone who owns both teams. Worth uses the pool's own points:
+  non-conference 1, conference 2, conference tournament 2 (7 in the final), NCAA by round (2 up to 12). Closeness:
+  spread ≤3: +3, ≤7: +2, ≤12: +1. Hidden when no game involves two or more entries.
 - **Any push to `data/`, `tracker/`, `tests/` or `.github/`** runs a full update, which is safe at any hour.
 
 GitHub's own cron schedules (in the workflow) often fire late or get skipped, so two Claude scheduled tasks

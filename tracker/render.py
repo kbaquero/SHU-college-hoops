@@ -2,6 +2,8 @@
 import html
 import json
 
+from . import config as C
+
 TEMPLATE = r"""<!doctype html>
 <html lang="en">
 <head>
@@ -536,9 +538,12 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
   }).join('');
 }
 if (STALE) { $('#today-h').textContent = "Yesterday's games"; $('#yesterday-h').textContent = 'Earlier games'; }
-// Game of the Day: today's game with the most at stake for the pool. Stakes = entries involved
-// + 3 per head-to-head pair (the smaller side, after dropping anyone who owns both teams, since they can't lose)
-// + closeness (spread up to 3: +3, up to 7: +2, up to 12: +1). Ties go to the earlier tip.
+// Game of the Day: today's game with the most at stake for the pool.
+// Stakes = (entries involved + 3 per head-to-head pair) x points the win is worth + closeness.
+//   head-to-head pairs: the smaller side, after dropping anyone who owns both teams (they can't lose)
+//   worth: non-conference 1, conference 2, conference tournament 2 (+5 in the final), NCAA by round (2 up to 12)
+//   closeness: spread up to 3: +3, up to 7: +2, up to 12: +1. Ties go to the earlier tip.
+const PTS = __PTS__;
 (function gameOfTheDay() {
   const el = $('#gotd'), games = STALE ? [] : (D.today?.games || []);
   const own = sd => sd.pool ? (sd.owners || []) : [];
@@ -547,7 +552,10 @@ if (STALE) { $('#today-h').textContent = "Yesterday's games"; $('#yesterday-h').
   const scored = games.map(g => {
     const a = own(g.away), h = own(g.home), both = a.filter(e => h.includes(e));
     const n = new Set([...a, ...h]).size, h2h = Math.min(a.length - both.length, h.length - both.length);
-    return {g, n, stakes: n + 3 * h2h + close(spread(g))};
+    const worth = g.kind === 'conf' ? PTS.conf : g.kind === 'nonconf' ? PTS.nonconf
+      : g.kind === 'conf_tourney' ? PTS.ct + (/(?<!semi|quarter|semi-|quarter-)final\b|championship/i.test(g.event || '') ? PTS.ct_champ : 0)
+      : g.kind === 'ncaa' ? (PTS.ncaa[g.round] || 2) : 1;
+    return {g, n, worth, stakes: (n + 3 * h2h) * worth + close(spread(g))};
   }).filter(x => x.n >= 2)
     .sort((a, b) => b.stakes - a.stakes || (a.g.start || '').localeCompare(b.g.start || ''));
   if (!scored.length) { el.hidden = true; return; }
@@ -881,4 +889,8 @@ def share_description(data):
 
 def render_html(data):
     blob = json.dumps(data).replace("</", "<\\/")
-    return TEMPLATE.replace("__OG_DESC__", html.escape(share_description(data), quote=True)).replace("__DATA__", blob)
+    # the pool's point values, so the page can weigh what a game is worth (Game of the Day)
+    pts = json.dumps({"nonconf": C.PTS_NONCONF_WIN, "conf": C.PTS_CONF_WIN, "ct": C.PTS_CONF_TOURNEY_WIN,
+                      "ct_champ": C.PTS_CONF_TOURNEY_CHAMP, "ncaa": C.PTS_NCAA_ROUND})
+    return (TEMPLATE.replace("__OG_DESC__", html.escape(share_description(data), quote=True))
+            .replace("__PTS__", pts).replace("__DATA__", blob))
