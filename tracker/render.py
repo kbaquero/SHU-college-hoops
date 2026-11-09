@@ -29,8 +29,8 @@ TEMPLATE = r"""<!doctype html>
 <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--head:#f4f2ec;--head2:#e7e4dc;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd;--live:#dc2626;--g1b:#e6f4ea;--g1t:#1e7a3e;--g2b:#c3e8cf;--g2t:#14632f;--g3b:#9ddcb0;--g3t:#0f4a22;--g4b:#5cc27f;--g4t:#062a12;--g5b:#1f9d4f;--g5t:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--head:#23262c;--head2:#30333b;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45;--live:#e5484d;--g1b:#17291e;--g1t:#7ad99a;--g2b:#1d4a2c;--g2t:#a7f0bf;--g3b:#22603a;--g3t:#dcfce7;--g4b:#2e8a4f;--g4t:#f0fdf4;--g5b:#3cc06b;--g5t:#06170c}}
+:root{--bg:#f6f5f1;--card:#fff;--head:#f4f2ec;--head2:#e7e4dc;--ink:#1b1d21;--mute:#6a6f78;--line:#e3e1da;--accent:#c2410c;--good:#15803d;--bad:#b91c1c;--chip:#f0eee8;--me:#2563eb;--metint:#e8effd;--live:#dc2626;--gold:#d48806;--g1b:#e6f4ea;--g1t:#1e7a3e;--g2b:#c3e8cf;--g2t:#14632f;--g3b:#9ddcb0;--g3t:#0f4a22;--g4b:#5cc27f;--g4t:#062a12;--g5b:#1f9d4f;--g5t:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--head:#23262c;--head2:#30333b;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45;--live:#e5484d;--gold:#f5b83d;--g1b:#17291e;--g1t:#7ad99a;--g2b:#1d4a2c;--g2t:#a7f0bf;--g3b:#22603a;--g3t:#dcfce7;--g4b:#2e8a4f;--g4t:#f0fdf4;--g5b:#3cc06b;--g5t:#06170c}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 main{max-width:960px;margin:0 auto;padding:calc(24px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
@@ -77,7 +77,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .mc-empty span{display:block}.mc-e1{font-weight:700;font-size:16px}.mc-e2{font-size:13px;color:var(--mute);margin-top:3px;line-height:1.4}
 .gotd{margin:14px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .gd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 14px;background:var(--head);font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
-.gd-top b{color:var(--ink);font-weight:750;white-space:nowrap}.gd-top b em{font-style:normal;color:#f59e0b;margin-right:5px}
+.gd-top b{color:var(--ink);font-weight:750;white-space:nowrap}.gd-top b em{font-style:normal;color:var(--gold);margin-right:5px}
 .gd-top .st{text-transform:none;letter-spacing:0;font-weight:500;font-size:12px;text-align:right;display:flex;align-items:center;gap:6px;justify-content:flex-end;flex-wrap:wrap}
 .gd-top .st .livepill{margin:0}
 .gd-m{display:grid;grid-template-columns:max-content minmax(0,1fr) auto;gap:6px 12px;padding:10px 14px 11px;align-items:baseline}
@@ -148,6 +148,11 @@ h2.withnote{margin-bottom:2px}
 .mvc{display:inline-block;width:2.2em;padding-left:5px;white-space:nowrap}
 .h2sub{text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
 .game{display:grid;grid-template-columns:84px 1fr;gap:4px 12px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:start}
+/* Game of the Day, marked where it sits: a gold ring drawn just inside the row (so it nests inside the blue "your games" outline) */
+.game.is-gotd{position:relative}
+.game.is-gotd::after{content:"";position:absolute;inset:4px;border:2px solid var(--gold);border-radius:9px;pointer-events:none}
+.tag.gotd-tag{color:var(--gold);background:color-mix(in srgb,var(--gold) 14%,transparent)}
+.gtype{display:flex;flex-wrap:wrap;gap:6px}
 .game:last-child{border-bottom:0}
 .narrow .game{grid-template-columns:3.2em 1fr}
 .narrow.ot .game{grid-template-columns:4.6em 1fr}
@@ -523,8 +528,10 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
     const where = g.event ? `<div class="gevent">${esc(g.event)}</div>` : g.neutral ? '<div class="gsite">Neutral site</div>' : '';
     const under = where + (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
     const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
-    const type = label ? `<div class="gtype"><span class="tag k-${g.kind}">${esc(label)}</span></div>` : '';
-    return `<div class="game" data-idx="${idx}"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
+    const gotd = td === D.today && window.GOTD && g.id === window.GOTD;
+    const star = gotd ? '<span class="tag gotd-tag">★ Game of the Day</span>' : '';
+    const type = label || star ? `<div class="gtype">${label ? `<span class="tag k-${g.kind}">${esc(label)}</span>` : ''}${star}</div>` : '';
+    return `<div class="game${gotd ? ' is-gotd' : ''}" data-idx="${idx}"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
       side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) + type + `</div></div>`;
   }).join('');
 }
@@ -545,6 +552,7 @@ if (STALE) { $('#today-h').textContent = "Yesterday's games"; $('#yesterday-h').
     .sort((a, b) => b.stakes - a.stakes || (a.g.start || '').localeCompare(b.g.start || ''));
   if (!scored.length) { el.hidden = true; return; }
   const {g, n} = scored[0], live = !g.completed && g.live, fin = g.completed;
+  window.GOTD = g.id;   // the Games tab marks this game in place
   const sc = sd => fin ? sd.final : live ? sd.live : null;
   const side = (sd, other) => {
     const v = sc(sd), lose = fin && !sd.won;
