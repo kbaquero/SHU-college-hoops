@@ -99,7 +99,7 @@ How games are classified:
 - **Morning (about 5:50 AM Eastern):** full update and the official numbers. Standings, chart and team logs count
   games through the previous day. The pool's day rolls over at 5 AM Eastern, so late games always land in the next
   morning's update.
-- **Evenings (every 30 minutes, about 7 PM to 1 AM Eastern):** Today's games refresh: finals, in-progress snapshots, pregame
+- **Afternoons and evenings (every 30 minutes, about noon to 1 AM Eastern):** Today's games refresh: finals, in-progress snapshots, pregame
   spreads. The page adds each final to the morning totals, so the standings are live (finals only; in-progress games
   don't count). The next morning's full update re-scores everything from scratch.
 - **The standings' third column** reads "Yesterday" (last night's gains, arrows vs. the day before) from 5 AM until

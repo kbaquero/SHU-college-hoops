@@ -5,6 +5,7 @@ on:
     - cron: "47 10 * * *"   # full update: 10:47 UTC = 5:47 AM Eastern (6:47 AM during daylight time)
     - cron: "7 0-6 * * *"   # evening scores: hourly 7:07 PM-1:07 AM Eastern (8:07 PM-2:07 AM during daylight time)
     - cron: "37 0-5 * * *"  # evening scores, half past: 7:37 PM-12:37 AM Eastern (8:37 PM-1:37 AM during daylight time)
+    - cron: "7,37 17-23 * * *"  # afternoon scores for weekend/holiday day games: 12:07-6:37 PM Eastern (1:07-7:37 PM daylight)
   workflow_dispatch:         # "Run workflow" button for manual updates
     inputs:
       mode:
