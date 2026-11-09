@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-08 11:47 EST",
+ "updated": "2026-11-08 19:11 EST",
+ "scores_updated": "7:11 PM",
  "through": "Sat, Nov 7",
  "season": 2027,
  "standings": [
@@ -6366,7 +6367,7 @@
     "tbd": false,
     "tv": "Peacock",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6379,14 +6380,14 @@
       "Dennis S.",
       "Jason H."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "65-104",
      "opp": "St. John's",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 65,
+     "opp_final": 104,
      "opp_id": "2599",
-     "record": "2-0"
+     "record": "2-1"
     },
     "home": {
      "team": "St. John's",
@@ -6397,14 +6398,14 @@
       "Mike L.",
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "104-65",
      "opp": "Iona",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 104,
+     "opp_final": 65,
      "opp_id": "314",
-     "record": "1-0"
+     "record": "2-0"
     },
     "time": "12:00 PM",
     "line": "SJU -26.5"
@@ -6415,7 +6416,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6432,14 +6433,14 @@
       "Ben D.",
       "Dan P."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "72-91",
      "opp": "Virginia",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 72,
+     "opp_final": 91,
      "opp_id": "258",
-     "record": "1-0"
+     "record": "1-1"
     },
     "home": {
      "team": "Virginia",
@@ -6447,9 +6448,9 @@
      "home": false,
      "owners": [],
      "id": "258",
-     "final": null,
-     "won": null,
-     "record": "2-0"
+     "final": 91,
+     "won": true,
+     "record": "3-0"
     },
     "time": "1:00 PM",
     "line": "UVA -3.5"
@@ -6460,7 +6461,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6474,14 +6475,14 @@
       "Dan P.",
       "Mike L."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "61-63",
      "opp": "UMass Lowell",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 61,
+     "opp_final": 63,
      "opp_id": "2349",
-     "record": "1-1"
+     "record": "1-2"
     },
     "home": {
      "team": "UMass Lowell",
@@ -6489,9 +6490,9 @@
      "home": true,
      "owners": [],
      "id": "2349",
-     "final": null,
-     "won": null,
-     "record": "2-0"
+     "final": 63,
+     "won": true,
+     "record": "3-0"
     },
     "time": "1:00 PM",
     "line": "UML -1.5"
@@ -6502,7 +6503,7 @@
     "tbd": false,
     "tv": "ESPN+, Patriot League TV",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6513,8 +6514,8 @@
      "home": false,
      "owners": [],
      "id": "3164",
-     "final": null,
-     "won": null,
+     "final": 46,
+     "won": false,
      "record": ""
     },
     "home": {
@@ -6524,14 +6525,14 @@
      "owners": [
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "102-46",
      "opp": "Central Penn",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 102,
+     "opp_final": 46,
      "opp_id": "3164",
-     "record": "1-1"
+     "record": "2-1"
     },
     "time": "1:00 PM",
     "line": ""
@@ -6542,7 +6543,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6553,9 +6554,9 @@
      "home": false,
      "owners": [],
      "id": "163",
-     "final": null,
-     "won": null,
-     "record": "2-0"
+     "final": 68,
+     "won": false,
+     "record": "2-1"
     },
     "home": {
      "team": "Siena",
@@ -6565,14 +6566,14 @@
       "Drew & Bob D.",
       "Kevin B."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "82-68",
      "opp": "Princeton",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 82,
+     "opp_final": 68,
      "opp_id": "163",
-     "record": "0-1"
+     "record": "1-1"
     },
     "time": "1:00 PM",
     "line": "PRIN -2.5"
@@ -6583,7 +6584,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6595,14 +6596,14 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "68-78",
      "opp": "South Carolina",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 68,
+     "opp_final": 78,
      "opp_id": "2579",
-     "record": "2-0"
+     "record": "2-1"
     },
     "home": {
      "team": "South Carolina",
@@ -6610,9 +6611,9 @@
      "home": true,
      "owners": [],
      "id": "2579",
-     "final": null,
-     "won": null,
-     "record": "1-0"
+     "final": 78,
+     "won": true,
+     "record": "2-0"
     },
     "time": "1:00 PM",
     "line": "SC -17.5"
@@ -6623,7 +6624,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6634,9 +6635,9 @@
      "home": false,
      "owners": [],
      "id": "225",
-     "final": null,
-     "won": null,
-     "record": "0-2"
+     "final": 65,
+     "won": true,
+     "record": "1-2"
     },
     "home": {
      "team": "Lehigh",
@@ -6645,14 +6646,14 @@
      "owners": [
       "Chris C."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "55-65",
      "opp": "Brown",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 55,
+     "opp_final": 65,
      "opp_id": "225",
-     "record": "1-1"
+     "record": "1-2"
     },
     "time": "2:00 PM",
     "line": "LEH -5.5"
@@ -6663,7 +6664,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6674,9 +6675,9 @@
      "home": false,
      "owners": [],
      "id": "2514",
-     "final": null,
-     "won": null,
-     "record": "1-1"
+     "final": 79,
+     "won": true,
+     "record": "2-1"
     },
     "home": {
      "team": "Vermont",
@@ -6690,14 +6691,14 @@
       "Sean P.",
       "Drew & Bob D."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "76-79",
      "opp": "Quinnipiac",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 76,
+     "opp_final": 79,
      "opp_id": "2514",
-     "record": "1-1"
+     "record": "1-2"
     },
     "time": "2:00 PM",
     "line": "UVM -8.5"
@@ -6708,7 +6709,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6719,8 +6720,8 @@
      "home": false,
      "owners": [],
      "id": "2019",
-     "final": null,
-     "won": null,
+     "final": 67,
+     "won": false,
      "record": ""
     },
     "home": {
@@ -6730,14 +6731,14 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "100-67",
      "opp": "Allen",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 100,
+     "opp_final": 67,
      "opp_id": "2019",
-     "record": "0-2"
+     "record": "1-2"
     },
     "time": "2:00 PM",
     "line": ""
@@ -6748,7 +6749,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6762,14 +6763,14 @@
       "Joe H.",
       "Jason H."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "68-75",
      "opp": "Drake",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 68,
+     "opp_final": 75,
      "opp_id": "2181",
-     "record": "0-2"
+     "record": "0-3"
     },
     "home": {
      "team": "Drake",
@@ -6777,9 +6778,9 @@
      "home": true,
      "owners": [],
      "id": "2181",
-     "final": null,
-     "won": null,
-     "record": "1-0"
+     "final": 75,
+     "won": true,
+     "record": "2-0"
     },
     "time": "3:00 PM",
     "line": "DRKE -13.5"
@@ -6790,7 +6791,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -6801,9 +6802,9 @@
      "home": false,
      "owners": [],
      "id": "2612",
-     "final": null,
-     "won": null,
-     "record": "0-2"
+     "final": 52,
+     "won": false,
+     "record": "0-3"
     },
     "home": {
      "team": "NJIT",
@@ -6812,14 +6813,14 @@
      "owners": [
       "Mike L."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "54-52",
      "opp": "Saint Peter's",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 54,
+     "opp_final": 52,
      "opp_id": "2612",
-     "record": "0-2"
+     "record": "1-2"
     },
     "time": "4:00 PM",
     "line": "SPU -1.5"
@@ -6830,10 +6831,10 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "Lake Tahoe Classic",
     "away": {
      "team": "Saint Mary's",
@@ -6843,14 +6844,14 @@
       "Dennis S.",
       "Ben D."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "95-96",
      "opp": "Nevada",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 95,
+     "opp_final": 96,
      "opp_id": "2440",
-     "record": "2-0"
+     "record": "2-1"
     },
     "home": {
      "team": "Nevada",
@@ -6858,9 +6859,9 @@
      "home": false,
      "owners": [],
      "id": "2440",
-     "final": null,
-     "won": null,
-     "record": "1-0"
+     "final": 96,
+     "won": true,
+     "record": "2-0"
     },
     "time": "4:30 PM",
     "line": "NEV -1.5"
@@ -6890,7 +6891,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2729",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 35
     },
     "home": {
      "team": "William & Mary",
@@ -6900,10 +6902,15 @@
      "id": "2729",
      "final": null,
      "won": null,
-     "record": "1-0"
+     "record": "1-0",
+     "live": 54
     },
     "time": "6:00 PM",
-    "line": "W&M -9.5"
+    "line": "W&M -9.5",
+    "live": {
+     "detail": "Halftime",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401920134",
@@ -6930,7 +6937,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2934",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 50
     },
     "home": {
      "team": "Cal St. Bakersfield",
@@ -6940,10 +6948,15 @@
      "id": "2934",
      "final": null,
      "won": null,
-     "record": "1-0"
+     "record": "1-0",
+     "live": 43
     },
     "time": "6:00 PM",
-    "line": "NDSU -2.5"
+    "line": "NDSU -2.5",
+    "live": {
+     "detail": "15:16 2nd",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401929352",
@@ -6970,7 +6983,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2638",
-     "record": "0-2"
+     "record": "0-2",
+     "live": 2
     },
     "home": {
      "team": "UTEP",
@@ -6980,10 +6994,15 @@
      "id": "2638",
      "final": null,
      "won": null,
-     "record": "0-1"
+     "record": "0-1",
+     "live": 10
     },
     "time": "7:00 PM",
-    "line": "UTEP -12.5"
+    "line": "UTEP -12.5",
+    "live": {
+     "detail": "15:55 1st",
+     "as_of": "7:11 PM"
+    }
    }
   ]
  },
