@@ -81,6 +81,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .mc-stats{display:flex;gap:16px;padding:0 14px 12px 18px;font-size:13px;color:var(--mute)}
 .mc-stats b{color:var(--ink);font-size:15px;font-variant-numeric:tabular-nums;margin-right:3px}
 .mc-sec{border-top:1px solid var(--line);padding:10px 14px 10px 18px}
+.mc-none{font-size:14px;color:var(--mute)}
 .mc-h{display:flex;justify-content:space-between;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-bottom:6px}
 .mc-h span:last-child{text-transform:none;letter-spacing:0;font-weight:400}
 .mc-g{display:grid;grid-template-columns:minmax(0,1fr) 5.2em 2.3em 4.6em;gap:8px;align-items:baseline;font-size:14px;padding:3px 0}
@@ -662,9 +663,14 @@ function renderMyCard(me) {
   const today = rows(D.today, false), yest = rows(D.yesterday, true);
   const started = (D.today?.games || []).some(g => g.live || g.completed);
   const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>` : '';
+  // Time decides what's worth the space: mornings lead with last night's results (and preview today);
+  // from noon, or the first final, it's just today. Yesterday stays in the Games tab.
+  const todaySec = () => sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today);
+  const body = STALE ? sec('Yesterday', '', today) + sec(D.yesterday?.label || 'Earlier', '', yest)
+    : MORNING ? sec('Yesterday', '', yest) + todaySec()
+    : todaySec();
   el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">Daily Summary</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
-    sec(STALE ? 'Yesterday' : 'Today', started && !STALE && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today) +
-    sec(STALE ? (D.yesterday?.label || 'Earlier') : 'Yesterday', '', yest) + '</div>';
+    (body || `<div class="mc-sec mc-none">No games today</div>`) + '</div>';
   el.hidden = false;
 }
 
