@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10 13:16 EST",
+ "updated": "2026-11-10 17:18 EST",
  "through": "Mon, Nov 9",
  "season": 2027,
  "standings": [
@@ -7312,7 +7312,7 @@
      "record": "2-0"
     },
     "time": "6:00 PM",
-    "line": "FLA -9.5"
+    "line": "FLA -8.5"
    },
    {
     "id": "401909514",
@@ -7520,7 +7520,7 @@
      "record": "2-0"
     },
     "time": "7:00 PM",
-    "line": "IOWA -4.5"
+    "line": "IOWA -3.5"
    },
    {
     "id": "401918957",
@@ -7567,7 +7567,7 @@
      "record": "2-0"
     },
     "time": "7:00 PM",
-    "line": "NCSU -19.5"
+    "line": "NCSU -18.5"
    },
    {
     "id": "401913101",
@@ -7889,7 +7889,7 @@
      "record": "1-2"
     },
     "time": "8:00 PM",
-    "line": "BEL -4.5"
+    "line": "BEL -3.5"
    },
    {
     "id": "401918969",
@@ -8184,7 +8184,7 @@
      "record": "2-0"
     },
     "time": "9:00 PM",
-    "line": "BYU -29.5"
+    "line": "BYU -28.5"
    },
    {
     "id": "401909492",
@@ -9068,5 +9068,6 @@
    }
   ]
  },
- "warnings": []
+ "warnings": [],
+ "scores_updated": "5:18 PM"
 }
