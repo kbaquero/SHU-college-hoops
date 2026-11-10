@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-09 16:05 EST",
+ "updated": "2026-11-09 19:12 EST",
+ "scores_updated": "7:12 PM",
  "through": "Sun, Nov 8",
  "season": 2027,
  "standings": [
@@ -6748,48 +6749,6 @@
   "label": "Mon, Nov 9",
   "games": [
    {
-    "id": "401925662",
-    "start": "2026-11-09T18:00:00-05:00",
-    "tbd": false,
-    "tv": "",
-    "neutral": false,
-    "completed": false,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Georgia Gwinnett",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "134891",
-     "final": null,
-     "won": null,
-     "record": ""
-    },
-    "home": {
-     "team": "Alabama St.",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Mike C.",
-      "Jason H.",
-      "Sean P."
-     ],
-     "won": null,
-     "score": "",
-     "opp": "Georgia Gwinnett",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
-     "opp_id": "134891",
-     "record": "0-1"
-    },
-    "time": "6:00 PM",
-    "line": ""
-   },
-   {
     "id": "401911009",
     "start": "2026-11-09T18:30:00-05:00",
     "tbd": false,
@@ -6808,7 +6767,8 @@
      "id": "128344",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 24
     },
     "home": {
      "team": "Buffalo",
@@ -6824,10 +6784,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "128344",
-     "record": "0-2"
+     "record": "0-2",
+     "live": 45
     },
     "time": "6:30 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "3:36 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401921180",
@@ -6856,7 +6821,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "219",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 27
     },
     "home": {
      "team": "Penn",
@@ -6872,10 +6838,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "47",
-     "record": "0-1"
+     "record": "0-1",
+     "live": 18
     },
     "time": "6:30 PM",
-    "line": "PENN -5.5"
+    "line": "PENN -5.5",
+    "live": {
+     "detail": "4:13 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401909718",
@@ -6896,7 +6867,8 @@
      "id": "183",
      "final": null,
      "won": null,
-     "record": "2-0"
+     "record": "2-0",
+     "live": 33
     },
     "home": {
      "team": "Indiana",
@@ -6912,10 +6884,63 @@
      "final": null,
      "opp_final": null,
      "opp_id": "183",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 34
     },
     "time": "6:30 PM",
-    "line": "IU -5.5"
+    "line": "IU -5.5",
+    "live": {
+     "detail": "3:06 1st",
+     "as_of": "7:12 PM"
+    }
+   },
+   {
+    "id": "401925662",
+    "start": "2026-11-09T19:00:00-05:00",
+    "tbd": false,
+    "tv": "",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Georgia Gwinnett",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "134891",
+     "final": null,
+     "won": null,
+     "record": "",
+     "live": 6
+    },
+    "home": {
+     "team": "Alabama St.",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Mike C.",
+      "Jason H.",
+      "Sean P."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Georgia Gwinnett",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "134891",
+     "record": "0-1",
+     "live": 5
+    },
+    "time": "7:00 PM",
+    "line": "",
+    "live": {
+     "detail": "15:45 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401918074",
@@ -6936,7 +6961,8 @@
      "id": "155",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 16
     },
     "home": {
      "team": "Clemson",
@@ -6952,10 +6978,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "155",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 13
     },
     "time": "7:00 PM",
-    "line": "CLEM -22.5"
+    "line": "CLEM -22.5",
+    "live": {
+     "detail": "12:58 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401920686",
@@ -6982,7 +7013,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "41",
-     "record": "0-2"
+     "record": "0-2",
+     "live": 0
     },
     "home": {
      "team": "Connecticut",
@@ -7003,10 +7035,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2681",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 12
     },
     "time": "7:00 PM",
-    "line": "CONN -40.5"
+    "line": "CONN -40.5",
+    "live": {
+     "detail": "15:37 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401906781",
@@ -7033,7 +7070,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "61",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 11
     },
     "home": {
      "team": "Georgia",
@@ -7049,10 +7087,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "526",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 8
     },
     "time": "7:00 PM",
-    "line": "UGA -22.5"
+    "line": "UGA -22.5",
+    "live": {
+     "detail": "15:48 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401920877",
@@ -7073,7 +7116,8 @@
      "id": "140",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 3
     },
     "home": {
      "team": "Jacksonville",
@@ -7089,10 +7133,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "140",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 10
     },
     "time": "7:00 PM",
-    "line": "JAX -4.5"
+    "line": "JAX -4.5",
+    "live": {
+     "detail": "15:33 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401919806",
@@ -7121,7 +7170,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "119",
-     "record": "0-3"
+     "record": "0-3",
+     "live": 11
     },
     "home": {
      "team": "Towson",
@@ -7131,10 +7181,15 @@
      "id": "119",
      "final": null,
      "won": null,
-     "record": "0-2"
+     "record": "0-2",
+     "live": 17
     },
     "time": "7:00 PM",
-    "line": "TOW -7.5"
+    "line": "TOW -7.5",
+    "live": {
+     "detail": "13:33 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401919781",
@@ -7155,7 +7210,8 @@
      "id": "347",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 5
     },
     "home": {
      "team": "Le Moyne",
@@ -7171,10 +7227,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "347",
-     "record": "0-2"
+     "record": "0-2",
+     "live": 20
     },
     "time": "7:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "13:08 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401921720",
@@ -7195,7 +7256,8 @@
      "id": "2454",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 5
     },
     "home": {
      "team": "Miami FL",
@@ -7214,10 +7276,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2454",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 12
     },
     "time": "7:00 PM",
-    "line": "MIA -36.5"
+    "line": "MIA -36.5",
+    "live": {
+     "detail": "14:12 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401906849",
@@ -7238,7 +7305,8 @@
      "id": "2515",
      "final": null,
      "won": null,
-     "record": "0-2"
+     "record": "0-2",
+     "live": 6
     },
     "home": {
      "team": "Tennessee",
@@ -7254,10 +7322,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2515",
-     "record": "1-0"
+     "record": "1-0",
+     "live": 4
     },
     "time": "7:00 PM",
-    "line": "TENN -30.5"
+    "line": "TENN -30.5",
+    "live": {
+     "detail": "15:23 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401919016",
@@ -7378,7 +7451,7 @@
      "record": "2-0"
     },
     "time": "7:30 PM",
-    "line": "MSST -23.5"
+    "line": "MSST -24.5"
    },
    {
     "id": "401921810",
