@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 22:11 EST",
- "scores_updated": "10:11 PM",
+ "updated": "2026-11-09 23:11 EST",
+ "scores_updated": "11:11 PM",
  "through": "Sun, Nov 8",
  "season": 2027,
  "standings": [
@@ -7528,7 +7528,7 @@
      "opp_final": null,
      "opp_id": "2429",
      "record": "2-0",
-     "live": 36
+     "live": 60
     },
     "home": {
      "team": "Charlotte",
@@ -7539,13 +7539,13 @@
      "final": null,
      "won": null,
      "record": "2-0",
-     "live": 34
+     "live": 55
     },
     "time": "9:00 PM",
     "line": "HALL -4.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:11 PM"
+     "detail": "3:33 2nd",
+     "as_of": "11:11 PM"
     }
    }
   ]
