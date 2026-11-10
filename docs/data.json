@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 23:11 EST",
- "scores_updated": "11:11 PM",
+ "updated": "2026-11-10 00:11 EST",
+ "scores_updated": "12:11 AM",
  "through": "Sun, Nov 8",
  "season": 2027,
  "standings": [
@@ -7508,7 +7508,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -7520,15 +7520,14 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "68-62",
      "opp": "Charlotte",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 68,
+     "opp_final": 62,
      "opp_id": "2429",
-     "record": "2-0",
-     "live": 60
+     "record": "3-0"
     },
     "home": {
      "team": "Charlotte",
@@ -7536,17 +7535,12 @@
      "home": false,
      "owners": [],
      "id": "2429",
-     "final": null,
-     "won": null,
-     "record": "2-0",
-     "live": 55
+     "final": 62,
+     "won": false,
+     "record": "2-1"
     },
     "time": "9:00 PM",
-    "line": "HALL -4.5",
-    "live": {
-     "detail": "3:33 2nd",
-     "as_of": "11:11 PM"
-    }
+    "line": "HALL -4.5"
    }
   ]
  },
