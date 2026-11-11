@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-11 09:03 EST",
+ "updated": "2026-11-11 13:03 EST",
+ "scores_updated": "1:03 PM",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -7931,7 +7932,8 @@
      "id": "140",
      "final": null,
      "won": null,
-     "record": "1-2"
+     "record": "1-2",
+     "live": 54
     },
     "home": {
      "team": "Florida A&M",
@@ -7947,10 +7949,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "140",
-     "record": "0-3"
+     "record": "0-3",
+     "live": 24
     },
     "time": "12:00 PM",
-    "line": "KC -6.5"
+    "line": "KC -6.5",
+    "live": {
+     "detail": "17:25 2nd",
+     "as_of": "1:03 PM"
+    }
    },
    {
     "id": "401911519",
@@ -8338,7 +8345,7 @@
      "record": "2-1"
     },
     "time": "7:00 PM",
-    "line": "ODU -5.5"
+    "line": "ODU -6.5"
    },
    {
     "id": "401926863",
@@ -8378,7 +8385,7 @@
      "record": "2-0"
     },
     "time": "7:00 PM",
-    "line": "UNCW -8.5"
+    "line": "UNCW -7.5"
    },
    {
     "id": "401926060",
@@ -8469,7 +8476,7 @@
      "record": "1-1"
     },
     "time": "8:00 PM",
-    "line": "ARK -31.5"
+    "line": "ARK -30.5"
    },
    {
     "id": "401911346",
@@ -8552,7 +8559,7 @@
      "record": "2-0"
     },
     "time": "9:00 PM",
-    "line": "UCLA -45.5"
+    "line": "UCLA -46.5"
    },
    {
     "id": "401929625",
@@ -9596,6 +9603,5 @@
    }
   ]
  },
- "warnings": [],
- "scores_updated": "9:03 AM"
+ "warnings": []
 }
