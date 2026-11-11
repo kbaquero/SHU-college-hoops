@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-10 22:11 EST",
- "scores_updated": "10:11 PM",
+ "updated": "2026-11-11 00:57 EST",
+ "scores_updated": "12:57 AM",
  "through": "Mon, Nov 9",
  "season": 2027,
  "standings": [
@@ -7818,7 +7818,7 @@
     "tbd": false,
     "tv": "Peacock",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -7830,15 +7830,14 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Texas Tech",
      "pts": 0,
-     "final": null,
+     "final": 78,
      "opp_final": null,
      "opp_id": "2641",
-     "record": "2-0",
-     "live": 76
+     "record": "2-1"
     },
     "home": {
      "team": "Texas Tech",
@@ -7846,17 +7845,12 @@
      "home": true,
      "owners": [],
      "id": "2641",
-     "final": null,
-     "won": null,
-     "record": "2-0",
-     "live": 81
+     "final": 84,
+     "won": true,
+     "record": "3-0"
     },
     "time": "8:00 PM",
-    "line": "ILL -2.5",
-    "live": {
-     "detail": "0:29 2nd",
-     "as_of": "10:11 PM"
-    }
+    "line": "ILL -2.5"
    },
    {
     "id": "401920704",
@@ -8027,7 +8021,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8038,10 +8032,9 @@
      "home": false,
      "owners": [],
      "id": "2217",
-     "final": null,
-     "won": null,
-     "record": "1-1",
-     "live": 34
+     "final": 42,
+     "won": false,
+     "record": "1-2"
     },
     "home": {
      "team": "Wisconsin",
@@ -8050,22 +8043,17 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Fairfield",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 89,
      "opp_final": null,
      "opp_id": "2217",
-     "record": "2-0",
-     "live": 74
+     "record": "3-0"
     },
     "time": "8:30 PM",
-    "line": "WIS -25.5",
-    "live": {
-     "detail": "7:17 2nd",
-     "as_of": "10:11 PM"
-    }
+    "line": "WIS -25.5"
    },
    {
     "id": "401909740",
@@ -8073,7 +8061,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8084,10 +8072,9 @@
      "home": false,
      "owners": [],
      "id": "2464",
-     "final": null,
-     "won": null,
-     "record": "0-2",
-     "live": 27
+     "final": 59,
+     "won": false,
+     "record": "0-3"
     },
     "home": {
      "team": "Arizona",
@@ -8096,22 +8083,17 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Northern Arizona",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 90,
      "opp_final": null,
      "opp_id": "2464",
-     "record": "1-1",
-     "live": 52
+     "record": "2-1"
     },
     "time": "9:00 PM",
-    "line": "ARIZ -35.5",
-    "live": {
-     "detail": "17:22 2nd",
-     "as_of": "10:11 PM"
-    }
+    "line": "ARIZ -35.5"
    },
    {
     "id": "401921733",
@@ -8119,7 +8101,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8130,10 +8112,9 @@
      "home": false,
      "owners": [],
      "id": "2275",
-     "final": null,
-     "won": null,
-     "record": "1-1",
-     "live": 33
+     "final": 63,
+     "won": false,
+     "record": "1-2"
     },
     "home": {
      "team": "Arizona St.",
@@ -8146,22 +8127,17 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Hofstra",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 85,
      "opp_final": null,
      "opp_id": "2275",
-     "record": "2-0",
-     "live": 47
+     "record": "3-0"
     },
     "time": "9:00 PM",
-    "line": "ASU -18.5",
-    "live": {
-     "detail": "17:20 2nd",
-     "as_of": "10:11 PM"
-    }
+    "line": "ASU -18.5"
    },
    {
     "id": "401921740",
@@ -8169,7 +8145,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8181,15 +8157,14 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "BYU",
      "pts": 0,
-     "final": null,
+     "final": 82,
      "opp_final": null,
      "opp_id": "252",
-     "record": "2-1",
-     "live": 50
+     "record": "2-2"
     },
     "home": {
      "team": "BYU",
@@ -8200,22 +8175,17 @@
       "Marty C.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Queens",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 98,
      "opp_final": null,
      "opp_id": "2511",
-     "record": "2-0",
-     "live": 57
+     "record": "3-0"
     },
     "time": "9:00 PM",
-    "line": "BYU -28.5",
-    "live": {
-     "detail": "15:52 2nd",
-     "as_of": "10:11 PM"
-    }
+    "line": "BYU -28.5"
    },
    {
     "id": "401909492",
@@ -8223,7 +8193,7 @@
     "tbd": false,
     "tv": "FS1",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8234,10 +8204,9 @@
      "home": false,
      "owners": [],
      "id": "156",
-     "final": null,
-     "won": null,
-     "record": "2-0",
-     "live": 40
+     "final": 82,
+     "won": false,
+     "record": "2-1"
     },
     "home": {
      "team": "Kansas St.",
@@ -8246,22 +8215,17 @@
      "owners": [
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Creighton",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 89,
      "opp_final": null,
      "opp_id": "156",
-     "record": "1-1",
-     "live": 40
+     "record": "2-1"
     },
     "time": "9:00 PM",
-    "line": "CREI -3.5",
-    "live": {
-     "detail": "Halftime",
-     "as_of": "10:11 PM"
-    }
+    "line": "CREI -3.5"
    },
    {
     "id": "401921699",
@@ -8269,7 +8233,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8281,15 +8245,14 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Utah",
      "pts": 0,
-     "final": null,
+     "final": 64,
      "opp_final": null,
      "opp_id": "254",
-     "record": "0-2",
-     "live": 41
+     "record": "0-3"
     },
     "home": {
      "team": "Utah",
@@ -8297,17 +8260,12 @@
      "home": true,
      "owners": [],
      "id": "254",
-     "final": null,
-     "won": null,
-     "record": "2-0",
-     "live": 42
+     "final": 85,
+     "won": true,
+     "record": "3-0"
     },
     "time": "9:00 PM",
-    "line": "UTAH -16.5",
-    "live": {
-     "detail": "15:24 2nd",
-     "as_of": "10:11 PM"
-    }
+    "line": "UTAH -16.5"
    }
   ]
  },
