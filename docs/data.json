@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 13:03 EST",
- "scores_updated": "1:03 PM",
+ "updated": "2026-11-11 16:43 EST",
+ "scores_updated": "4:43 PM",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -7919,7 +7919,7 @@
     "tbd": false,
     "tv": "YouTube",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -7930,10 +7930,9 @@
      "home": false,
      "owners": [],
      "id": "140",
-     "final": null,
-     "won": null,
-     "record": "1-2",
-     "live": 54
+     "final": 87,
+     "won": true,
+     "record": "2-2"
     },
     "home": {
      "team": "Florida A&M",
@@ -7942,22 +7941,17 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Kansas City",
      "pts": 0,
-     "final": null,
+     "final": 65,
      "opp_final": null,
      "opp_id": "140",
-     "record": "0-3",
-     "live": 24
+     "record": "0-4"
     },
     "time": "12:00 PM",
-    "line": "KC -6.5",
-    "live": {
-     "detail": "17:25 2nd",
-     "as_of": "1:03 PM"
-    }
+    "line": "KC -6.5"
    },
    {
     "id": "401911519",
@@ -7965,7 +7959,7 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -7977,14 +7971,14 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "UC Davis",
      "pts": 0,
-     "final": null,
+     "final": 69,
      "opp_final": null,
      "opp_id": "302",
-     "record": "0-3"
+     "record": "0-4"
     },
     "home": {
      "team": "UC Davis",
@@ -7992,9 +7986,9 @@
      "home": true,
      "owners": [],
      "id": "302",
-     "final": null,
-     "won": null,
-     "record": "1-1"
+     "final": 81,
+     "won": true,
+     "record": "2-1"
     },
     "time": "2:00 PM",
     "line": "UCD -11.5"
@@ -8215,7 +8209,7 @@
      "record": "1-1"
     },
     "time": "7:00 PM",
-    "line": "JMU -3.5"
+    "line": "JMU -2.5"
    },
    {
     "id": "401909524",
@@ -8476,7 +8470,7 @@
      "record": "1-1"
     },
     "time": "8:00 PM",
-    "line": "ARK -30.5"
+    "line": "ARK -29.5"
    },
    {
     "id": "401911346",
@@ -8559,7 +8553,7 @@
      "record": "2-0"
     },
     "time": "9:00 PM",
-    "line": "UCLA -46.5"
+    "line": "UCLA -47.5"
    },
    {
     "id": "401929625",
