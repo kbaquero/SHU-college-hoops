@@ -122,5 +122,7 @@ How games are classified:
 - **Any push to `data/`, `tracker/`, `tests/` or `.github/`** runs a full update, which is safe at any hour.
 
 GitHub's own cron schedules (in the workflow) often fire late or get skipped, so two Claude scheduled tasks
-("SHU pool – morning standings nudge" and "SHU pool – evening scores nudge") also push a timestamp to
-`data/.tick` on that schedule to start the workflow. Either path produces the same result.
+also push a timestamp to `data/.tick` to start the workflow. Either path produces the same result.
+- "SHU pool – morning standings nudge": 5:50 AM Eastern, skipped if that morning's update already landed.
+- "SHU pool – scores nudge (afternoon + evening)": 1:10, 3:10 and 5:10 PM, then hourly 7:10 PM-1:10 AM Eastern,
+  pushing only when a game has tipped off and isn't final yet.
