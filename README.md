@@ -96,7 +96,9 @@ How games are classified:
 
 ## Update schedule
 
-- **Morning (about 5:50 AM Eastern):** full update and the official numbers. Standings, chart and team logs count
+- **Morning (about 5:50 AM Eastern, with backup runs at about 6:25, 7:15 and 8:05):** full update and the official
+  numbers. GitHub sometimes skips or delays scheduled runs, so the backups fire too; each does nothing once that
+  morning's update has landed. Standings, chart and team logs count
   games through the previous day. The pool's day rolls over at 5 AM Eastern, so late games always land in the next
   morning's update.
 - **Afternoons and evenings (every 30 minutes, about noon to 1 AM Eastern):** Today's games refresh: finals, in-progress snapshots, pregame
