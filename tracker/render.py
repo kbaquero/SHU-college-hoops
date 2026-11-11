@@ -539,25 +539,27 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
 }
 if (STALE) { $('#today-h').textContent = "Yesterday's games"; $('#yesterday-h').textContent = 'Earlier games'; }
 // Game of the Day: today's game with the most at stake for the pool.
-// Stakes = (entries involved + 3 per head-to-head pair) x points the win is worth + closeness.
+// Stakes = (entries involved + 3 per head-to-head pair) x points the win is worth x closeness.
 //   head-to-head pairs: the smaller side, after dropping anyone who owns both teams (they can't lose)
 //   worth: non-conference 1, conference 2, conference tournament 2 (+5 in the final), NCAA by round (2 up to 12)
-//   closeness: spread up to 3: +3, up to 7: +2, up to 12: +1. Ties go to the earlier tip.
+//   closeness: spread up to 3: x1.5, up to 7: x1.25, up to 12: x1, beyond: x0.5; no line: x1.
+//   It multiplies, so a lopsided game can't win on head count alone, at any point in the season.
+// Ties go to the closer spread, then the earlier tip.
 const PTS = __PTS__;
 (function gameOfTheDay() {
   const el = $('#gotd'), games = STALE ? [] : (D.today?.games || []);
   const own = sd => sd.pool ? (sd.owners || []) : [];
   const spread = g => { const m = /-(\d+(\.\d+)?)/.exec(g.line || ''); return m ? +m[1] : 99; };
-  const close = sp => sp <= 3 ? 3 : sp <= 7 ? 2 : sp <= 12 ? 1 : 0;
+  const close = sp => sp === 99 ? 1 : sp <= 3 ? 1.5 : sp <= 7 ? 1.25 : sp <= 12 ? 1 : 0.5;
   const scored = games.map(g => {
     const a = own(g.away), h = own(g.home), both = a.filter(e => h.includes(e));
     const n = new Set([...a, ...h]).size, h2h = Math.min(a.length - both.length, h.length - both.length);
     const worth = g.kind === 'conf' ? PTS.conf : g.kind === 'nonconf' ? PTS.nonconf
       : g.kind === 'conf_tourney' ? PTS.ct + (/(?<!semi|quarter|semi-|quarter-)final\b|championship/i.test(g.event || '') ? PTS.ct_champ : 0)
       : g.kind === 'ncaa' ? (PTS.ncaa[g.round] || 2) : 1;
-    return {g, n, worth, stakes: (n + 3 * h2h) * worth + close(spread(g))};
+    return {g, n, worth, sp: spread(g), stakes: (n + 3 * h2h) * worth * close(spread(g))};
   }).filter(x => x.n >= 2)
-    .sort((a, b) => b.stakes - a.stakes || (a.g.start || '').localeCompare(b.g.start || ''));
+    .sort((a, b) => b.stakes - a.stakes || a.sp - b.sp || (a.g.start || '').localeCompare(b.g.start || ''));
   if (!scored.length) { el.hidden = true; return; }
   const {g, n} = scored[0], live = !g.completed && g.live, fin = g.completed;
   window.GOTD = g.id;   // the Games tab marks this game in place
