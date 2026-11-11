@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 08:36 EST",
+ "updated": "2026-11-11 09:03 EST",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -8036,7 +8036,7 @@
      "record": "2-1"
     },
     "time": "5:30 PM",
-    "line": "PENN -6.5"
+    "line": "PENN -7.5"
    },
    {
     "id": "401926211",
@@ -8378,7 +8378,7 @@
      "record": "2-0"
     },
     "time": "7:00 PM",
-    "line": "UNCW -6.5"
+    "line": "UNCW -8.5"
    },
    {
     "id": "401926060",
@@ -9596,5 +9596,6 @@
    }
   ]
  },
- "warnings": []
+ "warnings": [],
+ "scores_updated": "9:03 AM"
 }
