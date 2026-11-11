@@ -81,11 +81,11 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .gd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 14px;background:var(--head);font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
 .gd-top b{color:var(--ink);font-weight:750;white-space:nowrap}.gd-top b em{font-style:normal;color:var(--gold);margin-right:5px}
 .gd-top .st{text-transform:none;letter-spacing:0;font-weight:500;font-size:12px;text-align:right;display:flex;align-items:center;gap:6px;justify-content:flex-end;flex-wrap:wrap}
-.gd-top .st .livepill{margin:0}
+.gd-top .st .livepill{margin:0}.gd-part{display:inline-flex;gap:6px;white-space:nowrap}
 .gd-m{display:grid;grid-template-columns:max-content minmax(0,1fr) auto;gap:6px 12px;padding:10px 14px 11px;align-items:baseline}
 .gd-t{font-size:15px;font-weight:700;white-space:nowrap}.gd-t i{font-style:normal;font-weight:400;font-size:12px;color:var(--mute);margin-left:5px}
 .gd-t.lose{color:var(--mute);font-weight:600}
-.gd-own{font-size:13px;color:var(--accent);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.gd-own .sep{color:var(--mute)}
+.gd-own{font-size:13px;line-height:1.35;color:var(--accent);font-weight:500;align-self:baseline}   /* long owner lists wrap to more lines, never cut off */.gd-own .sep{color:var(--mute)}
 .gd-sc{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}.gd-sc.lose{color:var(--mute);font-weight:600}
 @media (max-width:380px){.gd-m{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense;gap:2px 10px}.gd-own{grid-column:1/-1;margin-bottom:6px}}   /* small phones: owners drop under the team, score stays beside it */
 .mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 11px 14px;margin-left:4px;background:var(--head)}  /* tinted like table headers; the 4px margin keeps the blue edge visible */
@@ -571,7 +571,8 @@ const PTS = __PTS__;
       `<span class="gd-own">${ownList(own(sd)) || '<span class="sep">–</span>'}</span><span class="gd-sc${lose ? ' lose' : ''}">${v ?? ''}</span>`;
   };
   const status = fin ? esc(g.final_label || 'Final') : live ? `<span class="livepill">LIVE</span>${esc(g.live.detail)}` : esc(g.time || '');
-  const info = [status, !fin && !live && g.line && esc(g.line)].filter(Boolean).join('<span class="sep">·</span>');   // compact: status, plus the spread before tip
+  const info = [status, !fin && !live && g.line && esc(g.line)].filter(Boolean)
+    .map((x, i) => i ? `<span class="gd-part"><span class="sep">·</span>${x}</span>` : x).join('');   // the dot travels with its item when it wraps   // compact: status, plus the spread before tip
   el.innerHTML = `<div class="gotd"><div class="gd-top"><b><em>★</em>Game of the Day</b><span class="st">${info}</span></div>` +
     `<div class="gd-m">${side(g.away, g.home)}${side(g.home, g.away)}</div></div>`;
   el.hidden = false;
