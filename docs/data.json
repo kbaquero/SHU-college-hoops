@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 16:43 EST",
- "scores_updated": "4:43 PM",
+ "updated": "2026-11-11 18:25 EST",
+ "scores_updated": "6:25 PM",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -8018,7 +8018,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2426",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 21
     },
     "home": {
      "team": "Navy",
@@ -8034,10 +8035,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "219",
-     "record": "2-1"
+     "record": "2-1",
+     "live": 26
     },
     "time": "5:30 PM",
-    "line": "PENN -7.5"
+    "line": "PENN -7.5",
+    "live": {
+     "detail": "6:54 1st",
+     "as_of": "6:25 PM"
+    }
    },
    {
     "id": "401926211",
@@ -8058,7 +8064,8 @@
      "id": "2679",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 12
     },
     "home": {
      "team": "Wofford",
@@ -8074,10 +8081,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2679",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 22
     },
     "time": "6:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "10:11 1st",
+     "as_of": "6:25 PM"
+    }
    },
    {
     "id": "401925663",
@@ -8209,7 +8221,7 @@
      "record": "1-1"
     },
     "time": "7:00 PM",
-    "line": "JMU -2.5"
+    "line": "JMU -3.5"
    },
    {
     "id": "401909524",
@@ -8259,7 +8271,7 @@
      "record": "1-1"
     },
     "time": "7:00 PM",
-    "line": "MICH -3.5"
+    "line": "MICH -2.5"
    },
    {
     "id": "401920202",
@@ -8299,7 +8311,7 @@
      "record": "1-1"
     },
     "time": "7:00 PM",
-    "line": "VCU -34.5"
+    "line": "VCU -33.5"
    },
    {
     "id": "401925895",
