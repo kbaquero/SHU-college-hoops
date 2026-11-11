@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-10 17:18 EST",
+ "updated": "2026-11-10 19:11 EST",
+ "scores_updated": "7:11 PM",
  "through": "Mon, Nov 9",
  "season": 2027,
  "standings": [
@@ -7299,7 +7300,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "52",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 37
     },
     "home": {
      "team": "Florida St.",
@@ -7309,10 +7311,15 @@
      "id": "52",
      "final": null,
      "won": null,
-     "record": "2-0"
+     "record": "2-0",
+     "live": 32
     },
     "time": "6:00 PM",
-    "line": "FLA -8.5"
+    "line": "FLA -8.5",
+    "live": {
+     "detail": "17:53 2nd",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401909514",
@@ -7333,7 +7340,8 @@
      "id": "2169",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 32
     },
     "home": {
      "team": "Georgetown",
@@ -7349,10 +7357,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2169",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 30
     },
     "time": "6:30 PM",
-    "line": "GTWN -30.5"
+    "line": "GTWN -30.5",
+    "live": {
+     "detail": "4:15 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401920866",
@@ -7379,7 +7392,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "164",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 22
     },
     "home": {
      "team": "Rutgers",
@@ -7389,10 +7403,15 @@
      "id": "164",
      "final": null,
      "won": null,
-     "record": "1-0"
+     "record": "1-0",
+     "live": 37
     },
     "time": "6:30 PM",
-    "line": "RUTG -24.5"
+    "line": "RUTG -24.5",
+    "live": {
+     "detail": "3:20 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401909564",
@@ -7413,7 +7432,8 @@
      "id": "127",
      "final": null,
      "won": null,
-     "record": "2-0"
+     "record": "2-0",
+     "live": 11
     },
     "home": {
      "team": "Duke",
@@ -7430,10 +7450,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "127",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 2
     },
     "time": "7:00 PM",
-    "line": "DUKE -7.5"
+    "line": "DUKE -7.5",
+    "live": {
+     "detail": "17:02 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401911196",
@@ -7461,7 +7486,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2230",
-     "record": "2-1"
+     "record": "2-1",
+     "live": 13
     },
     "home": {
      "team": "Fordham",
@@ -7471,10 +7497,15 @@
      "id": "2230",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 9
     },
     "time": "7:00 PM",
-    "line": "FOR -11.5"
+    "line": "FOR -11.5",
+    "live": {
+     "detail": "15:38 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401920378",
@@ -7501,7 +7532,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2294",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 11
     },
     "home": {
      "team": "Iowa",
@@ -7517,10 +7549,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "259",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 7
     },
     "time": "7:00 PM",
-    "line": "IOWA -3.5"
+    "line": "IOWA -3.5",
+    "live": {
+     "detail": "15:33 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401918957",
@@ -7548,7 +7585,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "152",
-     "record": "0-2"
+     "record": "0-2",
+     "live": 4
     },
     "home": {
      "team": "N.C. State",
@@ -7564,10 +7602,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2506",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 8
     },
     "time": "7:00 PM",
-    "line": "NCSU -18.5"
+    "line": "NCSU -18.5",
+    "live": {
+     "detail": "14:24 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401913101",
@@ -7588,7 +7631,8 @@
      "id": "2751",
      "final": null,
      "won": null,
-     "record": "2-0"
+     "record": "2-0",
+     "live": 8
     },
     "home": {
      "team": "North Carolina",
@@ -7604,10 +7648,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2751",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 7
     },
     "time": "7:00 PM",
-    "line": "UNC -12.5"
+    "line": "UNC -12.5",
+    "live": {
+     "detail": "14:12 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401909533",
@@ -7628,7 +7677,8 @@
      "id": "2803",
      "final": null,
      "won": null,
-     "record": "1-2"
+     "record": "1-2",
+     "live": 4
     },
     "home": {
      "team": "Providence",
@@ -7644,10 +7694,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2803",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 7
     },
     "time": "7:00 PM",
-    "line": "PROV -30.5"
+    "line": "PROV -30.5",
+    "live": {
+     "detail": "14:06 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401911187",
@@ -7675,7 +7730,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2168",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 13
     },
     "home": {
      "team": "Dayton",
@@ -7685,10 +7741,15 @@
      "id": "2168",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 14
     },
     "time": "7:00 PM",
-    "line": "DAY -13.5"
+    "line": "DAY -13.5",
+    "live": {
+     "detail": "14:18 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401921774",
@@ -7709,7 +7770,8 @@
      "id": "2325",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 5
     },
     "home": {
      "team": "Villanova",
@@ -7725,10 +7787,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2325",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 5
     },
     "time": "7:00 PM",
-    "line": "VILL -20.5"
+    "line": "VILL -20.5",
+    "live": {
+     "detail": "15:39 1st",
+     "as_of": "7:11 PM"
+    }
    },
    {
     "id": "401918987",
@@ -7930,7 +7997,7 @@
      "record": "2-0"
     },
     "time": "8:00 PM",
-    "line": "SMU -26.5"
+    "line": "SMU -27.5"
    },
    {
     "id": "401911250",
@@ -9068,6 +9135,5 @@
    }
   ]
  },
- "warnings": [],
- "scores_updated": "5:18 PM"
+ "warnings": []
 }
