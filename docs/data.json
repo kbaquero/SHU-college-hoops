@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 23:08 EST",
- "scores_updated": "11:08 PM",
+ "updated": "2026-11-11 23:59 EST",
+ "scores_updated": "11:59 PM",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -8478,7 +8478,7 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8489,10 +8489,9 @@
      "home": false,
      "owners": [],
      "id": "13",
-     "final": null,
-     "won": null,
-     "record": "1-1",
-     "live": 62
+     "final": 71,
+     "won": false,
+     "record": "1-2"
     },
     "home": {
      "team": "Grand Canyon",
@@ -8501,22 +8500,17 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "99-71",
      "opp": "Cal Poly",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 99,
+     "opp_final": 71,
      "opp_id": "13",
-     "record": "2-0",
-     "live": 93
+     "record": "3-0"
     },
     "time": "9:00 PM",
-    "line": "GCU -18.5",
-    "live": {
-     "detail": "2:38 2nd",
-     "as_of": "11:08 PM"
-    }
+    "line": "GCU -18.5"
    },
    {
     "id": "401930177",
@@ -8550,11 +8544,11 @@
       "Mike L."
      ],
      "won": true,
-     "score": "",
+     "score": "106-37",
      "opp": "Arkansas Pine Bluff",
      "pts": 1,
      "final": 106,
-     "opp_final": null,
+     "opp_final": 37,
      "opp_id": "2029",
      "record": "3-0"
     },
@@ -8567,7 +8561,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8578,10 +8572,9 @@
      "home": false,
      "owners": [],
      "id": "124946",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 28
+     "final": 40,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "UC Irvine",
@@ -8590,22 +8583,17 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "90-40",
      "opp": "Lincoln (CA)",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 90,
+     "opp_final": 40,
      "opp_id": "124946",
-     "record": "2-0",
-     "live": 60
+     "record": "3-0"
     },
     "time": "10:00 PM",
-    "line": "",
-    "live": {
-     "detail": "15:15 2nd",
-     "as_of": "11:08 PM"
-    }
+    "line": ""
    }
   ]
  },
