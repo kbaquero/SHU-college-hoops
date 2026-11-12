@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 18:25 EST",
- "scores_updated": "6:25 PM",
+ "updated": "2026-11-11 19:12 EST",
+ "scores_updated": "7:12 PM",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -7942,11 +7942,11 @@
       "Sean F."
      ],
      "won": false,
-     "score": "",
+     "score": "65-87",
      "opp": "Kansas City",
      "pts": 0,
      "final": 65,
-     "opp_final": null,
+     "opp_final": 87,
      "opp_id": "140",
      "record": "0-4"
     },
@@ -7972,11 +7972,11 @@
       "Dan P."
      ],
      "won": false,
-     "score": "",
+     "score": "69-81",
      "opp": "UC Davis",
      "pts": 0,
      "final": 69,
-     "opp_final": null,
+     "opp_final": 81,
      "opp_id": "302",
      "record": "0-4"
     },
@@ -7995,7 +7995,7 @@
    },
    {
     "id": "401921181",
-    "start": "2026-11-11T17:30:00-05:00",
+    "start": "2026-11-11T17:58:00-05:00",
     "tbd": false,
     "tv": "CBSSN",
     "neutral": false,
@@ -8019,7 +8019,7 @@
      "opp_final": null,
      "opp_id": "2426",
      "record": "1-1",
-     "live": 21
+     "live": 36
     },
     "home": {
      "team": "Navy",
@@ -8036,13 +8036,13 @@
      "opp_final": null,
      "opp_id": "219",
      "record": "2-1",
-     "live": 26
+     "live": 45
     },
-    "time": "5:30 PM",
+    "time": "5:58 PM",
     "line": "PENN -7.5",
     "live": {
-     "detail": "6:54 1st",
-     "as_of": "6:25 PM"
+     "detail": "14:53 2nd",
+     "as_of": "7:12 PM"
     }
    },
    {
@@ -8065,7 +8065,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 12
+     "live": 26
     },
     "home": {
      "team": "Wofford",
@@ -8082,13 +8082,13 @@
      "opp_final": null,
      "opp_id": "2679",
      "record": "1-2",
-     "live": 22
+     "live": 45
     },
     "time": "6:00 PM",
     "line": "",
     "live": {
-     "detail": "10:11 1st",
-     "as_of": "6:25 PM"
+     "detail": "15:55 2nd",
+     "as_of": "7:12 PM"
     }
    },
    {
@@ -8110,7 +8110,8 @@
      "id": "2824",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 6
     },
     "home": {
      "team": "Alabama St.",
@@ -8128,10 +8129,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2824",
-     "record": "0-2"
+     "record": "0-2",
+     "live": 8
     },
     "time": "7:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "14:58 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401920680",
@@ -8160,7 +8166,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2599",
-     "record": "0-2"
+     "record": "0-2",
+     "live": 14
     },
     "home": {
      "team": "St. John's",
@@ -8178,10 +8185,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2142",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 14
     },
     "time": "7:00 PM",
-    "line": "SJU -29.5"
+    "line": "SJU -29.5",
+    "live": {
+     "detail": "14:02 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401920903",
@@ -8208,7 +8220,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "48",
-     "record": "0-2"
+     "record": "0-2",
+     "live": 8
     },
     "home": {
      "team": "Delaware",
@@ -8218,10 +8231,15 @@
      "id": "48",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 9
     },
     "time": "7:00 PM",
-    "line": "JMU -3.5"
+    "line": "JMU -3.5",
+    "live": {
+     "detail": "14:54 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401909524",
@@ -8248,7 +8266,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "130",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 2
     },
     "home": {
      "team": "Michigan",
@@ -8268,10 +8287,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "269",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 4
     },
     "time": "7:00 PM",
-    "line": "MICH -2.5"
+    "line": "MICH -2.5",
+    "live": {
+     "detail": "15:26 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401920202",
@@ -8298,7 +8322,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2670",
-     "record": "1-3"
+     "record": "1-3",
+     "live": 7
     },
     "home": {
      "team": "VCU",
@@ -8308,10 +8333,15 @@
      "id": "2670",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 11
     },
     "time": "7:00 PM",
-    "line": "VCU -33.5"
+    "line": "VCU -33.5",
+    "live": {
+     "detail": "15:23 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401925895",
@@ -8332,7 +8362,8 @@
      "id": "295",
      "final": null,
      "won": null,
-     "record": "3-0"
+     "record": "3-0",
+     "live": 7
     },
     "home": {
      "team": "Norfolk St.",
@@ -8348,10 +8379,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "295",
-     "record": "2-1"
+     "record": "2-1",
+     "live": 2
     },
     "time": "7:00 PM",
-    "line": "ODU -6.5"
+    "line": "ODU -6.5",
+    "live": {
+     "detail": "15:57 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401926863",
@@ -8372,7 +8408,8 @@
      "id": "2309",
      "final": null,
      "won": null,
-     "record": "1-1"
+     "record": "1-1",
+     "live": 6
     },
     "home": {
      "team": "UNC Wilmington",
@@ -8388,10 +8425,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2309",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 0
     },
     "time": "7:00 PM",
-    "line": "UNCW -7.5"
+    "line": "UNCW -7.5",
+    "live": {
+     "detail": "17:34 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401926060",
@@ -8412,7 +8454,8 @@
      "id": "131603",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 10
     },
     "home": {
      "team": "Wagner",
@@ -8428,10 +8471,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "131603",
-     "record": "0-3"
+     "record": "0-3",
+     "live": 22
     },
     "time": "7:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "13:57 1st",
+     "as_of": "7:12 PM"
+    }
    },
    {
     "id": "401928824",
