@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 21:47 EST",
- "scores_updated": "9:47 PM",
+ "updated": "2026-11-11 22:11 EST",
+ "scores_updated": "10:11 PM",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -8427,7 +8427,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8439,15 +8439,14 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
-     "score": "",
+     "won": false,
+     "score": "53-76",
      "opp": "Arkansas",
      "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "final": 53,
+     "opp_final": 76,
      "opp_id": "8",
-     "record": "0-2",
-     "live": 53
+     "record": "0-3"
     },
     "home": {
      "team": "Arkansas",
@@ -8461,22 +8460,17 @@
       "Ben D.",
       "Dan P."
      ],
-     "won": null,
-     "score": "",
+     "won": true,
+     "score": "76-53",
      "opp": "Robert Morris",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
+     "pts": 1,
+     "final": 76,
+     "opp_final": 53,
      "opp_id": "2523",
-     "record": "1-1",
-     "live": 76
+     "record": "2-1"
     },
     "time": "8:00 PM",
-    "line": "ARK -29.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:47 PM"
-    }
+    "line": "ARK -29.5"
    },
    {
     "id": "401911346",
@@ -8498,7 +8492,7 @@
      "final": null,
      "won": null,
      "record": "1-1",
-     "live": 23
+     "live": 29
     },
     "home": {
      "team": "Grand Canyon",
@@ -8515,13 +8509,13 @@
      "opp_final": null,
      "opp_id": "13",
      "record": "2-0",
-     "live": 32
+     "live": 37
     },
     "time": "9:00 PM",
     "line": "GCU -18.5",
     "live": {
-     "detail": "3:18 1st",
-     "as_of": "9:47 PM"
+     "detail": "Halftime",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -8544,7 +8538,7 @@
      "final": null,
      "won": null,
      "record": "0-2",
-     "live": 7
+     "live": 9
     },
     "home": {
      "team": "UCLA",
@@ -8564,13 +8558,13 @@
      "opp_final": null,
      "opp_id": "2029",
      "record": "2-0",
-     "live": 42
+     "live": 51
     },
     "time": "9:00 PM",
     "line": "UCLA -47.5",
     "live": {
-     "detail": "3:35 1st",
-     "as_of": "9:47 PM"
+     "detail": "Halftime",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -8592,7 +8586,8 @@
      "id": "124946",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 3
     },
     "home": {
      "team": "UC Irvine",
@@ -8608,10 +8603,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "124946",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 23
     },
     "time": "10:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "14:00 1st",
+     "as_of": "10:11 PM"
+    }
    }
   ]
  },
