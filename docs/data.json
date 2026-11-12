@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 22:33 EST",
- "scores_updated": "10:33 PM",
+ "updated": "2026-11-11 23:08 EST",
+ "scores_updated": "11:08 PM",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -8492,7 +8492,7 @@
      "final": null,
      "won": null,
      "record": "1-1",
-     "live": 42
+     "live": 62
     },
     "home": {
      "team": "Grand Canyon",
@@ -8509,13 +8509,13 @@
      "opp_final": null,
      "opp_id": "13",
      "record": "2-0",
-     "live": 63
+     "live": 93
     },
     "time": "9:00 PM",
     "line": "GCU -18.5",
     "live": {
-     "detail": "12:17 2nd",
-     "as_of": "10:33 PM"
+     "detail": "2:38 2nd",
+     "as_of": "11:08 PM"
     }
    },
    {
@@ -8524,7 +8524,7 @@
     "tbd": false,
     "tv": "Peacock",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8535,10 +8535,9 @@
      "home": false,
      "owners": [],
      "id": "2029",
-     "final": null,
-     "won": null,
-     "record": "0-2",
-     "live": 20
+     "final": 37,
+     "won": false,
+     "record": "0-3"
     },
     "home": {
      "team": "UCLA",
@@ -8550,22 +8549,17 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Arkansas Pine Bluff",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 106,
      "opp_final": null,
      "opp_id": "2029",
-     "record": "2-0",
-     "live": 76
+     "record": "3-0"
     },
     "time": "9:00 PM",
-    "line": "UCLA -47.5",
-    "live": {
-     "detail": "11:47 2nd",
-     "as_of": "10:33 PM"
-    }
+    "line": "UCLA -47.5"
    },
    {
     "id": "401929625",
@@ -8587,7 +8581,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 15
+     "live": 28
     },
     "home": {
      "team": "UC Irvine",
@@ -8604,13 +8598,13 @@
      "opp_final": null,
      "opp_id": "124946",
      "record": "2-0",
-     "live": 39
+     "live": 60
     },
     "time": "10:00 PM",
     "line": "",
     "live": {
-     "detail": "4:25 1st",
-     "as_of": "10:33 PM"
+     "detail": "15:15 2nd",
+     "as_of": "11:08 PM"
     }
    }
   ]
