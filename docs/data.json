@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 22:11 EST",
- "scores_updated": "10:11 PM",
+ "updated": "2026-11-11 22:33 EST",
+ "scores_updated": "10:33 PM",
  "through": "Tue, Nov 10",
  "season": 2027,
  "standings": [
@@ -8492,7 +8492,7 @@
      "final": null,
      "won": null,
      "record": "1-1",
-     "live": 29
+     "live": 42
     },
     "home": {
      "team": "Grand Canyon",
@@ -8509,13 +8509,13 @@
      "opp_final": null,
      "opp_id": "13",
      "record": "2-0",
-     "live": 37
+     "live": 63
     },
     "time": "9:00 PM",
     "line": "GCU -18.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:11 PM"
+     "detail": "12:17 2nd",
+     "as_of": "10:33 PM"
     }
    },
    {
@@ -8538,7 +8538,7 @@
      "final": null,
      "won": null,
      "record": "0-2",
-     "live": 9
+     "live": 20
     },
     "home": {
      "team": "UCLA",
@@ -8558,13 +8558,13 @@
      "opp_final": null,
      "opp_id": "2029",
      "record": "2-0",
-     "live": 51
+     "live": 76
     },
     "time": "9:00 PM",
     "line": "UCLA -47.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:11 PM"
+     "detail": "11:47 2nd",
+     "as_of": "10:33 PM"
     }
    },
    {
@@ -8587,7 +8587,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 3
+     "live": 15
     },
     "home": {
      "team": "UC Irvine",
@@ -8604,13 +8604,13 @@
      "opp_final": null,
      "opp_id": "124946",
      "record": "2-0",
-     "live": 23
+     "live": 39
     },
     "time": "10:00 PM",
     "line": "",
     "live": {
-     "detail": "14:00 1st",
-     "as_of": "10:11 PM"
+     "detail": "4:25 1st",
+     "as_of": "10:33 PM"
     }
    }
   ]
