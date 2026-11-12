@@ -242,6 +242,7 @@ svg text{fill:var(--mute);font-size:11px}
 #chart svg{display:block}
 #value svg{display:block;touch-action:manipulation}
 #value text{font-size:11px;fill:var(--mute)}
+#value text.vlab{font-size:12px;font-weight:650;fill:var(--me);paint-order:stroke;stroke:var(--card);stroke-width:3px;stroke-linejoin:round}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--mute);padding:0 12px 4px}
 .vkey i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 .vkey i.dash{width:16px;height:0;border-radius:0;border-top:2px dashed var(--mute);vertical-align:3px}
@@ -789,6 +790,20 @@ function renderMyCard(me) {
       const on = mine(p), sel = active === p.d;
       g += `<circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${sel ? R + 2 : R}" style="fill:${on ? 'var(--me)' : 'var(--mute)'}" opacity="${on || sel ? 1 : me ? .35 : .6}"${sel ? ' stroke="var(--ink)" stroke-width="1.5"' : ''}/>`;
     });
+    // label the picked entry's best and worst value: furthest above and below the pool-average line
+    if (me) {
+      const mineP = placed.filter(mine).map(p => ({p, diff: p.d.pts - rate * p.d.sal}));
+      if (mineP.length >= 2) {
+        const best = mineP.reduce((a, b) => b.diff > a.diff ? b : a), worst = mineP.reduce((a, b) => b.diff < a.diff ? b : a);
+        const label = ({p, diff}, up) => {
+          const txt = `${esc(p.d.t)} ${diff >= 0 ? '+' : '−'}${Math.abs(diff).toFixed(1)}`;
+          const right = p.cx > W * .62, ty = up ? p.cy - R - 7 : p.cy + R + 15;
+          return `<text class="vlab" x="${p.cx + (right ? -2 : 2)}" y="${ty}" text-anchor="${right ? 'end' : 'start'}">${txt}</text>`;
+        };
+        if (best.diff > 0.05) g += label(best, true);
+        if (worst !== best && worst.diff < -0.05) g += label(worst, false);
+      }
+    }
     el.innerHTML = g + '</svg><div class="vkey">' + (me ? '<span><i style="background:var(--me)"></i>Your teams</span><span><i style="background:var(--mute);opacity:.5"></i>Other picked teams</span>' : '<span><i style="background:var(--mute)"></i>Picked teams</span>') +
       `<span><i class="dash"></i>Pool average (${rate.toFixed(2)} pts per $)</span></div>`;
   }
