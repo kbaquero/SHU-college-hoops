@@ -96,6 +96,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .mc-sec{border-top:1px solid var(--line);padding:10px 14px 10px 18px}
 .mc-g .t.wide{grid-column:1/4}.mc-g .t.wide i{display:inline!important;margin-left:4px!important}
 .mc-y{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.mc-y .ysum.none{color:var(--mute);font-weight:400}
 .mc-y .ysum{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;text-transform:none;letter-spacing:0;color:var(--ink);font-variant-numeric:tabular-nums}
 .mc-none{font-size:14px;color:var(--mute)}
 .mc-h{display:flex;justify-content:space-between;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-bottom:6px}
@@ -730,18 +731,20 @@ function renderMyCard(me) {
     }));
   const today = rows(D.today, false), yest = rows(D.yesterday, true);
   const started = (D.today?.games || []).some(g => g.live || g.completed);
-  const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>` : '';
+  // a day with none of the entry's games keeps its section as one line, so it's clear rather than missing
+  const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>`
+    : `<div class="mc-sec mc-y"><span>${title}</span><span class="ysum none">No games</span></div>`;
   // Time decides what's worth the space: mornings lead with last night's results (and preview today);
   // from noon, or the first final, it's just today. Yesterday stays in the Games tab.
   const todaySec = () => sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today);
   // after the switch, yesterday shrinks to one line: the day's record and points
   const ydone = yest.filter(r => r.done), yw = ydone.filter(r => r.won).length, ypts = ydone.reduce((a, r) => a + r.pts, 0);
-  const yline = ydone.length ? `<div class="mc-sec mc-y"><span>Yesterday</span><span class="ysum">${yw}-${ydone.length - yw}${pb(ypts)}</span></div>` : '';
+  const yline = ydone.length ? `<div class="mc-sec mc-y"><span>Yesterday</span><span class="ysum">${yw}-${ydone.length - yw}${pb(ypts)}</span></div>` : sec('Yesterday', '', []);
   const body = STALE ? sec('Yesterday', '', today) + sec(D.yesterday?.label || 'Earlier', '', yest)
     : MORNING ? sec('Yesterday', '', yest) + todaySec()
     : todaySec() + yline;
   el.innerHTML = `<div class="mycard"><div class="mc-top"><span class="mc-name">Daily Summary</span><span class="mc-rank">${tied ? 'T-' : ''}${ord(s.rank)}${mv(s.move)}</span></div>` +
-    (body || `<div class="mc-sec mc-none">No games today</div>`) + '</div>';
+    body + '</div>';
   el.hidden = false;
 }
 
