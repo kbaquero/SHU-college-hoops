@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 20:35 EST",
- "scores_updated": "8:35 PM",
+ "updated": "2026-11-12 20:45 EST",
+ "scores_updated": "8:45 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8452,7 +8452,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 57
+     "live": 64
     },
     "home": {
      "team": "Indiana",
@@ -8469,13 +8469,13 @@
      "opp_final": null,
      "opp_id": "2635",
      "record": "3-0",
-     "live": 80
+     "live": 89
     },
     "time": "6:30 PM",
     "line": "IU -25.5",
     "live": {
-     "detail": "4:32 2nd",
-     "as_of": "8:35 PM"
+     "detail": "0:37 2nd",
+     "as_of": "8:45 PM"
     }
    },
    {
@@ -8540,7 +8540,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 44
+     "live": 48
     },
     "home": {
      "team": "High Point",
@@ -8558,13 +8558,13 @@
      "opp_final": null,
      "opp_id": "253",
      "record": "3-0",
-     "live": 62
+     "live": 69
     },
     "time": "7:00 PM",
     "line": "HPU -22.5",
     "live": {
-     "detail": "10:20 2nd",
-     "as_of": "8:35 PM"
+     "detail": "6:51 2nd",
+     "as_of": "8:45 PM"
     }
    },
    {
@@ -8587,7 +8587,7 @@
      "final": null,
      "won": null,
      "record": "0-3",
-     "live": 50
+     "live": 51
     },
     "home": {
      "team": "Howard",
@@ -8606,13 +8606,13 @@
      "opp_final": null,
      "opp_id": "56",
      "record": "1-2",
-     "live": 58
+     "live": 62
     },
     "time": "7:00 PM",
     "line": "HOW -9.5",
     "live": {
-     "detail": "10:07 2nd",
-     "as_of": "8:35 PM"
+     "detail": "8:01 2nd",
+     "as_of": "8:45 PM"
     }
    },
    {
@@ -8653,13 +8653,13 @@
      "opp_final": null,
      "opp_id": "2382",
      "record": "2-0",
-     "live": 50
+     "live": 57
     },
     "time": "7:00 PM",
     "line": "WVU -24.5",
     "live": {
-     "detail": "11:47 2nd",
-     "as_of": "8:35 PM"
+     "detail": "9:18 2nd",
+     "as_of": "8:45 PM"
     }
    },
    {
@@ -8690,7 +8690,7 @@
      "opp_final": null,
      "opp_id": "135",
      "record": "0-4",
-     "live": 20
+     "live": 22
     },
     "home": {
      "team": "Minnesota",
@@ -8701,13 +8701,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 30
+     "live": 43
     },
     "time": "8:00 PM",
     "line": "MINN -26.5",
     "live": {
-     "detail": "4:36 1st",
-     "as_of": "8:35 PM"
+     "detail": "1:25 1st",
+     "as_of": "8:45 PM"
     }
    },
    {
