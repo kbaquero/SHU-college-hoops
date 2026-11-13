@@ -98,6 +98,7 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .mc-y{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
 .mc-y .ysum.none{color:var(--mute);font-weight:400}
 .mc-y .ysum{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;text-transform:none;letter-spacing:0;color:var(--ink);font-variant-numeric:tabular-nums}
+.mc-g.both .t i{margin:0 4px}
 .mc-none{font-size:14px;color:var(--mute)}
 .mc-h{display:flex;justify-content:space-between;font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-bottom:6px}
 .mc-h span:last-child{text-transform:none;letter-spacing:0;font-weight:400}
@@ -714,8 +715,23 @@ function renderMyCard(me) {
   }
   const tied = ST.filter(x => x.rank === s.rank).length > 1;
   // one row per side the entry owns: team · vs/at opponent · score · pts · status
-  const rows = (td, finals) => (td?.games || []).flatMap(g => [[g.away, g.home, false], [g.home, g.away, true]]
-    .filter(([m]) => m.pool && (m.owners || []).includes(me)).map(([m, o, isHome]) => {
+  const mineSide = sd => sd.pool && (sd.owners || []).includes(me);
+  // both teams are the entry's: one row, since the result is settled for them (one win, one loss, +1 either way)
+  const bothRow = (g, finals) => {
+    const a = g.away, h = g.home, live = !g.completed && g.live, fin = g.completed && a.final != null;
+    const w = fin ? (a.won ? a : h) : null, l = fin ? (a.won ? h : a) : null;
+    const team = fin ? `${esc(w.team)}<i>${g.neutral ? 'vs' : w === h ? 'vs' : 'at'} ${esc(l.team)}</i>`
+      : `${esc(a.team)}<i>${g.neutral ? 'vs' : 'at'}</i>${esc(h.team)}`;
+    const sc = fin ? `${w.final}-${l.final}` : live && a.live != null ? `${a.live}-${h.live ?? 0}` : '';
+    const st = g.completed ? esc(g.final_label || 'Final') : live ? esc(g.live.detail) : finals ? 'No result' : esc(g.time || '');
+    const pts = g.completed ? pb((a.pts || 0) + (h.pts || 0)) : '<span></span>';
+    return {pts: g.completed ? (a.pts || 0) + (h.pts || 0) : 0, done: g.completed, won: true, both: true,
+      html: (sc || g.completed
+        ? `<div class="mc-g both"><span class="t">${team}</span><span class="s">${sc}</span>${pts}<span class="st${live ? ' live' : ''}">${st}</span></div>`
+        : `<div class="mc-g both"><span class="t wide">${team}</span><span class="st">${st}</span></div>`)};
+  };
+  const rows = (td, finals) => (td?.games || []).flatMap(g => mineSide(g.away) && mineSide(g.home) ? [bothRow(g, finals)] : [[g.away, g.home, false], [g.home, g.away, true]]
+    .filter(([m]) => mineSide(m)).map(([m, o, isHome]) => {
       const live = !g.completed && g.live;
       const vs = g.neutral ? 'vs' : isHome ? 'vs' : 'at';
       let sc = '', cls = '';
@@ -739,8 +755,9 @@ function renderMyCard(me) {
   // from noon, or the first final, it's just today. Yesterday stays in the Games tab.
   const todaySec = () => sec('Today', started && D.scores_updated ? 'as of ' + esc(D.scores_updated) : '', today);
   // after the switch, yesterday shrinks to one line: the day's record and points
-  const ydone = yest.filter(r => r.done), yw = ydone.filter(r => r.won).length, ypts = ydone.reduce((a, r) => a + r.pts, 0);
-  const yline = ydone.length ? `<div class="mc-sec mc-y"><span>Yesterday</span><span class="ysum">${yw}-${ydone.length - yw}${pb(ypts)}</span></div>` : sec('Yesterday', '', []);
+  const ydone = yest.filter(r => r.done), ypts = ydone.reduce((a, r) => a + r.pts, 0);
+  const yw = ydone.filter(r => r.won).length, yl = ydone.filter(r => !r.won || r.both).length;   // a both-yours game is a win and a loss
+  const yline = ydone.length ? `<div class="mc-sec mc-y"><span>Yesterday</span><span class="ysum">${yw}-${yl}${pb(ypts)}</span></div>` : sec('Yesterday', '', []);
   const body = STALE ? sec('Yesterday', '', today) + sec(D.yesterday?.label || 'Earlier', '', yest)
     : MORNING ? sec('Yesterday', '', yest) + todaySec()
     : todaySec() + yline;
