@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 18:45 EST",
- "scores_updated": "6:45 PM",
+ "updated": "2026-11-13 18:55 EST",
+ "scores_updated": "6:55 PM",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -8638,7 +8638,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 41
+     "live": 44
     },
     "home": {
      "team": "Miami FL",
@@ -8663,8 +8663,8 @@
     "time": "5:00 PM",
     "line": "MIA -32.5",
     "live": {
-     "detail": "4:18 2nd",
-     "as_of": "6:45 PM"
+     "detail": "3:12 2nd",
+     "as_of": "6:55 PM"
     }
    },
    {
@@ -8693,7 +8693,7 @@
      "opp_final": null,
      "opp_id": "228",
      "record": "3-0",
-     "live": 45
+     "live": 47
     },
     "home": {
      "team": "Clemson",
@@ -8710,13 +8710,13 @@
      "opp_final": null,
      "opp_id": "46",
      "record": "3-0",
-     "live": 27
+     "live": 32
     },
     "time": "6:00 PM",
     "line": "CLEM -4.5",
     "live": {
-     "detail": "1:32 1st",
-     "as_of": "6:45 PM"
+     "detail": "Halftime",
+     "as_of": "6:55 PM"
     }
    },
    {
@@ -8799,7 +8799,7 @@
      "record": "1-2"
     },
     "time": "7:00 PM",
-    "line": "FGCU -2.5"
+    "line": "FGCU -3.5"
    },
    {
     "id": "401906782",
@@ -8968,7 +8968,7 @@
      "record": "2-1"
     },
     "time": "7:00 PM",
-    "line": "FOR -12.5"
+    "line": "FOR -13.5"
    },
    {
     "id": "401924796",
