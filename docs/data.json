@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 17:20 EST",
+ "updated": "2026-11-13 17:30 EST",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -8637,7 +8637,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 11
+     "live": 16
     },
     "home": {
      "team": "Miami FL",
@@ -8657,13 +8657,13 @@
      "opp_final": null,
      "opp_id": "2453",
      "record": "2-1",
-     "live": 16
+     "live": 26
     },
     "time": "5:00 PM",
     "line": "MIA -32.5",
     "live": {
-     "detail": "12:48 1st",
-     "as_of": "5:20 PM"
+     "detail": "9:45 1st",
+     "as_of": "5:30 PM"
     }
    },
    {
@@ -10100,5 +10100,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "5:20 PM"
+ "scores_updated": "5:30 PM"
 }
