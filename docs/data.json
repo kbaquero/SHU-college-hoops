@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 21:05 EST",
- "scores_updated": "9:05 PM",
+ "updated": "2026-11-12 21:15 EST",
+ "scores_updated": "9:15 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8603,7 +8603,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8614,10 +8614,9 @@
      "home": false,
      "owners": [],
      "id": "2382",
-     "final": null,
-     "won": null,
-     "record": "2-2",
-     "live": 57
+     "final": 61,
+     "won": false,
+     "record": "2-3"
     },
     "home": {
      "team": "West Virginia",
@@ -8627,22 +8626,17 @@
       "Sean F.",
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Mercer",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 75,
      "opp_final": null,
      "opp_id": "2382",
-     "record": "2-0",
-     "live": 74
+     "record": "3-0"
     },
     "time": "7:00 PM",
-    "line": "WVU -24.5",
-    "live": {
-     "detail": "1:20 2nd",
-     "as_of": "9:05 PM"
-    }
+    "line": "WVU -24.5"
    },
    {
     "id": "401916306",
@@ -8672,7 +8666,7 @@
      "opp_final": null,
      "opp_id": "135",
      "record": "0-4",
-     "live": 28
+     "live": 32
     },
     "home": {
      "team": "Minnesota",
@@ -8683,13 +8677,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 48
+     "live": 54
     },
     "time": "8:00 PM",
     "line": "MINN -26.5",
     "live": {
-     "detail": "18:06 2nd",
-     "as_of": "9:05 PM"
+     "detail": "15:34 2nd",
+     "as_of": "9:15 PM"
     }
    },
    {
@@ -8718,7 +8712,7 @@
      "opp_final": null,
      "opp_id": "252",
      "record": "1-1",
-     "live": 6
+     "live": 11
     },
     "home": {
      "team": "BYU",
@@ -8737,13 +8731,13 @@
      "opp_final": null,
      "opp_id": "147",
      "record": "3-0",
-     "live": 7
+     "live": 16
     },
     "time": "9:00 PM",
     "line": "BYU -21.5",
     "live": {
-     "detail": "16:47 1st",
-     "as_of": "9:05 PM"
+     "detail": "11:46 1st",
+     "as_of": "9:15 PM"
     }
    }
   ]
