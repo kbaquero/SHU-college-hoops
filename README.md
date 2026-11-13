@@ -96,13 +96,12 @@ How games are classified:
 
 ## Update schedule
 
-- **Morning (about 5:50 AM Eastern, with backup runs at about 6:25, 7:15 and 8:05):** full update and the official
-  numbers. GitHub sometimes skips or delays scheduled runs, so the backups fire too; each does nothing once that
-  morning's update has landed. Standings, chart and team logs count
-  games through the previous day. The pool's day rolls over at 5 AM Eastern, so late games always land in the next
-  morning's update.
-- **Afternoons and evenings (every 30 minutes, about noon to 1 AM Eastern):** Today's games refresh: finals, in-progress snapshots, pregame
-  spreads. The page adds each final to the morning totals, so the standings are live (finals only; in-progress games
+- **One long-running GitHub job (`watch.yml`) keeps everything current.** From 5:45 AM Eastern it runs the morning
+  full update (the official numbers; standings count games through the previous day, and the pool's day rolls over
+  at 5 AM Eastern). While any game is in progress it refreshes scores every 10 minutes; otherwise it sleeps until the
+  next tip-off or the next morning. Just before GitHub's 6-hour job limit it starts its own successor, so it never
+  depends on GitHub's unreliable cron. A schedule every 3 hours only restarts the chain if it ever breaks.
+- **The page adds each final to the morning totals**, so the standings are live (finals only; in-progress games
   don't count). The next morning's full update re-scores everything from scratch.
 - **The standings' third column** reads "Yesterday" (last night's gains, arrows vs. the day before) from 5 AM until
   noon Eastern, then "Today" (points from today's finals, arrows vs. this morning). It switches earlier if one of
@@ -121,8 +120,5 @@ How games are classified:
   Hidden when no game involves two or more entries.
 - **Any push to `data/`, `tracker/`, `tests/` or `.github/`** runs a full update, which is safe at any hour.
 
-GitHub's own cron schedules (in the workflow) often fire late or get skipped, so two Claude scheduled tasks
-also push a timestamp to `data/.tick` to start the workflow. Either path produces the same result.
-- "SHU pool – morning standings nudge": 5:50 AM Eastern, skipped if that morning's update already landed.
-- "SHU pool – scores nudge (afternoon + evening)": 1:10, 3:10 and 5:10 PM, then hourly 7:10 PM-1:10 AM Eastern,
-  pushing only when a game has tipped off and isn't final yet.
+To check on it: the repo's Actions tab shows a "Watch games" run in progress with a log of each check. If none is
+running, "Run workflow" on Watch games restarts the chain.

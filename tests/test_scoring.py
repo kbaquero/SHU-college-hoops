@@ -482,3 +482,41 @@ class EventLabels(unittest.TestCase):
         self.assertEqual(event_label("Men's Basketball Championship - East Region - Sweet 16", "ncaa"), "East Region")
         self.assertEqual(event_label("Men's Basketball Championship - Final Four", "ncaa"), "")
         self.assertEqual(event_label("", "conf"), "")
+
+
+class WatchPlanTests(unittest.TestCase):
+    def setUp(self):
+        from tracker import watch
+        self.w = watch
+        self.ET = watch.ET
+
+    def at(self, y, m, d, h, mi):
+        return dt.datetime(y, m, d, h, mi, tzinfo=self.ET).astimezone(dt.timezone.utc)
+
+    def data(self, date, games=()):
+        return {"today": {"date": date, "games": list(games)}}
+
+    def test_morning_update_waits_for_545(self):
+        action, wake = self.w.plan(self.data("2026-11-11"), self.at(2026, 11, 12, 5, 10))
+        self.assertIsNone(action)
+        self.assertEqual(wake.astimezone(self.ET).strftime("%H:%M"), "05:45")
+
+    def test_morning_update_runs_once_due(self):
+        self.assertEqual(self.w.plan(self.data("2026-11-11"), self.at(2026, 11, 12, 7, 0))[0], "full")
+        self.assertIsNone(self.w.plan(self.data("2026-11-12"), self.at(2026, 11, 12, 7, 0))[0])
+
+    def test_scores_while_a_game_is_on_then_sleep_to_next_tip(self):
+        g1 = {"start": "2026-11-12T23:00:00Z", "completed": False}
+        g2 = {"start": "2026-11-13T01:00:00Z", "completed": False}
+        action, wake = self.w.plan(self.data("2026-11-12", [g1, g2]), self.at(2026, 11, 12, 18, 30))
+        self.assertEqual(action, "scores")
+        g1["completed"] = True
+        action, wake = self.w.plan(self.data("2026-11-12", [g1, g2]), self.at(2026, 11, 12, 19, 10))
+        self.assertIsNone(action)
+        self.assertEqual(wake.astimezone(self.ET).strftime("%H:%M"), "20:03")   # capped at an hour, then rechecks
+
+    def test_after_last_final_it_waits_for_the_morning(self):
+        g = {"start": "2026-11-13T01:00:00Z", "completed": True}
+        action, wake = self.w.plan(self.data("2026-11-12", [g]), self.at(2026, 11, 13, 0, 30))
+        self.assertIsNone(action)
+        self.assertLessEqual(wake - self.at(2026, 11, 13, 0, 30), dt.timedelta(minutes=60))

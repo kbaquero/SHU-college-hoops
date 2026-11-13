@@ -1,14 +1,8 @@
 name: Update standings
 
+# Runs on code/data pushes and the manual button. Day-to-day updates come from watch.yml.
+
 on:
-  schedule:
-    - cron: "47 10 * * *"   # full update: 10:47 UTC = 5:47 AM Eastern (6:47 AM during daylight time)
-    - cron: "23 11 * * *"   # backup full updates in case GitHub skips or delays the first one;
-    - cron: "13 12 * * *"   #   each does nothing once this morning's update has landed
-    - cron: "3 13 * * *"
-    - cron: "7 0-6 * * *"   # evening scores: hourly 7:07 PM-1:07 AM Eastern (8:07 PM-2:07 AM during daylight time)
-    - cron: "37 0-5 * * *"  # evening scores, half past: 7:37 PM-12:37 AM Eastern (8:37 PM-1:37 AM during daylight time)
-    - cron: "7,37 17-23 * * *"  # afternoon scores for weekend/holiday day games: 12:07-6:37 PM Eastern (1:07-7:37 PM daylight)
   workflow_dispatch:         # "Run workflow" button for manual updates
     inputs:
       mode:
@@ -36,17 +30,9 @@ jobs:
           python-version: "3.12"
       - name: Run tests
         run: python -m unittest discover -s tests -v
-      - name: Skip a backup morning run if this morning's update already landed
-        id: done
-        if: github.event_name == 'schedule' && contains(fromJSON('["23 11 * * *","13 12 * * *","3 13 * * *"]'), github.event.schedule)
-        run: |
-          today=$(TZ=America/New_York date -d '-5 hours' +%F)   # the pool's day rolls over at 5 AM Eastern
-          have=$(python -c "import json; print(json.load(open('docs/data.json'))['today'].get('date',''))")
-          if [ "$have" = "$today" ]; then echo "Already updated for $today"; echo "skip=true" >> "$GITHUB_OUTPUT"; fi
       - name: Update
-        if: steps.done.outputs.skip != 'true'
         env:
-          EVENING: ${{ (github.event_name == 'schedule' && !contains(fromJSON('["47 10 * * *","23 11 * * *","13 12 * * *","3 13 * * *"]'), github.event.schedule)) || inputs.mode == 'scores' }}
+          EVENING: ${{ inputs.mode == 'scores' }}
         run: |
           if [ "$EVENING" = "true" ]; then
             python -m tracker.run --scores     # Today's games only; standings stay at the morning numbers
@@ -54,7 +40,6 @@ jobs:
             python -m tracker.run              # full rescore
           fi
       - name: Commit results
-        if: steps.done.outputs.skip != 'true'
         run: |
           git config user.name "standings-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -62,10 +47,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            if [ "${{ (github.event_name == 'schedule' && !contains(fromJSON('["47 10 * * *","23 11 * * *","13 12 * * *","3 13 * * *"]'), github.event.schedule)) || inputs.mode == 'scores' }}" = "true" ]; then
+            if [ "${{ inputs.mode == 'scores' }}" = "true" ]; then
               git commit -m "Update scores $(date -u +'%F %H:%M') UTC"
             else
               git commit -m "Update standings $(date -u +%F)"
             fi
-            git push
+            git push || (git pull -q --rebase -X theirs && git push)   # the watcher may have pushed meanwhile
           fi
