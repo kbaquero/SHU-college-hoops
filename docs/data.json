@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 20:55 EST",
- "scores_updated": "8:55 PM",
+ "updated": "2026-11-12 21:05 EST",
+ "scores_updated": "9:05 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8520,7 +8520,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8531,10 +8531,9 @@
      "home": false,
      "owners": [],
      "id": "253",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 55
+     "final": 59,
+     "won": false,
+     "record": "3-1"
     },
     "home": {
      "team": "High Point",
@@ -8544,22 +8543,17 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Southern Utah",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 88,
      "opp_final": null,
      "opp_id": "253",
-     "record": "3-0",
-     "live": 78
+     "record": "4-0"
     },
     "time": "7:00 PM",
-    "line": "HPU -22.5",
-    "live": {
-     "detail": "3:24 2nd",
-     "as_of": "8:55 PM"
-    }
+    "line": "HPU -22.5"
    },
    {
     "id": "401922239",
@@ -8567,7 +8561,7 @@
     "tbd": false,
     "tv": "MEAC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8578,10 +8572,9 @@
      "home": false,
      "owners": [],
      "id": "56",
-     "final": null,
-     "won": null,
-     "record": "0-3",
-     "live": 60
+     "final": 62,
+     "won": false,
+     "record": "0-4"
     },
     "home": {
      "team": "Howard",
@@ -8592,22 +8585,17 @@
       "Sean P.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Stetson",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 75,
      "opp_final": null,
      "opp_id": "56",
-     "record": "1-2",
-     "live": 70
+     "record": "2-2"
     },
     "time": "7:00 PM",
-    "line": "HOW -9.5",
-    "live": {
-     "detail": "3:10 2nd",
-     "as_of": "8:55 PM"
-    }
+    "line": "HOW -9.5"
    },
    {
     "id": "401921768",
@@ -8629,7 +8617,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 51
+     "live": 57
     },
     "home": {
      "team": "West Virginia",
@@ -8647,13 +8635,13 @@
      "opp_final": null,
      "opp_id": "2382",
      "record": "2-0",
-     "live": 66
+     "live": 74
     },
     "time": "7:00 PM",
     "line": "WVU -24.5",
     "live": {
-     "detail": "4:53 2nd",
-     "as_of": "8:55 PM"
+     "detail": "1:20 2nd",
+     "as_of": "9:05 PM"
     }
    },
    {
@@ -8684,7 +8672,7 @@
      "opp_final": null,
      "opp_id": "135",
      "record": "0-4",
-     "live": 26
+     "live": 28
     },
     "home": {
      "team": "Minnesota",
@@ -8695,13 +8683,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 46
+     "live": 48
     },
     "time": "8:00 PM",
     "line": "MINN -26.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:55 PM"
+     "detail": "18:06 2nd",
+     "as_of": "9:05 PM"
     }
    },
    {
@@ -8729,7 +8717,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "252",
-     "record": "1-1"
+     "record": "1-1",
+     "live": 6
     },
     "home": {
      "team": "BYU",
@@ -8747,10 +8736,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "147",
-     "record": "3-0"
+     "record": "3-0",
+     "live": 7
     },
     "time": "9:00 PM",
-    "line": "BYU -21.5"
+    "line": "BYU -21.5",
+    "live": {
+     "detail": "16:47 1st",
+     "as_of": "9:05 PM"
+    }
    }
   ]
  },
