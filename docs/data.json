@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-12 19:11 EST",
+ "updated": "2026-11-12 19:43 EST",
+ "scores_updated": "7:43 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8417,7 +8418,7 @@
      "opp_final": null,
      "opp_id": "2378",
      "record": "3-0",
-     "live": 41
+     "live": 62
     },
     "home": {
      "team": "UMBC",
@@ -8428,13 +8429,13 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 42
+     "live": 76
     },
     "time": "6:00 PM",
     "line": "UMBC -7.5",
     "live": {
-     "detail": "18:31 2nd",
-     "as_of": "7:11 PM"
+     "detail": "5:35 2nd",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -8457,7 +8458,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 23
+     "live": 37
     },
     "home": {
      "team": "Indiana",
@@ -8474,13 +8475,13 @@
      "opp_final": null,
      "opp_id": "2635",
      "record": "3-0",
-     "live": 24
+     "live": 41
     },
     "time": "6:30 PM",
     "line": "IU -25.5",
     "live": {
-     "detail": "7:56 1st",
-     "as_of": "7:11 PM"
+     "detail": "Halftime",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -8511,7 +8512,7 @@
      "opp_final": null,
      "opp_id": "213",
      "record": "1-2",
-     "live": 16
+     "live": 39
     },
     "home": {
      "team": "Penn St.",
@@ -8522,13 +8523,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 24
+     "live": 41
     },
     "time": "6:30 PM",
     "line": "PSU -20.5",
     "live": {
-     "detail": "3:03 1st",
-     "as_of": "7:11 PM"
+     "detail": "14:05 2nd",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -8551,7 +8552,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 8
+     "live": 28
     },
     "home": {
      "team": "High Point",
@@ -8569,13 +8570,13 @@
      "opp_final": null,
      "opp_id": "253",
      "record": "3-0",
-     "live": 4
+     "live": 31
     },
     "time": "7:00 PM",
     "line": "HPU -22.5",
     "live": {
-     "detail": "15:56 1st",
-     "as_of": "7:11 PM"
+     "detail": "2:25 1st",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -8598,7 +8599,7 @@
      "final": null,
      "won": null,
      "record": "0-3",
-     "live": 7
+     "live": 35
     },
     "home": {
      "team": "Howard",
@@ -8617,13 +8618,13 @@
      "opp_final": null,
      "opp_id": "56",
      "record": "1-2",
-     "live": 5
+     "live": 37
     },
     "time": "7:00 PM",
     "line": "HOW -9.5",
     "live": {
-     "detail": "17:06 1st",
-     "as_of": "7:11 PM"
+     "detail": "2:29 1st",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -8646,7 +8647,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 2
+     "live": 20
     },
     "home": {
      "team": "West Virginia",
@@ -8664,13 +8665,13 @@
      "opp_final": null,
      "opp_id": "2382",
      "record": "2-0",
-     "live": 5
+     "live": 26
     },
     "time": "7:00 PM",
     "line": "WVU -24.5",
     "live": {
-     "detail": "15:46 1st",
-     "as_of": "7:11 PM"
+     "detail": "5:12 1st",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -9453,6 +9454,5 @@
    }
   ]
  },
- "warnings": [],
- "scores_updated": "7:11 PM"
+ "warnings": []
 }
