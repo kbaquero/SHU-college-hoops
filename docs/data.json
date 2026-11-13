@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 22:35 EST",
- "scores_updated": "10:35 PM",
+ "updated": "2026-11-12 22:45 EST",
+ "scores_updated": "10:45 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8706,7 +8706,7 @@
      "opp_final": null,
      "opp_id": "252",
      "record": "1-1",
-     "live": 56
+     "live": 63
     },
     "home": {
      "team": "BYU",
@@ -8725,13 +8725,13 @@
      "opp_final": null,
      "opp_id": "147",
      "record": "3-0",
-     "live": 72
+     "live": 81
     },
     "time": "9:00 PM",
     "line": "BYU -21.5",
     "live": {
-     "detail": "7:09 2nd",
-     "as_of": "10:35 PM"
+     "detail": "3:58 2nd",
+     "as_of": "10:45 PM"
     }
    }
   ]
