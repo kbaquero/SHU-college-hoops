@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 22:45 EST",
- "scores_updated": "10:45 PM",
+ "updated": "2026-11-12 22:55 EST",
+ "scores_updated": "10:55 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8686,7 +8686,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8698,15 +8698,14 @@
      "owners": [
       "Marty C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "BYU",
      "pts": 0,
-     "final": null,
+     "final": 71,
      "opp_final": null,
      "opp_id": "252",
-     "record": "1-1",
-     "live": 63
+     "record": "1-2"
     },
     "home": {
      "team": "BYU",
@@ -8717,22 +8716,17 @@
       "Marty C.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Montana St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 86,
      "opp_final": null,
      "opp_id": "147",
-     "record": "3-0",
-     "live": 81
+     "record": "4-0"
     },
     "time": "9:00 PM",
-    "line": "BYU -21.5",
-    "live": {
-     "detail": "3:58 2nd",
-     "as_of": "10:45 PM"
-    }
+    "line": "BYU -21.5"
    }
   ]
  },
