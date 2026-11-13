@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 19:54 EST",
- "scores_updated": "7:54 PM",
+ "updated": "2026-11-12 20:04 EST",
+ "scores_updated": "8:04 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8398,7 +8398,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8410,15 +8410,14 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "UMBC",
      "pts": 0,
-     "final": null,
+     "final": 70,
      "opp_final": null,
      "opp_id": "2378",
-     "record": "3-0",
-     "live": 70
+     "record": "3-1"
     },
     "home": {
      "team": "UMBC",
@@ -8426,17 +8425,12 @@
      "home": true,
      "owners": [],
      "id": "2378",
-     "final": null,
-     "won": null,
-     "record": "1-2",
-     "live": 83
+     "final": 85,
+     "won": true,
+     "record": "2-2"
     },
     "time": "6:00 PM",
-    "line": "UMBC -7.5",
-    "live": {
-     "detail": "1:58 2nd",
-     "as_of": "7:54 PM"
-    }
+    "line": "UMBC -7.5"
    },
    {
     "id": "401916288",
@@ -8458,7 +8452,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 40
+     "live": 44
     },
     "home": {
      "team": "Indiana",
@@ -8475,13 +8469,13 @@
      "opp_final": null,
      "opp_id": "2635",
      "record": "3-0",
-     "live": 43
+     "live": 57
     },
     "time": "6:30 PM",
     "line": "IU -25.5",
     "live": {
-     "detail": "18:29 2nd",
-     "as_of": "7:54 PM"
+     "detail": "14:47 2nd",
+     "as_of": "8:04 PM"
     }
    },
    {
@@ -8512,7 +8506,7 @@
      "opp_final": null,
      "opp_id": "213",
      "record": "1-2",
-     "live": 41
+     "live": 45
     },
     "home": {
      "team": "Penn St.",
@@ -8523,13 +8517,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 48
+     "live": 55
     },
     "time": "6:30 PM",
     "line": "PSU -20.5",
     "live": {
-     "detail": "9:55 2nd",
-     "as_of": "7:54 PM"
+     "detail": "7:04 2nd",
+     "as_of": "8:04 PM"
     }
    },
    {
@@ -8665,13 +8659,13 @@
      "opp_final": null,
      "opp_id": "2382",
      "record": "2-0",
-     "live": 28
+     "live": 31
     },
     "time": "7:00 PM",
     "line": "WVU -24.5",
     "live": {
-     "detail": "1:57 1st",
-     "as_of": "7:54 PM"
+     "detail": "Halftime",
+     "as_of": "8:04 PM"
     }
    },
    {
@@ -8701,7 +8695,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "135",
-     "record": "0-4"
+     "record": "0-4",
+     "live": 2
     },
     "home": {
      "team": "Minnesota",
@@ -8711,10 +8706,15 @@
      "id": "135",
      "final": null,
      "won": null,
-     "record": "3-0"
+     "record": "3-0",
+     "live": 3
     },
     "time": "8:00 PM",
-    "line": "MINN -26.5"
+    "line": "MINN -26.5",
+    "live": {
+     "detail": "18:10 1st",
+     "as_of": "8:04 PM"
+    }
    },
    {
     "id": "401921741",
