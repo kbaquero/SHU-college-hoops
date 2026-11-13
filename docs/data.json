@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 21:15 EST",
- "scores_updated": "9:15 PM",
+ "updated": "2026-11-12 21:25 EST",
+ "scores_updated": "9:25 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8666,7 +8666,7 @@
      "opp_final": null,
      "opp_id": "135",
      "record": "0-4",
-     "live": 32
+     "live": 36
     },
     "home": {
      "team": "Minnesota",
@@ -8677,13 +8677,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 54
+     "live": 67
     },
     "time": "8:00 PM",
     "line": "MINN -26.5",
     "live": {
-     "detail": "15:34 2nd",
-     "as_of": "9:15 PM"
+     "detail": "11:56 2nd",
+     "as_of": "9:25 PM"
     }
    },
    {
@@ -8712,7 +8712,7 @@
      "opp_final": null,
      "opp_id": "252",
      "record": "1-1",
-     "live": 11
+     "live": 15
     },
     "home": {
      "team": "BYU",
@@ -8731,13 +8731,13 @@
      "opp_final": null,
      "opp_id": "147",
      "record": "3-0",
-     "live": 16
+     "live": 21
     },
     "time": "9:00 PM",
     "line": "BYU -21.5",
     "live": {
-     "detail": "11:46 1st",
-     "as_of": "9:15 PM"
+     "detail": "7:10 1st",
+     "as_of": "9:25 PM"
     }
    }
   ]
