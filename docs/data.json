@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 21:55 EST",
- "scores_updated": "9:55 PM",
+ "updated": "2026-11-12 22:05 EST",
+ "scores_updated": "10:05 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8644,7 +8644,7 @@
     "tbd": false,
     "tv": "B1G+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -8658,15 +8658,14 @@
       "Joe H.",
       "Jason H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Minnesota",
      "pts": 0,
-     "final": null,
+     "final": 61,
      "opp_final": null,
      "opp_id": "135",
-     "record": "0-4",
-     "live": 61
+     "record": "0-5"
     },
     "home": {
      "team": "Minnesota",
@@ -8674,17 +8673,12 @@
      "home": true,
      "owners": [],
      "id": "135",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 85
+     "final": 91,
+     "won": true,
+     "record": "4-0"
     },
     "time": "8:00 PM",
-    "line": "MINN -26.5",
-    "live": {
-     "detail": "1:08 2nd",
-     "as_of": "9:55 PM"
-    }
+    "line": "MINN -26.5"
    },
    {
     "id": "401921741",
@@ -8712,7 +8706,7 @@
      "opp_final": null,
      "opp_id": "252",
      "record": "1-1",
-     "live": 29
+     "live": 38
     },
     "home": {
      "team": "BYU",
@@ -8731,13 +8725,13 @@
      "opp_final": null,
      "opp_id": "147",
      "record": "3-0",
-     "live": 43
+     "live": 51
     },
     "time": "9:00 PM",
     "line": "BYU -21.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:45 PM"
+     "detail": "17:01 2nd",
+     "as_of": "10:05 PM"
     }
    }
   ]
