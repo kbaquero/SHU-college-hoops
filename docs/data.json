@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 18:29 EST",
- "scores_updated": "6:29 PM",
+ "updated": "2026-11-13 18:40 EST",
+ "scores_updated": "6:40 PM",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -8658,13 +8658,13 @@
      "opp_final": null,
      "opp_id": "2453",
      "record": "2-1",
-     "live": 71
+     "live": 75
     },
     "time": "5:00 PM",
     "line": "MIA -32.5",
     "live": {
-     "detail": "11:03 2nd",
-     "as_of": "6:29 PM"
+     "detail": "7:09 2nd",
+     "as_of": "6:40 PM"
     }
    },
    {
@@ -8693,7 +8693,7 @@
      "opp_final": null,
      "opp_id": "228",
      "record": "3-0",
-     "live": 34
+     "live": 43
     },
     "home": {
      "team": "Clemson",
@@ -8710,13 +8710,13 @@
      "opp_final": null,
      "opp_id": "46",
      "record": "3-0",
-     "live": 16
+     "live": 27
     },
     "time": "6:00 PM",
     "line": "CLEM -4.5",
     "live": {
-     "detail": "7:49 1st",
-     "as_of": "6:29 PM"
+     "detail": "3:19 1st",
+     "as_of": "6:40 PM"
     }
    },
    {
@@ -9096,7 +9096,7 @@
      "record": "2-0"
     },
     "time": "7:00 PM",
-    "line": "TENN -26.5"
+    "line": "TENN -27.5"
    },
    {
     "id": "401921825",
