@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 17:30 EST",
+ "updated": "2026-11-13 17:40 EST",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -8657,13 +8657,13 @@
      "opp_final": null,
      "opp_id": "2453",
      "record": "2-1",
-     "live": 26
+     "live": 38
     },
     "time": "5:00 PM",
     "line": "MIA -32.5",
     "live": {
-     "detail": "9:45 1st",
-     "as_of": "5:30 PM"
+     "detail": "5:54 1st",
+     "as_of": "5:40 PM"
     }
    },
    {
@@ -8752,7 +8752,7 @@
      "record": "3-0"
     },
     "time": "7:00 PM",
-    "line": "FLA -36.5"
+    "line": "FLA -35.5"
    },
    {
     "id": "401922211",
@@ -9299,7 +9299,7 @@
      "record": "2-1"
     },
     "time": "8:00 PM",
-    "line": "ARK -23.5"
+    "line": "ARK -22.5"
    },
    {
     "id": "401909565",
@@ -10100,5 +10100,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "5:30 PM"
+ "scores_updated": "5:40 PM"
 }
