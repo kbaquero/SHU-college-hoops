@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 21:45 EST",
- "scores_updated": "9:45 PM",
+ "updated": "2026-11-12 21:55 EST",
+ "scores_updated": "9:55 PM",
  "through": "Wed, Nov 11",
  "season": 2027,
  "standings": [
@@ -8666,7 +8666,7 @@
      "opp_final": null,
      "opp_id": "135",
      "record": "0-4",
-     "live": 51
+     "live": 61
     },
     "home": {
      "team": "Minnesota",
@@ -8677,13 +8677,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 75
+     "live": 85
     },
     "time": "8:00 PM",
     "line": "MINN -26.5",
     "live": {
-     "detail": "4:06 2nd",
-     "as_of": "9:45 PM"
+     "detail": "1:08 2nd",
+     "as_of": "9:55 PM"
     }
    },
    {
