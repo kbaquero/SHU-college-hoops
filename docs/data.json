@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 16:42 EST",
+ "updated": "2026-11-14 16:52 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9466,7 +9466,7 @@
      "opp_final": null,
      "opp_id": "2250",
      "record": "3-0",
-     "live": 39
+     "live": 46
     },
     "home": {
      "team": "Gonzaga",
@@ -9477,13 +9477,13 @@
      "final": null,
      "won": null,
      "record": "2-0",
-     "live": 37
+     "live": 47
     },
     "time": "3:30 PM",
     "line": "GONZ -5.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:31 PM"
+     "detail": "15:39 2nd",
+     "as_of": "4:52 PM"
     }
    },
    {
@@ -9506,7 +9506,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 26
+     "live": 28
     },
     "home": {
      "team": "Navy",
@@ -9528,8 +9528,8 @@
     "time": "4:00 PM",
     "line": "HAMP -1.5",
     "live": {
-     "detail": "2:24 1st",
-     "as_of": "4:42 PM"
+     "detail": "Halftime",
+     "as_of": "4:52 PM"
     }
    },
    {
@@ -9552,7 +9552,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 21
+     "live": 26
     },
     "home": {
      "team": "UNC Wilmington",
@@ -9569,13 +9569,13 @@
      "opp_final": null,
      "opp_id": "2410",
      "record": "3-0",
-     "live": 39
+     "live": 57
     },
     "time": "4:00 PM",
     "line": "",
     "live": {
-     "detail": "4:36 1st",
-     "as_of": "4:42 PM"
+     "detail": "0:43 1st",
+     "as_of": "4:52 PM"
     }
    },
    {
@@ -11242,5 +11242,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "4:42 PM"
+ "scores_updated": "4:52 PM"
 }
