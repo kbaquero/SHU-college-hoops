@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 16:11 EST",
+ "updated": "2026-11-14 16:21 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9400,7 +9400,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9412,15 +9412,14 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Queens",
      "pts": 0,
-     "final": null,
+     "final": 92,
      "opp_final": null,
      "opp_id": "2511",
-     "record": "2-2",
-     "live": 90
+     "record": "2-3"
     },
     "home": {
      "team": "Queens",
@@ -9429,22 +9428,17 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Wofford",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 97,
      "opp_final": null,
      "opp_id": "2747",
-     "record": "2-2",
-     "live": 95
+     "record": "3-2"
     },
     "time": "2:00 PM",
-    "line": "QUC -5.5",
-    "live": {
-     "detail": "0:06 2nd",
-     "as_of": "4:11 PM"
-    }
+    "line": "QUC -5.5"
    },
    {
     "id": "401921689",
@@ -9472,7 +9466,7 @@
      "opp_final": null,
      "opp_id": "2250",
      "record": "3-0",
-     "live": 17
+     "live": 28
     },
     "home": {
      "team": "Gonzaga",
@@ -9483,13 +9477,13 @@
      "final": null,
      "won": null,
      "record": "2-0",
-     "live": 22
+     "live": 31
     },
     "time": "3:30 PM",
     "line": "GONZ -5.5",
     "live": {
-     "detail": "6:57 1st",
-     "as_of": "4:11 PM"
+     "detail": "3:19 1st",
+     "as_of": "4:21 PM"
     }
    },
    {
@@ -9512,7 +9506,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 1
+     "live": 15
     },
     "home": {
      "team": "Navy",
@@ -9529,13 +9523,13 @@
      "opp_final": null,
      "opp_id": "2261",
      "record": "3-1",
-     "live": 6
+     "live": 16
     },
     "time": "4:00 PM",
     "line": "HAMP -1.5",
     "live": {
-     "detail": "15:56 1st",
-     "as_of": "4:11 PM"
+     "detail": "10:39 1st",
+     "as_of": "4:21 PM"
     }
    },
    {
@@ -9558,7 +9552,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 6
+     "live": 11
     },
     "home": {
      "team": "UNC Wilmington",
@@ -9575,13 +9569,13 @@
      "opp_final": null,
      "opp_id": "2410",
      "record": "3-0",
-     "live": 7
+     "live": 17
     },
     "time": "4:00 PM",
     "line": "",
     "live": {
-     "detail": "16:12 1st",
-     "as_of": "4:11 PM"
+     "detail": "11:07 1st",
+     "as_of": "4:21 PM"
     }
    },
    {
@@ -11248,5 +11242,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "4:11 PM"
+ "scores_updated": "4:21 PM"
 }
