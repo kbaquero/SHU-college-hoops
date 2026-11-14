@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 15:21 EST",
+ "updated": "2026-11-14 15:31 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9420,7 +9420,7 @@
      "opp_final": null,
      "opp_id": "2511",
      "record": "2-2",
-     "live": 50
+     "live": 59
     },
     "home": {
      "team": "Queens",
@@ -9437,13 +9437,13 @@
      "opp_final": null,
      "opp_id": "2747",
      "record": "2-2",
-     "live": 50
+     "live": 66
     },
     "time": "2:00 PM",
     "line": "QUC -5.5",
     "live": {
-     "detail": "15:52 2nd",
-     "as_of": "3:21 PM"
+     "detail": "11:10 2nd",
+     "as_of": "3:31 PM"
     }
    },
    {
@@ -11230,5 +11230,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "3:21 PM"
+ "scores_updated": "3:31 PM"
 }
