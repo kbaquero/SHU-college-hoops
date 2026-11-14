@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 23:46 EST",
- "scores_updated": "11:46 PM",
+ "updated": "2026-11-13 23:56 EST",
+ "scores_updated": "11:56 PM",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -9715,7 +9715,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9726,10 +9726,9 @@
      "home": false,
      "owners": [],
      "id": "82",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 57
+     "final": 61,
+     "won": false,
+     "record": "3-1"
     },
     "home": {
      "team": "Saint Mary's",
@@ -9739,22 +9738,17 @@
       "Dennis S.",
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Illinois Chicago",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 84,
      "opp_final": null,
      "opp_id": "82",
-     "record": "2-1",
-     "live": 81
+     "record": "3-1"
     },
     "time": "10:00 PM",
-    "line": "SMC -6.5",
-    "live": {
-     "detail": "1:29 2nd",
-     "as_of": "11:46 PM"
-    }
+    "line": "SMC -6.5"
    }
   ]
  },
