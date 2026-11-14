@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 18:26 EST",
+ "updated": "2026-11-14 18:36 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9586,7 +9586,7 @@
      "opp_final": null,
      "opp_id": "2352",
      "record": "3-1",
-     "live": 42
+     "live": 50
     },
     "home": {
      "team": "Loyola MD",
@@ -9597,13 +9597,13 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 43
+     "live": 52
     },
     "time": "5:00 PM",
     "line": "L-MD -1.5",
     "live": {
-     "detail": "11:08 2nd",
-     "as_of": "6:26 PM"
+     "detail": "6:48 2nd",
+     "as_of": "6:36 PM"
     }
    },
    {
@@ -9626,7 +9626,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 15
+     "live": 24
     },
     "home": {
      "team": "Le Moyne",
@@ -9643,13 +9643,13 @@
      "opp_final": null,
      "opp_id": "2363",
      "record": "1-2",
-     "live": 23
+     "live": 26
     },
     "time": "6:00 PM",
     "line": "LEM -2.5",
     "live": {
-     "detail": "7:13 1st",
-     "as_of": "6:26 PM"
+     "detail": "3:57 1st",
+     "as_of": "6:36 PM"
     }
    },
    {
@@ -9672,7 +9672,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 14
+     "live": 16
     },
     "home": {
      "team": "Providence",
@@ -9689,13 +9689,13 @@
      "opp_final": null,
      "opp_id": "38",
      "record": "2-1",
-     "live": 25
+     "live": 29
     },
     "time": "6:00 PM",
     "line": "PROV -11.5",
     "live": {
-     "detail": "8:49 1st",
-     "as_of": "6:26 PM"
+     "detail": "5:42 1st",
+     "as_of": "6:36 PM"
     }
    },
    {
@@ -9718,7 +9718,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 12
+     "live": 18
     },
     "home": {
      "team": "Weber St.",
@@ -9735,13 +9735,13 @@
      "opp_final": null,
      "opp_id": "124946",
      "record": "0-3",
-     "live": 16
+     "live": 28
     },
     "time": "6:00 PM",
     "line": "",
     "live": {
-     "detail": "6:36 1st",
-     "as_of": "6:26 PM"
+     "detail": "1:43 1st",
+     "as_of": "6:36 PM"
     }
    },
    {
@@ -9769,7 +9769,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2603",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 0
     },
     "home": {
      "team": "Saint Joseph's",
@@ -9779,10 +9780,15 @@
      "id": "2603",
      "final": null,
      "won": null,
-     "record": "3-0"
+     "record": "3-0",
+     "live": 6
     },
     "time": "6:30 PM",
-    "line": "JOES -3.5"
+    "line": "JOES -3.5",
+    "live": {
+     "detail": "17:34 1st",
+     "as_of": "6:36 PM"
+    }
    },
    {
     "id": "401925774",
@@ -11248,5 +11254,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "6:26 PM"
+ "scores_updated": "6:36 PM"
 }
