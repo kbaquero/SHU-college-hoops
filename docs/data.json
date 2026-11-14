@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 14:21 EST",
+ "updated": "2026-11-14 14:31 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9369,7 +9369,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 44
+     "live": 52
     },
     "home": {
      "team": "Vermont",
@@ -9391,13 +9391,13 @@
      "opp_final": null,
      "opp_id": "177",
      "record": "1-2",
-     "live": 85
+     "live": 97
     },
     "time": "1:00 PM",
     "line": "",
     "live": {
-     "detail": "10:39 2nd",
-     "as_of": "2:21 PM"
+     "detail": "5:25 2nd",
+     "as_of": "2:31 PM"
     }
    },
    {
@@ -9426,7 +9426,7 @@
      "opp_final": null,
      "opp_id": "2511",
      "record": "2-2",
-     "live": 16
+     "live": 27
     },
     "home": {
      "team": "Queens",
@@ -9443,13 +9443,13 @@
      "opp_final": null,
      "opp_id": "2747",
      "record": "2-2",
-     "live": 10
+     "live": 23
     },
     "time": "2:00 PM",
     "line": "QUC -5.5",
     "live": {
-     "detail": "12:59 1st",
-     "as_of": "2:21 PM"
+     "detail": "8:18 1st",
+     "as_of": "2:31 PM"
     }
    },
    {
@@ -11236,5 +11236,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "2:21 PM"
+ "scores_updated": "2:31 PM"
 }
