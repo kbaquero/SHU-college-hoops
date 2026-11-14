@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 18:36 EST",
+ "updated": "2026-11-14 18:46 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9602,8 +9602,8 @@
     "time": "5:00 PM",
     "line": "L-MD -1.5",
     "live": {
-     "detail": "6:48 2nd",
-     "as_of": "6:36 PM"
+     "detail": "3:53 2nd",
+     "as_of": "6:46 PM"
     }
    },
    {
@@ -9626,7 +9626,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 24
+     "live": 26
     },
     "home": {
      "team": "Le Moyne",
@@ -9643,13 +9643,13 @@
      "opp_final": null,
      "opp_id": "2363",
      "record": "1-2",
-     "live": 26
+     "live": 37
     },
     "time": "6:00 PM",
     "line": "LEM -2.5",
     "live": {
-     "detail": "3:57 1st",
-     "as_of": "6:36 PM"
+     "detail": "Halftime",
+     "as_of": "6:46 PM"
     }
    },
    {
@@ -9672,7 +9672,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 16
+     "live": 20
     },
     "home": {
      "team": "Providence",
@@ -9689,13 +9689,13 @@
      "opp_final": null,
      "opp_id": "38",
      "record": "2-1",
-     "live": 29
+     "live": 34
     },
     "time": "6:00 PM",
     "line": "PROV -11.5",
     "live": {
-     "detail": "5:42 1st",
-     "as_of": "6:36 PM"
+     "detail": "1:43 1st",
+     "as_of": "6:46 PM"
     }
    },
    {
@@ -9735,13 +9735,13 @@
      "opp_final": null,
      "opp_id": "124946",
      "record": "0-3",
-     "live": 28
+     "live": 32
     },
     "time": "6:00 PM",
     "line": "",
     "live": {
-     "detail": "1:43 1st",
-     "as_of": "6:36 PM"
+     "detail": "Halftime",
+     "as_of": "6:46 PM"
     }
    },
    {
@@ -9770,7 +9770,7 @@
      "opp_final": null,
      "opp_id": "2603",
      "record": "1-2",
-     "live": 0
+     "live": 11
     },
     "home": {
      "team": "Saint Joseph's",
@@ -9781,13 +9781,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 6
+     "live": 11
     },
     "time": "6:30 PM",
     "line": "JOES -3.5",
     "live": {
-     "detail": "17:34 1st",
-     "as_of": "6:36 PM"
+     "detail": "12:21 1st",
+     "as_of": "6:46 PM"
     }
    },
    {
@@ -11254,5 +11254,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "6:36 PM"
+ "scores_updated": "6:46 PM"
 }
