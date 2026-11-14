@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 16:01 EST",
+ "updated": "2026-11-14 16:11 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9420,7 +9420,7 @@
      "opp_final": null,
      "opp_id": "2511",
      "record": "2-2",
-     "live": 89
+     "live": 90
     },
     "home": {
      "team": "Queens",
@@ -9437,13 +9437,13 @@
      "opp_final": null,
      "opp_id": "2747",
      "record": "2-2",
-     "live": 89
+     "live": 95
     },
     "time": "2:00 PM",
     "line": "QUC -5.5",
     "live": {
-     "detail": "2:15 2nd",
-     "as_of": "4:01 PM"
+     "detail": "0:06 2nd",
+     "as_of": "4:11 PM"
     }
    },
    {
@@ -9472,7 +9472,7 @@
      "opp_final": null,
      "opp_id": "2250",
      "record": "3-0",
-     "live": 13
+     "live": 17
     },
     "home": {
      "team": "Gonzaga",
@@ -9483,13 +9483,13 @@
      "final": null,
      "won": null,
      "record": "2-0",
-     "live": 14
+     "live": 22
     },
     "time": "3:30 PM",
     "line": "GONZ -5.5",
     "live": {
-     "detail": "10:53 1st",
-     "as_of": "4:01 PM"
+     "detail": "6:57 1st",
+     "as_of": "4:11 PM"
     }
    },
    {
@@ -9511,7 +9511,8 @@
      "id": "2261",
      "final": null,
      "won": null,
-     "record": "1-2"
+     "record": "1-2",
+     "live": 1
     },
     "home": {
      "team": "Navy",
@@ -9527,10 +9528,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2261",
-     "record": "3-1"
+     "record": "3-1",
+     "live": 6
     },
     "time": "4:00 PM",
-    "line": "HAMP -1.5"
+    "line": "HAMP -1.5",
+    "live": {
+     "detail": "15:56 1st",
+     "as_of": "4:11 PM"
+    }
    },
    {
     "id": "401934189",
@@ -9551,7 +9557,8 @@
      "id": "2410",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 6
     },
     "home": {
      "team": "UNC Wilmington",
@@ -9567,10 +9574,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2410",
-     "record": "3-0"
+     "record": "3-0",
+     "live": 7
     },
     "time": "4:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "16:12 1st",
+     "as_of": "4:11 PM"
+    }
    },
    {
     "id": "401920567",
@@ -11236,5 +11248,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "4:01 PM"
+ "scores_updated": "4:11 PM"
 }
