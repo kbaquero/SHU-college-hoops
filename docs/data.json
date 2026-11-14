@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 23:06 EST",
- "scores_updated": "11:06 PM",
+ "updated": "2026-11-13 23:16 EST",
+ "scores_updated": "11:16 PM",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -9530,7 +9530,7 @@
      "opp_final": null,
      "opp_id": "2",
      "record": "2-1",
-     "live": 70
+     "live": 74
     },
     "home": {
      "team": "Auburn",
@@ -9541,13 +9541,13 @@
      "final": null,
      "won": null,
      "record": "2-0",
-     "live": 64
+     "live": 67
     },
     "time": "9:00 PM",
     "line": "ARIZ -2.5",
     "live": {
-     "detail": "3:46 2nd",
-     "as_of": "11:06 PM"
+     "detail": "1:38 2nd",
+     "as_of": "11:16 PM"
     }
    },
    {
@@ -9614,7 +9614,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 69
+     "live": 74
     },
     "home": {
      "team": "Mississippi St.",
@@ -9631,13 +9631,13 @@
      "opp_final": null,
      "opp_id": "2752",
      "record": "3-0",
-     "live": 50
+     "live": 57
     },
     "time": "9:00 PM",
     "line": "XAV -4.5",
     "live": {
-     "detail": "7:34 2nd",
-     "as_of": "11:06 PM"
+     "detail": "3:19 2nd",
+     "as_of": "11:16 PM"
     }
    },
    {
@@ -9660,7 +9660,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 57
+     "live": 58
     },
     "home": {
      "team": "SMU",
@@ -9678,13 +9678,13 @@
      "opp_final": null,
      "opp_id": "2050",
      "record": "3-0",
-     "live": 75
+     "live": 82
     },
     "time": "9:00 PM",
     "line": "SMU -22.5",
     "live": {
-     "detail": "5:34 2nd",
-     "as_of": "11:06 PM"
+     "detail": "3:47 2nd",
+     "as_of": "11:16 PM"
     }
    },
    {
@@ -9693,7 +9693,7 @@
     "tbd": false,
     "tv": "SEC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9705,15 +9705,14 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Alabama",
      "pts": 0,
-     "final": null,
+     "final": 76,
      "opp_final": null,
      "opp_id": "333",
-     "record": "3-0",
-     "live": 71
+     "record": "3-1"
     },
     "home": {
      "team": "Alabama",
@@ -9721,17 +9720,12 @@
      "home": true,
      "owners": [],
      "id": "333",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 77
+     "final": 82,
+     "won": true,
+     "record": "4-0"
     },
     "time": "9:00 PM",
-    "line": "ALA -18.5",
-    "live": {
-     "detail": "1:21 2nd",
-     "as_of": "11:06 PM"
-    }
+    "line": "ALA -18.5"
    },
    {
     "id": "401917525",
@@ -9753,7 +9747,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 29
+     "live": 34
     },
     "home": {
      "team": "Saint Mary's",
@@ -9771,13 +9765,13 @@
      "opp_final": null,
      "opp_id": "82",
      "record": "2-1",
-     "live": 49
+     "live": 56
     },
     "time": "10:00 PM",
     "line": "SMC -6.5",
     "live": {
-     "detail": "16:55 2nd",
-     "as_of": "11:06 PM"
+     "detail": "12:27 2nd",
+     "as_of": "11:16 PM"
     }
    }
   ]
