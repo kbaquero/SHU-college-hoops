@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 14:01 EST",
+ "updated": "2026-11-14 14:11 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9369,7 +9369,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 32
+     "live": 37
     },
     "home": {
      "team": "Vermont",
@@ -9391,13 +9391,13 @@
      "opp_final": null,
      "opp_id": "177",
      "record": "1-2",
-     "live": 57
+     "live": 73
     },
     "time": "1:00 PM",
     "line": "",
     "live": {
-     "detail": "Halftime",
-     "as_of": "2:01 PM"
+     "detail": "15:35 2nd",
+     "as_of": "2:11 PM"
     }
    },
    {
@@ -9425,7 +9425,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2511",
-     "record": "2-2"
+     "record": "2-2",
+     "live": 5
     },
     "home": {
      "team": "Queens",
@@ -9441,10 +9442,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2747",
-     "record": "2-2"
+     "record": "2-2",
+     "live": 0
     },
     "time": "2:00 PM",
-    "line": "QUC -5.5"
+    "line": "QUC -5.5",
+    "live": {
+     "detail": "17:14 1st",
+     "as_of": "2:11 PM"
+    }
    },
    {
     "id": "401921689",
@@ -9764,7 +9770,7 @@
      "record": "3-0"
     },
     "time": "6:30 PM",
-    "line": "JOES -4.5"
+    "line": "JOES -5.5"
    },
    {
     "id": "401925774",
@@ -11230,5 +11236,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "2:01 PM"
+ "scores_updated": "2:11 PM"
 }
