@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 11:39 EST",
+ "updated": "2026-11-14 13:01 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9678,7 +9678,7 @@
      "record": "2-1"
     },
     "time": "6:00 PM",
-    "line": "PROV -12.5"
+    "line": "PROV -11.5"
    },
    {
     "id": "401925948",
@@ -9800,7 +9800,7 @@
      "record": "3-0"
     },
     "time": "7:00 PM",
-    "line": "DAV -9.5"
+    "line": "DAV -10.5"
    },
    {
     "id": "401920705",
@@ -9921,7 +9921,7 @@
      "record": "2-1"
     },
     "time": "7:00 PM",
-    "line": "SIE -10.5"
+    "line": "SIE -9.5"
    },
    {
     "id": "401926864",
@@ -10001,7 +10001,7 @@
      "record": "2-1"
     },
     "time": "7:00 PM",
-    "line": "VILL -35.5"
+    "line": "VILL -34.5"
    },
    {
     "id": "401920961",
@@ -11223,5 +11223,6 @@
    }
   ]
  },
- "warnings": []
+ "warnings": [],
+ "scores_updated": "1:01 PM"
 }
