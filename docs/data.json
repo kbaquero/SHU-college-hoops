@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 16:31 EST",
+ "updated": "2026-11-14 16:42 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9506,7 +9506,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 19
+     "live": 26
     },
     "home": {
      "team": "Navy",
@@ -9523,13 +9523,13 @@
      "opp_final": null,
      "opp_id": "2261",
      "record": "3-1",
-     "live": 22
+     "live": 28
     },
     "time": "4:00 PM",
     "line": "HAMP -1.5",
     "live": {
-     "detail": "5:42 1st",
-     "as_of": "4:31 PM"
+     "detail": "2:24 1st",
+     "as_of": "4:42 PM"
     }
    },
    {
@@ -9552,7 +9552,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 16
+     "live": 21
     },
     "home": {
      "team": "UNC Wilmington",
@@ -9569,13 +9569,13 @@
      "opp_final": null,
      "opp_id": "2410",
      "record": "3-0",
-     "live": 28
+     "live": 39
     },
     "time": "4:00 PM",
     "line": "",
     "live": {
-     "detail": "7:46 1st",
-     "as_of": "4:31 PM"
+     "detail": "4:36 1st",
+     "as_of": "4:42 PM"
     }
    },
    {
@@ -11242,5 +11242,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "4:31 PM"
+ "scores_updated": "4:42 PM"
 }
