@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 13:01 EST",
+ "updated": "2026-11-14 13:11 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9368,7 +9368,8 @@
      "id": "177",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 11
     },
     "home": {
      "team": "Vermont",
@@ -9389,10 +9390,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "177",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 9
     },
     "time": "1:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "16:13 1st",
+     "as_of": "1:11 PM"
+    }
    },
    {
     "id": "401922230",
@@ -11224,5 +11230,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "1:01 PM"
+ "scores_updated": "1:11 PM"
 }
