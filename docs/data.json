@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 23:36 EST",
- "scores_updated": "11:36 PM",
+ "updated": "2026-11-13 23:46 EST",
+ "scores_updated": "11:46 PM",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -9729,7 +9729,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 49
+     "live": 57
     },
     "home": {
      "team": "Saint Mary's",
@@ -9747,13 +9747,13 @@
      "opp_final": null,
      "opp_id": "82",
      "record": "2-1",
-     "live": 73
+     "live": 81
     },
     "time": "10:00 PM",
     "line": "SMC -6.5",
     "live": {
-     "detail": "4:39 2nd",
-     "as_of": "11:36 PM"
+     "detail": "1:29 2nd",
+     "as_of": "11:46 PM"
     }
    }
   ]
