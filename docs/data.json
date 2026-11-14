@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 18:16 EST",
+ "updated": "2026-11-14 18:26 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9586,7 +9586,7 @@
      "opp_final": null,
      "opp_id": "2352",
      "record": "3-1",
-     "live": 39
+     "live": 42
     },
     "home": {
      "team": "Loyola MD",
@@ -9597,13 +9597,13 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 41
+     "live": 43
     },
     "time": "5:00 PM",
     "line": "L-MD -1.5",
     "live": {
-     "detail": "14:38 2nd",
-     "as_of": "6:16 PM"
+     "detail": "11:08 2nd",
+     "as_of": "6:26 PM"
     }
    },
    {
@@ -9626,7 +9626,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 9
+     "live": 15
     },
     "home": {
      "team": "Le Moyne",
@@ -9643,13 +9643,13 @@
      "opp_final": null,
      "opp_id": "2363",
      "record": "1-2",
-     "live": 14
+     "live": 23
     },
     "time": "6:00 PM",
     "line": "LEM -2.5",
     "live": {
-     "detail": "11:47 1st",
-     "as_of": "6:16 PM"
+     "detail": "7:13 1st",
+     "as_of": "6:26 PM"
     }
    },
    {
@@ -9689,13 +9689,13 @@
      "opp_final": null,
      "opp_id": "38",
      "record": "2-1",
-     "live": 15
+     "live": 25
     },
     "time": "6:00 PM",
     "line": "PROV -11.5",
     "live": {
-     "detail": "12:16 1st",
-     "as_of": "6:16 PM"
+     "detail": "8:49 1st",
+     "as_of": "6:26 PM"
     }
    },
    {
@@ -9735,13 +9735,13 @@
      "opp_final": null,
      "opp_id": "124946",
      "record": "0-3",
-     "live": 10
+     "live": 16
     },
     "time": "6:00 PM",
     "line": "",
     "live": {
-     "detail": "11:36 1st",
-     "as_of": "6:16 PM"
+     "detail": "6:36 1st",
+     "as_of": "6:26 PM"
     }
    },
    {
@@ -11248,5 +11248,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "6:16 PM"
+ "scores_updated": "6:26 PM"
 }
