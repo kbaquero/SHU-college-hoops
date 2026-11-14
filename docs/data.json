@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 23:26 EST",
- "scores_updated": "11:26 PM",
+ "updated": "2026-11-13 23:36 EST",
+ "scores_updated": "11:36 PM",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -9594,7 +9594,7 @@
     "tbd": false,
     "tv": "FS1",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9605,10 +9605,9 @@
      "home": false,
      "owners": [],
      "id": "2752",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 81
+     "final": 81,
+     "won": true,
+     "record": "4-0"
     },
     "home": {
      "team": "Mississippi St.",
@@ -9617,22 +9616,17 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Xavier",
      "pts": 0,
-     "final": null,
+     "final": 63,
      "opp_final": null,
      "opp_id": "2752",
-     "record": "3-0",
-     "live": 63
+     "record": "3-1"
     },
     "time": "9:00 PM",
-    "line": "XAV -4.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "11:26 PM"
-    }
+    "line": "XAV -4.5"
    },
    {
     "id": "401911014",
@@ -9735,7 +9729,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 42
+     "live": 49
     },
     "home": {
      "team": "Saint Mary's",
@@ -9753,13 +9747,13 @@
      "opp_final": null,
      "opp_id": "82",
      "record": "2-1",
-     "live": 68
+     "live": 73
     },
     "time": "10:00 PM",
     "line": "SMC -6.5",
     "live": {
-     "detail": "8:14 2nd",
-     "as_of": "11:26 PM"
+     "detail": "4:39 2nd",
+     "as_of": "11:36 PM"
     }
    }
   ]
