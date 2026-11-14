@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 15:51 EST",
+ "updated": "2026-11-14 16:01 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9420,7 +9420,7 @@
      "opp_final": null,
      "opp_id": "2511",
      "record": "2-2",
-     "live": 82
+     "live": 89
     },
     "home": {
      "team": "Queens",
@@ -9437,13 +9437,13 @@
      "opp_final": null,
      "opp_id": "2747",
      "record": "2-2",
-     "live": 83
+     "live": 89
     },
     "time": "2:00 PM",
     "line": "QUC -5.5",
     "live": {
-     "detail": "4:05 2nd",
-     "as_of": "3:51 PM"
+     "detail": "2:15 2nd",
+     "as_of": "4:01 PM"
     }
    },
    {
@@ -9472,7 +9472,7 @@
      "opp_final": null,
      "opp_id": "2250",
      "record": "3-0",
-     "live": 8
+     "live": 13
     },
     "home": {
      "team": "Gonzaga",
@@ -9483,13 +9483,13 @@
      "final": null,
      "won": null,
      "record": "2-0",
-     "live": 8
+     "live": 14
     },
     "time": "3:30 PM",
     "line": "GONZ -5.5",
     "live": {
-     "detail": "15:04 1st",
-     "as_of": "3:51 PM"
+     "detail": "10:53 1st",
+     "as_of": "4:01 PM"
     }
    },
    {
@@ -11236,5 +11236,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "3:51 PM"
+ "scores_updated": "4:01 PM"
 }
