@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 17:56 EST",
+ "updated": "2026-11-14 18:06 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9486,7 +9486,7 @@
     "tbd": false,
     "tv": "ESPN+, Patriot League TV",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9497,10 +9497,9 @@
      "home": false,
      "owners": [],
      "id": "2261",
-     "final": null,
-     "won": null,
-     "record": "1-2",
-     "live": 56
+     "final": 56,
+     "won": false,
+     "record": "1-3"
     },
     "home": {
      "team": "Navy",
@@ -9509,22 +9508,17 @@
      "owners": [
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Hampton",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 58,
      "opp_final": null,
      "opp_id": "2261",
-     "record": "3-1",
-     "live": 58
+     "record": "4-1"
     },
     "time": "4:00 PM",
-    "line": "HAMP -1.5",
-    "live": {
-     "detail": "0:28 2nd",
-     "as_of": "5:56 PM"
-    }
+    "line": "HAMP -1.5"
    },
    {
     "id": "401934189",
@@ -9532,7 +9526,7 @@
     "tbd": false,
     "tv": "",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9543,10 +9537,9 @@
      "home": false,
      "owners": [],
      "id": "2410",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 41
+     "final": 41,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "UNC Wilmington",
@@ -9555,22 +9548,17 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Montreat",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 100,
      "opp_final": null,
      "opp_id": "2410",
-     "record": "3-0",
-     "live": 100
+     "record": "4-0"
     },
     "time": "4:00 PM",
-    "line": "",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "5:56 PM"
-    }
+    "line": ""
    },
    {
     "id": "401920567",
@@ -9598,7 +9586,7 @@
      "opp_final": null,
      "opp_id": "2352",
      "record": "3-1",
-     "live": 30
+     "live": 32
     },
     "home": {
      "team": "Loyola MD",
@@ -9614,8 +9602,8 @@
     "time": "5:00 PM",
     "line": "L-MD -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "5:56 PM"
+     "detail": "19:17 2nd",
+     "as_of": "6:06 PM"
     }
    },
    {
@@ -9637,7 +9625,8 @@
      "id": "2363",
      "final": null,
      "won": null,
-     "record": "1-2"
+     "record": "1-2",
+     "live": 5
     },
     "home": {
      "team": "Le Moyne",
@@ -9653,10 +9642,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2363",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 7
     },
     "time": "6:00 PM",
-    "line": "LEM -2.5"
+    "line": "LEM -2.5",
+    "live": {
+     "detail": "16:30 1st",
+     "as_of": "6:06 PM"
+    }
    },
    {
     "id": "401909534",
@@ -9677,7 +9671,8 @@
      "id": "38",
      "final": null,
      "won": null,
-     "record": "2-1"
+     "record": "2-1",
+     "live": 5
     },
     "home": {
      "team": "Providence",
@@ -9693,10 +9688,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "38",
-     "record": "2-1"
+     "record": "2-1",
+     "live": 2
     },
     "time": "6:00 PM",
-    "line": "PROV -11.5"
+    "line": "PROV -11.5",
+    "live": {
+     "detail": "17:20 1st",
+     "as_of": "6:06 PM"
+    }
    },
    {
     "id": "401925948",
@@ -9717,7 +9717,8 @@
      "id": "124946",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 8
     },
     "home": {
      "team": "Weber St.",
@@ -9733,10 +9734,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "124946",
-     "record": "0-3"
+     "record": "0-3",
+     "live": 6
     },
     "time": "6:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "17:02 1st",
+     "as_of": "6:06 PM"
+    }
    },
    {
     "id": "401920193",
@@ -11242,5 +11248,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "5:56 PM"
+ "scores_updated": "6:06 PM"
 }
