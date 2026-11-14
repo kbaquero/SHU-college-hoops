@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 14:41 EST",
+ "updated": "2026-11-14 14:51 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9355,7 +9355,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9366,10 +9366,9 @@
      "home": false,
      "owners": [],
      "id": "177",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 54
+     "final": 59,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Vermont",
@@ -9383,22 +9382,17 @@
       "Sean P.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Plattsburgh",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 104,
      "opp_final": null,
      "opp_id": "177",
-     "record": "1-2",
-     "live": 100
+     "record": "2-2"
     },
     "time": "1:00 PM",
-    "line": "",
-    "live": {
-     "detail": "2:42 2nd",
-     "as_of": "2:41 PM"
-    }
+    "line": ""
    },
    {
     "id": "401922230",
@@ -9426,7 +9420,7 @@
      "opp_final": null,
      "opp_id": "2511",
      "record": "2-2",
-     "live": 28
+     "live": 30
     },
     "home": {
      "team": "Queens",
@@ -9443,13 +9437,13 @@
      "opp_final": null,
      "opp_id": "2747",
      "record": "2-2",
-     "live": 36
+     "live": 39
     },
     "time": "2:00 PM",
     "line": "QUC -5.5",
     "live": {
-     "detail": "5:18 1st",
-     "as_of": "2:41 PM"
+     "detail": "2:28 1st",
+     "as_of": "2:51 PM"
     }
    },
    {
@@ -9770,7 +9764,7 @@
      "record": "3-0"
     },
     "time": "6:30 PM",
-    "line": "JOES -5.5"
+    "line": "JOES -3.5"
    },
    {
     "id": "401925774",
@@ -11236,5 +11230,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "2:41 PM"
+ "scores_updated": "2:51 PM"
 }
