@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 22:46 EST",
- "scores_updated": "10:46 PM",
+ "updated": "2026-11-13 22:56 EST",
+ "scores_updated": "10:56 PM",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -9530,7 +9530,7 @@
      "opp_final": null,
      "opp_id": "2",
      "record": "2-1",
-     "live": 53
+     "live": 59
     },
     "home": {
      "team": "Auburn",
@@ -9541,13 +9541,13 @@
      "final": null,
      "won": null,
      "record": "2-0",
-     "live": 53
+     "live": 58
     },
     "time": "9:00 PM",
     "line": "ARIZ -2.5",
     "live": {
-     "detail": "9:38 2nd",
-     "as_of": "10:46 PM"
+     "detail": "7:12 2nd",
+     "as_of": "10:56 PM"
     }
    },
    {
@@ -9570,7 +9570,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 49
+     "live": 60
     },
     "home": {
      "team": "Arizona St.",
@@ -9591,13 +9591,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "3-0",
-     "live": 81
+     "live": 92
     },
     "time": "9:00 PM",
     "line": "ASU -29.5",
     "live": {
-     "detail": "5:05 2nd",
-     "as_of": "10:46 PM"
+     "detail": "0:32 2nd",
+     "as_of": "10:56 PM"
     }
    },
    {
@@ -9620,7 +9620,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 57
+     "live": 61
     },
     "home": {
      "team": "Mississippi St.",
@@ -9637,13 +9637,13 @@
      "opp_final": null,
      "opp_id": "2752",
      "record": "3-0",
-     "live": 41
+     "live": 48
     },
     "time": "9:00 PM",
     "line": "XAV -4.5",
     "live": {
-     "detail": "12:38 2nd",
-     "as_of": "10:46 PM"
+     "detail": "10:04 2nd",
+     "as_of": "10:56 PM"
     }
    },
    {
@@ -9666,7 +9666,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 38
+     "live": 47
     },
     "home": {
      "team": "SMU",
@@ -9684,13 +9684,13 @@
      "opp_final": null,
      "opp_id": "2050",
      "record": "3-0",
-     "live": 70
+     "live": 73
     },
     "time": "9:00 PM",
     "line": "SMU -22.5",
     "live": {
-     "detail": "10:53 2nd",
-     "as_of": "10:46 PM"
+     "detail": "7:54 2nd",
+     "as_of": "10:56 PM"
     }
    },
    {
@@ -9719,7 +9719,7 @@
      "opp_final": null,
      "opp_id": "333",
      "record": "3-0",
-     "live": 60
+     "live": 64
     },
     "home": {
      "team": "Alabama",
@@ -9730,13 +9730,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 66
+     "live": 75
     },
     "time": "9:00 PM",
     "line": "ALA -18.5",
     "live": {
-     "detail": "7:03 2nd",
-     "as_of": "10:46 PM"
+     "detail": "3:58 2nd",
+     "as_of": "10:56 PM"
     }
    },
    {
