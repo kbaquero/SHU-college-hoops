@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 13:51 EST",
+ "updated": "2026-11-14 14:01 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9396,8 +9396,8 @@
     "time": "1:00 PM",
     "line": "",
     "live": {
-     "detail": "0:00 1st",
-     "as_of": "1:51 PM"
+     "detail": "Halftime",
+     "as_of": "2:01 PM"
     }
    },
    {
@@ -11230,5 +11230,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "1:51 PM"
+ "scores_updated": "2:01 PM"
 }
