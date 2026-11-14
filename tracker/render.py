@@ -720,7 +720,7 @@ function renderMyCard(me) {
   const bothRow = (g, finals) => {
     const a = g.away, h = g.home, live = !g.completed && g.live, fin = g.completed && a.final != null;
     const w = fin ? (a.won ? a : h) : null, l = fin ? (a.won ? h : a) : null;
-    const team = fin ? `${esc(w.team)}<i>${g.neutral ? 'vs' : w === h ? 'vs' : 'at'} ${esc(l.team)}</i>`
+    const team = fin ? `${esc(w.team)}<i>${g.neutral ? 'vs' : w === h ? 'vs' : 'at'}</i>${esc(l.team)}`   // both teams are theirs: both bold
       : `${esc(a.team)}<i>${g.neutral ? 'vs' : 'at'}</i>${esc(h.team)}`;
     const sc = fin ? `${w.final}-${l.final}` : live && a.live != null ? `${a.live}-${h.live ?? 0}` : '';
     const st = g.completed ? esc(g.final_label || 'Final') : live ? esc(g.live.detail) : finals ? 'No result' : esc(g.time || '');
