@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 22:16 EST",
- "scores_updated": "10:16 PM",
+ "updated": "2026-11-13 22:26 EST",
+ "scores_updated": "10:26 PM",
  "through": "Thu, Nov 12",
  "season": 2027,
  "standings": [
@@ -9350,7 +9350,7 @@
     "tbd": false,
     "tv": "Peacock",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9361,10 +9361,9 @@
      "home": false,
      "owners": [],
      "id": "258",
-     "final": null,
-     "won": null,
-     "record": "4-0",
-     "live": 85
+     "final": 87,
+     "won": true,
+     "record": "5-0"
     },
     "home": {
      "team": "Maryland",
@@ -9373,22 +9372,17 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Virginia",
      "pts": 0,
-     "final": null,
+     "final": 83,
      "opp_final": null,
      "opp_id": "258",
-     "record": "1-1",
-     "live": 79
+     "record": "1-2"
     },
     "time": "8:00 PM",
-    "line": "UVA -5.5",
-    "live": {
-     "detail": "0:44 2nd",
-     "as_of": "10:16 PM"
-    }
+    "line": "UVA -5.5"
    },
    {
     "id": "401927374",
@@ -9536,7 +9530,7 @@
      "opp_final": null,
      "opp_id": "2",
      "record": "2-1",
-     "live": 36
+     "live": 46
     },
     "home": {
      "team": "Auburn",
@@ -9547,13 +9541,13 @@
      "final": null,
      "won": null,
      "record": "2-0",
-     "live": 32
+     "live": 36
     },
     "time": "9:00 PM",
     "line": "ARIZ -2.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:06 PM"
+     "detail": "16:00 2nd",
+     "as_of": "10:26 PM"
     }
    },
    {
@@ -9576,7 +9570,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 25
+     "live": 33
     },
     "home": {
      "team": "Arizona St.",
@@ -9597,13 +9591,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "3-0",
-     "live": 63
+     "live": 70
     },
     "time": "9:00 PM",
     "line": "ASU -29.5",
     "live": {
-     "detail": "15:58 2nd",
-     "as_of": "10:16 PM"
+     "detail": "12:31 2nd",
+     "as_of": "10:26 PM"
     }
    },
    {
@@ -9626,7 +9620,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 41
+     "live": 48
     },
     "home": {
      "team": "Mississippi St.",
@@ -9643,13 +9637,13 @@
      "opp_final": null,
      "opp_id": "2752",
      "record": "3-0",
-     "live": 31
+     "live": 36
     },
     "time": "9:00 PM",
     "line": "XAV -4.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:06 PM"
+     "detail": "17:09 2nd",
+     "as_of": "10:26 PM"
     }
    },
    {
@@ -9672,7 +9666,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 17
+     "live": 26
     },
     "home": {
      "team": "SMU",
@@ -9690,13 +9684,13 @@
      "opp_final": null,
      "opp_id": "2050",
      "record": "3-0",
-     "live": 51
+     "live": 59
     },
     "time": "9:00 PM",
     "line": "SMU -22.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:06 PM"
+     "detail": "16:50 2nd",
+     "as_of": "10:26 PM"
     }
    },
    {
@@ -9725,7 +9719,7 @@
      "opp_final": null,
      "opp_id": "333",
      "record": "3-0",
-     "live": 32
+     "live": 40
     },
     "home": {
      "team": "Alabama",
@@ -9736,13 +9730,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 46
+     "live": 53
     },
     "time": "9:00 PM",
     "line": "ALA -18.5",
     "live": {
-     "detail": "17:25 2nd",
-     "as_of": "10:16 PM"
+     "detail": "14:38 2nd",
+     "as_of": "10:26 PM"
     }
    },
    {
@@ -9765,7 +9759,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 9
+     "live": 17
     },
     "home": {
      "team": "Saint Mary's",
@@ -9783,13 +9777,13 @@
      "opp_final": null,
      "opp_id": "82",
      "record": "2-1",
-     "live": 8
+     "live": 17
     },
     "time": "10:00 PM",
     "line": "SMC -6.5",
     "live": {
-     "detail": "12:56 1st",
-     "as_of": "10:16 PM"
+     "detail": "9:16 1st",
+     "as_of": "10:26 PM"
     }
    }
   ]
