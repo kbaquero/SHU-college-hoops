@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 17:46 EST",
+ "updated": "2026-11-14 17:56 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9500,7 +9500,7 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 53
+     "live": 56
     },
     "home": {
      "team": "Navy",
@@ -9522,8 +9522,8 @@
     "time": "4:00 PM",
     "line": "HAMP -1.5",
     "live": {
-     "detail": "1:30 2nd",
-     "as_of": "5:46 PM"
+     "detail": "0:28 2nd",
+     "as_of": "5:56 PM"
     }
    },
    {
@@ -9546,7 +9546,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 39
+     "live": 41
     },
     "home": {
      "team": "UNC Wilmington",
@@ -9563,13 +9563,13 @@
      "opp_final": null,
      "opp_id": "2410",
      "record": "3-0",
-     "live": 87
+     "live": 100
     },
     "time": "4:00 PM",
     "line": "",
     "live": {
-     "detail": "4:01 2nd",
-     "as_of": "5:46 PM"
+     "detail": "End of 2nd",
+     "as_of": "5:56 PM"
     }
    },
    {
@@ -9598,7 +9598,7 @@
      "opp_final": null,
      "opp_id": "2352",
      "record": "3-1",
-     "live": 28
+     "live": 30
     },
     "home": {
      "team": "Loyola MD",
@@ -9614,8 +9614,8 @@
     "time": "5:00 PM",
     "line": "L-MD -1.5",
     "live": {
-     "detail": "0:19 1st",
-     "as_of": "5:46 PM"
+     "detail": "Halftime",
+     "as_of": "5:56 PM"
     }
    },
    {
@@ -11242,5 +11242,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "5:46 PM"
+ "scores_updated": "5:56 PM"
 }
