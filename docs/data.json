@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 20:36 EST",
+ "updated": "2026-11-14 20:47 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9726,7 +9726,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9738,15 +9738,14 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Saint Joseph's",
      "pts": 0,
-     "final": null,
+     "final": 77,
      "opp_final": null,
      "opp_id": "2603",
-     "record": "1-2",
-     "live": 77
+     "record": "1-3"
     },
     "home": {
      "team": "Saint Joseph's",
@@ -9754,17 +9753,12 @@
      "home": true,
      "owners": [],
      "id": "2603",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 81
+     "final": 83,
+     "won": true,
+     "record": "4-0"
     },
     "time": "6:30 PM",
-    "line": "JOES -3.5",
-    "live": {
-     "detail": "0:04 2nd",
-     "as_of": "8:36 PM"
-    }
+    "line": "JOES -3.5"
    },
    {
     "id": "401925774",
@@ -9794,7 +9788,7 @@
      "opp_final": null,
      "opp_id": "2166",
      "record": "2-2",
-     "live": 49
+     "live": 53
     },
     "home": {
      "team": "Davidson",
@@ -9805,13 +9799,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 49
+     "live": 51
     },
     "time": "7:00 PM",
     "line": "DAV -10.5",
     "live": {
-     "detail": "7:29 2nd",
-     "as_of": "8:36 PM"
+     "detail": "3:29 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -9840,7 +9834,7 @@
      "opp_final": null,
      "opp_id": "2717",
      "record": "2-2",
-     "live": 46
+     "live": 55
     },
     "home": {
      "team": "Western Carolina",
@@ -9851,13 +9845,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 51
+     "live": 56
     },
     "time": "7:00 PM",
     "line": "WCU -3.5",
     "live": {
-     "detail": "10:24 2nd",
-     "as_of": "8:36 PM"
+     "detail": "6:41 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -9886,7 +9880,7 @@
      "opp_final": null,
      "opp_id": "2217",
      "record": "1-4",
-     "live": 51
+     "live": 54
     },
     "home": {
      "team": "Fairfield",
@@ -9897,13 +9891,13 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 49
+     "live": 54
     },
     "time": "7:00 PM",
     "line": "FAIR -11.5",
     "live": {
-     "detail": "6:33 2nd",
-     "as_of": "8:36 PM"
+     "detail": "3:33 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -9926,7 +9920,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 67
+     "live": 69
     },
     "home": {
      "team": "Siena",
@@ -9944,13 +9938,13 @@
      "opp_final": null,
      "opp_id": "225",
      "record": "2-1",
-     "live": 58
+     "live": 68
     },
     "time": "7:00 PM",
     "line": "SIE -9.5",
     "live": {
-     "detail": "8:15 2nd",
-     "as_of": "8:36 PM"
+     "detail": "4:52 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -10013,7 +10007,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 43
+     "live": 49
     },
     "home": {
      "team": "Villanova",
@@ -10030,13 +10024,13 @@
      "opp_final": null,
      "opp_id": "2520",
      "record": "2-1",
-     "live": 72
+     "live": 82
     },
     "time": "7:00 PM",
     "line": "VILL -33.5",
     "live": {
-     "detail": "9:29 2nd",
-     "as_of": "8:36 PM"
+     "detail": "6:56 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -10059,7 +10053,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 28
+     "live": 39
     },
     "home": {
      "team": "Morehead St.",
@@ -10076,13 +10070,13 @@
      "opp_final": null,
      "opp_id": "85",
      "record": "1-2",
-     "live": 32
+     "live": 39
     },
     "time": "7:30 PM",
     "line": "IUIN -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:26 PM"
+     "detail": "16:19 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -10105,7 +10099,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 20
+     "live": 24
     },
     "home": {
      "team": "Grand Canyon",
@@ -10122,13 +10116,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "3-0",
-     "live": 28
+     "live": 37
     },
     "time": "8:00 PM",
     "line": "GCU -31.5",
     "live": {
-     "detail": "5:43 1st",
-     "as_of": "8:36 PM"
+     "detail": "2:37 1st",
+     "as_of": "8:47 PM"
     }
    }
   ]
@@ -11272,5 +11266,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "8:36 PM"
+ "scores_updated": "8:47 PM"
 }
