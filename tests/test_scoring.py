@@ -8,6 +8,7 @@ sys.path.insert(0, str(ROOT))
 from tracker import config as C, teams as TM
 from tracker.scoring import classify, score_team, ncaa_round
 from tracker.espn import parse_event
+from tracker import gotd
 
 TEAM = {"team": "Duke", "conf": "ACC", "salary": 18}
 CONF_OF = {"150": "ACC", "153": "ACC", "2": "SEC", "99": "ACC"}
@@ -19,6 +20,37 @@ def g(gid, date, won, opp, stype=2, headline="", conf_flag=None, seed=None):
             "opp_id": opp, "opp_name": opp, "score": "70-60", "headline": headline,
             "conf_flag": conf_flag, "seed": seed}
 
+
+def _g(gid, away, home, line="", start="2026-11-15T19:00:00-05:00", **kw):
+    side = lambda o: {"pool": bool(o), "owners": o}
+    return {"id": gid, "kind": "nonconf", "line": line, "start": start, "completed": False,
+            "away": side(away), "home": side(home), **kw}
+
+class GameOfTheDay(unittest.TestCase):
+    ET = dt.timezone(dt.timedelta(hours=-5))
+
+    def test_closeness_slides_smoothly(self):
+        self.assertEqual(gotd.closeness(0), 1.5)
+        self.assertAlmostEqual(gotd.closeness(11.5), 0.925)
+        self.assertAlmostEqual(gotd.closeness(12.5), 0.875)   # a point of line movement is a small nudge, not a cliff
+        self.assertEqual(gotd.closeness(25), 0.5)
+        self.assertEqual(gotd.closeness(gotd.NO_LINE), 1.0)
+
+    def test_picks_most_stakes(self):
+        day = {"date": "2026-11-15", "games": [
+            _g("a", ["A", "B"], ["C"], "X -11.5"),       # 3 entries + 1 h2h -> 6 x 0.925
+            _g("b", ["D", "E", "F"], ["G"], "Y -7.5")]}  # 4 entries + 1 h2h -> 7 x 1.125
+        self.assertEqual(gotd.pick(day, None, dt.datetime(2026, 11, 15, 9, tzinfo=self.ET))["id"], "b")
+
+    def test_locked_once_tipped(self):
+        day = {"date": "2026-11-15", "games": [
+            _g("early", ["A"], ["B"], "X -2", start="2026-11-15T12:00:00-05:00"),
+            _g("late", ["C", "D", "E"], ["F", "G"], "Y -1")]}
+        prev = {"date": "2026-11-15", "id": "early"}
+        noon30 = dt.datetime(2026, 11, 15, 12, 30, tzinfo=self.ET)
+        self.assertEqual(gotd.pick(day, prev, noon30), prev)                 # tipped: stays put
+        self.assertEqual(gotd.pick(day, prev, noon30.replace(hour=11))["id"], "late")   # pregame: re-picks
+        self.assertEqual(gotd.pick(day, {"date": "2026-11-14", "id": "early"}, noon30)["id"], "late")  # new day
 
 class Scoring(unittest.TestCase):
     def test_regular_season(self):

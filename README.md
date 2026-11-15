@@ -115,9 +115,10 @@ How games are classified:
 - **Game of the Day** (Standings tab under the summary; marked in gold on the Games tab): today's game with the most
   at stake for the pool. Stakes = (entries involved + 3 per head-to-head pair) × what a win is worth × closeness.
   Head-to-head pairs are the smaller side, not counting anyone who owns both teams. Worth uses the pool's own points:
-  non-conference 1, conference 2, conference tournament 2 (7 in the final), NCAA by round (2 up to 12). Closeness:
-  spread ≤3: ×1.5, ≤7: ×1.25, ≤12: ×1, more: ×0.5 (no line: ×1). Ties go to the closer spread, then the earlier tip.
-  Hidden when no game involves two or more entries.
+  non-conference 1, conference 2, conference tournament 2 (7 in the final), NCAA by round (2 up to 12). Closeness
+  slides with the spread: ×1.5 at a pick'em down to ×0.5 at 20 points or more (no line: ×1). Ties go to the closer
+  spread, then the earlier tip. Picked by the tracker (tracker/gotd.py) and locked once it tips off, so a later
+  game's line move can't take its place. Hidden when no game involves two or more entries.
 - **Any push to `data/`, `tracker/`, `tests/` or `.github/`** runs a full update, which is safe at any hour.
 
 To check on it: the repo's Actions tab shows a "Watch games" run in progress with a log of each check. If none is

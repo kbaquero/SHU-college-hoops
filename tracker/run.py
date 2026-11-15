@@ -10,6 +10,7 @@ from . import config as C, espn
 from .teams import load_teams, save_teams, resolve_espn_ids, load_entries, load_seeds, load_full_names
 from .scoring import score_team, game_points, ncaa_round
 from .render import render_html
+from . import gotd
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
@@ -239,6 +240,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
         "yesterday": data_yesterday,
         "warnings": sorted(set(warnings)),
     }
+    data["gotd"] = gotd.pick(data_today, _prev_gotd(docs), now)   # a pick that has tipped off stays put
     docs.mkdir(exist_ok=True)
     (docs / "data.json").write_text(json.dumps(data, indent=1))
     (docs / "index.html").write_text(render_html(data))
@@ -314,6 +316,12 @@ def apply_board(games, board, now):
     return changed
 
 
+def _prev_gotd(docs):
+    try:
+        return json.loads((docs / "data.json").read_text()).get("gotd")
+    except (OSError, ValueError):
+        return None
+
 def update_scores(get_board=None, now=None, docs=DOCS):
     """Evening update: refresh only Today's games (finals, scores, preview points, latest pregame spread).
     Standings and everything else keep their morning numbers."""
@@ -328,6 +336,9 @@ def update_scores(get_board=None, now=None, docs=DOCS):
         return data
     board = get_board(td["date"])   # the morning's date, so 12-1 AM runs still finish off "today"
     changed = apply_board(td["games"], board, now)
+    pick = gotd.pick(td, data.get("gotd"), now)
+    if pick != data.get("gotd"):
+        data["gotd"], changed = pick, True
     if changed:
         data["scores_updated"] = now.strftime("%-I:%M %p")
         data["updated"] = now.strftime("%Y-%m-%d %H:%M %Z")   # header and "as of" always agree

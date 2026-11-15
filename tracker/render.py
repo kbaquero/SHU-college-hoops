@@ -553,7 +553,7 @@ const PTS = __PTS__;
   const el = $('#gotd'), games = STALE ? [] : (D.today?.games || []);
   const own = sd => sd.pool ? (sd.owners || []) : [];
   const spread = g => { const m = /-(\d+(\.\d+)?)/.exec(g.line || ''); return m ? +m[1] : 99; };
-  const close = sp => sp === 99 ? 1 : sp <= 3 ? 1.5 : sp <= 7 ? 1.25 : sp <= 12 ? 1 : 0.5;
+  const close = sp => sp === 99 ? 1 : Math.max(0.5, 1.5 - sp / 20);   // same formula as tracker/gotd.py
   const scored = games.map(g => {
     const a = own(g.away), h = own(g.home), both = a.filter(e => h.includes(e));
     const n = new Set([...a, ...h]).size, h2h = Math.min(a.length - both.length, h.length - both.length);
@@ -563,8 +563,10 @@ const PTS = __PTS__;
     return {g, n, worth, sp: spread(g), stakes: (n + 3 * h2h) * worth * close(spread(g))};
   }).filter(x => x.n >= 2)
     .sort((a, b) => b.stakes - a.stakes || a.sp - b.sp || (a.g.start || '').localeCompare(b.g.start || ''));
+  // the stored pick wins (it's locked once it tips off); scoring here is only a fallback
+  const stored = D.gotd && D.gotd.date === D.today?.date && scored.find(x => x.g.id === D.gotd.id);
   if (!scored.length) { el.hidden = true; return; }
-  const {g, n} = scored[0], live = !g.completed && g.live, fin = g.completed;
+  const {g, n} = stored || scored[0], live = !g.completed && g.live, fin = g.completed;
   window.GOTD = g.id;   // the Games tab marks this game in place
   const sc = sd => fin ? sd.final : live ? sd.live : null;
   const side = (sd, other) => {
