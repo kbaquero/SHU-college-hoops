@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 15:54 EST",
+ "updated": "2026-11-15 16:04 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9974,7 +9974,7 @@
     "tbd": false,
     "tv": "B1G+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9985,10 +9985,9 @@
      "home": false,
      "owners": [],
      "id": "2729",
-     "final": null,
-     "won": null,
-     "record": "2-1",
-     "live": 74
+     "final": 79,
+     "won": false,
+     "record": "2-2"
     },
     "home": {
      "team": "Michigan",
@@ -10001,22 +10000,17 @@
       "Jason H.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "William & Mary",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 123,
      "opp_final": null,
      "opp_id": "2729",
-     "record": "2-1",
-     "live": 109
+     "record": "3-1"
     },
     "time": "2:00 PM",
-    "line": "MICH -26.5",
-    "live": {
-     "detail": "3:32 2nd",
-     "as_of": "3:54 PM"
-    }
+    "line": "MICH -26.5"
    },
    {
     "id": "401920136",
@@ -10024,7 +10018,7 @@
     "tbd": false,
     "tv": "Summit League Network, WDAY, Midco Sports Plus",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10035,10 +10029,9 @@
      "home": false,
      "owners": [],
      "id": "2934",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 69
+     "final": 73,
+     "won": true,
+     "record": "4-0"
     },
     "home": {
      "team": "North Dakota St.",
@@ -10047,22 +10040,17 @@
      "owners": [
       "Jason H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Cal St. Bakersfield",
      "pts": 0,
-     "final": null,
+     "final": 69,
      "opp_final": null,
      "opp_id": "2934",
-     "record": "2-3",
-     "live": 64
+     "record": "2-4"
     },
     "time": "2:00 PM",
-    "line": "NDSU -3.5",
-    "live": {
-     "detail": "0:37 2nd",
-     "as_of": "3:54 PM"
-    }
+    "line": "NDSU -3.5"
    },
    {
     "id": "401928825",
@@ -10141,13 +10129,13 @@
      "opp_final": null,
      "opp_id": "142",
      "record": "2-1",
-     "live": 46
+     "live": 48
     },
     "time": "2:30 PM",
     "line": "MARQ -2.5",
     "live": {
-     "detail": "12:26 2nd",
-     "as_of": "3:54 PM"
+     "detail": "9:33 2nd",
+     "as_of": "4:04 PM"
     }
    },
    {
@@ -10177,7 +10165,7 @@
      "opp_final": null,
      "opp_id": "251",
      "record": "3-0",
-     "live": 34
+     "live": 36
     },
     "home": {
      "team": "Texas",
@@ -10188,13 +10176,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 36
+     "live": 39
     },
     "time": "3:00 PM",
     "line": "TEX -3.5",
     "live": {
-     "detail": "0:40 1st",
-     "as_of": "3:54 PM"
+     "detail": "Halftime",
+     "as_of": "4:04 PM"
     }
    },
    {
@@ -10224,7 +10212,7 @@
      "opp_final": null,
      "opp_id": "139",
      "record": "4-0",
-     "live": 44
+     "live": 48
     },
     "home": {
      "team": "Saint Louis",
@@ -10246,8 +10234,8 @@
     "time": "3:00 PM",
     "line": "SLU -7.5",
     "live": {
-     "detail": "2:04 1st",
-     "as_of": "3:54 PM"
+     "detail": "Halftime",
+     "as_of": "4:04 PM"
     }
    },
    {
@@ -10270,7 +10258,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 33
+     "live": 42
     },
     "home": {
      "team": "Iowa",
@@ -10287,13 +10275,13 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "2-1",
-     "live": 26
+     "live": 30
     },
     "time": "3:00 PM",
     "line": "IOWA -3.5",
     "live": {
-     "detail": "2:43 1st",
-     "as_of": "3:54 PM"
+     "detail": "Halftime",
+     "as_of": "4:04 PM"
     }
    },
    {
@@ -10323,7 +10311,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "256",
-     "record": "1-3"
+     "record": "1-3",
+     "live": 0
     },
     "home": {
      "team": "James Madison",
@@ -10339,10 +10328,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2385",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 2
     },
     "time": "4:00 PM",
-    "line": "JMU -11.5"
+    "line": "JMU -11.5",
+    "live": {
+     "detail": "18:44 1st",
+     "as_of": "4:04 PM"
+    }
    },
    {
     "id": "401911017",
@@ -11291,5 +11285,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "3:54 PM"
+ "scores_updated": "4:04 PM"
 }
