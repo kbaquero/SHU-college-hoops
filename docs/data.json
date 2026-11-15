@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 17:25 EST",
- "scores_updated": "5:25 PM",
+ "updated": "2026-11-15 17:35 EST",
+ "scores_updated": "5:35 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10289,7 +10289,7 @@
      "opp_final": null,
      "opp_id": "256",
      "record": "1-3",
-     "live": 51
+     "live": 55
     },
     "home": {
      "team": "James Madison",
@@ -10306,13 +10306,13 @@
      "opp_final": null,
      "opp_id": "2385",
      "record": "1-2",
-     "live": 51
+     "live": 62
     },
     "time": "4:00 PM",
     "line": "JMU -11.5",
     "live": {
-     "detail": "10:48 2nd",
-     "as_of": "5:25 PM"
+     "detail": "7:44 2nd",
+     "as_of": "5:35 PM"
     }
    },
    {
@@ -10334,7 +10334,8 @@
      "id": "2099",
      "final": null,
      "won": null,
-     "record": "2-2"
+     "record": "2-2",
+     "live": 0
     },
     "home": {
      "team": "Buffalo",
@@ -10350,10 +10351,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2099",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 0
     },
     "time": "5:30 PM",
-    "line": "BUF -13.5"
+    "line": "BUF -13.5",
+    "live": {
+     "detail": "19:28 1st",
+     "as_of": "5:35 PM"
+    }
    },
    {
     "id": "401920124",
@@ -10475,7 +10481,7 @@
      "record": "3-0"
     },
     "time": "8:00 PM",
-    "line": "WIS -28.5"
+    "line": "WIS -27.5"
    },
    {
     "id": "401911472",
