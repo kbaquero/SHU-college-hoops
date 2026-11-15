@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-15 16:14 EST",
+ "updated": "2026-11-15 16:21 EST",
+ "scores_updated": "4:21 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9834,11 +9835,11 @@
       "Dan P."
      ],
      "won": true,
-     "score": "",
+     "score": "99-31",
      "opp": "Abraham Baldwin Agricultural",
      "pts": 1,
      "final": 99,
-     "opp_final": null,
+     "opp_final": 31,
      "opp_id": "134875",
      "record": "2-3"
     },
@@ -9866,11 +9867,11 @@
       "Sean P."
      ],
      "won": false,
-     "score": "",
+     "score": "58-64",
      "opp": "Delaware",
      "pts": 0,
      "final": 58,
-     "opp_final": null,
+     "opp_final": 64,
      "opp_id": "48",
      "record": "0-4"
     },
@@ -9907,11 +9908,11 @@
       "Connor C. & Conor G."
      ],
      "won": false,
-     "score": "",
+     "score": "78-98",
      "opp": "Memphis",
      "pts": 0,
      "final": 78,
-     "opp_final": null,
+     "opp_final": 98,
      "opp_id": "235",
      "record": "2-1"
     },
@@ -9947,11 +9948,11 @@
       "Joe H."
      ],
      "won": false,
-     "score": "",
+     "score": "53-78",
      "opp": "Georgia St.",
      "pts": 0,
      "final": 53,
-     "opp_final": null,
+     "opp_final": 78,
      "opp_id": "2247",
      "record": "2-3"
     },
@@ -10001,11 +10002,11 @@
       "Kevin B."
      ],
      "won": true,
-     "score": "",
+     "score": "123-79",
      "opp": "William & Mary",
      "pts": 1,
      "final": 123,
-     "opp_final": null,
+     "opp_final": 79,
      "opp_id": "2729",
      "record": "3-1"
     },
@@ -10041,11 +10042,11 @@
       "Jason H."
      ],
      "won": false,
-     "score": "",
+     "score": "69-73",
      "opp": "Cal St. Bakersfield",
      "pts": 0,
      "final": 69,
-     "opp_final": null,
+     "opp_final": 73,
      "opp_id": "2934",
      "record": "2-4"
     },
@@ -10081,11 +10082,11 @@
       "Ben D."
      ],
      "won": true,
-     "score": "",
+     "score": "94-45",
      "opp": "Capital",
      "pts": 1,
      "final": 94,
-     "opp_final": null,
+     "opp_final": 45,
      "opp_id": "424",
      "record": "1-3"
     },
@@ -10104,20 +10105,9 @@
     "final_label": "Final",
     "event": "Legends Classic",
     "away": {
-     "team": "Missouri",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "142",
-     "final": null,
-     "won": null,
-     "record": "2-1",
-     "live": 49
-    },
-    "home": {
      "team": "Marquette",
      "pool": true,
-     "home": true,
+     "home": false,
      "owners": [
       "Sean P."
      ],
@@ -10129,13 +10119,24 @@
      "opp_final": null,
      "opp_id": "142",
      "record": "2-1",
-     "live": 52
+     "live": 54
+    },
+    "home": {
+     "team": "Missouri",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "142",
+     "final": null,
+     "won": null,
+     "record": "2-1",
+     "live": 55
     },
     "time": "2:30 PM",
     "line": "MARQ -2.5",
     "live": {
-     "detail": "6:18 2nd",
-     "as_of": "4:14 PM"
+     "detail": "3:13 2nd",
+     "as_of": "4:21 PM"
     }
    },
    {
@@ -10165,7 +10166,7 @@
      "opp_final": null,
      "opp_id": "251",
      "record": "3-0",
-     "live": 36
+     "live": 39
     },
     "home": {
      "team": "Texas",
@@ -10176,13 +10177,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 39
+     "live": 41
     },
     "time": "3:00 PM",
     "line": "TEX -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:04 PM"
+     "detail": "18:01 2nd",
+     "as_of": "4:21 PM"
     }
    },
    {
@@ -10212,7 +10213,7 @@
      "opp_final": null,
      "opp_id": "139",
      "record": "4-0",
-     "live": 48
+     "live": 51
     },
     "home": {
      "team": "Saint Louis",
@@ -10229,13 +10230,13 @@
      "opp_final": null,
      "opp_id": "2272",
      "record": "3-0",
-     "live": 26
+     "live": 29
     },
     "time": "3:00 PM",
     "line": "SLU -7.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:04 PM"
+     "detail": "17:06 2nd",
+     "as_of": "4:21 PM"
     }
    },
    {
@@ -10258,7 +10259,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 42
+     "live": 44
     },
     "home": {
      "team": "Iowa",
@@ -10275,13 +10276,13 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "2-1",
-     "live": 30
+     "live": 36
     },
     "time": "3:00 PM",
     "line": "IOWA -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:04 PM"
+     "detail": "15:47 2nd",
+     "as_of": "4:21 PM"
     }
    },
    {
@@ -10312,7 +10313,7 @@
      "opp_final": null,
      "opp_id": "256",
      "record": "1-3",
-     "live": 15
+     "live": 19
     },
     "home": {
      "team": "James Madison",
@@ -10329,13 +10330,13 @@
      "opp_final": null,
      "opp_id": "2385",
      "record": "1-2",
-     "live": 10
+     "live": 20
     },
     "time": "4:00 PM",
     "line": "JMU -11.5",
     "live": {
-     "detail": "12:28 1st",
-     "as_of": "4:14 PM"
+     "detail": "8:22 1st",
+     "as_of": "4:21 PM"
     }
    },
    {
@@ -11285,5 +11286,8 @@
   ]
  },
  "warnings": [],
- "scores_updated": "4:14 PM"
+ "gotd": {
+  "date": "2026-11-15",
+  "id": "401911251"
+ }
 }
