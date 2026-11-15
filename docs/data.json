@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 15:44 EST",
+ "updated": "2026-11-15 15:54 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9988,7 +9988,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 68
+     "live": 74
     },
     "home": {
      "team": "Michigan",
@@ -10009,13 +10009,13 @@
      "opp_final": null,
      "opp_id": "2729",
      "record": "2-1",
-     "live": 93
+     "live": 109
     },
     "time": "2:00 PM",
     "line": "MICH -26.5",
     "live": {
-     "detail": "7:48 2nd",
-     "as_of": "3:44 PM"
+     "detail": "3:32 2nd",
+     "as_of": "3:54 PM"
     }
    },
    {
@@ -10038,7 +10038,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 62
+     "live": 69
     },
     "home": {
      "team": "North Dakota St.",
@@ -10055,13 +10055,13 @@
      "opp_final": null,
      "opp_id": "2934",
      "record": "2-3",
-     "live": 60
+     "live": 64
     },
     "time": "2:00 PM",
     "line": "NDSU -3.5",
     "live": {
-     "detail": "3:27 2nd",
-     "as_of": "3:44 PM"
+     "detail": "0:37 2nd",
+     "as_of": "3:54 PM"
     }
    },
    {
@@ -10070,7 +10070,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10081,10 +10081,9 @@
      "home": false,
      "owners": [],
      "id": "424",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 43
+     "final": 45,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Robert Morris",
@@ -10093,22 +10092,17 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Capital",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 94,
      "opp_final": null,
      "opp_id": "424",
-     "record": "0-3",
-     "live": 87
+     "record": "1-3"
     },
     "time": "2:00 PM",
-    "line": "",
-    "live": {
-     "detail": "2:14 2nd",
-     "as_of": "3:44 PM"
-    }
+    "line": ""
    },
    {
     "id": "401909525",
@@ -10130,7 +10124,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 35
+     "live": 39
     },
     "home": {
      "team": "Marquette",
@@ -10147,13 +10141,13 @@
      "opp_final": null,
      "opp_id": "142",
      "record": "2-1",
-     "live": 42
+     "live": 46
     },
     "time": "2:30 PM",
     "line": "MARQ -2.5",
     "live": {
-     "detail": "16:31 2nd",
-     "as_of": "3:44 PM"
+     "detail": "12:26 2nd",
+     "as_of": "3:54 PM"
     }
    },
    {
@@ -10183,7 +10177,7 @@
      "opp_final": null,
      "opp_id": "251",
      "record": "3-0",
-     "live": 30
+     "live": 34
     },
     "home": {
      "team": "Texas",
@@ -10194,13 +10188,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 33
+     "live": 36
     },
     "time": "3:00 PM",
     "line": "TEX -3.5",
     "live": {
-     "detail": "3:32 1st",
-     "as_of": "3:44 PM"
+     "detail": "0:40 1st",
+     "as_of": "3:54 PM"
     }
    },
    {
@@ -10230,7 +10224,7 @@
      "opp_final": null,
      "opp_id": "139",
      "record": "4-0",
-     "live": 33
+     "live": 44
     },
     "home": {
      "team": "Saint Louis",
@@ -10247,13 +10241,13 @@
      "opp_final": null,
      "opp_id": "2272",
      "record": "3-0",
-     "live": 18
+     "live": 26
     },
     "time": "3:00 PM",
     "line": "SLU -7.5",
     "live": {
-     "detail": "5:45 1st",
-     "as_of": "3:44 PM"
+     "detail": "2:04 1st",
+     "as_of": "3:54 PM"
     }
    },
    {
@@ -10276,7 +10270,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 26
+     "live": 33
     },
     "home": {
      "team": "Iowa",
@@ -10293,13 +10287,13 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "2-1",
-     "live": 24
+     "live": 26
     },
     "time": "3:00 PM",
     "line": "IOWA -3.5",
     "live": {
-     "detail": "4:43 1st",
-     "as_of": "3:44 PM"
+     "detail": "2:43 1st",
+     "as_of": "3:54 PM"
     }
    },
    {
@@ -10348,7 +10342,7 @@
      "record": "1-2"
     },
     "time": "4:00 PM",
-    "line": "JMU -12.5"
+    "line": "JMU -11.5"
    },
    {
     "id": "401911017",
@@ -11297,5 +11291,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "3:44 PM"
+ "scores_updated": "3:54 PM"
 }
