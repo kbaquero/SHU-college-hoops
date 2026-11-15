@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 18:45 EST",
- "scores_updated": "6:45 PM",
+ "updated": "2026-11-15 18:55 EST",
+ "scores_updated": "6:55 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10329,7 +10329,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 39
+     "live": 42
     },
     "home": {
      "team": "Buffalo",
@@ -10346,13 +10346,13 @@
      "opp_final": null,
      "opp_id": "2099",
      "record": "1-2",
-     "live": 56
+     "live": 63
     },
     "time": "5:30 PM",
     "line": "BUF -13.5",
     "live": {
-     "detail": "15:57 2nd",
-     "as_of": "6:45 PM"
+     "detail": "10:44 2nd",
+     "as_of": "6:55 PM"
     }
    },
    {
@@ -10375,7 +10375,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 16
+     "live": 22
     },
     "home": {
      "team": "Montana St.",
@@ -10392,13 +10392,13 @@
      "opp_final": null,
      "opp_id": "13",
      "record": "1-2",
-     "live": 34
+     "live": 36
     },
     "time": "6:00 PM",
     "line": "MTST -6.5",
     "live": {
-     "detail": "1:42 1st",
-     "as_of": "6:45 PM"
+     "detail": "Halftime",
+     "as_of": "6:55 PM"
     }
    },
    {
