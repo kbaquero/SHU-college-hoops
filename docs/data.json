@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 13:13 EST",
+ "updated": "2026-11-15 13:14 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9842,13 +9842,13 @@
      "opp_final": null,
      "opp_id": "134875",
      "record": "1-3",
-     "live": 62
+     "live": 64
     },
     "time": "12:00 PM",
     "line": "",
     "live": {
-     "detail": "14:38 2nd",
-     "as_of": "1:13 PM"
+     "detail": "14:21 2nd",
+     "as_of": "1:14 PM"
     }
    },
    {
@@ -9895,8 +9895,8 @@
     "time": "1:00 PM",
     "line": "DEL -1.5",
     "live": {
-     "detail": "13:45 1st",
-     "as_of": "1:13 PM"
+     "detail": "13:16 1st",
+     "as_of": "1:14 PM"
     }
    },
    {
@@ -9926,7 +9926,7 @@
      "opp_final": null,
      "opp_id": "235",
      "record": "2-0",
-     "live": 15
+     "live": 19
     },
     "home": {
      "team": "Memphis",
@@ -9942,8 +9942,8 @@
     "time": "1:00 PM",
     "line": "LOU -10.5",
     "live": {
-     "detail": "14:44 1st",
-     "as_of": "1:13 PM"
+     "detail": "14:23 1st",
+     "as_of": "1:14 PM"
     }
    },
    {
@@ -9972,7 +9972,7 @@
      "opp_final": null,
      "opp_id": "2247",
      "record": "2-2",
-     "live": 4
+     "live": 7
     },
     "home": {
      "team": "Georgia St.",
@@ -9988,8 +9988,8 @@
     "time": "1:00 PM",
     "line": "GAST -11.5",
     "live": {
-     "detail": "13:34 1st",
-     "as_of": "1:13 PM"
+     "detail": "12:50 1st",
+     "as_of": "1:14 PM"
     }
    },
    {
@@ -11279,5 +11279,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "1:13 PM"
+ "scores_updated": "1:14 PM"
 }
