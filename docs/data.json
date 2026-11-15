@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 14:34 EST",
+ "updated": "2026-11-15 14:44 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9873,7 +9873,7 @@
      "opp_final": null,
      "opp_id": "48",
      "record": "0-3",
-     "live": 52
+     "live": 56
     },
     "home": {
      "team": "Delaware",
@@ -9884,13 +9884,13 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 48
+     "live": 62
     },
     "time": "1:00 PM",
     "line": "DEL -1.5",
     "live": {
-     "detail": "3:51 2nd",
-     "as_of": "2:34 PM"
+     "detail": "0:19 2nd",
+     "as_of": "2:44 PM"
     }
    },
    {
@@ -9920,7 +9920,7 @@
      "opp_final": null,
      "opp_id": "235",
      "record": "2-0",
-     "live": 61
+     "live": 65
     },
     "home": {
      "team": "Memphis",
@@ -9931,13 +9931,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 64
+     "live": 75
     },
     "time": "1:00 PM",
     "line": "LOU -10.5",
     "live": {
-     "detail": "13:09 2nd",
-     "as_of": "2:34 PM"
+     "detail": "10:15 2nd",
+     "as_of": "2:44 PM"
     }
    },
    {
@@ -9966,7 +9966,7 @@
      "opp_final": null,
      "opp_id": "2247",
      "record": "2-2",
-     "live": 47
+     "live": 49
     },
     "home": {
      "team": "Georgia St.",
@@ -9977,13 +9977,13 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 66
+     "live": 72
     },
     "time": "1:00 PM",
     "line": "GAST -11.5",
     "live": {
-     "detail": "5:46 2nd",
-     "as_of": "2:34 PM"
+     "detail": "2:51 2nd",
+     "as_of": "2:44 PM"
     }
    },
    {
@@ -10006,7 +10006,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 30
+     "live": 37
     },
     "home": {
      "team": "Michigan",
@@ -10027,13 +10027,13 @@
      "opp_final": null,
      "opp_id": "2729",
      "record": "2-1",
-     "live": 33
+     "live": 44
     },
     "time": "2:00 PM",
     "line": "MICH -26.5",
     "live": {
-     "detail": "7:25 1st",
-     "as_of": "2:34 PM"
+     "detail": "3:11 1st",
+     "as_of": "2:44 PM"
     }
    },
    {
@@ -10056,7 +10056,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 26
+     "live": 32
     },
     "home": {
      "team": "North Dakota St.",
@@ -10073,13 +10073,13 @@
      "opp_final": null,
      "opp_id": "2934",
      "record": "2-3",
-     "live": 28
+     "live": 38
     },
     "time": "2:00 PM",
     "line": "NDSU -3.5",
     "live": {
-     "detail": "6:01 1st",
-     "as_of": "2:34 PM"
+     "detail": "0:58 1st",
+     "as_of": "2:44 PM"
     }
    },
    {
@@ -10102,7 +10102,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 13
+     "live": 23
     },
     "home": {
      "team": "Robert Morris",
@@ -10119,13 +10119,13 @@
      "opp_final": null,
      "opp_id": "424",
      "record": "0-3",
-     "live": 30
+     "live": 36
     },
     "time": "2:00 PM",
     "line": "",
     "live": {
-     "detail": "6:18 1st",
-     "as_of": "2:34 PM"
+     "detail": "0:57 1st",
+     "as_of": "2:44 PM"
     }
    },
    {
@@ -10148,7 +10148,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 0
+     "live": 11
     },
     "home": {
      "team": "Marquette",
@@ -10165,13 +10165,13 @@
      "opp_final": null,
      "opp_id": "142",
      "record": "2-1",
-     "live": 2
+     "live": 13
     },
     "time": "2:30 PM",
     "line": "MARQ -2.5",
     "live": {
-     "detail": "18:51 1st",
-     "as_of": "2:34 PM"
+     "detail": "13:27 1st",
+     "as_of": "2:44 PM"
     }
    },
    {
@@ -11297,5 +11297,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "2:34 PM"
+ "scores_updated": "2:44 PM"
 }
