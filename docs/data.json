@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 13:24 EST",
+ "updated": "2026-11-15 13:34 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9825,7 +9825,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 25
+     "live": 29
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -9842,13 +9842,13 @@
      "opp_final": null,
      "opp_id": "134875",
      "record": "1-3",
-     "live": 73
+     "live": 82
     },
     "time": "12:00 PM",
     "line": "",
     "live": {
-     "detail": "9:28 2nd",
-     "as_of": "1:24 PM"
+     "detail": "5:05 2nd",
+     "as_of": "1:34 PM"
     }
    },
    {
@@ -9879,7 +9879,7 @@
      "opp_final": null,
      "opp_id": "48",
      "record": "0-3",
-     "live": 14
+     "live": 24
     },
     "home": {
      "team": "Delaware",
@@ -9890,13 +9890,13 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 15
+     "live": 29
     },
     "time": "1:00 PM",
     "line": "DEL -1.5",
     "live": {
-     "detail": "8:02 1st",
-     "as_of": "1:24 PM"
+     "detail": "2:34 1st",
+     "as_of": "1:34 PM"
     }
    },
    {
@@ -9926,7 +9926,7 @@
      "opp_final": null,
      "opp_id": "235",
      "record": "2-0",
-     "live": 28
+     "live": 38
     },
     "home": {
      "team": "Memphis",
@@ -9937,13 +9937,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 14
+     "live": 25
     },
     "time": "1:00 PM",
     "line": "LOU -10.5",
     "live": {
-     "detail": "11:53 1st",
-     "as_of": "1:24 PM"
+     "detail": "7:17 1st",
+     "as_of": "1:34 PM"
     }
    },
    {
@@ -9972,7 +9972,7 @@
      "opp_final": null,
      "opp_id": "2247",
      "record": "2-2",
-     "live": 15
+     "live": 18
     },
     "home": {
      "team": "Georgia St.",
@@ -9983,13 +9983,13 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 29
+     "live": 37
     },
     "time": "1:00 PM",
     "line": "GAST -11.5",
     "live": {
-     "detail": "9:12 1st",
-     "as_of": "1:24 PM"
+     "detail": "5:10 1st",
+     "as_of": "1:34 PM"
     }
    },
    {
@@ -11279,5 +11279,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "1:24 PM"
+ "scores_updated": "1:34 PM"
 }
