@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 16:21 EST",
- "scores_updated": "4:21 PM",
+ "updated": "2026-11-15 16:24 EST",
+ "scores_updated": "4:24 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10166,7 +10166,7 @@
      "opp_final": null,
      "opp_id": "251",
      "record": "3-0",
-     "live": 39
+     "live": 41
     },
     "home": {
      "team": "Texas",
@@ -10177,13 +10177,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 41
+     "live": 46
     },
     "time": "3:00 PM",
     "line": "TEX -3.5",
     "live": {
-     "detail": "18:01 2nd",
-     "as_of": "4:21 PM"
+     "detail": "16:42 2nd",
+     "as_of": "4:24 PM"
     }
    },
    {
@@ -10213,7 +10213,7 @@
      "opp_final": null,
      "opp_id": "139",
      "record": "4-0",
-     "live": 51
+     "live": 53
     },
     "home": {
      "team": "Saint Louis",
@@ -10235,8 +10235,8 @@
     "time": "3:00 PM",
     "line": "SLU -7.5",
     "live": {
-     "detail": "17:06 2nd",
-     "as_of": "4:21 PM"
+     "detail": "15:33 2nd",
+     "as_of": "4:24 PM"
     }
    },
    {
@@ -10330,13 +10330,13 @@
      "opp_final": null,
      "opp_id": "2385",
      "record": "1-2",
-     "live": 20
+     "live": 23
     },
     "time": "4:00 PM",
     "line": "JMU -11.5",
     "live": {
-     "detail": "8:22 1st",
-     "as_of": "4:21 PM"
+     "detail": "7:14 1st",
+     "as_of": "4:24 PM"
     }
    },
    {
