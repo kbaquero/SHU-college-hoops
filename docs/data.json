@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 12:53 EST",
+ "updated": "2026-11-15 13:03 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9847,8 +9847,8 @@
     "time": "12:00 PM",
     "line": "",
     "live": {
-     "detail": "Halftime",
-     "as_of": "12:53 PM"
+     "detail": "19:21 2nd",
+     "as_of": "1:03 PM"
     }
    },
    {
@@ -9878,7 +9878,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "48",
-     "record": "0-3"
+     "record": "0-3",
+     "live": 0
     },
     "home": {
      "team": "Delaware",
@@ -9888,10 +9889,15 @@
      "id": "48",
      "final": null,
      "won": null,
-     "record": "1-2"
+     "record": "1-2",
+     "live": 0
     },
     "time": "1:00 PM",
-    "line": "DEL -1.5"
+    "line": "DEL -1.5",
+    "live": {
+     "detail": "19:59 1st",
+     "as_of": "1:03 PM"
+    }
    },
    {
     "id": "401918949",
@@ -9919,7 +9925,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "235",
-     "record": "2-0"
+     "record": "2-0",
+     "live": 0
     },
     "home": {
      "team": "Memphis",
@@ -9929,10 +9936,15 @@
      "id": "235",
      "final": null,
      "won": null,
-     "record": "2-1"
+     "record": "2-1",
+     "live": 2
     },
     "time": "1:00 PM",
-    "line": "LOU -10.5"
+    "line": "LOU -10.5",
+    "live": {
+     "detail": "18:53 1st",
+     "as_of": "1:03 PM"
+    }
    },
    {
     "id": "401925896",
@@ -9959,7 +9971,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2247",
-     "record": "2-2"
+     "record": "2-2",
+     "live": 0
     },
     "home": {
      "team": "Georgia St.",
@@ -9969,10 +9982,15 @@
      "id": "2247",
      "final": null,
      "won": null,
-     "record": "1-3"
+     "record": "1-3",
+     "live": 3
     },
     "time": "1:00 PM",
-    "line": "GAST -11.5"
+    "line": "GAST -11.5",
+    "live": {
+     "detail": "19:35 1st",
+     "as_of": "1:03 PM"
+    }
    },
    {
     "id": "401918453",
@@ -11261,5 +11279,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "12:53 PM"
+ "scores_updated": "1:03 PM"
 }
