@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 18:25 EST",
- "scores_updated": "6:25 PM",
+ "updated": "2026-11-15 18:35 EST",
+ "scores_updated": "6:35 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10375,7 +10375,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 12
+     "live": 14
     },
     "home": {
      "team": "Montana St.",
@@ -10392,13 +10392,13 @@
      "opp_final": null,
      "opp_id": "13",
      "record": "1-2",
-     "live": 11
+     "live": 18
     },
     "time": "6:00 PM",
     "line": "MTST -6.5",
     "live": {
-     "detail": "10:48 1st",
-     "as_of": "6:25 PM"
+     "detail": "6:20 1st",
+     "as_of": "6:35 PM"
     }
    },
    {
