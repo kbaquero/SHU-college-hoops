@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 15:24 EST",
+ "updated": "2026-11-15 15:34 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9988,7 +9988,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 55
+     "live": 60
     },
     "home": {
      "team": "Michigan",
@@ -10009,13 +10009,13 @@
      "opp_final": null,
      "opp_id": "2729",
      "record": "2-1",
-     "live": 72
+     "live": 80
     },
     "time": "2:00 PM",
     "line": "MICH -26.5",
     "live": {
-     "detail": "14:40 2nd",
-     "as_of": "3:24 PM"
+     "detail": "10:33 2nd",
+     "as_of": "3:34 PM"
     }
    },
    {
@@ -10038,7 +10038,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 55
+     "live": 60
     },
     "home": {
      "team": "North Dakota St.",
@@ -10055,13 +10055,13 @@
      "opp_final": null,
      "opp_id": "2934",
      "record": "2-3",
-     "live": 49
+     "live": 54
     },
     "time": "2:00 PM",
     "line": "NDSU -3.5",
     "live": {
-     "detail": "9:41 2nd",
-     "as_of": "3:24 PM"
+     "detail": "5:41 2nd",
+     "as_of": "3:34 PM"
     }
    },
    {
@@ -10084,7 +10084,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 35
+     "live": 39
     },
     "home": {
      "team": "Robert Morris",
@@ -10101,13 +10101,13 @@
      "opp_final": null,
      "opp_id": "424",
      "record": "0-3",
-     "live": 66
+     "live": 76
     },
     "time": "2:00 PM",
     "line": "",
     "live": {
-     "detail": "9:52 2nd",
-     "as_of": "3:24 PM"
+     "detail": "6:05 2nd",
+     "as_of": "3:34 PM"
     }
    },
    {
@@ -10183,7 +10183,7 @@
      "opp_final": null,
      "opp_id": "251",
      "record": "3-0",
-     "live": 18
+     "live": 25
     },
     "home": {
      "team": "Texas",
@@ -10194,13 +10194,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 14
+     "live": 23
     },
     "time": "3:00 PM",
     "line": "TEX -3.5",
     "live": {
-     "detail": "11:50 1st",
-     "as_of": "3:24 PM"
+     "detail": "8:18 1st",
+     "as_of": "3:34 PM"
     }
    },
    {
@@ -10230,7 +10230,7 @@
      "opp_final": null,
      "opp_id": "139",
      "record": "4-0",
-     "live": 25
+     "live": 29
     },
     "home": {
      "team": "Saint Louis",
@@ -10247,13 +10247,13 @@
      "opp_final": null,
      "opp_id": "2272",
      "record": "3-0",
-     "live": 12
+     "live": 14
     },
     "time": "3:00 PM",
     "line": "SLU -7.5",
     "live": {
-     "detail": "11:58 1st",
-     "as_of": "3:24 PM"
+     "detail": "8:39 1st",
+     "as_of": "3:34 PM"
     }
    },
    {
@@ -10276,7 +10276,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 13
+     "live": 22
     },
     "home": {
      "team": "Iowa",
@@ -10293,13 +10293,13 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "2-1",
-     "live": 5
+     "live": 15
     },
     "time": "3:00 PM",
     "line": "IOWA -3.5",
     "live": {
-     "detail": "12:45 1st",
-     "as_of": "3:24 PM"
+     "detail": "8:39 1st",
+     "as_of": "3:34 PM"
     }
    },
    {
@@ -11297,5 +11297,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "3:24 PM"
+ "scores_updated": "3:34 PM"
 }
