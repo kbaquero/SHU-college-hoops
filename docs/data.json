@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 16:24 EST",
- "scores_updated": "4:24 PM",
+ "updated": "2026-11-15 16:34 EST",
+ "scores_updated": "4:34 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10119,7 +10119,7 @@
      "opp_final": null,
      "opp_id": "142",
      "record": "2-1",
-     "live": 54
+     "live": 60
     },
     "home": {
      "team": "Missouri",
@@ -10130,13 +10130,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 55
+     "live": 63
     },
     "time": "2:30 PM",
     "line": "MARQ -2.5",
     "live": {
-     "detail": "3:13 2nd",
-     "as_of": "4:21 PM"
+     "detail": "0:26 2nd",
+     "as_of": "4:34 PM"
     }
    },
    {
@@ -10166,7 +10166,7 @@
      "opp_final": null,
      "opp_id": "251",
      "record": "3-0",
-     "live": 41
+     "live": 49
     },
     "home": {
      "team": "Texas",
@@ -10177,13 +10177,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 46
+     "live": 52
     },
     "time": "3:00 PM",
     "line": "TEX -3.5",
     "live": {
-     "detail": "16:42 2nd",
-     "as_of": "4:24 PM"
+     "detail": "12:22 2nd",
+     "as_of": "4:34 PM"
     }
    },
    {
@@ -10213,7 +10213,7 @@
      "opp_final": null,
      "opp_id": "139",
      "record": "4-0",
-     "live": 53
+     "live": 55
     },
     "home": {
      "team": "Saint Louis",
@@ -10230,13 +10230,13 @@
      "opp_final": null,
      "opp_id": "2272",
      "record": "3-0",
-     "live": 29
+     "live": 34
     },
     "time": "3:00 PM",
     "line": "SLU -7.5",
     "live": {
-     "detail": "15:33 2nd",
-     "as_of": "4:24 PM"
+     "detail": "12:07 2nd",
+     "as_of": "4:34 PM"
     }
    },
    {
@@ -10259,7 +10259,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 44
+     "live": 46
     },
     "home": {
      "team": "Iowa",
@@ -10276,13 +10276,13 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "2-1",
-     "live": 36
+     "live": 47
     },
     "time": "3:00 PM",
     "line": "IOWA -3.5",
     "live": {
-     "detail": "15:47 2nd",
-     "as_of": "4:21 PM"
+     "detail": "12:05 2nd",
+     "as_of": "4:34 PM"
     }
    },
    {
@@ -10313,7 +10313,7 @@
      "opp_final": null,
      "opp_id": "256",
      "record": "1-3",
-     "live": 19
+     "live": 25
     },
     "home": {
      "team": "James Madison",
@@ -10330,13 +10330,13 @@
      "opp_final": null,
      "opp_id": "2385",
      "record": "1-2",
-     "live": 23
+     "live": 27
     },
     "time": "4:00 PM",
     "line": "JMU -11.5",
     "live": {
-     "detail": "7:14 1st",
-     "as_of": "4:24 PM"
+     "detail": "3:40 1st",
+     "as_of": "4:34 PM"
     }
    },
    {
