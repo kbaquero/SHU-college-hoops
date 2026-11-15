@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 12:13 EST",
+ "updated": "2026-11-15 12:23 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9825,7 +9825,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 2
+     "live": 3
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -9842,13 +9842,13 @@
      "opp_final": null,
      "opp_id": "134875",
      "record": "1-3",
-     "live": 11
+     "live": 20
     },
     "time": "12:00 PM",
     "line": "",
     "live": {
-     "detail": "14:53 1st",
-     "as_of": "12:13 PM"
+     "detail": "10:48 1st",
+     "as_of": "12:23 PM"
     }
    },
    {
@@ -11261,5 +11261,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "12:13 PM"
+ "scores_updated": "12:23 PM"
 }
