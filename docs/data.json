@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 17:15 EST",
- "scores_updated": "5:15 PM",
+ "updated": "2026-11-15 17:25 EST",
+ "scores_updated": "5:25 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10139,7 +10139,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10152,15 +10152,14 @@
       "Chris C.",
       "Mike C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Texas",
      "pts": 0,
-     "final": null,
+     "final": 72,
      "opp_final": null,
      "opp_id": "251",
-     "record": "3-0",
-     "live": 70
+     "record": "3-1"
     },
     "home": {
      "team": "Texas",
@@ -10168,17 +10167,12 @@
      "home": false,
      "owners": [],
      "id": "251",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 71
+     "final": 75,
+     "won": true,
+     "record": "4-0"
     },
     "time": "3:00 PM",
-    "line": "TEX -3.5",
-    "live": {
-     "detail": "1:08 2nd",
-     "as_of": "5:15 PM"
-    }
+    "line": "TEX -3.5"
    },
    {
     "id": "401911251",
@@ -10186,7 +10180,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10199,15 +10193,14 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Saint Louis",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 68,
      "opp_final": null,
      "opp_id": "139",
-     "record": "4-0",
-     "live": 68
+     "record": "5-0"
     },
     "home": {
      "team": "Saint Louis",
@@ -10216,22 +10209,17 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "High Point",
      "pts": 0,
-     "final": null,
+     "final": 58,
      "opp_final": null,
      "opp_id": "2272",
-     "record": "3-0",
-     "live": 58
+     "record": "3-1"
     },
     "time": "3:00 PM",
-    "line": "SLU -7.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "5:15 PM"
-    }
+    "line": "SLU -7.5"
    },
    {
     "id": "401909493",
@@ -10239,7 +10227,7 @@
     "tbd": false,
     "tv": "FS1",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10250,10 +10238,9 @@
      "home": false,
      "owners": [],
      "id": "156",
-     "final": null,
-     "won": null,
-     "record": "2-1",
-     "live": 70
+     "final": 70,
+     "won": true,
+     "record": "3-1"
     },
     "home": {
      "team": "Iowa",
@@ -10262,22 +10249,17 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Creighton",
      "pts": 0,
-     "final": null,
+     "final": 69,
      "opp_final": null,
      "opp_id": "156",
-     "record": "2-1",
-     "live": 69
+     "record": "2-2"
     },
     "time": "3:00 PM",
-    "line": "IOWA -3.5",
-    "live": {
-     "detail": "0:27 2nd",
-     "as_of": "5:15 PM"
-    }
+    "line": "IOWA -3.5"
    },
    {
     "id": "401919825",
@@ -10307,7 +10289,7 @@
      "opp_final": null,
      "opp_id": "256",
      "record": "1-3",
-     "live": 47
+     "live": 51
     },
     "home": {
      "team": "James Madison",
@@ -10324,13 +10306,13 @@
      "opp_final": null,
      "opp_id": "2385",
      "record": "1-2",
-     "live": 45
+     "live": 51
     },
     "time": "4:00 PM",
     "line": "JMU -11.5",
     "live": {
-     "detail": "14:05 2nd",
-     "as_of": "5:15 PM"
+     "detail": "10:48 2nd",
+     "as_of": "5:25 PM"
     }
    },
    {
