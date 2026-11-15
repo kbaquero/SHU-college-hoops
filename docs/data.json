@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 17:05 EST",
- "scores_updated": "5:05 PM",
+ "updated": "2026-11-15 17:15 EST",
+ "scores_updated": "5:15 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10160,7 +10160,7 @@
      "opp_final": null,
      "opp_id": "251",
      "record": "3-0",
-     "live": 65
+     "live": 70
     },
     "home": {
      "team": "Texas",
@@ -10171,13 +10171,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 64
+     "live": 71
     },
     "time": "3:00 PM",
     "line": "TEX -3.5",
     "live": {
-     "detail": "4:29 2nd",
-     "as_of": "5:05 PM"
+     "detail": "1:08 2nd",
+     "as_of": "5:15 PM"
     }
    },
    {
@@ -10207,7 +10207,7 @@
      "opp_final": null,
      "opp_id": "139",
      "record": "4-0",
-     "live": 62
+     "live": 68
     },
     "home": {
      "team": "Saint Louis",
@@ -10224,13 +10224,13 @@
      "opp_final": null,
      "opp_id": "2272",
      "record": "3-0",
-     "live": 53
+     "live": 58
     },
     "time": "3:00 PM",
     "line": "SLU -7.5",
     "live": {
-     "detail": "3:22 2nd",
-     "as_of": "5:05 PM"
+     "detail": "End of 2nd",
+     "as_of": "5:15 PM"
     }
    },
    {
@@ -10253,7 +10253,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 69
+     "live": 70
     },
     "home": {
      "team": "Iowa",
@@ -10270,13 +10270,13 @@
      "opp_final": null,
      "opp_id": "156",
      "record": "2-1",
-     "live": 66
+     "live": 69
     },
     "time": "3:00 PM",
     "line": "IOWA -3.5",
     "live": {
-     "detail": "2:51 2nd",
-     "as_of": "5:05 PM"
+     "detail": "0:27 2nd",
+     "as_of": "5:15 PM"
     }
    },
    {
@@ -10307,7 +10307,7 @@
      "opp_final": null,
      "opp_id": "256",
      "record": "1-3",
-     "live": 36
+     "live": 47
     },
     "home": {
      "team": "James Madison",
@@ -10324,13 +10324,13 @@
      "opp_final": null,
      "opp_id": "2385",
      "record": "1-2",
-     "live": 39
+     "live": 45
     },
     "time": "4:00 PM",
     "line": "JMU -11.5",
     "live": {
-     "detail": "18:36 2nd",
-     "as_of": "5:05 PM"
+     "detail": "14:05 2nd",
+     "as_of": "5:15 PM"
     }
    },
    {
