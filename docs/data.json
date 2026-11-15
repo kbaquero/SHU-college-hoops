@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 16:04 EST",
+ "updated": "2026-11-15 16:14 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10112,7 +10112,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 39
+     "live": 49
     },
     "home": {
      "team": "Marquette",
@@ -10129,13 +10129,13 @@
      "opp_final": null,
      "opp_id": "142",
      "record": "2-1",
-     "live": 48
+     "live": 52
     },
     "time": "2:30 PM",
     "line": "MARQ -2.5",
     "live": {
-     "detail": "9:33 2nd",
-     "as_of": "4:04 PM"
+     "detail": "6:18 2nd",
+     "as_of": "4:14 PM"
     }
    },
    {
@@ -10312,7 +10312,7 @@
      "opp_final": null,
      "opp_id": "256",
      "record": "1-3",
-     "live": 0
+     "live": 15
     },
     "home": {
      "team": "James Madison",
@@ -10329,13 +10329,13 @@
      "opp_final": null,
      "opp_id": "2385",
      "record": "1-2",
-     "live": 2
+     "live": 10
     },
     "time": "4:00 PM",
     "line": "JMU -11.5",
     "live": {
-     "detail": "18:44 1st",
-     "as_of": "4:04 PM"
+     "detail": "12:28 1st",
+     "as_of": "4:14 PM"
     }
    },
    {
@@ -11285,5 +11285,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "4:04 PM"
+ "scores_updated": "4:14 PM"
 }
