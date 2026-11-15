@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 21:37 EST",
+ "updated": "2026-11-14 21:47 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -10009,7 +10009,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10020,10 +10020,9 @@
      "home": false,
      "owners": [],
      "id": "85",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 75
+     "final": 75,
+     "won": false,
+     "record": "3-1"
     },
     "home": {
      "team": "Morehead St.",
@@ -10032,22 +10031,17 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "IU Indy",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 79,
      "opp_final": null,
      "opp_id": "85",
-     "record": "1-2",
-     "live": 79
+     "record": "2-2"
     },
     "time": "7:30 PM",
-    "line": "IUIN -1.5",
-    "live": {
-     "detail": "0:11 2nd",
-     "as_of": "9:37 PM"
-    }
+    "line": "IUIN -1.5"
    },
    {
     "id": "401911347",
@@ -10069,7 +10063,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 42
+     "live": 47
     },
     "home": {
      "team": "Grand Canyon",
@@ -10086,13 +10080,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "3-0",
-     "live": 73
+     "live": 84
     },
     "time": "8:00 PM",
     "line": "GCU -31.5",
     "live": {
-     "detail": "7:56 2nd",
-     "as_of": "9:37 PM"
+     "detail": "3:06 2nd",
+     "as_of": "9:47 PM"
     }
    }
   ]
@@ -11236,5 +11230,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "9:37 PM"
+ "scores_updated": "9:47 PM"
 }
