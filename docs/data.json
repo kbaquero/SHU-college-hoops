@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 21:47 EST",
+ "updated": "2026-11-14 21:57 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -10063,7 +10063,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 47
+     "live": 52
     },
     "home": {
      "team": "Grand Canyon",
@@ -10080,13 +10080,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "3-0",
-     "live": 84
+     "live": 88
     },
     "time": "8:00 PM",
     "line": "GCU -31.5",
     "live": {
-     "detail": "3:06 2nd",
-     "as_of": "9:47 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:57 PM"
     }
    }
   ]
@@ -11230,5 +11230,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "9:47 PM"
+ "scores_updated": "9:57 PM"
 }
