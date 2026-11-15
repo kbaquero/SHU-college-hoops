@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 21:57 EST",
+ "updated": "2026-11-14 22:07 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -10049,7 +10049,7 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10060,10 +10060,9 @@
      "home": false,
      "owners": [],
      "id": "2433",
-     "final": null,
-     "won": null,
-     "record": "1-4",
-     "live": 52
+     "final": 52,
+     "won": false,
+     "record": "1-5"
     },
     "home": {
      "team": "Grand Canyon",
@@ -10072,22 +10071,17 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Louisiana Monroe",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 88,
      "opp_final": null,
      "opp_id": "2433",
-     "record": "3-0",
-     "live": 88
+     "record": "4-0"
     },
     "time": "8:00 PM",
-    "line": "GCU -31.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:57 PM"
-    }
+    "line": "GCU -31.5"
    }
   ]
  },
@@ -11230,5 +11224,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "9:57 PM"
+ "scores_updated": "10:07 PM"
 }
