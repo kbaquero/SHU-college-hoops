@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 13:54 EST",
+ "updated": "2026-11-15 14:04 EST",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -9873,7 +9873,7 @@
      "opp_final": null,
      "opp_id": "48",
      "record": "0-3",
-     "live": 29
+     "live": 38
     },
     "home": {
      "team": "Delaware",
@@ -9884,13 +9884,13 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 32
+     "live": 34
     },
     "time": "1:00 PM",
     "line": "DEL -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "1:44 PM"
+     "detail": "15:13 2nd",
+     "as_of": "2:04 PM"
     }
    },
    {
@@ -9920,7 +9920,7 @@
      "opp_final": null,
      "opp_id": "235",
      "record": "2-0",
-     "live": 49
+     "live": 52
     },
     "home": {
      "team": "Memphis",
@@ -9931,13 +9931,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 34
+     "live": 41
     },
     "time": "1:00 PM",
     "line": "LOU -10.5",
     "live": {
-     "detail": "1:40 1st",
-     "as_of": "1:54 PM"
+     "detail": "Halftime",
+     "as_of": "2:04 PM"
     }
    },
    {
@@ -9966,7 +9966,7 @@
      "opp_final": null,
      "opp_id": "2247",
      "record": "2-2",
-     "live": 26
+     "live": 28
     },
     "home": {
      "team": "Georgia St.",
@@ -9977,13 +9977,13 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 39
+     "live": 43
     },
     "time": "1:00 PM",
     "line": "GAST -11.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "1:54 PM"
+     "detail": "18:11 2nd",
+     "as_of": "2:04 PM"
     }
    },
    {
@@ -10005,7 +10005,8 @@
      "id": "2729",
      "final": null,
      "won": null,
-     "record": "2-1"
+     "record": "2-1",
+     "live": 2
     },
     "home": {
      "team": "Michigan",
@@ -10025,10 +10026,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2729",
-     "record": "2-1"
+     "record": "2-1",
+     "live": 3
     },
     "time": "2:00 PM",
-    "line": "MICH -26.5"
+    "line": "MICH -26.5",
+    "live": {
+     "detail": "18:46 1st",
+     "as_of": "2:04 PM"
+    }
    },
    {
     "id": "401920136",
@@ -10089,7 +10095,8 @@
      "id": "424",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 1
     },
     "home": {
      "team": "Robert Morris",
@@ -10105,10 +10112,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "424",
-     "record": "0-3"
+     "record": "0-3",
+     "live": 3
     },
     "time": "2:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "18:57 1st",
+     "as_of": "2:04 PM"
+    }
    },
    {
     "id": "401909525",
@@ -11273,5 +11285,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "1:54 PM"
+ "scores_updated": "2:04 PM"
 }
