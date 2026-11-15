@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 21:27 EST",
+ "updated": "2026-11-14 21:37 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -10023,7 +10023,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 72
+     "live": 75
     },
     "home": {
      "team": "Morehead St.",
@@ -10040,13 +10040,13 @@
      "opp_final": null,
      "opp_id": "85",
      "record": "1-2",
-     "live": 74
+     "live": 79
     },
     "time": "7:30 PM",
     "line": "IUIN -1.5",
     "live": {
-     "detail": "1:40 2nd",
-     "as_of": "9:27 PM"
+     "detail": "0:11 2nd",
+     "as_of": "9:37 PM"
     }
    },
    {
@@ -10069,7 +10069,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 36
+     "live": 42
     },
     "home": {
      "team": "Grand Canyon",
@@ -10086,13 +10086,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "3-0",
-     "live": 67
+     "live": 73
     },
     "time": "8:00 PM",
     "line": "GCU -31.5",
     "live": {
-     "detail": "11:20 2nd",
-     "as_of": "9:27 PM"
+     "detail": "7:56 2nd",
+     "as_of": "9:37 PM"
     }
    }
   ]
@@ -11236,5 +11236,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "9:27 PM"
+ "scores_updated": "9:37 PM"
 }
