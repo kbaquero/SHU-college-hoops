@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 21:07 EST",
+ "updated": "2026-11-14 21:17 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9766,7 +9766,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9780,15 +9780,14 @@
       "Sean P.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Davidson",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 64,
      "opp_final": null,
      "opp_id": "2166",
-     "record": "2-2",
-     "live": 64
+     "record": "3-2"
     },
     "home": {
      "team": "Davidson",
@@ -9796,17 +9795,12 @@
      "home": true,
      "owners": [],
      "id": "2166",
-     "final": null,
-     "won": null,
-     "record": "3-0",
-     "live": 58
+     "final": 58,
+     "won": false,
+     "record": "3-1"
     },
     "time": "7:00 PM",
-    "line": "DAV -10.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:07 PM"
-    }
+    "line": "DAV -10.5"
    },
    {
     "id": "401920705",
@@ -9814,7 +9808,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9826,15 +9820,14 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Western Carolina",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 75,
      "opp_final": null,
      "opp_id": "2717",
-     "record": "2-2",
-     "live": 70
+     "record": "3-2"
     },
     "home": {
      "team": "Western Carolina",
@@ -9842,17 +9835,12 @@
      "home": true,
      "owners": [],
      "id": "2717",
-     "final": null,
-     "won": null,
-     "record": "2-1",
-     "live": 66
+     "final": 68,
+     "won": false,
+     "record": "2-2"
     },
     "time": "7:00 PM",
-    "line": "WCU -3.5",
-    "live": {
-     "detail": "0:35 2nd",
-     "as_of": "9:07 PM"
-    }
+    "line": "WCU -3.5"
    },
    {
     "id": "401920867",
@@ -9900,7 +9888,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9911,10 +9899,9 @@
      "home": false,
      "owners": [],
      "id": "225",
-     "final": null,
-     "won": null,
-     "record": "1-3",
-     "live": 74
+     "final": 74,
+     "won": false,
+     "record": "1-4"
     },
     "home": {
      "team": "Siena",
@@ -9924,22 +9911,17 @@
       "Drew & Bob D.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Brown",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 79,
      "opp_final": null,
      "opp_id": "225",
-     "record": "2-1",
-     "live": 79
+     "record": "3-1"
     },
     "time": "7:00 PM",
-    "line": "SIE -9.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:07 PM"
-    }
+    "line": "SIE -9.5"
    },
    {
     "id": "401926864",
@@ -10041,7 +10023,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 52
+     "live": 61
     },
     "home": {
      "team": "Morehead St.",
@@ -10058,13 +10040,13 @@
      "opp_final": null,
      "opp_id": "85",
      "record": "1-2",
-     "live": 54
+     "live": 64
     },
     "time": "7:30 PM",
     "line": "IUIN -1.5",
     "live": {
-     "detail": "10:20 2nd",
-     "as_of": "9:07 PM"
+     "detail": "5:56 2nd",
+     "as_of": "9:17 PM"
     }
    },
    {
@@ -10087,7 +10069,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 26
+     "live": 32
     },
     "home": {
      "team": "Grand Canyon",
@@ -10104,13 +10086,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "3-0",
-     "live": 43
+     "live": 56
     },
     "time": "8:00 PM",
     "line": "GCU -31.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:57 PM"
+     "detail": "14:28 2nd",
+     "as_of": "9:17 PM"
     }
    }
   ]
@@ -11254,5 +11236,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "9:07 PM"
+ "scores_updated": "9:17 PM"
 }
