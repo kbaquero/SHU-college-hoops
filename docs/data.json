@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 18:55 EST",
- "scores_updated": "6:55 PM",
+ "updated": "2026-11-15 18:59 EST",
+ "scores_updated": "6:59 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10329,7 +10329,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 42
+     "live": 45
     },
     "home": {
      "team": "Buffalo",
@@ -10351,8 +10351,8 @@
     "time": "5:30 PM",
     "line": "BUF -13.5",
     "live": {
-     "detail": "10:44 2nd",
-     "as_of": "6:55 PM"
+     "detail": "9:59 2nd",
+     "as_of": "6:59 PM"
     }
    },
    {
@@ -10397,8 +10397,8 @@
     "time": "6:00 PM",
     "line": "MTST -6.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "6:55 PM"
+     "detail": "20:00 2nd",
+     "as_of": "6:59 PM"
     }
    },
    {
