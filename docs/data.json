@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 20:57 EST",
+ "updated": "2026-11-14 21:07 EST",
  "through": "Fri, Nov 13",
  "season": 2027,
  "standings": [
@@ -9788,7 +9788,7 @@
      "opp_final": null,
      "opp_id": "2166",
      "record": "2-2",
-     "live": 60
+     "live": 64
     },
     "home": {
      "team": "Davidson",
@@ -9799,13 +9799,13 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 54
+     "live": 58
     },
     "time": "7:00 PM",
     "line": "DAV -10.5",
     "live": {
-     "detail": "0:41 2nd",
-     "as_of": "8:57 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:07 PM"
     }
    },
    {
@@ -9834,7 +9834,7 @@
      "opp_final": null,
      "opp_id": "2717",
      "record": "2-2",
-     "live": 64
+     "live": 70
     },
     "home": {
      "team": "Western Carolina",
@@ -9845,13 +9845,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 64
+     "live": 66
     },
     "time": "7:00 PM",
     "line": "WCU -3.5",
     "live": {
-     "detail": "3:37 2nd",
-     "as_of": "8:57 PM"
+     "detail": "0:35 2nd",
+     "as_of": "9:07 PM"
     }
    },
    {
@@ -9860,7 +9860,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -9872,15 +9872,14 @@
      "owners": [
       "Mike L."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Fairfield",
      "pts": 0,
-     "final": null,
+     "final": 60,
      "opp_final": null,
      "opp_id": "2217",
-     "record": "1-4",
-     "live": 58
+     "record": "1-5"
     },
     "home": {
      "team": "Fairfield",
@@ -9888,17 +9887,12 @@
      "home": true,
      "owners": [],
      "id": "2217",
-     "final": null,
-     "won": null,
-     "record": "1-2",
-     "live": 61
+     "final": 63,
+     "won": true,
+     "record": "2-2"
     },
     "time": "7:00 PM",
-    "line": "FAIR -11.5",
-    "live": {
-     "detail": "0:18 2nd",
-     "as_of": "8:57 PM"
-    }
+    "line": "FAIR -11.5"
    },
    {
     "id": "401911308",
@@ -9920,7 +9914,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 70
+     "live": 74
     },
     "home": {
      "team": "Siena",
@@ -9938,13 +9932,13 @@
      "opp_final": null,
      "opp_id": "225",
      "record": "2-1",
-     "live": 75
+     "live": 79
     },
     "time": "7:00 PM",
     "line": "SIE -9.5",
     "live": {
-     "detail": "2:05 2nd",
-     "as_of": "8:57 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:07 PM"
     }
    },
    {
@@ -9993,7 +9987,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10004,10 +9998,9 @@
      "home": false,
      "owners": [],
      "id": "2520",
-     "final": null,
-     "won": null,
-     "record": "1-3",
-     "live": 56
+     "final": 62,
+     "won": false,
+     "record": "1-4"
     },
     "home": {
      "team": "Villanova",
@@ -10016,22 +10009,17 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Rider",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 99,
      "opp_final": null,
      "opp_id": "2520",
-     "record": "2-1",
-     "live": 89
+     "record": "3-1"
     },
     "time": "7:00 PM",
-    "line": "VILL -33.5",
-    "live": {
-     "detail": "3:45 2nd",
-     "as_of": "8:57 PM"
-    }
+    "line": "VILL -33.5"
    },
    {
     "id": "401920961",
@@ -10053,7 +10041,7 @@
      "final": null,
      "won": null,
      "record": "3-0",
-     "live": 39
+     "live": 52
     },
     "home": {
      "team": "Morehead St.",
@@ -10070,13 +10058,13 @@
      "opp_final": null,
      "opp_id": "85",
      "record": "1-2",
-     "live": 45
+     "live": 54
     },
     "time": "7:30 PM",
     "line": "IUIN -1.5",
     "live": {
-     "detail": "14:29 2nd",
-     "as_of": "8:57 PM"
+     "detail": "10:20 2nd",
+     "as_of": "9:07 PM"
     }
    },
    {
@@ -11266,5 +11254,5 @@
   ]
  },
  "warnings": [],
- "scores_updated": "8:57 PM"
+ "scores_updated": "9:07 PM"
 }
