@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 12:55 EST",
+ "updated": "2026-11-16 14:03 EST",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10420,7 +10420,7 @@
      "record": "1-2"
     },
     "time": "6:00 PM",
-    "line": "MD -35.5"
+    "line": "MD -34.5"
    },
    {
     "id": "401918075",
@@ -10506,7 +10506,7 @@
      "record": "4-0"
     },
     "time": "7:00 PM",
-    "line": "UGA -21.5"
+    "line": "UGA -22.5"
    },
    {
     "id": "401919807",
@@ -11514,5 +11514,5 @@
   "date": "2026-11-16",
   "id": "401919807"
  },
- "scores_updated": "12:55 PM"
+ "scores_updated": "2:03 PM"
 }
