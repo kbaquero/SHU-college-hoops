@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 12:14 EST",
+ "updated": "2026-11-16 12:24 EST",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10281,7 +10281,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 44
+     "live": 47
     },
     "home": {
      "team": "Morehead St.",
@@ -10298,13 +10298,13 @@
      "opp_final": null,
      "opp_id": "124809",
      "record": "2-2",
-     "live": 63
+     "live": 74
     },
     "time": "11:00 AM",
     "line": "",
     "live": {
-     "detail": "14:21 2nd",
-     "as_of": "12:14 PM"
+     "detail": "10:32 2nd",
+     "as_of": "12:24 PM"
     }
    },
    {
@@ -11520,5 +11520,5 @@
   "date": "2026-11-16",
   "id": "401919807"
  },
- "scores_updated": "12:14 PM"
+ "scores_updated": "12:24 PM"
 }
