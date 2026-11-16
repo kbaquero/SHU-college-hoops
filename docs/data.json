@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 19:19 EST",
- "scores_updated": "7:19 PM",
+ "updated": "2026-11-15 19:29 EST",
+ "scores_updated": "7:29 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10315,7 +10315,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10326,10 +10326,9 @@
      "home": false,
      "owners": [],
      "id": "2099",
-     "final": null,
-     "won": null,
-     "record": "2-2",
-     "live": 53
+     "final": 55,
+     "won": false,
+     "record": "2-3"
     },
     "home": {
      "team": "Buffalo",
@@ -10338,22 +10337,17 @@
      "owners": [
       "Marty C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Canisius",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 79,
      "opp_final": null,
      "opp_id": "2099",
-     "record": "1-2",
-     "live": 74
+     "record": "2-2"
     },
     "time": "5:30 PM",
-    "line": "BUF -13.5",
-    "live": {
-     "detail": "2:17 2nd",
-     "as_of": "7:19 PM"
-    }
+    "line": "BUF -13.5"
    },
    {
     "id": "401920124",
@@ -10375,7 +10369,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 35
+     "live": 43
     },
     "home": {
      "team": "Montana St.",
@@ -10392,13 +10386,13 @@
      "opp_final": null,
      "opp_id": "13",
      "record": "1-2",
-     "live": 56
+     "live": 64
     },
     "time": "6:00 PM",
     "line": "MTST -6.5",
     "live": {
-     "detail": "11:52 2nd",
-     "as_of": "7:19 PM"
+     "detail": "8:46 2nd",
+     "as_of": "7:29 PM"
     }
    },
    {
@@ -10421,7 +10415,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 12
+     "live": 18
     },
     "home": {
      "team": "St. John's",
@@ -10440,13 +10434,13 @@
      "opp_final": null,
      "opp_id": "183",
      "record": "3-0",
-     "live": 16
+     "live": 24
     },
     "time": "7:00 PM",
     "line": "SJU -12.5",
     "live": {
-     "detail": "11:42 1st",
-     "as_of": "7:19 PM"
+     "detail": "7:00 1st",
+     "as_of": "7:29 PM"
     }
    },
    {
