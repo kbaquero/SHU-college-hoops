@@ -506,6 +506,7 @@ ST.forEach(s => {
 // game lists (today = upcoming from this morning, yesterday = finals)
 const roundLong = {playin:'Play-in', r64:'Round of 64', r32:'Round of 32', s16:'Sweet 16', e8:'Elite Eight', f4:'Final Four', final:'National Championship'};
 const kindName = {nonconf:'Non-conference', conf:'Conference', conf_tourney:'Conference tournament', ncaa:'NCAA tournament', other_post:'Postseason'};
+const phase = g => g.completed ? 2 : g.live ? 0 : 1;   // stable sort keeps tip-time order within each group
 function gameList(td, el, labelEl, emptyMsg, finals) {
   td = td || {games: []};
   labelEl.textContent = td.label ? '· ' + td.label : '';
@@ -526,7 +527,9 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
     return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}${g.completed || live ? ' fin' : ''}">` +
       `<span class="at">${prefix}</span><span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
   };
-  el.innerHTML = td.games.map((g, idx) => {
+  // today: live games first, then upcoming by tip, then finals (their points are already in the standings)
+  const games = td === D.today && !STALE ? [...td.games].sort((a, b) => phase(a) - phase(b)) : td.games;
+  el.innerHTML = games.map((g, idx) => {
     const when = g.completed ? esc(g.final_label || 'Final') : finals ? 'No result'
       : g.live ? `<span class="livepill">LIVE</span><span class="lvclock">${esc(g.live.detail)}</span>` : esc(g.time);
     // a named event says enough on its own; "Neutral site" only labels unnamed neutral-site games
@@ -545,7 +548,7 @@ if (STALE) { $('#today-h').textContent = "Yesterday's games"; $('#yesterday-h').
 // Stakes = (entries involved + 3 per head-to-head pair) x points the win is worth x closeness.
 //   head-to-head pairs: the smaller side, after dropping anyone who owns both teams (they can't lose)
 //   worth: non-conference 1, conference 2, conference tournament 2 (+5 in the final), NCAA by round (2 up to 12)
-//   closeness: spread up to 3: x1.5, up to 7: x1.25, up to 12: x1, beyond: x0.5; no line: x1.
+//   closeness: x1.5 at a pick'em sliding to x0.5 at a 20-point spread; no line: x1. The tracker picks and locks it at tip (gotd.py).
 //   It multiplies, so a lopsided game can't win on head count alone, at any point in the season.
 // Ties go to the closer spread, then the earlier tip.
 const PTS = __PTS__;
@@ -748,7 +751,7 @@ function renderMyCard(me) {
           ? `<div class="mc-g"><span class="t">${team}</span><span class="s ${cls}">${sc}</span>${pts}<span class="st${live ? ' live' : ''}">${st}</span></div>`
           : `<div class="mc-g"><span class="t wide">${team}</span><span class="st">${st}</span></div>`};
     }));
-  const today = rows(D.today, false), yest = rows(D.yesterday, true);
+  const today = rows(STALE ? D.today : {games: [...(D.today?.games || [])].sort((a, b) => phase(a) - phase(b))}, false), yest = rows(D.yesterday, true);
   const started = (D.today?.games || []).some(g => g.live || g.completed);
   // a day with none of the entry's games keeps its section as one line, so it's clear rather than missing
   const sec = (title, right, list) => list.length ? `<div class="mc-sec"><div class="mc-h"><span>${title}</span><span>${right}</span></div>${list.map(r => r.html).join('')}</div>`

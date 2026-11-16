@@ -111,7 +111,7 @@ How games are classified:
   "Alive" (teams still in the tournament). Records live in each entry's expanded breakdown.
 - **The Daily Summary** leads with yesterday's results in the morning (plus today's games as a preview), then
   shows today plus a one-line yesterday (record and points) from noon (or the first final). Full results stay on the
-  Games tab.
+  Games tab. Today's games, there and on the Games tab, run live first, then upcoming by tip, then finals.
 - **Game of the Day** (Standings tab under the summary; marked in gold on the Games tab): today's game with the most
   at stake for the pool. Stakes = (entries involved + 3 per head-to-head pair) × what a win is worth × closeness.
   Head-to-head pairs are the smaller side, not counting anyone who owns both teams. Worth uses the pool's own points:
