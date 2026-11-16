@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 19:59 EST",
- "scores_updated": "7:59 PM",
+ "updated": "2026-11-15 20:09 EST",
+ "scores_updated": "8:09 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10409,7 +10409,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 33
+     "live": 35
     },
     "home": {
      "team": "St. John's",
@@ -10428,13 +10428,13 @@
      "opp_final": null,
      "opp_id": "183",
      "record": "3-0",
-     "live": 30
+     "live": 36
     },
     "time": "7:00 PM",
     "line": "SJU -12.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "7:49 PM"
+     "detail": "17:09 2nd",
+     "as_of": "8:09 PM"
     }
    },
    {
@@ -10456,7 +10456,8 @@
      "id": "324",
      "final": null,
      "won": null,
-     "record": "2-2"
+     "record": "2-2",
+     "live": 4
     },
     "home": {
      "team": "Wisconsin",
@@ -10472,10 +10473,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "324",
-     "record": "3-0"
+     "record": "3-0",
+     "live": 7
     },
     "time": "8:00 PM",
-    "line": "WIS -27.5"
+    "line": "WIS -27.5",
+    "live": {
+     "detail": "16:52 1st",
+     "as_of": "8:09 PM"
+    }
    },
    {
     "id": "401911472",
