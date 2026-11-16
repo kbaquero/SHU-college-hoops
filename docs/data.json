@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 15:53 EST",
- "scores_updated": "3:53 PM",
+ "updated": "2026-11-16 16:03 EST",
+ "scores_updated": "4:03 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10308,7 +10308,7 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10320,15 +10320,14 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "UTEP",
      "pts": 0,
-     "final": null,
+     "final": 46,
      "opp_final": null,
      "opp_id": "2638",
-     "record": "0-4",
-     "live": 44
+     "record": "0-5"
     },
     "home": {
      "team": "UTEP",
@@ -10336,17 +10335,12 @@
      "home": true,
      "owners": [],
      "id": "2638",
-     "final": null,
-     "won": null,
-     "record": "2-1",
-     "live": 75
+     "final": 79,
+     "won": true,
+     "record": "3-1"
     },
     "time": "2:00 PM",
-    "line": "UTEP -20.5",
-    "live": {
-     "detail": "1:08 2nd",
-     "as_of": "3:53 PM"
-    }
+    "line": "UTEP -20.5"
    },
    {
     "id": "401921087",
