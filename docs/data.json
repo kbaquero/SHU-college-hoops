@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 22:00 EST",
- "scores_updated": "10:00 PM",
+ "updated": "2026-11-15 22:10 EST",
+ "scores_updated": "10:10 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10451,7 +10451,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 72
+     "live": 81
     },
     "home": {
      "team": "Wisconsin",
@@ -10468,13 +10468,13 @@
      "opp_final": null,
      "opp_id": "324",
      "record": "3-0",
-     "live": 81
+     "live": 89
     },
     "time": "8:00 PM",
     "line": "WIS -27.5",
     "live": {
-     "detail": "1:40 2nd",
-     "as_of": "10:00 PM"
+     "detail": "End of 2nd",
+     "as_of": "10:10 PM"
     }
    },
    {
@@ -10505,7 +10505,7 @@
      "opp_final": null,
      "opp_id": "23",
      "record": "1-2",
-     "live": 29
+     "live": 32
     },
     "home": {
      "team": "San Jose St.",
@@ -10516,13 +10516,13 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 35
+     "live": 42
     },
     "time": "9:00 PM",
     "line": "SJSU -13.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:50 PM"
+     "detail": "16:42 2nd",
+     "as_of": "10:10 PM"
     }
    }
   ]
