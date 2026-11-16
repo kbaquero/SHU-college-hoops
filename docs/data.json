@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 18:40 EST",
- "scores_updated": "6:40 PM",
+ "updated": "2026-11-16 18:50 EST",
+ "scores_updated": "6:50 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10385,8 +10385,8 @@
     "time": "6:00 PM",
     "line": "IONA -2.5",
     "live": {
-     "detail": "0:50 1st",
-     "as_of": "6:40 PM"
+     "detail": "Halftime",
+     "as_of": "6:50 PM"
     }
    },
    {
@@ -10409,7 +10409,7 @@
      "final": null,
      "won": null,
      "record": "0-4",
-     "live": 15
+     "live": 25
     },
     "home": {
      "team": "Maryland",
@@ -10426,13 +10426,13 @@
      "opp_final": null,
      "opp_id": "2016",
      "record": "1-2",
-     "live": 32
+     "live": 46
     },
     "time": "6:00 PM",
     "line": "MD -35.5",
     "live": {
-     "detail": "7:31 1st",
-     "as_of": "6:40 PM"
+     "detail": "3:15 1st",
+     "as_of": "6:50 PM"
     }
    },
    {
