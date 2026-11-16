@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 18:59 EST",
- "scores_updated": "6:59 PM",
+ "updated": "2026-11-15 19:09 EST",
+ "scores_updated": "7:09 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10329,7 +10329,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 45
+     "live": 49
     },
     "home": {
      "team": "Buffalo",
@@ -10346,13 +10346,13 @@
      "opp_final": null,
      "opp_id": "2099",
      "record": "1-2",
-     "live": 63
+     "live": 66
     },
     "time": "5:30 PM",
     "line": "BUF -13.5",
     "live": {
-     "detail": "9:59 2nd",
-     "as_of": "6:59 PM"
+     "detail": "6:55 2nd",
+     "as_of": "7:09 PM"
     }
    },
    {
@@ -10375,7 +10375,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 22
+     "live": 27
     },
     "home": {
      "team": "Montana St.",
@@ -10392,13 +10392,13 @@
      "opp_final": null,
      "opp_id": "13",
      "record": "1-2",
-     "live": 36
+     "live": 47
     },
     "time": "6:00 PM",
     "line": "MTST -6.5",
     "live": {
-     "detail": "20:00 2nd",
-     "as_of": "6:59 PM"
+     "detail": "16:07 2nd",
+     "as_of": "7:09 PM"
     }
    },
    {
@@ -10420,7 +10420,8 @@
      "id": "183",
      "final": null,
      "won": null,
-     "record": "2-1"
+     "record": "2-1",
+     "live": 8
     },
     "home": {
      "team": "St. John's",
@@ -10438,10 +10439,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "183",
-     "record": "3-0"
+     "record": "3-0",
+     "live": 6
     },
     "time": "7:00 PM",
-    "line": "SJU -12.5"
+    "line": "SJU -12.5",
+    "live": {
+     "detail": "15:58 1st",
+     "as_of": "7:09 PM"
+    }
    },
    {
     "id": "401920896",
