@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 18:10 EST",
- "scores_updated": "6:10 PM",
+ "updated": "2026-11-16 18:20 EST",
+ "scores_updated": "6:20 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10369,7 +10369,7 @@
      "opp_final": null,
      "opp_id": "2378",
      "record": "2-3",
-     "live": 7
+     "live": 16
     },
     "home": {
      "team": "UMBC",
@@ -10380,13 +10380,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 0
+     "live": 14
     },
     "time": "6:00 PM",
     "line": "IONA -2.5",
     "live": {
-     "detail": "15:56 1st",
-     "as_of": "6:10 PM"
+     "detail": "11:01 1st",
+     "as_of": "6:20 PM"
     }
    },
    {
@@ -10409,7 +10409,7 @@
      "final": null,
      "won": null,
      "record": "0-4",
-     "live": 2
+     "live": 7
     },
     "home": {
      "team": "Maryland",
@@ -10426,13 +10426,13 @@
      "opp_final": null,
      "opp_id": "2016",
      "record": "1-2",
-     "live": 7
+     "live": 12
     },
     "time": "6:00 PM",
     "line": "MD -35.5",
     "live": {
-     "detail": "15:45 1st",
-     "as_of": "6:10 PM"
+     "detail": "12:48 1st",
+     "as_of": "6:20 PM"
     }
    },
    {
