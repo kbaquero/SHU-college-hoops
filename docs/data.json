@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 22:20 EST",
- "scores_updated": "10:20 PM",
+ "updated": "2026-11-15 22:30 EST",
+ "scores_updated": "10:30 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10499,7 +10499,7 @@
      "opp_final": null,
      "opp_id": "23",
      "record": "1-2",
-     "live": 45
+     "live": 55
     },
     "home": {
      "team": "San Jose St.",
@@ -10510,13 +10510,13 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 52
+     "live": 65
     },
     "time": "9:00 PM",
     "line": "SJSU -13.5",
     "live": {
-     "detail": "12:26 2nd",
-     "as_of": "10:20 PM"
+     "detail": "7:27 2nd",
+     "as_of": "10:30 PM"
     }
    }
   ]
