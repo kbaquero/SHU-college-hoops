@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 12:45 EST",
+ "updated": "2026-11-16 12:55 EST",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10267,7 +10267,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10278,10 +10278,9 @@
      "home": false,
      "owners": [],
      "id": "124809",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 67
+     "final": 69,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Morehead St.",
@@ -10290,22 +10289,17 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Miami (OH) Hamilton",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 104,
      "opp_final": null,
      "opp_id": "124809",
-     "record": "2-2",
-     "live": 100
+     "record": "3-2"
     },
     "time": "11:00 AM",
-    "line": "",
-    "live": {
-     "detail": "1:49 2nd",
-     "as_of": "12:45 PM"
-    }
+    "line": ""
    },
    {
     "id": "401929419",
@@ -11520,5 +11514,5 @@
   "date": "2026-11-16",
   "id": "401919807"
  },
- "scores_updated": "12:45 PM"
+ "scores_updated": "12:55 PM"
 }
