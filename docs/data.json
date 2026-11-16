@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 14:43 EST",
+ "updated": "2026-11-16 14:53 EST",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10338,13 +10338,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 40
+     "live": 41
     },
     "time": "2:00 PM",
     "line": "UTEP -20.5",
     "live": {
-     "detail": "0:50 1st",
-     "as_of": "2:43 PM"
+     "detail": "Halftime",
+     "as_of": "2:53 PM"
     }
    },
    {
@@ -11520,5 +11520,5 @@
   "date": "2026-11-16",
   "id": "401919807"
  },
- "scores_updated": "2:43 PM"
+ "scores_updated": "2:53 PM"
 }
