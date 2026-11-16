@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 21:00 EST",
- "scores_updated": "9:00 PM",
+ "updated": "2026-11-15 21:10 EST",
+ "scores_updated": "9:10 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10395,7 +10395,7 @@
     "tbd": false,
     "tv": "Peacock",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10406,10 +10406,9 @@
      "home": false,
      "owners": [],
      "id": "183",
-     "final": null,
-     "won": null,
-     "record": "2-1",
-     "live": 60
+     "final": 62,
+     "won": false,
+     "record": "2-2"
     },
     "home": {
      "team": "St. John's",
@@ -10420,22 +10419,17 @@
       "Mike L.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Syracuse",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 79,
      "opp_final": null,
      "opp_id": "183",
-     "record": "3-0",
-     "live": 73
+     "record": "4-0"
     },
     "time": "7:00 PM",
-    "line": "SJU -12.5",
-    "live": {
-     "detail": "1:41 2nd",
-     "as_of": "9:00 PM"
-    }
+    "line": "SJU -12.5"
    },
    {
     "id": "401920896",
@@ -10510,7 +10504,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "23",
-     "record": "1-2"
+     "record": "1-2",
+     "live": 5
     },
     "home": {
      "team": "San Jose St.",
@@ -10520,10 +10515,15 @@
      "id": "23",
      "final": null,
      "won": null,
-     "record": "1-2"
+     "record": "1-2",
+     "live": 3
     },
     "time": "9:00 PM",
-    "line": "SJSU -13.5"
+    "line": "SJSU -13.5",
+    "live": {
+     "detail": "16:34 1st",
+     "as_of": "9:10 PM"
+    }
    }
   ]
  },
