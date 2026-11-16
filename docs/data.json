@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 11:43 EST",
+ "updated": "2026-11-16 11:53 EST",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10298,13 +10298,13 @@
      "opp_final": null,
      "opp_id": "124809",
      "record": "2-2",
-     "live": 44
+     "live": 48
     },
     "time": "11:00 AM",
     "line": "",
     "live": {
-     "detail": "0:43 1st",
-     "as_of": "11:43 AM"
+     "detail": "Halftime",
+     "as_of": "11:53 AM"
     }
    },
    {
@@ -10466,7 +10466,7 @@
      "record": "3-1"
     },
     "time": "7:00 PM",
-    "line": "CLEM -23.5"
+    "line": "CLEM -24.5"
    },
    {
     "id": "401906783",
@@ -11520,5 +11520,5 @@
   "date": "2026-11-16",
   "id": "401919807"
  },
- "scores_updated": "11:43 AM"
+ "scores_updated": "11:53 AM"
 }
