@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 14:23 EST",
+ "updated": "2026-11-16 14:33 EST",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10327,7 +10327,7 @@
      "opp_final": null,
      "opp_id": "2638",
      "record": "0-4",
-     "live": 10
+     "live": 15
     },
     "home": {
      "team": "UTEP",
@@ -10338,13 +10338,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 20
+     "live": 26
     },
     "time": "2:00 PM",
     "line": "UTEP -20.5",
     "live": {
-     "detail": "11:01 1st",
-     "as_of": "2:23 PM"
+     "detail": "7:09 1st",
+     "as_of": "2:33 PM"
     }
    },
    {
@@ -10755,7 +10755,7 @@
      "record": "3-1"
     },
     "time": "10:00 PM",
-    "line": "SMC -17.5"
+    "line": "SMC -18.5"
    },
    {
     "id": "401924265",
@@ -10798,7 +10798,7 @@
      "record": "3-0"
     },
     "time": "10:00 PM",
-    "line": "UCLA -31.5"
+    "line": "UCLA -30.5"
    }
   ]
  },
@@ -11520,5 +11520,5 @@
   "date": "2026-11-16",
   "id": "401919807"
  },
- "scores_updated": "2:23 PM"
+ "scores_updated": "2:33 PM"
 }
