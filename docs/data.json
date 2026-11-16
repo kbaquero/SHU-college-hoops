@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15 22:40 EST",
- "scores_updated": "10:40 PM",
+ "updated": "2026-11-15 22:50 EST",
+ "scores_updated": "10:50 PM",
  "through": "Sat, Nov 14",
  "season": 2027,
  "standings": [
@@ -10477,7 +10477,7 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10491,15 +10491,14 @@
       "Jason H.",
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "San Jose St.",
      "pts": 0,
-     "final": null,
+     "final": 68,
      "opp_final": null,
      "opp_id": "23",
-     "record": "1-2",
-     "live": 59
+     "record": "1-3"
     },
     "home": {
      "team": "San Jose St.",
@@ -10507,17 +10506,12 @@
      "home": true,
      "owners": [],
      "id": "23",
-     "final": null,
-     "won": null,
-     "record": "1-2",
-     "live": 69
+     "final": 80,
+     "won": true,
+     "record": "2-2"
     },
     "time": "9:00 PM",
-    "line": "SJSU -13.5",
-    "live": {
-     "detail": "4:33 2nd",
-     "as_of": "10:40 PM"
-    }
+    "line": "SJSU -13.5"
    }
   ]
  },
