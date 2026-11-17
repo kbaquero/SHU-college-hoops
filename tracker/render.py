@@ -285,7 +285,7 @@ svg text{fill:var(--mute);font-size:11px}
 <section class="panel" data-panel="games">
 <h2><span id="today-h">Today's games</span> <span class="h2sub" id="today-label"></span></h2>
 <div class="card" id="today"></div>
-<p class="sub">Scores update about hourly in the evening; points become official in the next morning's update. Times are Eastern. Spreads are the last pregame line from ESPN and are missing for games without one.</p>
+<p class="sub">Scores refresh every 10 minutes while games are live, and finals count toward the standings right away. Times are Eastern. Spreads are the last pregame line from ESPN and are missing for games without one.</p>
 
 <h2><span id="yesterday-h">Yesterday's games</span> <span class="h2sub" id="yesterday-label"></span></h2>
 <div class="card" id="yesterday"></div>
