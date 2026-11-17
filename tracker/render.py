@@ -86,8 +86,8 @@ main{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 .gd-t{font-size:15px;font-weight:700;white-space:nowrap}.gd-t i{font-style:normal;font-weight:400;font-size:12px;color:var(--mute);margin-left:5px}
 .gd-t.lose{color:var(--mute);font-weight:600}
 .gd-own{font-size:13px;line-height:1.35;color:var(--accent);font-weight:500;align-self:baseline}   /* long owner lists wrap to more lines, never cut off */.gd-own .sep{color:var(--mute)}
-.gd-sc{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}.gd-sc.lose{color:var(--mute);font-weight:600}
-@media (max-width:380px){.gd-m{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense;gap:2px 10px}.gd-own{grid-column:1/-1;margin-bottom:6px}}   /* small phones: owners drop under the team, score stays beside it */
+.gd-sc{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}.gd-sc.lose{color:var(--mute);font-weight:600}.gd-m.fin{grid-template-columns:max-content minmax(0,1fr) auto auto}.gd-pt{justify-self:stretch;text-align:center;margin-left:-4px}
+@media (max-width:380px){.gd-m{grid-template-columns:minmax(0,1fr) auto;grid-auto-flow:row dense;gap:2px 10px}.gd-m.fin{grid-template-columns:minmax(0,1fr) auto auto}.gd-own{grid-column:1/-1;margin-bottom:6px}}   /* small phones: owners drop under the team, score stays beside it */
 .mc-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 14px 11px 14px;margin-left:4px;background:var(--head)}  /* tinted like table headers; the 4px margin keeps the blue edge visible */
 .mc-name{font-weight:700;color:var(--ink);font-size:17px}
 .mc-rank{font-size:15px;font-weight:700;white-space:nowrap}.mc-rank .mv{margin-left:4px}
@@ -192,7 +192,7 @@ h2.withnote{margin-bottom:2px}
 .side+.side{margin-top:4px}
 .side .own{grid-column:2 / -1;margin-top:1px}
 .side .sc{text-align:right;min-width:1.8em}
-.side .ptsb{justify-self:start}
+.side .ptsb{justify-self:center}
 .side .nm{font-weight:400;color:var(--mute)}
 .side.pool .nm{font-weight:650;color:var(--ink)}
 .own{font-size:12px;color:var(--accent);font-weight:500}
@@ -577,13 +577,14 @@ const PTS = __PTS__;
     const v = sc(sd), lose = fin && !sd.won;
     // one line per team: name + record, its pool owners, score
     return `<span class="gd-t${lose ? ' lose' : ''}">${esc(sd.team)}${sd.record ? `<i>${esc(sd.record)}</i>` : ''}</span>` +
-      `<span class="gd-own">${ownList(own(sd)) || '<span class="sep">–</span>'}</span><span class="gd-sc${lose ? ' lose' : ''}">${v ?? ''}</span>`;
+      `<span class="gd-own">${ownList(own(sd)) || '<span class="sep">–</span>'}</span><span class="gd-sc${lose ? ' lose' : ''}">${v ?? ''}</span>` +
+      (fin ? `<span class="gd-pt">${sd.pool && own(sd).length ? pb(sd.pts || 0) : ''}</span>` : '');   // once final, what each owned side paid out
   };
   const status = fin ? esc(g.final_label || 'Final') : live ? `<span class="livepill">LIVE</span>${esc(g.live.detail)}` : esc(g.time || '');
   const info = [status, !fin && !live && g.line && esc(g.line)].filter(Boolean)
     .map((x, i) => i ? `<span class="gd-part"><span class="sep">·</span>${x}</span>` : x).join('');   // the dot travels with its item when it wraps   // compact: status, plus the spread before tip
   el.innerHTML = `<div class="gotd"><div class="gd-top"><b><em>★</em>Game of the Day</b><span class="st">${info}</span></div>` +
-    `<div class="gd-m">${side(g.away, g.home)}${side(g.home, g.away)}</div></div>`;
+    `<div class="gd-m${fin ? ' fin' : ''}">${side(g.away, g.home)}${side(g.home, g.away)}</div></div>`;
   el.hidden = false;
 })();
 gameList(D.today, $('#today'), $('#today-label'), 'No picked teams play today.', false);
