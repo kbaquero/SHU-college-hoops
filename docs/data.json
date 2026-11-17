@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 19:50 EST",
- "scores_updated": "7:50 PM",
+ "updated": "2026-11-16 20:00 EST",
+ "scores_updated": "8:00 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10348,7 +10348,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10361,15 +10361,14 @@
       "Dennis S.",
       "Jason H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "UMBC",
      "pts": 0,
-     "final": null,
+     "final": 67,
      "opp_final": null,
      "opp_id": "2378",
-     "record": "2-3",
-     "live": 65
+     "record": "2-4"
     },
     "home": {
      "team": "UMBC",
@@ -10377,17 +10376,12 @@
      "home": true,
      "owners": [],
      "id": "2378",
-     "final": null,
-     "won": null,
-     "record": "2-3",
-     "live": 72
+     "final": 75,
+     "won": true,
+     "record": "3-3"
     },
     "time": "6:00 PM",
-    "line": "IONA -2.5",
-    "live": {
-     "detail": "0:24 2nd",
-     "as_of": "7:50 PM"
-    }
+    "line": "IONA -2.5"
    },
    {
     "id": "401916298",
@@ -10409,7 +10403,7 @@
      "final": null,
      "won": null,
      "record": "0-4",
-     "live": 49
+     "live": 52
     },
     "home": {
      "team": "Maryland",
@@ -10426,13 +10420,13 @@
      "opp_final": null,
      "opp_id": "2016",
      "record": "1-2",
-     "live": 96
+     "live": 104
     },
     "time": "6:00 PM",
     "line": "MD -35.5",
     "live": {
-     "detail": "7:49 2nd",
-     "as_of": "7:50 PM"
+     "detail": "4:29 2nd",
+     "as_of": "8:00 PM"
     }
    },
    {
@@ -10472,13 +10466,13 @@
      "opp_final": null,
      "opp_id": "2643",
      "record": "3-1",
-     "live": 36
+     "live": 38
     },
     "time": "7:00 PM",
     "line": "CLEM -24.5",
     "live": {
-     "detail": "0:19 1st",
-     "as_of": "7:50 PM"
+     "detail": "Halftime",
+     "as_of": "8:00 PM"
     }
    },
    {
@@ -10507,7 +10501,7 @@
      "opp_final": null,
      "opp_id": "61",
      "record": "2-1",
-     "live": 29
+     "live": 31
     },
     "home": {
      "team": "Georgia",
@@ -10524,13 +10518,13 @@
      "opp_final": null,
      "opp_id": "294",
      "record": "4-0",
-     "live": 48
+     "live": 50
     },
     "time": "7:00 PM",
     "line": "UGA -21.5",
     "live": {
-     "detail": "1:12 1st",
-     "as_of": "7:50 PM"
+     "detail": "Halftime",
+     "as_of": "8:00 PM"
     }
    },
    {
@@ -10553,7 +10547,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 29
+     "live": 30
     },
     "home": {
      "team": "LIU",
@@ -10572,13 +10566,13 @@
      "opp_final": null,
      "opp_id": "2900",
      "record": "0-5",
-     "live": 34
+     "live": 36
     },
     "time": "7:00 PM",
     "line": "STMN -1.5",
     "live": {
-     "detail": "0:40 1st",
-     "as_of": "7:50 PM"
+     "detail": "Halftime",
+     "as_of": "8:00 PM"
     }
    },
    {
@@ -10647,7 +10641,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 21
+     "live": 23
     },
     "home": {
      "team": "Virginia Tech",
@@ -10669,8 +10663,8 @@
     "time": "7:00 PM",
     "line": "VT -12.5",
     "live": {
-     "detail": "0:31 1st",
-     "as_of": "7:50 PM"
+     "detail": "Halftime",
+     "as_of": "8:00 PM"
     }
    },
    {
@@ -10693,7 +10687,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 5
+     "live": 11
     },
     "home": {
      "team": "Southeast Missouri",
@@ -10710,13 +10704,13 @@
      "opp_final": null,
      "opp_id": "111166",
      "record": "2-2",
-     "live": 24
+     "live": 39
     },
     "time": "7:30 PM",
     "line": "",
     "live": {
-     "detail": "11:56 1st",
-     "as_of": "7:50 PM"
+     "detail": "7:42 1st",
+     "as_of": "8:00 PM"
     }
    },
    {
