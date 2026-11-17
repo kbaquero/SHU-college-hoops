@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 13:23 EST",
+ "updated": "2026-11-17 13:33 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -10622,7 +10622,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 39
+     "live": 46
     },
     "home": {
      "team": "Southern",
@@ -10641,13 +10641,13 @@
      "opp_final": null,
      "opp_id": "2347",
      "record": "0-5",
-     "live": 79
+     "live": 85
     },
     "time": "12:00 PM",
     "line": "",
     "live": {
-     "detail": "11:29 2nd",
-     "as_of": "1:23 PM"
+     "detail": "7:30 2nd",
+     "as_of": "1:33 PM"
     }
    },
    {
@@ -12066,5 +12066,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "1:23 PM"
+ "scores_updated": "1:33 PM"
 }
