@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 13:43 EST",
+ "updated": "2026-11-17 13:53 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -10608,7 +10608,7 @@
     "tbd": false,
     "tv": "",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10619,10 +10619,9 @@
      "home": false,
      "owners": [],
      "id": "2347",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 53
+     "final": 58,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Southern",
@@ -10633,22 +10632,17 @@
       "Joe H.",
       "Jason H."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Louisiana Christian",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 100,
      "opp_final": null,
      "opp_id": "2347",
-     "record": "0-5",
-     "live": 91
+     "record": "1-5"
     },
     "time": "12:00 PM",
-    "line": "",
-    "live": {
-     "detail": "3:49 2nd",
-     "as_of": "1:43 PM"
-    }
+    "line": ""
    },
    {
     "id": "401906773",
@@ -11275,7 +11269,7 @@
      "record": "4-0"
     },
     "time": "8:00 PM",
-    "line": "SMU -24.5"
+    "line": "SMU -23.5"
    },
    {
     "id": "401921826",
@@ -12066,5 +12060,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "1:43 PM"
+ "scores_updated": "1:53 PM"
 }
