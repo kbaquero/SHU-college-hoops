@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 19:00 EST",
- "scores_updated": "7:00 PM",
+ "updated": "2026-11-16 19:10 EST",
+ "scores_updated": "7:10 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10369,7 +10369,7 @@
      "opp_final": null,
      "opp_id": "2378",
      "record": "2-3",
-     "live": 27
+     "live": 32
     },
     "home": {
      "team": "UMBC",
@@ -10380,13 +10380,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 30
+     "live": 39
     },
     "time": "6:00 PM",
     "line": "IONA -2.5",
     "live": {
-     "detail": "19:28 2nd",
-     "as_of": "7:00 PM"
+     "detail": "14:15 2nd",
+     "as_of": "7:10 PM"
     }
    },
    {
@@ -10454,7 +10454,8 @@
      "id": "2643",
      "final": null,
      "won": null,
-     "record": "3-1"
+     "record": "3-1",
+     "live": 8
     },
     "home": {
      "team": "Clemson",
@@ -10470,10 +10471,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2643",
-     "record": "3-1"
+     "record": "3-1",
+     "live": 6
     },
     "time": "7:00 PM",
-    "line": "CLEM -24.5"
+    "line": "CLEM -24.5",
+    "live": {
+     "detail": "15:51 1st",
+     "as_of": "7:10 PM"
+    }
    },
    {
     "id": "401906783",
@@ -10500,7 +10506,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "61",
-     "record": "2-1"
+     "record": "2-1",
+     "live": 10
     },
     "home": {
      "team": "Georgia",
@@ -10516,10 +10523,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "294",
-     "record": "4-0"
+     "record": "4-0",
+     "live": 10
     },
     "time": "7:00 PM",
-    "line": "UGA -21.5"
+    "line": "UGA -21.5",
+    "live": {
+     "detail": "15:22 1st",
+     "as_of": "7:10 PM"
+    }
    },
    {
     "id": "401919807",
@@ -10540,7 +10552,8 @@
      "id": "2900",
      "final": null,
      "won": null,
-     "record": "2-3"
+     "record": "2-3",
+     "live": 0
     },
     "home": {
      "team": "LIU",
@@ -10558,10 +10571,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2900",
-     "record": "0-5"
+     "record": "0-5",
+     "live": 0
     },
     "time": "7:00 PM",
-    "line": "STMN -1.5"
+    "line": "STMN -1.5",
+    "live": {
+     "detail": "18:54 1st",
+     "as_of": "7:10 PM"
+    }
    },
    {
     "id": "401921182",
@@ -10582,7 +10600,8 @@
      "id": "111949",
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 6
     },
     "home": {
      "team": "Penn",
@@ -10598,10 +10617,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "111949",
-     "record": "1-3"
+     "record": "1-3",
+     "live": 8
     },
     "time": "7:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "15:27 1st",
+     "as_of": "7:10 PM"
+    }
    },
    {
     "id": "401911240",
@@ -10622,7 +10646,8 @@
      "id": "257",
      "final": null,
      "won": null,
-     "record": "3-1"
+     "record": "3-1",
+     "live": 4
     },
     "home": {
      "team": "Virginia Tech",
@@ -10638,10 +10663,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "257",
-     "record": "4-0"
+     "record": "4-0",
+     "live": 9
     },
     "time": "7:00 PM",
-    "line": "VT -12.5"
+    "line": "VT -12.5",
+    "live": {
+     "detail": "15:05 1st",
+     "as_of": "7:10 PM"
+    }
    },
    {
     "id": "401926153",
