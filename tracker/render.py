@@ -35,7 +35,7 @@ TEMPLATE = r"""<!doctype html>
 @media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--head:#23262c;--head2:#30333b;--ink:#ecebe7;--mute:#9a9fa8;--line:#2c2f36;--accent:#fb923c;--good:#4ade80;--bad:#f87171;--chip:#252830;--me:#60a5fa;--metint:#1c2a45;--live:#e5484d;--gold:#f5b83d;--g1b:#17291e;--g1t:#7ad99a;--g2b:#1d4a2c;--g2t:#a7f0bf;--g3b:#22603a;--g3t:#dcfce7;--g4b:#2e8a4f;--g4t:#f0fdf4;--g5b:#3cc06b;--g5t:#06170c}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-main{max-width:960px;margin:0 auto;padding:calc(24px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+main{max-width:720px;margin:0 auto;padding:calc(24px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
 h1{font-size:26px;margin:0 0 2px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
 h1 img{width:34px;height:34px;border-radius:8px}
 h2{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:32px 0 10px}
@@ -187,7 +187,6 @@ h2.withnote{margin-bottom:2px}
 @media (prefers-color-scheme:dark){.k-conf{--tagc:#60a5fa}.k-conf_tourney{--tagc:#a78bfa}.k-ncaa{--tagc:#facc15}}
 .game>div{min-width:0}
 .trec{font-size:11px;font-weight:400;color:var(--mute);margin-left:5px;font-variant-numeric:tabular-nums;white-space:nowrap}
-.sides{max-width:440px}
 .side{display:grid;grid-template-columns:18px minmax(0,1fr);column-gap:6px;align-items:baseline}
 .side.fin{grid-template-columns:18px minmax(0,1fr) auto 2.3em}
 .side+.side{margin-top:4px}
@@ -229,7 +228,7 @@ td .ptsb{font-size:14px;padding:1px 7px}
 .entry-row.open .chev{transform:rotate(90deg);opacity:1}
 @media (prefers-reduced-motion:reduce){.chev{transition:none}}
 .detail td{background:var(--chip);padding:0}
-#standings .detail .scroll{max-width:min(926px,calc(100vw - 34px - env(safe-area-inset-left) - env(safe-area-inset-right)))}
+#standings .detail .scroll{max-width:min(686px,calc(100vw - 34px - env(safe-area-inset-left) - env(safe-area-inset-right)))}
 .detail table th,.detail table td{padding:6px 12px;font-size:13px}
 .scroll{overflow-x:auto}
 .chip{display:inline-block;background:var(--chip);border-radius:4px;padding:0 6px;font-size:12px;color:var(--mute)}
@@ -258,6 +257,8 @@ svg text{fill:var(--mute);font-size:11px}
 .legend button.off{color:var(--mute);opacity:.6}
 .legend button.clear{color:var(--accent);font-weight:600}
 .legend i{display:inline-block;width:12px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+/* desktop: the 11-column Teams table spills past the 720px column, up to 960px */
+[data-panel=teams] .card.scroll{margin-inline:calc(50% - min(480px,50vw - 16px))}
 </style>
 </head>
 <body>
