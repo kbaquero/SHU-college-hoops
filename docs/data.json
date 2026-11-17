@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 18:25 EST",
+ "updated": "2026-11-17 18:35 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -10664,7 +10664,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 56
+     "live": 60
     },
     "home": {
      "team": "Florida",
@@ -10683,13 +10683,13 @@
      "opp_final": null,
      "opp_id": "87",
      "record": "4-0",
-     "live": 65
+     "live": 71
     },
     "time": "4:30 PM",
     "line": "FLA -14.5",
     "live": {
-     "detail": "9:46 2nd",
-     "as_of": "6:25 PM"
+     "detail": "6:59 2nd",
+     "as_of": "6:35 PM"
     }
    },
    {
@@ -10720,7 +10720,7 @@
      "opp_final": null,
      "opp_id": "349",
      "record": "1-3",
-     "live": 19
+     "live": 21
     },
     "home": {
      "team": "Army",
@@ -10731,13 +10731,13 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 13
+     "live": 23
     },
     "time": "6:00 PM",
     "line": "ARMY -1.5",
     "live": {
-     "detail": "10:05 1st",
-     "as_of": "6:25 PM"
+     "detail": "6:35 1st",
+     "as_of": "6:35 PM"
     }
    },
    {
@@ -10765,7 +10765,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2509",
-     "record": "3-2"
+     "record": "3-2",
+     "live": 6
     },
     "home": {
      "team": "Purdue",
@@ -10775,10 +10776,15 @@
      "id": "2509",
      "final": null,
      "won": null,
-     "record": "2-2"
+     "record": "2-2",
+     "live": 8
     },
     "time": "6:30 PM",
-    "line": "PUR -22.5"
+    "line": "PUR -22.5",
+    "live": {
+     "detail": "17:28 1st",
+     "as_of": "6:35 PM"
+    }
    },
    {
     "id": "401909566",
@@ -12072,5 +12078,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "6:25 PM"
+ "scores_updated": "6:35 PM"
 }
