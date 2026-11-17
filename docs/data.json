@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 17:13 EST",
+ "updated": "2026-11-17 17:15 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -10664,7 +10664,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 11
+     "live": 13
     },
     "home": {
      "team": "Florida",
@@ -10683,13 +10683,13 @@
      "opp_final": null,
      "opp_id": "87",
      "record": "4-0",
-     "live": 15
+     "live": 17
     },
     "time": "4:30 PM",
     "line": "FLA -14.5",
     "live": {
-     "detail": "9:25 1st",
-     "as_of": "5:13 PM"
+     "detail": "8:13 1st",
+     "as_of": "5:15 PM"
     }
    },
    {
@@ -12066,5 +12066,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "5:13 PM"
+ "scores_updated": "5:15 PM"
 }
