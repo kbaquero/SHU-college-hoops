@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 21:10 EST",
- "scores_updated": "9:10 PM",
+ "updated": "2026-11-16 21:20 EST",
+ "scores_updated": "9:20 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10637,7 +10637,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10648,10 +10648,9 @@
      "home": false,
      "owners": [],
      "id": "111166",
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 43
+     "final": 45,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Southeast Missouri",
@@ -10660,22 +10659,17 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Midway",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 115,
      "opp_final": null,
      "opp_id": "111166",
-     "record": "2-2",
-     "live": 115
+     "record": "3-2"
     },
     "time": "7:30 PM",
-    "line": "",
-    "live": {
-     "detail": "0:49 2nd",
-     "as_of": "9:10 PM"
-    }
+    "line": ""
    },
    {
     "id": "401909798",
@@ -10697,7 +10691,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 27
+     "live": 35
     },
     "home": {
      "team": "Kansas St.",
@@ -10714,13 +10708,13 @@
      "opp_final": null,
      "opp_id": "149",
      "record": "2-1",
-     "live": 58
+     "live": 66
     },
     "time": "8:00 PM",
     "line": "KSU -14.5",
     "live": {
-     "detail": "15:05 2nd",
-     "as_of": "9:10 PM"
+     "detail": "11:52 2nd",
+     "as_of": "9:20 PM"
     }
    },
    {
