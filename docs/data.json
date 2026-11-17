@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 20:10 EST",
- "scores_updated": "8:10 PM",
+ "updated": "2026-11-16 20:20 EST",
+ "scores_updated": "8:20 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10389,7 +10389,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10400,10 +10400,9 @@
      "home": false,
      "owners": [],
      "id": "2016",
-     "final": null,
-     "won": null,
-     "record": "0-4",
-     "live": 56
+     "final": 57,
+     "won": false,
+     "record": "0-5"
     },
     "home": {
      "team": "Maryland",
@@ -10412,22 +10411,17 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Alcorn St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 117,
      "opp_final": null,
      "opp_id": "2016",
-     "record": "1-2",
-     "live": 115
+     "record": "2-2"
     },
     "time": "6:00 PM",
-    "line": "MD -35.5",
-    "live": {
-     "detail": "1:01 2nd",
-     "as_of": "8:10 PM"
-    }
+    "line": "MD -35.5"
    },
    {
     "id": "401918075",
@@ -10449,7 +10443,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 28
+     "live": 34
     },
     "home": {
      "team": "Clemson",
@@ -10466,13 +10460,13 @@
      "opp_final": null,
      "opp_id": "2643",
      "record": "3-1",
-     "live": 40
+     "live": 50
     },
     "time": "7:00 PM",
     "line": "CLEM -24.5",
     "live": {
-     "detail": "18:37 2nd",
-     "as_of": "8:10 PM"
+     "detail": "15:24 2nd",
+     "as_of": "8:20 PM"
     }
    },
    {
@@ -10501,7 +10495,7 @@
      "opp_final": null,
      "opp_id": "61",
      "record": "2-1",
-     "live": 35
+     "live": 42
     },
     "home": {
      "team": "Georgia",
@@ -10518,13 +10512,13 @@
      "opp_final": null,
      "opp_id": "294",
      "record": "4-0",
-     "live": 52
+     "live": 63
     },
     "time": "7:00 PM",
     "line": "UGA -21.5",
     "live": {
-     "detail": "18:36 2nd",
-     "as_of": "8:10 PM"
+     "detail": "13:25 2nd",
+     "as_of": "8:20 PM"
     }
    },
    {
@@ -10547,7 +10541,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 36
+     "live": 47
     },
     "home": {
      "team": "LIU",
@@ -10566,13 +10560,13 @@
      "opp_final": null,
      "opp_id": "2900",
      "record": "0-5",
-     "live": 38
+     "live": 44
     },
     "time": "7:00 PM",
     "line": "STMN -1.5",
     "live": {
-     "detail": "17:48 2nd",
-     "as_of": "8:10 PM"
+     "detail": "14:14 2nd",
+     "as_of": "8:20 PM"
     }
    },
    {
@@ -10612,13 +10606,13 @@
      "opp_final": null,
      "opp_id": "111949",
      "record": "1-3",
-     "live": 44
+     "live": 55
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "14:48 2nd",
-     "as_of": "8:10 PM"
+     "detail": "11:53 2nd",
+     "as_of": "8:20 PM"
     }
    },
    {
@@ -10641,7 +10635,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 32
+     "live": 39
     },
     "home": {
      "team": "Virginia Tech",
@@ -10658,13 +10652,13 @@
      "opp_final": null,
      "opp_id": "257",
      "record": "4-0",
-     "live": 41
+     "live": 43
     },
     "time": "7:00 PM",
     "line": "VT -12.5",
     "live": {
-     "detail": "17:47 2nd",
-     "as_of": "8:10 PM"
+     "detail": "16:24 2nd",
+     "as_of": "8:20 PM"
     }
    },
    {
@@ -10704,13 +10698,13 @@
      "opp_final": null,
      "opp_id": "111166",
      "record": "2-2",
-     "live": 52
+     "live": 61
     },
     "time": "7:30 PM",
     "line": "",
     "live": {
-     "detail": "3:29 1st",
-     "as_of": "8:10 PM"
+     "detail": "Halftime",
+     "as_of": "8:20 PM"
     }
    },
    {
@@ -10733,7 +10727,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 6
+     "live": 10
     },
     "home": {
      "team": "Kansas St.",
@@ -10750,13 +10744,13 @@
      "opp_final": null,
      "opp_id": "149",
      "record": "2-1",
-     "live": 9
+     "live": 18
     },
     "time": "8:00 PM",
     "line": "KSU -14.5",
     "live": {
-     "detail": "15:20 1st",
-     "as_of": "8:10 PM"
+     "detail": "11:14 1st",
+     "as_of": "8:20 PM"
     }
    },
    {
