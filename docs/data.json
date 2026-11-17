@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 21:40 EST",
- "scores_updated": "9:40 PM",
+ "updated": "2026-11-16 21:50 EST",
+ "scores_updated": "9:50 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10677,7 +10677,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10688,10 +10688,9 @@
      "home": false,
      "owners": [],
      "id": "149",
-     "final": null,
-     "won": null,
-     "record": "2-2",
-     "live": 43
+     "final": 45,
+     "won": false,
+     "record": "2-3"
     },
     "home": {
      "team": "Kansas St.",
@@ -10700,22 +10699,17 @@
      "owners": [
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Montana",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 86,
      "opp_final": null,
      "opp_id": "149",
-     "record": "2-1",
-     "live": 82
+     "record": "3-1"
     },
     "time": "8:00 PM",
-    "line": "KSU -14.5",
-    "live": {
-     "detail": "3:52 2nd",
-     "as_of": "9:40 PM"
-    }
+    "line": "KSU -14.5"
    },
    {
     "id": "401917532",
