@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 20:50 EST",
- "scores_updated": "8:50 PM",
+ "updated": "2026-11-16 21:00 EST",
+ "scores_updated": "9:00 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10443,7 +10443,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 48
+     "live": 50
     },
     "home": {
      "team": "Clemson",
@@ -10460,13 +10460,13 @@
      "opp_final": null,
      "opp_id": "2643",
      "record": "3-1",
-     "live": 72
+     "live": 83
     },
     "time": "7:00 PM",
     "line": "CLEM -24.5",
     "live": {
-     "detail": "4:42 2nd",
-     "as_of": "8:50 PM"
+     "detail": "1:03 2nd",
+     "as_of": "9:00 PM"
     }
    },
    {
@@ -10475,7 +10475,7 @@
     "tbd": false,
     "tv": "SEC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10487,15 +10487,14 @@
      "owners": [
       "Chris C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Georgia",
      "pts": 0,
-     "final": null,
+     "final": 62,
      "opp_final": null,
      "opp_id": "61",
-     "record": "2-1",
-     "live": 55
+     "record": "2-2"
     },
     "home": {
      "team": "Georgia",
@@ -10504,22 +10503,17 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Jacksonville",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 107,
      "opp_final": null,
      "opp_id": "294",
-     "record": "4-0",
-     "live": 98
+     "record": "5-0"
     },
     "time": "7:00 PM",
-    "line": "UGA -21.5",
-    "live": {
-     "detail": "3:36 2nd",
-     "as_of": "8:50 PM"
-    }
+    "line": "UGA -21.5"
    },
    {
     "id": "401919807",
@@ -10527,7 +10521,7 @@
     "tbd": false,
     "tv": "NEC Front Row",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10538,10 +10532,9 @@
      "home": false,
      "owners": [],
      "id": "2900",
-     "final": null,
-     "won": null,
-     "record": "2-3",
-     "live": 75
+     "final": 79,
+     "won": true,
+     "record": "3-3"
     },
     "home": {
      "team": "LIU",
@@ -10552,22 +10545,17 @@
       "Connor C. & Conor G.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "St. Thomas",
      "pts": 0,
-     "final": null,
+     "final": 70,
      "opp_final": null,
      "opp_id": "2900",
-     "record": "0-5",
-     "live": 70
+     "record": "0-6"
     },
     "time": "7:00 PM",
-    "line": "STMN -1.5",
-    "live": {
-     "detail": "0:50 2nd",
-     "as_of": "8:50 PM"
-    }
+    "line": "STMN -1.5"
    },
    {
     "id": "401921182",
@@ -10629,7 +10617,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 59
+     "live": 66
     },
     "home": {
      "team": "Virginia Tech",
@@ -10646,13 +10634,13 @@
      "opp_final": null,
      "opp_id": "257",
      "record": "4-0",
-     "live": 75
+     "live": 85
     },
     "time": "7:00 PM",
     "line": "VT -12.5",
     "live": {
-     "detail": "4:47 2nd",
-     "as_of": "8:50 PM"
+     "detail": "1:09 2nd",
+     "as_of": "9:00 PM"
     }
    },
    {
@@ -10675,7 +10663,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 32
+     "live": 39
     },
     "home": {
      "team": "Southeast Missouri",
@@ -10692,13 +10680,13 @@
      "opp_final": null,
      "opp_id": "111166",
      "record": "2-2",
-     "live": 86
+     "live": 104
     },
     "time": "7:30 PM",
     "line": "",
     "live": {
-     "detail": "11:35 2nd",
-     "as_of": "8:50 PM"
+     "detail": "5:45 2nd",
+     "as_of": "9:00 PM"
     }
    },
    {
