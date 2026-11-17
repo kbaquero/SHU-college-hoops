@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 21:30 EST",
- "scores_updated": "9:30 PM",
+ "updated": "2026-11-16 21:40 EST",
+ "scores_updated": "9:40 PM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10691,7 +10691,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 35
+     "live": 43
     },
     "home": {
      "team": "Kansas St.",
@@ -10708,13 +10708,13 @@
      "opp_final": null,
      "opp_id": "149",
      "record": "2-1",
-     "live": 69
+     "live": 82
     },
     "time": "8:00 PM",
     "line": "KSU -14.5",
     "live": {
-     "detail": "7:57 2nd",
-     "as_of": "9:30 PM"
+     "detail": "3:52 2nd",
+     "as_of": "9:40 PM"
     }
    },
    {
@@ -10799,7 +10799,7 @@
      "record": "3-0"
     },
     "time": "10:00 PM",
-    "line": "UCLA -29.5"
+    "line": "UCLA -30.5"
    }
   ]
  },
