@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17 00:05 EST",
- "scores_updated": "12:05 AM",
+ "updated": "2026-11-17 00:15 EST",
+ "scores_updated": "12:15 AM",
  "through": "Sun, Nov 15",
  "season": 2027,
  "standings": [
@@ -10758,7 +10758,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10769,10 +10769,9 @@
      "home": false,
      "owners": [],
      "id": "299",
-     "final": null,
-     "won": null,
-     "record": "1-2",
-     "live": 66
+     "final": 66,
+     "won": false,
+     "record": "1-3"
     },
     "home": {
      "team": "UCLA",
@@ -10784,22 +10783,17 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Long Beach St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 105,
      "opp_final": null,
      "opp_id": "299",
-     "record": "3-0",
-     "live": 103
+     "record": "4-0"
     },
     "time": "10:00 PM",
-    "line": "UCLA -29.5",
-    "live": {
-     "detail": "0:53 2nd",
-     "as_of": "12:05 AM"
-    }
+    "line": "UCLA -29.5"
    }
   ]
  },
