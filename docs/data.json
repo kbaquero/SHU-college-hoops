@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 23:30 EST",
+ "updated": "2026-11-17 23:40 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11419,7 +11419,7 @@
      "opp_final": null,
      "opp_id": "24",
      "record": "3-0",
-     "live": 49
+     "live": 51
     },
     "home": {
      "team": "Stanford",
@@ -11430,13 +11430,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 42
+     "live": 44
     },
     "time": "10:00 PM",
     "line": "STAN -6.5",
     "live": {
-     "detail": "11:12 2nd",
-     "as_of": "11:30 PM"
+     "detail": "7:57 2nd",
+     "as_of": "11:40 PM"
     }
    },
    {
@@ -11465,7 +11465,7 @@
      "opp_final": null,
      "opp_id": "2250",
      "record": "2-2",
-     "live": 21
+     "live": 26
     },
     "home": {
      "team": "Gonzaga",
@@ -11476,13 +11476,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 25
+     "live": 34
     },
     "time": "11:00 PM",
     "line": "GONZ -23.5",
     "live": {
-     "detail": "7:46 1st",
-     "as_of": "11:30 PM"
+     "detail": "3:21 1st",
+     "as_of": "11:40 PM"
     }
    },
    {
@@ -12072,5 +12072,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "11:30 PM"
+ "scores_updated": "11:40 PM"
 }
