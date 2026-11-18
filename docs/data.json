@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 01:21 EST",
+ "updated": "2026-11-18 01:31 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11516,8 +11516,8 @@
     "time": "11:59 PM",
     "line": "AUB -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "1:21 AM"
+     "detail": "19:05 2nd",
+     "as_of": "1:31 AM"
     }
    }
   ]
@@ -12066,5 +12066,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "1:21 AM"
+ "scores_updated": "1:31 AM"
 }
