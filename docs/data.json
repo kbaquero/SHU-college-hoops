@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 13:03 EST",
+ "updated": "2026-11-18 13:13 EST",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11193,7 +11193,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 19
+     "live": 26
     },
     "home": {
      "team": "Baylor",
@@ -11211,13 +11211,13 @@
      "opp_final": null,
      "opp_id": "2296",
      "record": "3-1",
-     "live": 60
+     "live": 64
     },
     "time": "12:00 PM",
     "line": "BAY -35.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "12:53 PM"
+     "detail": "16:41 2nd",
+     "as_of": "1:13 PM"
     }
    },
    {
@@ -12189,7 +12189,7 @@
      "record": "4-0"
     },
     "time": "9:00 PM",
-    "line": "ASU -23.5"
+    "line": "ASU -22.5"
    },
    {
     "id": "401921742",
@@ -13281,5 +13281,5 @@
   "date": "2026-11-18",
   "id": "401909742"
  },
- "scores_updated": "1:03 PM"
+ "scores_updated": "1:13 PM"
 }
