@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 21:56 EST",
+ "updated": "2026-11-17 22:06 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11155,7 +11155,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11167,15 +11167,14 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Evansville",
      "pts": 0,
-     "final": null,
+     "final": 65,
      "opp_final": null,
      "opp_id": "339",
-     "record": "2-2",
-     "live": 61
+     "record": "2-3"
     },
     "home": {
      "team": "Evansville",
@@ -11183,17 +11182,12 @@
      "home": true,
      "owners": [],
      "id": "339",
-     "final": null,
-     "won": null,
-     "record": "2-2",
-     "live": 78
+     "final": 79,
+     "won": true,
+     "record": "3-2"
     },
     "time": "8:00 PM",
-    "line": "EVAN -7.5",
-    "live": {
-     "detail": "1:22 2nd",
-     "as_of": "9:56 PM"
-    }
+    "line": "EVAN -7.5"
    },
    {
     "id": "401926143",
@@ -11222,7 +11216,7 @@
      "opp_final": null,
      "opp_id": "155",
      "record": "2-3",
-     "live": 64
+     "live": 69
     },
     "home": {
      "team": "North Dakota",
@@ -11233,13 +11227,13 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 66
+     "live": 72
     },
     "time": "8:00 PM",
     "line": "UND -1.5",
     "live": {
-     "detail": "1:59 2nd",
-     "as_of": "9:56 PM"
+     "detail": "0:15 2nd",
+     "as_of": "10:06 PM"
     }
    },
    {
@@ -11248,7 +11242,7 @@
     "tbd": false,
     "tv": "ACCNX",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11259,10 +11253,9 @@
      "home": false,
      "owners": [],
      "id": "198",
-     "final": null,
-     "won": null,
-     "record": "2-2",
-     "live": 71
+     "final": 72,
+     "won": false,
+     "record": "2-3"
     },
     "home": {
      "team": "SMU",
@@ -11272,22 +11265,17 @@
       "Mike C.",
       "Dennis S."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Oral Roberts",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 76,
      "opp_final": null,
      "opp_id": "198",
-     "record": "4-0",
-     "live": 74
+     "record": "5-0"
     },
     "time": "8:00 PM",
-    "line": "SMU -22.5",
-    "live": {
-     "detail": "1:38 2nd",
-     "as_of": "9:56 PM"
-    }
+    "line": "SMU -22.5"
    },
    {
     "id": "401921826",
@@ -11357,7 +11345,7 @@
      "opp_final": null,
      "opp_id": "302",
      "record": "1-3",
-     "live": 33
+     "live": 37
     },
     "home": {
      "team": "UC Davis",
@@ -11373,8 +11361,8 @@
     "time": "9:00 PM",
     "line": "UCD -12.5",
     "live": {
-     "detail": "0:38 1st",
-     "as_of": "9:56 PM"
+     "detail": "Halftime",
+     "as_of": "10:06 PM"
     }
    },
    {
@@ -11397,7 +11385,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 23
+     "live": 25
     },
     "home": {
      "team": "Tennessee",
@@ -11414,13 +11402,13 @@
      "opp_final": null,
      "opp_id": "127",
      "record": "3-0",
-     "live": 21
+     "live": 27
     },
     "time": "9:00 PM",
     "line": "MSU -2.5",
     "live": {
-     "detail": "3:14 1st",
-     "as_of": "9:56 PM"
+     "detail": "Halftime",
+     "as_of": "10:06 PM"
     }
    },
    {
@@ -11448,7 +11436,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "24",
-     "record": "3-0"
+     "record": "3-0",
+     "live": 3
     },
     "home": {
      "team": "Stanford",
@@ -11458,10 +11447,15 @@
      "id": "24",
      "final": null,
      "won": null,
-     "record": "3-1"
+     "record": "3-1",
+     "live": 2
     },
     "time": "10:00 PM",
-    "line": "STAN -6.5"
+    "line": "STAN -6.5",
+    "live": {
+     "detail": "17:45 1st",
+     "as_of": "10:06 PM"
+    }
    },
    {
     "id": "401925879",
@@ -12090,5 +12084,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "9:56 PM"
+ "scores_updated": "10:06 PM"
 }
