@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 02:31 EST",
+ "updated": "2026-11-18 02:41 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11479,7 +11479,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11492,15 +11492,14 @@
       "Sean F.",
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Auburn",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 76,
      "opp_final": null,
      "opp_id": "2",
-     "record": "3-0",
-     "live": 76
+     "record": "4-0"
     },
     "home": {
      "team": "Auburn",
@@ -11508,17 +11507,12 @@
      "home": false,
      "owners": [],
      "id": "2",
-     "final": null,
-     "won": null,
-     "record": "2-1",
-     "live": 69
+     "final": 70,
+     "won": false,
+     "record": "2-2"
     },
     "time": "11:59 PM",
-    "line": "AUB -1.5",
-    "live": {
-     "detail": "0:00 2nd",
-     "as_of": "2:31 AM"
-    }
+    "line": "AUB -1.5"
    }
   ]
  },
@@ -12066,5 +12060,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "2:31 AM"
+ "scores_updated": "2:41 AM"
 }
