@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 22:26 EST",
+ "updated": "2026-11-17 22:36 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11195,10 +11195,10 @@
     "tbd": false,
     "tv": "Summit League Network, Midco Sports Plus",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "",
     "away": {
      "team": "SIUE",
@@ -11208,15 +11208,14 @@
       "Mike L.",
       "Kevin B."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "North Dakota",
      "pts": 0,
-     "final": null,
+     "final": 78,
      "opp_final": null,
      "opp_id": "155",
-     "record": "2-3",
-     "live": 78
+     "record": "2-4"
     },
     "home": {
      "team": "North Dakota",
@@ -11224,17 +11223,12 @@
      "home": true,
      "owners": [],
      "id": "155",
-     "final": null,
-     "won": null,
-     "record": "1-3",
-     "live": 83
+     "final": 83,
+     "won": true,
+     "record": "2-3"
     },
     "time": "8:00 PM",
-    "line": "UND -1.5",
-    "live": {
-     "detail": "End of OT",
-     "as_of": "10:26 PM"
-    }
+    "line": "UND -1.5"
    },
    {
     "id": "401918970",
@@ -11345,7 +11339,7 @@
      "opp_final": null,
      "opp_id": "302",
      "record": "1-3",
-     "live": 43
+     "live": 45
     },
     "home": {
      "team": "UC Davis",
@@ -11356,13 +11350,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 35
+     "live": 39
     },
     "time": "9:00 PM",
     "line": "UCD -12.5",
     "live": {
-     "detail": "15:03 2nd",
-     "as_of": "10:26 PM"
+     "detail": "13:44 2nd",
+     "as_of": "10:36 PM"
     }
    },
    {
@@ -11385,7 +11379,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 25
+     "live": 29
     },
     "home": {
      "team": "Tennessee",
@@ -11402,13 +11396,13 @@
      "opp_final": null,
      "opp_id": "127",
      "record": "3-0",
-     "live": 37
+     "live": 41
     },
     "time": "9:00 PM",
     "line": "MSU -2.5",
     "live": {
-     "detail": "17:27 2nd",
-     "as_of": "10:26 PM"
+     "detail": "13:58 2nd",
+     "as_of": "10:36 PM"
     }
    },
    {
@@ -11437,7 +11431,7 @@
      "opp_final": null,
      "opp_id": "24",
      "record": "3-0",
-     "live": 20
+     "live": 26
     },
     "home": {
      "team": "Stanford",
@@ -11448,13 +11442,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 9
+     "live": 20
     },
     "time": "10:00 PM",
     "line": "STAN -6.5",
     "live": {
-     "detail": "9:25 1st",
-     "as_of": "10:26 PM"
+     "detail": "5:41 1st",
+     "as_of": "10:36 PM"
     }
    },
    {
@@ -12084,5 +12078,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "10:26 PM"
+ "scores_updated": "10:36 PM"
 }
