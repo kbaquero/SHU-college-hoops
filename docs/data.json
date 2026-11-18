@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 20:36 EST",
+ "updated": "2026-11-17 20:46 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -10794,7 +10794,7 @@
      "opp_final": null,
      "opp_id": "150",
      "record": "3-1",
-     "live": 53
+     "live": 66
     },
     "home": {
      "team": "Duke",
@@ -10812,13 +10812,13 @@
      "opp_final": null,
      "opp_id": "356",
      "record": "3-1",
-     "live": 39
+     "live": 44
     },
     "time": "7:00 PM",
     "line": "DUKE -8.5",
     "live": {
-     "detail": "15:41 2nd",
-     "as_of": "8:36 PM"
+     "detail": "13:51 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -10847,7 +10847,7 @@
      "opp_final": null,
      "opp_id": "116",
      "record": "2-2",
-     "live": 82
+     "live": 90
     },
     "home": {
      "team": "Mount St. Mary's",
@@ -10858,13 +10858,13 @@
      "final": null,
      "won": null,
      "record": "1-2",
-     "live": 50
+     "live": 55
     },
     "time": "7:00 PM",
     "line": "MSM -1.5",
     "live": {
-     "detail": "11:22 2nd",
-     "as_of": "8:36 PM"
+     "detail": "6:28 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -10887,7 +10887,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 24
+     "live": 28
     },
     "home": {
      "team": "Miami FL",
@@ -10907,13 +10907,13 @@
      "opp_final": null,
      "opp_id": "2520",
      "record": "3-1",
-     "live": 62
+     "live": 68
     },
     "time": "7:00 PM",
     "line": "MIA -41.5",
     "live": {
-     "detail": "13:39 2nd",
-     "as_of": "8:36 PM"
+     "detail": "11:31 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -10942,7 +10942,7 @@
      "opp_final": null,
      "opp_id": "2116",
      "record": "3-1",
-     "live": 55
+     "live": 63
     },
     "home": {
      "team": "UCF",
@@ -10953,13 +10953,13 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 51
+     "live": 54
     },
     "time": "7:00 PM",
     "line": "UCF -1.5",
     "live": {
-     "detail": "14:43 2nd",
-     "as_of": "8:36 PM"
+     "detail": "12:08 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -10988,7 +10988,7 @@
      "opp_final": null,
      "opp_id": "59",
      "record": "2-3",
-     "live": 53
+     "live": 59
     },
     "home": {
      "team": "Georgia Tech",
@@ -10999,13 +10999,13 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 59
+     "live": 69
     },
     "time": "7:00 PM",
     "line": "GT -20.5",
     "live": {
-     "detail": "11:44 2nd",
-     "as_of": "8:36 PM"
+     "detail": "7:56 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -11028,7 +11028,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 58
+     "live": 60
     },
     "home": {
      "team": "Providence",
@@ -11045,13 +11045,13 @@
      "opp_final": null,
      "opp_id": "2529",
      "record": "3-1",
-     "live": 61
+     "live": 73
     },
     "time": "7:00 PM",
     "line": "PROV -30.5",
     "live": {
-     "detail": "8:10 2nd",
-     "as_of": "8:36 PM"
+     "detail": "4:39 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -11080,7 +11080,7 @@
      "opp_final": null,
      "opp_id": "221",
      "record": "3-1",
-     "live": 54
+     "live": 58
     },
     "home": {
      "team": "Pittsburgh",
@@ -11091,13 +11091,13 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 59
+     "live": 68
     },
     "time": "7:00 PM",
     "line": "VILL -1.5",
     "live": {
-     "detail": "8:05 2nd",
-     "as_of": "8:36 PM"
+     "detail": "4:04 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -11126,7 +11126,7 @@
      "opp_final": null,
      "opp_id": "2603",
      "record": "1-3",
-     "live": 41
+     "live": 44
     },
     "home": {
      "team": "Saint Joseph's",
@@ -11137,13 +11137,13 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 61
+     "live": 70
     },
     "time": "7:00 PM",
     "line": "JOES -16.5",
     "live": {
-     "detail": "9:55 2nd",
-     "as_of": "8:36 PM"
+     "detail": "7:28 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -11177,7 +11177,7 @@
      "opp_final": null,
      "opp_id": "84",
      "record": "3-1",
-     "live": 34
+     "live": 37
     },
     "home": {
      "team": "Indiana",
@@ -11194,13 +11194,13 @@
      "opp_final": null,
      "opp_id": "8",
      "record": "4-0",
-     "live": 36
+     "live": 38
     },
     "time": "7:30 PM",
     "line": "IU -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:26 PM"
+     "detail": "19:19 2nd",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -11240,13 +11240,13 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 30
+     "live": 33
     },
     "time": "8:00 PM",
     "line": "EVAN -7.5",
     "live": {
-     "detail": "3:41 1st",
-     "as_of": "8:36 PM"
+     "detail": "0:31 1st",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -11276,7 +11276,7 @@
      "opp_final": null,
      "opp_id": "155",
      "record": "2-3",
-     "live": 8
+     "live": 22
     },
     "home": {
      "team": "North Dakota",
@@ -11287,13 +11287,13 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 21
+     "live": 40
     },
     "time": "8:00 PM",
     "line": "UND -1.5",
     "live": {
-     "detail": "9:58 1st",
-     "as_of": "8:36 PM"
+     "detail": "2:01 1st",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -11316,7 +11316,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 18
+     "live": 27
     },
     "home": {
      "team": "SMU",
@@ -11339,8 +11339,8 @@
     "time": "8:00 PM",
     "line": "SMU -22.5",
     "live": {
-     "detail": "5:39 1st",
-     "as_of": "8:36 PM"
+     "detail": "2:12 1st",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -11363,7 +11363,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 22
+     "live": 26
     },
     "home": {
      "team": "Vanderbilt",
@@ -11380,13 +11380,13 @@
      "opp_final": null,
      "opp_id": "2197",
      "record": "4-0",
-     "live": 31
+     "live": 43
     },
     "time": "8:00 PM",
     "line": "VAN -40.5",
     "live": {
-     "detail": "4:41 1st",
-     "as_of": "8:36 PM"
+     "detail": "0:37 1st",
+     "as_of": "8:46 PM"
     }
    },
    {
@@ -12138,5 +12138,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "8:36 PM"
+ "scores_updated": "8:46 PM"
 }
