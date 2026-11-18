@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 01:01 EST",
+ "updated": "2026-11-18 01:11 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11439,7 +11439,7 @@
     "tbd": false,
     "tv": "CBSSN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11451,15 +11451,14 @@
      "owners": [
       "Marty C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Gonzaga",
      "pts": 0,
-     "final": null,
+     "final": 62,
      "opp_final": null,
      "opp_id": "2250",
-     "record": "2-2",
-     "live": 62
+     "record": "2-3"
     },
     "home": {
      "team": "Gonzaga",
@@ -11467,17 +11466,12 @@
      "home": true,
      "owners": [],
      "id": "2250",
-     "final": null,
-     "won": null,
-     "record": "2-1",
-     "live": 74
+     "final": 74,
+     "won": true,
+     "record": "3-1"
     },
     "time": "11:00 PM",
-    "line": "GONZ -23.5",
-    "live": {
-     "detail": "0:00 2nd",
-     "as_of": "1:01 AM"
-    }
+    "line": "GONZ -23.5"
    },
    {
     "id": "401920512",
@@ -11506,7 +11500,7 @@
      "opp_final": null,
      "opp_id": "2",
      "record": "3-0",
-     "live": 27
+     "live": 30
     },
     "home": {
      "team": "Auburn",
@@ -11517,13 +11511,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 22
+     "live": 26
     },
     "time": "11:59 PM",
     "line": "AUB -1.5",
     "live": {
-     "detail": "5:03 1st",
-     "as_of": "1:01 AM"
+     "detail": "1:54 1st",
+     "as_of": "1:11 AM"
     }
    }
   ]
@@ -12072,5 +12066,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "1:01 AM"
+ "scores_updated": "1:11 AM"
 }
