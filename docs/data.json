@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 13:43 EST",
+ "updated": "2026-11-18 13:53 EST",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11193,7 +11193,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 41
+     "live": 46
     },
     "home": {
      "team": "Baylor",
@@ -11211,13 +11211,13 @@
      "opp_final": null,
      "opp_id": "2296",
      "record": "3-1",
-     "live": 92
+     "live": 102
     },
     "time": "12:00 PM",
     "line": "BAY -35.5",
     "live": {
-     "detail": "6:59 2nd",
-     "as_of": "1:43 PM"
+     "detail": "3:30 2nd",
+     "as_of": "1:53 PM"
     }
    },
    {
@@ -11428,7 +11428,7 @@
      "record": "3-1"
     },
     "time": "7:00 PM",
-    "line": "FAU -5.5"
+    "line": "FAU -6.5"
    },
    {
     "id": "401925782",
@@ -11768,7 +11768,7 @@
      "record": "4-0"
     },
     "time": "7:00 PM",
-    "line": "SJU -29.5"
+    "line": "SJU -28.5"
    },
    {
     "id": "401920694",
@@ -11853,7 +11853,7 @@
      "record": "2-2"
     },
     "time": "7:00 PM",
-    "line": "WOF -1.5"
+    "line": "CHSO -1.5"
    },
    {
     "id": "401909526",
@@ -13281,5 +13281,5 @@
   "date": "2026-11-18",
   "id": "401909742"
  },
- "scores_updated": "1:43 PM"
+ "scores_updated": "1:53 PM"
 }
