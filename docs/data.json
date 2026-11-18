@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 00:51 EST",
+ "updated": "2026-11-18 01:01 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11459,7 +11459,7 @@
      "opp_final": null,
      "opp_id": "2250",
      "record": "2-2",
-     "live": 55
+     "live": 62
     },
     "home": {
      "team": "Gonzaga",
@@ -11470,13 +11470,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 68
+     "live": 74
     },
     "time": "11:00 PM",
     "line": "GONZ -23.5",
     "live": {
-     "detail": "3:38 2nd",
-     "as_of": "12:51 AM"
+     "detail": "0:00 2nd",
+     "as_of": "1:01 AM"
     }
    },
    {
@@ -11506,7 +11506,7 @@
      "opp_final": null,
      "opp_id": "2",
      "record": "3-0",
-     "live": 13
+     "live": 27
     },
     "home": {
      "team": "Auburn",
@@ -11517,13 +11517,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 16
+     "live": 22
     },
     "time": "11:59 PM",
     "line": "AUB -1.5",
     "live": {
-     "detail": "8:57 1st",
-     "as_of": "12:51 AM"
+     "detail": "5:03 1st",
+     "as_of": "1:01 AM"
     }
    }
   ]
@@ -12072,5 +12072,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "12:51 AM"
+ "scores_updated": "1:01 AM"
 }
