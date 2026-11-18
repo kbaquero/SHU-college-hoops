@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 18:33 EST",
+ "updated": "2026-11-18 18:43 EST",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11234,7 +11234,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 67
+     "live": 75
     },
     "home": {
      "team": "Florida",
@@ -11253,13 +11253,13 @@
      "opp_final": null,
      "opp_id": "248",
      "record": "5-0",
-     "live": 55
+     "live": 65
     },
     "time": "4:30 PM",
     "line": "FLA -1.5",
     "live": {
-     "detail": "7:27 2nd",
-     "as_of": "6:33 PM"
+     "detail": "3:57 2nd",
+     "as_of": "6:43 PM"
     }
    },
    {
@@ -11287,7 +11287,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "46",
-     "record": "4-1"
+     "record": "4-1",
+     "live": 3
     },
     "home": {
      "team": "Georgetown",
@@ -11303,10 +11304,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2426",
-     "record": "4-0"
+     "record": "4-0",
+     "live": 12
     },
     "time": "6:30 PM",
-    "line": "GTWN -20.5"
+    "line": "GTWN -20.5",
+    "live": {
+     "detail": "16:06 1st",
+     "as_of": "6:43 PM"
+    }
    },
    {
     "id": "401922283",
@@ -11470,7 +11476,7 @@
      "record": "4-0"
     },
     "time": "7:00 PM",
-    "line": "DUQ -4.5"
+    "line": "DUQ -5.5"
    },
    {
     "id": "401926838",
@@ -11893,7 +11899,7 @@
      "record": "2-2"
     },
     "time": "7:30 PM",
-    "line": "MARQ -27.5"
+    "line": "MARQ -26.5"
    },
    {
     "id": "401920515",
@@ -13281,5 +13287,5 @@
   "date": "2026-11-18",
   "id": "401909742"
  },
- "scores_updated": "6:33 PM"
+ "scores_updated": "6:43 PM"
 }
