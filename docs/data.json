@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 01:11 EST",
+ "updated": "2026-11-18 01:21 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11500,7 +11500,7 @@
      "opp_final": null,
      "opp_id": "2",
      "record": "3-0",
-     "live": 30
+     "live": 36
     },
     "home": {
      "team": "Auburn",
@@ -11511,13 +11511,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 26
+     "live": 31
     },
     "time": "11:59 PM",
     "line": "AUB -1.5",
     "live": {
-     "detail": "1:54 1st",
-     "as_of": "1:11 AM"
+     "detail": "Halftime",
+     "as_of": "1:21 AM"
     }
    }
   ]
@@ -12066,5 +12066,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "1:11 AM"
+ "scores_updated": "1:21 AM"
 }
