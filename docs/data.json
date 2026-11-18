@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 22:46 EST",
+ "updated": "2026-11-17 22:56 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11339,7 +11339,7 @@
      "opp_final": null,
      "opp_id": "302",
      "record": "1-3",
-     "live": 52
+     "live": 64
     },
     "home": {
      "team": "UC Davis",
@@ -11350,13 +11350,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 47
+     "live": 53
     },
     "time": "9:00 PM",
     "line": "UCD -12.5",
     "live": {
-     "detail": "10:16 2nd",
-     "as_of": "10:46 PM"
+     "detail": "5:25 2nd",
+     "as_of": "10:56 PM"
     }
    },
    {
@@ -11379,7 +11379,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 34
+     "live": 36
     },
     "home": {
      "team": "Tennessee",
@@ -11401,8 +11401,8 @@
     "time": "9:00 PM",
     "line": "MSU -2.5",
     "live": {
-     "detail": "10:43 2nd",
-     "as_of": "10:46 PM"
+     "detail": "7:14 2nd",
+     "as_of": "10:56 PM"
     }
    },
    {
@@ -11431,7 +11431,7 @@
      "opp_final": null,
      "opp_id": "24",
      "record": "3-0",
-     "live": 36
+     "live": 39
     },
     "home": {
      "team": "Stanford",
@@ -11442,13 +11442,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 24
+     "live": 28
     },
     "time": "10:00 PM",
     "line": "STAN -6.5",
     "live": {
-     "detail": "2:43 1st",
-     "as_of": "10:46 PM"
+     "detail": "Halftime",
+     "as_of": "10:56 PM"
     }
    },
    {
@@ -12078,5 +12078,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "10:46 PM"
+ "scores_updated": "10:56 PM"
 }
