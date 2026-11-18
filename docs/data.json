@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 00:11 EST",
+ "updated": "2026-11-18 00:21 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11399,7 +11399,7 @@
     "tbd": false,
     "tv": "ACCNX",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11411,15 +11411,14 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Stanford",
      "pts": 0,
-     "final": null,
+     "final": 61,
      "opp_final": null,
      "opp_id": "24",
-     "record": "3-0",
-     "live": 61
+     "record": "3-1"
     },
     "home": {
      "team": "Stanford",
@@ -11427,17 +11426,12 @@
      "home": true,
      "owners": [],
      "id": "24",
-     "final": null,
-     "won": null,
-     "record": "3-1",
-     "live": 63
+     "final": 65,
+     "won": true,
+     "record": "4-1"
     },
     "time": "10:00 PM",
-    "line": "STAN -6.5",
-    "live": {
-     "detail": "0:32 2nd",
-     "as_of": "12:11 AM"
-    }
+    "line": "STAN -6.5"
    },
    {
     "id": "401925879",
@@ -11465,7 +11459,7 @@
      "opp_final": null,
      "opp_id": "2250",
      "record": "2-2",
-     "live": 38
+     "live": 42
     },
     "home": {
      "team": "Gonzaga",
@@ -11476,13 +11470,13 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 49
+     "live": 50
     },
     "time": "11:00 PM",
     "line": "GONZ -23.5",
     "live": {
-     "detail": "16:40 2nd",
-     "as_of": "12:11 AM"
+     "detail": "13:06 2nd",
+     "as_of": "12:21 AM"
     }
    },
    {
@@ -12072,5 +12066,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "12:11 AM"
+ "scores_updated": "12:21 AM"
 }
