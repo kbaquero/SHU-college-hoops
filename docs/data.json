@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 23:50 EST",
+ "updated": "2026-11-18 00:01 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -11430,13 +11430,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 56
+     "live": 57
     },
     "time": "10:00 PM",
     "line": "STAN -6.5",
     "live": {
-     "detail": "4:32 2nd",
-     "as_of": "11:50 PM"
+     "detail": "3:31 2nd",
+     "as_of": "12:01 AM"
     }
    },
    {
@@ -12072,5 +12072,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "11:50 PM"
+ "scores_updated": "12:01 AM"
 }
