@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 13:53 EST",
+ "updated": "2026-11-18 14:03 EST",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11179,7 +11179,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11190,10 +11190,9 @@
      "home": false,
      "owners": [],
      "id": "2296",
-     "final": null,
-     "won": null,
-     "record": "2-3",
-     "live": 46
+     "final": 55,
+     "won": false,
+     "record": "2-4"
     },
     "home": {
      "team": "Baylor",
@@ -11203,22 +11202,17 @@
       "Chris C.",
       "Mike C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Jackson St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 104,
      "opp_final": null,
      "opp_id": "2296",
-     "record": "3-1",
-     "live": 102
+     "record": "4-1"
     },
     "time": "12:00 PM",
-    "line": "BAY -35.5",
-    "live": {
-     "detail": "3:30 2nd",
-     "as_of": "1:53 PM"
-    }
+    "line": "BAY -35.5"
    },
    {
     "id": "401920514",
@@ -13281,5 +13275,5 @@
   "date": "2026-11-18",
   "id": "401909742"
  },
- "scores_updated": "1:53 PM"
+ "scores_updated": "2:03 PM"
 }
