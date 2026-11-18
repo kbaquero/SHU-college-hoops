@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 17:43 EST",
+ "updated": "2026-11-18 17:53 EST",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11258,8 +11258,8 @@
     "time": "4:30 PM",
     "line": "FLA -1.5",
     "live": {
-     "detail": "0:25 1st",
-     "as_of": "5:43 PM"
+     "detail": "Halftime",
+     "as_of": "5:53 PM"
     }
    },
    {
@@ -13281,5 +13281,5 @@
   "date": "2026-11-18",
   "id": "401909742"
  },
- "scores_updated": "5:43 PM"
+ "scores_updated": "5:53 PM"
 }
