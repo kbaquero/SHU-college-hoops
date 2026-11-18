@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 21:36 EST",
+ "updated": "2026-11-17 21:46 EST",
  "through": "Mon, Nov 16",
  "season": 2027,
  "standings": [
@@ -10904,7 +10904,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -10916,15 +10916,14 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "UCF",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 86,
      "opp_final": null,
      "opp_id": "2116",
-     "record": "3-1",
-     "live": 84
+     "record": "4-1"
     },
     "home": {
      "team": "UCF",
@@ -10932,17 +10931,12 @@
      "home": true,
      "owners": [],
      "id": "2116",
-     "final": null,
-     "won": null,
-     "record": "4-0",
-     "live": 82
+     "final": 83,
+     "won": false,
+     "record": "4-1"
     },
     "time": "7:00 PM",
-    "line": "UCF -1.5",
-    "live": {
-     "detail": "0:06 2nd",
-     "as_of": "9:36 PM"
-    }
+    "line": "UCF -1.5"
    },
    {
     "id": "401920308",
@@ -11135,7 +11129,7 @@
      "opp_final": null,
      "opp_id": "84",
      "record": "3-1",
-     "live": 69
+     "live": 76
     },
     "home": {
      "team": "Indiana",
@@ -11152,13 +11146,13 @@
      "opp_final": null,
      "opp_id": "8",
      "record": "4-0",
-     "live": 69
+     "live": 81
     },
     "time": "7:30 PM",
     "line": "IU -1.5",
     "live": {
-     "detail": "3:44 2nd",
-     "as_of": "9:36 PM"
+     "detail": "0:11 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -11187,7 +11181,7 @@
      "opp_final": null,
      "opp_id": "339",
      "record": "2-2",
-     "live": 48
+     "live": 56
     },
     "home": {
      "team": "Evansville",
@@ -11198,13 +11192,13 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 65
+     "live": 72
     },
     "time": "8:00 PM",
     "line": "EVAN -7.5",
     "live": {
-     "detail": "7:57 2nd",
-     "as_of": "9:36 PM"
+     "detail": "4:31 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -11234,7 +11228,7 @@
      "opp_final": null,
      "opp_id": "155",
      "record": "2-3",
-     "live": 45
+     "live": 55
     },
     "home": {
      "team": "North Dakota",
@@ -11245,13 +11239,13 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 52
+     "live": 59
     },
     "time": "8:00 PM",
     "line": "UND -1.5",
     "live": {
-     "detail": "9:42 2nd",
-     "as_of": "9:36 PM"
+     "detail": "6:29 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -11274,7 +11268,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 48
+     "live": 62
     },
     "home": {
      "team": "SMU",
@@ -11292,13 +11286,13 @@
      "opp_final": null,
      "opp_id": "198",
      "record": "4-0",
-     "live": 47
+     "live": 58
     },
     "time": "8:00 PM",
     "line": "SMU -22.5",
     "live": {
-     "detail": "9:29 2nd",
-     "as_of": "9:36 PM"
+     "detail": "4:57 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -11321,7 +11315,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 45
+     "live": 47
     },
     "home": {
      "team": "Vanderbilt",
@@ -11338,13 +11332,13 @@
      "opp_final": null,
      "opp_id": "2197",
      "record": "4-0",
-     "live": 77
+     "live": 91
     },
     "time": "8:00 PM",
     "line": "VAN -40.5",
     "live": {
-     "detail": "7:22 2nd",
-     "as_of": "9:36 PM"
+     "detail": "2:35 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -11375,7 +11369,7 @@
      "opp_final": null,
      "opp_id": "302",
      "record": "1-3",
-     "live": 22
+     "live": 29
     },
     "home": {
      "team": "UC Davis",
@@ -11386,13 +11380,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 13
+     "live": 19
     },
     "time": "9:00 PM",
     "line": "UCD -12.5",
     "live": {
-     "detail": "7:14 1st",
-     "as_of": "9:36 PM"
+     "detail": "3:49 1st",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -11415,7 +11409,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 18
+     "live": 21
     },
     "home": {
      "team": "Tennessee",
@@ -11432,13 +11426,13 @@
      "opp_final": null,
      "opp_id": "127",
      "record": "3-0",
-     "live": 9
+     "live": 14
     },
     "time": "9:00 PM",
     "line": "MSU -2.5",
     "live": {
-     "detail": "9:27 1st",
-     "as_of": "9:36 PM"
+     "detail": "6:58 1st",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -12108,5 +12102,5 @@
   "date": "2026-11-17",
   "id": "401916289"
  },
- "scores_updated": "9:36 PM"
+ "scores_updated": "9:46 PM"
 }
