@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 21:53 EST",
- "scores_updated": "9:53 PM",
+ "updated": "2026-11-18 22:01 EST",
+ "scores_updated": "10:01 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11856,7 +11856,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "conf",
     "round": null,
     "final_label": "Final",
@@ -11867,10 +11867,9 @@
      "home": false,
      "owners": [],
      "id": "2305",
-     "final": null,
-     "won": null,
-     "record": "4-0",
-     "live": 82
+     "final": 86,
+     "won": true,
+     "record": "5-0"
     },
     "home": {
      "team": "West Virginia",
@@ -11880,22 +11879,17 @@
       "Sean F.",
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Kansas",
      "pts": 0,
-     "final": null,
+     "final": 82,
      "opp_final": null,
      "opp_id": "2305",
-     "record": "4-0",
-     "live": 82
+     "record": "4-1"
     },
     "time": "7:30 PM",
-    "line": "KU -6.5",
-    "live": {
-     "detail": "0:39 2nd",
-     "as_of": "9:53 PM"
-    }
+    "line": "KU -6.5"
    },
    {
     "id": "401929420",
@@ -11923,7 +11917,7 @@
      "opp_final": null,
      "opp_id": "2636",
      "record": "0-5",
-     "live": 66
+     "live": 75
     },
     "home": {
      "team": "UTSA",
@@ -11934,13 +11928,13 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 88
+     "live": 96
     },
     "time": "8:00 PM",
     "line": "UTSA -17.5",
     "live": {
-     "detail": "3:44 2nd",
-     "as_of": "9:53 PM"
+     "detail": "1:08 2nd",
+     "as_of": "10:01 PM"
     }
    },
    {
@@ -11969,7 +11963,7 @@
      "opp_final": null,
      "opp_id": "326",
      "record": "0-4",
-     "live": 44
+     "live": 51
     },
     "home": {
      "team": "Texas St.",
@@ -11980,13 +11974,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 77
+     "live": 84
     },
     "time": "8:00 PM",
     "line": "TXST -18.5",
     "live": {
-     "detail": "3:36 2nd",
-     "as_of": "9:53 PM"
+     "detail": "0:00 2nd",
+     "as_of": "10:01 PM"
     }
    },
    {
@@ -12009,7 +12003,7 @@
      "final": null,
      "won": null,
      "record": "2-5",
-     "live": 65
+     "live": 67
     },
     "home": {
      "team": "LSU",
@@ -12026,13 +12020,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "4-0",
-     "live": 75
+     "live": 79
     },
     "time": "8:00 PM",
     "line": "LSU -37.5",
     "live": {
-     "detail": "2:17 2nd",
-     "as_of": "9:53 PM"
+     "detail": "End of 2nd",
+     "as_of": "10:01 PM"
     }
    },
    {
@@ -12055,7 +12049,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 76
+     "live": 78
     },
     "home": {
      "team": "Oklahoma",
@@ -12072,13 +12066,13 @@
      "opp_final": null,
      "opp_id": "2097",
      "record": "3-1",
-     "live": 78
+     "live": 86
     },
     "time": "8:00 PM",
     "line": "OU -20.5",
     "live": {
-     "detail": "1:31 2nd",
-     "as_of": "9:53 PM"
+     "detail": "0:05 2nd",
+     "as_of": "10:01 PM"
     }
    },
    {
@@ -12118,13 +12112,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 29
+     "live": 41
     },
     "time": "8:00 PM",
     "line": "SAM -7.5",
     "live": {
-     "detail": "13:20 2nd",
-     "as_of": "9:53 PM"
+     "detail": "11:55 2nd",
+     "as_of": "10:01 PM"
     }
    },
    {
@@ -12158,7 +12152,7 @@
      "opp_final": null,
      "opp_id": "12",
      "record": "4-0",
-     "live": 17
+     "live": 22
     },
     "home": {
      "team": "Arizona",
@@ -12175,13 +12169,13 @@
      "opp_final": null,
      "opp_id": "41",
      "record": "3-1",
-     "live": 36
+     "live": 38
     },
     "time": "9:00 PM",
     "line": "ARIZ -3.5",
     "live": {
-     "detail": "4:56 1st",
-     "as_of": "9:53 PM"
+     "detail": "3:07 1st",
+     "as_of": "10:01 PM"
     }
    },
    {
@@ -12319,13 +12313,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 25
+     "live": 28
     },
     "time": "9:00 PM",
     "line": "CSU -12.5",
     "live": {
-     "detail": "0:11 1st",
-     "as_of": "9:53 PM"
+     "detail": "Halftime",
+     "as_of": "10:01 PM"
     }
    },
    {
