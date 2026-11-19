@@ -799,8 +799,8 @@ function renderMyCard(me) {
     for (let v = 0; v <= max; v += step) g += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
     const top = P.t - half - band, bot = Ht - P.b + half + band;
     const q = (tx, ty, a, txt) => `<text class="vq" x="${tx}" y="${ty}" text-anchor="${a}">${txt}</text>`;
-    g += q(x(mid) - 8, top + 13, 'end', 'Bargains') + q(x(mid) + 8, top + 13, 'start', 'Worth it') +
-         q(x(mid) - 8, bot - 6, 'end', 'Duds') + q(x(mid) + 8, bot - 6, 'start', 'Busts');
+    g += q(P.l + 4, top + 13, 'start', 'Bargains') + q(W - P.r - 4, top + 13, 'end', 'Worth it') +   // names in the plot's outer corners
+         q(P.l + 4, bot - 6, 'start', 'Duds') + q(W - P.r - 4, bot - 6, 'end', 'Busts');
     const xs = (s1 - s0) > 12 ? 2 : 1;
     for (let v = Math.ceil(s0 / xs) * xs; v <= s1; v += xs) g += `<text x="${x(v)}" y="${Ht - 26}" text-anchor="middle">$${v}</text>`;
     g += `<text x="${(P.l + W - P.r) / 2}" y="${Ht - 6}" text-anchor="middle">Salary</text>`;
@@ -825,12 +825,13 @@ function renderMyCard(me) {
     // name one of the picked entry's teams per quadrant: the most points up top, the fewest down below
     if (me) {
       const mineP = placed.filter(mine), lab = (p, up) => {
+        if (up && p.cy - R - 7 < top + 26) up = false; else if (!up && p.cy + R + 15 > bot - 18) up = true;   // stay clear of the corner names
         const right = p.cx > W * .62, ty = up ? p.cy - R - 7 : p.cy + R + 15;
         return `<text class="vlab" x="${p.cx + (right ? -2 : 2)}" y="${ty}" text-anchor="${right ? 'end' : 'start'}">${esc(p.d.t)}</text>`;
       };
       const pick = (keep, better) => { const l = mineP.filter(p => keep(p.d)); return l.length ? l.reduce((a, b) => better(b.d, a.d) ? b : a) : null; };
-      const top = (b, a) => b.pts > a.pts || (b.pts === a.pts && b.sal < a.sal), low = (b, a) => b.pts < a.pts || (b.pts === a.pts && b.sal > a.sal);
-      [[d => d.sal < mid && d.pts >= avg, top, true], [d => d.sal > mid && d.pts >= avg, top, true],
+      const most = (b, a) => b.pts > a.pts || (b.pts === a.pts && b.sal < a.sal), low = (b, a) => b.pts < a.pts || (b.pts === a.pts && b.sal > a.sal);
+      [[d => d.sal < mid && d.pts >= avg, most, true], [d => d.sal > mid && d.pts >= avg, most, true],
        [d => d.sal < mid && d.pts < avg, low, false], [d => d.sal > mid && d.pts < avg, low, false]]
         .forEach(([keep, better, up]) => { const p = pick(keep, better); if (p) g += lab(p, up); });
     }
