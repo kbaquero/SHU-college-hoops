@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 23:21 EST",
- "scores_updated": "11:21 PM",
+ "updated": "2026-11-18 23:31 EST",
+ "scores_updated": "11:31 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -12122,7 +12122,7 @@
      "opp_final": null,
      "opp_id": "12",
      "record": "4-0",
-     "live": 64
+     "live": 72
     },
     "home": {
      "team": "Arizona",
@@ -12139,13 +12139,13 @@
      "opp_final": null,
      "opp_id": "41",
      "record": "3-1",
-     "live": 75
+     "live": 81
     },
     "time": "9:00 PM",
     "line": "ARIZ -3.5",
     "live": {
-     "detail": "3:45 2nd",
-     "as_of": "11:21 PM"
+     "detail": "0:57 2nd",
+     "as_of": "11:31 PM"
     }
    },
    {
@@ -12334,7 +12334,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 32
+     "live": 35
     },
     "home": {
      "team": "UCLA",
@@ -12354,13 +12354,13 @@
      "opp_final": null,
      "opp_id": "2239",
      "record": "4-0",
-     "live": 35
+     "live": 40
     },
     "time": "10:30 PM",
     "line": "UCLA -31.5",
     "live": {
-     "detail": "2:56 1st",
-     "as_of": "11:21 PM"
+     "detail": "Halftime",
+     "as_of": "11:31 PM"
     }
    }
   ]
