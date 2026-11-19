@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19 18:03 EST",
+ "updated": "2026-11-19 18:13 EST",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -12002,7 +12002,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "93",
-     "record": "4-0"
+     "record": "4-0",
+     "live": 2
     },
     "home": {
      "team": "Murray St.",
@@ -12012,10 +12013,15 @@
      "id": "93",
      "final": null,
      "won": null,
-     "record": "5-0"
+     "record": "5-0",
+     "live": 3
     },
     "time": "6:00 PM",
-    "line": "NCSU -3.5"
+    "line": "NCSU -3.5",
+    "live": {
+     "detail": "16:00 1st",
+     "as_of": "6:13 PM"
+    }
    },
    {
     "id": "401911021",
@@ -13542,5 +13548,5 @@
   "date": "2026-11-19",
   "id": "401920517"
  },
- "scores_updated": "6:03 PM"
+ "scores_updated": "6:13 PM"
 }
