@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19 16:37 EST",
+ "updated": "2026-11-19 16:47 EST",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -11934,7 +11934,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11948,15 +11948,14 @@
       "Jason H.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "West Virginia",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 85,
      "opp_final": null,
      "opp_id": "277",
-     "record": "5-1",
-     "live": 85
+     "record": "6-1"
     },
     "home": {
      "team": "West Virginia",
@@ -11966,22 +11965,17 @@
       "Sean F.",
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Florida",
      "pts": 0,
-     "final": null,
+     "final": 72,
      "opp_final": null,
      "opp_id": "57",
-     "record": "4-1",
-     "live": 72
+     "record": "4-2"
     },
     "time": "2:30 PM",
-    "line": "FLA -7.5",
-    "live": {
-     "detail": "0:16 2nd",
-     "as_of": "4:37 PM"
-    }
+    "line": "FLA -7.5"
    },
    {
     "id": "401918959",
@@ -13548,5 +13542,5 @@
   "date": "2026-11-19",
   "id": "401920517"
  },
- "scores_updated": "4:37 PM"
+ "scores_updated": "4:47 PM"
 }
