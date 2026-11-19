@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 19:02 EST",
- "scores_updated": "7:02 PM",
+ "updated": "2026-11-18 19:06 EST",
+ "scores_updated": "7:06 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11283,7 +11283,7 @@
      "opp_final": null,
      "opp_id": "46",
      "record": "4-1",
-     "live": 9
+     "live": 16
     },
     "home": {
      "team": "Georgetown",
@@ -11300,13 +11300,13 @@
      "opp_final": null,
      "opp_id": "2426",
      "record": "4-0",
-     "live": 21
+     "live": 23
     },
     "time": "6:30 PM",
     "line": "GTWN -20.5",
     "live": {
-     "detail": "7:35 1st",
-     "as_of": "7:02 PM"
+     "detail": "6:22 1st",
+     "as_of": "7:06 PM"
     }
    },
    {
@@ -11329,7 +11329,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 2
+     "live": 5
     },
     "home": {
      "team": "Colgate",
@@ -11348,13 +11348,13 @@
      "opp_final": null,
      "opp_id": "390",
      "record": "0-4",
-     "live": 2
+     "live": 10
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "19:13 1st",
-     "as_of": "7:02 PM"
+     "detail": "17:06 1st",
+     "as_of": "7:06 PM"
     }
    },
    {
@@ -11383,7 +11383,7 @@
      "opp_final": null,
      "opp_id": "2226",
      "record": "2-3",
-     "live": 3
+     "live": 5
     },
     "home": {
      "team": "Florida Atlantic",
@@ -11394,13 +11394,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 2
+     "live": 7
     },
     "time": "7:00 PM",
     "line": "FAU -6.5",
     "live": {
-     "detail": "19:01 1st",
-     "as_of": "7:02 PM"
+     "detail": "16:37 1st",
+     "as_of": "7:06 PM"
     }
    },
    {
@@ -11431,7 +11431,7 @@
      "opp_final": null,
      "opp_id": "2184",
      "record": "3-2",
-     "live": 0
+     "live": 2
     },
     "home": {
      "team": "Duquesne",
@@ -11442,13 +11442,13 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 0
+     "live": 7
     },
     "time": "7:00 PM",
     "line": "DUQ -5.5",
     "live": {
-     "detail": "19:34 1st",
-     "as_of": "7:02 PM"
+     "detail": "17:50 1st",
+     "as_of": "7:06 PM"
     }
    },
    {
@@ -11477,7 +11477,7 @@
      "opp_final": null,
      "opp_id": "119",
      "record": "2-2",
-     "live": 0
+     "live": 9
     },
     "home": {
      "team": "Towson",
@@ -11488,13 +11488,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 0
+     "live": 4
     },
     "time": "7:00 PM",
     "line": "TOW -3.5",
     "live": {
-     "detail": "19:58 1st",
-     "as_of": "7:02 PM"
+     "detail": "16:49 1st",
+     "as_of": "7:06 PM"
     }
    },
    {
@@ -11522,7 +11522,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "112358",
-     "record": "4-0"
+     "record": "4-0",
+     "live": 2
     },
     "home": {
      "team": "LIU",
@@ -11540,10 +11541,15 @@
      "final": null,
      "opp_final": null,
      "opp_id": "350",
-     "record": "0-6"
+     "record": "0-6",
+     "live": 0
     },
     "time": "7:00 PM",
-    "line": "UNCW -8.5"
+    "line": "UNCW -8.5",
+    "live": {
+     "detail": "19:10 1st",
+     "as_of": "7:06 PM"
+    }
    },
    {
     "id": "401920963",
@@ -11570,7 +11576,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "195",
-     "record": "3-2"
+     "record": "3-2",
+     "live": 0
     },
     "home": {
      "team": "Ohio",
@@ -11580,10 +11587,15 @@
      "id": "195",
      "final": null,
      "won": null,
-     "record": "2-1"
+     "record": "2-1",
+     "live": 5
     },
     "time": "7:00 PM",
-    "line": "OHIO -15.5"
+    "line": "OHIO -15.5",
+    "live": {
+     "detail": "18:47 1st",
+     "as_of": "7:06 PM"
+    }
    },
    {
     "id": "401921156",
@@ -11610,7 +11622,8 @@
      "final": null,
      "opp_final": null,
      "opp_id": "2448",
-     "record": "4-1"
+     "record": "4-1",
+     "live": 2
     },
     "home": {
      "team": "North Carolina A&T",
@@ -11620,10 +11633,15 @@
      "id": "2448",
      "final": null,
      "won": null,
-     "record": "2-2"
+     "record": "2-2",
+     "live": 0
     },
     "time": "7:00 PM",
-    "line": "NCAT -8.5"
+    "line": "NCAT -8.5",
+    "live": {
+     "detail": "18:13 1st",
+     "as_of": "7:06 PM"
+    }
    },
    {
     "id": "401919760",
@@ -11685,7 +11703,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 0
+     "live": 3
     },
     "home": {
      "team": "Presbyterian",
@@ -11703,13 +11721,13 @@
      "opp_final": null,
      "opp_id": "2382",
      "record": "0-3",
-     "live": 0
+     "live": 13
     },
     "time": "7:00 PM",
     "line": "PRES -1.5",
     "live": {
-     "detail": "19:20 1st",
-     "as_of": "7:02 PM"
+     "detail": "16:03 1st",
+     "as_of": "7:06 PM"
     }
    },
    {
@@ -11758,13 +11776,13 @@
      "opp_final": null,
      "opp_id": "2561",
      "record": "4-0",
-     "live": 2
+     "live": 11
     },
     "time": "7:00 PM",
     "line": "SJU -29.5",
     "live": {
-     "detail": "19:15 1st",
-     "as_of": "7:02 PM"
+     "detail": "16:39 1st",
+     "as_of": "7:06 PM"
     }
    },
    {
@@ -11838,7 +11856,7 @@
      "opp_final": null,
      "opp_id": "2127",
      "record": "2-3",
-     "live": 0
+     "live": 5
     },
     "home": {
      "team": "Charleston Southern",
@@ -11849,13 +11867,13 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 0
+     "live": 2
     },
     "time": "7:00 PM",
     "line": "WOF -1.5",
     "live": {
-     "detail": "19:19 1st",
-     "as_of": "7:02 PM"
+     "detail": "16:43 1st",
+     "as_of": "7:06 PM"
     }
    },
    {
