@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19 14:51 EST",
+ "updated": "2026-11-19 15:01 EST",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -11956,7 +11956,7 @@
      "opp_final": null,
      "opp_id": "277",
      "record": "5-1",
-     "live": 19
+     "live": 27
     },
     "home": {
      "team": "West Virginia",
@@ -11974,13 +11974,13 @@
      "opp_final": null,
      "opp_id": "57",
      "record": "4-1",
-     "live": 8
+     "live": 15
     },
     "time": "2:30 PM",
     "line": "FLA -7.5",
     "live": {
-     "detail": "11:55 1st",
-     "as_of": "2:51 PM"
+     "detail": "7:55 1st",
+     "as_of": "3:01 PM"
     }
    },
    {
@@ -13548,5 +13548,5 @@
   "date": "2026-11-19",
   "id": "401920517"
  },
- "scores_updated": "2:51 PM"
+ "scores_updated": "3:01 PM"
 }
