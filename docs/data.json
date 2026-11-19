@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 23:01 EST",
- "scores_updated": "11:01 PM",
+ "updated": "2026-11-18 23:11 EST",
+ "scores_updated": "11:11 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -12122,7 +12122,7 @@
      "opp_final": null,
      "opp_id": "12",
      "record": "4-0",
-     "live": 54
+     "live": 59
     },
     "home": {
      "team": "Arizona",
@@ -12139,13 +12139,13 @@
      "opp_final": null,
      "opp_id": "41",
      "record": "3-1",
-     "live": 62
+     "live": 72
     },
     "time": "9:00 PM",
     "line": "ARIZ -3.5",
     "live": {
-     "detail": "8:37 2nd",
-     "as_of": "11:01 PM"
+     "detail": "5:35 2nd",
+     "as_of": "11:11 PM"
     }
    },
    {
@@ -12168,7 +12168,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 60
+     "live": 65
     },
     "home": {
      "team": "Arizona St.",
@@ -12189,13 +12189,13 @@
      "opp_final": null,
      "opp_id": "2473",
      "record": "4-0",
-     "live": 59
+     "live": 67
     },
     "time": "9:00 PM",
     "line": "ASU -22.5",
     "live": {
-     "detail": "2:16 2nd",
-     "as_of": "11:01 PM"
+     "detail": "0:13 2nd",
+     "as_of": "11:11 PM"
     }
    },
    {
@@ -12246,7 +12246,7 @@
     "tbd": false,
     "tv": "YouTube",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12258,15 +12258,14 @@
      "owners": [
       "Jason H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Colorado St.",
      "pts": 0,
-     "final": null,
+     "final": 64,
      "opp_final": null,
      "opp_id": "36",
-     "record": "2-4",
-     "live": 64
+     "record": "2-5"
     },
     "home": {
      "team": "Colorado St.",
@@ -12274,17 +12273,12 @@
      "home": true,
      "owners": [],
      "id": "36",
-     "final": null,
-     "won": null,
-     "record": "3-1",
-     "live": 69
+     "final": 71,
+     "won": true,
+     "record": "4-1"
     },
     "time": "9:00 PM",
-    "line": "CSU -12.5",
-    "live": {
-     "detail": "1:55 2nd",
-     "as_of": "11:01 PM"
-    }
+    "line": "CSU -12.5"
    },
    {
     "id": "401925949",
@@ -12346,7 +12340,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 19
+     "live": 27
     },
     "home": {
      "team": "UCLA",
@@ -12366,13 +12360,13 @@
      "opp_final": null,
      "opp_id": "2239",
      "record": "4-0",
-     "live": 15
+     "live": 26
     },
     "time": "10:30 PM",
     "line": "UCLA -31.5",
     "live": {
-     "detail": "9:45 1st",
-     "as_of": "11:01 PM"
+     "detail": "5:35 1st",
+     "as_of": "11:11 PM"
     }
    }
   ]
