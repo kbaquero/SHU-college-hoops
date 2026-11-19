@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 22:01 EST",
- "scores_updated": "10:01 PM",
+ "updated": "2026-11-18 22:11 EST",
+ "scores_updated": "10:11 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11897,7 +11897,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11909,15 +11909,14 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "UTSA",
      "pts": 0,
-     "final": null,
+     "final": 78,
      "opp_final": null,
      "opp_id": "2636",
-     "record": "0-5",
-     "live": 75
+     "record": "0-6"
     },
     "home": {
      "team": "UTSA",
@@ -11925,17 +11924,12 @@
      "home": true,
      "owners": [],
      "id": "2636",
-     "final": null,
-     "won": null,
-     "record": "2-2",
-     "live": 96
+     "final": 98,
+     "won": true,
+     "record": "3-2"
     },
     "time": "8:00 PM",
-    "line": "UTSA -17.5",
-    "live": {
-     "detail": "1:08 2nd",
-     "as_of": "10:01 PM"
-    }
+    "line": "UTSA -17.5"
    },
    {
     "id": "401929201",
@@ -11943,7 +11937,7 @@
     "tbd": false,
     "tv": "YouTube",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -11955,15 +11949,14 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Texas St.",
      "pts": 0,
-     "final": null,
+     "final": 51,
      "opp_final": null,
      "opp_id": "326",
-     "record": "0-4",
-     "live": 51
+     "record": "0-5"
     },
     "home": {
      "team": "Texas St.",
@@ -11971,17 +11964,12 @@
      "home": true,
      "owners": [],
      "id": "326",
-     "final": null,
-     "won": null,
-     "record": "5-0",
-     "live": 84
+     "final": 84,
+     "won": true,
+     "record": "6-0"
     },
     "time": "8:00 PM",
-    "line": "TXST -18.5",
-    "live": {
-     "detail": "0:00 2nd",
-     "as_of": "10:01 PM"
-    }
+    "line": "TXST -18.5"
    },
    {
     "id": "401917982",
@@ -11989,7 +11977,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12000,10 +11988,9 @@
      "home": false,
      "owners": [],
      "id": "2433",
-     "final": null,
-     "won": null,
-     "record": "2-5",
-     "live": 67
+     "final": 67,
+     "won": false,
+     "record": "2-6"
     },
     "home": {
      "team": "LSU",
@@ -12012,22 +11999,17 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Louisiana Monroe",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 79,
      "opp_final": null,
      "opp_id": "2433",
-     "record": "4-0",
-     "live": 79
+     "record": "5-0"
     },
     "time": "8:00 PM",
-    "line": "LSU -37.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "10:01 PM"
-    }
+    "line": "LSU -37.5"
    },
    {
     "id": "401906805",
@@ -12035,7 +12017,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12046,10 +12028,9 @@
      "home": false,
      "owners": [],
      "id": "2097",
-     "final": null,
-     "won": null,
-     "record": "1-3",
-     "live": 78
+     "final": 78,
+     "won": false,
+     "record": "1-4"
     },
     "home": {
      "team": "Oklahoma",
@@ -12058,22 +12039,17 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Campbell",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 87,
      "opp_final": null,
      "opp_id": "2097",
-     "record": "3-1",
-     "live": 86
+     "record": "4-1"
     },
     "time": "8:00 PM",
-    "line": "OU -20.5",
-    "live": {
-     "detail": "0:05 2nd",
-     "as_of": "10:01 PM"
-    }
+    "line": "OU -20.5"
    },
    {
     "id": "401922283",
@@ -12101,7 +12077,7 @@
      "opp_final": null,
      "opp_id": "2908",
      "record": "1-2",
-     "live": 47
+     "live": 57
     },
     "home": {
      "team": "USC Upstate",
@@ -12112,13 +12088,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 41
+     "live": 49
     },
     "time": "8:00 PM",
     "line": "SAM -7.5",
     "live": {
-     "detail": "11:55 2nd",
-     "as_of": "10:01 PM"
+     "detail": "9:20 2nd",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -12152,7 +12128,7 @@
      "opp_final": null,
      "opp_id": "12",
      "record": "4-0",
-     "live": 22
+     "live": 29
     },
     "home": {
      "team": "Arizona",
@@ -12169,13 +12145,13 @@
      "opp_final": null,
      "opp_id": "41",
      "record": "3-1",
-     "live": 38
+     "live": 47
     },
     "time": "9:00 PM",
     "line": "ARIZ -3.5",
     "live": {
-     "detail": "3:07 1st",
-     "as_of": "10:01 PM"
+     "detail": "Halftime",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -12198,7 +12174,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 28
+     "live": 34
     },
     "home": {
      "team": "Arizona St.",
@@ -12219,13 +12195,13 @@
      "opp_final": null,
      "opp_id": "2473",
      "record": "4-0",
-     "live": 26
+     "live": 28
     },
     "time": "9:00 PM",
     "line": "ASU -22.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:53 PM"
+     "detail": "17:20 2nd",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -12248,7 +12224,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 27
+     "live": 30
     },
     "home": {
      "team": "BYU",
@@ -12267,13 +12243,13 @@
      "opp_final": null,
      "opp_id": "2458",
      "record": "4-0",
-     "live": 45
+     "live": 54
     },
     "time": "9:00 PM",
     "line": "BYU -28.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:53 PM"
+     "detail": "16:59 2nd",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -12313,13 +12289,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 28
+     "live": 30
     },
     "time": "9:00 PM",
     "line": "CSU -12.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:01 PM"
+     "detail": "18:21 2nd",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -12348,7 +12324,7 @@
      "opp_final": null,
      "opp_id": "328",
      "record": "1-3",
-     "live": 34
+     "live": 38
     },
     "home": {
      "team": "Utah St.",
@@ -12359,13 +12335,13 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 52
+     "live": 59
     },
     "time": "9:00 PM",
     "line": "USU -28.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:53 PM"
+     "detail": "18:07 2nd",
+     "as_of": "10:11 PM"
     }
    },
    {
