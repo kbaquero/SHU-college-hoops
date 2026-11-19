@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-18 19:03 EST",
+ "updated": "2026-11-18 19:02 EST",
+ "scores_updated": "7:02 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11203,11 +11204,11 @@
       "Mike C."
      ],
      "won": true,
-     "score": "",
+     "score": "104-55",
      "opp": "Jackson St.",
      "pts": 1,
      "final": 104,
-     "opp_final": null,
+     "opp_final": 55,
      "opp_id": "2296",
      "record": "4-1"
     },
@@ -11216,7 +11217,7 @@
    },
    {
     "id": "401920514",
-    "start": "2026-11-18T16:30:00-05:00",
+    "start": "2026-11-18T16:48:00-05:00",
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
@@ -11245,15 +11246,15 @@
       "Kevin B."
      ],
      "won": false,
-     "score": "",
+     "score": "76-86",
      "opp": "Houston",
      "pts": 0,
      "final": 76,
-     "opp_final": null,
+     "opp_final": 86,
      "opp_id": "248",
      "record": "5-1"
     },
-    "time": "4:30 PM",
+    "time": "4:48 PM",
     "line": "FLA -1.5"
    },
    {
@@ -11304,49 +11305,9 @@
     "time": "6:30 PM",
     "line": "GTWN -20.5",
     "live": {
-     "detail": "7:53 1st",
-     "as_of": "7:03 PM"
+     "detail": "7:35 1st",
+     "as_of": "7:02 PM"
     }
-   },
-   {
-    "id": "401922283",
-    "start": "2026-11-18T18:30:00-05:00",
-    "tbd": false,
-    "tv": "ESPN+",
-    "neutral": false,
-    "completed": false,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "",
-    "away": {
-     "team": "Samford",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Mike L."
-     ],
-     "won": null,
-     "score": "",
-     "opp": "USC Upstate",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
-     "opp_id": "2908",
-     "record": "1-2"
-    },
-    "home": {
-     "team": "USC Upstate",
-     "pool": false,
-     "home": true,
-     "owners": [],
-     "id": "2908",
-     "final": null,
-     "won": null,
-     "record": "1-4"
-    },
-    "time": "6:30 PM",
-    "line": "SAM -7.5"
    },
    {
     "id": "401920772",
@@ -11393,7 +11354,7 @@
     "line": "",
     "live": {
      "detail": "19:13 1st",
-     "as_of": "7:03 PM"
+     "as_of": "7:02 PM"
     }
    },
    {
@@ -11438,8 +11399,8 @@
     "time": "7:00 PM",
     "line": "FAU -6.5",
     "live": {
-     "detail": "19:15 1st",
-     "as_of": "7:03 PM"
+     "detail": "19:01 1st",
+     "as_of": "7:02 PM"
     }
    },
    {
@@ -11487,7 +11448,7 @@
     "line": "DUQ -5.5",
     "live": {
      "detail": "19:34 1st",
-     "as_of": "7:03 PM"
+     "as_of": "7:02 PM"
     }
    },
    {
@@ -11533,7 +11494,7 @@
     "line": "TOW -3.5",
     "live": {
      "detail": "19:58 1st",
-     "as_of": "7:03 PM"
+     "as_of": "7:02 PM"
     }
    },
    {
@@ -11748,7 +11709,7 @@
     "line": "PRES -1.5",
     "live": {
      "detail": "19:20 1st",
-     "as_of": "7:03 PM"
+     "as_of": "7:02 PM"
     }
    },
    {
@@ -11778,7 +11739,7 @@
      "opp_final": null,
      "opp_id": "2599",
      "record": "3-1",
-     "live": 0
+     "live": 2
     },
     "home": {
      "team": "St. John's",
@@ -11802,8 +11763,8 @@
     "time": "7:00 PM",
     "line": "SJU -29.5",
     "live": {
-     "detail": "19:21 1st",
-     "as_of": "7:03 PM"
+     "detail": "19:15 1st",
+     "as_of": "7:02 PM"
     }
    },
    {
@@ -11894,7 +11855,7 @@
     "line": "WOF -1.5",
     "live": {
      "detail": "19:19 1st",
-     "as_of": "7:03 PM"
+     "as_of": "7:02 PM"
     }
    },
    {
@@ -12137,6 +12098,46 @@
     },
     "time": "8:00 PM",
     "line": "OU -20.5"
+   },
+   {
+    "id": "401922283",
+    "start": "2026-11-18T20:00:00-05:00",
+    "tbd": false,
+    "tv": "ESPN+",
+    "neutral": false,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "",
+    "away": {
+     "team": "Samford",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Mike L."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "USC Upstate",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "2908",
+     "record": "1-2"
+    },
+    "home": {
+     "team": "USC Upstate",
+     "pool": false,
+     "home": true,
+     "owners": [],
+     "id": "2908",
+     "final": null,
+     "won": null,
+     "record": "1-4"
+    },
+    "time": "8:00 PM",
+    "line": "SAM -7.5"
    },
    {
     "id": "401909742",
@@ -13322,6 +13323,5 @@
  "gotd": {
   "date": "2026-11-18",
   "id": "401909742"
- },
- "scores_updated": "7:03 PM"
+ }
 }
