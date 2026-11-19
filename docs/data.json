@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 22:51 EST",
- "scores_updated": "10:51 PM",
+ "updated": "2026-11-18 23:01 EST",
+ "scores_updated": "11:01 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -12122,7 +12122,7 @@
      "opp_final": null,
      "opp_id": "12",
      "record": "4-0",
-     "live": 48
+     "live": 54
     },
     "home": {
      "team": "Arizona",
@@ -12139,13 +12139,13 @@
      "opp_final": null,
      "opp_id": "41",
      "record": "3-1",
-     "live": 60
+     "live": 62
     },
     "time": "9:00 PM",
     "line": "ARIZ -3.5",
     "live": {
-     "detail": "11:34 2nd",
-     "as_of": "10:51 PM"
+     "detail": "8:37 2nd",
+     "as_of": "11:01 PM"
     }
    },
    {
@@ -12168,7 +12168,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 55
+     "live": 60
     },
     "home": {
      "team": "Arizona St.",
@@ -12189,13 +12189,13 @@
      "opp_final": null,
      "opp_id": "2473",
      "record": "4-0",
-     "live": 53
+     "live": 59
     },
     "time": "9:00 PM",
     "line": "ASU -22.5",
     "live": {
-     "detail": "5:46 2nd",
-     "as_of": "10:51 PM"
+     "detail": "2:16 2nd",
+     "as_of": "11:01 PM"
     }
    },
    {
@@ -12204,7 +12204,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12215,10 +12215,9 @@
      "home": false,
      "owners": [],
      "id": "2458",
-     "final": null,
-     "won": null,
-     "record": "2-2",
-     "live": 53
+     "final": 54,
+     "won": false,
+     "record": "2-3"
     },
     "home": {
      "team": "BYU",
@@ -12229,22 +12228,17 @@
       "Marty C.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Northern Colorado",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 98,
      "opp_final": null,
      "opp_id": "2458",
-     "record": "4-0",
-     "live": 93
+     "record": "5-0"
     },
     "time": "9:00 PM",
-    "line": "BYU -28.5",
-    "live": {
-     "detail": "2:48 2nd",
-     "as_of": "10:51 PM"
-    }
+    "line": "BYU -28.5"
    },
    {
     "id": "401929176",
@@ -12272,7 +12266,7 @@
      "opp_final": null,
      "opp_id": "36",
      "record": "2-4",
-     "live": 57
+     "live": 64
     },
     "home": {
      "team": "Colorado St.",
@@ -12283,13 +12277,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 66
+     "live": 69
     },
     "time": "9:00 PM",
     "line": "CSU -12.5",
     "live": {
-     "detail": "4:45 2nd",
-     "as_of": "10:51 PM"
+     "detail": "1:55 2nd",
+     "as_of": "11:01 PM"
     }
    },
    {
@@ -12352,7 +12346,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 10
+     "live": 19
     },
     "home": {
      "team": "UCLA",
@@ -12372,13 +12366,13 @@
      "opp_final": null,
      "opp_id": "2239",
      "record": "4-0",
-     "live": 13
+     "live": 15
     },
     "time": "10:30 PM",
     "line": "UCLA -31.5",
     "live": {
-     "detail": "14:10 1st",
-     "as_of": "10:51 PM"
+     "detail": "9:45 1st",
+     "as_of": "11:01 PM"
     }
    }
   ]
