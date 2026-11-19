@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 18:43 EST",
- "scores_updated": "6:43 PM",
+ "updated": "2026-11-19 18:53 EST",
+ "scores_updated": "6:53 PM",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -12395,7 +12395,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 25
+     "live": 27
     },
     "home": {
      "team": "N.C. State",
@@ -12413,13 +12413,13 @@
      "opp_id": "93",
      "seed": null,
      "record": "4-0",
-     "live": 32
+     "live": 43
     },
     "time": "6:00 PM",
     "line": "NCSU -3.5",
     "live": {
-     "detail": "4:18 1st",
-     "as_of": "6:43 PM"
+     "detail": "0:57 1st",
+     "as_of": "6:53 PM"
     }
    },
    {
