@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 21:43 EST",
- "scores_updated": "9:43 PM",
+ "updated": "2026-11-18 21:53 EST",
+ "scores_updated": "9:53 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -11473,10 +11473,10 @@
     "tbd": false,
     "tv": "NEC Front Row",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final 2OT",
     "event": "",
     "away": {
      "team": "UNC Wilmington",
@@ -11485,15 +11485,14 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "LIU",
      "pts": 0,
-     "final": null,
+     "final": 114,
      "opp_final": null,
      "opp_id": "112358",
-     "record": "4-0",
-     "live": 114
+     "record": "4-1"
     },
     "home": {
      "team": "LIU",
@@ -11504,22 +11503,17 @@
       "Connor C. & Conor G.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "UNC Wilmington",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 115,
      "opp_final": null,
      "opp_id": "350",
-     "record": "0-6",
-     "live": 115
+     "record": "1-6"
     },
     "time": "7:00 PM",
-    "line": "UNCW -8.5",
-    "live": {
-     "detail": "0:03 2OT",
-     "as_of": "9:43 PM"
-    }
+    "line": "UNCW -8.5"
    },
    {
     "id": "401920963",
@@ -11876,7 +11870,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 76
+     "live": 82
     },
     "home": {
      "team": "West Virginia",
@@ -11894,13 +11888,13 @@
      "opp_final": null,
      "opp_id": "2305",
      "record": "4-0",
-     "live": 76
+     "live": 82
     },
     "time": "7:30 PM",
     "line": "KU -6.5",
     "live": {
-     "detail": "3:33 2nd",
-     "as_of": "9:43 PM"
+     "detail": "0:39 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -11929,7 +11923,7 @@
      "opp_final": null,
      "opp_id": "2636",
      "record": "0-5",
-     "live": 60
+     "live": 66
     },
     "home": {
      "team": "UTSA",
@@ -11940,13 +11934,13 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 74
+     "live": 88
     },
     "time": "8:00 PM",
     "line": "UTSA -17.5",
     "live": {
-     "detail": "7:38 2nd",
-     "as_of": "9:43 PM"
+     "detail": "3:44 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -11975,7 +11969,7 @@
      "opp_final": null,
      "opp_id": "326",
      "record": "0-4",
-     "live": 40
+     "live": 44
     },
     "home": {
      "team": "Texas St.",
@@ -11986,13 +11980,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 67
+     "live": 77
     },
     "time": "8:00 PM",
     "line": "TXST -18.5",
     "live": {
-     "detail": "7:09 2nd",
-     "as_of": "9:43 PM"
+     "detail": "3:36 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -12015,7 +12009,7 @@
      "final": null,
      "won": null,
      "record": "2-5",
-     "live": 62
+     "live": 65
     },
     "home": {
      "team": "LSU",
@@ -12032,13 +12026,13 @@
      "opp_final": null,
      "opp_id": "2433",
      "record": "4-0",
-     "live": 70
+     "live": 75
     },
     "time": "8:00 PM",
     "line": "LSU -37.5",
     "live": {
-     "detail": "5:16 2nd",
-     "as_of": "9:43 PM"
+     "detail": "2:17 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -12061,7 +12055,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 70
+     "live": 76
     },
     "home": {
      "team": "Oklahoma",
@@ -12078,13 +12072,13 @@
      "opp_final": null,
      "opp_id": "2097",
      "record": "3-1",
-     "live": 71
+     "live": 78
     },
     "time": "8:00 PM",
     "line": "OU -20.5",
     "live": {
-     "detail": "5:01 2nd",
-     "as_of": "9:43 PM"
+     "detail": "1:31 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -12113,7 +12107,7 @@
      "opp_final": null,
      "opp_id": "2908",
      "record": "1-2",
-     "live": 39
+     "live": 47
     },
     "home": {
      "team": "USC Upstate",
@@ -12129,8 +12123,8 @@
     "time": "8:00 PM",
     "line": "SAM -7.5",
     "live": {
-     "detail": "17:00 2nd",
-     "as_of": "9:33 PM"
+     "detail": "13:20 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -12164,7 +12158,7 @@
      "opp_final": null,
      "opp_id": "12",
      "record": "4-0",
-     "live": 9
+     "live": 17
     },
     "home": {
      "team": "Arizona",
@@ -12181,13 +12175,13 @@
      "opp_final": null,
      "opp_id": "41",
      "record": "3-1",
-     "live": 24
+     "live": 36
     },
     "time": "9:00 PM",
     "line": "ARIZ -3.5",
     "live": {
-     "detail": "9:18 1st",
-     "as_of": "9:43 PM"
+     "detail": "4:56 1st",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -12210,7 +12204,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 24
+     "live": 28
     },
     "home": {
      "team": "Arizona St.",
@@ -12236,8 +12230,8 @@
     "time": "9:00 PM",
     "line": "ASU -22.5",
     "live": {
-     "detail": "2:19 1st",
-     "as_of": "9:43 PM"
+     "detail": "Halftime",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -12260,7 +12254,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 20
+     "live": 27
     },
     "home": {
      "team": "BYU",
@@ -12279,13 +12273,13 @@
      "opp_final": null,
      "opp_id": "2458",
      "record": "4-0",
-     "live": 39
+     "live": 45
     },
     "time": "9:00 PM",
     "line": "BYU -28.5",
     "live": {
-     "detail": "2:21 1st",
-     "as_of": "9:43 PM"
+     "detail": "Halftime",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -12314,7 +12308,7 @@
      "opp_final": null,
      "opp_id": "36",
      "record": "2-4",
-     "live": 29
+     "live": 39
     },
     "home": {
      "team": "Colorado St.",
@@ -12325,13 +12319,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 17
+     "live": 25
     },
     "time": "9:00 PM",
     "line": "CSU -12.5",
     "live": {
-     "detail": "3:48 1st",
-     "as_of": "9:43 PM"
+     "detail": "0:11 1st",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -12360,7 +12354,7 @@
      "opp_final": null,
      "opp_id": "328",
      "record": "1-3",
-     "live": 23
+     "live": 34
     },
     "home": {
      "team": "Utah St.",
@@ -12371,13 +12365,13 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 45
+     "live": 52
     },
     "time": "9:00 PM",
     "line": "USU -28.5",
     "live": {
-     "detail": "4:12 1st",
-     "as_of": "9:43 PM"
+     "detail": "Halftime",
+     "as_of": "9:53 PM"
     }
    },
    {
