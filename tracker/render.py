@@ -780,7 +780,7 @@ function renderMyCard(me) {
   const pts = Object.keys(I).filter(t => I[t].owners.length).map(t => ({t, sal: I[t].salary, pts: z(T[t]).total, own: I[t].owners}));
   if (!pts.length) { el.innerHTML = ''; info.hidden = true; return; }
   const avg = pts.reduce((a, d) => a + d.pts, 0) / pts.length, mid = 10;   // the average picked team; $100 cap / 10 teams
-  const quad = d => d.sal < mid ? (d.pts >= avg ? 'Bargain' : 'Dud') : d.sal > mid ? (d.pts >= avg ? 'Worth it' : 'Bust') : (d.pts >= avg ? 'Above average' : 'Below average');
+  const quad = d => d.sal < mid ? (d.pts >= avg ? 'Steal' : 'Dud') : d.sal > mid ? (d.pts >= avg ? 'Worth it' : 'Bust') : (d.pts >= avg ? 'Above average' : 'Below average');
   let me = '', active = null, placed = [];
   function draw() {
     const W = Math.max(280, el.clientWidth), s0 = Math.min(...pts.map(d => d.sal)) - 1, s1 = Math.max(...pts.map(d => d.sal)) + 1;
@@ -799,7 +799,7 @@ function renderMyCard(me) {
     for (let v = 0; v <= max; v += step) g += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
     const top = P.t - half - band, bot = Ht - P.b + half + band;
     const q = (tx, ty, a, txt) => `<text class="vq" x="${tx}" y="${ty}" text-anchor="${a}">${txt}</text>`;
-    g += q(P.l + 4, top + 13, 'start', 'Bargains') + q(W - P.r - 4, top + 13, 'end', 'Worth it') +   // names in the plot's outer corners
+    g += q(P.l + 4, top + 13, 'start', 'Steals') + q(W - P.r - 4, top + 13, 'end', 'Worth it') +   // names in the plot's outer corners
          q(P.l + 4, bot - 6, 'start', 'Duds') + q(W - P.r - 4, bot - 6, 'end', 'Busts');
     const xs = (s1 - s0) > 12 ? 2 : 1;
     for (let v = Math.ceil(s0 / xs) * xs; v <= s1; v += xs) g += `<text x="${x(v)}" y="${Ht - 26}" text-anchor="middle">$${v}</text>`;
