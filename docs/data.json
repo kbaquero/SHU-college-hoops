@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 22:41 EST",
- "scores_updated": "10:41 PM",
+ "updated": "2026-11-18 22:51 EST",
+ "scores_updated": "10:51 PM",
  "through": "Tue, Nov 17",
  "season": 2027,
  "standings": [
@@ -12122,7 +12122,7 @@
      "opp_final": null,
      "opp_id": "12",
      "record": "4-0",
-     "live": 40
+     "live": 48
     },
     "home": {
      "team": "Arizona",
@@ -12139,13 +12139,13 @@
      "opp_final": null,
      "opp_id": "41",
      "record": "3-1",
-     "live": 55
+     "live": 60
     },
     "time": "9:00 PM",
     "line": "ARIZ -3.5",
     "live": {
-     "detail": "15:26 2nd",
-     "as_of": "10:41 PM"
+     "detail": "11:34 2nd",
+     "as_of": "10:51 PM"
     }
    },
    {
@@ -12168,7 +12168,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 51
+     "live": 55
     },
     "home": {
      "team": "Arizona St.",
@@ -12189,13 +12189,13 @@
      "opp_final": null,
      "opp_id": "2473",
      "record": "4-0",
-     "live": 42
+     "live": 53
     },
     "time": "9:00 PM",
     "line": "ASU -22.5",
     "live": {
-     "detail": "8:54 2nd",
-     "as_of": "10:41 PM"
+     "detail": "5:46 2nd",
+     "as_of": "10:51 PM"
     }
    },
    {
@@ -12218,7 +12218,7 @@
      "final": null,
      "won": null,
      "record": "2-2",
-     "live": 48
+     "live": 53
     },
     "home": {
      "team": "BYU",
@@ -12237,13 +12237,13 @@
      "opp_final": null,
      "opp_id": "2458",
      "record": "4-0",
-     "live": 86
+     "live": 93
     },
     "time": "9:00 PM",
     "line": "BYU -28.5",
     "live": {
-     "detail": "7:20 2nd",
-     "as_of": "10:41 PM"
+     "detail": "2:48 2nd",
+     "as_of": "10:51 PM"
     }
    },
    {
@@ -12272,7 +12272,7 @@
      "opp_final": null,
      "opp_id": "36",
      "record": "2-4",
-     "live": 54
+     "live": 57
     },
     "home": {
      "team": "Colorado St.",
@@ -12283,13 +12283,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 58
+     "live": 66
     },
     "time": "9:00 PM",
     "line": "CSU -12.5",
     "live": {
-     "detail": "9:18 2nd",
-     "as_of": "10:41 PM"
+     "detail": "4:45 2nd",
+     "as_of": "10:51 PM"
     }
    },
    {
@@ -12298,7 +12298,7 @@
     "tbd": false,
     "tv": "YouTube",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12310,15 +12310,14 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Utah St.",
      "pts": 0,
-     "final": null,
+     "final": 71,
      "opp_final": null,
      "opp_id": "328",
-     "record": "1-3",
-     "live": 61
+     "record": "1-4"
     },
     "home": {
      "team": "Utah St.",
@@ -12326,17 +12325,12 @@
      "home": true,
      "owners": [],
      "id": "328",
-     "final": null,
-     "won": null,
-     "record": "4-0",
-     "live": 93
+     "final": 101,
+     "won": true,
+     "record": "5-0"
     },
     "time": "9:00 PM",
-    "line": "USU -28.5",
-    "live": {
-     "detail": "4:59 2nd",
-     "as_of": "10:41 PM"
-    }
+    "line": "USU -28.5"
    },
    {
     "id": "401920158",
@@ -12358,7 +12352,7 @@
      "final": null,
      "won": null,
      "record": "2-1",
-     "live": 8
+     "live": 10
     },
     "home": {
      "team": "UCLA",
@@ -12378,13 +12372,13 @@
      "opp_final": null,
      "opp_id": "2239",
      "record": "4-0",
-     "live": 4
+     "live": 13
     },
     "time": "10:30 PM",
     "line": "UCLA -31.5",
     "live": {
-     "detail": "17:03 1st",
-     "as_of": "10:41 PM"
+     "detail": "14:10 1st",
+     "as_of": "10:51 PM"
     }
    }
   ]
