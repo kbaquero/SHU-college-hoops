@@ -182,6 +182,7 @@ h2.withnote{margin-bottom:2px}
 .k-nonconf{--tagc:var(--mute)}
 .k-conf{--tagc:#2563eb}
 .k-conf_tourney{--tagc:#7c3aed}
+.seed{display:inline-block;min-width:1.5em;margin-right:4px;font-size:11px;font-weight:650;color:var(--mute);font-variant-numeric:tabular-nums}
 .k-ncaa{--tagc:#a16207}
 .k-other_post{--tagc:var(--mute)}
 @media (prefers-color-scheme:dark){.k-conf{--tagc:#60a5fa}.k-conf_tourney{--tagc:#a78bfa}.k-ncaa{--tagc:#facc15}}
@@ -193,6 +194,7 @@ h2.withnote{margin-bottom:2px}
 .side .own{grid-column:2 / -1;margin-top:1px}
 .side .sc{text-align:right;min-width:1.8em}
 .side .ptsb{justify-self:center}
+.game.pp2 .side.fin{grid-template-columns:18px minmax(0,1fr) auto 4.6em}.side .pp{justify-self:center;display:flex;gap:3px}
 .side .nm{font-weight:400;color:var(--mute)}
 .side.pool .nm{font-weight:650;color:var(--ink)}
 .own{font-size:12px;color:var(--accent);font-weight:500}
@@ -506,9 +508,17 @@ ST.forEach(s => {
 });
 
 // game lists (today = upcoming from this morning, yesterday = finals)
-const roundLong = {playin:'Play-in', r64:'Round of 64', r32:'Round of 32', s16:'Sweet 16', e8:'Elite Eight', f4:'Final Four', final:'National Championship'};
+const roundLong = {playin:'First Four', r64:'Round of 64', r32:'Round of 32', s16:'Sweet 16', e8:'Elite Eight', f4:'Final Four', final:'National Championship'};
 const kindName = {nonconf:'Non-conference', conf:'Conference', conf_tourney:'Conference tournament', ncaa:'NCAA tournament', other_post:'Postseason'};
-const phase = g => g.completed ? 2 : g.live ? 0 : 1;   // stable sort keeps tip-time order within each group
+const phase = g => g.completed ? 2 : g.live ? 0 : 1;
+// conference tournaments: 'Big East Tournament · Semifinal' -> tag 'Big East Tournament', 'Semifinal' under the time;
+// the title game is tagged 'Big East Final', and its winner's pills split into the win (+2) and the title (+5)
+const CT_FINAL = /(?<!semi-?|quarter-?)final\b|championship/i;
+const ctInfo = g => {
+  const [head, ...rest] = (g.event || '').split(' · '), title = CT_FINAL.test(g.event || '');
+  const conf = head.replace(/\s*tournament$/i, '');
+  return {title, tag: !head ? 'Conference tournament' : title ? `${conf} Final` : head, under: title ? '' : rest.join(' · ')};
+};   // stable sort keeps tip-time order within each group
 function gameList(td, el, labelEl, emptyMsg, finals) {
   td = td || {games: []};
   labelEl.textContent = td.label ? '· ' + td.label : '';
@@ -524,10 +534,11 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
     const other = s === g.away ? g.home : g.away;
     const sc = live ? `<span class="sc lv${s.live != null && other.live != null && s.live > other.live ? ' lead' : ''}">${s.live ?? ''}</span>`
              : !g.completed ? '' : s.final != null ? `<span class="sc${s.won ? ' win' : ''}">${s.final}</span>` : '<span class="sc"></span>';
-    const pts = live ? '<span></span>' : !g.completed ? '' : s.pool ? pb(s.pts || 0) : '<span></span>';
+    const champ = g.kind === 'conf_tourney' && s.won && s.pool && ctInfo(g).title;
+    const pts = live ? '<span></span>' : !g.completed ? '' : champ ? `<span class="pp">${pb(PTS.ct)}${pb(PTS.ct_champ)}</span>` : s.pool ? pb(s.pts || 0) : '<span></span>';
     const own = s.pool && s.owners.length ? `<div class="own">${ownList(s.owners)}</div>` : '';
     return `<div class="side${s.pool ? ' pool' : ''}${g.completed && !s.won ? ' lost' : ''}${g.completed || live ? ' fin' : ''}">` +
-      `<span class="at">${prefix}</span><span class="nm">${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
+      `<span class="at">${prefix}</span><span class="nm">${(g.kind === 'ncaa' || g.kind === 'conf_tourney') && s.seed ? `<span class="seed">${s.seed}</span>` : ''}${esc(s.team)}${rc}</span>${sc}${pts}${own}</div>`;
   };
   // today: live games first, then upcoming by tip, then finals (their points are already in the standings)
   const games = td === D.today && !STALE ? [...td.games].sort((a, b) => phase(a) - phase(b)) : td.games;
@@ -535,13 +546,15 @@ function gameList(td, el, labelEl, emptyMsg, finals) {
     const when = g.completed ? esc(g.final_label || 'Final') : finals ? 'No result'
       : g.live ? `<span class="livepill">LIVE</span><span class="lvclock">${esc(g.live.detail)}</span>` : esc(g.time);
     // a named event says enough on its own; "Neutral site" only labels unnamed neutral-site games
-    const where = g.event ? `<div class="gevent">${esc(g.event)}</div>` : g.neutral ? '<div class="gsite">Neutral site</div>' : '';
+    const ct = g.kind === 'conf_tourney' ? ctInfo(g) : null, ev = ct ? ct.under : g.event;
+    const where = ev ? `<div class="gevent">${esc(ev)}</div>` : g.neutral && !ct ? '<div class="gsite">Neutral site</div>' : '';
     const under = where + (g.line ? `<div class="gline">${esc(g.line)}</div>` : '') + (!finals && g.tv && !g.completed ? `<div class="gtv">${esc(g.tv)}</div>` : '');
-    const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : kindName[g.kind];
+    const label = g.kind === 'ncaa' && roundLong[g.round] ? roundLong[g.round] : ct ? ct.tag : kindName[g.kind];
+    const two = ct && ct.title && g.completed && [g.away, g.home].some(x => x.won && x.pool);
     const gotd = td === D.today && window.GOTD && g.id === window.GOTD;
     const star = gotd ? '<span class="tag gotd-tag">★ Game of the Day</span>' : '';
     const type = label || star ? `<div class="gtype">${label ? `<span class="tag k-${g.kind}">${esc(label)}</span>` : ''}${star}</div>` : '';
-    return `<div class="game${gotd ? ' is-gotd' : ''}" data-idx="${idx}"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
+    return `<div class="game${gotd ? ' is-gotd' : ''}${two ? ' pp2' : ''}" data-idx="${idx}"><div class="gleft"><div class="gtime${finals && !g.completed ? ' dim' : ''}">${when}</div>${under}</div><div class="sides">` +
       side(g.away, '', g) + side(g.home, g.neutral ? 'vs' : 'at', g) + type + `</div></div>`;
   }).join('');
 }

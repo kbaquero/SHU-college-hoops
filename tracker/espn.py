@@ -114,6 +114,7 @@ def parse_event(ev, team_id, season_type):
         "conf_flag": comp.get("conferenceCompetition"),
         "status_detail": status.get("type", {}).get("shortDetail") or status.get("type", {}).get("detail") or "",
         "seed": seed,
+        "opp_seed": opp.get("seed"),   # tournament seeds, NCAA and (when ESPN sends them) conference
     }
 
 
@@ -163,7 +164,7 @@ def day_board(day):
     out = {}
     for ev in data.get("events", []):
         comp = (ev.get("competitions") or [{}])[0]
-        recs, scores, winners = {}, {}, {}
+        recs, scores, winners, seeds = {}, {}, {}, {}
         for c in comp.get("competitors", []):
             tid = str(c.get("id") or c.get("team", {}).get("id"))
             r = _record(c)
@@ -174,9 +175,11 @@ def day_board(day):
                 scores[tid] = sc
             if c.get("winner") is not None:
                 winners[tid] = bool(c.get("winner"))
+            if c.get("seed"):
+                seeds[tid] = c["seed"]
         stype = (comp.get("status") or ev.get("status") or {}).get("type", {})
         out[str(ev.get("id"))] = {
-            "line": _line(comp.get("odds")), "records": recs, "scores": scores, "winners": winners,
+            "line": _line(comp.get("odds")), "records": recs, "scores": scores, "winners": winners, "seeds": seeds,
             "state": stype.get("state", ""),            # pre / in / post
             "completed": bool(stype.get("completed")),
             "detail": stype.get("shortDetail") or stype.get("detail") or "",   # e.g. "Halftime", "8:12 - 2nd Half"

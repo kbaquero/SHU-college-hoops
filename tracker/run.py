@@ -54,7 +54,7 @@ def todays_games(results, owners, today):
             row["sides"][team] = {"pool": True, "home": bool(g.get("home")), "owners": owners.get(team, []),
                                   "won": g.get("won"), "score": g.get("score", ""), "opp": g.get("opp_name", ""),
                                   "pts": g.get("pts", 0), "final": mine, "opp_final": theirs,
-                                  "opp_id": g.get("opp_id", "")}
+                                  "opp_id": g.get("opp_id", ""), "seed": g.get("seed"), "opp_seed": g.get("opp_seed")}
     out = []
     for row in games.values():
         sides = row.pop("sides")
@@ -62,11 +62,11 @@ def todays_games(results, owners, today):
         if len(teams) == 1:   # opponent isn't in anyone's lineup
             name, s = teams[0]
             teams.append((s["opp"], {"pool": False, "home": not s["home"] and not row["neutral"], "owners": [],
-                                     "id": s.get("opp_id", ""),
+                                     "id": s.get("opp_id", ""), "seed": s.get("opp_seed"),
                                      "final": s.get("opp_final"),
                                      "won": (not s["won"]) if s.get("won") is not None else None}))
         teams.sort(key=lambda kv: kv[1]["home"])           # away team first, home team second
-        row["away"], row["home"] = ({"team": n, **s} for n, s in teams[:2])
+        row["away"], row["home"] = ({"team": n, **{k: v for k, v in s.items() if k != "opp_seed"}} for n, s in teams[:2])
         if row["start"] and not row["tbd"]:
             t = dt.datetime.fromisoformat(row["start"])
             row["time"] = t.strftime("%I:%M %p").lstrip("0")
@@ -221,6 +221,7 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
                         side["record"] = _bump(side["record"], side.get("won"))
                 else:
                     side["record"] = (info.get("records") or {}).get(side.get("id", ""), "")
+                    side["seed"] = side.get("seed") or (info.get("seeds") or {}).get(side.get("id", ""))
         if block is data_today and isinstance(board, dict):
             apply_board(block["games"], {k: v for k, v in board.items() if isinstance(v, dict)}, now)   # schedules can lag; the scoreboard is fresher
 
