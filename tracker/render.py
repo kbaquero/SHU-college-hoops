@@ -242,6 +242,7 @@ svg text{fill:var(--mute);font-size:11px}
 #chart svg{display:block}
 #value svg{display:block;touch-action:manipulation}
 #value text{font-size:11px;fill:var(--mute)}
+#value text.vq{font-size:10.5px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;opacity:.75}
 #value text.vlab{font-size:12px;font-weight:650;fill:var(--me);paint-order:stroke;stroke:var(--card);stroke-width:3px;stroke-linejoin:round}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--mute);padding:0 12px 4px}
 .vkey i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px}
@@ -329,7 +330,7 @@ svg text{fill:var(--mute);font-size:11px}
 <div class="card"><div id="behind"></div></div>
 <h2>Value</h2>
 <div class="card"><div id="value"></div><div id="value-info" class="vinfo">Tap a dot to see the team.</div></div>
-<p class="sub">Every picked team: salary vs. points so far. Dots above the dashed line are beating the pool's average points per dollar; below it, falling short. Early in the season most teams sit on top of each other, and they spread out as games pile up.</p>
+<p class="sub">Every picked team: salary vs. points so far, split at the $10 average pick and the average picked team's points. Early in the season most teams sit on top of each other, and they spread out as games pile up.</p>
 
 </section>
 </main>
@@ -778,7 +779,8 @@ function renderMyCard(me) {
   const el = $('#value'), info = $('#value-info');
   const pts = Object.keys(I).filter(t => I[t].owners.length).map(t => ({t, sal: I[t].salary, pts: z(T[t]).total, own: I[t].owners}));
   if (!pts.length) { el.innerHTML = ''; info.hidden = true; return; }
-  const rate = pts.reduce((a, d) => a + d.pts, 0) / pts.reduce((a, d) => a + d.sal, 0);
+  const avg = pts.reduce((a, d) => a + d.pts, 0) / pts.length, mid = 10;   // the average picked team; $100 cap / 10 teams
+  const quad = d => d.sal < mid ? (d.pts >= avg ? 'Bargain' : 'Dud') : d.sal > mid ? (d.pts >= avg ? 'Worth it' : 'Bust') : (d.pts >= avg ? 'Above average' : 'Below average');
   let me = '', active = null, placed = [];
   function draw() {
     const W = Math.max(280, el.clientWidth), s0 = Math.min(...pts.map(d => d.sal)) - 1, s1 = Math.max(...pts.map(d => d.sal)) + 1;
@@ -788,17 +790,23 @@ function renderMyCard(me) {
     const R = W < 360 ? 3.2 : W < 520 ? 3.6 : 4.2, gap = R * 2 + 1.6;
     const perRow = Math.max(2, Math.floor((W - 48) / (s1 - s0) / gap));
     const half = Math.max(0, ...Object.values(groups).map(l => (Math.ceil(l.length / Math.min(l.length, perRow)) - 1) / 2 * gap)) + R;
-    const Ht = (W < 520 ? 230 : 280) + half * 2, P = {l: 48, r: 14, t: 8 + half, b: 36 + half};
-    const raw = Math.max(2, ...pts.map(d => d.pts), rate * s1);
+    const band = 20;   // a strip above and below the dots for the quadrant names
+    const Ht = (W < 520 ? 230 : 280) + half * 2 + band * 2, P = {l: 48, r: 14, t: 8 + half + band, b: 36 + half + band};
+    const raw = Math.max(2, ...pts.map(d => d.pts));
     const step = raw <= 5 ? 1 : raw <= 12 ? 2 : raw <= 30 ? 5 : 10, max = Math.ceil(raw / step) * step;
     const x = v => P.l + (W - P.l - P.r) * (v - s0) / (s1 - s0), y = v => Ht - P.b - (Ht - P.t - P.b) * v / max;
     let g = `<svg width="${W}" height="${Ht}" viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Salary versus points for every picked team">`;
     for (let v = 0; v <= max; v += step) g += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+    const top = P.t - half - band, bot = Ht - P.b + half + band;
+    const q = (tx, ty, a, txt) => `<text class="vq" x="${tx}" y="${ty}" text-anchor="${a}">${txt}</text>`;
+    g += q(x(mid) - 8, top + 13, 'end', 'Bargains') + q(x(mid) + 8, top + 13, 'start', 'Worth it') +
+         q(x(mid) - 8, bot - 6, 'end', 'Duds') + q(x(mid) + 8, bot - 6, 'start', 'Busts');
     const xs = (s1 - s0) > 12 ? 2 : 1;
     for (let v = Math.ceil(s0 / xs) * xs; v <= s1; v += xs) g += `<text x="${x(v)}" y="${Ht - 26}" text-anchor="middle">$${v}</text>`;
     g += `<text x="${(P.l + W - P.r) / 2}" y="${Ht - 6}" text-anchor="middle">Salary</text>`;
     g += `<text transform="translate(13 ${(P.t + Ht - P.b) / 2}) rotate(-90)" text-anchor="middle">Points</text>`;
-    g += `<line x1="${x(s0)}" y1="${y(rate * s0)}" x2="${x(s1)}" y2="${y(rate * s1)}" stroke="currentColor" opacity=".45" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+    g += `<line x1="${P.l}" y1="${y(avg)}" x2="${W - P.r}" y2="${y(avg)}" stroke="currentColor" opacity=".45" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+    g += `<line x1="${x(mid)}" y1="${top}" x2="${x(mid)}" y2="${bot}" stroke="currentColor" opacity=".45" stroke-width="1.5" stroke-dasharray="5 4"/>`;
     placed = [];
     Object.values(groups).forEach(list => {
       list.sort((a, b) => a.t.localeCompare(b.t));
@@ -814,27 +822,22 @@ function renderMyCard(me) {
       const on = mine(p), sel = active === p.d;
       g += `<circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${sel ? R + 2 : R}" style="fill:${on ? 'var(--me)' : 'var(--mute)'}" opacity="${on || sel ? 1 : me ? .35 : .6}"${sel ? ' stroke="var(--ink)" stroke-width="1.5"' : ''}/>`;
     });
-    // label the picked entry's best and worst value: furthest above and below the pool-average line
+    // name the picked entry's best bargain (most points under $10) and worst bust (fewest points over $10, if below average)
     if (me) {
-      const mineP = placed.filter(mine).map(p => ({p, diff: p.d.pts - rate * p.d.sal}));
-      if (mineP.length >= 2) {
-        const best = mineP.reduce((a, b) => b.diff > a.diff ? b : a), worst = mineP.reduce((a, b) => b.diff < a.diff ? b : a);
-        const label = ({p, diff}, up) => {
-          const txt = `${esc(p.d.t)} ${diff >= 0 ? '+' : '−'}${Math.abs(diff).toFixed(1)}`;
-          const right = p.cx > W * .62, ty = up ? p.cy - R - 7 : p.cy + R + 15;
-          return `<text class="vlab" x="${p.cx + (right ? -2 : 2)}" y="${ty}" text-anchor="${right ? 'end' : 'start'}">${txt}</text>`;
-        };
-        if (best.diff > 0.05) g += label(best, true);
-        if (worst !== best && worst.diff < -0.05) g += label(worst, false);
-      }
+      const mineP = placed.filter(mine), lab = (p, up) => {
+        const right = p.cx > W * .62, ty = up ? p.cy - R - 7 : p.cy + R + 15;
+        return `<text class="vlab" x="${p.cx + (right ? -2 : 2)}" y="${ty}" text-anchor="${right ? 'end' : 'start'}">${esc(p.d.t)}</text>`;
+      };
+      const cheap = mineP.filter(p => p.d.sal < mid && p.d.pts > avg), pricey = mineP.filter(p => p.d.sal > mid && p.d.pts < avg);
+      if (cheap.length) g += lab(cheap.reduce((a, b) => b.d.pts > a.d.pts ? b : a), true);
+      if (pricey.length) g += lab(pricey.reduce((a, b) => b.d.pts < a.d.pts ? b : a), false);
     }
     el.innerHTML = g + '</svg><div class="vkey">' + (me ? '<span><i style="background:var(--me)"></i>Your teams</span><span><i style="background:var(--mute);opacity:.5"></i>Other picked teams</span>' : '<span><i style="background:var(--mute)"></i>Picked teams</span>') +
-      `<span><i class="dash"></i>Pool average (${rate.toFixed(2)} pts per $)</span></div>`;
+      `<span><i class="dash"></i>Average picked team (${avg.toFixed(1)} pts, $10)</span></div>`;
   }
   function describe(d) {
     if (!d) { info.innerHTML = 'Tap a dot to see the team.'; return; }
-    const exp = rate * d.sal, diff = d.pts - exp;
-    info.innerHTML = `<b>${esc(d.t)}</b> · $${d.sal} · <b>${d.pts}</b> pt${d.pts === 1 ? '' : 's'} (${diff >= 0 ? '+' : ''}${diff.toFixed(1)} vs. average) · picked by ${ownList(d.own)}`;
+    info.innerHTML = `<b>${esc(d.t)}</b> · $${d.sal} · <b>${d.pts}</b> pt${d.pts === 1 ? '' : 's'} · ${quad(d)} · picked by ${ownList(d.own)}`;
     info.querySelectorAll('.o').forEach(n => n.classList.toggle('me', n.dataset.o === me));
   }
   el.addEventListener('click', e => {
