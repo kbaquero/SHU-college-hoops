@@ -822,15 +822,17 @@ function renderMyCard(me) {
       const on = mine(p), sel = active === p.d;
       g += `<circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${sel ? R + 2 : R}" style="fill:${on ? 'var(--me)' : 'var(--mute)'}" opacity="${on || sel ? 1 : me ? .35 : .6}"${sel ? ' stroke="var(--ink)" stroke-width="1.5"' : ''}/>`;
     });
-    // name the picked entry's best bargain (most points under $10) and worst bust (fewest points over $10, if below average)
+    // name one of the picked entry's teams per quadrant: the most points up top, the fewest down below
     if (me) {
       const mineP = placed.filter(mine), lab = (p, up) => {
         const right = p.cx > W * .62, ty = up ? p.cy - R - 7 : p.cy + R + 15;
         return `<text class="vlab" x="${p.cx + (right ? -2 : 2)}" y="${ty}" text-anchor="${right ? 'end' : 'start'}">${esc(p.d.t)}</text>`;
       };
-      const cheap = mineP.filter(p => p.d.sal < mid && p.d.pts > avg), pricey = mineP.filter(p => p.d.sal > mid && p.d.pts < avg);
-      if (cheap.length) g += lab(cheap.reduce((a, b) => b.d.pts > a.d.pts ? b : a), true);
-      if (pricey.length) g += lab(pricey.reduce((a, b) => b.d.pts < a.d.pts ? b : a), false);
+      const pick = (keep, better) => { const l = mineP.filter(p => keep(p.d)); return l.length ? l.reduce((a, b) => better(b.d, a.d) ? b : a) : null; };
+      const top = (b, a) => b.pts > a.pts || (b.pts === a.pts && b.sal < a.sal), low = (b, a) => b.pts < a.pts || (b.pts === a.pts && b.sal > a.sal);
+      [[d => d.sal < mid && d.pts >= avg, top, true], [d => d.sal > mid && d.pts >= avg, top, true],
+       [d => d.sal < mid && d.pts < avg, low, false], [d => d.sal > mid && d.pts < avg, low, false]]
+        .forEach(([keep, better, up]) => { const p = pick(keep, better); if (p) g += lab(p, up); });
     }
     el.innerHTML = g + '</svg><div class="vkey">' + (me ? '<span><i style="background:var(--me)"></i>Your teams</span><span><i style="background:var(--mute);opacity:.5"></i>Other picked teams</span>' : '<span><i style="background:var(--mute)"></i>Picked teams</span>') +
       `<span><i class="dash"></i>Average picked team (${avg.toFixed(1)} pts, $10)</span></div>`;
