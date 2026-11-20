@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 18:23 EST",
+ "updated": "2026-11-20 18:33 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -12716,7 +12716,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 32
+     "live": 36
     },
     "home": {
      "team": "Miami FL",
@@ -12737,13 +12737,13 @@
      "opp_id": "2363",
      "seed": null,
      "record": "4-1",
-     "live": 53
+     "live": 58
     },
     "time": "5:00 PM",
     "line": "MIA -36.5",
     "live": {
-     "detail": "17:57 2nd",
-     "as_of": "6:23 PM"
+     "detail": "15:58 2nd",
+     "as_of": "6:33 PM"
     }
    },
    {
@@ -12775,7 +12775,7 @@
      "opp_id": "2099",
      "seed": null,
      "record": "1-4",
-     "live": 19
+     "live": 22
     },
     "home": {
      "team": "Canisius",
@@ -12787,13 +12787,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 27
+     "live": 33
     },
     "time": "5:30 PM",
     "line": "MERC -4.5",
     "live": {
-     "detail": "2:37 1st",
-     "as_of": "6:23 PM"
+     "detail": "Halftime",
+     "as_of": "6:33 PM"
     }
    },
    {
@@ -12969,7 +12969,7 @@
      "record": "4-0"
     },
     "time": "7:00 PM",
-    "line": "TENN -26.5"
+    "line": "TENN -25.5"
    },
    {
     "id": "401921692",
@@ -14163,5 +14163,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "6:23 PM"
+ "scores_updated": "6:33 PM"
 }
