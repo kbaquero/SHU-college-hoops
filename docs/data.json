@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 18:43 EST",
+ "updated": "2026-11-20 18:53 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -12716,7 +12716,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 37
+     "live": 45
     },
     "home": {
      "team": "Miami FL",
@@ -12737,13 +12737,13 @@
      "opp_id": "2363",
      "seed": null,
      "record": "4-1",
-     "live": 68
+     "live": 83
     },
     "time": "5:00 PM",
     "line": "MIA -36.5",
     "live": {
-     "detail": "12:57 2nd",
-     "as_of": "6:43 PM"
+     "detail": "9:09 2nd",
+     "as_of": "6:53 PM"
     }
    },
    {
@@ -12775,7 +12775,7 @@
      "opp_id": "2099",
      "seed": null,
      "record": "1-4",
-     "live": 22
+     "live": 25
     },
     "home": {
      "team": "Canisius",
@@ -12787,13 +12787,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 33
+     "live": 38
     },
     "time": "5:30 PM",
     "line": "MERC -4.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "6:33 PM"
+     "detail": "16:50 2nd",
+     "as_of": "6:53 PM"
     }
    },
    {
@@ -14163,5 +14163,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "6:43 PM"
+ "scores_updated": "6:53 PM"
 }
