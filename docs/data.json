@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 22:02 EST",
- "scores_updated": "10:02 PM",
+ "updated": "2026-11-19 22:12 EST",
+ "scores_updated": "10:12 PM",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -12640,7 +12640,7 @@
     "tbd": false,
     "tv": "ACC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12652,10 +12652,9 @@
      "owners": [],
      "id": "56",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "1-4",
-     "live": 62
+     "final": 69,
+     "won": false,
+     "record": "1-5"
     },
     "home": {
      "team": "Louisville",
@@ -12665,23 +12664,18 @@
       "Chris C.",
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Stetson",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 83,
      "opp_final": null,
      "opp_id": "56",
      "seed": null,
-     "record": "2-1",
-     "live": 81
+     "record": "3-1"
     },
     "time": "8:00 PM",
-    "line": "LOU -36.5",
-    "live": {
-     "detail": "3:39 2nd",
-     "as_of": "10:02 PM"
-    }
+    "line": "LOU -36.5"
    },
    {
     "id": "401920845",
@@ -12689,7 +12683,7 @@
     "tbd": false,
     "tv": "Summit League Network, Midco Sports Plus",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12701,16 +12695,15 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "St. Thomas",
      "pts": 0,
-     "final": null,
+     "final": 61,
      "opp_final": null,
      "opp_id": "2900",
      "seed": null,
-     "record": "3-2",
-     "live": 60
+     "record": "3-3"
     },
     "home": {
      "team": "St. Thomas",
@@ -12719,17 +12712,12 @@
      "owners": [],
      "id": "2900",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-3",
-     "live": 93
+     "final": 93,
+     "won": true,
+     "record": "4-3"
     },
     "time": "8:00 PM",
-    "line": "STMN -6.5",
-    "live": {
-     "detail": "0:51 2nd",
-     "as_of": "10:02 PM"
-    }
+    "line": "STMN -6.5"
    },
    {
     "id": "401920888",
@@ -12776,13 +12764,13 @@
      "opp_id": "2550",
      "seed": null,
      "record": "4-0",
-     "live": 27
+     "live": 31
     },
     "time": "8:30 PM",
     "line": "WIS -5.5",
     "live": {
-     "detail": "19:08 2nd",
-     "as_of": "10:02 PM"
+     "detail": "17:14 2nd",
+     "as_of": "10:12 PM"
     }
    }
   ]
