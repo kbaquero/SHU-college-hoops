@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 16:23 EST",
+ "updated": "2026-11-20 16:33 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -12674,7 +12674,7 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 41
+     "live": 46
     },
     "home": {
      "team": "Virginia Tech",
@@ -12692,13 +12692,13 @@
      "opp_id": "77",
      "seed": null,
      "record": "5-0",
-     "live": 58
+     "live": 68
     },
     "time": "3:00 PM",
     "line": "VT -11.5",
     "live": {
-     "detail": "12:03 2nd",
-     "as_of": "4:23 PM"
+     "detail": "9:16 2nd",
+     "as_of": "4:33 PM"
     }
    },
    {
@@ -12921,7 +12921,7 @@
      "record": "2-2"
     },
     "time": "7:00 PM",
-    "line": "MD -34.5"
+    "line": "MD -33.5"
    },
    {
     "id": "401906852",
@@ -13136,7 +13136,7 @@
      "record": "3-2"
     },
     "time": "8:00 PM",
-    "line": "ARK -38.5"
+    "line": "ARK -37.5"
    },
    {
     "id": "401906784",
@@ -14157,5 +14157,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "4:23 PM"
+ "scores_updated": "4:33 PM"
 }
