@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 23:02 EST",
- "scores_updated": "11:02 PM",
+ "updated": "2026-11-19 23:12 EST",
+ "scores_updated": "11:12 PM",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -12725,7 +12725,7 @@
     "tbd": false,
     "tv": "CBSSN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12737,16 +12737,15 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Wisconsin",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 74,
      "opp_final": null,
      "opp_id": "275",
      "seed": null,
-     "record": "3-1",
-     "live": 73
+     "record": "4-1"
     },
     "home": {
      "team": "Wisconsin",
@@ -12755,23 +12754,18 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Seton Hall",
      "pts": 0,
-     "final": null,
+     "final": 69,
      "opp_final": null,
      "opp_id": "2550",
      "seed": null,
-     "record": "4-0",
-     "live": 69
+     "record": "4-1"
     },
     "time": "8:30 PM",
-    "line": "WIS -5.5",
-    "live": {
-     "detail": "0:02 2nd",
-     "as_of": "11:02 PM"
-    }
+    "line": "WIS -5.5"
    }
   ]
  },
