@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 22:12 EST",
- "scores_updated": "10:12 PM",
+ "updated": "2026-11-19 22:22 EST",
+ "scores_updated": "10:22 PM",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -12746,7 +12746,7 @@
      "opp_id": "275",
      "seed": null,
      "record": "3-1",
-     "live": 40
+     "live": 48
     },
     "home": {
      "team": "Wisconsin",
@@ -12764,13 +12764,13 @@
      "opp_id": "2550",
      "seed": null,
      "record": "4-0",
-     "live": 31
+     "live": 42
     },
     "time": "8:30 PM",
     "line": "WIS -5.5",
     "live": {
-     "detail": "17:14 2nd",
-     "as_of": "10:12 PM"
+     "detail": "13:36 2nd",
+     "as_of": "10:22 PM"
     }
    }
   ]
