@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 21:02 EST",
- "scores_updated": "9:02 PM",
+ "updated": "2026-11-19 21:12 EST",
+ "scores_updated": "9:12 PM",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -12422,7 +12422,7 @@
     "tbd": false,
     "tv": "ESPN+, YES",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12434,16 +12434,15 @@
      "owners": [
       "Marty C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "St. Bonaventure",
      "pts": 0,
-     "final": null,
+     "final": 69,
      "opp_final": null,
      "opp_id": "179",
      "seed": null,
-     "record": "2-2",
-     "live": 67
+     "record": "2-3"
     },
     "home": {
      "team": "St. Bonaventure",
@@ -12452,17 +12451,12 @@
      "owners": [],
      "id": "179",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-1",
-     "live": 74
+     "final": 78,
+     "won": true,
+     "record": "4-1"
     },
     "time": "7:00 PM",
-    "line": "SBU -11.5",
-    "live": {
-     "detail": "1:36 2nd",
-     "as_of": "9:02 PM"
-    }
+    "line": "SBU -11.5"
    },
    {
     "id": "401920413",
@@ -12491,7 +12485,7 @@
      "opp_id": "2272",
      "seed": null,
      "record": "2-3",
-     "live": 70
+     "live": 74
     },
     "home": {
      "team": "High Point",
@@ -12510,13 +12504,13 @@
      "opp_id": "147",
      "seed": null,
      "record": "5-0",
-     "live": 77
+     "live": 85
     },
     "time": "7:00 PM",
     "line": "HPU -12.5",
     "live": {
-     "detail": "3:18 2nd",
-     "as_of": "9:02 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:12 PM"
     }
    },
    {
@@ -12540,7 +12534,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 71
+     "live": 78
     },
     "home": {
      "team": "Jacksonville",
@@ -12558,13 +12552,13 @@
      "opp_id": "2031",
      "seed": null,
      "record": "2-2",
-     "live": 66
+     "live": 72
     },
     "time": "7:00 PM",
     "line": "JAX -1.5",
     "live": {
-     "detail": "1:22 2nd",
-     "as_of": "9:02 PM"
+     "detail": "0:00 2nd",
+     "as_of": "9:12 PM"
     }
    },
    {
@@ -12728,7 +12722,7 @@
      "opp_id": "2900",
      "seed": null,
      "record": "3-2",
-     "live": 25
+     "live": 26
     },
     "home": {
      "team": "St. Thomas",
@@ -12740,13 +12734,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 45
+     "live": 48
     },
     "time": "8:00 PM",
     "line": "STMN -6.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:53 PM"
+     "detail": "17:54 2nd",
+     "as_of": "9:12 PM"
     }
    },
    {
@@ -12776,7 +12770,7 @@
      "opp_id": "275",
      "seed": null,
      "record": "3-1",
-     "live": 10
+     "live": 21
     },
     "home": {
      "team": "Wisconsin",
@@ -12794,13 +12788,13 @@
      "opp_id": "2550",
      "seed": null,
      "record": "4-0",
-     "live": 5
+     "live": 8
     },
     "time": "8:30 PM",
     "line": "WIS -5.5",
     "live": {
-     "detail": "15:00 1st",
-     "as_of": "9:02 PM"
+     "detail": "11:03 1st",
+     "as_of": "9:12 PM"
     }
    }
   ]
