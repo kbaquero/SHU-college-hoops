@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 19:13 EST",
- "scores_updated": "7:13 PM",
+ "updated": "2026-11-19 19:23 EST",
+ "scores_updated": "7:23 PM",
  "through": "Wed, Nov 18",
  "season": 2027,
  "standings": [
@@ -12395,7 +12395,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 29
+     "live": 32
     },
     "home": {
      "team": "N.C. State",
@@ -12413,13 +12413,13 @@
      "opp_id": "93",
      "seed": null,
      "record": "4-0",
-     "live": 48
+     "live": 53
     },
     "time": "6:00 PM",
     "line": "NCSU -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "7:03 PM"
+     "detail": "16:43 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12449,7 +12449,7 @@
      "opp_id": "179",
      "seed": null,
      "record": "2-2",
-     "live": 1
+     "live": 12
     },
     "home": {
      "team": "St. Bonaventure",
@@ -12461,13 +12461,13 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 8
+     "live": 16
     },
     "time": "7:00 PM",
     "line": "SBU -11.5",
     "live": {
-     "detail": "15:46 1st",
-     "as_of": "7:13 PM"
+     "detail": "10:07 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12497,7 +12497,7 @@
      "opp_id": "2272",
      "seed": null,
      "record": "2-3",
-     "live": 12
+     "live": 19
     },
     "home": {
      "team": "High Point",
@@ -12516,13 +12516,13 @@
      "opp_id": "147",
      "seed": null,
      "record": "5-0",
-     "live": 14
+     "live": 21
     },
     "time": "7:00 PM",
     "line": "HPU -12.5",
     "live": {
-     "detail": "14:48 1st",
-     "as_of": "7:13 PM"
+     "detail": "9:42 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12546,7 +12546,7 @@
      "final": null,
      "won": null,
      "record": "1-3",
-     "live": 10
+     "live": 15
     },
     "home": {
      "team": "Jacksonville",
@@ -12564,13 +12564,13 @@
      "opp_id": "2031",
      "seed": null,
      "record": "2-2",
-     "live": 6
+     "live": 11
     },
     "time": "7:00 PM",
     "line": "JAX -1.5",
     "live": {
-     "detail": "14:08 1st",
-     "as_of": "7:13 PM"
+     "detail": "10:28 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12600,7 +12600,7 @@
      "opp_id": "2649",
      "seed": null,
      "record": "1-3",
-     "live": 7
+     "live": 14
     },
     "home": {
      "team": "Toledo",
@@ -12612,13 +12612,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 12
+     "live": 19
     },
     "time": "7:00 PM",
     "line": "TOL -7.5",
     "live": {
-     "detail": "13:28 1st",
-     "as_of": "7:13 PM"
+     "detail": "9:32 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12642,7 +12642,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 7
+     "live": 13
     },
     "home": {
      "team": "SIUE",
@@ -12661,13 +12661,13 @@
      "opp_id": "75",
      "seed": null,
      "record": "2-4",
-     "live": 12
+     "live": 18
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "15:12 1st",
-     "as_of": "7:13 PM"
+     "detail": "10:26 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
