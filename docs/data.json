@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 16:53 EST",
+ "updated": "2026-11-20 17:03 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -12659,7 +12659,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -12671,10 +12671,9 @@
      "owners": [],
      "id": "77",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-2",
-     "live": 64
+     "final": 70,
+     "won": false,
+     "record": "3-3"
     },
     "home": {
      "team": "Virginia Tech",
@@ -12683,23 +12682,18 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Northwestern",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 87,
      "opp_final": null,
      "opp_id": "77",
      "seed": null,
-     "record": "5-0",
-     "live": 85
+     "record": "6-0"
     },
     "time": "3:00 PM",
-    "line": "VT -11.5",
-    "live": {
-     "detail": "2:11 2nd",
-     "as_of": "4:53 PM"
-    }
+    "line": "VT -11.5"
    },
    {
     "id": "401921723",
@@ -12721,7 +12715,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "1-4"
+     "record": "1-4",
+     "live": 0
     },
     "home": {
      "team": "Miami FL",
@@ -12741,10 +12736,15 @@
      "opp_final": null,
      "opp_id": "2363",
      "seed": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 0
     },
     "time": "5:00 PM",
-    "line": "MIA -36.5"
+    "line": "MIA -36.5",
+    "live": {
+     "detail": "19:14 1st",
+     "as_of": "5:03 PM"
+    }
    },
    {
     "id": "401919827",
@@ -14157,5 +14157,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "4:53 PM"
+ "scores_updated": "5:03 PM"
 }
