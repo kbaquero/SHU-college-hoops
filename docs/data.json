@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 22:23 EST",
+ "updated": "2026-11-20 22:33 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -13138,7 +13138,7 @@
     "tbd": false,
     "tv": "ESPNU",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13150,16 +13150,15 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Georgia Tech",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 88,
      "opp_final": null,
      "opp_id": "59",
      "seed": null,
-     "record": "5-0",
-     "live": 86
+     "record": "6-0"
     },
     "home": {
      "team": "Georgia Tech",
@@ -13168,17 +13167,12 @@
      "owners": [],
      "id": "59",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-0",
-     "live": 78
+     "final": 82,
+     "won": false,
+     "record": "5-1"
     },
     "time": "8:00 PM",
-    "line": "UGA -7.5",
-    "live": {
-     "detail": "0:43 2nd",
-     "as_of": "10:23 PM"
-    }
+    "line": "UGA -7.5"
    },
    {
     "id": "401916290",
@@ -13496,7 +13490,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 24
+     "live": 32
     },
     "home": {
      "team": "Illinois",
@@ -13514,13 +13508,13 @@
      "opp_id": "2197",
      "seed": null,
      "record": "4-1",
-     "live": 83
+     "live": 86
     },
     "time": "9:00 PM",
     "line": "ILL -45.5",
     "live": {
-     "detail": "14:52 2nd",
-     "as_of": "10:23 PM"
+     "detail": "11:11 2nd",
+     "as_of": "10:33 PM"
     }
    },
    {
@@ -13544,7 +13538,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 47
+     "live": 56
     },
     "home": {
      "team": "North Carolina",
@@ -13562,13 +13556,13 @@
      "opp_id": "276",
      "seed": null,
      "record": "3-1",
-     "live": 60
+     "live": 67
     },
     "time": "9:00 PM",
     "line": "UNC -18.5",
     "live": {
-     "detail": "13:51 2nd",
-     "as_of": "10:23 PM"
+     "detail": "11:02 2nd",
+     "as_of": "10:33 PM"
     }
    },
    {
@@ -13598,7 +13592,7 @@
      "opp_id": "152",
      "seed": null,
      "record": "4-1",
-     "live": 26
+     "live": 30
     },
     "home": {
      "team": "N.C. State",
@@ -13621,8 +13615,8 @@
     "time": "9:30 PM",
     "line": "NCSU -3.5",
     "live": {
-     "detail": "2:03 1st",
-     "as_of": "10:23 PM"
+     "detail": "Halftime",
+     "as_of": "10:33 PM"
     }
    },
    {
@@ -13666,13 +13660,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 18
+     "live": 27
     },
     "time": "10:00 PM",
     "line": "FRES -10.5",
     "live": {
-     "detail": "11:33 1st",
-     "as_of": "10:23 PM"
+     "detail": "8:04 1st",
+     "as_of": "10:33 PM"
     }
    },
    {
@@ -14181,5 +14175,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "10:23 PM"
+ "scores_updated": "10:33 PM"
 }
