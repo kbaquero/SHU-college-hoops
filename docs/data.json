@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 15:38 EST",
+ "updated": "2026-11-21 15:48 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13417,10 +13417,10 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "Queen City Classic",
     "away": {
      "team": "Western Illinois",
@@ -13429,10 +13429,9 @@
      "owners": [],
      "id": "2710",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "1-5",
-     "live": 63
+     "final": 65,
+     "won": false,
+     "record": "1-6"
     },
     "home": {
      "team": "Mercyhurst",
@@ -13443,23 +13442,18 @@
       "Joe H.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Western Illinois",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 68,
      "opp_final": null,
      "opp_id": "2710",
      "seed": null,
-     "record": "1-5",
-     "live": 68
+     "record": "2-5"
     },
     "time": "1:30 PM",
-    "line": "MERC -6.5",
-    "live": {
-     "detail": "1:40 OT",
-     "as_of": "3:38 PM"
-    }
+    "line": "MERC -6.5"
    },
    {
     "id": "401920773",
@@ -13467,7 +13461,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13479,10 +13473,9 @@
      "owners": [],
      "id": "2944",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 55
+     "final": 55,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Colgate",
@@ -13493,23 +13486,18 @@
       "Jason H.",
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Penn State Behrend",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 87,
      "opp_final": null,
      "opp_id": "2944",
      "seed": null,
-     "record": "1-4",
-     "live": 86
+     "record": "2-4"
     },
     "time": "2:00 PM",
-    "line": "",
-    "live": {
-     "detail": "1:12 2nd",
-     "as_of": "3:38 PM"
-    }
+    "line": ""
    },
    {
     "id": "401929452",
@@ -13559,7 +13547,7 @@
     "tbd": false,
     "tv": "",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13571,10 +13559,9 @@
      "owners": [],
      "id": "172",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "2-3",
-     "live": 80
+     "final": 84,
+     "won": true,
+     "record": "3-3"
     },
     "home": {
      "team": "Morgan St.",
@@ -13583,23 +13570,18 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Cornell",
      "pts": 0,
-     "final": null,
+     "final": 63,
      "opp_final": null,
      "opp_id": "172",
      "seed": null,
-     "record": "4-2",
-     "live": 58
+     "record": "4-3"
     },
     "time": "2:00 PM",
-    "line": "COR -5.5",
-    "live": {
-     "detail": "2:35 2nd",
-     "as_of": "3:38 PM"
-    }
+    "line": "COR -5.5"
    },
    {
     "id": "401921222",
@@ -13628,7 +13610,7 @@
      "opp_id": "2520",
      "seed": null,
      "record": "4-2",
-     "live": 57
+     "live": 64
     },
     "home": {
      "team": "Rider",
@@ -13640,13 +13622,13 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 64
+     "live": 69
     },
     "time": "2:00 PM",
     "line": "NAVY -4.5",
     "live": {
-     "detail": "3:34 2nd",
-     "as_of": "3:38 PM"
+     "detail": "0:55 2nd",
+     "as_of": "3:48 PM"
     }
    },
    {
@@ -15188,5 +15170,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "3:38 PM"
+ "scores_updated": "3:48 PM"
 }
