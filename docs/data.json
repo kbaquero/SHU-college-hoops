@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 00:13 EST",
+ "updated": "2026-11-21 00:23 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -13691,13 +13691,13 @@
      "opp_id": "139",
      "seed": null,
      "record": "4-1",
-     "live": 49
+     "live": 52
     },
     "time": "11:00 PM",
     "line": "SMC -1.5",
     "live": {
-     "detail": "17:47 2nd",
-     "as_of": "12:13 AM"
+     "detail": "15:38 2nd",
+     "as_of": "12:23 AM"
     }
    }
   ]
@@ -14157,5 +14157,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "12:13 AM"
+ "scores_updated": "12:23 AM"
 }
