@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 18:03 EST",
+ "updated": "2026-11-21 18:13 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13631,7 +13631,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13643,10 +13643,9 @@
      "owners": [],
      "id": "2110",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "2-3",
-     "live": 82
+     "final": 82,
+     "won": true,
+     "record": "3-3"
     },
     "home": {
      "team": "Jacksonville",
@@ -13655,23 +13654,18 @@
      "owners": [
       "Chris C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Central Arkansas",
      "pts": 0,
-     "final": null,
+     "final": 67,
      "opp_final": null,
      "opp_id": "2110",
      "seed": null,
-     "record": "2-3",
-     "live": 67
+     "record": "2-4"
     },
     "time": "4:00 PM",
-    "line": "CARK -3.5",
-    "live": {
-     "detail": "0:00 2nd",
-     "as_of": "6:03 PM"
-    }
+    "line": "CARK -3.5"
    },
    {
     "id": "401921183",
@@ -13742,7 +13736,7 @@
      "opp_id": "301",
      "seed": null,
      "record": "3-1",
-     "live": 48
+     "live": 52
     },
     "home": {
      "team": "San Diego",
@@ -13754,13 +13748,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 44
+     "live": 57
     },
     "time": "4:30 PM",
     "line": "UCI -4.5",
     "live": {
-     "detail": "11:08 2nd",
-     "as_of": "6:03 PM"
+     "detail": "6:34 2nd",
+     "as_of": "6:13 PM"
     }
    },
    {
@@ -13784,7 +13778,7 @@
      "final": null,
      "won": null,
      "record": "0-5",
-     "live": 44
+     "live": 50
     },
     "home": {
      "team": "Wofford",
@@ -13802,13 +13796,13 @@
      "opp_id": "2737",
      "seed": null,
      "record": "3-3",
-     "live": 48
+     "live": 56
     },
     "time": "5:00 PM",
     "line": "WOF -6.5",
     "live": {
-     "detail": "17:46 2nd",
-     "as_of": "6:03 PM"
+     "detail": "13:44 2nd",
+     "as_of": "6:13 PM"
     }
    },
    {
@@ -13832,7 +13826,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 2
+     "live": 12
     },
     "home": {
      "team": "Georgetown",
@@ -13850,13 +13844,13 @@
      "opp_id": "2154",
      "seed": null,
      "record": "5-0",
-     "live": 0
+     "live": 12
     },
     "time": "6:00 PM",
     "line": "GTWN -31.5",
     "live": {
-     "detail": "19:26 1st",
-     "as_of": "6:03 PM"
+     "detail": "15:20 1st",
+     "as_of": "6:13 PM"
     }
    },
    {
@@ -13886,7 +13880,7 @@
      "opp_id": "2450",
      "seed": null,
      "record": "4-1",
-     "live": 3
+     "live": 12
     },
     "home": {
      "team": "Norfolk St.",
@@ -13904,13 +13898,13 @@
      "opp_id": "350",
      "seed": null,
      "record": "2-4",
-     "live": 0
+     "live": 8
     },
     "time": "6:00 PM",
     "line": "UNCW -11.5",
     "live": {
-     "detail": "19:17 1st",
-     "as_of": "6:03 PM"
+     "detail": "14:15 1st",
+     "as_of": "6:13 PM"
     }
    },
    {
@@ -15194,5 +15188,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "6:03 PM"
+ "scores_updated": "6:13 PM"
 }
