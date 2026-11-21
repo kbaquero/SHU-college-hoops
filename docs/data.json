@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 14:08 EST",
+ "updated": "2026-11-21 14:18 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13390,7 +13390,7 @@
      "opp_id": "99",
      "seed": null,
      "record": "3-2",
-     "live": 40
+     "live": 47
     },
     "home": {
      "team": "LSU",
@@ -13408,13 +13408,13 @@
      "opp_id": "2511",
      "seed": null,
      "record": "5-0",
-     "live": 52
+     "live": 59
     },
     "time": "1:00 PM",
     "line": "LSU -25.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "1:58 PM"
+     "detail": "15:32 2nd",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -13438,7 +13438,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 31
+     "live": 34
     },
     "home": {
      "team": "Mercyhurst",
@@ -13458,13 +13458,13 @@
      "opp_id": "2710",
      "seed": null,
      "record": "1-5",
-     "live": 23
+     "live": 29
     },
     "time": "1:30 PM",
     "line": "MERC -6.5",
     "live": {
-     "detail": "3:30 1st",
-     "as_of": "2:08 PM"
+     "detail": "Halftime",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -13488,7 +13488,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 6
+     "live": 15
     },
     "home": {
      "team": "Colgate",
@@ -13508,13 +13508,13 @@
      "opp_id": "2944",
      "seed": null,
      "record": "1-4",
-     "live": 9
+     "live": 23
     },
     "time": "2:00 PM",
     "line": "",
     "live": {
-     "detail": "15:57 1st",
-     "as_of": "2:08 PM"
+     "detail": "10:48 1st",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -13538,7 +13538,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 11
+     "live": 13
     },
     "home": {
      "team": "James Madison",
@@ -13556,13 +13556,13 @@
      "opp_id": "3229",
      "seed": null,
      "record": "3-2",
-     "live": 11
+     "live": 24
     },
     "time": "2:00 PM",
     "line": "",
     "live": {
-     "detail": "15:30 1st",
-     "as_of": "2:08 PM"
+     "detail": "11:32 1st",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -13586,7 +13586,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 10
+     "live": 15
     },
     "home": {
      "team": "Morgan St.",
@@ -13604,13 +13604,13 @@
      "opp_id": "172",
      "seed": null,
      "record": "4-2",
-     "live": 2
+     "live": 11
     },
     "time": "2:00 PM",
     "line": "COR -5.5",
     "live": {
-     "detail": "16:40 1st",
-     "as_of": "2:08 PM"
+     "detail": "11:29 1st",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -13640,7 +13640,7 @@
      "opp_id": "2520",
      "seed": null,
      "record": "4-2",
-     "live": 6
+     "live": 14
     },
     "home": {
      "team": "Rider",
@@ -13652,13 +13652,13 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 12
+     "live": 21
     },
     "time": "2:00 PM",
     "line": "NAVY -4.5",
     "live": {
-     "detail": "15:45 1st",
-     "as_of": "2:08 PM"
+     "detail": "11:32 1st",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -15200,5 +15200,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "2:08 PM"
+ "scores_updated": "2:18 PM"
 }
