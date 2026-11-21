@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 18:33 EST",
+ "updated": "2026-11-21 18:43 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13715,7 +13715,7 @@
     "tbd": false,
     "tv": "FloSports",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13727,16 +13727,15 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "San Diego",
      "pts": 0,
-     "final": null,
+     "final": 64,
      "opp_final": null,
      "opp_id": "301",
      "seed": null,
-     "record": "3-1",
-     "live": 64
+     "record": "3-2"
     },
     "home": {
      "team": "San Diego",
@@ -13745,17 +13744,12 @@
      "owners": [],
      "id": "301",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-1",
-     "live": 67
+     "final": 67,
+     "won": true,
+     "record": "5-1"
     },
     "time": "4:30 PM",
-    "line": "UCI -4.5",
-    "live": {
-     "detail": "0:24 2nd",
-     "as_of": "6:33 PM"
-    }
+    "line": "UCI -4.5"
    },
    {
     "id": "401925709",
@@ -13778,7 +13772,7 @@
      "final": null,
      "won": null,
      "record": "0-5",
-     "live": 59
+     "live": 68
     },
     "home": {
      "team": "Wofford",
@@ -13796,13 +13790,13 @@
      "opp_id": "2737",
      "seed": null,
      "record": "3-3",
-     "live": 72
+     "live": 78
     },
     "time": "5:00 PM",
     "line": "WOF -6.5",
     "live": {
-     "detail": "7:31 2nd",
-     "as_of": "6:33 PM"
+     "detail": "4:17 2nd",
+     "as_of": "6:43 PM"
     }
    },
    {
@@ -13826,7 +13820,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 21
+     "live": 31
     },
     "home": {
      "team": "Georgetown",
@@ -13844,13 +13838,13 @@
      "opp_id": "2154",
      "seed": null,
      "record": "5-0",
-     "live": 29
+     "live": 37
     },
     "time": "6:00 PM",
     "line": "GTWN -31.5",
     "live": {
-     "detail": "9:23 1st",
-     "as_of": "6:33 PM"
+     "detail": "4:32 1st",
+     "as_of": "6:43 PM"
     }
    },
    {
@@ -13880,7 +13874,7 @@
      "opp_id": "2450",
      "seed": null,
      "record": "4-1",
-     "live": 29
+     "live": 38
     },
     "home": {
      "team": "Norfolk St.",
@@ -13898,13 +13892,13 @@
      "opp_id": "350",
      "seed": null,
      "record": "2-4",
-     "live": 24
+     "live": 31
     },
     "time": "6:00 PM",
     "line": "UNCW -11.5",
     "live": {
-     "detail": "6:42 1st",
-     "as_of": "6:33 PM"
+     "detail": "3:01 1st",
+     "as_of": "6:43 PM"
     }
    },
    {
@@ -15188,5 +15182,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "6:33 PM"
+ "scores_updated": "6:43 PM"
 }
