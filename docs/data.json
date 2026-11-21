@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 00:03 EST",
+ "updated": "2026-11-21 00:13 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -13559,10 +13559,10 @@
     "tbd": false,
     "tv": "CBSSN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "Baha Mar Championship \u00b7 Championship",
     "away": {
      "team": "Seton Hall",
@@ -13571,16 +13571,15 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "N.C. State",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 87,
      "opp_final": null,
      "opp_id": "152",
      "seed": null,
-     "record": "4-1",
-     "live": 83
+     "record": "5-1"
     },
     "home": {
      "team": "N.C. State",
@@ -13589,23 +13588,18 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Seton Hall",
      "pts": 0,
-     "final": null,
+     "final": 81,
      "opp_final": null,
      "opp_id": "2550",
      "seed": null,
-     "record": "5-0",
-     "live": 79
+     "record": "5-1"
     },
     "time": "9:30 PM",
-    "line": "NCSU -3.5",
-    "live": {
-     "detail": "1:07 OT",
-     "as_of": "12:03 AM"
-    }
+    "line": "NCSU -3.5"
    },
    {
     "id": "401925664",
@@ -13613,7 +13607,7 @@
     "tbd": false,
     "tv": "YouTube",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13627,16 +13621,15 @@
       "Jason H.",
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Fresno St.",
      "pts": 0,
-     "final": null,
+     "final": 68,
      "opp_final": null,
      "opp_id": "278",
      "seed": null,
-     "record": "2-3",
-     "live": 68
+     "record": "2-4"
     },
     "home": {
      "team": "Fresno St.",
@@ -13645,17 +13638,12 @@
      "owners": [],
      "id": "278",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-2",
-     "live": 79
+     "final": 80,
+     "won": true,
+     "record": "4-2"
     },
     "time": "10:00 PM",
-    "line": "FRES -10.5",
-    "live": {
-     "detail": "1:05 2nd",
-     "as_of": "12:03 AM"
-    }
+    "line": "FRES -10.5"
    },
    {
     "id": "401911252",
@@ -13684,7 +13672,7 @@
      "opp_id": "2608",
      "seed": null,
      "record": "3-1",
-     "live": 37
+     "live": 39
     },
     "home": {
      "team": "Saint Mary's",
@@ -13703,13 +13691,13 @@
      "opp_id": "139",
      "seed": null,
      "record": "4-1",
-     "live": 42
+     "live": 49
     },
     "time": "11:00 PM",
     "line": "SMC -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "11:53 PM"
+     "detail": "17:47 2nd",
+     "as_of": "12:13 AM"
     }
    }
   ]
@@ -14169,5 +14157,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "12:03 AM"
+ "scores_updated": "12:13 AM"
 }
