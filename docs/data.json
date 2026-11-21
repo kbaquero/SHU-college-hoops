@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 22:53 EST",
+ "updated": "2026-11-20 23:03 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -13475,7 +13475,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13487,10 +13487,9 @@
      "owners": [],
      "id": "2197",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "1-5",
-     "live": 49
+     "final": 52,
+     "won": false,
+     "record": "1-6"
     },
     "home": {
      "team": "Illinois",
@@ -13499,23 +13498,18 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Eastern Illinois",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 114,
      "opp_final": null,
      "opp_id": "2197",
      "seed": null,
-     "record": "4-1",
-     "live": 107
+     "record": "5-1"
     },
     "time": "9:00 PM",
-    "line": "ILL -45.5",
-    "live": {
-     "detail": "2:11 2nd",
-     "as_of": "10:53 PM"
-    }
+    "line": "ILL -45.5"
    },
    {
     "id": "401912710",
@@ -13523,7 +13517,7 @@
     "tbd": false,
     "tv": "ACC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13535,10 +13529,9 @@
      "owners": [],
      "id": "276",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "2-3",
-     "live": 70
+     "final": 72,
+     "won": false,
+     "record": "2-4"
     },
     "home": {
      "team": "North Carolina",
@@ -13547,23 +13540,18 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Marshall",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 88,
      "opp_final": null,
      "opp_id": "276",
      "seed": null,
-     "record": "3-1",
-     "live": 85
+     "record": "4-1"
     },
     "time": "9:00 PM",
-    "line": "UNC -18.5",
-    "live": {
-     "detail": "2:03 2nd",
-     "as_of": "10:53 PM"
-    }
+    "line": "UNC -18.5"
    },
    {
     "id": "401921691",
@@ -13592,7 +13580,7 @@
      "opp_id": "152",
      "seed": null,
      "record": "4-1",
-     "live": 41
+     "live": 49
     },
     "home": {
      "team": "N.C. State",
@@ -13610,13 +13598,13 @@
      "opp_id": "2550",
      "seed": null,
      "record": "5-0",
-     "live": 35
+     "live": 44
     },
     "time": "9:30 PM",
     "line": "NCSU -3.5",
     "live": {
-     "detail": "16:34 2nd",
-     "as_of": "10:53 PM"
+     "detail": "12:35 2nd",
+     "as_of": "11:03 PM"
     }
    },
    {
@@ -13695,7 +13683,8 @@
      "opp_final": null,
      "opp_id": "2608",
      "seed": null,
-     "record": "3-1"
+     "record": "3-1",
+     "live": 0
     },
     "home": {
      "team": "Saint Mary's",
@@ -13713,10 +13702,15 @@
      "opp_final": null,
      "opp_id": "139",
      "seed": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 0
     },
     "time": "11:00 PM",
-    "line": "SMC -1.5"
+    "line": "SMC -1.5",
+    "live": {
+     "detail": "18:42 1st",
+     "as_of": "11:03 PM"
+    }
    }
   ]
  },
@@ -14175,5 +14169,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "10:53 PM"
+ "scores_updated": "11:03 PM"
 }
