@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 23:43 EST",
+ "updated": "2026-11-20 23:53 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -13580,7 +13580,7 @@
      "opp_id": "152",
      "seed": null,
      "record": "4-1",
-     "live": 72
+     "live": 75
     },
     "home": {
      "team": "N.C. State",
@@ -13598,13 +13598,13 @@
      "opp_id": "2550",
      "seed": null,
      "record": "5-0",
-     "live": 71
+     "live": 74
     },
     "time": "9:30 PM",
     "line": "NCSU -3.5",
     "live": {
-     "detail": "0:21 2nd",
-     "as_of": "11:43 PM"
+     "detail": "4:00 OT",
+     "as_of": "11:53 PM"
     }
    },
    {
@@ -13636,7 +13636,7 @@
      "opp_id": "278",
      "seed": null,
      "record": "2-3",
-     "live": 57
+     "live": 62
     },
     "home": {
      "team": "Fresno St.",
@@ -13648,13 +13648,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 73
+     "live": 76
     },
     "time": "10:00 PM",
     "line": "FRES -10.5",
     "live": {
-     "detail": "7:10 2nd",
-     "as_of": "11:43 PM"
+     "detail": "4:34 2nd",
+     "as_of": "11:53 PM"
     }
    },
    {
@@ -13684,7 +13684,7 @@
      "opp_id": "2608",
      "seed": null,
      "record": "3-1",
-     "live": 32
+     "live": 37
     },
     "home": {
      "team": "Saint Mary's",
@@ -13703,13 +13703,13 @@
      "opp_id": "139",
      "seed": null,
      "record": "4-1",
-     "live": 36
+     "live": 42
     },
     "time": "11:00 PM",
     "line": "SMC -1.5",
     "live": {
-     "detail": "3:15 1st",
-     "as_of": "11:43 PM"
+     "detail": "Halftime",
+     "as_of": "11:53 PM"
     }
    }
   ]
@@ -14169,5 +14169,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "11:43 PM"
+ "scores_updated": "11:53 PM"
 }
