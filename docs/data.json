@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 14:58 EST",
+ "updated": "2026-11-21 15:08 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13369,7 +13369,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13381,16 +13381,15 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "LSU",
      "pts": 0,
-     "final": null,
+     "final": 75,
      "opp_final": null,
      "opp_id": "99",
      "seed": null,
-     "record": "3-2",
-     "live": 75
+     "record": "3-3"
     },
     "home": {
      "team": "LSU",
@@ -13399,23 +13398,18 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Queens",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 106,
      "opp_final": null,
      "opp_id": "2511",
      "seed": null,
-     "record": "5-0",
-     "live": 106
+     "record": "6-0"
     },
     "time": "1:00 PM",
-    "line": "LSU -25.5",
-    "live": {
-     "detail": "0:28 2nd",
-     "as_of": "2:58 PM"
-    }
+    "line": "LSU -25.5"
    },
    {
     "id": "401919828",
@@ -13438,7 +13432,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 46
+     "live": 50
     },
     "home": {
      "team": "Mercyhurst",
@@ -13458,13 +13452,13 @@
      "opp_id": "2710",
      "seed": null,
      "record": "1-5",
-     "live": 41
+     "live": 45
     },
     "time": "1:30 PM",
     "line": "MERC -6.5",
     "live": {
-     "detail": "10:53 2nd",
-     "as_of": "2:58 PM"
+     "detail": "7:31 2nd",
+     "as_of": "3:08 PM"
     }
    },
    {
@@ -13488,7 +13482,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 32
+     "live": 44
     },
     "home": {
      "team": "Colgate",
@@ -13508,13 +13502,13 @@
      "opp_id": "2944",
      "seed": null,
      "record": "1-4",
-     "live": 49
+     "live": 60
     },
     "time": "2:00 PM",
     "line": "",
     "live": {
-     "detail": "19:17 2nd",
-     "as_of": "2:58 PM"
+     "detail": "13:20 2nd",
+     "as_of": "3:08 PM"
     }
    },
    {
@@ -13561,8 +13555,8 @@
     "time": "2:00 PM",
     "line": "",
     "live": {
-     "detail": "15:10 2nd",
-     "as_of": "2:58 PM"
+     "detail": "14:39 2nd",
+     "as_of": "3:08 PM"
     }
    },
    {
@@ -13586,7 +13580,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 44
+     "live": 51
     },
     "home": {
      "team": "Morgan St.",
@@ -13604,13 +13598,13 @@
      "opp_id": "172",
      "seed": null,
      "record": "4-2",
-     "live": 25
+     "live": 33
     },
     "time": "2:00 PM",
     "line": "COR -5.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "2:48 PM"
+     "detail": "15:03 2nd",
+     "as_of": "3:08 PM"
     }
    },
    {
@@ -13640,7 +13634,7 @@
      "opp_id": "2520",
      "seed": null,
      "record": "4-2",
-     "live": 31
+     "live": 40
     },
     "home": {
      "team": "Rider",
@@ -13652,13 +13646,13 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 33
+     "live": 39
     },
     "time": "2:00 PM",
     "line": "NAVY -4.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "2:48 PM"
+     "detail": "15:54 2nd",
+     "as_of": "3:08 PM"
     }
    },
    {
@@ -13917,7 +13911,7 @@
      "record": "2-4"
     },
     "time": "6:00 PM",
-    "line": "UNCW -12.5"
+    "line": "UNCW -11.5"
    },
    {
     "id": "401921776",
@@ -13969,7 +13963,7 @@
      "record": "3-2"
     },
     "time": "7:00 PM",
-    "line": "MICH -4.5"
+    "line": "MICH -3.5"
    },
    {
     "id": "401920964",
@@ -15200,5 +15194,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "2:58 PM"
+ "scores_updated": "3:08 PM"
 }
