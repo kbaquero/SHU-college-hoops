@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 21:53 EST",
+ "updated": "2026-11-20 22:03 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -13159,7 +13159,7 @@
      "opp_id": "59",
      "seed": null,
      "record": "5-0",
-     "live": 64
+     "live": 74
     },
     "home": {
      "team": "Georgia Tech",
@@ -13171,13 +13171,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 57
+     "live": 67
     },
     "time": "8:00 PM",
     "line": "UGA -7.5",
     "live": {
-     "detail": "7:57 2nd",
-     "as_of": "9:53 PM"
+     "detail": "5:25 2nd",
+     "as_of": "10:03 PM"
     }
    },
    {
@@ -13201,7 +13201,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 70
+     "live": 74
     },
     "home": {
      "team": "Indiana",
@@ -13219,13 +13219,13 @@
      "opp_id": "96",
      "seed": null,
      "record": "5-0",
-     "live": 82
+     "live": 86
     },
     "time": "8:00 PM",
     "line": "IU -3.5",
     "live": {
-     "detail": "5:01 2nd",
-     "as_of": "9:53 PM"
+     "detail": "1:40 2nd",
+     "as_of": "10:03 PM"
     }
    },
    {
@@ -13234,7 +13234,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13246,10 +13246,9 @@
      "owners": [],
      "id": "2097",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "1-4",
-     "live": 75
+     "final": 80,
+     "won": true,
+     "record": "2-4"
     },
     "home": {
      "team": "Kansas St.",
@@ -13258,23 +13257,18 @@
      "owners": [
       "Kevin B."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Campbell",
      "pts": 0,
-     "final": null,
+     "final": 70,
      "opp_final": null,
      "opp_id": "2097",
      "seed": null,
-     "record": "3-1",
-     "live": 70
+     "record": "3-2"
     },
     "time": "8:00 PM",
-    "line": "KSU -16.5",
-    "live": {
-     "detail": "0:53 2nd",
-     "as_of": "9:53 PM"
-    }
+    "line": "KSU -16.5"
    },
    {
     "id": "401919784",
@@ -13282,7 +13276,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13294,16 +13288,15 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Missouri",
      "pts": 0,
-     "final": null,
+     "final": 64,
      "opp_final": null,
      "opp_id": "142",
      "seed": null,
-     "record": "2-3",
-     "live": 64
+     "record": "2-4"
     },
     "home": {
      "team": "Missouri",
@@ -13312,17 +13305,12 @@
      "owners": [],
      "id": "142",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-1",
-     "live": 91
+     "final": 91,
+     "won": true,
+     "record": "5-1"
     },
     "time": "8:00 PM",
-    "line": "MIZ -35.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:53 PM"
-    }
+    "line": "MIZ -35.5"
    },
    {
     "id": "401926755",
@@ -13330,7 +13318,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13342,10 +13330,9 @@
      "owners": [],
      "id": "422",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 38
+     "final": 38,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Lehigh",
@@ -13354,23 +13341,18 @@
      "owners": [
       "Chris C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Neumann",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 79,
      "opp_final": null,
      "opp_id": "422",
      "seed": null,
-     "record": "3-2",
-     "live": 79
+     "record": "4-2"
     },
     "time": "8:00 PM",
-    "line": "",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:53 PM"
-    }
+    "line": ""
    },
    {
     "id": "401920707",
@@ -13399,7 +13381,7 @@
      "opp_id": "2010",
      "seed": null,
      "record": "3-3",
-     "live": 51
+     "live": 59
     },
     "home": {
      "team": "Alabama A&M",
@@ -13411,13 +13393,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 64
+     "live": 70
     },
     "time": "8:00 PM",
     "line": "LIP -5.5",
     "live": {
-     "detail": "8:39 2nd",
-     "as_of": "9:53 PM"
+     "detail": "5:57 2nd",
+     "as_of": "10:03 PM"
     }
    },
    {
@@ -13484,7 +13466,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 51
+     "live": 63
     },
     "home": {
      "team": "Vanderbilt",
@@ -13502,13 +13484,13 @@
      "opp_id": "2116",
      "seed": null,
      "record": "5-0",
-     "live": 69
+     "live": 73
     },
     "time": "8:00 PM",
     "line": "VAN -16.5",
     "live": {
-     "detail": "7:18 2nd",
-     "as_of": "9:53 PM"
+     "detail": "4:28 2nd",
+     "as_of": "10:03 PM"
     }
    },
    {
@@ -13532,7 +13514,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 16
+     "live": 18
     },
     "home": {
      "team": "Illinois",
@@ -13550,13 +13532,13 @@
      "opp_id": "2197",
      "seed": null,
      "record": "4-1",
-     "live": 62
+     "live": 68
     },
     "time": "9:00 PM",
     "line": "ILL -45.5",
     "live": {
-     "detail": "1:09 1st",
-     "as_of": "9:53 PM"
+     "detail": "Halftime",
+     "as_of": "10:03 PM"
     }
    },
    {
@@ -13634,7 +13616,7 @@
      "opp_id": "152",
      "seed": null,
      "record": "4-1",
-     "live": 4
+     "live": 15
     },
     "home": {
      "team": "N.C. State",
@@ -13652,13 +13634,13 @@
      "opp_id": "2550",
      "seed": null,
      "record": "5-0",
-     "live": 8
+     "live": 19
     },
     "time": "9:30 PM",
     "line": "NCSU -3.5",
     "live": {
-     "detail": "15:45 1st",
-     "as_of": "9:53 PM"
+     "detail": "10:35 1st",
+     "as_of": "10:03 PM"
     }
    },
    {
@@ -13689,7 +13671,8 @@
      "opp_final": null,
      "opp_id": "278",
      "seed": null,
-     "record": "2-3"
+     "record": "2-3",
+     "live": 0
     },
     "home": {
      "team": "Fresno St.",
@@ -13700,10 +13683,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 0
     },
     "time": "10:00 PM",
-    "line": "FRES -10.5"
+    "line": "FRES -10.5",
+    "live": {
+     "detail": "19:27 1st",
+     "as_of": "10:03 PM"
+    }
    },
    {
     "id": "401911252",
@@ -14211,5 +14199,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "9:53 PM"
+ "scores_updated": "10:03 PM"
 }
