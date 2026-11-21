@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 19:13 EST",
+ "updated": "2026-11-20 19:23 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -12716,7 +12716,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 53
+     "live": 54
     },
     "home": {
      "team": "Miami FL",
@@ -12737,13 +12737,13 @@
      "opp_id": "2363",
      "seed": null,
      "record": "4-1",
-     "live": 102
+     "live": 106
     },
     "time": "5:00 PM",
     "line": "MIA -36.5",
     "live": {
-     "detail": "2:07 2nd",
-     "as_of": "7:13 PM"
+     "detail": "End of 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12775,7 +12775,7 @@
      "opp_id": "2099",
      "seed": null,
      "record": "1-4",
-     "live": 39
+     "live": 45
     },
     "home": {
      "team": "Canisius",
@@ -12787,13 +12787,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 45
+     "live": 53
     },
     "time": "5:30 PM",
     "line": "MERC -4.5",
     "live": {
-     "detail": "7:30 2nd",
-     "as_of": "7:13 PM"
+     "detail": "3:14 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12817,7 +12817,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 10
+     "live": 14
     },
     "home": {
      "team": "Incarnate Word",
@@ -12835,13 +12835,13 @@
      "opp_id": "3079",
      "seed": null,
      "record": "0-5",
-     "live": 12
+     "live": 22
     },
     "time": "6:00 PM",
     "line": "",
     "live": {
-     "detail": "14:07 1st",
-     "as_of": "7:13 PM"
+     "detail": "11:26 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12865,7 +12865,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 10
+     "live": 22
     },
     "home": {
      "team": "Iona",
@@ -12884,13 +12884,13 @@
      "opp_id": "140",
      "seed": null,
      "record": "2-4",
-     "live": 16
+     "live": 26
     },
     "time": "7:00 PM",
     "line": "IONA -4.5",
     "live": {
-     "detail": "14:07 1st",
-     "as_of": "7:13 PM"
+     "detail": "8:45 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12920,7 +12920,7 @@
      "opp_id": "120",
      "seed": null,
      "record": "1-4",
-     "live": 5
+     "live": 9
     },
     "home": {
      "team": "Maryland",
@@ -12938,13 +12938,13 @@
      "opp_id": "2681",
      "seed": null,
      "record": "2-2",
-     "live": 5
+     "live": 12
     },
     "time": "7:00 PM",
     "line": "MD -33.5",
     "live": {
-     "detail": "14:19 1st",
-     "as_of": "7:13 PM"
+     "detail": "9:14 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -12968,7 +12968,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 12
+     "live": 20
     },
     "home": {
      "team": "Tennessee",
@@ -12986,13 +12986,13 @@
      "opp_id": "324",
      "seed": null,
      "record": "4-0",
-     "live": 10
+     "live": 16
     },
     "time": "7:00 PM",
     "line": "TENN -25.5",
     "live": {
-     "detail": "14:20 1st",
-     "as_of": "7:13 PM"
+     "detail": "9:27 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -13022,7 +13022,7 @@
      "opp_id": "93",
      "seed": null,
      "record": "4-1",
-     "live": 6
+     "live": 12
     },
     "home": {
      "team": "Murray St.",
@@ -13034,13 +13034,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 9
+     "live": 17
     },
     "time": "7:00 PM",
     "line": "WIS -3.5",
     "live": {
-     "detail": "14:47 1st",
-     "as_of": "7:13 PM"
+     "detail": "11:29 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -14193,5 +14193,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "7:13 PM"
+ "scores_updated": "7:23 PM"
 }
