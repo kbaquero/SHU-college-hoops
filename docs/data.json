@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 14:38 EST",
+ "updated": "2026-11-21 14:48 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13390,7 +13390,7 @@
      "opp_id": "99",
      "seed": null,
      "record": "3-2",
-     "live": 61
+     "live": 70
     },
     "home": {
      "team": "LSU",
@@ -13408,13 +13408,13 @@
      "opp_id": "2511",
      "seed": null,
      "record": "5-0",
-     "live": 82
+     "live": 94
     },
     "time": "1:00 PM",
     "line": "LSU -25.5",
     "live": {
-     "detail": "8:04 2nd",
-     "as_of": "2:38 PM"
+     "detail": "5:10 2nd",
+     "as_of": "2:48 PM"
     }
    },
    {
@@ -13438,7 +13438,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 36
+     "live": 38
     },
     "home": {
      "team": "Mercyhurst",
@@ -13458,13 +13458,13 @@
      "opp_id": "2710",
      "seed": null,
      "record": "1-5",
-     "live": 32
+     "live": 34
     },
     "time": "1:30 PM",
     "line": "MERC -6.5",
     "live": {
-     "detail": "17:18 2nd",
-     "as_of": "2:38 PM"
+     "detail": "14:37 2nd",
+     "as_of": "2:48 PM"
     }
    },
    {
@@ -13488,7 +13488,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 26
+     "live": 29
     },
     "home": {
      "team": "Colgate",
@@ -13513,8 +13513,8 @@
     "time": "2:00 PM",
     "line": "",
     "live": {
-     "detail": "0:36 1st",
-     "as_of": "2:38 PM"
+     "detail": "Halftime",
+     "as_of": "2:48 PM"
     }
    },
    {
@@ -13586,7 +13586,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 35
+     "live": 44
     },
     "home": {
      "team": "Morgan St.",
@@ -13609,8 +13609,8 @@
     "time": "2:00 PM",
     "line": "COR -5.5",
     "live": {
-     "detail": "2:19 1st",
-     "as_of": "2:38 PM"
+     "detail": "Halftime",
+     "as_of": "2:48 PM"
     }
    },
    {
@@ -13640,7 +13640,7 @@
      "opp_id": "2520",
      "seed": null,
      "record": "4-2",
-     "live": 29
+     "live": 31
     },
     "home": {
      "team": "Rider",
@@ -13652,13 +13652,13 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 24
+     "live": 33
     },
     "time": "2:00 PM",
     "line": "NAVY -4.5",
     "live": {
-     "detail": "3:41 1st",
-     "as_of": "2:38 PM"
+     "detail": "Halftime",
+     "as_of": "2:48 PM"
     }
    },
    {
@@ -15200,5 +15200,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "2:38 PM"
+ "scores_updated": "2:48 PM"
 }
