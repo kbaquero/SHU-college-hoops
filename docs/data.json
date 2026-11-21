@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 22:43 EST",
+ "updated": "2026-11-20 22:53 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -13490,7 +13490,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 40
+     "live": 49
     },
     "home": {
      "team": "Illinois",
@@ -13508,13 +13508,13 @@
      "opp_id": "2197",
      "seed": null,
      "record": "4-1",
-     "live": 103
+     "live": 107
     },
     "time": "9:00 PM",
     "line": "ILL -45.5",
     "live": {
-     "detail": "5:48 2nd",
-     "as_of": "10:43 PM"
+     "detail": "2:11 2nd",
+     "as_of": "10:53 PM"
     }
    },
    {
@@ -13538,7 +13538,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 63
+     "live": 70
     },
     "home": {
      "team": "North Carolina",
@@ -13556,13 +13556,13 @@
      "opp_id": "276",
      "seed": null,
      "record": "3-1",
-     "live": 77
+     "live": 85
     },
     "time": "9:00 PM",
     "line": "UNC -18.5",
     "live": {
-     "detail": "6:27 2nd",
-     "as_of": "10:43 PM"
+     "detail": "2:03 2nd",
+     "as_of": "10:53 PM"
     }
    },
    {
@@ -13592,7 +13592,7 @@
      "opp_id": "152",
      "seed": null,
      "record": "4-1",
-     "live": 30
+     "live": 41
     },
     "home": {
      "team": "N.C. State",
@@ -13610,13 +13610,13 @@
      "opp_id": "2550",
      "seed": null,
      "record": "5-0",
-     "live": 29
+     "live": 35
     },
     "time": "9:30 PM",
     "line": "NCSU -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:33 PM"
+     "detail": "16:34 2nd",
+     "as_of": "10:53 PM"
     }
    },
    {
@@ -13648,7 +13648,7 @@
      "opp_id": "278",
      "seed": null,
      "record": "2-3",
-     "live": 23
+     "live": 29
     },
     "home": {
      "team": "Fresno St.",
@@ -13660,13 +13660,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 40
+     "live": 44
     },
     "time": "10:00 PM",
     "line": "FRES -10.5",
     "live": {
-     "detail": "3:18 1st",
-     "as_of": "10:43 PM"
+     "detail": "Halftime",
+     "as_of": "10:53 PM"
     }
    },
    {
@@ -14175,5 +14175,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "10:43 PM"
+ "scores_updated": "10:53 PM"
 }
