@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 20:13 EST",
+ "updated": "2026-11-20 20:23 EST",
  "through": "Thu, Nov 19",
  "season": 2027,
  "standings": [
@@ -12805,7 +12805,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 48
+     "live": 52
     },
     "home": {
      "team": "Incarnate Word",
@@ -12823,13 +12823,13 @@
      "opp_id": "3079",
      "seed": null,
      "record": "0-5",
-     "live": 87
+     "live": 99
     },
     "time": "6:00 PM",
     "line": "",
     "live": {
-     "detail": "13:07 2nd",
-     "as_of": "8:13 PM"
+     "detail": "9:43 2nd",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -12853,7 +12853,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 43
+     "live": 50
     },
     "home": {
      "team": "Iona",
@@ -12872,13 +12872,13 @@
      "opp_id": "140",
      "seed": null,
      "record": "2-4",
-     "live": 36
+     "live": 45
     },
     "time": "7:00 PM",
     "line": "IONA -4.5",
     "live": {
-     "detail": "14:22 2nd",
-     "as_of": "8:13 PM"
+     "detail": "10:09 2nd",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -12908,7 +12908,7 @@
      "opp_id": "120",
      "seed": null,
      "record": "1-4",
-     "live": 30
+     "live": 33
     },
     "home": {
      "team": "Maryland",
@@ -12926,13 +12926,13 @@
      "opp_id": "2681",
      "seed": null,
      "record": "2-2",
-     "live": 38
+     "live": 46
     },
     "time": "7:00 PM",
     "line": "MD -33.5",
     "live": {
-     "detail": "15:27 2nd",
-     "as_of": "8:13 PM"
+     "detail": "12:24 2nd",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -12956,7 +12956,7 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 31
+     "live": 35
     },
     "home": {
      "team": "Tennessee",
@@ -12974,13 +12974,13 @@
      "opp_id": "324",
      "seed": null,
      "record": "4-0",
-     "live": 50
+     "live": 58
     },
     "time": "7:00 PM",
     "line": "TENN -25.5",
     "live": {
-     "detail": "14:36 2nd",
-     "as_of": "8:13 PM"
+     "detail": "9:52 2nd",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13010,7 +13010,7 @@
      "opp_id": "93",
      "seed": null,
      "record": "4-1",
-     "live": 22
+     "live": 27
     },
     "home": {
      "team": "Murray St.",
@@ -13022,13 +13022,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 38
+     "live": 43
     },
     "time": "7:00 PM",
     "line": "WIS -3.5",
     "live": {
-     "detail": "20:00 2nd",
-     "as_of": "8:13 PM"
+     "detail": "15:51 2nd",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13058,7 +13058,7 @@
      "opp_id": "2752",
      "seed": null,
      "record": "2-2",
-     "live": 36
+     "live": 39
     },
     "home": {
      "team": "Xavier",
@@ -13075,8 +13075,8 @@
     "time": "7:30 PM",
     "line": "XAV -3.5",
     "live": {
-     "detail": "0:44 1st",
-     "as_of": "8:13 PM"
+     "detail": "Halftime",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13100,7 +13100,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 23
+     "live": 28
     },
     "home": {
      "team": "Mississippi St.",
@@ -13118,13 +13118,13 @@
      "opp_id": "202",
      "seed": null,
      "record": "4-1",
-     "live": 25
+     "live": 29
     },
     "time": "7:30 PM",
     "line": "MSST -6.5",
     "live": {
-     "detail": "2:29 1st",
-     "as_of": "8:13 PM"
+     "detail": "Halftime",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13148,7 +13148,7 @@
      "final": null,
      "won": null,
      "record": "0-4",
-     "live": 11
+     "live": 19
     },
     "home": {
      "team": "Arkansas",
@@ -13171,13 +13171,13 @@
      "opp_id": "2400",
      "seed": null,
      "record": "3-2",
-     "live": 17
+     "live": 30
     },
     "time": "8:00 PM",
     "line": "ARK -35.5",
     "live": {
-     "detail": "14:11 1st",
-     "as_of": "8:13 PM"
+     "detail": "8:46 1st",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13207,7 +13207,7 @@
      "opp_id": "59",
      "seed": null,
      "record": "5-0",
-     "live": 12
+     "live": 18
     },
     "home": {
      "team": "Georgia Tech",
@@ -13219,13 +13219,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 2
+     "live": 5
     },
     "time": "8:00 PM",
     "line": "UGA -7.5",
     "live": {
-     "detail": "15:11 1st",
-     "as_of": "8:13 PM"
+     "detail": "11:48 1st",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13249,7 +13249,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 11
+     "live": 21
     },
     "home": {
      "team": "Indiana",
@@ -13267,13 +13267,13 @@
      "opp_id": "96",
      "seed": null,
      "record": "5-0",
-     "live": 13
+     "live": 22
     },
     "time": "8:00 PM",
     "line": "IU -3.5",
     "live": {
-     "detail": "16:23 1st",
-     "as_of": "8:13 PM"
+     "detail": "12:00 1st",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13297,7 +13297,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 12
+     "live": 16
     },
     "home": {
      "team": "Kansas St.",
@@ -13315,13 +13315,13 @@
      "opp_id": "2097",
      "seed": null,
      "record": "3-1",
-     "live": 13
+     "live": 19
     },
     "time": "8:00 PM",
     "line": "KSU -16.5",
     "live": {
-     "detail": "12:55 1st",
-     "as_of": "8:13 PM"
+     "detail": "8:02 1st",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13351,7 +13351,7 @@
      "opp_id": "142",
      "seed": null,
      "record": "2-3",
-     "live": 8
+     "live": 15
     },
     "home": {
      "team": "Missouri",
@@ -13363,13 +13363,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 14
+     "live": 29
     },
     "time": "8:00 PM",
     "line": "MIZ -35.5",
     "live": {
-     "detail": "13:43 1st",
-     "as_of": "8:13 PM"
+     "detail": "9:04 1st",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13392,7 +13392,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 2
     },
     "home": {
      "team": "Lehigh",
@@ -13409,10 +13410,15 @@
      "opp_final": null,
      "opp_id": "422",
      "seed": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 11
     },
     "time": "8:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "15:51 1st",
+     "as_of": "8:23 PM"
+    }
    },
    {
     "id": "401920707",
@@ -13440,7 +13446,8 @@
      "opp_final": null,
      "opp_id": "2010",
      "seed": null,
-     "record": "3-3"
+     "record": "3-3",
+     "live": 0
     },
     "home": {
      "team": "Alabama A&M",
@@ -13451,10 +13458,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 9
     },
     "time": "8:00 PM",
-    "line": "LIP -5.5"
+    "line": "LIP -5.5",
+    "live": {
+     "detail": "16:35 1st",
+     "as_of": "8:23 PM"
+    }
    },
    {
     "id": "401929459",
@@ -13477,7 +13489,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 4
+     "live": 20
     },
     "home": {
      "team": "SMU",
@@ -13496,13 +13508,13 @@
      "opp_id": "6",
      "seed": null,
      "record": "5-0",
-     "live": 9
+     "live": 18
     },
     "time": "8:00 PM",
     "line": "SMU -15.5",
     "live": {
-     "detail": "14:04 1st",
-     "as_of": "8:13 PM"
+     "detail": "9:10 1st",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -13526,7 +13538,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 1
+     "live": 5
     },
     "home": {
      "team": "Vanderbilt",
@@ -13544,13 +13556,13 @@
      "opp_id": "2116",
      "seed": null,
      "record": "5-0",
-     "live": 7
+     "live": 21
     },
     "time": "8:00 PM",
     "line": "VAN -16.5",
     "live": {
-     "detail": "16:06 1st",
-     "as_of": "8:13 PM"
+     "detail": "11:57 1st",
+     "as_of": "8:23 PM"
     }
    },
    {
@@ -14235,5 +14247,5 @@
   "date": "2026-11-20",
   "id": "401921691"
  },
- "scores_updated": "8:13 PM"
+ "scores_updated": "8:23 PM"
 }
