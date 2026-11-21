@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 16:53 EST",
+ "updated": "2026-11-21 17:03 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13664,13 +13664,13 @@
      "opp_id": "2110",
      "seed": null,
      "record": "2-3",
-     "live": 32
+     "live": 34
     },
     "time": "4:00 PM",
     "line": "CARK -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:43 PM"
+     "detail": "18:01 2nd",
+     "as_of": "5:03 PM"
     }
    },
    {
@@ -13700,7 +13700,7 @@
      "opp_id": "2325",
      "seed": null,
      "record": "2-3",
-     "live": 45
+     "live": 49
     },
     "home": {
      "team": "La Salle",
@@ -13712,13 +13712,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 29
+     "live": 34
     },
     "time": "4:00 PM",
     "line": "LAS -2.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:53 PM"
+     "detail": "18:07 2nd",
+     "as_of": "5:03 PM"
     }
    },
    {
@@ -13748,7 +13748,7 @@
      "opp_id": "301",
      "seed": null,
      "record": "3-1",
-     "live": 10
+     "live": 17
     },
     "home": {
      "team": "San Diego",
@@ -13760,13 +13760,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 4
+     "live": 17
     },
     "time": "4:30 PM",
     "line": "UCI -4.5",
     "live": {
-     "detail": "14:12 1st",
-     "as_of": "4:53 PM"
+     "detail": "8:17 1st",
+     "as_of": "5:03 PM"
     }
    },
    {
@@ -15182,5 +15182,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "4:53 PM"
+ "scores_updated": "5:03 PM"
 }
