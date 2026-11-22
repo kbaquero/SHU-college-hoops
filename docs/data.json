@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 15:53 EST",
+ "updated": "2026-11-22 16:03 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13956,7 +13956,7 @@
      "opp_id": "166",
      "seed": null,
      "record": "1-4",
-     "live": 53
+     "live": 60
     },
     "home": {
      "team": "New Mexico St.",
@@ -13968,13 +13968,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 29
+     "live": 40
     },
     "time": "2:30 PM",
     "line": "NMSU -1.5",
     "live": {
-     "detail": "11:07 2nd",
-     "as_of": "3:53 PM"
+     "detail": "7:12 2nd",
+     "as_of": "4:03 PM"
     }
    },
    {
@@ -14005,7 +14005,7 @@
      "opp_id": "326",
      "seed": null,
      "record": "2-1",
-     "live": 11
+     "live": 15
     },
     "home": {
      "team": "Texas St.",
@@ -14017,13 +14017,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 12
+     "live": 22
     },
     "time": "3:30 PM",
     "line": "TXST -2.5",
     "live": {
-     "detail": "13:04 1st",
-     "as_of": "3:53 PM"
+     "detail": "10:00 1st",
+     "as_of": "4:03 PM"
     }
    },
    {
@@ -14055,7 +14055,7 @@
      "opp_id": "399",
      "seed": null,
      "record": "2-5",
-     "live": 18
+     "live": 23
     },
     "home": {
      "team": "Albany",
@@ -14067,13 +14067,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 13
+     "live": 20
     },
     "time": "3:30 PM",
     "line": "MERC -1.5",
     "live": {
-     "detail": "10:17 1st",
-     "as_of": "3:53 PM"
+     "detail": "7:12 1st",
+     "as_of": "4:03 PM"
     }
    },
    {
@@ -14103,7 +14103,7 @@
      "opp_id": "197",
      "seed": null,
      "record": "6-0",
-     "live": 26
+     "live": 31
     },
     "home": {
      "team": "Oklahoma St.",
@@ -14115,13 +14115,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 23
+     "live": 35
     },
     "time": "3:30 PM",
     "line": "VT -1.5",
     "live": {
-     "detail": "10:05 1st",
-     "as_of": "3:53 PM"
+     "detail": "5:30 1st",
+     "as_of": "4:03 PM"
     }
    },
    {
@@ -15183,5 +15183,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "3:53 PM"
+ "scores_updated": "4:03 PM"
 }
