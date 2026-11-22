@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 19:13 EST",
+ "updated": "2026-11-21 19:23 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13814,7 +13814,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 37
+     "live": 39
     },
     "home": {
      "team": "Georgetown",
@@ -13832,13 +13832,13 @@
      "opp_id": "2154",
      "seed": null,
      "record": "5-0",
-     "live": 49
+     "live": 53
     },
     "time": "6:00 PM",
     "line": "GTWN -31.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "7:03 PM"
+     "detail": "15:20 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -13868,7 +13868,7 @@
      "opp_id": "2450",
      "seed": null,
      "record": "4-1",
-     "live": 49
+     "live": 62
     },
     "home": {
      "team": "Norfolk St.",
@@ -13886,13 +13886,13 @@
      "opp_id": "350",
      "seed": null,
      "record": "2-4",
-     "live": 41
+     "live": 54
     },
     "time": "6:00 PM",
     "line": "UNCW -11.5",
     "live": {
-     "detail": "17:34 2nd",
-     "as_of": "7:13 PM"
+     "detail": "12:01 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -13926,7 +13926,7 @@
      "opp_id": "222",
      "seed": null,
      "record": "3-1",
-     "live": 14
+     "live": 18
     },
     "home": {
      "team": "Villanova",
@@ -13944,13 +13944,13 @@
      "opp_id": "130",
      "seed": null,
      "record": "3-2",
-     "live": 10
+     "live": 18
     },
     "time": "7:00 PM",
     "line": "MICH -3.5",
     "live": {
-     "detail": "14:04 1st",
-     "as_of": "7:13 PM"
+     "detail": "9:42 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -13980,7 +13980,7 @@
      "opp_id": "2210",
      "seed": null,
      "record": "3-3",
-     "live": 7
+     "live": 18
     },
     "home": {
      "team": "Elon",
@@ -13992,13 +13992,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 10
+     "live": 21
     },
     "time": "7:00 PM",
     "line": "ELON -11.5",
     "live": {
-     "detail": "15:28 1st",
-     "as_of": "7:13 PM"
+     "detail": "10:53 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -14022,7 +14022,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 12
+     "live": 26
     },
     "home": {
      "team": "Vermont",
@@ -14045,13 +14045,13 @@
      "opp_id": "225",
      "seed": null,
      "record": "2-3",
-     "live": 9
+     "live": 19
     },
     "time": "7:00 PM",
     "line": "UVM -4.5",
     "live": {
-     "detail": "15:24 1st",
-     "as_of": "7:13 PM"
+     "detail": "9:29 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -15194,5 +15194,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "7:13 PM"
+ "scores_updated": "7:23 PM"
 }
