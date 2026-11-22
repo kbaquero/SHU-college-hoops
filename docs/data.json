@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 14:33 EST",
+ "updated": "2026-11-22 14:43 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13864,7 +13864,7 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 61
+     "live": 68
     },
     "home": {
      "team": "LIU",
@@ -13884,13 +13884,13 @@
      "opp_id": "2217",
      "seed": null,
      "record": "1-6",
-     "live": 52
+     "live": 64
     },
     "time": "1:00 PM",
     "line": "LIU -2.5",
     "live": {
-     "detail": "8:21 2nd",
-     "as_of": "2:33 PM"
+     "detail": "4:14 2nd",
+     "as_of": "2:43 PM"
     }
    },
    {
@@ -13914,7 +13914,7 @@
      "final": null,
      "won": null,
      "record": "2-5",
-     "live": 45
+     "live": 54
     },
     "home": {
      "team": "Marquette",
@@ -13932,13 +13932,13 @@
      "opp_id": "2130",
      "seed": null,
      "record": "3-2",
-     "live": 84
+     "live": 90
     },
     "time": "1:00 PM",
     "line": "MARQ -34.5",
     "live": {
-     "detail": "9:05 2nd",
-     "as_of": "2:33 PM"
+     "detail": "5:19 2nd",
+     "as_of": "2:43 PM"
     }
    },
    {
@@ -13968,7 +13968,7 @@
      "opp_id": "166",
      "seed": null,
      "record": "1-4",
-     "live": 0
+     "live": 12
     },
     "home": {
      "team": "New Mexico St.",
@@ -13980,13 +13980,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 3
+     "live": 7
     },
     "time": "2:30 PM",
     "line": "NMSU -1.5",
     "live": {
-     "detail": "18:06 1st",
-     "as_of": "2:33 PM"
+     "detail": "13:27 1st",
+     "as_of": "2:43 PM"
     }
    },
    {
@@ -15177,5 +15177,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "2:33 PM"
+ "scores_updated": "2:43 PM"
 }
