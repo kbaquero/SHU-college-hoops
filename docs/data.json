@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 13:03 EST",
+ "updated": "2026-11-22 13:13 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13863,7 +13863,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 4
     },
     "home": {
      "team": "LIU",
@@ -13882,10 +13883,15 @@
      "opp_final": null,
      "opp_id": "2217",
      "seed": null,
-     "record": "1-6"
+     "record": "1-6",
+     "live": 7
     },
     "time": "1:00 PM",
-    "line": "LIU -2.5"
+    "line": "LIU -2.5",
+    "live": {
+     "detail": "16:01 1st",
+     "as_of": "1:13 PM"
+    }
    },
    {
     "id": "401909527",
@@ -13908,7 +13914,7 @@
      "final": null,
      "won": null,
      "record": "2-5",
-     "live": 0
+     "live": 7
     },
     "home": {
      "team": "Marquette",
@@ -13926,13 +13932,13 @@
      "opp_id": "2130",
      "seed": null,
      "record": "3-2",
-     "live": 0
+     "live": 18
     },
     "time": "1:00 PM",
     "line": "MARQ -34.5",
     "live": {
-     "detail": "19:58 1st",
-     "as_of": "1:03 PM"
+     "detail": "15:08 1st",
+     "as_of": "1:13 PM"
     }
    },
    {
@@ -14018,7 +14024,7 @@
      "record": "6-0"
     },
     "time": "3:30 PM",
-    "line": "TXST -1.5"
+    "line": "TXST -2.5"
    },
    {
     "id": "401923323",
@@ -15165,5 +15171,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "1:03 PM"
+ "scores_updated": "1:13 PM"
 }
