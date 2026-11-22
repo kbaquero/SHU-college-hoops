@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 05:45 EST",
+ "updated": "2026-11-22 13:03 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13885,7 +13885,7 @@
      "record": "1-6"
     },
     "time": "1:00 PM",
-    "line": "LIU -3.5"
+    "line": "LIU -2.5"
    },
    {
     "id": "401909527",
@@ -13907,7 +13907,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "2-5"
+     "record": "2-5",
+     "live": 0
     },
     "home": {
      "team": "Marquette",
@@ -13924,10 +13925,15 @@
      "opp_final": null,
      "opp_id": "2130",
      "seed": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 0
     },
     "time": "1:00 PM",
-    "line": "MARQ -34.5"
+    "line": "MARQ -34.5",
+    "live": {
+     "detail": "19:58 1st",
+     "as_of": "1:03 PM"
+    }
    },
    {
     "id": "401928790",
@@ -14012,7 +14018,7 @@
      "record": "6-0"
     },
     "time": "3:30 PM",
-    "line": "TXST -2.5"
+    "line": "TXST -1.5"
    },
    {
     "id": "401923323",
@@ -14056,7 +14062,7 @@
      "record": "4-3"
     },
     "time": "3:30 PM",
-    "line": "UALB -1.5"
+    "line": "MERC -1.5"
    },
    {
     "id": "401920381",
@@ -14140,7 +14146,7 @@
      "record": "3-3"
     },
     "time": "4:30 PM",
-    "line": "UCI -3.5"
+    "line": "UCI -1.5"
    },
    {
     "id": "401920708",
@@ -14224,7 +14230,7 @@
      "record": "5-0"
     },
     "time": "5:00 PM",
-    "line": "BC -24.5"
+    "line": "BC -23.5"
    },
    {
     "id": "401922293",
@@ -14266,7 +14272,7 @@
      "record": "2-2"
     },
     "time": "5:00 PM",
-    "line": "SAM -9.5"
+    "line": "SAM -10.5"
    },
    {
     "id": "401920905",
@@ -14311,7 +14317,7 @@
      "record": "5-0"
     },
     "time": "7:00 PM",
-    "line": "UCLA -29.5"
+    "line": "UCLA -28.5"
    },
    {
     "id": "401929595",
@@ -15158,5 +15164,6 @@
  "gotd": {
   "date": "2026-11-22",
   "id": "401923323"
- }
+ },
+ "scores_updated": "1:03 PM"
 }
