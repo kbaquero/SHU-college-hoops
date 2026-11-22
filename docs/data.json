@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 15:13 EST",
+ "updated": "2026-11-22 15:23 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13956,7 +13956,7 @@
      "opp_id": "166",
      "seed": null,
      "record": "1-4",
-     "live": 31
+     "live": 33
     },
     "home": {
      "team": "New Mexico St.",
@@ -13973,8 +13973,8 @@
     "time": "2:30 PM",
     "line": "NMSU -1.5",
     "live": {
-     "detail": "1:17 1st",
-     "as_of": "3:13 PM"
+     "detail": "Halftime",
+     "as_of": "3:23 PM"
     }
    },
    {
@@ -15165,5 +15165,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "3:13 PM"
+ "scores_updated": "3:23 PM"
 }
