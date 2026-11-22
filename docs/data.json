@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 21:04 EST",
+ "updated": "2026-11-21 21:14 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13914,7 +13914,7 @@
      "opp_id": "222",
      "seed": null,
      "record": "3-1",
-     "live": 61
+     "live": 66
     },
     "home": {
      "team": "Villanova",
@@ -13932,13 +13932,13 @@
      "opp_id": "130",
      "seed": null,
      "record": "3-2",
-     "live": 68
+     "live": 72
     },
     "time": "7:00 PM",
     "line": "MICH -3.5",
     "live": {
-     "detail": "3:44 2nd",
-     "as_of": "9:04 PM"
+     "detail": "1:15 2nd",
+     "as_of": "9:14 PM"
     }
    },
    {
@@ -13989,7 +13989,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14001,10 +14001,9 @@
      "owners": [],
      "id": "225",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "2-4",
-     "live": 71
+     "final": 71,
+     "won": false,
+     "record": "2-5"
     },
     "home": {
      "team": "Vermont",
@@ -14018,23 +14017,18 @@
       "Sean P.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Brown",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 84,
      "opp_final": null,
      "opp_id": "225",
      "seed": null,
-     "record": "2-3",
-     "live": 80
+     "record": "3-3"
     },
     "time": "7:00 PM",
-    "line": "UVM -4.5",
-    "live": {
-     "detail": "1:02 2nd",
-     "as_of": "9:04 PM"
-    }
+    "line": "UVM -4.5"
    },
    {
     "id": "401926217",
@@ -14064,7 +14058,7 @@
      "opp_id": "2635",
      "seed": null,
      "record": "1-3",
-     "live": 51
+     "live": 58
     },
     "home": {
      "team": "Tennessee Tech",
@@ -14076,13 +14070,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 66
+     "live": 74
     },
     "time": "7:30 PM",
     "line": "TNTC -7.5",
     "live": {
-     "detail": "10:51 2nd",
-     "as_of": "9:04 PM"
+     "detail": "7:09 2nd",
+     "as_of": "9:14 PM"
     }
    },
    {
@@ -15182,5 +15176,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "9:04 PM"
+ "scores_updated": "9:14 PM"
 }
