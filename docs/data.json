@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 15:23 EST",
+ "updated": "2026-11-22 15:33 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14090,7 +14090,8 @@
      "opp_final": null,
      "opp_id": "197",
      "seed": null,
-     "record": "6-0"
+     "record": "6-0",
+     "live": 0
     },
     "home": {
      "team": "Oklahoma St.",
@@ -14101,10 +14102,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 3
     },
     "time": "3:30 PM",
-    "line": "VT -1.5"
+    "line": "VT -1.5",
+    "live": {
+     "detail": "19:29 1st",
+     "as_of": "3:33 PM"
+    }
    },
    {
     "id": "401917540",
@@ -15165,5 +15171,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "3:23 PM"
+ "scores_updated": "3:33 PM"
 }
