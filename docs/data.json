@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 14:53 EST",
+ "updated": "2026-11-22 15:03 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13849,7 +13849,7 @@
     "tbd": false,
     "tv": "NEC Front Row",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13861,10 +13861,9 @@
      "owners": [],
      "id": "2217",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-2",
-     "live": 72
+     "final": 74,
+     "won": true,
+     "record": "4-2"
     },
     "home": {
      "team": "LIU",
@@ -13875,23 +13874,18 @@
       "Connor C. & Conor G.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Fairfield",
      "pts": 0,
-     "final": null,
+     "final": 71,
      "opp_final": null,
      "opp_id": "2217",
      "seed": null,
-     "record": "1-6",
-     "live": 71
+     "record": "1-7"
     },
     "time": "1:00 PM",
-    "line": "LIU -2.5",
-    "live": {
-     "detail": "0:50 2nd",
-     "as_of": "2:53 PM"
-    }
+    "line": "LIU -2.5"
    },
    {
     "id": "401909527",
@@ -13899,7 +13893,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13911,10 +13905,9 @@
      "owners": [],
      "id": "2130",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "2-5",
-     "live": 62
+     "final": 62,
+     "won": false,
+     "record": "2-6"
     },
     "home": {
      "team": "Marquette",
@@ -13923,23 +13916,18 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Chicago St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 106,
      "opp_final": null,
      "opp_id": "2130",
      "seed": null,
-     "record": "3-2",
-     "live": 104
+     "record": "4-2"
     },
     "time": "1:00 PM",
-    "line": "MARQ -34.5",
-    "live": {
-     "detail": "0:35 2nd",
-     "as_of": "2:53 PM"
-    }
+    "line": "MARQ -34.5"
    },
    {
     "id": "401928790",
@@ -13968,7 +13956,7 @@
      "opp_id": "166",
      "seed": null,
      "record": "1-4",
-     "live": 22
+     "live": 27
     },
     "home": {
      "team": "New Mexico St.",
@@ -13980,13 +13968,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 13
+     "live": 21
     },
     "time": "2:30 PM",
     "line": "NMSU -1.5",
     "live": {
-     "detail": "8:34 1st",
-     "as_of": "2:53 PM"
+     "detail": "4:30 1st",
+     "as_of": "3:03 PM"
     }
    },
    {
@@ -15177,5 +15165,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "2:53 PM"
+ "scores_updated": "3:03 PM"
 }
