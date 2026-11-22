@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 16:53 EST",
+ "updated": "2026-11-22 17:03 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13935,10 +13935,10 @@
     "tbd": false,
     "tv": "",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "Jacksonville Classic",
     "away": {
      "team": "Robert Morris",
@@ -13947,16 +13947,15 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "New Mexico St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 84,
      "opp_final": null,
      "opp_id": "166",
      "seed": null,
-     "record": "1-4",
-     "live": 79
+     "record": "2-4"
     },
     "home": {
      "team": "New Mexico St.",
@@ -13965,17 +13964,12 @@
      "owners": [],
      "id": "166",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "1-4",
-     "live": 76
+     "final": 79,
+     "won": false,
+     "record": "1-5"
     },
     "time": "2:30 PM",
-    "line": "NMSU -1.5",
-    "live": {
-     "detail": "1:15 OT",
-     "as_of": "4:53 PM"
-    }
+    "line": "NMSU -1.5"
    },
    {
     "id": "401929202",
@@ -14005,7 +13999,7 @@
      "opp_id": "326",
      "seed": null,
      "record": "2-1",
-     "live": 29
+     "live": 36
     },
     "home": {
      "team": "Texas St.",
@@ -14017,13 +14011,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 52
+     "live": 62
     },
     "time": "3:30 PM",
     "line": "TXST -2.5",
     "live": {
-     "detail": "18:00 2nd",
-     "as_of": "4:53 PM"
+     "detail": "14:54 2nd",
+     "as_of": "5:03 PM"
     }
    },
    {
@@ -14055,7 +14049,7 @@
      "opp_id": "399",
      "seed": null,
      "record": "2-5",
-     "live": 49
+     "live": 55
     },
     "home": {
      "team": "Albany",
@@ -14067,13 +14061,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 48
+     "live": 53
     },
     "time": "3:30 PM",
     "line": "MERC -1.5",
     "live": {
-     "detail": "12:24 2nd",
-     "as_of": "4:53 PM"
+     "detail": "8:46 2nd",
+     "as_of": "5:03 PM"
     }
    },
    {
@@ -14103,7 +14097,7 @@
      "opp_id": "197",
      "seed": null,
      "record": "6-0",
-     "live": 57
+     "live": 59
     },
     "home": {
      "team": "Oklahoma St.",
@@ -14115,13 +14109,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 64
+     "live": 77
     },
     "time": "3:30 PM",
     "line": "VT -1.5",
     "live": {
-     "detail": "11:46 2nd",
-     "as_of": "4:53 PM"
+     "detail": "8:53 2nd",
+     "as_of": "5:03 PM"
     }
    },
    {
@@ -14151,7 +14145,7 @@
      "opp_id": "2351",
      "seed": null,
      "record": "3-2",
-     "live": 14
+     "live": 19
     },
     "home": {
      "team": "Loyola Marymount",
@@ -14163,13 +14157,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 9
+     "live": 20
     },
     "time": "4:30 PM",
     "line": "UCI -1.5",
     "live": {
-     "detail": "10:03 1st",
-     "as_of": "4:53 PM"
+     "detail": "6:04 1st",
+     "as_of": "5:03 PM"
     }
    },
    {
@@ -14192,7 +14186,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 0
     },
     "home": {
      "team": "Lipscomb",
@@ -14209,10 +14204,15 @@
      "opp_final": null,
      "opp_id": "2397",
      "seed": null,
-     "record": "3-4"
+     "record": "3-4",
+     "live": 0
     },
     "time": "5:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "19:58 1st",
+     "as_of": "5:03 PM"
+    }
    },
    {
     "id": "401909556",
@@ -14276,7 +14276,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "2-4"
+     "record": "2-4",
+     "live": 3
     },
     "home": {
      "team": "Samford",
@@ -14293,10 +14294,15 @@
      "opp_final": null,
      "opp_id": "2427",
      "seed": null,
-     "record": "2-2"
+     "record": "2-2",
+     "live": 0
     },
     "time": "5:00 PM",
-    "line": "SAM -10.5"
+    "line": "SAM -10.5",
+    "live": {
+     "detail": "19:08 1st",
+     "as_of": "5:03 PM"
+    }
    },
    {
     "id": "401920905",
@@ -15189,5 +15195,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "4:53 PM"
+ "scores_updated": "5:03 PM"
 }
