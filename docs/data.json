@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 20:14 EST",
+ "updated": "2026-11-21 20:24 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13914,7 +13914,7 @@
      "opp_id": "222",
      "seed": null,
      "record": "3-1",
-     "live": 35
+     "live": 41
     },
     "home": {
      "team": "Villanova",
@@ -13932,13 +13932,13 @@
      "opp_id": "130",
      "seed": null,
      "record": "3-2",
-     "live": 41
+     "live": 50
     },
     "time": "7:00 PM",
     "line": "MICH -3.5",
     "live": {
-     "detail": "16:01 2nd",
-     "as_of": "8:14 PM"
+     "detail": "13:12 2nd",
+     "as_of": "8:24 PM"
     }
    },
    {
@@ -13968,7 +13968,7 @@
      "opp_id": "2210",
      "seed": null,
      "record": "3-3",
-     "live": 35
+     "live": 44
     },
     "home": {
      "team": "Elon",
@@ -13980,13 +13980,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 51
+     "live": 61
     },
     "time": "7:00 PM",
     "line": "ELON -11.5",
     "live": {
-     "detail": "16:26 2nd",
-     "as_of": "8:14 PM"
+     "detail": "12:30 2nd",
+     "as_of": "8:24 PM"
     }
    },
    {
@@ -14010,7 +14010,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 44
+     "live": 56
     },
     "home": {
      "team": "Vermont",
@@ -14033,13 +14033,13 @@
      "opp_id": "225",
      "seed": null,
      "record": "2-3",
-     "live": 46
+     "live": 53
     },
     "time": "7:00 PM",
     "line": "UVM -4.5",
     "live": {
-     "detail": "15:44 2nd",
-     "as_of": "8:14 PM"
+     "detail": "11:54 2nd",
+     "as_of": "8:24 PM"
     }
    },
    {
@@ -14070,7 +14070,7 @@
      "opp_id": "2635",
      "seed": null,
      "record": "1-3",
-     "live": 27
+     "live": 36
     },
     "home": {
      "team": "Tennessee Tech",
@@ -14082,13 +14082,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 40
+     "live": 51
     },
     "time": "7:30 PM",
     "line": "TNTC -7.5",
     "live": {
-     "detail": "3:29 1st",
-     "as_of": "8:14 PM"
+     "detail": "0:14 1st",
+     "as_of": "8:24 PM"
     }
    },
    {
@@ -15188,5 +15188,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "8:14 PM"
+ "scores_updated": "8:24 PM"
 }
