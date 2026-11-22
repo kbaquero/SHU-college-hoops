@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 16:33 EST",
+ "updated": "2026-11-22 16:43 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13956,7 +13956,7 @@
      "opp_id": "166",
      "seed": null,
      "record": "1-4",
-     "live": 66
+     "live": 71
     },
     "home": {
      "team": "New Mexico St.",
@@ -13968,13 +13968,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 62
+     "live": 71
     },
     "time": "2:30 PM",
     "line": "NMSU -1.5",
     "live": {
-     "detail": "0:52 2nd",
-     "as_of": "4:33 PM"
+     "detail": "End of 2nd",
+     "as_of": "4:43 PM"
     }
    },
    {
@@ -14055,7 +14055,7 @@
      "opp_id": "399",
      "seed": null,
      "record": "2-5",
-     "live": 39
+     "live": 47
     },
     "home": {
      "team": "Albany",
@@ -14067,13 +14067,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 36
+     "live": 42
     },
     "time": "3:30 PM",
     "line": "MERC -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:23 PM"
+     "detail": "16:18 2nd",
+     "as_of": "4:43 PM"
     }
    },
    {
@@ -14103,7 +14103,7 @@
      "opp_id": "197",
      "seed": null,
      "record": "6-0",
-     "live": 41
+     "live": 54
     },
     "home": {
      "team": "Oklahoma St.",
@@ -14115,13 +14115,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 41
+     "live": 58
     },
     "time": "3:30 PM",
     "line": "VT -1.5",
     "live": {
-     "detail": "20:00 2nd",
-     "as_of": "4:33 PM"
+     "detail": "14:55 2nd",
+     "as_of": "4:43 PM"
     }
    },
    {
@@ -14151,7 +14151,7 @@
      "opp_id": "2351",
      "seed": null,
      "record": "3-2",
-     "live": 0
+     "live": 9
     },
     "home": {
      "team": "Loyola Marymount",
@@ -14163,13 +14163,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 0
+     "live": 4
     },
     "time": "4:30 PM",
     "line": "UCI -1.5",
     "live": {
-     "detail": "18:44 1st",
-     "as_of": "4:33 PM"
+     "detail": "14:05 1st",
+     "as_of": "4:43 PM"
     }
    },
    {
@@ -14254,7 +14254,7 @@
      "record": "5-0"
     },
     "time": "5:00 PM",
-    "line": "BC -23.5"
+    "line": "BC -22.5"
    },
    {
     "id": "401922293",
@@ -15189,5 +15189,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "4:33 PM"
+ "scores_updated": "4:43 PM"
 }
