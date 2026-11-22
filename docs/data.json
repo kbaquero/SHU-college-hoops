@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 17:53 EST",
+ "updated": "2026-11-22 18:03 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14127,7 +14127,7 @@
      "opp_id": "2351",
      "seed": null,
      "record": "3-2",
-     "live": 48
+     "live": 54
     },
     "home": {
      "team": "Loyola Marymount",
@@ -14139,13 +14139,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 45
+     "live": 54
     },
     "time": "4:30 PM",
     "line": "UCI -1.5",
     "live": {
-     "detail": "11:40 2nd",
-     "as_of": "5:53 PM"
+     "detail": "6:57 2nd",
+     "as_of": "6:03 PM"
     }
    },
    {
@@ -14192,8 +14192,8 @@
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "0:00 1st",
-     "as_of": "5:53 PM"
+     "detail": "Halftime",
+     "as_of": "6:03 PM"
     }
    },
    {
@@ -14223,7 +14223,7 @@
      "opp_id": "103",
      "seed": null,
      "record": "1-6",
-     "live": 28
+     "live": 31
     },
     "home": {
      "team": "Boston College",
@@ -14235,13 +14235,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 38
+     "live": 41
     },
     "time": "5:00 PM",
     "line": "BC -22.5",
     "live": {
-     "detail": "1:29 1st",
-     "as_of": "5:53 PM"
+     "detail": "Halftime",
+     "as_of": "6:03 PM"
     }
    },
    {
@@ -15183,5 +15183,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "5:53 PM"
+ "scores_updated": "6:03 PM"
 }
