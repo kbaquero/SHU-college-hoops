@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 18:44 EST",
+ "updated": "2026-11-22 18:54 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14148,7 +14148,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14160,10 +14160,9 @@
      "owners": [],
      "id": "2397",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 57
+     "final": 67,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Lipscomb",
@@ -14172,23 +14171,18 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Milligan",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 92,
      "opp_final": null,
      "opp_id": "2397",
      "seed": null,
-     "record": "3-4",
-     "live": 84
+     "record": "4-4"
     },
     "time": "5:00 PM",
-    "line": "",
-    "live": {
-     "detail": "3:12 2nd",
-     "as_of": "6:44 PM"
-    }
+    "line": ""
    },
    {
     "id": "401909556",
@@ -14217,7 +14211,7 @@
      "opp_id": "103",
      "seed": null,
      "record": "1-6",
-     "live": 48
+     "live": 54
     },
     "home": {
      "team": "Boston College",
@@ -14229,13 +14223,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 61
+     "live": 67
     },
     "time": "5:00 PM",
     "line": "BC -22.5",
     "live": {
-     "detail": "6:54 2nd",
-     "as_of": "6:44 PM"
+     "detail": "4:42 2nd",
+     "as_of": "6:54 PM"
     }
    },
    {
@@ -14259,7 +14253,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 61
+     "live": 71
     },
     "home": {
      "team": "Samford",
@@ -14277,13 +14271,13 @@
      "opp_id": "2427",
      "seed": null,
      "record": "2-2",
-     "live": 67
+     "live": 71
     },
     "time": "5:00 PM",
     "line": "SAM -10.5",
     "live": {
-     "detail": "7:43 2nd",
-     "as_of": "6:44 PM"
+     "detail": "3:50 2nd",
+     "as_of": "6:54 PM"
     }
    },
    {
@@ -15177,5 +15171,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "6:44 PM"
+ "scores_updated": "6:54 PM"
 }
