@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 17:43 EST",
+ "updated": "2026-11-22 17:53 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13977,7 +13977,7 @@
     "tbd": false,
     "tv": "CW",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -13990,16 +13990,15 @@
       "Dennis S.",
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Texas St.",
      "pts": 0,
-     "final": null,
+     "final": 69,
      "opp_final": null,
      "opp_id": "326",
      "seed": null,
-     "record": "2-1",
-     "live": 61
+     "record": "2-2"
     },
     "home": {
      "team": "Texas St.",
@@ -14008,17 +14007,12 @@
      "owners": [],
      "id": "326",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "6-0",
-     "live": 87
+     "final": 95,
+     "won": true,
+     "record": "7-0"
     },
     "time": "3:30 PM",
-    "line": "TXST -2.5",
-    "live": {
-     "detail": "2:49 2nd",
-     "as_of": "5:43 PM"
-    }
+    "line": "TXST -2.5"
    },
    {
     "id": "401923323",
@@ -14133,7 +14127,7 @@
      "opp_id": "2351",
      "seed": null,
      "record": "3-2",
-     "live": 42
+     "live": 48
     },
     "home": {
      "team": "Loyola Marymount",
@@ -14145,13 +14139,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 42
+     "live": 45
     },
     "time": "4:30 PM",
     "line": "UCI -1.5",
     "live": {
-     "detail": "14:20 2nd",
-     "as_of": "5:43 PM"
+     "detail": "11:40 2nd",
+     "as_of": "5:53 PM"
     }
    },
    {
@@ -14175,7 +14169,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 25
+     "live": 28
     },
     "home": {
      "team": "Lipscomb",
@@ -14193,13 +14187,13 @@
      "opp_id": "2397",
      "seed": null,
      "record": "3-4",
-     "live": 37
+     "live": 43
     },
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "2:46 1st",
-     "as_of": "5:43 PM"
+     "detail": "0:00 1st",
+     "as_of": "5:53 PM"
     }
    },
    {
@@ -14229,7 +14223,7 @@
      "opp_id": "103",
      "seed": null,
      "record": "1-6",
-     "live": 25
+     "live": 28
     },
     "home": {
      "team": "Boston College",
@@ -14241,13 +14235,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 33
+     "live": 38
     },
     "time": "5:00 PM",
     "line": "BC -22.5",
     "live": {
-     "detail": "4:39 1st",
-     "as_of": "5:43 PM"
+     "detail": "1:29 1st",
+     "as_of": "5:53 PM"
     }
    },
    {
@@ -14271,7 +14265,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 36
+     "live": 40
     },
     "home": {
      "team": "Samford",
@@ -14289,13 +14283,13 @@
      "opp_id": "2427",
      "seed": null,
      "record": "2-2",
-     "live": 38
+     "live": 42
     },
     "time": "5:00 PM",
     "line": "SAM -10.5",
     "live": {
-     "detail": "2:45 1st",
-     "as_of": "5:43 PM"
+     "detail": "Halftime",
+     "as_of": "5:53 PM"
     }
    },
    {
@@ -15189,5 +15183,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "5:43 PM"
+ "scores_updated": "5:53 PM"
 }
