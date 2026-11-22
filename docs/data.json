@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 16:23 EST",
+ "updated": "2026-11-22 16:33 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13968,13 +13968,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 54
+     "live": 62
     },
     "time": "2:30 PM",
     "line": "NMSU -1.5",
     "live": {
-     "detail": "2:23 2nd",
-     "as_of": "4:23 PM"
+     "detail": "0:52 2nd",
+     "as_of": "4:33 PM"
     }
    },
    {
@@ -14005,7 +14005,7 @@
      "opp_id": "326",
      "seed": null,
      "record": "2-1",
-     "live": 20
+     "live": 27
     },
     "home": {
      "team": "Texas St.",
@@ -14017,13 +14017,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 38
+     "live": 50
     },
     "time": "3:30 PM",
     "line": "TXST -2.5",
     "live": {
-     "detail": "3:23 1st",
-     "as_of": "4:23 PM"
+     "detail": "0:00 1st",
+     "as_of": "4:33 PM"
     }
    },
    {
@@ -14120,8 +14120,8 @@
     "time": "3:30 PM",
     "line": "VT -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:23 PM"
+     "detail": "20:00 2nd",
+     "as_of": "4:33 PM"
     }
    },
    {
@@ -14150,7 +14150,8 @@
      "opp_final": null,
      "opp_id": "2351",
      "seed": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 0
     },
     "home": {
      "team": "Loyola Marymount",
@@ -14161,10 +14162,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-3"
+     "record": "3-3",
+     "live": 0
     },
     "time": "4:30 PM",
-    "line": "UCI -1.5"
+    "line": "UCI -1.5",
+    "live": {
+     "detail": "18:44 1st",
+     "as_of": "4:33 PM"
+    }
    },
    {
     "id": "401920708",
@@ -15183,5 +15189,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "4:23 PM"
+ "scores_updated": "4:33 PM"
 }
