@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 18:24 EST",
+ "updated": "2026-11-22 18:34 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14127,7 +14127,7 @@
      "opp_id": "2351",
      "seed": null,
      "record": "3-2",
-     "live": 64
+     "live": 68
     },
     "home": {
      "team": "Loyola Marymount",
@@ -14139,13 +14139,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 66
+     "live": 72
     },
     "time": "4:30 PM",
     "line": "UCI -1.5",
     "live": {
-     "detail": "0:36 2nd",
-     "as_of": "6:24 PM"
+     "detail": "0:06 2nd",
+     "as_of": "6:34 PM"
     }
    },
    {
@@ -14169,7 +14169,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 37
+     "live": 49
     },
     "home": {
      "team": "Lipscomb",
@@ -14187,13 +14187,13 @@
      "opp_id": "2397",
      "seed": null,
      "record": "3-4",
-     "live": 64
+     "live": 73
     },
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "11:54 2nd",
-     "as_of": "6:24 PM"
+     "detail": "7:55 2nd",
+     "as_of": "6:34 PM"
     }
    },
    {
@@ -14223,7 +14223,7 @@
      "opp_id": "103",
      "seed": null,
      "record": "1-6",
-     "live": 36
+     "live": 44
     },
     "home": {
      "team": "Boston College",
@@ -14235,13 +14235,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 53
+     "live": 57
     },
     "time": "5:00 PM",
     "line": "BC -22.5",
     "live": {
-     "detail": "15:58 2nd",
-     "as_of": "6:24 PM"
+     "detail": "11:41 2nd",
+     "as_of": "6:34 PM"
     }
    },
    {
@@ -14265,7 +14265,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 52
+     "live": 59
     },
     "home": {
      "team": "Samford",
@@ -14283,13 +14283,13 @@
      "opp_id": "2427",
      "seed": null,
      "record": "2-2",
-     "live": 53
+     "live": 60
     },
     "time": "5:00 PM",
     "line": "SAM -10.5",
     "live": {
-     "detail": "14:11 2nd",
-     "as_of": "6:24 PM"
+     "detail": "10:42 2nd",
+     "as_of": "6:34 PM"
     }
    },
    {
@@ -15183,5 +15183,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "6:24 PM"
+ "scores_updated": "6:34 PM"
 }
