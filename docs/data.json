@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 13:33 EST",
+ "updated": "2026-11-22 13:43 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13864,7 +13864,7 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 16
+     "live": 23
     },
     "home": {
      "team": "LIU",
@@ -13884,13 +13884,13 @@
      "opp_id": "2217",
      "seed": null,
      "record": "1-6",
-     "live": 15
+     "live": 25
     },
     "time": "1:00 PM",
     "line": "LIU -2.5",
     "live": {
-     "detail": "8:00 1st",
-     "as_of": "1:33 PM"
+     "detail": "3:12 1st",
+     "as_of": "1:43 PM"
     }
    },
    {
@@ -13932,13 +13932,13 @@
      "opp_id": "2130",
      "seed": null,
      "record": "3-2",
-     "live": 34
+     "live": 44
     },
     "time": "1:00 PM",
     "line": "MARQ -34.5",
     "live": {
-     "detail": "7:54 1st",
-     "as_of": "1:33 PM"
+     "detail": "3:47 1st",
+     "as_of": "1:43 PM"
     }
    },
    {
@@ -15171,5 +15171,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "1:33 PM"
+ "scores_updated": "1:43 PM"
 }
