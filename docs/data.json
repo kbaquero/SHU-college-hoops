@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 19:33 EST",
+ "updated": "2026-11-21 19:43 EST",
  "through": "Fri, Nov 20",
  "season": 2027,
  "standings": [
@@ -13814,7 +13814,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 48
+     "live": 54
     },
     "home": {
      "team": "Georgetown",
@@ -13832,13 +13832,13 @@
      "opp_id": "2154",
      "seed": null,
      "record": "5-0",
-     "live": 60
+     "live": 68
     },
     "time": "6:00 PM",
     "line": "GTWN -31.5",
     "live": {
-     "detail": "11:39 2nd",
-     "as_of": "7:33 PM"
+     "detail": "7:38 2nd",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -13868,7 +13868,7 @@
      "opp_id": "2450",
      "seed": null,
      "record": "4-1",
-     "live": 71
+     "live": 80
     },
     "home": {
      "team": "Norfolk St.",
@@ -13886,13 +13886,13 @@
      "opp_id": "350",
      "seed": null,
      "record": "2-4",
-     "live": 56
+     "live": 62
     },
     "time": "6:00 PM",
     "line": "UNCW -11.5",
     "live": {
-     "detail": "8:23 2nd",
-     "as_of": "7:33 PM"
+     "detail": "5:32 2nd",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -13926,7 +13926,7 @@
      "opp_id": "222",
      "seed": null,
      "record": "3-1",
-     "live": 24
+     "live": 25
     },
     "home": {
      "team": "Villanova",
@@ -13944,13 +13944,13 @@
      "opp_id": "130",
      "seed": null,
      "record": "3-2",
-     "live": 23
+     "live": 28
     },
     "time": "7:00 PM",
     "line": "MICH -3.5",
     "live": {
-     "detail": "6:00 1st",
-     "as_of": "7:33 PM"
+     "detail": "3:32 1st",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -13980,7 +13980,7 @@
      "opp_id": "2210",
      "seed": null,
      "record": "3-3",
-     "live": 21
+     "live": 28
     },
     "home": {
      "team": "Elon",
@@ -13992,13 +13992,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 30
+     "live": 36
     },
     "time": "7:00 PM",
     "line": "ELON -11.5",
     "live": {
-     "detail": "6:55 1st",
-     "as_of": "7:33 PM"
+     "detail": "2:46 1st",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -14022,7 +14022,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 33
+     "live": 37
     },
     "home": {
      "team": "Vermont",
@@ -14045,13 +14045,13 @@
      "opp_id": "225",
      "seed": null,
      "record": "2-3",
-     "live": 23
+     "live": 28
     },
     "time": "7:00 PM",
     "line": "UVM -4.5",
     "live": {
-     "detail": "5:44 1st",
-     "as_of": "7:33 PM"
+     "detail": "2:05 1st",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -14082,7 +14082,7 @@
      "opp_id": "2635",
      "seed": null,
      "record": "1-3",
-     "live": 0
+     "live": 3
     },
     "home": {
      "team": "Tennessee Tech",
@@ -14094,13 +14094,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 3
+     "live": 11
     },
     "time": "7:30 PM",
     "line": "TNTC -7.5",
     "live": {
-     "detail": "19:11 1st",
-     "as_of": "7:33 PM"
+     "detail": "15:33 1st",
+     "as_of": "7:43 PM"
     }
    },
    {
@@ -15200,5 +15200,5 @@
   "date": "2026-11-21",
   "id": "401921776"
  },
- "scores_updated": "7:33 PM"
+ "scores_updated": "7:43 PM"
 }
