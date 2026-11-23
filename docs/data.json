@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 20:44 EST",
+ "updated": "2026-11-22 20:54 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14274,7 +14274,7 @@
     "tbd": false,
     "tv": "B1G+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14286,10 +14286,9 @@
      "owners": [],
      "id": "48",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-2",
-     "live": 45
+     "final": 48,
+     "won": false,
+     "record": "4-3"
     },
     "home": {
      "team": "UCLA",
@@ -14301,23 +14300,18 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Delaware",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 85,
      "opp_final": null,
      "opp_id": "48",
      "seed": null,
-     "record": "5-0",
-     "live": 83
+     "record": "6-0"
     },
     "time": "7:00 PM",
-    "line": "UCLA -30.5",
-    "live": {
-     "detail": "2:23 2nd",
-     "as_of": "8:44 PM"
-    }
+    "line": "UCLA -30.5"
    },
    {
     "id": "401929595",
@@ -15171,5 +15165,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "8:44 PM"
+ "scores_updated": "8:54 PM"
 }
