@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 15:13 EST",
+ "updated": "2026-11-23 15:23 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14156,7 +14156,7 @@
     "tbd": false,
     "tv": "PTB Live",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14168,10 +14168,9 @@
      "owners": [],
      "id": "2429",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-2",
-     "live": 71
+     "final": 71,
+     "won": true,
+     "record": "4-2"
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -14180,23 +14179,18 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Charlotte",
      "pts": 0,
-     "final": null,
+     "final": 58,
      "opp_final": null,
      "opp_id": "2429",
      "seed": null,
-     "record": "2-4",
-     "live": 58
+     "record": "2-5"
     },
     "time": "1:30 PM",
-    "line": "CLT -6.5",
-    "live": {
-     "detail": "0:49 2nd",
-     "as_of": "3:13 PM"
-    }
+    "line": "CLT -6.5"
    },
    {
     "id": "401918076",
@@ -14219,7 +14213,7 @@
      "final": null,
      "won": null,
      "record": "4-0",
-     "live": 43
+     "live": 48
     },
     "home": {
      "team": "Clemson",
@@ -14237,13 +14231,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "4-1",
-     "live": 15
+     "live": 26
     },
     "time": "2:30 PM",
     "line": "MISS -5.5",
     "live": {
-     "detail": "4:00 1st",
-     "as_of": "3:13 PM"
+     "detail": "0:20 1st",
+     "as_of": "3:23 PM"
     }
    },
    {
@@ -15245,5 +15239,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "3:13 PM"
+ "scores_updated": "3:23 PM"
 }
