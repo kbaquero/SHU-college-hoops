@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 21:34 EST",
+ "updated": "2026-11-22 21:44 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14319,7 +14319,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14331,10 +14331,9 @@
      "owners": [],
      "id": "2381",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "",
-     "live": 72
+     "final": 78,
+     "won": false,
+     "record": ""
     },
     "home": {
      "team": "Saint Mary's",
@@ -14344,23 +14343,18 @@
       "Dennis S.",
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Menlo",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 94,
      "opp_final": null,
      "opp_id": "2381",
      "seed": null,
-     "record": "5-1",
-     "live": 88
+     "record": "6-1"
     },
     "time": "8:00 PM",
-    "line": "",
-    "live": {
-     "detail": "2:29 2nd",
-     "as_of": "9:34 PM"
-    }
+    "line": ""
    }
   ]
  },
@@ -15165,5 +15159,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "9:34 PM"
+ "scores_updated": "9:44 PM"
 }
