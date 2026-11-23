@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-22 21:44 EST",
+ "updated": "2026-11-22 21:47 EST",
+ "scores_updated": "9:47 PM",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -13875,11 +13876,11 @@
       "Drew & Bob D."
      ],
      "won": false,
-     "score": "",
+     "score": "71-74",
      "opp": "Fairfield",
      "pts": 0,
      "final": 71,
-     "opp_final": null,
+     "opp_final": 74,
      "opp_id": "2217",
      "seed": null,
      "record": "1-7"
@@ -13917,11 +13918,11 @@
       "Sean P."
      ],
      "won": true,
-     "score": "",
+     "score": "106-62",
      "opp": "Chicago St.",
      "pts": 1,
      "final": 106,
-     "opp_final": null,
+     "opp_final": 62,
      "opp_id": "2130",
      "seed": null,
      "record": "4-2"
@@ -13948,11 +13949,11 @@
       "Ben D."
      ],
      "won": true,
-     "score": "",
+     "score": "84-79",
      "opp": "New Mexico St.",
      "pts": 1,
      "final": 84,
-     "opp_final": null,
+     "opp_final": 79,
      "opp_id": "166",
      "seed": null,
      "record": "2-4"
@@ -13991,11 +13992,11 @@
       "Sean P."
      ],
      "won": false,
-     "score": "",
+     "score": "69-95",
      "opp": "Texas St.",
      "pts": 0,
      "final": 69,
-     "opp_final": null,
+     "opp_final": 95,
      "opp_id": "326",
      "seed": null,
      "record": "2-2"
@@ -14035,11 +14036,11 @@
       "Kevin B."
      ],
      "won": true,
-     "score": "",
+     "score": "78-75",
      "opp": "Albany",
      "pts": 1,
      "final": 78,
-     "opp_final": null,
+     "opp_final": 75,
      "opp_id": "399",
      "seed": null,
      "record": "3-5"
@@ -14068,7 +14069,7 @@
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
-    "event": "The Shriners Children's Charleston Classic",
+    "event": "Shriners Children's Charleston Classic",
     "away": {
      "team": "Virginia Tech",
      "pool": true,
@@ -14077,11 +14078,11 @@
       "Ben D."
      ],
      "won": false,
-     "score": "",
+     "score": "80-106",
      "opp": "Oklahoma St.",
      "pts": 0,
      "final": 80,
-     "opp_final": null,
+     "opp_final": 106,
      "opp_id": "197",
      "seed": null,
      "record": "6-1"
@@ -14112,23 +14113,6 @@
     "final_label": "Final",
     "event": "Acrisure Series",
     "away": {
-     "team": "UC Irvine",
-     "pool": true,
-     "home": false,
-     "owners": [
-      "Connor C. & Conor G."
-     ],
-     "won": false,
-     "score": "",
-     "opp": "Loyola Marymount",
-     "pts": 0,
-     "final": 68,
-     "opp_final": null,
-     "opp_id": "2351",
-     "seed": null,
-     "record": "3-3"
-    },
-    "home": {
      "team": "Loyola Marymount",
      "pool": false,
      "home": false,
@@ -14138,6 +14122,23 @@
      "final": 72,
      "won": true,
      "record": "4-3"
+    },
+    "home": {
+     "team": "UC Irvine",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Connor C. & Conor G."
+     ],
+     "won": false,
+     "score": "68-72",
+     "opp": "Loyola Marymount",
+     "pts": 0,
+     "final": 68,
+     "opp_final": 72,
+     "opp_id": "2351",
+     "seed": null,
+     "record": "3-3"
     },
     "time": "4:30 PM",
     "line": "UCI -1.5"
@@ -14172,11 +14173,11 @@
       "Ben D."
      ],
      "won": true,
-     "score": "",
+     "score": "92-67",
      "opp": "Milligan",
      "pts": 1,
      "final": 92,
-     "opp_final": null,
+     "opp_final": 67,
      "opp_id": "2397",
      "seed": null,
      "record": "4-4"
@@ -14203,11 +14204,11 @@
       "Mike L."
      ],
      "won": false,
-     "score": "",
+     "score": "59-79",
      "opp": "Boston College",
      "pts": 0,
      "final": 59,
-     "opp_final": null,
+     "opp_final": 79,
      "opp_id": "103",
      "seed": null,
      "record": "1-7"
@@ -14256,11 +14257,11 @@
       "Mike L."
      ],
      "won": true,
-     "score": "",
+     "score": "80-77",
      "opp": "UNC Asheville",
      "pts": 1,
      "final": 80,
-     "opp_final": null,
+     "opp_final": 77,
      "opp_id": "2427",
      "seed": null,
      "record": "3-2"
@@ -14301,11 +14302,11 @@
       "Mike L."
      ],
      "won": true,
-     "score": "",
+     "score": "85-48",
      "opp": "Delaware",
      "pts": 1,
      "final": 85,
-     "opp_final": null,
+     "opp_final": 48,
      "opp_id": "48",
      "seed": null,
      "record": "6-0"
@@ -14344,11 +14345,11 @@
       "Ben D."
      ],
      "won": true,
-     "score": "",
+     "score": "94-78",
      "opp": "Menlo",
      "pts": 1,
      "final": 94,
-     "opp_final": null,
+     "opp_final": 78,
      "opp_id": "2381",
      "seed": null,
      "record": "6-1"
@@ -15158,6 +15159,5 @@
  "gotd": {
   "date": "2026-11-22",
   "id": "401923323"
- },
- "scores_updated": "9:44 PM"
+ }
 }
