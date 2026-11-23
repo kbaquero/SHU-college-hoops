@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 19:04 EST",
+ "updated": "2026-11-22 19:14 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14190,7 +14190,7 @@
     "tbd": false,
     "tv": "ACC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14202,16 +14202,15 @@
      "owners": [
       "Mike L."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Boston College",
      "pts": 0,
-     "final": null,
+     "final": 59,
      "opp_final": null,
      "opp_id": "103",
      "seed": null,
-     "record": "1-6",
-     "live": 56
+     "record": "1-7"
     },
     "home": {
      "team": "Boston College",
@@ -14220,17 +14219,12 @@
      "owners": [],
      "id": "103",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-0",
-     "live": 71
+     "final": 79,
+     "won": true,
+     "record": "6-0"
     },
     "time": "5:00 PM",
-    "line": "BC -22.5",
-    "live": {
-     "detail": "2:19 2nd",
-     "as_of": "7:04 PM"
-    }
+    "line": "BC -22.5"
    },
    {
     "id": "401922293",
@@ -14238,7 +14232,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14250,10 +14244,9 @@
      "owners": [],
      "id": "2427",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "2-4",
-     "live": 75
+     "final": 77,
+     "won": false,
+     "record": "2-5"
     },
     "home": {
      "team": "Samford",
@@ -14262,23 +14255,18 @@
      "owners": [
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "UNC Asheville",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 80,
      "opp_final": null,
      "opp_id": "2427",
      "seed": null,
-     "record": "2-2",
-     "live": 75
+     "record": "3-2"
     },
     "time": "5:00 PM",
-    "line": "SAM -10.5",
-    "live": {
-     "detail": "0:33 2nd",
-     "as_of": "7:04 PM"
-    }
+    "line": "SAM -10.5"
    },
    {
     "id": "401920905",
@@ -14301,7 +14289,7 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 2
+     "live": 11
     },
     "home": {
      "team": "UCLA",
@@ -14322,13 +14310,13 @@
      "opp_id": "48",
      "seed": null,
      "record": "5-0",
-     "live": 6
+     "live": 15
     },
     "time": "7:00 PM",
     "line": "UCLA -30.5",
     "live": {
-     "detail": "17:46 1st",
-     "as_of": "7:04 PM"
+     "detail": "12:34 1st",
+     "as_of": "7:14 PM"
     }
    },
    {
@@ -15177,5 +15165,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "7:04 PM"
+ "scores_updated": "7:14 PM"
 }
