@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 18:54 EST",
+ "updated": "2026-11-22 19:04 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14211,7 +14211,7 @@
      "opp_id": "103",
      "seed": null,
      "record": "1-6",
-     "live": 54
+     "live": 56
     },
     "home": {
      "team": "Boston College",
@@ -14223,13 +14223,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 67
+     "live": 71
     },
     "time": "5:00 PM",
     "line": "BC -22.5",
     "live": {
-     "detail": "4:42 2nd",
-     "as_of": "6:54 PM"
+     "detail": "2:19 2nd",
+     "as_of": "7:04 PM"
     }
    },
    {
@@ -14253,7 +14253,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 71
+     "live": 75
     },
     "home": {
      "team": "Samford",
@@ -14271,13 +14271,13 @@
      "opp_id": "2427",
      "seed": null,
      "record": "2-2",
-     "live": 71
+     "live": 75
     },
     "time": "5:00 PM",
     "line": "SAM -10.5",
     "live": {
-     "detail": "3:50 2nd",
-     "as_of": "6:54 PM"
+     "detail": "0:33 2nd",
+     "as_of": "7:04 PM"
     }
    },
    {
@@ -14300,7 +14300,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "4-2"
+     "record": "4-2",
+     "live": 2
     },
     "home": {
      "team": "UCLA",
@@ -14320,10 +14321,15 @@
      "opp_final": null,
      "opp_id": "48",
      "seed": null,
-     "record": "5-0"
+     "record": "5-0",
+     "live": 6
     },
     "time": "7:00 PM",
-    "line": "UCLA -30.5"
+    "line": "UCLA -30.5",
+    "live": {
+     "detail": "17:46 1st",
+     "as_of": "7:04 PM"
+    }
    },
    {
     "id": "401929595",
@@ -15171,5 +15177,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "6:54 PM"
+ "scores_updated": "7:04 PM"
 }
