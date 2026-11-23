@@ -578,7 +578,7 @@ const PTS = __PTS__;
     const worth = g.kind === 'conf' ? PTS.conf : g.kind === 'nonconf' ? PTS.nonconf
       : g.kind === 'conf_tourney' ? PTS.ct + (/(?<!semi|quarter|semi-|quarter-)final\b|championship/i.test(g.event || '') ? PTS.ct_champ : 0)
       : g.kind === 'ncaa' ? (PTS.ncaa[g.round] || 2) : 1;
-    return {g, n, worth, sp: spread(g), stakes: (n + 3 * h2h) * worth * close(spread(g))};
+    return {g, n, worth, sp: spread(g), stakes: (n + 3 * h2h) * worth * ([g.away, g.home].some(x => x.d1 === false) ? 0.5 : close(spread(g)))};
   }).filter(x => x.n >= 2)
     .sort((a, b) => b.stakes - a.stakes || a.sp - b.sp || (a.g.start || '').localeCompare(b.g.start || ''));
   // the stored pick wins (it's locked once it tips off); scoring here is only a fallback

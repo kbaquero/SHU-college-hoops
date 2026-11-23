@@ -2,6 +2,7 @@
 
 stakes = (entries involved + 3 x head-to-head pairs) x points the game is worth x closeness
 Closeness slides smoothly with the spread: x1.5 at a pick'em down to x0.5 at 20 points.
+A game against a non-Division I opponent has no line and is a near-certain blowout: x0.5.
 Once the pick tips off it is locked for the day, so a later game's line move can't displace it.
 """
 import datetime as dt
@@ -44,7 +45,8 @@ def stakes(g):
     both = [e for e in a if e in h]
     n = len(set(a) | set(h))
     h2h = min(len(a) - len(both), len(h) - len(both))
-    return n, (n + 3 * h2h) * worth(g) * closeness(spread(g))
+    mismatch = any((g.get(k) or {}).get("d1") is False for k in ("away", "home"))
+    return n, (n + 3 * h2h) * worth(g) * (0.5 if mismatch else closeness(spread(g)))
 
 
 def started(g, now):

@@ -196,6 +196,11 @@ def run(get_schedule=None, get_team_list=None, now=None, docs=DOCS, get_lines=No
             owners.setdefault(t, []).append(e)
 
     data_today = todays_games(todays, owners, today)
+    d1_ids = {t["espn_id"] for t in load_teams() if t.get("espn_id")}
+    for g in data_today["games"]:   # flag non-Division I opponents: no line, near-certain blowouts (Game of the Day)
+        for sd in (g["away"], g["home"]):
+            if not sd.get("pool") and sd.get("id") and sd["id"] not in d1_ids:
+                sd["d1"] = False
     data_yesterday = todays_games(results, owners, (pool_day - dt.timedelta(days=1)).isoformat())
     # spreads (today) and opponents' records (both days) come from ESPN's daily scoreboard
     # spreads already captured by earlier runs (morning or evening); kept once ESPN drops a line at tip-off

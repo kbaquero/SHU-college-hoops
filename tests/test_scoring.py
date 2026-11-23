@@ -42,6 +42,13 @@ class GameOfTheDay(unittest.TestCase):
             _g("b", ["D", "E", "F"], ["G"], "Y -7.5")]}  # 4 entries + 1 h2h -> 7 x 1.125
         self.assertEqual(gotd.pick(day, None, dt.datetime(2026, 11, 15, 9, tzinfo=self.ET))["id"], "b")
 
+    def test_non_d1_opponent_is_a_mismatch(self):
+        howard = _g("h", ["A", "B", "C"], [])
+        howard["away"]["d1"] = False
+        day = {"date": "2026-11-15", "games": [howard, _g("b", ["D", "E", "F"], [], "X -12.5")]}
+        self.assertEqual(gotd.stakes(howard)[1], 1.5)
+        self.assertEqual(gotd.pick(day, None, dt.datetime(2026, 11, 15, 9, tzinfo=self.ET))["id"], "b")
+
     def test_locked_once_tipped(self):
         day = {"date": "2026-11-15", "games": [
             _g("early", ["A"], ["B"], "X -2", start="2026-11-15T12:00:00-05:00"),
