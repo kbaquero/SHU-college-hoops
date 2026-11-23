@@ -837,10 +837,20 @@ function renderMyCard(me) {
     });
     // name one of the picked entry's teams per quadrant: the most points up top, the fewest down below
     if (me) {
-      const mineP = placed.filter(mine), lab = (p, up) => {
-        if (up && p.cy - R - 7 < top + 26) up = false; else if (!up && p.cy + R + 15 > bot - 18) up = true;   // stay clear of the corner names
-        const right = p.cx > W * .62, ty = up ? p.cy - R - 7 : p.cy + R + 15;
-        return `<text class="vlab" x="${p.cx + (right ? -2 : 2)}" y="${ty}" text-anchor="${right ? 'end' : 'start'}">${esc(p.d.t)}</text>`;
+      // each label grows away from the $10 line so it stays in its own quadrant; a label that would still
+      // collide with one already placed (or a corner name) moves to the other side of its dot
+      const mineP = placed.filter(mine), boxes = [], cw = 7;   // ~px per character at 12px bold
+      const box = (p, up) => {
+        const len = p.d.t.length * cw, left = p.d.sal < mid ? p.cx - 2 - len >= P.l : p.cx + 2 + len > W - P.r;
+        const x0 = left ? p.cx - 2 - len : p.cx + 2, ty = up ? p.cy - R - 7 : p.cy + R + 15;
+        return {x0, x1: x0 + len, y0: ty - 12, y1: ty + 3, ty, tx: left ? p.cx - 2 : p.cx + 2, a: left ? 'end' : 'start'};
+      };
+      const hits = b => b.y0 < top + 18 || b.y1 > bot - 16 || boxes.some(o => b.x0 < o.x1 && o.x0 < b.x1 && b.y0 < o.y1 && o.y0 < b.y1);
+      const lab = (p, up) => {
+        let b = box(p, up);
+        if (hits(b)) { const o = box(p, !up); if (!hits(o)) b = o; }
+        boxes.push(b);
+        return `<text class="vlab" x="${b.tx}" y="${b.ty}" text-anchor="${b.a}">${esc(p.d.t)}</text>`;
       };
       const pick = (keep, better) => { const l = mineP.filter(p => keep(p.d)); return l.length ? l.reduce((a, b) => better(b.d, a.d) ? b : a) : null; };
       const most = (b, a) => b.pts > a.pts || (b.pts === a.pts && b.sal < a.sal), low = (b, a) => b.pts < a.pts || (b.pts === a.pts && b.sal > a.sal);
