@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 20:34 EST",
+ "updated": "2026-11-22 20:44 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14289,7 +14289,7 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 38
+     "live": 45
     },
     "home": {
      "team": "UCLA",
@@ -14310,13 +14310,13 @@
      "opp_id": "48",
      "seed": null,
      "record": "5-0",
-     "live": 69
+     "live": 83
     },
     "time": "7:00 PM",
     "line": "UCLA -30.5",
     "live": {
-     "detail": "7:38 2nd",
-     "as_of": "8:34 PM"
+     "detail": "2:23 2nd",
+     "as_of": "8:44 PM"
     }
    },
    {
@@ -14340,7 +14340,7 @@
      "final": null,
      "won": null,
      "record": "",
-     "live": 38
+     "live": 41
     },
     "home": {
      "team": "Saint Mary's",
@@ -14359,13 +14359,13 @@
      "opp_id": "2381",
      "seed": null,
      "record": "5-1",
-     "live": 39
+     "live": 43
     },
     "time": "8:00 PM",
     "line": "",
     "live": {
-     "detail": "2:15 1st",
-     "as_of": "8:34 PM"
+     "detail": "Halftime",
+     "as_of": "8:44 PM"
     }
    }
   ]
@@ -15171,5 +15171,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "8:34 PM"
+ "scores_updated": "8:44 PM"
 }
