@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 19:54 EST",
+ "updated": "2026-11-22 20:04 EST",
  "through": "Sat, Nov 21",
  "season": 2027,
  "standings": [
@@ -14339,7 +14339,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": ""
+     "record": "",
+     "live": 4
     },
     "home": {
      "team": "Saint Mary's",
@@ -14357,10 +14358,15 @@
      "opp_final": null,
      "opp_id": "2381",
      "seed": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 0
     },
     "time": "8:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "18:22 1st",
+     "as_of": "8:04 PM"
+    }
    }
   ]
  },
@@ -15165,5 +15171,5 @@
   "date": "2026-11-22",
   "id": "401923323"
  },
- "scores_updated": "7:54 PM"
+ "scores_updated": "8:04 PM"
 }
