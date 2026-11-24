@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 16:25 EST",
+ "updated": "2026-11-24 16:35 EST",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14544,7 +14544,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 54
+     "live": 60
     },
     "home": {
      "team": "BYU",
@@ -14564,13 +14564,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-0",
-     "live": 50
+     "live": 56
     },
     "time": "2:30 PM",
     "line": "MISS -2.5",
     "live": {
-     "detail": "7:49 2nd",
-     "as_of": "4:25 PM"
+     "detail": "5:18 2nd",
+     "as_of": "4:35 PM"
     }
    },
    {
@@ -14600,7 +14600,7 @@
      "opp_id": "120",
      "seed": null,
      "record": "5-0",
-     "live": 43
+     "live": 51
     },
     "home": {
      "team": "Maryland",
@@ -14618,13 +14618,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "3-2",
-     "live": 40
+     "live": 43
     },
     "time": "3:00 PM",
     "line": "TENN -2.5",
     "live": {
-     "detail": "15:27 2nd",
-     "as_of": "4:25 PM"
+     "detail": "12:31 2nd",
+     "as_of": "4:35 PM"
     }
    },
    {
@@ -14657,7 +14657,7 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-1",
-     "live": 45
+     "live": 47
     },
     "home": {
      "team": "TCU",
@@ -14669,13 +14669,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 50
+     "live": 53
     },
     "time": "3:00 PM",
     "line": "MIA -5.5",
     "live": {
-     "detail": "15:14 2nd",
-     "as_of": "4:25 PM"
+     "detail": "13:05 2nd",
+     "as_of": "4:35 PM"
     }
    },
    {
@@ -14699,7 +14699,8 @@
      "final": null,
      "won": null,
      "d1": false,
-     "record": ""
+     "record": "",
+     "live": null
     },
     "home": {
      "team": "Navy",
@@ -14716,10 +14717,15 @@
      "opp_final": null,
      "opp_id": "131640",
      "seed": null,
-     "record": "4-3"
+     "record": "4-3",
+     "live": 7
     },
     "time": "4:30 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "18:17 1st",
+     "as_of": "4:35 PM"
+    }
    },
    {
     "id": "401921710",
@@ -15208,7 +15214,7 @@
      "record": "2-3"
     },
     "time": "7:00 PM",
-    "line": "MRST -2.5"
+    "line": "MRST -3.5"
    },
    {
     "id": "401919829",
@@ -16602,5 +16608,5 @@
   "date": "2026-11-24",
   "id": "401920695"
  },
- "scores_updated": "4:25 PM"
+ "scores_updated": "4:35 PM"
 }
