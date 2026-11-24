@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 16:03 EST",
+ "updated": "2026-11-24 16:05 EST",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14544,7 +14544,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 43
+     "live": 45
     },
     "home": {
      "team": "BYU",
@@ -14564,13 +14564,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-0",
-     "live": 40
+     "live": 41
     },
     "time": "2:30 PM",
     "line": "MISS -2.5",
     "live": {
-     "detail": "15:20 2nd",
-     "as_of": "4:03 PM"
+     "detail": "14:04 2nd",
+     "as_of": "4:05 PM"
     }
    },
    {
@@ -14674,8 +14674,8 @@
     "time": "3:00 PM",
     "line": "MIA -5.5",
     "live": {
-     "detail": "0:00 1st",
-     "as_of": "4:03 PM"
+     "detail": "Halftime",
+     "as_of": "4:05 PM"
     }
    },
    {
@@ -16602,5 +16602,5 @@
   "date": "2026-11-24",
   "id": "401920695"
  },
- "scores_updated": "4:03 PM"
+ "scores_updated": "4:05 PM"
 }
