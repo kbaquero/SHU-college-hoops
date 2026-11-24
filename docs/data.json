@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 18:06 EST",
- "scores_updated": "6:06 PM",
+ "updated": "2026-11-24 18:16 EST",
+ "scores_updated": "6:16 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14667,7 +14667,7 @@
     "tbd": false,
     "tv": "ESPN+, Patriot League TV",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14679,11 +14679,10 @@
      "owners": [],
      "id": "124686",
      "seed": null,
-     "final": null,
-     "won": null,
+     "final": 46,
+     "won": false,
      "d1": false,
-     "record": "",
-     "live": 41
+     "record": ""
     },
     "home": {
      "team": "Navy",
@@ -14692,23 +14691,18 @@
      "owners": [
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Penn State Berks",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 97,
      "opp_final": null,
      "opp_id": "124686",
      "seed": null,
-     "record": "4-3",
-     "live": 95
+     "record": "5-3"
     },
     "time": "4:30 PM",
-    "line": "",
-    "live": {
-     "detail": "1:48 2nd",
-     "as_of": "6:06 PM"
-    }
+    "line": ""
    },
    {
     "id": "401921710",
@@ -14737,7 +14731,7 @@
      "opp_id": "12",
      "seed": null,
      "record": "5-1",
-     "live": 23
+     "live": 26
     },
     "home": {
      "team": "Arizona",
@@ -14755,13 +14749,13 @@
      "opp_id": "2507",
      "seed": null,
      "record": "5-1",
-     "live": 45
+     "live": 48
     },
     "time": "5:00 PM",
     "line": "ARIZ -7.5",
     "live": {
-     "detail": "1:29 1st",
-     "as_of": "6:06 PM"
+     "detail": "Halftime",
+     "as_of": "6:16 PM"
     }
    },
    {
@@ -14786,7 +14780,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 24
+     "live": 31
     },
     "home": {
      "team": "Wagner",
@@ -14804,13 +14798,13 @@
      "opp_id": "2071",
      "seed": null,
      "record": "1-5",
-     "live": 55
+     "live": 69
     },
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "13:40 2nd",
-     "as_of": "6:06 PM"
+     "detail": "9:25 2nd",
+     "as_of": "6:16 PM"
     }
    },
    {
@@ -14834,7 +14828,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 12
+     "live": 18
     },
     "home": {
      "team": "Michigan",
@@ -14856,13 +14850,13 @@
      "opp_id": "156",
      "seed": null,
      "record": "3-2",
-     "live": 11
+     "live": 22
     },
     "time": "5:30 PM",
     "line": "MICH -5.5",
     "live": {
-     "detail": "15:34 1st",
-     "as_of": "6:06 PM"
+     "detail": "11:46 1st",
+     "as_of": "6:16 PM"
     }
    },
    {
@@ -14892,7 +14886,7 @@
      "opp_id": "2747",
      "seed": null,
      "record": "3-3",
-     "live": 3
+     "live": 11
     },
     "home": {
      "team": "Wofford",
@@ -14910,13 +14904,13 @@
      "opp_id": "2511",
      "seed": null,
      "record": "4-3",
-     "live": 8
+     "live": 12
     },
     "time": "6:00 PM",
     "line": "QUC -1.5",
     "live": {
-     "detail": "17:23 1st",
-     "as_of": "6:06 PM"
+     "detail": "14:02 1st",
+     "as_of": "6:16 PM"
     }
    },
    {
