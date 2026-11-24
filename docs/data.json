@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 20:45 EST",
+ "updated": "2026-11-23 20:55 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14343,7 +14343,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 51
+     "live": 58
     },
     "home": {
      "team": "Howard",
@@ -14363,13 +14363,13 @@
      "opp_id": "128342",
      "seed": null,
      "record": "3-3",
-     "live": 67
+     "live": 81
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "10:08 2nd",
-     "as_of": "8:45 PM"
+     "detail": "6:50 2nd",
+     "as_of": "8:55 PM"
     }
    },
    {
@@ -14393,7 +14393,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 42
+     "live": 45
     },
     "home": {
      "team": "Iona",
@@ -14412,13 +14412,13 @@
      "opp_id": "161",
      "seed": null,
      "record": "3-4",
-     "live": 37
+     "live": 42
     },
     "time": "7:00 PM",
     "line": "IONA -9.5",
     "live": {
-     "detail": "3:45 2nd",
-     "as_of": "8:45 PM"
+     "detail": "0:20 2nd",
+     "as_of": "8:55 PM"
     }
    },
    {
@@ -14427,7 +14427,7 @@
     "tbd": false,
     "tv": "NEC Front Row",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14439,11 +14439,10 @@
      "owners": [],
      "id": "2365",
      "seed": null,
-     "final": null,
-     "won": null,
+     "final": 58,
+     "won": false,
      "d1": false,
-     "record": "",
-     "live": 58
+     "record": ""
     },
     "home": {
      "team": "Le Moyne",
@@ -14452,23 +14451,18 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Mansfield",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 68,
      "opp_final": null,
      "opp_id": "2365",
      "seed": null,
-     "record": "2-4",
-     "live": 68
+     "record": "3-4"
     },
     "time": "7:00 PM",
-    "line": "",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "8:45 PM"
-    }
+    "line": ""
    },
    {
     "id": "401913530",
@@ -14491,7 +14485,7 @@
      "final": null,
      "won": null,
      "record": "0-6",
-     "live": 49
+     "live": 53
     },
     "home": {
      "team": "Illinois",
@@ -14509,13 +14503,13 @@
      "opp_id": "2737",
      "seed": null,
      "record": "5-1",
-     "live": 56
+     "live": 62
     },
     "time": "8:00 PM",
     "line": "ILL -42.5",
     "live": {
-     "detail": "3:26 1st",
-     "as_of": "8:45 PM"
+     "detail": "Halftime",
+     "as_of": "8:55 PM"
     }
    },
    {
@@ -14557,13 +14551,13 @@
      "opp_id": "2405",
      "seed": null,
      "record": "4-1",
-     "live": 40
+     "live": 46
     },
     "time": "8:00 PM",
     "line": "UNC -18.5",
     "live": {
-     "detail": "4:42 1st",
-     "as_of": "8:45 PM"
+     "detail": "1:22 1st",
+     "as_of": "8:55 PM"
     }
    },
    {
@@ -14611,8 +14605,8 @@
     "time": "8:00 PM",
     "line": "",
     "live": {
-     "detail": "0:59 1st",
-     "as_of": "8:45 PM"
+     "detail": "Halftime",
+     "as_of": "8:55 PM"
     }
    },
    {
@@ -15269,5 +15263,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "8:45 PM"
+ "scores_updated": "8:55 PM"
 }
