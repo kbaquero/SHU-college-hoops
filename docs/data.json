@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 15:23 EST",
+ "updated": "2026-11-24 15:33 EST",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14508,7 +14508,7 @@
      "opp_id": "221",
      "seed": null,
      "record": "4-1",
-     "live": 47
+     "live": 54
     },
     "home": {
      "team": "Pittsburgh",
@@ -14520,13 +14520,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 61
+     "live": 65
     },
     "time": "1:30 PM",
     "line": "PITT -2.5",
     "live": {
-     "detail": "7:03 2nd",
-     "as_of": "3:23 PM"
+     "detail": "3:39 2nd",
+     "as_of": "3:33 PM"
     }
    },
    {
@@ -14550,7 +14550,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 23
+     "live": 26
     },
     "home": {
      "team": "BYU",
@@ -14575,8 +14575,8 @@
     "time": "2:30 PM",
     "line": "MISS -2.5",
     "live": {
-     "detail": "2:15 1st",
-     "as_of": "3:23 PM"
+     "detail": "Halftime",
+     "as_of": "3:33 PM"
     }
    },
    {
@@ -14606,7 +14606,7 @@
      "opp_id": "120",
      "seed": null,
      "record": "5-0",
-     "live": 14
+     "live": 21
     },
     "home": {
      "team": "Maryland",
@@ -14624,13 +14624,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "3-2",
-     "live": 16
+     "live": 23
     },
     "time": "3:00 PM",
     "line": "TENN -2.5",
     "live": {
-     "detail": "11:54 1st",
-     "as_of": "3:23 PM"
+     "detail": "7:19 1st",
+     "as_of": "3:33 PM"
     }
    },
    {
@@ -14663,7 +14663,7 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-1",
-     "live": 13
+     "live": 19
     },
     "home": {
      "team": "TCU",
@@ -14675,13 +14675,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 13
+     "live": 19
     },
     "time": "3:00 PM",
     "line": "MIA -5.5",
     "live": {
-     "detail": "12:00 1st",
-     "as_of": "3:23 PM"
+     "detail": "8:39 1st",
+     "as_of": "3:33 PM"
     }
    },
    {
@@ -16608,5 +16608,5 @@
   "date": "2026-11-24",
   "id": "401920695"
  },
- "scores_updated": "3:23 PM"
+ "scores_updated": "3:33 PM"
 }
