@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 16:51 EST",
- "scores_updated": "4:51 PM",
+ "updated": "2026-11-24 16:55 EST",
+ "scores_updated": "4:55 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14530,7 +14530,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14542,10 +14542,9 @@
      "owners": [],
      "id": "145",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-0",
-     "live": 73
+     "final": 73,
+     "won": true,
+     "record": "6-0"
     },
     "home": {
      "team": "BYU",
@@ -14556,23 +14555,18 @@
       "Marty C.",
       "Mike L."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Mississippi",
      "pts": 0,
-     "final": null,
+     "final": 63,
      "opp_final": null,
      "opp_id": "145",
      "seed": null,
-     "record": "6-0",
-     "live": 63
+     "record": "6-1"
     },
     "time": "2:30 PM",
-    "line": "MISS -2.5",
-    "live": {
-     "detail": "0:00 2nd",
-     "as_of": "4:51 PM"
-    }
+    "line": "MISS -2.5"
    },
    {
     "id": "401906853",
@@ -14619,13 +14613,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "3-2",
-     "live": 53
+     "live": 54
     },
     "time": "3:00 PM",
     "line": "TENN -2.5",
     "live": {
-     "detail": "7:22 2nd",
-     "as_of": "4:51 PM"
+     "detail": "5:59 2nd",
+     "as_of": "4:55 PM"
     }
    },
    {
@@ -14658,7 +14652,7 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-1",
-     "live": 54
+     "live": 56
     },
     "home": {
      "team": "TCU",
@@ -14670,13 +14664,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 61
+     "live": 64
     },
     "time": "3:00 PM",
     "line": "MIA -5.5",
     "live": {
-     "detail": "8:07 2nd",
-     "as_of": "4:51 PM"
+     "detail": "7:04 2nd",
+     "as_of": "4:55 PM"
     }
    },
    {
@@ -14701,7 +14695,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 6
+     "live": 8
     },
     "home": {
      "team": "Navy",
@@ -14719,13 +14713,13 @@
      "opp_id": "124686",
      "seed": null,
      "record": "4-3",
-     "live": 27
+     "live": 31
     },
     "time": "4:30 PM",
     "line": "",
     "live": {
-     "detail": "9:53 1st",
-     "as_of": "4:51 PM"
+     "detail": "7:03 1st",
+     "as_of": "4:55 PM"
     }
    },
    {
