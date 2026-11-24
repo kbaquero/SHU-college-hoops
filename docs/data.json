@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 01:50 EST",
+ "updated": "2026-11-24 02:00 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14671,7 +14671,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14683,10 +14683,9 @@
      "owners": [],
      "id": "36",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-1",
-     "live": 76
+     "final": 83,
+     "won": false,
+     "record": "4-2"
     },
     "home": {
      "team": "Arizona",
@@ -14695,23 +14694,18 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Colorado St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 96,
      "opp_final": null,
      "opp_id": "36",
      "seed": null,
-     "record": "4-1",
-     "live": 93
+     "record": "5-1"
     },
     "time": "11:30 PM",
-    "line": "ARIZ -17.5",
-    "live": {
-     "detail": "1:15 2nd",
-     "as_of": "1:50 AM"
-    }
+    "line": "ARIZ -17.5"
    }
   ]
  },
@@ -15239,5 +15233,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "1:50 AM"
+ "scores_updated": "2:00 AM"
 }
