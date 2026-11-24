@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 16:15 EST",
+ "updated": "2026-11-24 16:25 EST",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14544,7 +14544,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 49
+     "live": 54
     },
     "home": {
      "team": "BYU",
@@ -14564,13 +14564,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-0",
-     "live": 48
+     "live": 50
     },
     "time": "2:30 PM",
     "line": "MISS -2.5",
     "live": {
-     "detail": "11:25 2nd",
-     "as_of": "4:15 PM"
+     "detail": "7:49 2nd",
+     "as_of": "4:25 PM"
     }
    },
    {
@@ -14600,7 +14600,7 @@
      "opp_id": "120",
      "seed": null,
      "record": "5-0",
-     "live": 36
+     "live": 43
     },
     "home": {
      "team": "Maryland",
@@ -14618,13 +14618,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "3-2",
-     "live": 34
+     "live": 40
     },
     "time": "3:00 PM",
     "line": "TENN -2.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:03 PM"
+     "detail": "15:27 2nd",
+     "as_of": "4:25 PM"
     }
    },
    {
@@ -14657,7 +14657,7 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-1",
-     "live": 41
+     "live": 45
     },
     "home": {
      "team": "TCU",
@@ -14669,13 +14669,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 42
+     "live": 50
     },
     "time": "3:00 PM",
     "line": "MIA -5.5",
     "live": {
-     "detail": "17:49 2nd",
-     "as_of": "4:15 PM"
+     "detail": "15:14 2nd",
+     "as_of": "4:25 PM"
     }
    },
    {
@@ -16602,5 +16602,5 @@
   "date": "2026-11-24",
   "id": "401920695"
  },
- "scores_updated": "4:15 PM"
+ "scores_updated": "4:25 PM"
 }
