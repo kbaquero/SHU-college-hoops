@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 20:15 EST",
+ "updated": "2026-11-23 20:25 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14284,7 +14284,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14296,11 +14296,10 @@
      "owners": [],
      "id": "178",
      "seed": null,
-     "final": null,
-     "won": null,
+     "final": 47,
+     "won": false,
      "d1": false,
-     "record": "",
-     "live": 43
+     "record": ""
     },
     "home": {
      "team": "Buffalo",
@@ -14309,23 +14308,18 @@
      "owners": [
       "Marty C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "RIT",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 93,
      "opp_final": null,
      "opp_id": "178",
      "seed": null,
-     "record": "2-3",
-     "live": 88
+     "record": "3-3"
     },
     "time": "6:30 PM",
-    "line": "",
-    "live": {
-     "detail": "2:47 2nd",
-     "as_of": "8:15 PM"
-    }
+    "line": ""
    },
    {
     "id": "401932055",
@@ -14349,7 +14343,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 29
+     "live": 36
     },
     "home": {
      "team": "Howard",
@@ -14369,13 +14363,13 @@
      "opp_id": "128342",
      "seed": null,
      "record": "3-3",
-     "live": 36
+     "live": 43
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:15 PM"
+     "detail": "16:39 2nd",
+     "as_of": "8:25 PM"
     }
    },
    {
@@ -14399,7 +14393,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 35
+     "live": 37
     },
     "home": {
      "team": "Iona",
@@ -14418,13 +14412,13 @@
      "opp_id": "161",
      "seed": null,
      "record": "3-4",
-     "live": 26
+     "live": 30
     },
     "time": "7:00 PM",
     "line": "IONA -9.5",
     "live": {
-     "detail": "14:17 2nd",
-     "as_of": "8:15 PM"
+     "detail": "10:41 2nd",
+     "as_of": "8:25 PM"
     }
    },
    {
@@ -14449,7 +14443,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 33
+     "live": 40
     },
     "home": {
      "team": "Le Moyne",
@@ -14467,13 +14461,13 @@
      "opp_id": "2365",
      "seed": null,
      "record": "2-4",
-     "live": 41
+     "live": 54
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "13:16 2nd",
-     "as_of": "8:15 PM"
+     "detail": "9:20 2nd",
+     "as_of": "8:25 PM"
     }
    },
    {
@@ -14497,7 +14491,7 @@
      "final": null,
      "won": null,
      "record": "0-6",
-     "live": 17
+     "live": 31
     },
     "home": {
      "team": "Illinois",
@@ -14515,13 +14509,13 @@
      "opp_id": "2737",
      "seed": null,
      "record": "5-1",
-     "live": 19
+     "live": 38
     },
     "time": "8:00 PM",
     "line": "ILL -42.5",
     "live": {
-     "detail": "13:27 1st",
-     "as_of": "8:15 PM"
+     "detail": "9:37 1st",
+     "as_of": "8:25 PM"
     }
    },
    {
@@ -14545,7 +14539,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 2
+     "live": 9
     },
     "home": {
      "team": "North Carolina",
@@ -14563,13 +14557,13 @@
      "opp_id": "2405",
      "seed": null,
      "record": "4-1",
-     "live": 7
+     "live": 19
     },
     "time": "8:00 PM",
     "line": "UNC -18.5",
     "live": {
-     "detail": "16:24 1st",
-     "as_of": "8:15 PM"
+     "detail": "11:51 1st",
+     "as_of": "8:25 PM"
     }
    },
    {
@@ -14594,7 +14588,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 0
+     "live": 9
     },
     "home": {
      "team": "North Dakota St.",
@@ -14612,13 +14606,13 @@
      "opp_id": "2744",
      "seed": null,
      "record": "2-5",
-     "live": 14
+     "live": 21
     },
     "time": "8:00 PM",
     "line": "",
     "live": {
-     "detail": "14:09 1st",
-     "as_of": "8:15 PM"
+     "detail": "10:24 1st",
+     "as_of": "8:25 PM"
     }
    },
    {
@@ -15275,5 +15269,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "8:15 PM"
+ "scores_updated": "8:25 PM"
 }
