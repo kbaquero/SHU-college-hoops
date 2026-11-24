@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 17:06 EST",
- "scores_updated": "5:06 PM",
+ "updated": "2026-11-24 17:16 EST",
+ "scores_updated": "5:16 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14595,7 +14595,7 @@
      "opp_id": "120",
      "seed": null,
      "record": "5-0",
-     "live": 64
+     "live": 68
     },
     "home": {
      "team": "Maryland",
@@ -14613,13 +14613,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "3-2",
-     "live": 59
+     "live": 62
     },
     "time": "3:00 PM",
     "line": "TENN -2.5",
     "live": {
-     "detail": "2:46 2nd",
-     "as_of": "5:06 PM"
+     "detail": "0:55 2nd",
+     "as_of": "5:16 PM"
     }
    },
    {
@@ -14652,7 +14652,7 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-1",
-     "live": 60
+     "live": 64
     },
     "home": {
      "team": "TCU",
@@ -14664,13 +14664,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 67
+     "live": 69
     },
     "time": "3:00 PM",
     "line": "MIA -5.5",
     "live": {
-     "detail": "4:27 2nd",
-     "as_of": "5:06 PM"
+     "detail": "3:11 2nd",
+     "as_of": "5:16 PM"
     }
    },
    {
@@ -14695,7 +14695,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 15
+     "live": 21
     },
     "home": {
      "team": "Navy",
@@ -14713,13 +14713,13 @@
      "opp_id": "124686",
      "seed": null,
      "record": "4-3",
-     "live": 43
+     "live": 51
     },
     "time": "4:30 PM",
     "line": "",
     "live": {
-     "detail": "3:01 1st",
-     "as_of": "5:06 PM"
+     "detail": "Halftime",
+     "as_of": "5:16 PM"
     }
    },
    {
@@ -14798,7 +14798,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 4
+     "live": 7
     },
     "home": {
      "team": "Wagner",
@@ -14816,13 +14816,13 @@
      "opp_id": "2071",
      "seed": null,
      "record": "1-5",
-     "live": 7
+     "live": 24
     },
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "15:50 1st",
-     "as_of": "5:06 PM"
+     "detail": "10:54 1st",
+     "as_of": "5:16 PM"
     }
    },
    {
