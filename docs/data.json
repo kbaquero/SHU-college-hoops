@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-24 16:45 EST",
+ "updated": "2026-11-24 16:51 EST",
+ "scores_updated": "4:51 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14500,11 +14501,11 @@
       "Sean P."
      ],
      "won": false,
-     "score": "",
+     "score": "68-79",
      "opp": "Pittsburgh",
      "pts": 0,
      "final": 68,
-     "opp_final": null,
+     "opp_final": 79,
      "opp_id": "221",
      "seed": null,
      "record": "4-2"
@@ -14544,7 +14545,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 66
+     "live": 73
     },
     "home": {
      "team": "BYU",
@@ -14564,13 +14565,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-0",
-     "live": 58
+     "live": 63
     },
     "time": "2:30 PM",
     "line": "MISS -2.5",
     "live": {
-     "detail": "1:12 2nd",
-     "as_of": "4:45 PM"
+     "detail": "0:00 2nd",
+     "as_of": "4:51 PM"
     }
    },
    {
@@ -14600,7 +14601,7 @@
      "opp_id": "120",
      "seed": null,
      "record": "5-0",
-     "live": 56
+     "live": 58
     },
     "home": {
      "team": "Maryland",
@@ -14618,13 +14619,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "3-2",
-     "live": 47
+     "live": 53
     },
     "time": "3:00 PM",
     "line": "TENN -2.5",
     "live": {
-     "detail": "9:40 2nd",
-     "as_of": "4:45 PM"
+     "detail": "7:22 2nd",
+     "as_of": "4:51 PM"
     }
    },
    {
@@ -14657,7 +14658,7 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-1",
-     "live": 47
+     "live": 54
     },
     "home": {
      "team": "TCU",
@@ -14669,13 +14670,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 57
+     "live": 61
     },
     "time": "3:00 PM",
     "line": "MIA -5.5",
     "live": {
-     "detail": "10:57 2nd",
-     "as_of": "4:45 PM"
+     "detail": "8:07 2nd",
+     "as_of": "4:51 PM"
     }
    },
    {
@@ -14694,13 +14695,13 @@
      "pool": false,
      "home": false,
      "owners": [],
-     "id": "131640",
+     "id": "124686",
      "seed": null,
      "final": null,
      "won": null,
      "d1": false,
      "record": "",
-     "live": null
+     "live": 6
     },
     "home": {
      "team": "Navy",
@@ -14715,16 +14716,16 @@
      "pts": 0,
      "final": null,
      "opp_final": null,
-     "opp_id": "131640",
+     "opp_id": "124686",
      "seed": null,
      "record": "4-3",
-     "live": 20
+     "live": 27
     },
     "time": "4:30 PM",
     "line": "",
     "live": {
-     "detail": "13:14 1st",
-     "as_of": "4:45 PM"
+     "detail": "9:53 1st",
+     "as_of": "4:51 PM"
     }
    },
    {
@@ -14916,7 +14917,7 @@
     "id": "401925014",
     "start": "2026-11-24T18:30:00-05:00",
     "tbd": false,
-    "tv": "",
+    "tv": "Spiideo",
     "neutral": true,
     "completed": false,
     "kind": "nonconf",
@@ -15265,7 +15266,7 @@
     "id": "401920923",
     "start": "2026-11-24T19:00:00-05:00",
     "tbd": false,
-    "tv": "",
+    "tv": "MEAC Network",
     "neutral": false,
     "completed": false,
     "kind": "nonconf",
@@ -16607,6 +16608,5 @@
  "gotd": {
   "date": "2026-11-24",
   "id": "401920695"
- },
- "scores_updated": "4:45 PM"
+ }
 }
