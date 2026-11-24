@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 19:45 EST",
+ "updated": "2026-11-23 19:55 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14300,7 +14300,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 27
+     "live": 34
     },
     "home": {
      "team": "Buffalo",
@@ -14318,13 +14318,13 @@
      "opp_id": "178",
      "seed": null,
      "record": "2-3",
-     "live": 59
+     "live": 73
     },
     "time": "6:30 PM",
     "line": "",
     "live": {
-     "detail": "15:20 2nd",
-     "as_of": "7:45 PM"
+     "detail": "9:57 2nd",
+     "as_of": "7:55 PM"
     }
    },
    {
@@ -14349,7 +14349,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 17
+     "live": 21
     },
     "home": {
      "team": "Howard",
@@ -14369,13 +14369,13 @@
      "opp_id": "128342",
      "seed": null,
      "record": "3-3",
-     "live": 27
+     "live": 31
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "6:10 1st",
-     "as_of": "7:45 PM"
+     "detail": "3:55 1st",
+     "as_of": "7:55 PM"
     }
    },
    {
@@ -14472,8 +14472,8 @@
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "1:16 1st",
-     "as_of": "7:45 PM"
+     "detail": "Halftime",
+     "as_of": "7:55 PM"
     }
    },
    {
@@ -15257,5 +15257,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "7:45 PM"
+ "scores_updated": "7:55 PM"
 }
