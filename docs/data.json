@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 22:50 EST",
+ "updated": "2026-11-23 23:00 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14600,7 +14600,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 57
+     "live": 60
     },
     "home": {
      "team": "Providence",
@@ -14623,8 +14623,8 @@
     "time": "9:00 PM",
     "line": "PROV -2.5",
     "live": {
-     "detail": "4:15 2nd",
-     "as_of": "10:50 PM"
+     "detail": "2:05 2nd",
+     "as_of": "11:00 PM"
     }
    },
    {
@@ -15245,5 +15245,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "10:50 PM"
+ "scores_updated": "11:00 PM"
 }
