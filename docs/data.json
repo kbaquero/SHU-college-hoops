@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 14:13 EST",
+ "updated": "2026-11-24 14:23 EST",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14508,7 +14508,7 @@
      "opp_id": "221",
      "seed": null,
      "record": "4-1",
-     "live": 13
+     "live": 21
     },
     "home": {
      "team": "Pittsburgh",
@@ -14520,13 +14520,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 25
+     "live": 31
     },
     "time": "1:30 PM",
     "line": "PITT -2.5",
     "live": {
-     "detail": "5:34 1st",
-     "as_of": "2:13 PM"
+     "detail": "1:44 1st",
+     "as_of": "2:23 PM"
     }
    },
    {
@@ -16590,5 +16590,5 @@
   "date": "2026-11-24",
   "id": "401920695"
  },
- "scores_updated": "2:13 PM"
+ "scores_updated": "2:23 PM"
 }
