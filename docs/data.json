@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 17:16 EST",
- "scores_updated": "5:16 PM",
+ "updated": "2026-11-24 17:26 EST",
+ "scores_updated": "5:26 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14574,7 +14574,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14586,16 +14586,15 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Maryland",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 72,
      "opp_final": null,
      "opp_id": "120",
      "seed": null,
-     "record": "5-0",
-     "live": 68
+     "record": "6-0"
     },
     "home": {
      "team": "Maryland",
@@ -14604,23 +14603,18 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Tennessee",
      "pts": 0,
-     "final": null,
+     "final": 64,
      "opp_final": null,
      "opp_id": "2633",
      "seed": null,
-     "record": "3-2",
-     "live": 62
+     "record": "3-3"
     },
     "time": "3:00 PM",
-    "line": "TENN -2.5",
-    "live": {
-     "detail": "0:55 2nd",
-     "as_of": "5:16 PM"
-    }
+    "line": "TENN -2.5"
    },
    {
     "id": "401915941",
@@ -14652,7 +14646,7 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-1",
-     "live": 64
+     "live": 69
     },
     "home": {
      "team": "TCU",
@@ -14664,13 +14658,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 69
+     "live": 82
     },
     "time": "3:00 PM",
     "line": "MIA -5.5",
     "live": {
-     "detail": "3:11 2nd",
-     "as_of": "5:16 PM"
+     "detail": "0:31 2nd",
+     "as_of": "5:26 PM"
     }
    },
    {
@@ -14749,7 +14743,7 @@
      "opp_id": "12",
      "seed": null,
      "record": "5-1",
-     "live": 0
+     "live": 2
     },
     "home": {
      "team": "Arizona",
@@ -14767,13 +14761,13 @@
      "opp_id": "2507",
      "seed": null,
      "record": "5-1",
-     "live": 0
+     "live": 9
     },
     "time": "5:00 PM",
     "line": "ARIZ -7.5",
     "live": {
-     "detail": "Delayed",
-     "as_of": "5:06 PM"
+     "detail": "17:09 1st",
+     "as_of": "5:26 PM"
     }
    },
    {
@@ -14798,7 +14792,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 7
+     "live": 9
     },
     "home": {
      "team": "Wagner",
@@ -14816,13 +14810,13 @@
      "opp_id": "2071",
      "seed": null,
      "record": "1-5",
-     "live": 24
+     "live": 32
     },
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "10:54 1st",
-     "as_of": "5:16 PM"
+     "detail": "5:52 1st",
+     "as_of": "5:26 PM"
     }
    },
    {
