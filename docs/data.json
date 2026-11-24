@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 21:15 EST",
+ "updated": "2026-11-23 21:25 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14327,7 +14327,7 @@
     "tbd": false,
     "tv": "",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14339,11 +14339,10 @@
      "owners": [],
      "id": "128342",
      "seed": null,
-     "final": null,
-     "won": null,
+     "final": 73,
+     "won": false,
      "d1": false,
-     "record": "",
-     "live": 73
+     "record": ""
     },
     "home": {
      "team": "Howard",
@@ -14354,23 +14353,18 @@
       "Sean P.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Notre Dame (MD)",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 101,
      "opp_final": null,
      "opp_id": "128342",
      "seed": null,
-     "record": "3-3",
-     "live": 101
+     "record": "4-3"
     },
     "time": "7:00 PM",
-    "line": "",
-    "live": {
-     "detail": "0:00 2nd",
-     "as_of": "9:15 PM"
-    }
+    "line": ""
    },
    {
     "id": "401919761",
@@ -14479,7 +14473,7 @@
      "final": null,
      "won": null,
      "record": "0-6",
-     "live": 58
+     "live": 60
     },
     "home": {
      "team": "Illinois",
@@ -14497,13 +14491,13 @@
      "opp_id": "2737",
      "seed": null,
      "record": "5-1",
-     "live": 68
+     "live": 76
     },
     "time": "8:00 PM",
     "line": "ILL -42.5",
     "live": {
-     "detail": "18:00 2nd",
-     "as_of": "9:15 PM"
+     "detail": "15:35 2nd",
+     "as_of": "9:25 PM"
     }
    },
    {
@@ -14527,7 +14521,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 17
+     "live": 21
     },
     "home": {
      "team": "North Carolina",
@@ -14545,13 +14539,13 @@
      "opp_id": "2405",
      "seed": null,
      "record": "4-1",
-     "live": 53
+     "live": 56
     },
     "time": "8:00 PM",
     "line": "UNC -18.5",
     "live": {
-     "detail": "19:08 2nd",
-     "as_of": "9:15 PM"
+     "detail": "15:24 2nd",
+     "as_of": "9:25 PM"
     }
    },
    {
@@ -14576,7 +14570,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 31
+     "live": 35
     },
     "home": {
      "team": "North Dakota St.",
@@ -14594,13 +14588,13 @@
      "opp_id": "2744",
      "seed": null,
      "record": "2-5",
-     "live": 55
+     "live": 58
     },
     "time": "8:00 PM",
     "line": "",
     "live": {
-     "detail": "14:42 2nd",
-     "as_of": "9:15 PM"
+     "detail": "11:26 2nd",
+     "as_of": "9:25 PM"
     }
    },
    {
@@ -14624,7 +14618,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 11
+     "live": 16
     },
     "home": {
      "team": "Providence",
@@ -14642,13 +14636,13 @@
      "opp_id": "2670",
      "seed": null,
      "record": "4-1",
-     "live": 16
+     "live": 23
     },
     "time": "9:00 PM",
     "line": "PROV -2.5",
     "live": {
-     "detail": "13:55 1st",
-     "as_of": "9:15 PM"
+     "detail": "9:59 1st",
+     "as_of": "9:25 PM"
     }
    },
    {
@@ -15263,5 +15257,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "9:15 PM"
+ "scores_updated": "9:25 PM"
 }
