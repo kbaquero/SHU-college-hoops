@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 18:46 EST",
- "scores_updated": "6:46 PM",
+ "updated": "2026-11-24 18:56 EST",
+ "scores_updated": "6:56 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14731,7 +14731,7 @@
      "opp_id": "12",
      "seed": null,
      "record": "5-1",
-     "live": 44
+     "live": 52
     },
     "home": {
      "team": "Arizona",
@@ -14749,13 +14749,13 @@
      "opp_id": "2507",
      "seed": null,
      "record": "5-1",
-     "live": 62
+     "live": 72
     },
     "time": "5:00 PM",
     "line": "ARIZ -7.5",
     "live": {
-     "detail": "11:46 2nd",
-     "as_of": "6:46 PM"
+     "detail": "8:24 2nd",
+     "as_of": "6:56 PM"
     }
    },
    {
@@ -14822,7 +14822,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 54
+     "live": 59
     },
     "home": {
      "team": "Michigan",
@@ -14844,13 +14844,13 @@
      "opp_id": "156",
      "seed": null,
      "record": "3-2",
-     "live": 33
+     "live": 38
     },
     "time": "5:30 PM",
     "line": "MICH -5.5",
     "live": {
-     "detail": "2:16 1st",
-     "as_of": "6:46 PM"
+     "detail": "Halftime",
+     "as_of": "6:56 PM"
     }
    },
    {
@@ -14903,8 +14903,8 @@
     "time": "6:00 PM",
     "line": "QUC -1.5",
     "live": {
-     "detail": "0:40 1st",
-     "as_of": "6:46 PM"
+     "detail": "Halftime",
+     "as_of": "6:56 PM"
     }
    },
    {
@@ -14934,7 +14934,7 @@
      "opp_id": "2320",
      "seed": null,
      "record": "2-4",
-     "live": 5
+     "live": 21
     },
     "home": {
      "team": "Lamar",
@@ -14946,13 +14946,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 10
+     "live": 20
     },
     "time": "6:30 PM",
     "line": "LAM -2.5",
     "live": {
-     "detail": "17:16 1st",
-     "as_of": "6:46 PM"
+     "detail": "12:47 1st",
+     "as_of": "6:56 PM"
     }
    },
    {
@@ -14997,7 +14997,7 @@
      "record": "6-1"
     },
     "time": "7:00 PM",
-    "line": "FLA -34.5"
+    "line": "FLA -35.5"
    },
    {
     "id": "401916291",
@@ -15129,7 +15129,7 @@
      "record": "4-2"
     },
     "time": "7:00 PM",
-    "line": "JMU -13.5"
+    "line": "JMU -12.5"
    },
    {
     "id": "401911279",
@@ -15171,7 +15171,7 @@
      "record": "4-2"
     },
     "time": "7:00 PM",
-    "line": "LEH -8.5"
+    "line": "LEH -9.5"
    },
    {
     "id": "401923271",
@@ -15388,7 +15388,7 @@
      "record": "5-1"
     },
     "time": "7:00 PM",
-    "line": "GT -10.5"
+    "line": "GT -9.5"
    },
    {
     "id": "401920889",
@@ -15484,7 +15484,7 @@
      "record": "4-2"
     },
     "time": "7:00 PM",
-    "line": "SIE -3.5"
+    "line": "SIE -4.5"
    },
    {
     "id": "401916319",
