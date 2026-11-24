@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 22:36 EST",
+ "updated": "2026-11-23 22:46 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14600,7 +14600,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 50
+     "live": 54
     },
     "home": {
      "team": "Providence",
@@ -14618,13 +14618,13 @@
      "opp_id": "2670",
      "seed": null,
      "record": "4-1",
-     "live": 46
+     "live": 54
     },
     "time": "9:00 PM",
     "line": "PROV -2.5",
     "live": {
-     "detail": "10:10 2nd",
-     "as_of": "10:36 PM"
+     "detail": "6:07 2nd",
+     "as_of": "10:46 PM"
     }
    },
    {
@@ -14656,7 +14656,7 @@
      "opp_id": "25",
      "seed": null,
      "record": "2-4",
-     "live": 21
+     "live": 25
     },
     "home": {
      "team": "California",
@@ -14668,13 +14668,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 45
+     "live": 53
     },
     "time": "10:00 PM",
     "line": "CAL -18.5",
     "live": {
-     "detail": "4:21 1st",
-     "as_of": "10:36 PM"
+     "detail": "Halftime",
+     "as_of": "10:46 PM"
     }
    },
    {
@@ -15245,5 +15245,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "10:36 PM"
+ "scores_updated": "10:46 PM"
 }
