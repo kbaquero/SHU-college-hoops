@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 17:26 EST",
- "scores_updated": "5:26 PM",
+ "updated": "2026-11-24 17:36 EST",
+ "scores_updated": "5:36 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14622,7 +14622,7 @@
     "tbd": false,
     "tv": "ESPNU",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14637,16 +14637,15 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "TCU",
      "pts": 0,
-     "final": null,
+     "final": 71,
      "opp_final": null,
      "opp_id": "2628",
      "seed": null,
-     "record": "5-1",
-     "live": 69
+     "record": "5-2"
     },
     "home": {
      "team": "TCU",
@@ -14655,17 +14654,12 @@
      "owners": [],
      "id": "2628",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-1",
-     "live": 82
+     "final": 84,
+     "won": true,
+     "record": "5-1"
     },
     "time": "3:00 PM",
-    "line": "MIA -5.5",
-    "live": {
-     "detail": "0:31 2nd",
-     "as_of": "5:26 PM"
-    }
+    "line": "MIA -5.5"
    },
    {
     "id": "401921223",
@@ -14689,7 +14683,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 21
+     "live": 24
     },
     "home": {
      "team": "Navy",
@@ -14707,13 +14701,13 @@
      "opp_id": "124686",
      "seed": null,
      "record": "4-3",
-     "live": 51
+     "live": 63
     },
     "time": "4:30 PM",
     "line": "",
     "live": {
-     "detail": "Halftime",
-     "as_of": "5:16 PM"
+     "detail": "16:09 2nd",
+     "as_of": "5:36 PM"
     }
    },
    {
@@ -14743,7 +14737,7 @@
      "opp_id": "12",
      "seed": null,
      "record": "5-1",
-     "live": 2
+     "live": 10
     },
     "home": {
      "team": "Arizona",
@@ -14761,13 +14755,13 @@
      "opp_id": "2507",
      "seed": null,
      "record": "5-1",
-     "live": 9
+     "live": 18
     },
     "time": "5:00 PM",
     "line": "ARIZ -7.5",
     "live": {
-     "detail": "17:09 1st",
-     "as_of": "5:26 PM"
+     "detail": "12:02 1st",
+     "as_of": "5:36 PM"
     }
    },
    {
@@ -14792,7 +14786,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 9
+     "live": 12
     },
     "home": {
      "team": "Wagner",
@@ -14810,13 +14804,13 @@
      "opp_id": "2071",
      "seed": null,
      "record": "1-5",
-     "live": 32
+     "live": 42
     },
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "5:52 1st",
-     "as_of": "5:26 PM"
+     "detail": "1:05 1st",
+     "as_of": "5:36 PM"
     }
    },
    {
@@ -14839,7 +14833,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 0
     },
     "home": {
      "team": "Michigan",
@@ -14860,10 +14855,15 @@
      "opp_final": null,
      "opp_id": "156",
      "seed": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 0
     },
     "time": "5:30 PM",
-    "line": "MICH -5.5"
+    "line": "MICH -5.5",
+    "live": {
+     "detail": "Delayed",
+     "as_of": "5:36 PM"
+    }
    },
    {
     "id": "401922231",
@@ -15215,7 +15215,7 @@
      "record": "2-3"
     },
     "time": "7:00 PM",
-    "line": "MRST -3.5"
+    "line": "MRST -2.5"
    },
    {
     "id": "401919829",
