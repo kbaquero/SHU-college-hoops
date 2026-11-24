@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 22:06 EST",
+ "updated": "2026-11-23 22:16 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14458,7 +14458,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14470,10 +14470,9 @@
      "owners": [],
      "id": "2737",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "0-6",
-     "live": 83
+     "final": 83,
+     "won": false,
+     "record": "0-7"
     },
     "home": {
      "team": "Illinois",
@@ -14482,23 +14481,18 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Winthrop",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 133,
      "opp_final": null,
      "opp_id": "2737",
      "seed": null,
-     "record": "5-1",
-     "live": 133
+     "record": "6-1"
     },
     "time": "8:00 PM",
-    "line": "ILL -42.5",
-    "live": {
-     "detail": "0:17 2nd",
-     "as_of": "10:06 PM"
-    }
+    "line": "ILL -42.5"
    },
    {
     "id": "401913102",
@@ -14506,7 +14500,7 @@
     "tbd": false,
     "tv": "ACC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14518,10 +14512,9 @@
      "owners": [],
      "id": "2405",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "1-4",
-     "live": 45
+     "final": 45,
+     "won": false,
+     "record": "1-5"
     },
     "home": {
      "team": "North Carolina",
@@ -14530,23 +14523,18 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Monmouth",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 85,
      "opp_final": null,
      "opp_id": "2405",
      "seed": null,
-     "record": "4-1",
-     "live": 85
+     "record": "5-1"
     },
     "time": "8:00 PM",
-    "line": "UNC -18.5",
-    "live": {
-     "detail": "0:09 2nd",
-     "as_of": "10:06 PM"
-    }
+    "line": "UNC -18.5"
    },
    {
     "id": "401929392",
@@ -14612,7 +14600,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 35
+     "live": 38
     },
     "home": {
      "team": "Providence",
@@ -14630,13 +14618,13 @@
      "opp_id": "2670",
      "seed": null,
      "record": "4-1",
-     "live": 40
+     "live": 42
     },
     "time": "9:00 PM",
     "line": "PROV -2.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:55 PM"
+     "detail": "16:30 2nd",
+     "as_of": "10:16 PM"
     }
    },
    {
@@ -14668,7 +14656,7 @@
      "opp_id": "25",
      "seed": null,
      "record": "2-4",
-     "live": 2
+     "live": 10
     },
     "home": {
      "team": "California",
@@ -14680,13 +14668,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 9
+     "live": 16
     },
     "time": "10:00 PM",
     "line": "CAL -18.5",
     "live": {
-     "detail": "17:09 1st",
-     "as_of": "10:06 PM"
+     "detail": "12:24 1st",
+     "as_of": "10:16 PM"
     }
    },
    {
@@ -15257,5 +15245,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "10:06 PM"
+ "scores_updated": "10:16 PM"
 }
