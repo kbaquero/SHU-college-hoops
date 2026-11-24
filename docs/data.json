@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 21:45 EST",
+ "updated": "2026-11-23 21:55 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14473,7 +14473,7 @@
      "final": null,
      "won": null,
      "record": "0-6",
-     "live": 68
+     "live": 74
     },
     "home": {
      "team": "Illinois",
@@ -14491,13 +14491,13 @@
      "opp_id": "2737",
      "seed": null,
      "record": "5-1",
-     "live": 104
+     "live": 119
     },
     "time": "8:00 PM",
     "line": "ILL -42.5",
     "live": {
-     "detail": "7:49 2nd",
-     "as_of": "9:45 PM"
+     "detail": "3:54 2nd",
+     "as_of": "9:55 PM"
     }
    },
    {
@@ -14521,7 +14521,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 37
+     "live": 43
     },
     "home": {
      "team": "North Carolina",
@@ -14539,13 +14539,13 @@
      "opp_id": "2405",
      "seed": null,
      "record": "4-1",
-     "live": 73
+     "live": 77
     },
     "time": "8:00 PM",
     "line": "UNC -18.5",
     "live": {
-     "detail": "7:11 2nd",
-     "as_of": "9:45 PM"
+     "detail": "3:50 2nd",
+     "as_of": "9:55 PM"
     }
    },
    {
@@ -14554,7 +14554,7 @@
     "tbd": false,
     "tv": "WDAY, Midco Sports Plus",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14566,11 +14566,10 @@
      "owners": [],
      "id": "2744",
      "seed": null,
-     "final": null,
-     "won": null,
+     "final": 49,
+     "won": false,
      "d1": false,
-     "record": "",
-     "live": 47
+     "record": ""
     },
     "home": {
      "team": "North Dakota St.",
@@ -14579,23 +14578,18 @@
      "owners": [
       "Jason H."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Wisconsin Stout",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 84,
      "opp_final": null,
      "opp_id": "2744",
      "seed": null,
-     "record": "2-5",
-     "live": 80
+     "record": "3-5"
     },
     "time": "8:00 PM",
-    "line": "",
-    "live": {
-     "detail": "2:48 2nd",
-     "as_of": "9:45 PM"
-    }
+    "line": ""
    },
    {
     "id": "401909536",
@@ -14618,7 +14612,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 29
+     "live": 35
     },
     "home": {
      "team": "Providence",
@@ -14636,13 +14630,13 @@
      "opp_id": "2670",
      "seed": null,
      "record": "4-1",
-     "live": 35
+     "live": 40
     },
     "time": "9:00 PM",
     "line": "PROV -2.5",
     "live": {
-     "detail": "2:47 1st",
-     "as_of": "9:45 PM"
+     "detail": "Halftime",
+     "as_of": "9:55 PM"
     }
    },
    {
@@ -15257,5 +15251,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "9:45 PM"
+ "scores_updated": "9:55 PM"
 }
