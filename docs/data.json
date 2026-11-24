@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 18:16 EST",
- "scores_updated": "6:16 PM",
+ "updated": "2026-11-24 18:26 EST",
+ "scores_updated": "6:26 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14780,7 +14780,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 31
+     "live": 36
     },
     "home": {
      "team": "Wagner",
@@ -14798,13 +14798,13 @@
      "opp_id": "2071",
      "seed": null,
      "record": "1-5",
-     "live": 69
+     "live": 83
     },
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "9:25 2nd",
-     "as_of": "6:16 PM"
+     "detail": "5:02 2nd",
+     "as_of": "6:26 PM"
     }
    },
    {
@@ -14828,7 +14828,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 18
+     "live": 29
     },
     "home": {
      "team": "Michigan",
@@ -14850,13 +14850,13 @@
      "opp_id": "156",
      "seed": null,
      "record": "3-2",
-     "live": 22
+     "live": 24
     },
     "time": "5:30 PM",
     "line": "MICH -5.5",
     "live": {
-     "detail": "11:46 1st",
-     "as_of": "6:16 PM"
+     "detail": "8:38 1st",
+     "as_of": "6:26 PM"
     }
    },
    {
@@ -14886,7 +14886,7 @@
      "opp_id": "2747",
      "seed": null,
      "record": "3-3",
-     "live": 11
+     "live": 19
     },
     "home": {
      "team": "Wofford",
@@ -14904,13 +14904,13 @@
      "opp_id": "2511",
      "seed": null,
      "record": "4-3",
-     "live": 12
+     "live": 23
     },
     "time": "6:00 PM",
     "line": "QUC -1.5",
     "live": {
-     "detail": "14:02 1st",
-     "as_of": "6:16 PM"
+     "detail": "8:26 1st",
+     "as_of": "6:26 PM"
     }
    },
    {
