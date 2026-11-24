@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 00:00 EST",
+ "updated": "2026-11-24 00:10 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14686,7 +14686,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 4
+     "live": 10
     },
     "home": {
      "team": "Arizona",
@@ -14704,13 +14704,13 @@
      "opp_id": "36",
      "seed": null,
      "record": "4-1",
-     "live": 2
+     "live": 14
     },
     "time": "11:30 PM",
     "line": "ARIZ -17.5",
     "live": {
-     "detail": "17:44 1st",
-     "as_of": "12:00 AM"
+     "detail": "13:37 1st",
+     "as_of": "12:10 AM"
     }
    }
   ]
@@ -15239,5 +15239,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "12:00 AM"
+ "scores_updated": "12:10 AM"
 }
