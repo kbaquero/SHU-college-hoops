@@ -290,6 +290,14 @@ def apply_board(games, board, now):
         sides = (g["away"], g["home"])
         ids = [id_of.get(s["team"], "") if s["pool"] else s.get("id", "") for s in sides]
         scores, winners = info.get("scores", {}), info.get("winners", {})
+        # the scoreboard can list a non-D1 opponent under a different id than its schedule entry did:
+        # with one side unmatched and one board id left over, they're the same team
+        missing = [k for k, i in enumerate(ids) if i not in scores]
+        extra = [t for t in scores if t not in ids]
+        if len(missing) == 1 and len(extra) == 1:
+            ids[missing[0]] = extra[0]
+            if not sides[missing[0]]["pool"]:
+                sides[missing[0]]["id"] = extra[0]
         if info.get("state") == "in" and not info.get("completed"):
             # caught mid-game: keep a snapshot of the score and clock as of this update
             live = {"detail": _clock(info.get("detail", "")), "as_of": now.strftime("%-I:%M %p")}

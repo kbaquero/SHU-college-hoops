@@ -26,6 +26,19 @@ def _g(gid, away, home, line="", start="2026-11-15T19:00:00-05:00", **kw):
     return {"id": gid, "kind": "nonconf", "line": line, "start": start, "completed": False,
             "away": side(away), "home": side(home), **kw}
 
+class BoardIds(unittest.TestCase):
+    def test_opponent_listed_under_another_id_still_gets_its_score(self):
+        from tracker.run import apply_board
+        navy = next(t["espn_id"] for t in TM.load_teams() if t["team"] == "Navy")
+        g = {"id": "1", "completed": False, "kind": "nonconf",
+             "away": {"team": "Penn State Berks", "pool": False, "id": "131640"},
+             "home": {"team": "Navy", "pool": True}}
+        board = {"1": {"state": "in", "completed": False, "detail": "13:14 - 1st Half",
+                       "scores": {navy: 20, "999": 9}, "winners": {}}}
+        apply_board([g], board, dt.datetime(2026, 11, 24, 16, 45))
+        self.assertEqual((g["away"]["live"], g["home"]["live"]), (9, 20))
+        self.assertEqual(g["away"]["id"], "999")
+
 class GameOfTheDay(unittest.TestCase):
     ET = dt.timezone(dt.timedelta(hours=-5))
 
