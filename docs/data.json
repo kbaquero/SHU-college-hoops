@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 23:20 EST",
+ "updated": "2026-11-23 23:30 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14585,10 +14585,10 @@
     "tbd": false,
     "tv": "ESPNU",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "Southwest Maui Invitational",
     "away": {
      "team": "VCU",
@@ -14597,10 +14597,9 @@
      "owners": [],
      "id": "2670",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-1",
-     "live": 66
+     "final": 66,
+     "won": false,
+     "record": "3-2"
     },
     "home": {
      "team": "Providence",
@@ -14609,23 +14608,18 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "VCU",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 72,
      "opp_final": null,
      "opp_id": "2670",
      "seed": null,
-     "record": "4-1",
-     "live": 68
+     "record": "5-1"
     },
     "time": "9:00 PM",
-    "line": "PROV -2.5",
-    "live": {
-     "detail": "0:51 OT",
-     "as_of": "11:20 PM"
-    }
+    "line": "PROV -2.5"
    },
    {
     "id": "401918057",
@@ -14656,7 +14650,7 @@
      "opp_id": "25",
      "seed": null,
      "record": "2-4",
-     "live": 38
+     "live": 42
     },
     "home": {
      "team": "California",
@@ -14668,13 +14662,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 68
+     "live": 76
     },
     "time": "10:00 PM",
     "line": "CAL -18.5",
     "live": {
-     "detail": "11:40 2nd",
-     "as_of": "11:20 PM"
+     "detail": "8:55 2nd",
+     "as_of": "11:30 PM"
     }
    },
    {
@@ -15245,5 +15239,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "11:20 PM"
+ "scores_updated": "11:30 PM"
 }
