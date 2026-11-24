@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 23:50 EST",
+ "updated": "2026-11-24 00:00 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14627,7 +14627,7 @@
     "tbd": false,
     "tv": "ACCNX",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14641,16 +14641,15 @@
       "Jason H.",
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "California",
      "pts": 0,
-     "final": null,
+     "final": 54,
      "opp_final": null,
      "opp_id": "25",
      "seed": null,
-     "record": "2-4",
-     "live": 50
+     "record": "2-5"
     },
     "home": {
      "team": "California",
@@ -14659,17 +14658,12 @@
      "owners": [],
      "id": "25",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-2",
-     "live": 92
+     "final": 96,
+     "won": true,
+     "record": "5-2"
     },
     "time": "10:00 PM",
-    "line": "CAL -18.5",
-    "live": {
-     "detail": "2:07 2nd",
-     "as_of": "11:50 PM"
-    }
+    "line": "CAL -18.5"
    },
    {
     "id": "401909743",
@@ -14691,7 +14685,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 4
     },
     "home": {
      "team": "Arizona",
@@ -14708,10 +14703,15 @@
      "opp_final": null,
      "opp_id": "36",
      "seed": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 2
     },
     "time": "11:30 PM",
-    "line": "ARIZ -17.5"
+    "line": "ARIZ -17.5",
+    "live": {
+     "detail": "17:44 1st",
+     "as_of": "12:00 AM"
+    }
    }
   ]
  },
@@ -15239,5 +15239,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "11:50 PM"
+ "scores_updated": "12:00 AM"
 }
