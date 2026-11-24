@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 17:36 EST",
- "scores_updated": "5:36 PM",
+ "updated": "2026-11-24 17:46 EST",
+ "scores_updated": "5:46 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14683,7 +14683,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 24
+     "live": 32
     },
     "home": {
      "team": "Navy",
@@ -14701,13 +14701,13 @@
      "opp_id": "124686",
      "seed": null,
      "record": "4-3",
-     "live": 63
+     "live": 73
     },
     "time": "4:30 PM",
     "line": "",
     "live": {
-     "detail": "16:09 2nd",
-     "as_of": "5:36 PM"
+     "detail": "11:33 2nd",
+     "as_of": "5:46 PM"
     }
    },
    {
@@ -14737,7 +14737,7 @@
      "opp_id": "12",
      "seed": null,
      "record": "5-1",
-     "live": 10
+     "live": 13
     },
     "home": {
      "team": "Arizona",
@@ -14755,13 +14755,13 @@
      "opp_id": "2507",
      "seed": null,
      "record": "5-1",
-     "live": 18
+     "live": 25
     },
     "time": "5:00 PM",
     "line": "ARIZ -7.5",
     "live": {
-     "detail": "12:02 1st",
-     "as_of": "5:36 PM"
+     "detail": "9:02 1st",
+     "as_of": "5:46 PM"
     }
    },
    {
@@ -14786,7 +14786,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 12
+     "live": 15
     },
     "home": {
      "team": "Wagner",
@@ -14804,13 +14804,13 @@
      "opp_id": "2071",
      "seed": null,
      "record": "1-5",
-     "live": 42
+     "live": 45
     },
     "time": "5:00 PM",
     "line": "",
     "live": {
-     "detail": "1:05 1st",
-     "as_of": "5:36 PM"
+     "detail": "Halftime",
+     "as_of": "5:46 PM"
     }
    },
    {
@@ -15484,7 +15484,7 @@
      "record": "4-2"
     },
     "time": "7:00 PM",
-    "line": "SIE -4.5"
+    "line": "SIE -3.5"
    },
    {
     "id": "401916319",
@@ -15526,7 +15526,7 @@
      "record": "4-2"
     },
     "time": "7:00 PM",
-    "line": "VAN -1.5"
+    "line": "VAN -2.5"
    },
    {
     "id": "401921777",
