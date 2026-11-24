@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 20:55 EST",
+ "updated": "2026-11-23 21:05 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14343,7 +14343,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 58
+     "live": 70
     },
     "home": {
      "team": "Howard",
@@ -14363,13 +14363,13 @@
      "opp_id": "128342",
      "seed": null,
      "record": "3-3",
-     "live": 81
+     "live": 87
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "6:50 2nd",
-     "as_of": "8:55 PM"
+     "detail": "3:51 2nd",
+     "as_of": "9:05 PM"
     }
    },
    {
@@ -14393,7 +14393,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 45
+     "live": 49
     },
     "home": {
      "team": "Iona",
@@ -14412,13 +14412,13 @@
      "opp_id": "161",
      "seed": null,
      "record": "3-4",
-     "live": 42
+     "live": 46
     },
     "time": "7:00 PM",
     "line": "IONA -9.5",
     "live": {
-     "detail": "0:20 2nd",
-     "as_of": "8:55 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:05 PM"
     }
    },
    {
@@ -14551,13 +14551,13 @@
      "opp_id": "2405",
      "seed": null,
      "record": "4-1",
-     "live": 46
+     "live": 51
     },
     "time": "8:00 PM",
     "line": "UNC -18.5",
     "live": {
-     "detail": "1:22 1st",
-     "as_of": "8:55 PM"
+     "detail": "Halftime",
+     "as_of": "9:05 PM"
     }
    },
    {
@@ -14582,7 +14582,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 26
+     "live": 29
     },
     "home": {
      "team": "North Dakota St.",
@@ -14600,13 +14600,13 @@
      "opp_id": "2744",
      "seed": null,
      "record": "2-5",
-     "live": 40
+     "live": 42
     },
     "time": "8:00 PM",
     "line": "",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:55 PM"
+     "detail": "18:03 2nd",
+     "as_of": "9:05 PM"
     }
    },
    {
@@ -14629,7 +14629,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-1"
+     "record": "3-1",
+     "live": 4
     },
     "home": {
      "team": "Providence",
@@ -14646,10 +14647,15 @@
      "opp_final": null,
      "opp_id": "2670",
      "seed": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 9
     },
     "time": "9:00 PM",
-    "line": "PROV -2.5"
+    "line": "PROV -2.5",
+    "live": {
+     "detail": "17:10 1st",
+     "as_of": "9:05 PM"
+    }
    },
    {
     "id": "401918057",
@@ -15263,5 +15269,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "8:55 PM"
+ "scores_updated": "9:05 PM"
 }
