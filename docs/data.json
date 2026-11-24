@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 20:05 EST",
+ "updated": "2026-11-23 20:15 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14300,7 +14300,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 38
+     "live": 43
     },
     "home": {
      "team": "Buffalo",
@@ -14318,13 +14318,13 @@
      "opp_id": "178",
      "seed": null,
      "record": "2-3",
-     "live": 82
+     "live": 88
     },
     "time": "6:30 PM",
     "line": "",
     "live": {
-     "detail": "6:01 2nd",
-     "as_of": "8:05 PM"
+     "detail": "2:47 2nd",
+     "as_of": "8:15 PM"
     }
    },
    {
@@ -14374,8 +14374,8 @@
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "0:00 1st",
-     "as_of": "8:05 PM"
+     "detail": "Halftime",
+     "as_of": "8:15 PM"
     }
    },
    {
@@ -14399,7 +14399,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 31
+     "live": 35
     },
     "home": {
      "team": "Iona",
@@ -14418,13 +14418,13 @@
      "opp_id": "161",
      "seed": null,
      "record": "3-4",
-     "live": 25
+     "live": 26
     },
     "time": "7:00 PM",
     "line": "IONA -9.5",
     "live": {
-     "detail": "17:17 2nd",
-     "as_of": "8:05 PM"
+     "detail": "14:17 2nd",
+     "as_of": "8:15 PM"
     }
    },
    {
@@ -14449,7 +14449,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 27
+     "live": 33
     },
     "home": {
      "team": "Le Moyne",
@@ -14467,13 +14467,13 @@
      "opp_id": "2365",
      "seed": null,
      "record": "2-4",
-     "live": 35
+     "live": 41
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "18:31 2nd",
-     "as_of": "8:05 PM"
+     "detail": "13:16 2nd",
+     "as_of": "8:15 PM"
     }
    },
    {
@@ -14497,7 +14497,7 @@
      "final": null,
      "won": null,
      "record": "0-6",
-     "live": 3
+     "live": 17
     },
     "home": {
      "team": "Illinois",
@@ -14515,13 +14515,13 @@
      "opp_id": "2737",
      "seed": null,
      "record": "5-1",
-     "live": 9
+     "live": 19
     },
     "time": "8:00 PM",
     "line": "ILL -42.5",
     "live": {
-     "detail": "17:31 1st",
-     "as_of": "8:05 PM"
+     "detail": "13:27 1st",
+     "as_of": "8:15 PM"
     }
    },
    {
@@ -14545,7 +14545,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 0
+     "live": 2
     },
     "home": {
      "team": "North Carolina",
@@ -14563,13 +14563,13 @@
      "opp_id": "2405",
      "seed": null,
      "record": "4-1",
-     "live": 0
+     "live": 7
     },
     "time": "8:00 PM",
     "line": "UNC -18.5",
     "live": {
-     "detail": "19:58 1st",
-     "as_of": "8:05 PM"
+     "detail": "16:24 1st",
+     "as_of": "8:15 PM"
     }
    },
    {
@@ -14593,7 +14593,8 @@
      "final": null,
      "won": null,
      "d1": false,
-     "record": ""
+     "record": "",
+     "live": 0
     },
     "home": {
      "team": "North Dakota St.",
@@ -14610,10 +14611,15 @@
      "opp_final": null,
      "opp_id": "2744",
      "seed": null,
-     "record": "2-5"
+     "record": "2-5",
+     "live": 14
     },
     "time": "8:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "14:09 1st",
+     "as_of": "8:15 PM"
+    }
    },
    {
     "id": "401909536",
@@ -15269,5 +15275,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "8:05 PM"
+ "scores_updated": "8:15 PM"
 }
