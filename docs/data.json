@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 23:30 EST",
+ "updated": "2026-11-23 23:40 EST",
  "through": "Sun, Nov 22",
  "season": 2027,
  "standings": [
@@ -14650,7 +14650,7 @@
      "opp_id": "25",
      "seed": null,
      "record": "2-4",
-     "live": 42
+     "live": 46
     },
     "home": {
      "team": "California",
@@ -14662,13 +14662,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 76
+     "live": 85
     },
     "time": "10:00 PM",
     "line": "CAL -18.5",
     "live": {
-     "detail": "8:55 2nd",
-     "as_of": "11:30 PM"
+     "detail": "6:06 2nd",
+     "as_of": "11:40 PM"
     }
    },
    {
@@ -14711,7 +14711,7 @@
      "record": "4-1"
     },
     "time": "11:30 PM",
-    "line": "ARIZ -16.5"
+    "line": "ARIZ -17.5"
    }
   ]
  },
@@ -15239,5 +15239,5 @@
   "date": "2026-11-23",
   "id": "401921708"
  },
- "scores_updated": "11:30 PM"
+ "scores_updated": "11:40 PM"
 }
