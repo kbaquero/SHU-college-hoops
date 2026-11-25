@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 12:13 EST",
+ "updated": "2026-11-25 12:23 EST",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15547,13 +15547,13 @@
      "opp_id": "258",
      "seed": null,
      "record": "4-2",
-     "live": 5
+     "live": 10
     },
     "time": "12:00 PM",
     "line": "UVA -5.5",
     "live": {
-     "detail": "14:58 1st",
-     "as_of": "12:13 PM"
+     "detail": "11:43 1st",
+     "as_of": "12:23 PM"
     }
    },
    {
@@ -17983,5 +17983,5 @@
   "date": "2026-11-25",
   "id": "401909568"
  },
- "scores_updated": "12:13 PM"
+ "scores_updated": "12:23 PM"
 }
