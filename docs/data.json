@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 16:26 EST",
- "scores_updated": "4:26 PM",
+ "updated": "2026-11-25 16:36 EST",
+ "scores_updated": "4:36 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15578,7 +15578,7 @@
      "opp_id": "9",
      "seed": null,
      "record": "6-0",
-     "live": 86
+     "live": 88
     },
     "home": {
      "team": "Arizona St.",
@@ -15600,13 +15600,13 @@
      "opp_id": "99",
      "seed": null,
      "record": "5-0",
-     "live": 84
+     "live": 89
     },
     "time": "2:00 PM",
     "line": "LSU -3.5",
     "live": {
-     "detail": "0:12 OT",
-     "as_of": "4:26 PM"
+     "detail": "2:14 2OT",
+     "as_of": "4:36 PM"
     }
    },
    {
@@ -15672,7 +15672,7 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 60
+     "live": 63
     },
     "home": {
      "team": "Arizona",
@@ -15690,13 +15690,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-1",
-     "live": 64
+     "live": 75
     },
     "time": "2:30 PM",
     "line": "ARIZ -5.5",
     "live": {
-     "detail": "6:51 2nd",
-     "as_of": "4:26 PM"
+     "detail": "4:48 2nd",
+     "as_of": "4:36 PM"
     }
    },
    {
@@ -15720,7 +15720,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 24
+     "live": 28
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -15738,13 +15738,13 @@
      "opp_id": "2247",
      "seed": null,
      "record": "2-5",
-     "live": 17
+     "live": 25
     },
     "time": "4:00 PM",
     "line": "GAST -1.5",
     "live": {
-     "detail": "7:44 1st",
-     "as_of": "4:26 PM"
+     "detail": "3:49 1st",
+     "as_of": "4:36 PM"
     }
    },
    {
