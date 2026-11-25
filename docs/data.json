@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 14:33 EST",
- "scores_updated": "2:33 PM",
+ "updated": "2026-11-25 14:43 EST",
+ "scores_updated": "2:43 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15584,7 +15584,7 @@
      "opp_id": "9",
      "seed": null,
      "record": "6-0",
-     "live": 25
+     "live": 35
     },
     "home": {
      "team": "Arizona St.",
@@ -15606,13 +15606,13 @@
      "opp_id": "99",
      "seed": null,
      "record": "5-0",
-     "live": 24
+     "live": 35
     },
     "time": "2:00 PM",
     "line": "LSU -3.5",
     "live": {
-     "detail": "7:39 1st",
-     "as_of": "2:33 PM"
+     "detail": "2:20 1st",
+     "as_of": "2:43 PM"
     }
    },
    {
@@ -15636,7 +15636,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 28
+     "live": 33
     },
     "home": {
      "team": "NJIT",
@@ -15654,13 +15654,13 @@
      "opp_id": "2363",
      "seed": null,
      "record": "1-7",
-     "live": 20
+     "live": 31
     },
     "time": "2:00 PM",
     "line": "NJIT -1.5",
     "live": {
-     "detail": "7:32 1st",
-     "as_of": "2:33 PM"
+     "detail": "2:37 1st",
+     "as_of": "2:43 PM"
     }
    },
    {
@@ -15683,7 +15683,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "6-0"
+     "record": "6-0",
+     "live": 3
     },
     "home": {
      "team": "Arizona",
@@ -15700,10 +15701,15 @@
      "opp_final": null,
      "opp_id": "145",
      "seed": null,
-     "record": "6-1"
+     "record": "6-1",
+     "live": 4
     },
     "time": "2:30 PM",
-    "line": "ARIZ -5.5"
+    "line": "ARIZ -5.5",
+    "live": {
+     "detail": "15:40 1st",
+     "as_of": "2:43 PM"
+    }
    },
    {
     "id": "401921703",
