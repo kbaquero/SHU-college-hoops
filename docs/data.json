@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 19:16 EST",
- "scores_updated": "7:16 PM",
+ "updated": "2026-11-24 19:26 EST",
+ "scores_updated": "7:26 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -14710,7 +14710,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -14722,16 +14722,15 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Arizona",
      "pts": 0,
-     "final": null,
+     "final": 66,
      "opp_final": null,
      "opp_id": "12",
      "seed": null,
-     "record": "5-1",
-     "live": 58
+     "record": "5-2"
     },
     "home": {
      "team": "Arizona",
@@ -14740,23 +14739,18 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Providence",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 84,
      "opp_final": null,
      "opp_id": "2507",
      "seed": null,
-     "record": "5-1",
-     "live": 82
+     "record": "6-1"
     },
     "time": "5:00 PM",
-    "line": "ARIZ -7.5",
-    "live": {
-     "detail": "3:41 2nd",
-     "as_of": "7:16 PM"
-    }
+    "line": "ARIZ -7.5"
    },
    {
     "id": "401926061",
@@ -14822,7 +14816,7 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 69
+     "live": 73
     },
     "home": {
      "team": "Michigan",
@@ -14844,13 +14838,13 @@
      "opp_id": "156",
      "seed": null,
      "record": "3-2",
-     "live": 50
+     "live": 58
     },
     "time": "5:30 PM",
     "line": "MICH -5.5",
     "live": {
-     "detail": "15:46 2nd",
-     "as_of": "7:16 PM"
+     "detail": "13:28 2nd",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -14880,7 +14874,7 @@
      "opp_id": "2747",
      "seed": null,
      "record": "3-3",
-     "live": 41
+     "live": 51
     },
     "home": {
      "team": "Wofford",
@@ -14898,13 +14892,13 @@
      "opp_id": "2511",
      "seed": null,
      "record": "4-3",
-     "live": 51
+     "live": 63
     },
     "time": "6:00 PM",
     "line": "QUC -1.5",
     "live": {
-     "detail": "15:08 2nd",
-     "as_of": "7:16 PM"
+     "detail": "11:05 2nd",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -14934,7 +14928,7 @@
      "opp_id": "2320",
      "seed": null,
      "record": "2-4",
-     "live": 36
+     "live": 38
     },
     "home": {
      "team": "Lamar",
@@ -14946,13 +14940,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 32
+     "live": 34
     },
     "time": "6:30 PM",
     "line": "LAM -2.5",
     "live": {
-     "detail": "5:40 1st",
-     "as_of": "7:16 PM"
+     "detail": "2:52 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -14976,7 +14970,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 14
+     "live": 21
     },
     "home": {
      "team": "Florida",
@@ -14996,13 +14990,13 @@
      "opp_id": "270",
      "seed": null,
      "record": "6-1",
-     "live": 15
+     "live": 25
     },
     "time": "7:00 PM",
     "line": "FLA -35.5",
     "live": {
-     "detail": "13:00 1st",
-     "as_of": "7:16 PM"
+     "detail": "7:32 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15032,7 +15026,7 @@
      "opp_id": "84",
      "seed": null,
      "record": "2-4",
-     "live": 2
+     "live": 7
     },
     "home": {
      "team": "Indiana",
@@ -15050,13 +15044,13 @@
      "opp_id": "294",
      "seed": null,
      "record": "6-0",
-     "live": 23
+     "live": 27
     },
     "time": "7:00 PM",
     "line": "IU -27.5",
     "live": {
-     "detail": "13:00 1st",
-     "as_of": "7:16 PM"
+     "detail": "9:38 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15080,7 +15074,7 @@
      "final": null,
      "won": null,
      "record": "4-4",
-     "live": 9
+     "live": 19
     },
     "home": {
      "team": "Iowa",
@@ -15098,13 +15092,13 @@
      "opp_id": "2378",
      "seed": null,
      "record": "3-2",
-     "live": 22
+     "live": 27
     },
     "time": "7:00 PM",
     "line": "IOWA -28.5",
     "live": {
-     "detail": "11:53 1st",
-     "as_of": "7:16 PM"
+     "detail": "6:23 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15128,7 +15122,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 16
+     "live": 20
     },
     "home": {
      "team": "James Madison",
@@ -15146,13 +15140,13 @@
      "opp_id": "2127",
      "seed": null,
      "record": "4-2",
-     "live": 17
+     "live": 22
     },
     "time": "7:00 PM",
     "line": "JMU -12.5",
     "live": {
-     "detail": "12:10 1st",
-     "as_of": "7:16 PM"
+     "detail": "9:38 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15176,7 +15170,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 11
+     "live": 26
     },
     "home": {
      "team": "Lehigh",
@@ -15194,13 +15188,13 @@
      "opp_id": "2066",
      "seed": null,
      "record": "4-2",
-     "live": 10
+     "live": 19
     },
     "time": "7:00 PM",
     "line": "LEH -9.5",
     "live": {
-     "detail": "14:48 1st",
-     "as_of": "7:16 PM"
+     "detail": "9:48 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15224,7 +15218,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 9
+     "live": 16
     },
     "home": {
      "team": "Marist",
@@ -15244,13 +15238,13 @@
      "opp_id": "2803",
      "seed": null,
      "record": "2-3",
-     "live": 16
+     "live": 20
     },
     "time": "7:00 PM",
     "line": "MRST -2.5",
     "live": {
-     "detail": "12:19 1st",
-     "as_of": "7:16 PM"
+     "detail": "8:23 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15275,7 +15269,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 7
+     "live": 17
     },
     "home": {
      "team": "Mercyhurst",
@@ -15295,13 +15289,13 @@
      "opp_id": "2902",
      "seed": null,
      "record": "3-5",
-     "live": 15
+     "live": 31
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "13:41 1st",
-     "as_of": "7:16 PM"
+     "detail": "7:52 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15325,7 +15319,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 10
+     "live": 15
     },
     "home": {
      "team": "Morgan St.",
@@ -15343,13 +15337,13 @@
      "opp_id": "116",
      "seed": null,
      "record": "4-3",
-     "live": 6
+     "live": 13
     },
     "time": "7:00 PM",
     "line": "MORG -1.5",
     "live": {
-     "detail": "14:09 1st",
-     "as_of": "7:16 PM"
+     "detail": "11:20 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15374,7 +15368,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 9
+     "live": 12
     },
     "home": {
      "team": "Presbyterian",
@@ -15393,13 +15387,13 @@
      "opp_id": "128326",
      "seed": null,
      "record": "1-4",
-     "live": 25
+     "live": 34
     },
     "time": "7:00 PM",
     "line": "",
     "live": {
-     "detail": "12:45 1st",
-     "as_of": "7:16 PM"
+     "detail": "9:51 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15429,7 +15423,7 @@
      "opp_id": "59",
      "seed": null,
      "record": "3-2",
-     "live": 17
+     "live": 27
     },
     "home": {
      "team": "Georgia Tech",
@@ -15441,13 +15435,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 11
+     "live": 17
     },
     "time": "7:00 PM",
     "line": "GT -9.5",
     "live": {
-     "detail": "13:34 1st",
-     "as_of": "7:16 PM"
+     "detail": "9:34 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15471,7 +15465,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 6
+     "live": 10
     },
     "home": {
      "team": "Seton Hall",
@@ -15489,13 +15483,13 @@
      "opp_id": "160",
      "seed": null,
      "record": "5-1",
-     "live": 10
+     "live": 20
     },
     "time": "7:00 PM",
     "line": "HALL -20.5",
     "live": {
-     "detail": "11:38 1st",
-     "as_of": "7:16 PM"
+     "detail": "7:27 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15530,7 +15524,7 @@
      "opp_id": "2561",
      "seed": null,
      "record": "3-3",
-     "live": 18
+     "live": 26
     },
     "home": {
      "team": "Siena",
@@ -15549,13 +15543,13 @@
      "opp_id": "261",
      "seed": null,
      "record": "4-2",
-     "live": 19
+     "live": 23
     },
     "time": "7:00 PM",
     "line": "SIE -4.5",
     "live": {
-     "detail": "11:00 1st",
-     "as_of": "7:16 PM"
+     "detail": "7:14 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15585,7 +15579,7 @@
      "opp_id": "194",
      "seed": null,
      "record": "6-0",
-     "live": 8
+     "live": 16
     },
     "home": {
      "team": "Ohio St.",
@@ -15597,13 +15591,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 9
+     "live": 15
     },
     "time": "7:00 PM",
     "line": "VAN -2.5",
     "live": {
-     "detail": "13:47 1st",
-     "as_of": "7:16 PM"
+     "detail": "8:35 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15627,7 +15621,7 @@
      "final": null,
      "won": null,
      "record": "1-6",
-     "live": 16
+     "live": 18
     },
     "home": {
      "team": "Villanova",
@@ -15645,13 +15639,13 @@
      "opp_id": "2154",
      "seed": null,
      "record": "4-2",
-     "live": 13
+     "live": 23
     },
     "time": "7:00 PM",
     "line": "VILL -34.5",
     "live": {
-     "detail": "12:17 1st",
-     "as_of": "7:16 PM"
+     "detail": "6:42 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
@@ -15675,7 +15669,7 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 12
+     "live": 23
     },
     "home": {
      "team": "Weber St.",
@@ -15693,13 +15687,13 @@
      "opp_id": "2627",
      "seed": null,
      "record": "1-4",
-     "live": 23
+     "live": 31
     },
     "time": "7:00 PM",
     "line": "WEB -1.5",
     "live": {
-     "detail": "11:45 1st",
-     "as_of": "7:16 PM"
+     "detail": "6:40 1st",
+     "as_of": "7:26 PM"
     }
    },
    {
