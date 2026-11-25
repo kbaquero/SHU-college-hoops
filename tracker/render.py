@@ -243,6 +243,12 @@ td .ptsb{font-size:14px;padding:1px 7px}
 svg text{fill:var(--mute);font-size:11px}
 #chart{padding-top:4px}
 #chart svg{display:block}
+#chart,#behind{position:relative}
+#chart svg,#behind svg{touch-action:pan-y;cursor:crosshair}   /* slide sideways to scrub; vertical swipes still scroll */
+.ctip{position:absolute;top:6px;pointer-events:none;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.12);padding:5px 8px;font-size:12px;line-height:1.35;white-space:nowrap;z-index:2}
+.ctip .d{color:var(--mute);font-size:11px;font-weight:600}
+.ctip i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:0}
+.ctip b{font-variant-numeric:tabular-nums}
 #value svg{display:block;touch-action:manipulation}
 #value text{font-size:11px;fill:var(--mute)}
 #value text.vq{font-size:10.5px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;opacity:.75}
@@ -672,7 +678,7 @@ window.teamsFollowMe = m => { teamsMe = m || ''; sortTeams(); };
 
 // chart: every entry over time. Tap names in the legend to highlight them.
 // line charts over the daily history: one line per entry, alphabetical legend, tap names to highlight
-function lineChart({el, series, value, invert, ylab, aria, empty}) {
+function lineChart({el, series, value, invert, ylab, aria, empty, tipText}) {
   const H = series;
   if (H.length < 2) { el.innerHTML = `<p class="sub" style="padding:12px">${empty}</p>`; return {follow() {}, redraw() {}}; }
   // alphabetical, so the legend is easy to scan and each entry keeps the same color as the standings change
@@ -682,6 +688,7 @@ function lineChart({el, series, value, invert, ylab, aria, empty}) {
   const col = j => colors[j % colors.length];
   const sel = new Set();
   const fmt = d => new Date(d + 'T12:00:00').toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
+  let G = null;   // the last draw's geometry, for the hover/scrub readout
   function draw() {
     const W = Math.max(280, el.clientWidth), Ht = W < 520 ? 220 : 280, P = {l: 48, r: 14, t: 14, b: 26};
     const raw = Math.max(1, ...H.flatMap(h => ents.map(e => value(h, e))));
@@ -705,10 +712,38 @@ function lineChart({el, series, value, invert, ylab, aria, empty}) {
       s += `<polyline fill="none" stroke="${col(j)}" stroke-width="${on ? 3.5 : 2}" stroke-linejoin="round" opacity="${dim ? .12 : .9}" points="${H.map((h, i) => x(i) + ',' + y(value(h, e))).join(' ')}"><title>${esc(e)}</title></polyline>`;
       if (on) s += `<circle cx="${x(H.length - 1)}" cy="${y(value(H[H.length - 1], e))}" r="4" fill="${col(j)}"/>`;
     });
-    el.innerHTML = s + '</svg><div class="legend">' + ents.map((e, j) =>
+    G = {x, y, W, P, Ht};
+    s += '<g class="xh"></g>';
+    el.innerHTML = s + '</svg><div class="ctip" hidden></div><div class="legend">' + ents.map((e, j) =>
       `<button type="button" class="${sel.has(e) ? 'on' : sel.size ? 'off' : ''}" data-e="${esc(e)}" aria-pressed="${sel.has(e)}"><i style="background:${col(j)}"></i>${esc(e)}</button>`).join('') +
       (sel.size ? '<button type="button" class="clear" data-clear="1">Show all</button>' : '') + '</div>';
   }
+  // hover (desktop) or slide (phone): the day under the pointer, and the nearest line's total that day;
+  // with entries highlighted, all of their totals
+  const hide = () => { const g = el.querySelector('.xh'), t = el.querySelector('.ctip'); if (g) g.innerHTML = ''; if (t) t.hidden = true; };
+  const scrub = ev => {
+    const svg = el.querySelector('svg'); if (!svg || !G || ev.target.closest('.legend')) return;
+    const r = svg.getBoundingClientRect(), px = ev.clientX - r.left, py = ev.clientY - r.top;
+    const i = Math.round((px - G.P.l) / (G.W - G.P.l - G.P.r) * (H.length - 1));
+    if (i < 0 || i >= H.length || py < 0 || py > G.Ht) return hide();
+    const h = H[i], pool = sel.size ? ents.filter(e => sel.has(e)) : ents;
+    const near = pool.reduce((a, e) => { const d = Math.abs(G.y(value(h, e)) - py); return !a || d < a.d ? {e, d} : a; }, null);
+    const shown = (sel.size ? pool : [near.e]).sort((a, b) => value(h, b) * (invert ? -1 : 1) - value(h, a) * (invert ? -1 : 1));
+    const cx = G.x(i);
+    el.querySelector('.xh').innerHTML = `<line x1="${cx}" x2="${cx}" y1="${G.P.t}" y2="${G.Ht - G.P.b}" stroke="currentColor" opacity=".35"/>` +
+      shown.map(e => `<circle cx="${cx}" cy="${G.y(value(h, e))}" r="4.5" fill="${col(ents.indexOf(e))}" stroke="var(--card)" stroke-width="2"/>`).join('');
+    const rank = e => 1 + ents.filter(o => (h.totals[o] || 0) > (h.totals[e] || 0)).length;
+    const t = el.querySelector('.ctip');
+    t.innerHTML = `<div class="d">${fmt(h.date)}</div>` + shown.map(e =>
+      `<div><i style="background:${col(ents.indexOf(e))}"></i>${esc(e)} <span class="d">${ord(rank(e))} ·</span> <b>${tipText(h, e)}</b></div>`).join('');
+    t.hidden = false;
+    const tw = t.offsetWidth, left = cx + 12 + tw > G.W ? cx - 12 - tw : cx + 12;
+    t.style.left = Math.max(0, left) + 'px';
+  };
+  el.addEventListener('pointermove', scrub);
+  el.addEventListener('pointerdown', scrub);
+  el.addEventListener('pointerleave', hide);
+  el.addEventListener('pointercancel', hide);
   let touched = false;
   el.addEventListener('click', e => {
     const b = e.target.closest('.legend button'); if (!b) return;
@@ -724,8 +759,10 @@ function lineChart({el, series, value, invert, ylab, aria, empty}) {
 // Points behind the leader: day by day, like the chart above, so both tell the same story
 const charts = [
   lineChart({el: $('#chart'), series: D.history || [], value: (h, e) => h.totals[e] || 0, ylab: 'Points',
+    tipText: (h, e) => `${h.totals[e] || 0} pts`,
     aria: 'Points over time for every entry', empty: 'The chart fills in after a couple of daily updates.'}),
   lineChart({el: $('#behind'), series: D.history || [], invert: true, ylab: 'Points behind',
+    tipText: (h, e) => { const b = Math.max(...Object.values(h.totals)) - (h.totals[e] || 0); return b ? `${b} behind` : 'Leader'; },
     value: (h, e) => Math.max(...Object.values(h.totals)) - (h.totals[e] || 0),
     aria: 'Points behind the leader over time for every entry', empty: 'The chart fills in after a couple of daily updates.'}),
 ];
