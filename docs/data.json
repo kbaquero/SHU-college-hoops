@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 21:46 EST",
- "scores_updated": "9:46 PM",
+ "updated": "2026-11-24 21:50 EST",
+ "scores_updated": "9:50 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15616,7 +15616,7 @@
      "opp_id": "2184",
      "seed": null,
      "record": "6-0",
-     "live": 43
+     "live": 48
     },
     "home": {
      "team": "Duquesne",
@@ -15628,13 +15628,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 35
+     "live": 39
     },
     "time": "7:30 PM",
     "line": "HPU -10.5",
     "live": {
-     "detail": "19:22 2nd",
-     "as_of": "9:46 PM"
+     "detail": "16:37 2nd",
+     "as_of": "9:50 PM"
     }
    },
    {
@@ -15706,7 +15706,7 @@
      "opp_id": "264",
      "seed": null,
      "record": "4-2",
-     "live": 48
+     "live": 50
     },
     "home": {
      "team": "Washington",
@@ -15723,8 +15723,8 @@
     "time": "8:00 PM",
     "line": "CLEM -1.5",
     "live": {
-     "detail": "7:44 2nd",
-     "as_of": "9:46 PM"
+     "detail": "4:54 2nd",
+     "as_of": "9:50 PM"
     }
    },
    {
@@ -15733,7 +15733,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15745,16 +15745,15 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "South Alabama",
      "pts": 0,
-     "final": null,
+     "final": 49,
      "opp_final": null,
      "opp_id": "6",
      "seed": null,
-     "record": "0-6",
-     "live": 49
+     "record": "0-7"
     },
     "home": {
      "team": "South Alabama",
@@ -15763,17 +15762,12 @@
      "owners": [],
      "id": "6",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-4",
-     "live": 74
+     "final": 74,
+     "won": true,
+     "record": "5-4"
     },
     "time": "8:00 PM",
-    "line": "USA -17.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:46 PM"
-    }
+    "line": "USA -17.5"
    },
    {
     "id": "401920709",
@@ -15781,7 +15775,7 @@
     "tbd": false,
     "tv": "SECN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15793,16 +15787,15 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Auburn",
      "pts": 0,
-     "final": null,
+     "final": 66,
      "opp_final": null,
      "opp_id": "2",
      "seed": null,
-     "record": "4-4",
-     "live": 66
+     "record": "4-5"
     },
     "home": {
      "team": "Auburn",
@@ -15811,17 +15804,12 @@
      "owners": [],
      "id": "2",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-3",
-     "live": 101
+     "final": 101,
+     "won": true,
+     "record": "4-3"
     },
     "time": "8:00 PM",
-    "line": "AUB -24.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:46 PM"
-    }
+    "line": "AUB -24.5"
    },
    {
     "id": "401915942",
@@ -15844,7 +15832,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 25
+     "live": 29
     },
     "home": {
      "team": "Louisville",
@@ -15863,13 +15851,13 @@
      "opp_id": "2641",
      "seed": null,
      "record": "3-1",
-     "live": 26
+     "live": 32
     },
     "time": "8:00 PM",
     "line": "TTU -2.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:36 PM"
+     "detail": "17:22 2nd",
+     "as_of": "9:50 PM"
     }
    },
    {
@@ -15893,7 +15881,7 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 51
+     "live": 62
     },
     "home": {
      "team": "Penn",
@@ -15911,13 +15899,13 @@
      "opp_id": "2182",
      "seed": null,
      "record": "3-3",
-     "live": 68
+     "live": 77
     },
     "time": "8:00 PM",
     "line": "PENN -6.5",
     "live": {
-     "detail": "10:48 2nd",
-     "as_of": "9:36 PM"
+     "detail": "5:43 2nd",
+     "as_of": "9:50 PM"
     }
    },
    {
