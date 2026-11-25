@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 16:06 EST",
- "scores_updated": "4:06 PM",
+ "updated": "2026-11-25 16:16 EST",
+ "scores_updated": "4:16 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15578,7 +15578,7 @@
      "opp_id": "9",
      "seed": null,
      "record": "6-0",
-     "live": 76
+     "live": 83
     },
     "home": {
      "team": "Arizona St.",
@@ -15600,13 +15600,13 @@
      "opp_id": "99",
      "seed": null,
      "record": "5-0",
-     "live": 76
+     "live": 80
     },
     "time": "2:00 PM",
     "line": "LSU -3.5",
     "live": {
-     "detail": "End of 2nd",
-     "as_of": "4:06 PM"
+     "detail": "1:34 OT",
+     "as_of": "4:16 PM"
     }
    },
    {
@@ -15615,7 +15615,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15627,10 +15627,9 @@
      "owners": [],
      "id": "2363",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "1-5",
-     "live": 81
+     "final": 81,
+     "won": true,
+     "record": "2-5"
     },
     "home": {
      "team": "NJIT",
@@ -15639,23 +15638,18 @@
      "owners": [
       "Mike L."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Manhattan",
      "pts": 0,
-     "final": null,
+     "final": 70,
      "opp_final": null,
      "opp_id": "2363",
      "seed": null,
-     "record": "1-7",
-     "live": 70
+     "record": "1-8"
     },
     "time": "2:00 PM",
-    "line": "NJIT -1.5",
-    "live": {
-     "detail": "0:29 2nd",
-     "as_of": "4:06 PM"
-    }
+    "line": "NJIT -1.5"
    },
    {
     "id": "401921715",
@@ -15696,13 +15690,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-1",
-     "live": 55
+     "live": 58
     },
     "time": "2:30 PM",
     "line": "ARIZ -5.5",
     "live": {
-     "detail": "11:08 2nd",
-     "as_of": "4:06 PM"
+     "detail": "9:52 2nd",
+     "as_of": "4:16 PM"
     }
    },
    {
@@ -15726,7 +15720,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 10
+     "live": 18
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -15744,13 +15738,13 @@
      "opp_id": "2247",
      "seed": null,
      "record": "2-5",
-     "live": 4
+     "live": 10
     },
     "time": "4:00 PM",
     "line": "GAST -1.5",
     "live": {
-     "detail": "15:45 1st",
-     "as_of": "4:06 PM"
+     "detail": "10:43 1st",
+     "as_of": "4:16 PM"
     }
    },
    {
