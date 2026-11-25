@@ -1,6 +1,5 @@
 {
- "updated": "2026-11-25 05:45 EST",
- "scores_updated": "5:45 AM",
+ "updated": "2026-11-25 07:50 EST",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -4878,7 +4877,7 @@
   },
   "Kansas St.": {
    "nonconf_w": 3,
-   "nonconf_l": 2,
+   "nonconf_l": 3,
    "conf_w": 0,
    "conf_l": 0,
    "ct_w": 0,
@@ -4888,7 +4887,7 @@
    "ncaa_w": [],
    "ncaa_out": false,
    "w": 3,
-   "l": 2,
+   "l": 3,
    "pts_reg": 3,
    "pts_ct": 0,
    "pts_ncaa": 0,
@@ -5006,6 +5005,30 @@
      "opp_short": "Campbell",
      "score": "70-80",
      "headline": "",
+     "conf_flag": null,
+     "status_detail": "Final",
+     "seed": null,
+     "opp_seed": null,
+     "kind": "nonconf",
+     "pts": 0,
+     "round": null
+    },
+    {
+     "id": "401909800",
+     "date": "2026-11-24",
+     "start": "2026-11-25T00:49:00-05:00",
+     "time_tbd": false,
+     "home": true,
+     "neutral": true,
+     "tv": "ESPN",
+     "season_type": 2,
+     "completed": true,
+     "won": false,
+     "opp_id": "2250",
+     "opp_name": "Gonzaga",
+     "opp_short": "Gonzaga",
+     "score": "61-101",
+     "headline": "Players Era 16",
      "conf_flag": null,
      "status_detail": "Final",
      "seed": null,
@@ -15486,48 +15509,6 @@
   "label": "Wed, Nov 25",
   "games": [
    {
-    "id": "401909800",
-    "start": "2026-11-25T00:49:00-05:00",
-    "tbd": false,
-    "tv": "ESPN",
-    "neutral": true,
-    "completed": true,
-    "kind": "nonconf",
-    "round": null,
-    "final_label": "Final",
-    "event": "Players Era 16",
-    "away": {
-     "team": "Gonzaga",
-     "pool": false,
-     "home": false,
-     "owners": [],
-     "id": "2250",
-     "seed": null,
-     "final": 101,
-     "won": true,
-     "record": ""
-    },
-    "home": {
-     "team": "Kansas St.",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Kevin B."
-     ],
-     "won": false,
-     "score": "61-101",
-     "opp": "Gonzaga",
-     "pts": 0,
-     "final": 61,
-     "opp_final": 101,
-     "opp_id": "2250",
-     "seed": null,
-     "record": "3-3"
-    },
-    "time": "12:49 AM",
-    "line": ""
-   },
-   {
     "id": "401920428",
     "start": "2026-11-25T12:00:00-05:00",
     "tbd": false,
@@ -16026,7 +16007,7 @@
      "record": "3-4"
     },
     "time": "7:00 PM",
-    "line": "NIU -4.5"
+    "line": "NIU -3.5"
    },
    {
     "id": "401918971",
@@ -16365,6 +16346,48 @@
     },
     "time": "11:59 PM",
     "line": ""
+   },
+   {
+    "id": "401921714",
+    "start": "2026-11-26T00:30:00-05:00",
+    "tbd": false,
+    "tv": "ESPN2",
+    "neutral": true,
+    "completed": false,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "Southwest Maui Invitational \u00b7 Seventh Place Game",
+    "away": {
+     "team": "Clemson",
+     "pool": true,
+     "home": false,
+     "owners": [
+      "Mike L."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Colorado St.",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "36",
+     "seed": null,
+     "record": "4-3"
+    },
+    "home": {
+     "team": "Colorado St.",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "36",
+     "seed": null,
+     "final": null,
+     "won": null,
+     "record": "4-3"
+    },
+    "time": "12:30 AM",
+    "line": "CLEM -2.5"
    }
   ]
  },
@@ -17904,6 +17927,48 @@
     },
     "time": "11:18 PM",
     "line": "SJU -10.5"
+   },
+   {
+    "id": "401909800",
+    "start": "2026-11-25T00:49:00-05:00",
+    "tbd": false,
+    "tv": "ESPN",
+    "neutral": true,
+    "completed": true,
+    "kind": "nonconf",
+    "round": null,
+    "final_label": "Final",
+    "event": "Players Era 16",
+    "away": {
+     "team": "Gonzaga",
+     "pool": false,
+     "home": false,
+     "owners": [],
+     "id": "2250",
+     "seed": null,
+     "final": 101,
+     "won": true,
+     "record": "4-1"
+    },
+    "home": {
+     "team": "Kansas St.",
+     "pool": true,
+     "home": true,
+     "owners": [
+      "Kevin B."
+     ],
+     "won": false,
+     "score": "61-101",
+     "opp": "Gonzaga",
+     "pts": 0,
+     "final": 61,
+     "opp_final": 101,
+     "opp_id": "2250",
+     "seed": null,
+     "record": "3-3"
+    },
+    "time": "12:49 AM",
+    "line": ""
    }
   ]
  },
