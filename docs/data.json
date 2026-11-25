@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 21:36 EST",
- "scores_updated": "9:36 PM",
+ "updated": "2026-11-24 21:46 EST",
+ "scores_updated": "9:46 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15633,8 +15633,8 @@
     "time": "7:30 PM",
     "line": "HPU -10.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:36 PM"
+     "detail": "19:22 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -15706,7 +15706,7 @@
      "opp_id": "264",
      "seed": null,
      "record": "4-2",
-     "live": 45
+     "live": 48
     },
     "home": {
      "team": "Washington",
@@ -15718,13 +15718,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 49
+     "live": 58
     },
     "time": "8:00 PM",
     "line": "CLEM -1.5",
     "live": {
-     "detail": "10:29 2nd",
-     "as_of": "9:36 PM"
+     "detail": "7:44 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -15754,7 +15754,7 @@
      "opp_id": "6",
      "seed": null,
      "record": "0-6",
-     "live": 43
+     "live": 49
     },
     "home": {
      "team": "South Alabama",
@@ -15766,13 +15766,13 @@
      "final": null,
      "won": null,
      "record": "4-4",
-     "live": 68
+     "live": 74
     },
     "time": "8:00 PM",
     "line": "USA -17.5",
     "live": {
-     "detail": "4:07 2nd",
-     "as_of": "9:36 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
@@ -15802,7 +15802,7 @@
      "opp_id": "2",
      "seed": null,
      "record": "4-4",
-     "live": 62
+     "live": 66
     },
     "home": {
      "team": "Auburn",
@@ -15814,13 +15814,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 95
+     "live": 101
     },
     "time": "8:00 PM",
     "line": "AUB -24.5",
     "live": {
-     "detail": "3:32 2nd",
-     "as_of": "9:36 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:46 PM"
     }
    },
    {
