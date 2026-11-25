@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 14:13 EST",
- "scores_updated": "2:13 PM",
+ "updated": "2026-11-25 14:16 EST",
+ "scores_updated": "2:16 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15554,7 +15554,7 @@
     "line": "UVA -5.5",
     "live": {
      "detail": "Delayed",
-     "as_of": "1:49 PM"
+     "as_of": "2:16 PM"
     }
    },
    {
@@ -15606,13 +15606,13 @@
      "opp_id": "99",
      "seed": null,
      "record": "5-0",
-     "live": 12
+     "live": 15
     },
     "time": "2:00 PM",
     "line": "LSU -3.5",
     "live": {
-     "detail": "15:29 1st",
-     "as_of": "2:13 PM"
+     "detail": "14:13 1st",
+     "as_of": "2:16 PM"
     }
    },
    {
@@ -15636,7 +15636,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 9
+     "live": 18
     },
     "home": {
      "team": "NJIT",
@@ -15654,13 +15654,13 @@
      "opp_id": "2363",
      "seed": null,
      "record": "1-7",
-     "live": 5
+     "live": 11
     },
     "time": "2:00 PM",
     "line": "NJIT -1.5",
     "live": {
-     "detail": "15:34 1st",
-     "as_of": "2:13 PM"
+     "detail": "12:51 1st",
+     "as_of": "2:16 PM"
     }
    },
    {
@@ -16026,7 +16026,7 @@
      "record": "3-4"
     },
     "time": "7:00 PM",
-    "line": "NIU -3.5"
+    "line": "NIU -2.5"
    },
    {
     "id": "401918971",
