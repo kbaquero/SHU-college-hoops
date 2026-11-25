@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 17:47 EST",
- "scores_updated": "5:47 PM",
+ "updated": "2026-11-25 17:57 EST",
+ "scores_updated": "5:57 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15708,7 +15708,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 63
+     "live": 66
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -15726,13 +15726,13 @@
      "opp_id": "2247",
      "seed": null,
      "record": "2-5",
-     "live": 67
+     "live": 71
     },
     "time": "4:00 PM",
     "line": "GAST -1.5",
     "live": {
-     "detail": "3:01 2nd",
-     "as_of": "5:47 PM"
+     "detail": "0:30 2nd",
+     "as_of": "5:57 PM"
     }
    },
    {
@@ -15814,7 +15814,7 @@
      "opp_id": "2507",
      "seed": null,
      "record": "6-1",
-     "live": 8
+     "live": 19
     },
     "home": {
      "team": "Providence",
@@ -15832,13 +15832,13 @@
      "opp_id": "252",
      "seed": null,
      "record": "5-2",
-     "live": 8
+     "live": 24
     },
     "time": "5:30 PM",
     "line": "BYU -2.5",
     "live": {
-     "detail": "15:06 1st",
-     "as_of": "5:47 PM"
+     "detail": "10:20 1st",
+     "as_of": "5:57 PM"
     }
    },
    {
