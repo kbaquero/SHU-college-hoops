@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 15:06 EST",
- "scores_updated": "3:06 PM",
+ "updated": "2026-11-25 15:16 EST",
+ "scores_updated": "3:16 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15530,7 +15530,7 @@
      "final": null,
      "won": null,
      "record": "7-0",
-     "live": 35
+     "live": 40
     },
     "home": {
      "team": "Marquette",
@@ -15548,13 +15548,13 @@
      "opp_id": "258",
      "seed": null,
      "record": "4-2",
-     "live": 35
+     "live": 39
     },
     "time": "12:00 PM",
     "line": "UVA -5.5",
     "live": {
-     "detail": "12:17 2nd",
-     "as_of": "3:06 PM"
+     "detail": "9:12 2nd",
+     "as_of": "3:16 PM"
     }
    },
    {
@@ -15584,7 +15584,7 @@
      "opp_id": "9",
      "seed": null,
      "record": "6-0",
-     "live": 38
+     "live": 42
     },
     "home": {
      "team": "Arizona St.",
@@ -15606,13 +15606,13 @@
      "opp_id": "99",
      "seed": null,
      "record": "5-0",
-     "live": 43
+     "live": 50
     },
     "time": "2:00 PM",
     "line": "LSU -3.5",
     "live": {
-     "detail": "End of 2nd",
-     "as_of": "3:06 PM"
+     "detail": "15:44 2nd",
+     "as_of": "3:16 PM"
     }
    },
    {
@@ -15636,7 +15636,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 43
+     "live": 47
     },
     "home": {
      "team": "NJIT",
@@ -15654,13 +15654,13 @@
      "opp_id": "2363",
      "seed": null,
      "record": "1-7",
-     "live": 31
+     "live": 41
     },
     "time": "2:00 PM",
     "line": "NJIT -1.5",
     "live": {
-     "detail": "19:06 2nd",
-     "as_of": "3:06 PM"
+     "detail": "15:56 2nd",
+     "as_of": "3:16 PM"
     }
    },
    {
@@ -15684,7 +15684,7 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 22
+     "live": 33
     },
     "home": {
      "team": "Arizona",
@@ -15702,13 +15702,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-1",
-     "live": 14
+     "live": 23
     },
     "time": "2:30 PM",
     "line": "ARIZ -5.5",
     "live": {
-     "detail": "7:15 1st",
-     "as_of": "3:06 PM"
+     "detail": "3:27 1st",
+     "as_of": "3:16 PM"
     }
    },
    {
