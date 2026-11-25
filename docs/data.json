@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 07:50 EST",
+ "updated": "2026-11-25 12:03 EST",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15528,7 +15528,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "7-0"
+     "record": "7-0",
+     "live": 0
     },
     "home": {
      "team": "Marquette",
@@ -15545,10 +15546,15 @@
      "opp_final": null,
      "opp_id": "258",
      "seed": null,
-     "record": "4-2"
+     "record": "4-2",
+     "live": 2
     },
     "time": "12:00 PM",
-    "line": "UVA -5.5"
+    "line": "UVA -5.5",
+    "live": {
+     "detail": "19:30 1st",
+     "as_of": "12:03 PM"
+    }
    },
    {
     "id": "401921669",
@@ -15726,7 +15732,7 @@
      "record": "2-5"
     },
     "time": "4:00 PM",
-    "line": "GAST -3.5"
+    "line": "GAST -2.5"
    },
    {
     "id": "401926065",
@@ -15770,7 +15776,7 @@
      "record": "6-0"
     },
     "time": "5:00 PM",
-    "line": "NEB -35.5"
+    "line": "NEB -34.5"
    },
    {
     "id": "401921716",
@@ -15820,7 +15826,7 @@
      "record": "5-2"
     },
     "time": "5:30 PM",
-    "line": "BYU -3.5"
+    "line": "BYU -2.5"
    },
    {
     "id": "401920299",
@@ -15862,7 +15868,7 @@
      "record": "2-4"
     },
     "time": "6:00 PM",
-    "line": "CSUN -2.5"
+    "line": "CSUN -1.5"
    },
    {
     "id": "401909568",
@@ -15916,7 +15922,7 @@
      "record": "4-2"
     },
     "time": "7:00 PM",
-    "line": "CONN -2.5"
+    "line": "CONN -1.5"
    },
    {
     "id": "401918960",
@@ -16050,7 +16056,7 @@
      "record": "5-0"
     },
     "time": "7:00 PM",
-    "line": "USU -4.5"
+    "line": "USU -3.5"
    },
    {
     "id": "401920847",
@@ -16092,7 +16098,7 @@
      "record": "5-1"
     },
     "time": "7:00 PM",
-    "line": "UNCW -6.5"
+    "line": "UNCW -5.5"
    },
    {
     "id": "401911028",
@@ -16176,7 +16182,7 @@
      "record": "5-1"
     },
     "time": "7:30 PM",
-    "line": "MSST -4.5"
+    "line": "MSST -3.5"
    },
    {
     "id": "401925880",
@@ -16261,7 +16267,7 @@
      "record": "3-3"
     },
     "time": "9:30 PM",
-    "line": ""
+    "line": "GCU -9.5"
    },
    {
     "id": "401929005",
@@ -16345,7 +16351,7 @@
      "record": "3-3"
     },
     "time": "11:59 PM",
-    "line": ""
+    "line": "SLU -4.5"
    },
    {
     "id": "401921714",
@@ -17976,5 +17982,6 @@
  "gotd": {
   "date": "2026-11-25",
   "id": "401909568"
- }
+ },
+ "scores_updated": "12:03 PM"
 }
