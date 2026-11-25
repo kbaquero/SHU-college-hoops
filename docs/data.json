@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 21:26 EST",
- "scores_updated": "9:26 PM",
+ "updated": "2026-11-24 21:36 EST",
+ "scores_updated": "9:36 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15244,7 +15244,7 @@
     "tbd": false,
     "tv": "MEAC Network",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15256,10 +15256,9 @@
      "owners": [],
      "id": "116",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "1-4",
-     "live": 75
+     "final": 75,
+     "won": true,
+     "record": "2-4"
     },
     "home": {
      "team": "Morgan St.",
@@ -15268,23 +15267,18 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Mount St. Mary's",
      "pts": 0,
-     "final": null,
+     "final": 74,
      "opp_final": null,
      "opp_id": "116",
      "seed": null,
-     "record": "4-3",
-     "live": 74
+     "record": "4-4"
     },
     "time": "7:00 PM",
-    "line": "MORG -1.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:26 PM"
-    }
+    "line": "MORG -1.5"
    },
    {
     "id": "401928348",
@@ -15622,7 +15616,7 @@
      "opp_id": "2184",
      "seed": null,
      "record": "6-0",
-     "live": 40
+     "live": 43
     },
     "home": {
      "team": "Duquesne",
@@ -15634,13 +15628,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 32
+     "live": 35
     },
     "time": "7:30 PM",
     "line": "HPU -10.5",
     "live": {
-     "detail": "1:08 1st",
-     "as_of": "9:26 PM"
+     "detail": "Halftime",
+     "as_of": "9:36 PM"
     }
    },
    {
@@ -15712,7 +15706,7 @@
      "opp_id": "264",
      "seed": null,
      "record": "4-2",
-     "live": 37
+     "live": 45
     },
     "home": {
      "team": "Washington",
@@ -15724,13 +15718,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 43
+     "live": 49
     },
     "time": "8:00 PM",
     "line": "CLEM -1.5",
     "live": {
-     "detail": "13:53 2nd",
-     "as_of": "9:26 PM"
+     "detail": "10:29 2nd",
+     "as_of": "9:36 PM"
     }
    },
    {
@@ -15760,7 +15754,7 @@
      "opp_id": "6",
      "seed": null,
      "record": "0-6",
-     "live": 36
+     "live": 43
     },
     "home": {
      "team": "South Alabama",
@@ -15772,13 +15766,13 @@
      "final": null,
      "won": null,
      "record": "4-4",
-     "live": 56
+     "live": 68
     },
     "time": "8:00 PM",
     "line": "USA -17.5",
     "live": {
-     "detail": "7:53 2nd",
-     "as_of": "9:26 PM"
+     "detail": "4:07 2nd",
+     "as_of": "9:36 PM"
     }
    },
    {
@@ -15808,7 +15802,7 @@
      "opp_id": "2",
      "seed": null,
      "record": "4-4",
-     "live": 57
+     "live": 62
     },
     "home": {
      "team": "Auburn",
@@ -15820,13 +15814,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 90
+     "live": 95
     },
     "time": "8:00 PM",
     "line": "AUB -24.5",
     "live": {
-     "detail": "6:59 2nd",
-     "as_of": "9:26 PM"
+     "detail": "3:32 2nd",
+     "as_of": "9:36 PM"
     }
    },
    {
@@ -15850,7 +15844,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 21
+     "live": 25
     },
     "home": {
      "team": "Louisville",
@@ -15869,13 +15863,13 @@
      "opp_id": "2641",
      "seed": null,
      "record": "3-1",
-     "live": 23
+     "live": 26
     },
     "time": "8:00 PM",
     "line": "TTU -2.5",
     "live": {
-     "detail": "1:24 1st",
-     "as_of": "9:26 PM"
+     "detail": "Halftime",
+     "as_of": "9:36 PM"
     }
    },
    {
@@ -15899,7 +15893,7 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 43
+     "live": 51
     },
     "home": {
      "team": "Penn",
@@ -15917,13 +15911,13 @@
      "opp_id": "2182",
      "seed": null,
      "record": "3-3",
-     "live": 59
+     "live": 68
     },
     "time": "8:00 PM",
     "line": "PENN -6.5",
     "live": {
-     "detail": "14:11 2nd",
-     "as_of": "9:26 PM"
+     "detail": "10:48 2nd",
+     "as_of": "9:36 PM"
     }
    },
    {
