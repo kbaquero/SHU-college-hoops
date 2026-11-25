@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 16:16 EST",
- "scores_updated": "4:16 PM",
+ "updated": "2026-11-25 16:17 EST",
+ "scores_updated": "4:17 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15513,7 +15513,7 @@
     "id": "401920428",
     "start": "2026-11-25T12:00:00-05:00",
     "tbd": false,
-    "tv": "ESPN",
+    "tv": "ESPN2",
     "neutral": true,
     "completed": true,
     "kind": "nonconf",
@@ -15539,11 +15539,11 @@
       "Sean P."
      ],
      "won": false,
-     "score": "",
+     "score": "54-60",
      "opp": "Virginia",
      "pts": 0,
      "final": 54,
-     "opp_final": null,
+     "opp_final": 60,
      "opp_id": "258",
      "seed": null,
      "record": "4-3"
@@ -15560,7 +15560,7 @@
     "completed": false,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "Acrisure Series",
     "away": {
      "team": "LSU",
@@ -15606,7 +15606,7 @@
     "line": "LSU -3.5",
     "live": {
      "detail": "1:34 OT",
-     "as_of": "4:16 PM"
+     "as_of": "4:17 PM"
     }
    },
    {
@@ -15639,11 +15639,11 @@
       "Mike L."
      ],
      "won": false,
-     "score": "",
+     "score": "70-81",
      "opp": "Manhattan",
      "pts": 0,
      "final": 70,
-     "opp_final": null,
+     "opp_final": 81,
      "opp_id": "2363",
      "seed": null,
      "record": "1-8"
@@ -15672,7 +15672,7 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 54
+     "live": 56
     },
     "home": {
      "team": "Arizona",
@@ -15695,8 +15695,8 @@
     "time": "2:30 PM",
     "line": "ARIZ -5.5",
     "live": {
-     "detail": "9:52 2nd",
-     "as_of": "4:16 PM"
+     "detail": "9:27 2nd",
+     "as_of": "4:17 PM"
     }
    },
    {
@@ -15744,7 +15744,7 @@
     "line": "GAST -1.5",
     "live": {
      "detail": "10:43 1st",
-     "as_of": "4:16 PM"
+     "as_of": "4:17 PM"
     }
    },
    {
