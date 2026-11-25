@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 00:21 EST",
- "scores_updated": "12:21 AM",
+ "updated": "2026-11-25 00:31 EST",
+ "scores_updated": "12:31 AM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15890,7 +15890,7 @@
     "tbd": false,
     "tv": "CBSSN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15902,16 +15902,15 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Saint Louis",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 91,
      "opp_final": null,
      "opp_id": "139",
      "seed": null,
-     "record": "4-0",
-     "live": 85
+     "record": "5-0"
     },
     "home": {
      "team": "Saint Louis",
@@ -15920,23 +15919,18 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Grand Canyon",
      "pts": 0,
-     "final": null,
+     "final": 88,
      "opp_final": null,
      "opp_id": "2253",
      "seed": null,
-     "record": "3-2",
-     "live": 82
+     "record": "3-3"
     },
     "time": "9:30 PM",
-    "line": "GCU -1.5",
-    "live": {
-     "detail": "0:37 2nd",
-     "as_of": "12:21 AM"
-    }
+    "line": "GCU -1.5"
    },
    {
     "id": "401906762",
@@ -15944,7 +15938,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15957,16 +15951,15 @@
       "Chris C.",
       "Mike C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Alabama",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 68,
      "opp_final": null,
      "opp_id": "333",
      "seed": null,
-     "record": "4-1",
-     "live": 68
+     "record": "5-1"
     },
     "home": {
      "team": "Alabama",
@@ -15975,17 +15968,12 @@
      "owners": [],
      "id": "333",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-0",
-     "live": 63
+     "final": 63,
+     "won": false,
+     "record": "5-1"
     },
     "time": "10:00 PM",
-    "line": "ALA -1.5",
-    "live": {
-     "detail": "0:04 2nd",
-     "as_of": "12:21 AM"
-    }
+    "line": "ALA -1.5"
    },
    {
     "id": "401915943",
