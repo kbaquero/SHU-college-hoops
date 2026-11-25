@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 16:36 EST",
- "scores_updated": "4:36 PM",
+ "updated": "2026-11-25 16:46 EST",
+ "scores_updated": "4:46 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15557,10 +15557,10 @@
     "tbd": false,
     "tv": "CBSSN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final OT",
+    "final_label": "Final 2OT",
     "event": "Acrisure Series",
     "away": {
      "team": "LSU",
@@ -15569,16 +15569,15 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Arizona St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 94,
      "opp_final": null,
      "opp_id": "9",
      "seed": null,
-     "record": "6-0",
-     "live": 88
+     "record": "7-0"
     },
     "home": {
      "team": "Arizona St.",
@@ -15591,23 +15590,18 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "LSU",
      "pts": 0,
-     "final": null,
+     "final": 92,
      "opp_final": null,
      "opp_id": "99",
      "seed": null,
-     "record": "5-0",
-     "live": 89
+     "record": "5-1"
     },
     "time": "2:00 PM",
-    "line": "LSU -3.5",
-    "live": {
-     "detail": "2:14 2OT",
-     "as_of": "4:36 PM"
-    }
+    "line": "LSU -3.5"
    },
    {
     "id": "401920868",
@@ -15672,7 +15666,7 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 63
+     "live": 67
     },
     "home": {
      "team": "Arizona",
@@ -15690,13 +15684,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-1",
-     "live": 75
+     "live": 77
     },
     "time": "2:30 PM",
     "line": "ARIZ -5.5",
     "live": {
-     "detail": "4:48 2nd",
-     "as_of": "4:36 PM"
+     "detail": "1:56 2nd",
+     "as_of": "4:46 PM"
     }
    },
    {
@@ -15720,7 +15714,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 28
+     "live": 34
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -15738,13 +15732,13 @@
      "opp_id": "2247",
      "seed": null,
      "record": "2-5",
-     "live": 25
+     "live": 35
     },
     "time": "4:00 PM",
     "line": "GAST -1.5",
     "live": {
-     "detail": "3:49 1st",
-     "as_of": "4:36 PM"
+     "detail": "Halftime",
+     "as_of": "4:46 PM"
     }
    },
    {
