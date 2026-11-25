@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 14:53 EST",
- "scores_updated": "2:53 PM",
+ "updated": "2026-11-25 15:03 EST",
+ "scores_updated": "3:03 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15548,13 +15548,13 @@
      "opp_id": "258",
      "seed": null,
      "record": "4-2",
-     "live": 32
+     "live": 35
     },
     "time": "12:00 PM",
     "line": "UVA -5.5",
     "live": {
-     "detail": "16:11 2nd",
-     "as_of": "2:53 PM"
+     "detail": "14:01 2nd",
+     "as_of": "3:03 PM"
     }
    },
    {
@@ -15684,7 +15684,7 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 13
+     "live": 22
     },
     "home": {
      "team": "Arizona",
@@ -15702,13 +15702,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-1",
-     "live": 10
+     "live": 14
     },
     "time": "2:30 PM",
     "line": "ARIZ -5.5",
     "live": {
-     "detail": "11:22 1st",
-     "as_of": "2:53 PM"
+     "detail": "7:47 1st",
+     "as_of": "3:03 PM"
     }
    },
    {
@@ -15845,7 +15845,7 @@
      "record": "5-2"
     },
     "time": "5:30 PM",
-    "line": "BYU -1.5"
+    "line": "BYU -2.5"
    },
    {
     "id": "401920299",
