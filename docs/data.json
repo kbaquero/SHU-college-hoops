@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-25 13:33 EST",
+ "updated": "2026-11-25 13:45 EST",
+ "scores_updated": "1:45 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15553,7 +15554,7 @@
     "line": "UVA -5.5",
     "live": {
      "detail": "Delayed",
-     "as_of": "1:23 PM"
+     "as_of": "1:45 PM"
     }
    },
    {
@@ -15568,9 +15569,26 @@
     "final_label": "Final",
     "event": "Acrisure Series",
     "away": {
-     "team": "Arizona St.",
+     "team": "LSU",
      "pool": true,
      "home": false,
+     "owners": [
+      "Mike C."
+     ],
+     "won": null,
+     "score": "",
+     "opp": "Arizona St.",
+     "pts": 0,
+     "final": null,
+     "opp_final": null,
+     "opp_id": "9",
+     "seed": null,
+     "record": "6-0"
+    },
+    "home": {
+     "team": "Arizona St.",
+     "pool": true,
+     "home": true,
      "owners": [
       "Joe H.",
       "Connor C. & Conor G.",
@@ -15587,23 +15605,6 @@
      "opp_id": "99",
      "seed": null,
      "record": "5-0"
-    },
-    "home": {
-     "team": "LSU",
-     "pool": true,
-     "home": true,
-     "owners": [
-      "Mike C."
-     ],
-     "won": null,
-     "score": "",
-     "opp": "Arizona St.",
-     "pts": 0,
-     "final": null,
-     "opp_final": null,
-     "opp_id": "9",
-     "seed": null,
-     "record": "6-0"
     },
     "time": "2:00 PM",
     "line": "LSU -3.5"
@@ -17982,6 +17983,5 @@
  "gotd": {
   "date": "2026-11-25",
   "id": "401909568"
- },
- "scores_updated": "1:33 PM"
+ }
 }
