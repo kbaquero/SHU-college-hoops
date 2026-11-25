@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 13:03 EST",
+ "updated": "2026-11-25 13:23 EST",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15552,8 +15552,8 @@
     "time": "12:00 PM",
     "line": "UVA -5.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "1:03 PM"
+     "detail": "Delayed",
+     "as_of": "1:23 PM"
     }
    },
    {
@@ -15970,7 +15970,7 @@
      "record": "5-1"
     },
     "time": "7:00 PM",
-    "line": "NCSU -28.5"
+    "line": "NCSU -27.5"
    },
    {
     "id": "401920916",
@@ -17983,5 +17983,5 @@
   "date": "2026-11-25",
   "id": "401909568"
  },
- "scores_updated": "1:03 PM"
+ "scores_updated": "1:23 PM"
 }
