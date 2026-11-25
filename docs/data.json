@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 16:56 EST",
- "scores_updated": "4:56 PM",
+ "updated": "2026-11-25 17:07 EST",
+ "scores_updated": "5:07 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15708,7 +15708,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 34
+     "live": 37
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -15726,13 +15726,13 @@
      "opp_id": "2247",
      "seed": null,
      "record": "2-5",
-     "live": 35
+     "live": 42
     },
     "time": "4:00 PM",
     "line": "GAST -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:46 PM"
+     "detail": "16:50 2nd",
+     "as_of": "5:07 PM"
     }
    },
    {
@@ -15763,7 +15763,8 @@
      "opp_final": null,
      "opp_id": "158",
      "seed": null,
-     "record": "1-5"
+     "record": "1-5",
+     "live": 3
     },
     "home": {
      "team": "Nebraska",
@@ -15774,10 +15775,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "6-0"
+     "record": "6-0",
+     "live": 11
     },
     "time": "5:00 PM",
-    "line": "NEB -34.5"
+    "line": "NEB -34.5",
+    "live": {
+     "detail": "16:39 1st",
+     "as_of": "5:07 PM"
+    }
    },
    {
     "id": "401921716",
