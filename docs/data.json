@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 17:37 EST",
- "scores_updated": "5:37 PM",
+ "updated": "2026-11-25 17:47 EST",
+ "scores_updated": "5:47 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15708,7 +15708,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 58
+     "live": 63
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -15726,13 +15726,13 @@
      "opp_id": "2247",
      "seed": null,
      "record": "2-5",
-     "live": 63
+     "live": 67
     },
     "time": "4:00 PM",
     "line": "GAST -1.5",
     "live": {
-     "detail": "5:40 2nd",
-     "as_of": "5:37 PM"
+     "detail": "3:01 2nd",
+     "as_of": "5:47 PM"
     }
    },
    {
@@ -15764,7 +15764,7 @@
      "opp_id": "158",
      "seed": null,
      "record": "1-5",
-     "live": 18
+     "live": 28
     },
     "home": {
      "team": "Nebraska",
@@ -15776,13 +15776,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 41
+     "live": 56
     },
     "time": "5:00 PM",
     "line": "NEB -34.5",
     "live": {
-     "detail": "3:41 1st",
-     "as_of": "5:37 PM"
+     "detail": "Halftime",
+     "as_of": "5:47 PM"
     }
    },
    {
@@ -15814,7 +15814,7 @@
      "opp_id": "2507",
      "seed": null,
      "record": "6-1",
-     "live": 0
+     "live": 8
     },
     "home": {
      "team": "Providence",
@@ -15832,13 +15832,13 @@
      "opp_id": "252",
      "seed": null,
      "record": "5-2",
-     "live": 3
+     "live": 8
     },
     "time": "5:30 PM",
     "line": "BYU -2.5",
     "live": {
-     "detail": "19:19 1st",
-     "as_of": "5:37 PM"
+     "detail": "15:06 1st",
+     "as_of": "5:47 PM"
     }
    },
    {
