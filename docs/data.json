@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 18:17 EST",
- "scores_updated": "6:17 PM",
+ "updated": "2026-11-25 18:27 EST",
+ "scores_updated": "6:27 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15758,7 +15758,7 @@
      "opp_id": "158",
      "seed": null,
      "record": "1-5",
-     "live": 43
+     "live": 48
     },
     "home": {
      "team": "Nebraska",
@@ -15770,13 +15770,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 78
+     "live": 83
     },
     "time": "5:00 PM",
     "line": "NEB -34.5",
     "live": {
-     "detail": "11:44 2nd",
-     "as_of": "6:17 PM"
+     "detail": "9:30 2nd",
+     "as_of": "6:27 PM"
     }
    },
    {
@@ -15808,7 +15808,7 @@
      "opp_id": "2507",
      "seed": null,
      "record": "6-1",
-     "live": 37
+     "live": 43
     },
     "home": {
      "team": "Providence",
@@ -15826,13 +15826,13 @@
      "opp_id": "252",
      "seed": null,
      "record": "5-2",
-     "live": 41
+     "live": 43
     },
     "time": "5:30 PM",
     "line": "BYU -2.5",
     "live": {
-     "detail": "1:46 1st",
-     "as_of": "6:17 PM"
+     "detail": "Halftime",
+     "as_of": "6:27 PM"
     }
    },
    {
@@ -15856,7 +15856,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 22
+     "live": 31
     },
     "home": {
      "team": "Weber St.",
@@ -15874,13 +15874,13 @@
      "opp_id": "2463",
      "seed": null,
      "record": "2-4",
-     "live": 6
+     "live": 14
     },
     "time": "6:00 PM",
     "line": "CSUN -1.5",
     "live": {
-     "detail": "12:14 1st",
-     "as_of": "6:17 PM"
+     "detail": "8:43 1st",
+     "as_of": "6:27 PM"
     }
    },
    {
