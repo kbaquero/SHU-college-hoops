@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 22:51 EST",
- "scores_updated": "10:51 PM",
+ "updated": "2026-11-24 23:01 EST",
+ "scores_updated": "11:01 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15805,7 +15805,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15817,10 +15817,9 @@
      "owners": [],
      "id": "2641",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-0",
-     "live": 64
+     "final": 64,
+     "won": false,
+     "record": "5-1"
     },
     "home": {
      "team": "Louisville",
@@ -15830,23 +15829,18 @@
       "Chris C.",
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Texas Tech",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 72,
      "opp_final": null,
      "opp_id": "2641",
      "seed": null,
-     "record": "3-1",
-     "live": 72
+     "record": "4-1"
     },
     "time": "8:00 PM",
-    "line": "TTU -2.5",
-    "live": {
-     "detail": "0:00 2nd",
-     "as_of": "10:51 PM"
-    }
+    "line": "TTU -2.5"
    },
    {
     "id": "401921184",
@@ -15917,7 +15911,7 @@
      "opp_id": "139",
      "seed": null,
      "record": "4-0",
-     "live": 33
+     "live": 36
     },
     "home": {
      "team": "Saint Louis",
@@ -15935,13 +15929,13 @@
      "opp_id": "2253",
      "seed": null,
      "record": "3-2",
-     "live": 35
+     "live": 41
     },
     "time": "9:30 PM",
     "line": "GCU -1.5",
     "live": {
-     "detail": "1:31 1st",
-     "as_of": "10:51 PM"
+     "detail": "Halftime",
+     "as_of": "11:01 PM"
     }
    },
    {
@@ -15972,7 +15966,7 @@
      "opp_id": "333",
      "seed": null,
      "record": "4-1",
-     "live": 28
+     "live": 29
     },
     "home": {
      "team": "Alabama",
@@ -15984,13 +15978,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 19
+     "live": 24
     },
     "time": "10:00 PM",
     "line": "ALA -1.5",
     "live": {
-     "detail": "2:31 1st",
-     "as_of": "10:51 PM"
+     "detail": "Halftime",
+     "as_of": "11:01 PM"
     }
    },
    {
@@ -16035,7 +16029,7 @@
      "record": "5-0"
     },
     "time": "10:30 PM",
-    "line": "SJU -11.5"
+    "line": "SJU -10.5"
    }
   ]
  },
