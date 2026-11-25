@@ -348,7 +348,7 @@ def update_scores(get_board=None, now=None, docs=DOCS):
     td = data.get("today") or {}
     if not td.get("games"):
         return data
-    board = get_board(td["date"])   # the morning's date, so 12-1 AM runs still finish off "today"
+    board = get_board(td["date"])   # the pool day (5 AM to 5 AM), so after-midnight runs still finish off "today"
     changed = apply_board(td["games"], board, now)
     pick = gotd.pick(td, data.get("gotd"), now)
     if pick != data.get("gotd"):

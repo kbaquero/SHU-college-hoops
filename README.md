@@ -98,7 +98,7 @@ How games are classified:
 
 - **One long-running GitHub job (`watch.yml`) keeps everything current.** From 5:45 AM Eastern it runs the morning
   full update (the official numbers; standings count games through the previous day, and the pool's day rolls over
-  at 5 AM Eastern). While any game is in progress it refreshes scores every 10 minutes; otherwise it sleeps until the
+  at 5 AM Eastern; a game that tips after midnight counts for the night before). While any game is in progress it refreshes scores every 10 minutes; otherwise it sleeps until the
   next tip-off or the next morning. Just before GitHub's 6-hour job limit it starts its own successor, so it never
   depends on GitHub's unreliable cron. A schedule every 3 hours only restarts the chain if it ever breaks.
 - **The page adds each final to the morning totals**, so the standings are live (finals only; in-progress games

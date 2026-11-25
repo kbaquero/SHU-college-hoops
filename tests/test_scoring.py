@@ -26,6 +26,13 @@ def _g(gid, away, home, line="", start="2026-11-15T19:00:00-05:00", **kw):
     return {"id": gid, "kind": "nonconf", "line": line, "start": start, "completed": False,
             "away": side(away), "home": side(home), **kw}
 
+class PoolDay(unittest.TestCase):
+    def test_tip_after_midnight_belongs_to_the_night_before(self):
+        from tracker.espn import _when
+        self.assertEqual(_when("2026-11-25T05:49Z")[0], "2026-11-24")   # 12:49 AM ET
+        self.assertEqual(_when("2026-11-25T10:00Z")[0], "2026-11-25")   # 5 AM ET starts the new day
+        self.assertEqual(_when("2026-11-25T02:00Z")[0], "2026-11-24")   # 9 PM ET, already tomorrow in UTC
+
 class BoardIds(unittest.TestCase):
     def test_opponent_listed_under_another_id_still_gets_its_score(self):
         from tracker.run import apply_board

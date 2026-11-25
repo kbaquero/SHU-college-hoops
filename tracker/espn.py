@@ -9,11 +9,15 @@ UA = {"User-Agent": "Mozilla/5.0 (pool-tracker)"}
 ET = ZoneInfo("America/New_York")
 
 
+POOL_DAY_STARTS = 5   # hours after midnight ET: a 12:49 AM tip from a West Coast or Hawaii game belongs to the night before
+
+
 def _when(iso):
-    """ESPN gives UTC times; the pool lives on Eastern time (a 9 PM ET tip is already 'tomorrow' in UTC)."""
+    """ESPN gives UTC times; the pool lives on Eastern time (a 9 PM ET tip is already 'tomorrow' in UTC),
+    and its day runs 5 AM to 5 AM, so a game is dated by the pool day it tips in."""
     try:
         t = dt.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(ET)
-        return t.date().isoformat(), t.isoformat()
+        return (t - dt.timedelta(hours=POOL_DAY_STARTS)).date().isoformat(), t.isoformat()
     except (ValueError, AttributeError):
         return (iso or "")[:10], ""
 
@@ -159,7 +163,19 @@ def _record(c):
 
 
 def day_board(day):
-    """{event_id: {"line": spread text, "records": {team_id: 'W-L'}}} for Division I games on `day`."""
+    """{event_id: {"line": spread text, "records": {team_id: 'W-L'}}} for Division I games on pool day `day`.
+    Also reads the next date's scoreboard, which is where ESPN may list a tip after midnight ET."""
+    nxt = (dt.date.fromisoformat(day) + dt.timedelta(days=1)).isoformat()
+    out = _board(day)
+    try:
+        for k, v in _board(nxt).items():
+            out.setdefault(k, v)
+    except Exception:   # the late-night games are a nice-to-have; never lose the main board over them
+        pass
+    return out
+
+
+def _board(day):
     data = fetch_json(f"{ESPN_BASE}/scoreboard?dates={day.replace('-', '')}&groups=50&limit=500")
     out = {}
     for ev in data.get("events", []):
