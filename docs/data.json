@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 15:36 EST",
- "scores_updated": "3:36 PM",
+ "updated": "2026-11-25 15:46 EST",
+ "scores_updated": "3:46 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15530,7 +15530,7 @@
      "final": null,
      "won": null,
      "record": "7-0",
-     "live": 53
+     "live": 58
     },
     "home": {
      "team": "Marquette",
@@ -15548,13 +15548,13 @@
      "opp_id": "258",
      "seed": null,
      "record": "4-2",
-     "live": 48
+     "live": 54
     },
     "time": "12:00 PM",
     "line": "UVA -5.5",
     "live": {
-     "detail": "3:18 2nd",
-     "as_of": "3:36 PM"
+     "detail": "0:39 2nd",
+     "as_of": "3:46 PM"
     }
    },
    {
@@ -15584,7 +15584,7 @@
      "opp_id": "9",
      "seed": null,
      "record": "6-0",
-     "live": 60
+     "live": 62
     },
     "home": {
      "team": "Arizona St.",
@@ -15606,13 +15606,13 @@
      "opp_id": "99",
      "seed": null,
      "record": "5-0",
-     "live": 66
+     "live": 68
     },
     "time": "2:00 PM",
     "line": "LSU -3.5",
     "live": {
-     "detail": "9:08 2nd",
-     "as_of": "3:36 PM"
+     "detail": "6:43 2nd",
+     "as_of": "3:46 PM"
     }
    },
    {
@@ -15636,7 +15636,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 57
+     "live": 64
     },
     "home": {
      "team": "NJIT",
@@ -15654,13 +15654,13 @@
      "opp_id": "2363",
      "seed": null,
      "record": "1-7",
-     "live": 57
+     "live": 60
     },
     "time": "2:00 PM",
     "line": "NJIT -1.5",
     "live": {
-     "detail": "9:33 2nd",
-     "as_of": "3:36 PM"
+     "detail": "6:40 2nd",
+     "as_of": "3:46 PM"
     }
    },
    {
@@ -15684,7 +15684,7 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 40
+     "live": 44
     },
     "home": {
      "team": "Arizona",
@@ -15702,13 +15702,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-1",
-     "live": 33
+     "live": 35
     },
     "time": "2:30 PM",
     "line": "ARIZ -5.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "3:26 PM"
+     "detail": "17:55 2nd",
+     "as_of": "3:46 PM"
     }
    },
    {
