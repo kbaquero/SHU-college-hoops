@@ -256,6 +256,12 @@ svg text{fill:var(--mute);font-size:11px}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--mute);padding:0 12px 4px}
 .vkey i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 .vkey i.dash{width:16px;height:0;border-radius:0;border-top:2px dashed var(--mute);vertical-align:3px}
+.vinfo .vgrid{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px}
+.vinfo .vgrid>div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vinfo .vq2{display:block;font-size:10.5px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.vinfo .none{color:var(--mute)}
+.vinfo .vby{margin-top:3px}
+.vinfo .vtap{color:var(--mute);font-size:12px;margin-top:8px}
 .vinfo{border-top:1px solid var(--line);padding:9px 12px 11px;font-size:13px;color:var(--mute);min-height:20px}
 .vinfo b{color:var(--ink)}
 
@@ -839,7 +845,7 @@ function renderMyCard(me) {
   if (!pts.length) { el.innerHTML = ''; info.hidden = true; return; }
   const avg = pts.reduce((a, d) => a + d.pts, 0) / pts.length, mid = 10;   // the average picked team; $100 cap / 10 teams
   const quad = d => d.sal < mid ? (d.pts >= avg ? 'Steal' : 'Dud') : d.sal > mid ? (d.pts >= avg ? 'Worth it' : 'Bust') : (d.pts >= avg ? 'Above average' : 'Below average');
-  let me = '', active = null, placed = [];
+  let me = '', active = null, placed = [], labeled = [];
   function draw() {
     const W = Math.max(280, el.clientWidth), s0 = Math.min(...pts.map(d => d.sal)) - 1, s1 = Math.max(...pts.map(d => d.sal)) + 1;
     // teams on the same salary and points share a spot: pack them in a small grid around it, the viewer's on top
@@ -881,14 +887,17 @@ function renderMyCard(me) {
       g += `<circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${sel ? R + 2 : R}" style="fill:${on ? 'var(--me)' : 'var(--mute)'}" opacity="${on || sel ? 1 : me ? .35 : .6}"${sel ? ' stroke="var(--ink)" stroke-width="1.5"' : ''}/>`;
     });
     // name one of the picked entry's teams per quadrant: the most points up top, the fewest down below
+    labeled = [];
     if (me) {
       // each label grows away from the $10 line so it stays in its own quadrant; a label that would still
       // collide with one already placed (or a corner name) moves to the other side of its dot
       const mineP = placed.filter(mine), boxes = [], cw = 7;   // ~px per character at 12px bold
       const box = (p, up) => {
-        const len = p.d.t.length * cw, left = p.d.sal < mid ? p.cx - 2 - len >= P.l : p.cx + 2 + len > W - P.r;
-        const x0 = left ? p.cx - 2 - len : p.cx + 2, ty = up ? p.cy - R - 7 : p.cy + R + 15;
-        return {x0, x1: x0 + len, y0: ty - 12, y1: ty + 3, ty, tx: left ? p.cx - 2 : p.cx + 2, a: left ? 'end' : 'start'};
+        // centered over (or under) the dot, slid sideways as needed to stay inside its own quadrant
+        const len = p.d.t.length * cw;
+        const lo = p.d.sal < mid ? P.l + 2 : x(mid) + 4, hi = p.d.sal < mid ? x(mid) - 4 : W - P.r;
+        const x0 = Math.max(lo, Math.min(p.cx - len / 2, hi - len)), ty = up ? p.cy - R - 7 : p.cy + R + 15;
+        return {x0, x1: x0 + len, y0: ty - 12, y1: ty + 3, ty, tx: x0, a: 'start'};
       };
       const hits = b => b.y0 < top + 18 || b.y1 > bot - 16 || boxes.some(o => b.x0 < o.x1 && o.x0 < b.x1 && b.y0 < o.y1 && o.y0 < b.y1);
       const lab = (p, up) => {
@@ -899,16 +908,23 @@ function renderMyCard(me) {
       };
       const pick = (keep, better) => { const l = mineP.filter(p => keep(p.d)); return l.length ? l.reduce((a, b) => better(b.d, a.d) ? b : a) : null; };
       const most = (b, a) => b.pts > a.pts || (b.pts === a.pts && b.sal < a.sal), low = (b, a) => b.pts < a.pts || (b.pts === a.pts && b.sal > a.sal);
-      [[d => d.sal < mid && d.pts >= avg, most, true], [d => d.sal > mid && d.pts >= avg, most, true],
-       [d => d.sal < mid && d.pts < avg, low, false], [d => d.sal > mid && d.pts < avg, low, false]]
-        .forEach(([keep, better, up]) => { const p = pick(keep, better); if (p) g += lab(p, up); });
+      [[d => d.sal < mid && d.pts >= avg, most, true, 'Steal'], [d => d.sal > mid && d.pts >= avg, most, true, 'Worth it'],
+       [d => d.sal < mid && d.pts < avg, low, false, 'Dud'], [d => d.sal > mid && d.pts < avg, low, false, 'Bust']]
+        .forEach(([keep, better, up, q]) => { const p = pick(keep, better); if (p) { g += lab(p, up); labeled.push({d: p.d, q}); } });
     }
     el.innerHTML = g + '</svg><div class="vkey">' + (me ? '<span><i style="background:var(--me)"></i>Your teams</span><span><i style="background:var(--mute);opacity:.5"></i>Other picked teams</span>' : '<span><i style="background:var(--mute)"></i>Picked teams</span>') +
       `<span><i class="dash"></i>Average picked team (${avg.toFixed(1)} pts, $10)</span></div>`;
   }
+  // with nothing tapped, the caption lists the labeled teams with their records
+  const rec = d => wl(T[d.t]).join('-');
   function describe(d) {
-    if (!d) { info.innerHTML = 'Tap a dot to see the team.'; return; }
-    info.innerHTML = `<b>${esc(d.t)}</b> · $${d.sal} · <b>${d.pts}</b> pt${d.pts === 1 ? '' : 's'} · ${quad(d)} · picked by ${ownList(d.own)}`;
+    if (!d) {
+      // laid out like the quadrants: Steal | Worth it over Dud | Bust
+      const cell = q => { const x = labeled.find(l => l.q === q); return `<div><span class="vq2">${q}</span>${x ? `<b>${esc(x.d.t)}</b> ${rec(x.d)}` : '<span class="none">None</span>'}</div>`; };
+      info.innerHTML = labeled.length ? `<div class="vgrid">${['Steal', 'Worth it', 'Dud', 'Bust'].map(cell).join('')}</div><div class="vtap">Tap a dot to see any team.</div>` : 'Tap a dot to see the team.';
+      return;
+    }
+    info.innerHTML = `<div><b>${esc(d.t)}</b> ${rec(d)} · $${d.sal} · <b>${d.pts}</b> pt${d.pts === 1 ? '' : 's'} · ${quad(d)}</div><div class="vby">Picked by ${ownList(d.own)}</div>`;
     info.querySelectorAll('.o').forEach(n => n.classList.toggle('me', n.dataset.o === me));
   }
   el.addEventListener('click', e => {
@@ -919,6 +935,7 @@ function renderMyCard(me) {
     active = best === active ? null : best; describe(active); draw();
   });
   window.valueFollowMe = m => { me = m || ''; draw(); describe(active); };
+  describe(null);
   window.valueRedraw = draw;
   let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
   draw();
