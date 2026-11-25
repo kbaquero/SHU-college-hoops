@@ -693,6 +693,12 @@ function lineChart({el, series, value, invert, ylab, aria, empty}) {
     for (let v = 0; v <= max; v += stepI) { s += `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".08"/><text x="${P.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`; }
     s += `<text transform="translate(13 ${(P.t + Ht - P.b) / 2}) rotate(-90)" text-anchor="middle">${ylab}</text>`;
     s += `<text x="${P.l}" y="${Ht - 6}">${fmt(H[0].date)}</text><text x="${W - P.r}" y="${Ht - 6}" text-anchor="end">${fmt(H[H.length - 1].date)}</text>`;
+    // dates in between, every k days (1, 2, 3, a week, two...) so labels sit about 80px apart; none crowd the ends
+    const room = (W - P.l - P.r) / 80, k = [1, 2, 3, 7, 14, 28, 56].find(v => (H.length - 1) / v <= room) || 56;
+    for (let i = k; i < H.length - 1; i += k) {
+      if (x(i) - P.l < 56 || W - P.r - x(i) < 56) continue;
+      s += `<line x1="${x(i)}" x2="${x(i)}" y1="${P.t}" y2="${Ht - P.b}" stroke="currentColor" opacity=".06"/><text x="${x(i)}" y="${Ht - 6}" text-anchor="middle">${fmt(H[i].date)}</text>`;
+    }
     const order = ents.map((e, j) => j).sort((a, b) => sel.has(ents[a]) - sel.has(ents[b]));   // highlighted lines on top
     order.forEach(j => {
       const e = ents[j], on = sel.has(e), dim = sel.size && !on;
