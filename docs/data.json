@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 12:33 EST",
+ "updated": "2026-11-25 12:43 EST",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15529,7 +15529,7 @@
      "final": null,
      "won": null,
      "record": "7-0",
-     "live": 11
+     "live": 13
     },
     "home": {
      "team": "Marquette",
@@ -15547,13 +15547,13 @@
      "opp_id": "258",
      "seed": null,
      "record": "4-2",
-     "live": 15
+     "live": 21
     },
     "time": "12:00 PM",
     "line": "UVA -5.5",
     "live": {
-     "detail": "8:35 1st",
-     "as_of": "12:33 PM"
+     "detail": "5:07 1st",
+     "as_of": "12:43 PM"
     }
    },
    {
@@ -17983,5 +17983,5 @@
   "date": "2026-11-25",
   "id": "401909568"
  },
- "scores_updated": "12:33 PM"
+ "scores_updated": "12:43 PM"
 }
