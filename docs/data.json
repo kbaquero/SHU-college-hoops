@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 01:31 EST",
- "scores_updated": "1:31 AM",
+ "updated": "2026-11-25 01:41 EST",
+ "scores_updated": "1:41 AM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15981,7 +15981,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15993,10 +15993,9 @@
      "owners": [],
      "id": "2483",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-1",
-     "live": 76
+     "final": 79,
+     "won": false,
+     "record": "3-2"
     },
     "home": {
      "team": "St. John's",
@@ -16007,23 +16006,18 @@
       "Mike L.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Oregon",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 90,
      "opp_final": null,
      "opp_id": "2483",
      "seed": null,
-     "record": "5-0",
-     "live": 89
+     "record": "6-0"
     },
     "time": "10:30 PM",
-    "line": "SJU -10.5",
-    "live": {
-     "detail": "0:22 2nd",
-     "as_of": "1:31 AM"
-    }
+    "line": "SJU -10.5"
    }
   ]
  },
