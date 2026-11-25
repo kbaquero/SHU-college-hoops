@@ -222,6 +222,7 @@ td .ptsb{font-size:14px;padding:1px 7px}
 .entry-row{cursor:pointer}
 .entry-row:hover td{background:var(--chip)}
 .entry-row.open>td{background:var(--chip)}
+.detail tr.rollup .gp{font-weight:500;color:var(--mute);white-space:nowrap}
 .detail tr.rollup td{background:var(--head2);border-top:1px solid var(--line);border-bottom:0;font-weight:650;color:var(--ink)}  /* same tint as the header above: bookends the team list */
 /* expand hint: a small muted chevron riding after the entry name; turns down when the row is open */
 .chev{display:inline-block;width:9px;height:9px;margin-left:6px;vertical-align:1px;color:var(--mute);opacity:.7;transition:transform .15s}
@@ -489,7 +490,8 @@ const teamNow = t => { const b = z(T[t]), [w, l] = wl(T[t]);
 const rollup = s => {
   const n = s.teams.map(teamNow), sum = k => n.reduce((a, x) => a + x[k], 0);
   const wlSum = k => n.reduce((a, x) => { const [w, l] = x[k].split('-').map(Number); return [a[0] + w, a[1] + l]; }, [0, 0]).join('-');
-  return `<tfoot><tr class="rollup"><td>Total</td><td class="n">${s.teams.reduce((a, t) => a + I[t].salary, 0)}</td><td class="n">${wlSum('rec')}</td><td class="n">${wlSum('conf')}</td><td class="n">${sum('reg')}</td><td class="n">${sum('ct')}</td><td class="n">${sum('ncaa')}</td><td class="n"><b>${sum('total')}</b></td></tr></tfoot>`;
+  const gp = n.reduce((a, x) => a + x.rec.split('-').reduce((p, q) => p + +q, 0), 0);
+  return `<tfoot><tr class="rollup"><td>Total <span class="gp">(${gp} games)</span></td><td class="n">${s.teams.reduce((a, t) => a + I[t].salary, 0)}</td><td class="n">${wlSum('rec')}</td><td class="n">${wlSum('conf')}</td><td class="n">${sum('reg')}</td><td class="n">${sum('ct')}</td><td class="n">${sum('ncaa')}</td><td class="n"><b>${sum('total')}</b></td></tr></tfoot>`;
 };
 
 // standings
