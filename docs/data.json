@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 01:11 EST",
- "scores_updated": "1:11 AM",
+ "updated": "2026-11-25 01:21 EST",
+ "scores_updated": "1:21 AM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15996,7 +15996,7 @@
      "final": null,
      "won": null,
      "record": "3-1",
-     "live": 60
+     "live": 68
     },
     "home": {
      "team": "St. John's",
@@ -16016,13 +16016,13 @@
      "opp_id": "2483",
      "seed": null,
      "record": "5-0",
-     "live": 76
+     "live": 78
     },
     "time": "10:30 PM",
     "line": "SJU -10.5",
     "live": {
-     "detail": "5:37 2nd",
-     "as_of": "1:11 AM"
+     "detail": "3:34 2nd",
+     "as_of": "1:21 AM"
     }
    }
   ]
