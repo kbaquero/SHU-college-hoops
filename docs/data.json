@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 17:57 EST",
- "scores_updated": "5:57 PM",
+ "updated": "2026-11-25 18:07 EST",
+ "scores_updated": "6:07 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15693,7 +15693,7 @@
     "tbd": false,
     "tv": "PTB Live",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15705,10 +15705,9 @@
      "owners": [],
      "id": "2247",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-4",
-     "live": 66
+     "final": 72,
+     "won": false,
+     "record": "3-5"
     },
     "home": {
      "team": "Florida Gulf Coast",
@@ -15717,23 +15716,18 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Georgia St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 77,
      "opp_final": null,
      "opp_id": "2247",
      "seed": null,
-     "record": "2-5",
-     "live": 71
+     "record": "3-5"
     },
     "time": "4:00 PM",
-    "line": "GAST -1.5",
-    "live": {
-     "detail": "0:30 2nd",
-     "as_of": "5:57 PM"
-    }
+    "line": "GAST -1.5"
    },
    {
     "id": "401926065",
@@ -15764,7 +15758,7 @@
      "opp_id": "158",
      "seed": null,
      "record": "1-5",
-     "live": 28
+     "live": 38
     },
     "home": {
      "team": "Nebraska",
@@ -15776,13 +15770,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 56
+     "live": 67
     },
     "time": "5:00 PM",
     "line": "NEB -34.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "5:47 PM"
+     "detail": "15:25 2nd",
+     "as_of": "6:07 PM"
     }
    },
    {
@@ -15814,7 +15808,7 @@
      "opp_id": "2507",
      "seed": null,
      "record": "6-1",
-     "live": 19
+     "live": 30
     },
     "home": {
      "team": "Providence",
@@ -15832,13 +15826,13 @@
      "opp_id": "252",
      "seed": null,
      "record": "5-2",
-     "live": 24
+     "live": 34
     },
     "time": "5:30 PM",
     "line": "BYU -2.5",
     "live": {
-     "detail": "10:20 1st",
-     "as_of": "5:57 PM"
+     "detail": "5:55 1st",
+     "as_of": "6:07 PM"
     }
    },
    {
@@ -15861,7 +15855,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "1-4"
+     "record": "1-4",
+     "live": 9
     },
     "home": {
      "team": "Weber St.",
@@ -15878,10 +15873,15 @@
      "opp_final": null,
      "opp_id": "2463",
      "seed": null,
-     "record": "2-4"
+     "record": "2-4",
+     "live": 3
     },
     "time": "6:00 PM",
-    "line": "CSUN -1.5"
+    "line": "CSUN -1.5",
+    "live": {
+     "detail": "16:53 1st",
+     "as_of": "6:07 PM"
+    }
    },
    {
     "id": "401909568",
