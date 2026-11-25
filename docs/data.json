@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 13:23 EST",
+ "updated": "2026-11-25 13:33 EST",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15606,7 +15606,7 @@
      "record": "6-0"
     },
     "time": "2:00 PM",
-    "line": "LSU -4.5"
+    "line": "LSU -3.5"
    },
    {
     "id": "401920868",
@@ -15826,7 +15826,7 @@
      "record": "5-2"
     },
     "time": "5:30 PM",
-    "line": "BYU -2.5"
+    "line": "BYU -1.5"
    },
    {
     "id": "401920299",
@@ -17983,5 +17983,5 @@
   "date": "2026-11-25",
   "id": "401909568"
  },
- "scores_updated": "1:23 PM"
+ "scores_updated": "1:33 PM"
 }
