@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 18:47 EST",
- "scores_updated": "6:47 PM",
+ "updated": "2026-11-25 18:57 EST",
+ "scores_updated": "6:57 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15735,7 +15735,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15749,16 +15749,15 @@
       "Joe H.",
       "Jason H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Nebraska",
      "pts": 0,
-     "final": null,
+     "final": 72,
      "opp_final": null,
      "opp_id": "158",
      "seed": null,
-     "record": "1-5",
-     "live": 71
+     "record": "1-6"
     },
     "home": {
      "team": "Nebraska",
@@ -15767,17 +15766,12 @@
      "owners": [],
      "id": "158",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "6-0",
-     "live": 99
+     "final": 101,
+     "won": true,
+     "record": "7-0"
     },
     "time": "5:00 PM",
-    "line": "NEB -34.5",
-    "live": {
-     "detail": "1:36 2nd",
-     "as_of": "6:47 PM"
-    }
+    "line": "NEB -34.5"
    },
    {
     "id": "401921716",
@@ -15808,7 +15802,7 @@
      "opp_id": "2507",
      "seed": null,
      "record": "6-1",
-     "live": 52
+     "live": 63
     },
     "home": {
      "team": "Providence",
@@ -15826,13 +15820,13 @@
      "opp_id": "252",
      "seed": null,
      "record": "5-2",
-     "live": 51
+     "live": 60
     },
     "time": "5:30 PM",
     "line": "BYU -2.5",
     "live": {
-     "detail": "15:47 2nd",
-     "as_of": "6:47 PM"
+     "detail": "11:56 2nd",
+     "as_of": "6:57 PM"
     }
    },
    {
@@ -15856,7 +15850,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 49
+     "live": 52
     },
     "home": {
      "team": "Weber St.",
@@ -15874,13 +15868,13 @@
      "opp_id": "2463",
      "seed": null,
      "record": "2-4",
-     "live": 30
+     "live": 33
     },
     "time": "6:00 PM",
     "line": "CSUN -1.5",
     "live": {
-     "detail": "3:18 1st",
-     "as_of": "6:47 PM"
+     "detail": "Halftime",
+     "as_of": "6:57 PM"
     }
    },
    {
