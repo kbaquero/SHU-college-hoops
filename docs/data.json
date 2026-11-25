@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 21:16 EST",
- "scores_updated": "9:16 PM",
+ "updated": "2026-11-24 21:26 EST",
+ "scores_updated": "9:26 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15259,7 +15259,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 73
+     "live": 75
     },
     "home": {
      "team": "Morgan St.",
@@ -15282,8 +15282,8 @@
     "time": "7:00 PM",
     "line": "MORG -1.5",
     "live": {
-     "detail": "0:26 2nd",
-     "as_of": "9:16 PM"
+     "detail": "End of 2nd",
+     "as_of": "9:26 PM"
     }
    },
    {
@@ -15622,7 +15622,7 @@
      "opp_id": "2184",
      "seed": null,
      "record": "6-0",
-     "live": 33
+     "live": 40
     },
     "home": {
      "team": "Duquesne",
@@ -15634,13 +15634,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 23
+     "live": 32
     },
     "time": "7:30 PM",
     "line": "HPU -10.5",
     "live": {
-     "detail": "4:51 1st",
-     "as_of": "9:16 PM"
+     "detail": "1:08 1st",
+     "as_of": "9:26 PM"
     }
    },
    {
@@ -15649,7 +15649,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15661,10 +15661,9 @@
      "owners": [],
      "id": "2870",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-2",
-     "live": 78
+     "final": 80,
+     "won": true,
+     "record": "5-2"
     },
     "home": {
      "team": "Southeast Missouri",
@@ -15673,23 +15672,18 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Purdue Fort Wayne",
      "pts": 0,
-     "final": null,
+     "final": 75,
      "opp_final": null,
      "opp_id": "2870",
      "seed": null,
-     "record": "3-3",
-     "live": 75
+     "record": "3-4"
     },
     "time": "7:30 PM",
-    "line": "SEMO -3.5",
-    "live": {
-     "detail": "0:10 2nd",
-     "as_of": "9:16 PM"
-    }
+    "line": "SEMO -3.5"
    },
    {
     "id": "401921711",
@@ -15718,7 +15712,7 @@
      "opp_id": "264",
      "seed": null,
      "record": "4-2",
-     "live": 29
+     "live": 37
     },
     "home": {
      "team": "Washington",
@@ -15730,13 +15724,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 37
+     "live": 43
     },
     "time": "8:00 PM",
     "line": "CLEM -1.5",
     "live": {
-     "detail": "18:35 2nd",
-     "as_of": "9:16 PM"
+     "detail": "13:53 2nd",
+     "as_of": "9:26 PM"
     }
    },
    {
@@ -15766,7 +15760,7 @@
      "opp_id": "6",
      "seed": null,
      "record": "0-6",
-     "live": 32
+     "live": 36
     },
     "home": {
      "team": "South Alabama",
@@ -15778,13 +15772,13 @@
      "final": null,
      "won": null,
      "record": "4-4",
-     "live": 48
+     "live": 56
     },
     "time": "8:00 PM",
     "line": "USA -17.5",
     "live": {
-     "detail": "11:39 2nd",
-     "as_of": "9:16 PM"
+     "detail": "7:53 2nd",
+     "as_of": "9:26 PM"
     }
    },
    {
@@ -15814,7 +15808,7 @@
      "opp_id": "2",
      "seed": null,
      "record": "4-4",
-     "live": 52
+     "live": 57
     },
     "home": {
      "team": "Auburn",
@@ -15826,13 +15820,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 75
+     "live": 90
     },
     "time": "8:00 PM",
     "line": "AUB -24.5",
     "live": {
-     "detail": "11:41 2nd",
-     "as_of": "9:16 PM"
+     "detail": "6:59 2nd",
+     "as_of": "9:26 PM"
     }
    },
    {
@@ -15856,7 +15850,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 19
+     "live": 21
     },
     "home": {
      "team": "Louisville",
@@ -15875,13 +15869,13 @@
      "opp_id": "2641",
      "seed": null,
      "record": "3-1",
-     "live": 15
+     "live": 23
     },
     "time": "8:00 PM",
     "line": "TTU -2.5",
     "live": {
-     "detail": "5:26 1st",
-     "as_of": "9:16 PM"
+     "detail": "1:24 1st",
+     "as_of": "9:26 PM"
     }
    },
    {
@@ -15905,7 +15899,7 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 38
+     "live": 43
     },
     "home": {
      "team": "Penn",
@@ -15923,13 +15917,13 @@
      "opp_id": "2182",
      "seed": null,
      "record": "3-3",
-     "live": 56
+     "live": 59
     },
     "time": "8:00 PM",
     "line": "PENN -6.5",
     "live": {
-     "detail": "17:04 2nd",
-     "as_of": "9:16 PM"
+     "detail": "14:11 2nd",
+     "as_of": "9:26 PM"
     }
    },
    {
