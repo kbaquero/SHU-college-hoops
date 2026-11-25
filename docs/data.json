@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 15:46 EST",
- "scores_updated": "3:46 PM",
+ "updated": "2026-11-25 15:56 EST",
+ "scores_updated": "3:56 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15515,7 +15515,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15527,10 +15527,9 @@
      "owners": [],
      "id": "258",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "7-0",
-     "live": 58
+     "final": 60,
+     "won": true,
+     "record": "8-0"
     },
     "home": {
      "team": "Marquette",
@@ -15539,23 +15538,18 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Virginia",
      "pts": 0,
-     "final": null,
+     "final": 54,
      "opp_final": null,
      "opp_id": "258",
      "seed": null,
-     "record": "4-2",
-     "live": 54
+     "record": "4-3"
     },
     "time": "12:00 PM",
-    "line": "UVA -5.5",
-    "live": {
-     "detail": "0:39 2nd",
-     "as_of": "3:46 PM"
-    }
+    "line": "UVA -5.5"
    },
    {
     "id": "401921669",
@@ -15584,7 +15578,7 @@
      "opp_id": "9",
      "seed": null,
      "record": "6-0",
-     "live": 62
+     "live": 74
     },
     "home": {
      "team": "Arizona St.",
@@ -15606,13 +15600,13 @@
      "opp_id": "99",
      "seed": null,
      "record": "5-0",
-     "live": 68
+     "live": 71
     },
     "time": "2:00 PM",
     "line": "LSU -3.5",
     "live": {
-     "detail": "6:43 2nd",
-     "as_of": "3:46 PM"
+     "detail": "3:54 2nd",
+     "as_of": "3:56 PM"
     }
    },
    {
@@ -15636,7 +15630,7 @@
      "final": null,
      "won": null,
      "record": "1-5",
-     "live": 64
+     "live": 71
     },
     "home": {
      "team": "NJIT",
@@ -15654,13 +15648,13 @@
      "opp_id": "2363",
      "seed": null,
      "record": "1-7",
-     "live": 60
+     "live": 66
     },
     "time": "2:00 PM",
     "line": "NJIT -1.5",
     "live": {
-     "detail": "6:40 2nd",
-     "as_of": "3:46 PM"
+     "detail": "2:26 2nd",
+     "as_of": "3:56 PM"
     }
    },
    {
@@ -15684,7 +15678,7 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 44
+     "live": 50
     },
     "home": {
      "team": "Arizona",
@@ -15702,13 +15696,13 @@
      "opp_id": "145",
      "seed": null,
      "record": "6-1",
-     "live": 35
+     "live": 49
     },
     "time": "2:30 PM",
     "line": "ARIZ -5.5",
     "live": {
-     "detail": "17:55 2nd",
-     "as_of": "3:46 PM"
+     "detail": "14:49 2nd",
+     "as_of": "3:56 PM"
     }
    },
    {
