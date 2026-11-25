@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 14:03 EST",
- "scores_updated": "2:03 PM",
+ "updated": "2026-11-25 14:13 EST",
+ "scores_updated": "2:13 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15583,7 +15583,8 @@
      "opp_final": null,
      "opp_id": "9",
      "seed": null,
-     "record": "6-0"
+     "record": "6-0",
+     "live": 9
     },
     "home": {
      "team": "Arizona St.",
@@ -15604,10 +15605,15 @@
      "opp_final": null,
      "opp_id": "99",
      "seed": null,
-     "record": "5-0"
+     "record": "5-0",
+     "live": 12
     },
     "time": "2:00 PM",
-    "line": "LSU -3.5"
+    "line": "LSU -3.5",
+    "live": {
+     "detail": "15:29 1st",
+     "as_of": "2:13 PM"
+    }
    },
    {
     "id": "401920868",
@@ -15629,7 +15635,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "1-5"
+     "record": "1-5",
+     "live": 9
     },
     "home": {
      "team": "NJIT",
@@ -15646,10 +15653,15 @@
      "opp_final": null,
      "opp_id": "2363",
      "seed": null,
-     "record": "1-7"
+     "record": "1-7",
+     "live": 5
     },
     "time": "2:00 PM",
-    "line": "NJIT -1.5"
+    "line": "NJIT -1.5",
+    "live": {
+     "detail": "15:34 1st",
+     "as_of": "2:13 PM"
+    }
    },
    {
     "id": "401921715",
@@ -16352,7 +16364,7 @@
      "record": "3-3"
     },
     "time": "11:59 PM",
-    "line": "SLU -3.5"
+    "line": "SLU -4.5"
    },
    {
     "id": "401921714",
