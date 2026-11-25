@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 22:01 EST",
- "scores_updated": "10:01 PM",
+ "updated": "2026-11-24 22:11 EST",
+ "scores_updated": "10:11 PM",
  "through": "Mon, Nov 23",
  "season": 2027,
  "standings": [
@@ -15616,7 +15616,7 @@
      "opp_id": "2184",
      "seed": null,
      "record": "6-0",
-     "live": 51
+     "live": 58
     },
     "home": {
      "team": "Duquesne",
@@ -15628,13 +15628,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 52
+     "live": 58
     },
     "time": "7:30 PM",
     "line": "HPU -10.5",
     "live": {
-     "detail": "12:59 2nd",
-     "as_of": "10:01 PM"
+     "detail": "7:41 2nd",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -15685,7 +15685,7 @@
     "tbd": false,
     "tv": "ESPNU",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15697,16 +15697,15 @@
      "owners": [
       "Mike L."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Washington",
      "pts": 0,
-     "final": null,
+     "final": 63,
      "opp_final": null,
      "opp_id": "264",
      "seed": null,
-     "record": "4-2",
-     "live": 60
+     "record": "4-3"
     },
     "home": {
      "team": "Washington",
@@ -15715,17 +15714,12 @@
      "owners": [],
      "id": "264",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-1",
-     "live": 62
+     "final": 64,
+     "won": true,
+     "record": "5-1"
     },
     "time": "8:00 PM",
-    "line": "CLEM -1.5",
-    "live": {
-     "detail": "0:09 2nd",
-     "as_of": "10:01 PM"
-    }
+    "line": "CLEM -1.5"
    },
    {
     "id": "401929421",
@@ -15832,7 +15826,7 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 33
+     "live": 40
     },
     "home": {
      "team": "Louisville",
@@ -15851,13 +15845,13 @@
      "opp_id": "2641",
      "seed": null,
      "record": "3-1",
-     "live": 40
+     "live": 44
     },
     "time": "8:00 PM",
     "line": "TTU -2.5",
     "live": {
-     "detail": "13:49 2nd",
-     "as_of": "10:01 PM"
+     "detail": "11:24 2nd",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -15866,7 +15860,7 @@
     "tbd": false,
     "tv": "ESPN+, NBC Sports Phil",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15878,10 +15872,9 @@
      "owners": [],
      "id": "2182",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-2",
-     "live": 69
+     "final": 74,
+     "won": false,
+     "record": "3-3"
     },
     "home": {
      "team": "Penn",
@@ -15890,23 +15883,18 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Drexel",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 89,
      "opp_final": null,
      "opp_id": "2182",
      "seed": null,
-     "record": "3-3",
-     "live": 87
+     "record": "4-3"
     },
     "time": "8:00 PM",
-    "line": "PENN -6.5",
-    "live": {
-     "detail": "1:34 2nd",
-     "as_of": "10:01 PM"
-    }
+    "line": "PENN -6.5"
    },
    {
     "id": "401911253",
@@ -15935,7 +15923,7 @@
      "opp_id": "139",
      "seed": null,
      "record": "4-0",
-     "live": 3
+     "live": 7
     },
     "home": {
      "team": "Saint Louis",
@@ -15953,13 +15941,13 @@
      "opp_id": "2253",
      "seed": null,
      "record": "3-2",
-     "live": 2
+     "live": 12
     },
     "time": "9:30 PM",
     "line": "GCU -1.5",
     "live": {
-     "detail": "18:24 1st",
-     "as_of": "10:01 PM"
+     "detail": "13:56 1st",
+     "as_of": "10:11 PM"
     }
    },
    {
@@ -15989,7 +15977,8 @@
      "opp_final": null,
      "opp_id": "333",
      "seed": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 7
     },
     "home": {
      "team": "Alabama",
@@ -16000,10 +15989,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "5-0"
+     "record": "5-0",
+     "live": 2
     },
     "time": "10:00 PM",
-    "line": "ALA -1.5"
+    "line": "ALA -1.5",
+    "live": {
+     "detail": "17:21 1st",
+     "as_of": "10:11 PM"
+    }
    },
    {
     "id": "401915943",
