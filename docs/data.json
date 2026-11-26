@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 00:52 EST",
- "scores_updated": "12:52 AM",
+ "updated": "2026-11-26 01:02 EST",
+ "scores_updated": "1:02 AM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16291,7 +16291,7 @@
      "opp_id": "62",
      "seed": null,
      "record": "1-5",
-     "live": 31
+     "live": 36
     },
     "home": {
      "team": "Hawaii",
@@ -16303,13 +16303,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 23
+     "live": 25
     },
     "time": "11:59 PM",
     "line": "HAW -17.5",
     "live": {
-     "detail": "2:52 1st",
-     "as_of": "12:52 AM"
+     "detail": "Halftime",
+     "as_of": "1:02 AM"
     }
    },
    {
@@ -16387,7 +16387,7 @@
      "opp_id": "36",
      "seed": null,
      "record": "4-3",
-     "live": 8
+     "live": 19
     },
     "home": {
      "team": "Colorado St.",
@@ -16399,13 +16399,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 16
+     "live": 26
     },
     "time": "12:30 AM",
     "line": "CLEM -3.5",
     "live": {
-     "detail": "11:56 1st",
-     "as_of": "12:52 AM"
+     "detail": "8:29 1st",
+     "as_of": "1:02 AM"
     }
    }
   ]
