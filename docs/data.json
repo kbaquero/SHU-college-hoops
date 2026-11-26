@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 21:01 EST",
- "scores_updated": "9:01 PM",
+ "updated": "2026-11-25 21:11 EST",
+ "scores_updated": "9:11 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15897,7 +15897,7 @@
      "opp_id": "150",
      "seed": null,
      "record": "4-1",
-     "live": 55
+     "live": 57
     },
     "home": {
      "team": "Duke",
@@ -15916,13 +15916,13 @@
      "opp_id": "41",
      "seed": null,
      "record": "4-2",
-     "live": 64
+     "live": 66
     },
     "time": "7:00 PM",
     "line": "CONN -1.5",
     "live": {
-     "detail": "6:33 2nd",
-     "as_of": "9:01 PM"
+     "detail": "3:48 2nd",
+     "as_of": "9:11 PM"
     }
    },
    {
@@ -15931,7 +15931,7 @@
     "tbd": false,
     "tv": "ACCNX",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15943,16 +15943,15 @@
      "owners": [
       "Joe H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "N.C. State",
      "pts": 0,
-     "final": null,
+     "final": 49,
      "opp_final": null,
      "opp_id": "152",
      "seed": null,
-     "record": "2-5",
-     "live": 49
+     "record": "2-6"
     },
     "home": {
      "team": "N.C. State",
@@ -15961,23 +15960,18 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Norfolk St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 80,
      "opp_final": null,
      "opp_id": "2450",
      "seed": null,
-     "record": "5-1",
-     "live": 80
+     "record": "6-1"
     },
     "time": "7:00 PM",
-    "line": "NCSU -28.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "9:01 PM"
-    }
+    "line": "NCSU -28.5"
    },
    {
     "id": "401920916",
@@ -16000,7 +15994,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 61
+     "live": 67
     },
     "home": {
      "team": "SIUE",
@@ -16019,13 +16013,13 @@
      "opp_id": "2459",
      "seed": null,
      "record": "3-4",
-     "live": 61
+     "live": 65
     },
     "time": "7:00 PM",
     "line": "NIU -2.5",
     "live": {
-     "detail": "4:27 OT",
-     "as_of": "9:01 PM"
+     "detail": "0:33 OT",
+     "as_of": "9:11 PM"
     }
    },
    {
@@ -16056,7 +16050,7 @@
      "opp_id": "328",
      "seed": null,
      "record": "6-0",
-     "live": 29
+     "live": 39
     },
     "home": {
      "team": "Utah St.",
@@ -16068,13 +16062,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 55
+     "live": 64
     },
     "time": "7:00 PM",
     "line": "USU -3.5",
     "live": {
-     "detail": "15:23 2nd",
-     "as_of": "9:01 PM"
+     "detail": "11:53 2nd",
+     "as_of": "9:11 PM"
     }
    },
    {
@@ -16116,13 +16110,13 @@
      "opp_id": "2900",
      "seed": null,
      "record": "5-1",
-     "live": 71
+     "live": 74
     },
     "time": "7:00 PM",
     "line": "UNCW -5.5",
     "live": {
-     "detail": "1:23 2nd",
-     "as_of": "9:01 PM"
+     "detail": "0:10 2nd",
+     "as_of": "9:11 PM"
     }
    },
    {
@@ -16230,7 +16224,8 @@
      "final": null,
      "won": null,
      "d1": false,
-     "record": ""
+     "record": "",
+     "live": 2
     },
     "home": {
      "team": "Montana St.",
@@ -16247,10 +16242,15 @@
      "opp_final": null,
      "opp_id": "3218",
      "seed": null,
-     "record": "2-4"
+     "record": "2-4",
+     "live": 22
     },
     "time": "9:00 PM",
-    "line": ""
+    "line": "",
+    "live": {
+     "detail": "14:28 1st",
+     "as_of": "9:11 PM"
+    }
    },
    {
     "id": "401921671",
