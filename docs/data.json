@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 17:57 EST",
+ "updated": "2026-11-26 18:07 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16378,7 +16378,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16390,16 +16390,15 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Iowa St.",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 75,
      "opp_final": null,
      "opp_id": "66",
      "seed": null,
-     "record": "6-0",
-     "live": 66
+     "record": "7-0"
     },
     "home": {
      "team": "Iowa St.",
@@ -16408,17 +16407,12 @@
      "owners": [],
      "id": "66",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-1",
-     "live": 59
+     "final": 64,
+     "won": false,
+     "record": "4-2"
     },
     "time": "3:30 PM",
-    "line": "ISU -5.5",
-    "live": {
-     "detail": "1:36 2nd",
-     "as_of": "5:57 PM"
-    }
+    "line": "ISU -5.5"
    },
    {
     "id": "401925757",
@@ -16452,7 +16446,7 @@
      "opp_id": "127",
      "seed": null,
      "record": "4-2",
-     "live": 39
+     "live": 46
     },
     "home": {
      "team": "Michigan St.",
@@ -16464,13 +16458,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 38
+     "live": 40
     },
     "time": "4:30 PM",
     "line": "MSU -5.5",
     "live": {
-     "detail": "15:46 2nd",
-     "as_of": "5:57 PM"
+     "detail": "13:31 2nd",
+     "as_of": "6:07 PM"
     }
    },
    {
@@ -16501,7 +16495,7 @@
      "opp_id": "26",
      "seed": null,
      "record": "6-1",
-     "live": 28
+     "live": 38
     },
     "home": {
      "team": "UCLA",
@@ -16522,13 +16516,13 @@
      "opp_id": "2608",
      "seed": null,
      "record": "6-0",
-     "live": 28
+     "live": 30
     },
     "time": "5:00 PM",
     "line": "UCLA -7.5",
     "live": {
-     "detail": "8:12 1st",
-     "as_of": "5:57 PM"
+     "detail": "4:52 1st",
+     "as_of": "6:07 PM"
     }
    },
    {
@@ -17609,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "5:57 PM"
+ "scores_updated": "6:07 PM"
 }
