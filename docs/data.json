@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 17:37 EST",
+ "updated": "2026-11-26 17:47 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16323,7 +16323,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16338,16 +16338,15 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Michigan",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 97,
      "opp_final": null,
      "opp_id": "130",
      "seed": null,
-     "record": "5-2",
-     "live": 95
+     "record": "6-2"
     },
     "home": {
      "team": "Michigan",
@@ -16360,23 +16359,18 @@
       "Jason H.",
       "Kevin B."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Miami FL",
      "pts": 0,
-     "final": null,
+     "final": 70,
      "opp_final": null,
      "opp_id": "2390",
      "seed": null,
-     "record": "3-3",
-     "live": 68
+     "record": "3-4"
     },
     "time": "3:30 PM",
-    "line": "MIA -1.5",
-    "live": {
-     "detail": "2:00 2nd",
-     "as_of": "5:37 PM"
-    }
+    "line": "MIA -1.5"
    },
    {
     "id": "401920529",
@@ -16405,7 +16399,7 @@
      "opp_id": "66",
      "seed": null,
      "record": "6-0",
-     "live": 56
+     "live": 62
     },
     "home": {
      "team": "Iowa St.",
@@ -16417,13 +16411,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 46
+     "live": 56
     },
     "time": "3:30 PM",
     "line": "ISU -5.5",
     "live": {
-     "detail": "7:58 2nd",
-     "as_of": "5:37 PM"
+     "detail": "4:13 2nd",
+     "as_of": "5:47 PM"
     }
    },
    {
@@ -16507,7 +16501,7 @@
      "opp_id": "26",
      "seed": null,
      "record": "6-1",
-     "live": 11
+     "live": 22
     },
     "home": {
      "team": "UCLA",
@@ -16528,13 +16522,13 @@
      "opp_id": "2608",
      "seed": null,
      "record": "6-0",
-     "live": 9
+     "live": 19
     },
     "time": "5:00 PM",
     "line": "UCLA -7.5",
     "live": {
-     "detail": "15:48 1st",
-     "as_of": "5:37 PM"
+     "detail": "12:07 1st",
+     "as_of": "5:47 PM"
     }
    },
    {
@@ -17615,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "5:37 PM"
+ "scores_updated": "5:47 PM"
 }
