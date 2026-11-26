@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 19:37 EST",
- "scores_updated": "7:37 PM",
+ "updated": "2026-11-25 19:47 EST",
+ "scores_updated": "7:47 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15779,7 +15779,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15793,16 +15793,15 @@
       "Marty C.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Providence",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 85,
      "opp_final": null,
      "opp_id": "2507",
      "seed": null,
-     "record": "6-1",
-     "live": 83
+     "record": "7-1"
     },
     "home": {
      "team": "Providence",
@@ -15811,23 +15810,18 @@
      "owners": [
       "Ben D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "BYU",
      "pts": 0,
-     "final": null,
+     "final": 82,
      "opp_final": null,
      "opp_id": "252",
      "seed": null,
-     "record": "5-2",
-     "live": 82
+     "record": "5-3"
     },
     "time": "5:30 PM",
-    "line": "BYU -2.5",
-    "live": {
-     "detail": "0:10 2nd",
-     "as_of": "7:37 PM"
-    }
+    "line": "BYU -2.5"
    },
    {
     "id": "401920299",
@@ -15850,7 +15844,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 80
+     "live": 86
     },
     "home": {
      "team": "Weber St.",
@@ -15868,13 +15862,13 @@
      "opp_id": "2463",
      "seed": null,
      "record": "2-4",
-     "live": 53
+     "live": 64
     },
     "time": "6:00 PM",
     "line": "CSUN -1.5",
     "live": {
-     "detail": "8:10 2nd",
-     "as_of": "7:37 PM"
+     "detail": "4:29 2nd",
+     "as_of": "7:47 PM"
     }
    },
    {
@@ -15909,7 +15903,7 @@
      "opp_id": "150",
      "seed": null,
      "record": "4-1",
-     "live": 14
+     "live": 22
     },
     "home": {
      "team": "Duke",
@@ -15928,13 +15922,13 @@
      "opp_id": "41",
      "seed": null,
      "record": "4-2",
-     "live": 18
+     "live": 27
     },
     "time": "7:00 PM",
     "line": "CONN -1.5",
     "live": {
-     "detail": "9:28 1st",
-     "as_of": "7:37 PM"
+     "detail": "6:40 1st",
+     "as_of": "7:47 PM"
     }
    },
    {
@@ -15964,7 +15958,7 @@
      "opp_id": "152",
      "seed": null,
      "record": "2-5",
-     "live": 23
+     "live": 29
     },
     "home": {
      "team": "N.C. State",
@@ -15982,13 +15976,13 @@
      "opp_id": "2450",
      "seed": null,
      "record": "5-1",
-     "live": 29
+     "live": 32
     },
     "time": "7:00 PM",
     "line": "NCSU -28.5",
     "live": {
-     "detail": "4:28 1st",
-     "as_of": "7:37 PM"
+     "detail": "1:49 1st",
+     "as_of": "7:47 PM"
     }
    },
    {
@@ -16012,7 +16006,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 22
+     "live": 24
     },
     "home": {
      "team": "SIUE",
@@ -16031,13 +16025,13 @@
      "opp_id": "2459",
      "seed": null,
      "record": "3-4",
-     "live": 25
+     "live": 32
     },
     "time": "7:00 PM",
     "line": "NIU -2.5",
     "live": {
-     "detail": "2:44 1st",
-     "as_of": "7:37 PM"
+     "detail": "Halftime",
+     "as_of": "7:47 PM"
     }
    },
    {
@@ -16104,7 +16098,7 @@
      "final": null,
      "won": null,
      "record": "5-3",
-     "live": 28
+     "live": 37
     },
     "home": {
      "team": "UNC Wilmington",
@@ -16122,13 +16116,13 @@
      "opp_id": "2900",
      "seed": null,
      "record": "5-1",
-     "live": 25
+     "live": 37
     },
     "time": "7:00 PM",
     "line": "UNCW -5.5",
     "live": {
-     "detail": "6:29 1st",
-     "as_of": "7:37 PM"
+     "detail": "1:03 1st",
+     "as_of": "7:47 PM"
     }
    },
    {
@@ -16152,7 +16146,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 20
+     "live": 22
     },
     "home": {
      "team": "Wisconsin",
@@ -16170,13 +16164,13 @@
      "opp_id": "111",
      "seed": null,
      "record": "4-2",
-     "live": 34
+     "live": 40
     },
     "time": "7:00 PM",
     "line": "WIS -20.5",
     "live": {
-     "detail": "3:12 1st",
-     "as_of": "7:37 PM"
+     "detail": "Halftime",
+     "as_of": "7:47 PM"
     }
    },
    {
