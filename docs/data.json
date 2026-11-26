@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 02:32 EST",
- "scores_updated": "2:32 AM",
+ "updated": "2026-11-26 02:36 EST",
+ "scores_updated": "2:36 AM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16303,13 +16303,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 70
+     "live": 74
     },
     "time": "11:59 PM",
     "line": "HAW -17.5",
     "live": {
-     "detail": "4:45 OT",
-     "as_of": "2:32 AM"
+     "detail": "3:23 OT",
+     "as_of": "2:36 AM"
     }
    },
    {
@@ -16333,7 +16333,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 46
+     "live": 51
     },
     "home": {
      "team": "Saint Louis",
@@ -16351,13 +16351,13 @@
      "opp_id": "24",
      "seed": null,
      "record": "3-3",
-     "live": 54
+     "live": 59
     },
     "time": "11:59 PM",
     "line": "SLU -3.5",
     "live": {
-     "detail": "10:57 2nd",
-     "as_of": "2:32 AM"
+     "detail": "8:22 2nd",
+     "as_of": "2:36 AM"
     }
    },
    {
@@ -16387,7 +16387,7 @@
      "opp_id": "36",
      "seed": null,
      "record": "4-3",
-     "live": 68
+     "live": 70
     },
     "home": {
      "team": "Colorado St.",
@@ -16399,13 +16399,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 69
+     "live": 71
     },
     "time": "12:30 AM",
     "line": "CLEM -3.5",
     "live": {
-     "detail": "3:52 2nd",
-     "as_of": "2:32 AM"
+     "detail": "2:40 2nd",
+     "as_of": "2:36 AM"
     }
    }
   ]
