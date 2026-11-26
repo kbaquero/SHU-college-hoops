@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 19:47 EST",
- "scores_updated": "7:47 PM",
+ "updated": "2026-11-25 19:57 EST",
+ "scores_updated": "7:57 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15844,7 +15844,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 86
+     "live": 89
     },
     "home": {
      "team": "Weber St.",
@@ -15862,13 +15862,13 @@
      "opp_id": "2463",
      "seed": null,
      "record": "2-4",
-     "live": 64
+     "live": 67
     },
     "time": "6:00 PM",
     "line": "CSUN -1.5",
     "live": {
-     "detail": "4:29 2nd",
-     "as_of": "7:47 PM"
+     "detail": "0:27 2nd",
+     "as_of": "7:57 PM"
     }
    },
    {
@@ -15903,7 +15903,7 @@
      "opp_id": "150",
      "seed": null,
      "record": "4-1",
-     "live": 22
+     "live": 27
     },
     "home": {
      "team": "Duke",
@@ -15922,13 +15922,13 @@
      "opp_id": "41",
      "seed": null,
      "record": "4-2",
-     "live": 27
+     "live": 31
     },
     "time": "7:00 PM",
     "line": "CONN -1.5",
     "live": {
-     "detail": "6:40 1st",
-     "as_of": "7:47 PM"
+     "detail": "3:21 1st",
+     "as_of": "7:57 PM"
     }
    },
    {
@@ -15976,13 +15976,13 @@
      "opp_id": "2450",
      "seed": null,
      "record": "5-1",
-     "live": 32
+     "live": 38
     },
     "time": "7:00 PM",
     "line": "NCSU -28.5",
     "live": {
-     "detail": "1:49 1st",
-     "as_of": "7:47 PM"
+     "detail": "Halftime",
+     "as_of": "7:57 PM"
     }
    },
    {
@@ -16061,7 +16061,8 @@
      "opp_final": null,
      "opp_id": "328",
      "seed": null,
-     "record": "6-0"
+     "record": "6-0",
+     "live": 5
     },
     "home": {
      "team": "Utah St.",
@@ -16072,10 +16073,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "5-0"
+     "record": "5-0",
+     "live": 16
     },
     "time": "7:00 PM",
-    "line": "USU -3.5"
+    "line": "USU -3.5",
+    "live": {
+     "detail": "16:02 1st",
+     "as_of": "7:57 PM"
+    }
    },
    {
     "id": "401920847",
@@ -16098,7 +16104,7 @@
      "final": null,
      "won": null,
      "record": "5-3",
-     "live": 37
+     "live": 41
     },
     "home": {
      "team": "UNC Wilmington",
@@ -16121,8 +16127,8 @@
     "time": "7:00 PM",
     "line": "UNCW -5.5",
     "live": {
-     "detail": "1:03 1st",
-     "as_of": "7:47 PM"
+     "detail": "Halftime",
+     "as_of": "7:57 PM"
     }
    },
    {
