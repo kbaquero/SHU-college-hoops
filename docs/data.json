@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 16:57 EST",
+ "updated": "2026-11-26 17:07 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16281,7 +16281,7 @@
     "tbd": false,
     "tv": "FS1",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16293,16 +16293,15 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Texas",
      "pts": 0,
-     "final": null,
+     "final": 83,
      "opp_final": null,
      "opp_id": "251",
      "seed": null,
-     "record": "6-0",
-     "live": 80
+     "record": "6-1"
     },
     "home": {
      "team": "Texas",
@@ -16311,17 +16310,12 @@
      "owners": [],
      "id": "251",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "6-0",
-     "live": 90
+     "final": 92,
+     "won": true,
+     "record": "7-0"
     },
     "time": "2:30 PM",
-    "line": "TEX -8.5",
-    "live": {
-     "detail": "0:38 2nd",
-     "as_of": "4:57 PM"
-    }
+    "line": "TEX -8.5"
    },
    {
     "id": "401920537",
@@ -16353,7 +16347,7 @@
      "opp_id": "130",
      "seed": null,
      "record": "5-2",
-     "live": 62
+     "live": 71
     },
     "home": {
      "team": "Michigan",
@@ -16375,13 +16369,13 @@
      "opp_id": "2390",
      "seed": null,
      "record": "3-3",
-     "live": 47
+     "live": 49
     },
     "time": "3:30 PM",
     "line": "MIA -1.5",
     "live": {
-     "detail": "15:42 2nd",
-     "as_of": "4:57 PM"
+     "detail": "13:21 2nd",
+     "as_of": "5:07 PM"
     }
    },
    {
@@ -16423,13 +16417,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 19
+     "live": 22
     },
     "time": "3:30 PM",
     "line": "ISU -5.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:57 PM"
+     "detail": "18:17 2nd",
+     "as_of": "5:07 PM"
     }
    },
    {
@@ -16464,7 +16458,7 @@
      "opp_id": "127",
      "seed": null,
      "record": "4-2",
-     "live": 11
+     "live": 13
     },
     "home": {
      "team": "Michigan St.",
@@ -16476,13 +16470,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 7
+     "live": 11
     },
     "time": "4:30 PM",
     "line": "MSU -5.5",
     "live": {
-     "detail": "13:09 1st",
-     "as_of": "4:57 PM"
+     "detail": "10:43 1st",
+     "as_of": "5:07 PM"
     }
    },
    {
@@ -17615,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "4:57 PM"
+ "scores_updated": "5:07 PM"
 }
