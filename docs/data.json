@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 05:45 EST",
+ "updated": "2026-11-26 11:03 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16129,7 +16129,8 @@
      "opp_final": null,
      "opp_id": "2132",
      "seed": null,
-     "record": "6-0"
+     "record": "6-0",
+     "live": 3
     },
     "home": {
      "team": "Cincinnati",
@@ -16140,10 +16141,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 0
     },
     "time": "11:00 AM",
-    "line": "CIN -2.5"
+    "line": "CIN -2.5",
+    "live": {
+     "detail": "19:43 1st",
+     "as_of": "11:03 AM"
+    }
    },
    {
     "id": "401906807",
@@ -16273,7 +16279,7 @@
      "record": "5-1"
     },
     "time": "2:00 PM",
-    "line": "ASU -3.5"
+    "line": "ASU -4.5"
    },
    {
     "id": "401906869",
@@ -16315,7 +16321,7 @@
      "record": "6-0"
     },
     "time": "2:30 PM",
-    "line": "TEX -8.5"
+    "line": "TEX -7.5"
    },
    {
     "id": "401920537",
@@ -16560,7 +16566,7 @@
      "record": "7-0"
     },
     "time": "7:00 PM",
-    "line": "LSU -5.5"
+    "line": "LSU -7.5"
    },
    {
     "id": "401920539",
@@ -16602,7 +16608,7 @@
      "record": "3-3"
     },
     "time": "9:00 PM",
-    "line": "ALA -15.5"
+    "line": "ALA -13.5"
    },
    {
     "id": "401920530",
@@ -17590,5 +17596,6 @@
  "gotd": {
   "date": "2026-11-26",
   "id": "401920537"
- }
+ },
+ "scores_updated": "11:03 AM"
 }
