@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 21:11 EST",
- "scores_updated": "9:11 PM",
+ "updated": "2026-11-25 21:21 EST",
+ "scores_updated": "9:21 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15871,7 +15871,7 @@
     "tbd": false,
     "tv": "Prime Video",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -15888,16 +15888,15 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Duke",
      "pts": 0,
-     "final": null,
+     "final": 63,
      "opp_final": null,
      "opp_id": "150",
      "seed": null,
-     "record": "4-1",
-     "live": 57
+     "record": "4-2"
     },
     "home": {
      "team": "Duke",
@@ -15907,23 +15906,18 @@
       "Joe H.",
       "Kevin B."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Connecticut",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 77,
      "opp_final": null,
      "opp_id": "41",
      "seed": null,
-     "record": "4-2",
-     "live": 66
+     "record": "5-2"
     },
     "time": "7:00 PM",
-    "line": "CONN -1.5",
-    "live": {
-     "detail": "3:48 2nd",
-     "as_of": "9:11 PM"
-    }
+    "line": "CONN -1.5"
    },
    {
     "id": "401918960",
@@ -15979,10 +15973,10 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "",
     "away": {
      "team": "Northern Illinois",
@@ -15991,10 +15985,9 @@
      "owners": [],
      "id": "2459",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-3",
-     "live": 67
+     "final": 68,
+     "won": true,
+     "record": "5-3"
     },
     "home": {
      "team": "SIUE",
@@ -16004,23 +15997,18 @@
       "Mike L.",
       "Kevin B."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Northern Illinois",
      "pts": 0,
-     "final": null,
+     "final": 65,
      "opp_final": null,
      "opp_id": "2459",
      "seed": null,
-     "record": "3-4",
-     "live": 65
+     "record": "3-5"
     },
     "time": "7:00 PM",
-    "line": "NIU -2.5",
-    "live": {
-     "detail": "0:33 OT",
-     "as_of": "9:11 PM"
-    }
+    "line": "NIU -2.5"
    },
    {
     "id": "401918971",
@@ -16050,7 +16038,7 @@
      "opp_id": "328",
      "seed": null,
      "record": "6-0",
-     "live": 39
+     "live": 42
     },
     "home": {
      "team": "Utah St.",
@@ -16062,13 +16050,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 64
+     "live": 75
     },
     "time": "7:00 PM",
     "line": "USU -3.5",
     "live": {
-     "detail": "11:53 2nd",
-     "as_of": "9:11 PM"
+     "detail": "7:45 2nd",
+     "as_of": "9:21 PM"
     }
    },
    {
@@ -16110,13 +16098,13 @@
      "opp_id": "2900",
      "seed": null,
      "record": "5-1",
-     "live": 74
+     "live": 78
     },
     "time": "7:00 PM",
     "line": "UNCW -5.5",
     "live": {
-     "detail": "0:10 2nd",
-     "as_of": "9:11 PM"
+     "detail": "2:29 OT",
+     "as_of": "9:21 PM"
     }
    },
    {
@@ -16225,7 +16213,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 2
+     "live": 10
     },
     "home": {
      "team": "Montana St.",
@@ -16243,13 +16231,13 @@
      "opp_id": "3218",
      "seed": null,
      "record": "2-4",
-     "live": 22
+     "live": 34
     },
     "time": "9:00 PM",
     "line": "",
     "live": {
-     "detail": "14:28 1st",
-     "as_of": "9:11 PM"
+     "detail": "9:43 1st",
+     "as_of": "9:21 PM"
     }
    },
    {
