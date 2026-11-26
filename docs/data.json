@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 23:42 EST",
- "scores_updated": "11:42 PM",
+ "updated": "2026-11-25 23:52 EST",
+ "scores_updated": "11:52 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16143,7 +16143,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16155,10 +16155,9 @@
      "owners": [],
      "id": "154",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-1",
-     "live": 76
+     "final": 78,
+     "won": true,
+     "record": "6-1"
     },
     "home": {
      "team": "Mississippi St.",
@@ -16167,23 +16166,18 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Wake Forest",
      "pts": 0,
-     "final": null,
+     "final": 71,
      "opp_final": null,
      "opp_id": "154",
      "seed": null,
-     "record": "5-1",
-     "live": 70
+     "record": "5-2"
     },
     "time": "7:30 PM",
-    "line": "MSST -3.5",
-    "live": {
-     "detail": "0:11 2nd",
-     "as_of": "11:42 PM"
-    }
+    "line": "MSST -3.5"
    },
    {
     "id": "401925880",
@@ -16255,7 +16249,7 @@
      "opp_id": "38",
      "seed": null,
      "record": "5-0",
-     "live": 47
+     "live": 51
     },
     "home": {
      "team": "Colorado",
@@ -16267,13 +16261,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 43
+     "live": 44
     },
     "time": "9:30 PM",
     "line": "GCU -9.5",
     "live": {
-     "detail": "15:41 2nd",
-     "as_of": "11:42 PM"
+     "detail": "12:36 2nd",
+     "as_of": "11:52 PM"
     }
    },
    {
