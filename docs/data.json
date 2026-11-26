@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 14:03 EST",
+ "updated": "2026-11-26 14:07 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16151,7 +16151,7 @@
     "tbd": false,
     "tv": "Fox",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16163,16 +16163,15 @@
      "owners": [
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Purdue",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 70,
      "opp_final": null,
      "opp_id": "2509",
      "seed": null,
-     "record": "4-2",
-     "live": 70
+     "record": "5-2"
     },
     "home": {
      "team": "Purdue",
@@ -16181,17 +16180,12 @@
      "owners": [],
      "id": "2509",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-3",
-     "live": 63
+     "final": 63,
+     "won": false,
+     "record": "4-4"
     },
     "time": "12:00 PM",
-    "line": "PUR -5.5",
-    "live": {
-     "detail": "0:14 2nd",
-     "as_of": "2:03 PM"
-    }
+    "line": "PUR -5.5"
    },
    {
     "id": "401920528",
@@ -16232,13 +16226,13 @@
      "opp_id": "21",
      "seed": null,
      "record": "3-3",
-     "live": 29
+     "live": 31
     },
     "time": "1:00 PM",
     "line": "MD -5.5",
     "live": {
-     "detail": "1:18 1st",
-     "as_of": "2:03 PM"
+     "detail": "Halftime",
+     "as_of": "2:07 PM"
     }
    },
    {
@@ -16261,7 +16255,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 0
     },
     "home": {
      "team": "Arizona St.",
@@ -16282,10 +16277,15 @@
      "opp_final": null,
      "opp_id": "2579",
      "seed": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 0
     },
     "time": "2:00 PM",
-    "line": "ASU -5.5"
+    "line": "ASU -5.5",
+    "live": {
+     "detail": "19:08 1st",
+     "as_of": "2:07 PM"
+    }
    },
    {
     "id": "401906869",
@@ -17603,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "2:03 PM"
+ "scores_updated": "2:07 PM"
 }
