@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 16:27 EST",
+ "updated": "2026-11-26 16:37 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16302,7 +16302,7 @@
      "opp_id": "251",
      "seed": null,
      "record": "6-0",
-     "live": 61
+     "live": 65
     },
     "home": {
      "team": "Texas",
@@ -16314,13 +16314,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 70
+     "live": 75
     },
     "time": "2:30 PM",
     "line": "TEX -8.5",
     "live": {
-     "detail": "9:18 2nd",
-     "as_of": "4:27 PM"
+     "detail": "6:45 2nd",
+     "as_of": "4:37 PM"
     }
    },
    {
@@ -16380,8 +16380,8 @@
     "time": "3:30 PM",
     "line": "MIA -1.5",
     "live": {
-     "detail": "0:32 1st",
-     "as_of": "4:27 PM"
+     "detail": "Halftime",
+     "as_of": "4:37 PM"
     }
    },
    {
@@ -16411,7 +16411,7 @@
      "opp_id": "66",
      "seed": null,
      "record": "6-0",
-     "live": 22
+     "live": 26
     },
     "home": {
      "team": "Iowa St.",
@@ -16423,13 +16423,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 13
+     "live": 15
     },
     "time": "3:30 PM",
     "line": "ISU -5.5",
     "live": {
-     "detail": "7:30 1st",
-     "as_of": "4:27 PM"
+     "detail": "3:48 1st",
+     "as_of": "4:37 PM"
     }
    },
    {
@@ -17609,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "4:27 PM"
+ "scores_updated": "4:37 PM"
 }
