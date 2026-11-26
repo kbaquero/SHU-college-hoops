@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 16:37 EST",
+ "updated": "2026-11-26 16:47 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16302,7 +16302,7 @@
      "opp_id": "251",
      "seed": null,
      "record": "6-0",
-     "live": 65
+     "live": 71
     },
     "home": {
      "team": "Texas",
@@ -16314,13 +16314,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 75
+     "live": 81
     },
     "time": "2:30 PM",
     "line": "TEX -8.5",
     "live": {
-     "detail": "6:45 2nd",
-     "as_of": "4:37 PM"
+     "detail": "3:33 2nd",
+     "as_of": "4:47 PM"
     }
    },
    {
@@ -16353,7 +16353,7 @@
      "opp_id": "130",
      "seed": null,
      "record": "5-2",
-     "live": 52
+     "live": 54
     },
     "home": {
      "team": "Michigan",
@@ -16380,8 +16380,8 @@
     "time": "3:30 PM",
     "line": "MIA -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:37 PM"
+     "detail": "19:24 2nd",
+     "as_of": "4:47 PM"
     }
    },
    {
@@ -16411,7 +16411,7 @@
      "opp_id": "66",
      "seed": null,
      "record": "6-0",
-     "live": 26
+     "live": 31
     },
     "home": {
      "team": "Iowa St.",
@@ -16423,13 +16423,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 15
+     "live": 19
     },
     "time": "3:30 PM",
     "line": "ISU -5.5",
     "live": {
-     "detail": "3:48 1st",
-     "as_of": "4:37 PM"
+     "detail": "0:32 1st",
+     "as_of": "4:47 PM"
     }
    },
    {
@@ -16463,7 +16463,8 @@
      "opp_final": null,
      "opp_id": "127",
      "seed": null,
-     "record": "4-2"
+     "record": "4-2",
+     "live": 7
     },
     "home": {
      "team": "Michigan St.",
@@ -16474,10 +16475,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 5
     },
     "time": "4:30 PM",
-    "line": "MSU -5.5"
+    "line": "MSU -5.5",
+    "live": {
+     "detail": "16:20 1st",
+     "as_of": "4:47 PM"
+    }
    },
    {
     "id": "401917547",
@@ -17609,5 +17615,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "4:37 PM"
+ "scores_updated": "4:47 PM"
 }
