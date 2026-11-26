@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 20:37 EST",
- "scores_updated": "8:37 PM",
+ "updated": "2026-11-25 20:47 EST",
+ "scores_updated": "8:47 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15916,13 +15916,13 @@
      "opp_id": "41",
      "seed": null,
      "record": "4-2",
-     "live": 55
+     "live": 57
     },
     "time": "7:00 PM",
     "line": "CONN -1.5",
     "live": {
-     "detail": "12:01 2nd",
-     "as_of": "8:37 PM"
+     "detail": "10:43 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -15952,7 +15952,7 @@
      "opp_id": "152",
      "seed": null,
      "record": "2-5",
-     "live": 38
+     "live": 45
     },
     "home": {
      "team": "N.C. State",
@@ -15970,13 +15970,13 @@
      "opp_id": "2450",
      "seed": null,
      "record": "5-1",
-     "live": 61
+     "live": 68
     },
     "time": "7:00 PM",
     "line": "NCSU -28.5",
     "live": {
-     "detail": "8:05 2nd",
-     "as_of": "8:37 PM"
+     "detail": "5:23 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -16000,7 +16000,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 49
+     "live": 53
     },
     "home": {
      "team": "SIUE",
@@ -16019,13 +16019,13 @@
      "opp_id": "2459",
      "seed": null,
      "record": "3-4",
-     "live": 52
+     "live": 53
     },
     "time": "7:00 PM",
     "line": "NIU -2.5",
     "live": {
-     "detail": "5:15 2nd",
-     "as_of": "8:37 PM"
+     "detail": "3:13 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -16073,8 +16073,8 @@
     "time": "7:00 PM",
     "line": "USU -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:37 PM"
+     "detail": "20:00 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -16098,7 +16098,7 @@
      "final": null,
      "won": null,
      "record": "5-3",
-     "live": 59
+     "live": 62
     },
     "home": {
      "team": "UNC Wilmington",
@@ -16116,13 +16116,13 @@
      "opp_id": "2900",
      "seed": null,
      "record": "5-1",
-     "live": 59
+     "live": 67
     },
     "time": "7:00 PM",
     "line": "UNCW -5.5",
     "live": {
-     "detail": "7:35 2nd",
-     "as_of": "8:37 PM"
+     "detail": "4:13 2nd",
+     "as_of": "8:47 PM"
     }
    },
    {
@@ -16131,7 +16131,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16143,10 +16143,9 @@
      "owners": [],
      "id": "111",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "2-4",
-     "live": 52
+     "final": 54,
+     "won": false,
+     "record": "2-5"
     },
     "home": {
      "team": "Wisconsin",
@@ -16155,23 +16154,18 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Northeastern",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 91,
      "opp_final": null,
      "opp_id": "111",
      "seed": null,
-     "record": "4-2",
-     "live": 82
+     "record": "5-2"
     },
     "time": "7:00 PM",
-    "line": "WIS -20.5",
-    "live": {
-     "detail": "2:56 2nd",
-     "as_of": "8:37 PM"
-    }
+    "line": "WIS -20.5"
    },
    {
     "id": "401929287",
