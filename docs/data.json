@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 17:27 EST",
+ "updated": "2026-11-26 17:37 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16347,7 +16347,7 @@
      "opp_id": "130",
      "seed": null,
      "record": "5-2",
-     "live": 91
+     "live": 95
     },
     "home": {
      "team": "Michigan",
@@ -16369,13 +16369,13 @@
      "opp_id": "2390",
      "seed": null,
      "record": "3-3",
-     "live": 63
+     "live": 68
     },
     "time": "3:30 PM",
     "line": "MIA -1.5",
     "live": {
-     "detail": "5:12 2nd",
-     "as_of": "5:27 PM"
+     "detail": "2:00 2nd",
+     "as_of": "5:37 PM"
     }
    },
    {
@@ -16405,7 +16405,7 @@
      "opp_id": "66",
      "seed": null,
      "record": "6-0",
-     "live": 48
+     "live": 56
     },
     "home": {
      "team": "Iowa St.",
@@ -16417,13 +16417,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 38
+     "live": 46
     },
     "time": "3:30 PM",
     "line": "ISU -5.5",
     "live": {
-     "detail": "10:47 2nd",
-     "as_of": "5:27 PM"
+     "detail": "7:58 2nd",
+     "as_of": "5:37 PM"
     }
    },
    {
@@ -16458,7 +16458,7 @@
      "opp_id": "127",
      "seed": null,
      "record": "4-2",
-     "live": 25
+     "live": 31
     },
     "home": {
      "team": "Michigan St.",
@@ -16470,13 +16470,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 26
+     "live": 27
     },
     "time": "4:30 PM",
     "line": "MSU -5.5",
     "live": {
-     "detail": "2:35 1st",
-     "as_of": "5:27 PM"
+     "detail": "Halftime",
+     "as_of": "5:37 PM"
     }
    },
    {
@@ -16506,7 +16506,8 @@
      "opp_final": null,
      "opp_id": "26",
      "seed": null,
-     "record": "6-1"
+     "record": "6-1",
+     "live": 11
     },
     "home": {
      "team": "UCLA",
@@ -16526,10 +16527,15 @@
      "opp_final": null,
      "opp_id": "2608",
      "seed": null,
-     "record": "6-0"
+     "record": "6-0",
+     "live": 9
     },
     "time": "5:00 PM",
-    "line": "UCLA -7.5"
+    "line": "UCLA -7.5",
+    "live": {
+     "detail": "15:48 1st",
+     "as_of": "5:37 PM"
+    }
    },
    {
     "id": "401918972",
@@ -17609,5 +17615,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "5:27 PM"
+ "scores_updated": "5:37 PM"
 }
