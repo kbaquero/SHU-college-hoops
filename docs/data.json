@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 21:21 EST",
- "scores_updated": "9:21 PM",
+ "updated": "2026-11-25 21:31 EST",
+ "scores_updated": "9:31 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16038,7 +16038,7 @@
      "opp_id": "328",
      "seed": null,
      "record": "6-0",
-     "live": 42
+     "live": 48
     },
     "home": {
      "team": "Utah St.",
@@ -16050,13 +16050,13 @@
      "final": null,
      "won": null,
      "record": "5-0",
-     "live": 75
+     "live": 82
     },
     "time": "7:00 PM",
     "line": "USU -3.5",
     "live": {
-     "detail": "7:45 2nd",
-     "as_of": "9:21 PM"
+     "detail": "4:14 2nd",
+     "as_of": "9:31 PM"
     }
    },
    {
@@ -16065,10 +16065,10 @@
     "tbd": false,
     "tv": "FloSports",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "",
     "away": {
      "team": "St. Thomas",
@@ -16077,10 +16077,9 @@
      "owners": [],
      "id": "2900",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-3",
-     "live": 74
+     "final": 77,
+     "won": false,
+     "record": "5-4"
     },
     "home": {
      "team": "UNC Wilmington",
@@ -16089,23 +16088,18 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "St. Thomas",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 86,
      "opp_final": null,
      "opp_id": "2900",
      "seed": null,
-     "record": "5-1",
-     "live": 78
+     "record": "6-1"
     },
     "time": "7:00 PM",
-    "line": "UNCW -5.5",
-    "live": {
-     "detail": "2:29 OT",
-     "as_of": "9:21 PM"
-    }
+    "line": "UNCW -5.5"
    },
    {
     "id": "401911028",
@@ -16231,13 +16225,13 @@
      "opp_id": "3218",
      "seed": null,
      "record": "2-4",
-     "live": 34
+     "live": 52
     },
     "time": "9:00 PM",
     "line": "",
     "live": {
-     "detail": "9:43 1st",
-     "as_of": "9:21 PM"
+     "detail": "2:06 1st",
+     "as_of": "9:31 PM"
     }
    },
    {
