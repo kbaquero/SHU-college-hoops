@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 17:47 EST",
+ "updated": "2026-11-26 17:57 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16399,7 +16399,7 @@
      "opp_id": "66",
      "seed": null,
      "record": "6-0",
-     "live": 62
+     "live": 66
     },
     "home": {
      "team": "Iowa St.",
@@ -16411,13 +16411,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 56
+     "live": 59
     },
     "time": "3:30 PM",
     "line": "ISU -5.5",
     "live": {
-     "detail": "4:13 2nd",
-     "as_of": "5:47 PM"
+     "detail": "1:36 2nd",
+     "as_of": "5:57 PM"
     }
    },
    {
@@ -16452,7 +16452,7 @@
      "opp_id": "127",
      "seed": null,
      "record": "4-2",
-     "live": 31
+     "live": 39
     },
     "home": {
      "team": "Michigan St.",
@@ -16464,13 +16464,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 27
+     "live": 38
     },
     "time": "4:30 PM",
     "line": "MSU -5.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "5:37 PM"
+     "detail": "15:46 2nd",
+     "as_of": "5:57 PM"
     }
    },
    {
@@ -16501,7 +16501,7 @@
      "opp_id": "26",
      "seed": null,
      "record": "6-1",
-     "live": 22
+     "live": 28
     },
     "home": {
      "team": "UCLA",
@@ -16522,13 +16522,13 @@
      "opp_id": "2608",
      "seed": null,
      "record": "6-0",
-     "live": 19
+     "live": 28
     },
     "time": "5:00 PM",
     "line": "UCLA -7.5",
     "live": {
-     "detail": "12:07 1st",
-     "as_of": "5:47 PM"
+     "detail": "8:12 1st",
+     "as_of": "5:57 PM"
     }
    },
    {
@@ -17609,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "5:47 PM"
+ "scores_updated": "5:57 PM"
 }
