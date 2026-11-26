@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 02:36 EST",
- "scores_updated": "2:36 AM",
+ "updated": "2026-11-26 02:46 EST",
+ "scores_updated": "2:46 AM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16291,7 +16291,7 @@
      "opp_id": "62",
      "seed": null,
      "record": "1-5",
-     "live": 69
+     "live": 80
     },
     "home": {
      "team": "Hawaii",
@@ -16303,13 +16303,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 74
+     "live": 82
     },
     "time": "11:59 PM",
     "line": "HAW -17.5",
     "live": {
-     "detail": "3:23 OT",
-     "as_of": "2:36 AM"
+     "detail": "0:06 OT",
+     "as_of": "2:46 AM"
     }
    },
    {
@@ -16333,7 +16333,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 51
+     "live": 59
     },
     "home": {
      "team": "Saint Louis",
@@ -16351,13 +16351,13 @@
      "opp_id": "24",
      "seed": null,
      "record": "3-3",
-     "live": 59
+     "live": 61
     },
     "time": "11:59 PM",
     "line": "SLU -3.5",
     "live": {
-     "detail": "8:22 2nd",
-     "as_of": "2:36 AM"
+     "detail": "4:45 2nd",
+     "as_of": "2:46 AM"
     }
    },
    {
@@ -16366,7 +16366,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16378,16 +16378,15 @@
      "owners": [
       "Mike L."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Colorado St.",
      "pts": 0,
-     "final": null,
+     "final": 75,
      "opp_final": null,
      "opp_id": "36",
      "seed": null,
-     "record": "4-3",
-     "live": 70
+     "record": "4-4"
     },
     "home": {
      "team": "Colorado St.",
@@ -16396,17 +16395,12 @@
      "owners": [],
      "id": "36",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-3",
-     "live": 71
+     "final": 77,
+     "won": true,
+     "record": "5-3"
     },
     "time": "12:30 AM",
-    "line": "CLEM -3.5",
-    "live": {
-     "detail": "2:40 2nd",
-     "as_of": "2:36 AM"
-    }
+    "line": "CLEM -3.5"
    }
   ]
  },
