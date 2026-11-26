@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 14:47 EST",
+ "updated": "2026-11-26 14:57 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16208,7 +16208,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 48
+     "live": 55
     },
     "home": {
      "team": "Maryland",
@@ -16226,13 +16226,13 @@
      "opp_id": "21",
      "seed": null,
      "record": "3-3",
-     "live": 52
+     "live": 58
     },
     "time": "1:00 PM",
     "line": "MD -5.5",
     "live": {
-     "detail": "11:35 2nd",
-     "as_of": "2:47 PM"
+     "detail": "8:20 2nd",
+     "as_of": "2:57 PM"
     }
    },
    {
@@ -16256,7 +16256,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 32
+     "live": 39
     },
     "home": {
      "team": "Arizona St.",
@@ -16283,8 +16283,8 @@
     "time": "2:00 PM",
     "line": "ASU -5.5",
     "live": {
-     "detail": "2:39 1st",
-     "as_of": "2:47 PM"
+     "detail": "0:38 1st",
+     "as_of": "2:57 PM"
     }
    },
    {
@@ -16314,7 +16314,7 @@
      "opp_id": "251",
      "seed": null,
      "record": "6-0",
-     "live": 13
+     "live": 17
     },
     "home": {
      "team": "Texas",
@@ -16326,13 +16326,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 12
+     "live": 17
     },
     "time": "2:30 PM",
     "line": "TEX -8.5",
     "live": {
-     "detail": "12:49 1st",
-     "as_of": "2:47 PM"
+     "detail": "10:07 1st",
+     "as_of": "2:57 PM"
     }
    },
    {
@@ -17609,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "2:47 PM"
+ "scores_updated": "2:57 PM"
 }
