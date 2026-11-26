@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 18:57 EST",
- "scores_updated": "6:57 PM",
+ "updated": "2026-11-25 19:07 EST",
+ "scores_updated": "7:07 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15802,7 +15802,7 @@
      "opp_id": "2507",
      "seed": null,
      "record": "6-1",
-     "live": 63
+     "live": 69
     },
     "home": {
      "team": "Providence",
@@ -15820,13 +15820,13 @@
      "opp_id": "252",
      "seed": null,
      "record": "5-2",
-     "live": 60
+     "live": 67
     },
     "time": "5:30 PM",
     "line": "BYU -2.5",
     "live": {
-     "detail": "11:56 2nd",
-     "as_of": "6:57 PM"
+     "detail": "9:00 2nd",
+     "as_of": "7:07 PM"
     }
    },
    {
@@ -15957,7 +15957,8 @@
      "opp_final": null,
      "opp_id": "152",
      "seed": null,
-     "record": "2-5"
+     "record": "2-5",
+     "live": 4
     },
     "home": {
      "team": "N.C. State",
@@ -15974,10 +15975,15 @@
      "opp_final": null,
      "opp_id": "2450",
      "seed": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 11
     },
     "time": "7:00 PM",
-    "line": "NCSU -28.5"
+    "line": "NCSU -28.5",
+    "live": {
+     "detail": "15:48 1st",
+     "as_of": "7:07 PM"
+    }
    },
    {
     "id": "401920916",
@@ -15999,7 +16005,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "4-3"
+     "record": "4-3",
+     "live": 5
     },
     "home": {
      "team": "SIUE",
@@ -16017,10 +16024,15 @@
      "opp_final": null,
      "opp_id": "2459",
      "seed": null,
-     "record": "3-4"
+     "record": "3-4",
+     "live": 10
     },
     "time": "7:00 PM",
-    "line": "NIU -2.5"
+    "line": "NIU -2.5",
+    "live": {
+     "detail": "16:13 1st",
+     "as_of": "7:07 PM"
+    }
    },
    {
     "id": "401918971",
@@ -16085,7 +16097,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "5-3"
+     "record": "5-3",
+     "live": 3
     },
     "home": {
      "team": "UNC Wilmington",
@@ -16102,10 +16115,15 @@
      "opp_final": null,
      "opp_id": "2900",
      "seed": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 5
     },
     "time": "7:00 PM",
-    "line": "UNCW -5.5"
+    "line": "UNCW -5.5",
+    "live": {
+     "detail": "17:57 1st",
+     "as_of": "7:07 PM"
+    }
    },
    {
     "id": "401911028",
@@ -16127,7 +16145,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "2-4"
+     "record": "2-4",
+     "live": 1
     },
     "home": {
      "team": "Wisconsin",
@@ -16144,10 +16163,15 @@
      "opp_final": null,
      "opp_id": "111",
      "seed": null,
-     "record": "4-2"
+     "record": "4-2",
+     "live": 2
     },
     "time": "7:00 PM",
-    "line": "WIS -20.5"
+    "line": "WIS -20.5",
+    "live": {
+     "detail": "17:36 1st",
+     "as_of": "7:07 PM"
+    }
    },
    {
     "id": "401929287",
@@ -16358,7 +16382,7 @@
      "record": "3-3"
     },
     "time": "11:59 PM",
-    "line": "SLU -4.5"
+    "line": "SLU -3.5"
    },
    {
     "id": "401921714",
