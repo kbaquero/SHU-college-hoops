@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 14:07 EST",
+ "updated": "2026-11-26 14:17 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16256,7 +16256,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 0
+     "live": 12
     },
     "home": {
      "team": "Arizona St.",
@@ -16278,13 +16278,13 @@
      "opp_id": "2579",
      "seed": null,
      "record": "5-1",
-     "live": 0
+     "live": 11
     },
     "time": "2:00 PM",
     "line": "ASU -5.5",
     "live": {
-     "detail": "19:08 1st",
-     "as_of": "2:07 PM"
+     "detail": "14:27 1st",
+     "as_of": "2:17 PM"
     }
    },
    {
@@ -17603,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "2:07 PM"
+ "scores_updated": "2:17 PM"
 }
