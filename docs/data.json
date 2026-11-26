@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 01:12 EST",
- "scores_updated": "1:12 AM",
+ "updated": "2026-11-26 01:22 EST",
+ "scores_updated": "1:22 AM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16291,7 +16291,7 @@
      "opp_id": "62",
      "seed": null,
      "record": "1-5",
-     "live": 36
+     "live": 38
     },
     "home": {
      "team": "Hawaii",
@@ -16303,13 +16303,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 25
+     "live": 31
     },
     "time": "11:59 PM",
     "line": "HAW -17.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "1:02 AM"
+     "detail": "17:47 2nd",
+     "as_of": "1:22 AM"
     }
    },
    {
@@ -16333,7 +16333,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 4
+     "live": 15
     },
     "home": {
      "team": "Saint Louis",
@@ -16351,13 +16351,13 @@
      "opp_id": "24",
      "seed": null,
      "record": "3-3",
-     "live": 3
+     "live": 9
     },
     "time": "11:59 PM",
     "line": "SLU -3.5",
     "live": {
-     "detail": "18:01 1st",
-     "as_of": "1:12 AM"
+     "detail": "12:51 1st",
+     "as_of": "1:22 AM"
     }
    },
    {
@@ -16399,13 +16399,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 34
+     "live": 51
     },
     "time": "12:30 AM",
     "line": "CLEM -3.5",
     "live": {
-     "detail": "6:44 1st",
-     "as_of": "1:12 AM"
+     "detail": "3:15 1st",
+     "as_of": "1:22 AM"
     }
    }
   ]
