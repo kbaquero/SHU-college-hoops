@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 00:02 EST",
- "scores_updated": "12:02 AM",
+ "updated": "2026-11-26 00:12 EST",
+ "scores_updated": "12:12 AM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16249,7 +16249,7 @@
      "opp_id": "38",
      "seed": null,
      "record": "5-0",
-     "live": 58
+     "live": 61
     },
     "home": {
      "team": "Colorado",
@@ -16261,13 +16261,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 50
+     "live": 63
     },
     "time": "9:30 PM",
     "line": "GCU -9.5",
     "live": {
-     "detail": "9:41 2nd",
-     "as_of": "12:02 AM"
+     "detail": "6:10 2nd",
+     "as_of": "12:12 AM"
     }
    },
    {
@@ -16296,7 +16296,8 @@
      "opp_final": null,
      "opp_id": "62",
      "seed": null,
-     "record": "1-5"
+     "record": "1-5",
+     "live": 8
     },
     "home": {
      "team": "Hawaii",
@@ -16307,10 +16308,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 4
     },
     "time": "11:59 PM",
-    "line": "HAW -17.5"
+    "line": "HAW -17.5",
+    "live": {
+     "detail": "16:33 1st",
+     "as_of": "12:12 AM"
+    }
    },
    {
     "id": "401921672",
@@ -16332,7 +16338,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "5-2"
+     "record": "5-2",
+     "live": 0
     },
     "home": {
      "team": "Saint Louis",
@@ -16349,10 +16356,15 @@
      "opp_final": null,
      "opp_id": "24",
      "seed": null,
-     "record": "3-3"
+     "record": "3-3",
+     "live": 0
     },
     "time": "11:59 PM",
-    "line": "SLU -3.5"
+    "line": "SLU -3.5",
+    "live": {
+     "detail": "Delayed",
+     "as_of": "12:12 AM"
+    }
    },
    {
     "id": "401921714",
@@ -16394,7 +16406,7 @@
      "record": "4-3"
     },
     "time": "12:30 AM",
-    "line": "CLEM -3.5"
+    "line": "CLEM -4.5"
    }
   ]
  },
