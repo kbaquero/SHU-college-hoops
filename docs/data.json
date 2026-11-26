@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 17:07 EST",
+ "updated": "2026-11-26 17:17 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16347,7 +16347,7 @@
      "opp_id": "130",
      "seed": null,
      "record": "5-2",
-     "live": 71
+     "live": 79
     },
     "home": {
      "team": "Michigan",
@@ -16369,13 +16369,13 @@
      "opp_id": "2390",
      "seed": null,
      "record": "3-3",
-     "live": 49
+     "live": 53
     },
     "time": "3:30 PM",
     "line": "MIA -1.5",
     "live": {
-     "detail": "13:21 2nd",
-     "as_of": "5:07 PM"
+     "detail": "9:30 2nd",
+     "as_of": "5:17 PM"
     }
    },
    {
@@ -16405,7 +16405,7 @@
      "opp_id": "66",
      "seed": null,
      "record": "6-0",
-     "live": 31
+     "live": 39
     },
     "home": {
      "team": "Iowa St.",
@@ -16417,13 +16417,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 22
+     "live": 28
     },
     "time": "3:30 PM",
     "line": "ISU -5.5",
     "live": {
-     "detail": "18:17 2nd",
-     "as_of": "5:07 PM"
+     "detail": "15:27 2nd",
+     "as_of": "5:17 PM"
     }
    },
    {
@@ -16458,7 +16458,7 @@
      "opp_id": "127",
      "seed": null,
      "record": "4-2",
-     "live": 13
+     "live": 20
     },
     "home": {
      "team": "Michigan St.",
@@ -16470,13 +16470,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 11
+     "live": 23
     },
     "time": "4:30 PM",
     "line": "MSU -5.5",
     "live": {
-     "detail": "10:43 1st",
-     "as_of": "5:07 PM"
+     "detail": "5:52 1st",
+     "as_of": "5:17 PM"
     }
    },
    {
@@ -17609,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "5:07 PM"
+ "scores_updated": "5:17 PM"
 }
