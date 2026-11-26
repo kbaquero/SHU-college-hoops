@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 13:23 EST",
+ "updated": "2026-11-26 13:33 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16109,7 +16109,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16121,16 +16121,15 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Cincinnati",
      "pts": 0,
-     "final": null,
+     "final": 81,
      "opp_final": null,
      "opp_id": "2132",
      "seed": null,
-     "record": "6-0",
-     "live": 81
+     "record": "6-1"
     },
     "home": {
      "team": "Cincinnati",
@@ -16139,17 +16138,12 @@
      "owners": [],
      "id": "2132",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-1",
-     "live": 83
+     "final": 83,
+     "won": true,
+     "record": "6-1"
     },
     "time": "11:00 AM",
-    "line": "CIN -2.5",
-    "live": {
-     "detail": "End of 2nd",
-     "as_of": "1:23 PM"
-    }
+    "line": "CIN -2.5"
    },
    {
     "id": "401906807",
@@ -16178,7 +16172,7 @@
      "opp_id": "2509",
      "seed": null,
      "record": "4-2",
-     "live": 44
+     "live": 50
     },
     "home": {
      "team": "Purdue",
@@ -16190,13 +16184,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 43
+     "live": 47
     },
     "time": "12:00 PM",
     "line": "PUR -5.5",
     "live": {
-     "detail": "14:43 2nd",
-     "as_of": "1:23 PM"
+     "detail": "10:52 2nd",
+     "as_of": "1:33 PM"
     }
    },
    {
@@ -16220,7 +16214,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 5
+     "live": 12
     },
     "home": {
      "team": "Maryland",
@@ -16238,13 +16232,13 @@
      "opp_id": "21",
      "seed": null,
      "record": "3-3",
-     "live": 4
+     "live": 6
     },
     "time": "1:00 PM",
     "line": "MD -5.5",
     "live": {
-     "detail": "13:53 1st",
-     "as_of": "1:23 PM"
+     "detail": "10:42 1st",
+     "as_of": "1:33 PM"
     }
    },
    {
@@ -17609,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "1:23 PM"
+ "scores_updated": "1:33 PM"
 }
