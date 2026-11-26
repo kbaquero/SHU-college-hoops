@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 22:32 EST",
- "scores_updated": "10:32 PM",
+ "updated": "2026-11-25 22:42 EST",
+ "scores_updated": "10:42 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16158,7 +16158,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 38
+     "live": 42
     },
     "home": {
      "team": "Mississippi St.",
@@ -16181,8 +16181,8 @@
     "time": "7:30 PM",
     "line": "MSST -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:32 PM"
+     "detail": "18:15 2nd",
+     "as_of": "10:42 PM"
     }
    },
    {
@@ -16191,7 +16191,7 @@
     "tbd": false,
     "tv": "ESPN+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16203,11 +16203,10 @@
      "owners": [],
      "id": "3218",
      "seed": null,
-     "final": null,
-     "won": null,
+     "final": 43,
+     "won": false,
      "d1": false,
-     "record": "",
-     "live": 40
+     "record": ""
     },
     "home": {
      "team": "Montana St.",
@@ -16216,23 +16215,18 @@
      "owners": [
       "Marty C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Northwest Indian",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 110,
      "opp_final": null,
      "opp_id": "3218",
      "seed": null,
-     "record": "2-4",
-     "live": 106
+     "record": "3-4"
     },
     "time": "9:00 PM",
-    "line": "",
-    "live": {
-     "detail": "0:47 2nd",
-     "as_of": "10:32 PM"
-    }
+    "line": ""
    },
    {
     "id": "401921671",
@@ -16261,7 +16255,7 @@
      "opp_id": "38",
      "seed": null,
      "record": "5-0",
-     "live": 6
+     "live": 16
     },
     "home": {
      "team": "Colorado",
@@ -16273,13 +16267,13 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 3
+     "live": 8
     },
     "time": "9:30 PM",
     "line": "GCU -9.5",
     "live": {
-     "detail": "15:49 1st",
-     "as_of": "10:32 PM"
+     "detail": "11:42 1st",
+     "as_of": "10:42 PM"
     }
    },
    {
