@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 15:57 EST",
+ "updated": "2026-11-26 16:07 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16250,7 +16250,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 62
+     "live": 70
     },
     "home": {
      "team": "Arizona St.",
@@ -16272,13 +16272,13 @@
      "opp_id": "2579",
      "seed": null,
      "record": "5-1",
-     "live": 57
+     "live": 59
     },
     "time": "2:00 PM",
     "line": "ASU -5.5",
     "live": {
-     "detail": "4:07 2nd",
-     "as_of": "3:57 PM"
+     "detail": "1:48 2nd",
+     "as_of": "4:07 PM"
     }
    },
    {
@@ -16308,7 +16308,7 @@
      "opp_id": "251",
      "seed": null,
      "record": "6-0",
-     "live": 41
+     "live": 45
     },
     "home": {
      "team": "Texas",
@@ -16320,13 +16320,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 56
+     "live": 62
     },
     "time": "2:30 PM",
     "line": "TEX -8.5",
     "live": {
-     "detail": "15:30 2nd",
-     "as_of": "3:57 PM"
+     "detail": "13:29 2nd",
+     "as_of": "4:07 PM"
     }
    },
    {
@@ -16359,7 +16359,7 @@
      "opp_id": "130",
      "seed": null,
      "record": "5-2",
-     "live": 17
+     "live": 29
     },
     "home": {
      "team": "Michigan",
@@ -16381,13 +16381,13 @@
      "opp_id": "2390",
      "seed": null,
      "record": "3-3",
-     "live": 21
+     "live": 26
     },
     "time": "3:30 PM",
     "line": "MIA -1.5",
     "live": {
-     "detail": "11:05 1st",
-     "as_of": "3:57 PM"
+     "detail": "7:52 1st",
+     "as_of": "4:07 PM"
     }
    },
    {
@@ -16416,7 +16416,8 @@
      "opp_final": null,
      "opp_id": "66",
      "seed": null,
-     "record": "6-0"
+     "record": "6-0",
+     "live": 3
     },
     "home": {
      "team": "Iowa St.",
@@ -16427,10 +16428,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 2
     },
     "time": "3:30 PM",
-    "line": "ISU -5.5"
+    "line": "ISU -5.5",
+    "live": {
+     "detail": "16:21 1st",
+     "as_of": "4:07 PM"
+    }
    },
    {
     "id": "401925757",
@@ -17609,5 +17615,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "3:57 PM"
+ "scores_updated": "4:07 PM"
 }
