@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 23:22 EST",
- "scores_updated": "11:22 PM",
+ "updated": "2026-11-25 23:32 EST",
+ "scores_updated": "11:32 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16158,7 +16158,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 62
+     "live": 68
     },
     "home": {
      "team": "Mississippi St.",
@@ -16176,13 +16176,13 @@
      "opp_id": "154",
      "seed": null,
      "record": "5-1",
-     "live": 56
+     "live": 62
     },
     "time": "7:30 PM",
     "line": "MSST -3.5",
     "live": {
-     "detail": "5:32 2nd",
-     "as_of": "11:22 PM"
+     "detail": "1:50 2nd",
+     "as_of": "11:32 PM"
     }
    },
    {
