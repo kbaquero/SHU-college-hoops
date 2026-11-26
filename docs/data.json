@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 21:41 EST",
- "scores_updated": "9:41 PM",
+ "updated": "2026-11-25 21:51 EST",
+ "scores_updated": "9:51 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16016,7 +16016,7 @@
     "tbd": false,
     "tv": "CBSSN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16029,16 +16029,15 @@
       "Mike C.",
       "Dennis S."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Utah St.",
      "pts": 0,
-     "final": null,
+     "final": 59,
      "opp_final": null,
      "opp_id": "328",
      "seed": null,
-     "record": "6-0",
-     "live": 53
+     "record": "6-1"
     },
     "home": {
      "team": "Utah St.",
@@ -16047,17 +16046,12 @@
      "owners": [],
      "id": "328",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-0",
-     "live": 89
+     "final": 93,
+     "won": true,
+     "record": "6-0"
     },
     "time": "7:00 PM",
-    "line": "USU -3.5",
-    "live": {
-     "detail": "2:02 2nd",
-     "as_of": "9:41 PM"
-    }
+    "line": "USU -3.5"
    },
    {
     "id": "401920847",
@@ -16164,7 +16158,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 11
+     "live": 19
     },
     "home": {
      "team": "Mississippi St.",
@@ -16182,13 +16176,13 @@
      "opp_id": "154",
      "seed": null,
      "record": "5-1",
-     "live": 10
+     "live": 16
     },
     "time": "7:30 PM",
     "line": "MSST -3.5",
     "live": {
-     "detail": "15:08 1st",
-     "as_of": "9:41 PM"
+     "detail": "10:09 1st",
+     "as_of": "9:51 PM"
     }
    },
    {
