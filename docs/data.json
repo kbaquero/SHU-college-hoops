@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 12:43 EST",
+ "updated": "2026-11-26 12:53 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16130,7 +16130,7 @@
      "opp_id": "2132",
      "seed": null,
      "record": "6-0",
-     "live": 59
+     "live": 67
     },
     "home": {
      "team": "Cincinnati",
@@ -16142,13 +16142,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 64
+     "live": 68
     },
     "time": "11:00 AM",
     "line": "CIN -2.5",
     "live": {
-     "detail": "8:44 2nd",
-     "as_of": "12:43 PM"
+     "detail": "6:43 2nd",
+     "as_of": "12:53 PM"
     }
    },
    {
@@ -16178,7 +16178,7 @@
      "opp_id": "2509",
      "seed": null,
      "record": "4-2",
-     "live": 26
+     "live": 31
     },
     "home": {
      "team": "Purdue",
@@ -16190,13 +16190,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 34
+     "live": 36
     },
     "time": "12:00 PM",
     "line": "PUR -5.5",
     "live": {
-     "detail": "3:24 1st",
-     "as_of": "12:43 PM"
+     "detail": "Halftime",
+     "as_of": "12:53 PM"
     }
    },
    {
@@ -16239,7 +16239,7 @@
      "record": "3-3"
     },
     "time": "1:00 PM",
-    "line": "MD -4.5"
+    "line": "MD -5.5"
    },
    {
     "id": "401921674",
@@ -17603,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "12:43 PM"
+ "scores_updated": "12:53 PM"
 }
