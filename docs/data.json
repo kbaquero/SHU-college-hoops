@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 19:07 EST",
- "scores_updated": "7:07 PM",
+ "updated": "2026-11-25 19:17 EST",
+ "scores_updated": "7:17 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -15802,7 +15802,7 @@
      "opp_id": "2507",
      "seed": null,
      "record": "6-1",
-     "live": 69
+     "live": 71
     },
     "home": {
      "team": "Providence",
@@ -15820,13 +15820,13 @@
      "opp_id": "252",
      "seed": null,
      "record": "5-2",
-     "live": 67
+     "live": 69
     },
     "time": "5:30 PM",
     "line": "BYU -2.5",
     "live": {
-     "detail": "9:00 2nd",
-     "as_of": "7:07 PM"
+     "detail": "5:46 2nd",
+     "as_of": "7:17 PM"
     }
    },
    {
@@ -15850,7 +15850,7 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 52
+     "live": 56
     },
     "home": {
      "team": "Weber St.",
@@ -15868,13 +15868,13 @@
      "opp_id": "2463",
      "seed": null,
      "record": "2-4",
-     "live": 33
+     "live": 35
     },
     "time": "6:00 PM",
     "line": "CSUN -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "6:57 PM"
+     "detail": "16:10 2nd",
+     "as_of": "7:17 PM"
     }
    },
    {
@@ -15908,7 +15908,8 @@
      "opp_final": null,
      "opp_id": "150",
      "seed": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 0
     },
     "home": {
      "team": "Duke",
@@ -15926,10 +15927,15 @@
      "opp_final": null,
      "opp_id": "41",
      "seed": null,
-     "record": "4-2"
+     "record": "4-2",
+     "live": 2
     },
     "time": "7:00 PM",
-    "line": "CONN -1.5"
+    "line": "CONN -1.5",
+    "live": {
+     "detail": "18:10 1st",
+     "as_of": "7:17 PM"
+    }
    },
    {
     "id": "401918960",
@@ -15958,7 +15964,7 @@
      "opp_id": "152",
      "seed": null,
      "record": "2-5",
-     "live": 4
+     "live": 7
     },
     "home": {
      "team": "N.C. State",
@@ -15976,13 +15982,13 @@
      "opp_id": "2450",
      "seed": null,
      "record": "5-1",
-     "live": 11
+     "live": 18
     },
     "time": "7:00 PM",
     "line": "NCSU -28.5",
     "live": {
-     "detail": "15:48 1st",
-     "as_of": "7:07 PM"
+     "detail": "11:47 1st",
+     "as_of": "7:17 PM"
     }
    },
    {
@@ -16006,7 +16012,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 5
+     "live": 13
     },
     "home": {
      "team": "SIUE",
@@ -16025,13 +16031,13 @@
      "opp_id": "2459",
      "seed": null,
      "record": "3-4",
-     "live": 10
+     "live": 19
     },
     "time": "7:00 PM",
     "line": "NIU -2.5",
     "live": {
-     "detail": "16:13 1st",
-     "as_of": "7:07 PM"
+     "detail": "11:32 1st",
+     "as_of": "7:17 PM"
     }
    },
    {
@@ -16098,7 +16104,7 @@
      "final": null,
      "won": null,
      "record": "5-3",
-     "live": 3
+     "live": 10
     },
     "home": {
      "team": "UNC Wilmington",
@@ -16116,13 +16122,13 @@
      "opp_id": "2900",
      "seed": null,
      "record": "5-1",
-     "live": 5
+     "live": 11
     },
     "time": "7:00 PM",
     "line": "UNCW -5.5",
     "live": {
-     "detail": "17:57 1st",
-     "as_of": "7:07 PM"
+     "detail": "13:17 1st",
+     "as_of": "7:17 PM"
     }
    },
    {
@@ -16146,7 +16152,7 @@
      "final": null,
      "won": null,
      "record": "2-4",
-     "live": 1
+     "live": 11
     },
     "home": {
      "team": "Wisconsin",
@@ -16164,13 +16170,13 @@
      "opp_id": "111",
      "seed": null,
      "record": "4-2",
-     "live": 2
+     "live": 18
     },
     "time": "7:00 PM",
     "line": "WIS -20.5",
     "live": {
-     "detail": "17:36 1st",
-     "as_of": "7:07 PM"
+     "detail": "11:42 1st",
+     "as_of": "7:17 PM"
     }
    },
    {
