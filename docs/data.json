@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 02:46 EST",
- "scores_updated": "2:46 AM",
+ "updated": "2026-11-26 02:57 EST",
+ "scores_updated": "2:57 AM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16270,10 +16270,10 @@
     "tbd": false,
     "tv": "MW+",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "",
     "away": {
      "team": "Incarnate Word",
@@ -16282,16 +16282,15 @@
      "owners": [
       "Dan P."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Hawaii",
      "pts": 0,
-     "final": null,
+     "final": 81,
      "opp_final": null,
      "opp_id": "62",
      "seed": null,
-     "record": "1-5",
-     "live": 80
+     "record": "1-6"
     },
     "home": {
      "team": "Hawaii",
@@ -16300,17 +16299,12 @@
      "owners": [],
      "id": "62",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-2",
-     "live": 82
+     "final": 83,
+     "won": true,
+     "record": "4-2"
     },
     "time": "11:59 PM",
-    "line": "HAW -17.5",
-    "live": {
-     "detail": "0:06 OT",
-     "as_of": "2:46 AM"
-    }
+    "line": "HAW -17.5"
    },
    {
     "id": "401921672",
@@ -16333,7 +16327,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 59
+     "live": 64
     },
     "home": {
      "team": "Saint Louis",
@@ -16351,13 +16345,13 @@
      "opp_id": "24",
      "seed": null,
      "record": "3-3",
-     "live": 61
+     "live": 66
     },
     "time": "11:59 PM",
     "line": "SLU -3.5",
     "live": {
-     "detail": "4:45 2nd",
-     "as_of": "2:46 AM"
+     "detail": "1:49 2nd",
+     "as_of": "2:57 AM"
     }
    },
    {
