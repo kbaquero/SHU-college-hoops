@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 22:12 EST",
- "scores_updated": "10:12 PM",
+ "updated": "2026-11-25 22:22 EST",
+ "scores_updated": "10:22 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16158,7 +16158,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 32
+     "live": 38
     },
     "home": {
      "team": "Mississippi St.",
@@ -16176,13 +16176,13 @@
      "opp_id": "154",
      "seed": null,
      "record": "5-1",
-     "live": 25
+     "live": 30
     },
     "time": "7:30 PM",
     "line": "MSST -3.5",
     "live": {
-     "detail": "2:41 1st",
-     "as_of": "10:12 PM"
+     "detail": "0:09 1st",
+     "as_of": "10:22 PM"
     }
    },
    {
@@ -16207,7 +16207,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 27
+     "live": 36
     },
     "home": {
      "team": "Montana St.",
@@ -16225,13 +16225,13 @@
      "opp_id": "3218",
      "seed": null,
      "record": "2-4",
-     "live": 85
+     "live": 95
     },
     "time": "9:00 PM",
     "line": "",
     "live": {
-     "detail": "9:07 2nd",
-     "as_of": "10:12 PM"
+     "detail": "4:47 2nd",
+     "as_of": "10:22 PM"
     }
    },
    {
@@ -16260,7 +16260,8 @@
      "opp_final": null,
      "opp_id": "38",
      "seed": null,
-     "record": "5-0"
+     "record": "5-0",
+     "live": 2
     },
     "home": {
      "team": "Colorado",
@@ -16271,10 +16272,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-3"
+     "record": "3-3",
+     "live": 0
     },
     "time": "9:30 PM",
-    "line": "GCU -9.5"
+    "line": "GCU -9.5",
+    "live": {
+     "detail": "19:17 1st",
+     "as_of": "10:22 PM"
+    }
    },
    {
     "id": "401929005",
