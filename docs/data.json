@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 15:27 EST",
+ "updated": "2026-11-26 15:37 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16193,7 +16193,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16205,10 +16205,9 @@
      "owners": [],
      "id": "21",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-1",
-     "live": 75
+     "final": 75,
+     "won": true,
+     "record": "6-1"
     },
     "home": {
      "team": "Maryland",
@@ -16217,23 +16216,18 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "San Diego St.",
      "pts": 0,
-     "final": null,
+     "final": 71,
      "opp_final": null,
      "opp_id": "21",
      "seed": null,
-     "record": "3-3",
-     "live": 68
+     "record": "3-4"
     },
     "time": "1:00 PM",
-    "line": "MD -5.5",
-    "live": {
-     "detail": "0:12 2nd",
-     "as_of": "3:27 PM"
-    }
+    "line": "MD -5.5"
    },
    {
     "id": "401921674",
@@ -16256,7 +16250,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 50
+     "live": 52
     },
     "home": {
      "team": "Arizona St.",
@@ -16278,13 +16272,13 @@
      "opp_id": "2579",
      "seed": null,
      "record": "5-1",
-     "live": 37
+     "live": 42
     },
     "time": "2:00 PM",
     "line": "ASU -5.5",
     "live": {
-     "detail": "14:47 2nd",
-     "as_of": "3:27 PM"
+     "detail": "11:42 2nd",
+     "as_of": "3:37 PM"
     }
    },
    {
@@ -16364,7 +16358,8 @@
      "opp_final": null,
      "opp_id": "130",
      "seed": null,
-     "record": "5-2"
+     "record": "5-2",
+     "live": 3
     },
     "home": {
      "team": "Michigan",
@@ -16385,10 +16380,15 @@
      "opp_final": null,
      "opp_id": "2390",
      "seed": null,
-     "record": "3-3"
+     "record": "3-3",
+     "live": 4
     },
     "time": "3:30 PM",
-    "line": "MIA -1.5"
+    "line": "MIA -1.5",
+    "live": {
+     "detail": "18:48 1st",
+     "as_of": "3:37 PM"
+    }
    },
    {
     "id": "401920529",
@@ -17609,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "3:27 PM"
+ "scores_updated": "3:37 PM"
 }
