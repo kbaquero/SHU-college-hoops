@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 02:57 EST",
- "scores_updated": "2:57 AM",
+ "updated": "2026-11-26 03:07 EST",
+ "scores_updated": "3:07 AM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16312,7 +16312,7 @@
     "tbd": false,
     "tv": "CBSSN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16324,10 +16324,9 @@
      "owners": [],
      "id": "24",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-2",
-     "live": 64
+     "final": 64,
+     "won": false,
+     "record": "5-3"
     },
     "home": {
      "team": "Saint Louis",
@@ -16336,23 +16335,18 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Stanford",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 66,
      "opp_final": null,
      "opp_id": "24",
      "seed": null,
-     "record": "3-3",
-     "live": 66
+     "record": "4-3"
     },
     "time": "11:59 PM",
-    "line": "SLU -3.5",
-    "live": {
-     "detail": "1:49 2nd",
-     "as_of": "2:57 AM"
-    }
+    "line": "SLU -3.5"
    },
    {
     "id": "401921714",
