@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 11:23 EST",
+ "updated": "2026-11-26 11:33 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16130,7 +16130,7 @@
      "opp_id": "2132",
      "seed": null,
      "record": "6-0",
-     "live": 12
+     "live": 17
     },
     "home": {
      "team": "Cincinnati",
@@ -16142,13 +16142,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 17
+     "live": 30
     },
     "time": "11:00 AM",
     "line": "CIN -2.5",
     "live": {
-     "detail": "12:07 1st",
-     "as_of": "11:23 AM"
+     "detail": "7:55 1st",
+     "as_of": "11:33 AM"
     }
    },
    {
@@ -16191,7 +16191,7 @@
      "record": "4-3"
     },
     "time": "12:00 PM",
-    "line": "PUR -4.5"
+    "line": "PUR -5.5"
    },
    {
     "id": "401920528",
@@ -16376,7 +16376,7 @@
      "record": "3-3"
     },
     "time": "3:30 PM",
-    "line": "MIA -2.5"
+    "line": "MIA -1.5"
    },
    {
     "id": "401920529",
@@ -16418,7 +16418,7 @@
      "record": "4-1"
     },
     "time": "3:30 PM",
-    "line": "ISU -3.5"
+    "line": "ISU -4.5"
    },
    {
     "id": "401925757",
@@ -17597,5 +17597,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "11:23 AM"
+ "scores_updated": "11:33 AM"
 }
