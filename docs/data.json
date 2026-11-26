@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 13:43 EST",
+ "updated": "2026-11-26 13:53 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16172,7 +16172,7 @@
      "opp_id": "2509",
      "seed": null,
      "record": "4-2",
-     "live": 55
+     "live": 62
     },
     "home": {
      "team": "Purdue",
@@ -16184,13 +16184,13 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 51
+     "live": 58
     },
     "time": "12:00 PM",
     "line": "PUR -5.5",
     "live": {
-     "detail": "6:28 2nd",
-     "as_of": "1:43 PM"
+     "detail": "2:46 2nd",
+     "as_of": "1:53 PM"
     }
    },
    {
@@ -16214,7 +16214,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 21
+     "live": 28
     },
     "home": {
      "team": "Maryland",
@@ -16232,13 +16232,13 @@
      "opp_id": "21",
      "seed": null,
      "record": "3-3",
-     "live": 13
+     "live": 23
     },
     "time": "1:00 PM",
     "line": "MD -5.5",
     "live": {
-     "detail": "6:49 1st",
-     "as_of": "1:43 PM"
+     "detail": "3:53 1st",
+     "as_of": "1:53 PM"
     }
    },
    {
@@ -17603,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "1:43 PM"
+ "scores_updated": "1:53 PM"
 }
