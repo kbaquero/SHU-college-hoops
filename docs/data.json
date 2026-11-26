@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 21:51 EST",
- "scores_updated": "9:51 PM",
+ "updated": "2026-11-25 22:01 EST",
+ "scores_updated": "10:01 PM",
  "through": "Tue, Nov 24",
  "season": 2027,
  "standings": [
@@ -16158,7 +16158,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 19
+     "live": 26
     },
     "home": {
      "team": "Mississippi St.",
@@ -16176,13 +16176,13 @@
      "opp_id": "154",
      "seed": null,
      "record": "5-1",
-     "live": 16
+     "live": 20
     },
     "time": "7:30 PM",
     "line": "MSST -3.5",
     "live": {
-     "detail": "10:09 1st",
-     "as_of": "9:51 PM"
+     "detail": "6:21 1st",
+     "as_of": "10:01 PM"
     }
    },
    {
@@ -16207,7 +16207,7 @@
      "won": null,
      "d1": false,
      "record": "",
-     "live": 12
+     "live": 16
     },
     "home": {
      "team": "Montana St.",
@@ -16225,13 +16225,13 @@
      "opp_id": "3218",
      "seed": null,
      "record": "2-4",
-     "live": 55
+     "live": 70
     },
     "time": "9:00 PM",
     "line": "",
     "live": {
-     "detail": "Halftime",
-     "as_of": "9:41 PM"
+     "detail": "14:57 2nd",
+     "as_of": "10:01 PM"
     }
    },
    {
