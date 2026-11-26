@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 15:47 EST",
+ "updated": "2026-11-26 15:57 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16250,7 +16250,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 58
+     "live": 62
     },
     "home": {
      "team": "Arizona St.",
@@ -16272,13 +16272,13 @@
      "opp_id": "2579",
      "seed": null,
      "record": "5-1",
-     "live": 49
+     "live": 57
     },
     "time": "2:00 PM",
     "line": "ASU -5.5",
     "live": {
-     "detail": "8:05 2nd",
-     "as_of": "3:47 PM"
+     "detail": "4:07 2nd",
+     "as_of": "3:57 PM"
     }
    },
    {
@@ -16308,7 +16308,7 @@
      "opp_id": "251",
      "seed": null,
      "record": "6-0",
-     "live": 34
+     "live": 41
     },
     "home": {
      "team": "Texas",
@@ -16320,13 +16320,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 45
+     "live": 56
     },
     "time": "2:30 PM",
     "line": "TEX -8.5",
     "live": {
-     "detail": "18:25 2nd",
-     "as_of": "3:47 PM"
+     "detail": "15:30 2nd",
+     "as_of": "3:57 PM"
     }
    },
    {
@@ -16359,7 +16359,7 @@
      "opp_id": "130",
      "seed": null,
      "record": "5-2",
-     "live": 11
+     "live": 17
     },
     "home": {
      "team": "Michigan",
@@ -16381,13 +16381,13 @@
      "opp_id": "2390",
      "seed": null,
      "record": "3-3",
-     "live": 14
+     "live": 21
     },
     "time": "3:30 PM",
     "line": "MIA -1.5",
     "live": {
-     "detail": "14:42 1st",
-     "as_of": "3:47 PM"
+     "detail": "11:05 1st",
+     "as_of": "3:57 PM"
     }
    },
    {
@@ -17609,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "3:47 PM"
+ "scores_updated": "3:57 PM"
 }
