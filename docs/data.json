@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 11:53 EST",
+ "updated": "2026-11-26 12:03 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16142,13 +16142,13 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 47
+     "live": 50
     },
     "time": "11:00 AM",
     "line": "CIN -2.5",
     "live": {
-     "detail": "0:53 1st",
-     "as_of": "11:53 AM"
+     "detail": "Halftime",
+     "as_of": "12:03 PM"
     }
    },
    {
@@ -17597,5 +17597,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "11:53 AM"
+ "scores_updated": "12:03 PM"
 }
