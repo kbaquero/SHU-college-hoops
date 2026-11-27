@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 17:08 EST",
+ "updated": "2026-11-27 17:18 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -16812,7 +16812,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "conf",
     "round": null,
     "final_label": "Final",
@@ -16824,10 +16824,9 @@
      "owners": [],
      "id": "2628",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-2",
-     "live": 78
+     "final": 88,
+     "won": true,
+     "record": "6-2"
     },
     "home": {
      "team": "Baylor",
@@ -16837,23 +16836,18 @@
       "Chris C.",
       "Mike C."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "TCU",
      "pts": 0,
-     "final": null,
+     "final": 69,
      "opp_final": null,
      "opp_id": "2628",
      "seed": null,
-     "record": "5-2",
-     "live": 63
+     "record": "5-3"
     },
     "time": "3:00 PM",
-    "line": "BAY -4.5",
-    "live": {
-     "detail": "3:40 2nd",
-     "as_of": "5:08 PM"
-    }
+    "line": "BAY -4.5"
    },
    {
     "id": "401924738",
@@ -16926,7 +16920,7 @@
      "opp_id": "2275",
      "seed": null,
      "record": "2-4",
-     "live": 64
+     "live": 72
     },
     "home": {
      "team": "Hofstra",
@@ -16938,13 +16932,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 36
+     "live": 46
     },
     "time": "3:30 PM",
     "line": "HOF -1.5",
     "live": {
-     "detail": "6:43 2nd",
-     "as_of": "5:08 PM"
+     "detail": "1:20 2nd",
+     "as_of": "5:18 PM"
     }
    },
    {
@@ -16968,7 +16962,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 48
+     "live": 55
     },
     "home": {
      "team": "Maryland",
@@ -16986,13 +16980,13 @@
      "opp_id": "2483",
      "seed": null,
      "record": "3-4",
-     "live": 38
+     "live": 39
     },
     "time": "3:30 PM",
     "line": "MD -3.5",
     "live": {
-     "detail": "16:53 2nd",
-     "as_of": "5:08 PM"
+     "detail": "13:59 2nd",
+     "as_of": "5:18 PM"
     }
    },
    {
@@ -17022,7 +17016,7 @@
      "opp_id": "245",
      "seed": null,
      "record": "4-3",
-     "live": 13
+     "live": 20
     },
     "home": {
      "team": "Texas A&M",
@@ -17034,13 +17028,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 7
+     "live": 13
     },
     "time": "5:00 PM",
     "line": "MARQ -1.5",
     "live": {
-     "detail": "15:45 1st",
-     "as_of": "5:08 PM"
+     "detail": "12:03 1st",
+     "as_of": "5:18 PM"
     }
    },
    {
@@ -17112,7 +17106,8 @@
      "opp_final": null,
      "opp_id": "2305",
      "seed": null,
-     "record": "5-2"
+     "record": "5-2",
+     "live": 9
     },
     "home": {
      "team": "Kansas",
@@ -17123,10 +17118,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "6-1"
+     "record": "6-1",
+     "live": 6
     },
     "time": "5:00 PM",
-    "line": "KU -10.5"
+    "line": "KU -10.5",
+    "live": {
+     "detail": "14:36 1st",
+     "as_of": "5:18 PM"
+    }
    },
    {
     "id": "401920382",
@@ -17149,7 +17149,7 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 10
+     "live": 15
     },
     "home": {
      "team": "Virginia Tech",
@@ -17167,13 +17167,13 @@
      "opp_id": "295",
      "seed": null,
      "record": "6-1",
-     "live": 9
+     "live": 13
     },
     "time": "5:00 PM",
     "line": "VT -17.5",
     "live": {
-     "detail": "15:10 1st",
-     "as_of": "5:08 PM"
+     "detail": "10:56 1st",
+     "as_of": "5:18 PM"
     }
    },
    {
@@ -17485,7 +17485,7 @@
      "record": "5-1"
     },
     "time": "7:00 PM",
-    "line": "WVU -2.5"
+    "line": "WVU -3.5"
    },
    {
     "id": "401929289",
@@ -18273,5 +18273,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "5:08 PM"
+ "scores_updated": "5:18 PM"
 }
