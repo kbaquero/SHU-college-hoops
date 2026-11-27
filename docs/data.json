@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 16:48 EST",
+ "updated": "2026-11-27 16:58 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -16761,7 +16761,7 @@
     "tbd": false,
     "tv": "Fox",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16773,16 +16773,15 @@
      "owners": [
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "UCLA",
      "pts": 0,
-     "final": null,
+     "final": 63,
      "opp_final": null,
      "opp_id": "26",
      "seed": null,
-     "record": "6-1",
-     "live": 63
+     "record": "6-2"
     },
     "home": {
      "team": "UCLA",
@@ -16794,23 +16793,18 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Georgetown",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 75,
      "opp_final": null,
      "opp_id": "46",
      "seed": null,
-     "record": "6-1",
-     "live": 74
+     "record": "7-1"
     },
     "time": "2:30 PM",
-    "line": "UCLA -7.5",
-    "live": {
-     "detail": "0:41 2nd",
-     "as_of": "4:48 PM"
-    }
+    "line": "UCLA -7.5"
    },
    {
     "id": "401920542",
@@ -16833,7 +16827,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 67
+     "live": 74
     },
     "home": {
      "team": "Baylor",
@@ -16852,13 +16846,13 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-2",
-     "live": 56
+     "live": 61
     },
     "time": "3:00 PM",
     "line": "BAY -4.5",
     "live": {
-     "detail": "8:33 2nd",
-     "as_of": "4:48 PM"
+     "detail": "5:18 2nd",
+     "as_of": "4:58 PM"
     }
    },
    {
@@ -16882,7 +16876,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 63
+     "live": 66
     },
     "home": {
      "team": "UNC Wilmington",
@@ -16900,13 +16894,13 @@
      "opp_id": "163",
      "seed": null,
      "record": "6-1",
-     "live": 64
+     "live": 68
     },
     "time": "3:00 PM",
     "line": "UNCW -7.5",
     "live": {
-     "detail": "1:35 2nd",
-     "as_of": "4:48 PM"
+     "detail": "0:02 2nd",
+     "as_of": "4:58 PM"
     }
    },
    {
@@ -16938,7 +16932,7 @@
      "opp_id": "2275",
      "seed": null,
      "record": "2-4",
-     "live": 49
+     "live": 58
     },
     "home": {
      "team": "Hofstra",
@@ -16950,13 +16944,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 27
+     "live": 32
     },
     "time": "3:30 PM",
     "line": "HOF -1.5",
     "live": {
-     "detail": "14:03 2nd",
-     "as_of": "4:48 PM"
+     "detail": "10:04 2nd",
+     "as_of": "4:58 PM"
     }
    },
    {
@@ -18273,5 +18267,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "4:48 PM"
+ "scores_updated": "4:58 PM"
 }
