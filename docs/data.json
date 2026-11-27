@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 23:33 EST",
+ "updated": "2026-11-27 00:03 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16682,7 +16682,8 @@
      "opp_final": null,
      "opp_id": "2250",
      "seed": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 11
     },
     "home": {
      "team": "Gonzaga",
@@ -16693,10 +16694,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "4-1"
+     "record": "4-1",
+     "live": 9
     },
     "time": "11:30 PM",
-    "line": "GONZ -2.5"
+    "line": "GONZ -2.5",
+    "live": {
+     "detail": "14:45 1st",
+     "as_of": "12:03 AM"
+    }
    }
   ]
  },
@@ -17591,5 +17597,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "11:33 PM"
+ "scores_updated": "12:03 AM"
 }
