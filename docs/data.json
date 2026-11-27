@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 15:38 EST",
+ "updated": "2026-11-27 15:48 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -16642,7 +16642,7 @@
      "final": null,
      "won": null,
      "record": "2-5",
-     "live": 59
+     "live": 64
     },
     "home": {
      "team": "Le Moyne",
@@ -16660,13 +16660,13 @@
      "opp_id": "311",
      "seed": null,
      "record": "3-4",
-     "live": 51
+     "live": 63
     },
     "time": "2:00 PM",
     "line": "LEM -1.5",
     "live": {
-     "detail": "7:40 2nd",
-     "as_of": "3:38 PM"
+     "detail": "5:03 2nd",
+     "as_of": "3:48 PM"
     }
    },
    {
@@ -16696,7 +16696,7 @@
      "opp_id": "2217",
      "seed": null,
      "record": "5-3",
-     "live": 47
+     "live": 51
     },
     "home": {
      "team": "Fairfield",
@@ -16708,13 +16708,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 63
+     "live": 67
     },
     "time": "2:00 PM",
     "line": "FAIR -5.5",
     "live": {
-     "detail": "6:40 2nd",
-     "as_of": "3:38 PM"
+     "detail": "2:47 2nd",
+     "as_of": "3:48 PM"
     }
    },
    {
@@ -16764,13 +16764,13 @@
      "opp_id": "2582",
      "seed": null,
      "record": "7-0",
-     "live": 75
+     "live": 92
     },
     "time": "2:00 PM",
     "line": "VAN -38.5",
     "live": {
-     "detail": "12:49 2nd",
-     "as_of": "3:38 PM"
+     "detail": "8:09 2nd",
+     "as_of": "3:48 PM"
     }
    },
    {
@@ -16826,8 +16826,8 @@
     "time": "2:30 PM",
     "line": "UCLA -7.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "3:38 PM"
+     "detail": "20:00 2nd",
+     "as_of": "3:48 PM"
     }
    },
    {
@@ -16851,7 +16851,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 24
+     "live": 26
     },
     "home": {
      "team": "Baylor",
@@ -16870,13 +16870,13 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-2",
-     "live": 18
+     "live": 23
     },
     "time": "3:00 PM",
     "line": "BAY -4.5",
     "live": {
-     "detail": "6:49 1st",
-     "as_of": "3:38 PM"
+     "detail": "4:13 1st",
+     "as_of": "3:48 PM"
     }
    },
    {
@@ -16918,13 +16918,13 @@
      "opp_id": "163",
      "seed": null,
      "record": "6-1",
-     "live": 26
+     "live": 34
     },
     "time": "3:00 PM",
     "line": "UNCW -7.5",
     "live": {
-     "detail": "3:45 1st",
-     "as_of": "3:38 PM"
+     "detail": "Halftime",
+     "as_of": "3:48 PM"
     }
    },
    {
@@ -16956,7 +16956,7 @@
      "opp_id": "2275",
      "seed": null,
      "record": "2-4",
-     "live": 3
+     "live": 13
     },
     "home": {
      "team": "Hofstra",
@@ -16968,13 +16968,13 @@
      "final": null,
      "won": null,
      "record": "2-3",
-     "live": 4
+     "live": 12
     },
     "time": "3:30 PM",
     "line": "HOF -1.5",
     "live": {
-     "detail": "18:33 1st",
-     "as_of": "3:38 PM"
+     "detail": "13:04 1st",
+     "as_of": "3:48 PM"
     }
    },
    {
@@ -17238,7 +17238,7 @@
      "record": "3-4"
     },
     "time": "5:30 PM",
-    "line": "MICH -9.5"
+    "line": "MICH -10.5"
    },
    {
     "id": "401913531",
@@ -18285,5 +18285,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "3:38 PM"
+ "scores_updated": "3:48 PM"
 }
