@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 16:18 EST",
+ "updated": "2026-11-27 16:28 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -16642,7 +16642,7 @@
      "final": null,
      "won": null,
      "record": "2-5",
-     "live": 81
+     "live": 85
     },
     "home": {
      "team": "Le Moyne",
@@ -16660,13 +16660,13 @@
      "opp_id": "311",
      "seed": null,
      "record": "3-4",
-     "live": 81
+     "live": 86
     },
     "time": "2:00 PM",
     "line": "LEM -1.5",
     "live": {
-     "detail": "3:16 OT",
-     "as_of": "4:18 PM"
+     "detail": "0:17 OT",
+     "as_of": "4:28 PM"
     }
    },
    {
@@ -16788,7 +16788,7 @@
      "opp_id": "26",
      "seed": null,
      "record": "6-1",
-     "live": 50
+     "live": 52
     },
     "home": {
      "team": "UCLA",
@@ -16809,13 +16809,13 @@
      "opp_id": "46",
      "seed": null,
      "record": "6-1",
-     "live": 61
+     "live": 63
     },
     "time": "2:30 PM",
     "line": "UCLA -7.5",
     "live": {
-     "detail": "8:15 2nd",
-     "as_of": "4:18 PM"
+     "detail": "6:02 2nd",
+     "as_of": "4:28 PM"
     }
    },
    {
@@ -16839,7 +16839,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 36
+     "live": 50
     },
     "home": {
      "team": "Baylor",
@@ -16858,13 +16858,13 @@
      "opp_id": "2628",
      "seed": null,
      "record": "5-2",
-     "live": 41
+     "live": 45
     },
     "time": "3:00 PM",
     "line": "BAY -4.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "4:08 PM"
+     "detail": "15:23 2nd",
+     "as_of": "4:28 PM"
     }
    },
    {
@@ -16888,7 +16888,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 40
+     "live": 45
     },
     "home": {
      "team": "UNC Wilmington",
@@ -16906,13 +16906,13 @@
      "opp_id": "163",
      "seed": null,
      "record": "6-1",
-     "live": 47
+     "live": 51
     },
     "time": "3:00 PM",
     "line": "UNCW -7.5",
     "live": {
-     "detail": "14:25 2nd",
-     "as_of": "4:18 PM"
+     "detail": "10:12 2nd",
+     "as_of": "4:28 PM"
     }
    },
    {
@@ -16986,7 +16986,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 21
+     "live": 26
     },
     "home": {
      "team": "Maryland",
@@ -17004,13 +17004,13 @@
      "opp_id": "2483",
      "seed": null,
      "record": "3-4",
-     "live": 15
+     "live": 25
     },
     "time": "3:30 PM",
     "line": "MD -3.5",
     "live": {
-     "detail": "8:15 1st",
-     "as_of": "4:18 PM"
+     "detail": "5:05 1st",
+     "as_of": "4:28 PM"
     }
    },
    {
@@ -18279,5 +18279,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "4:18 PM"
+ "scores_updated": "4:28 PM"
 }
