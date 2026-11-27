@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 21:22 EST",
+ "updated": "2026-11-26 21:32 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16541,7 +16541,7 @@
      "opp_id": "99",
      "seed": null,
      "record": "6-1",
-     "live": 63
+     "live": 72
     },
     "home": {
      "team": "LSU",
@@ -16559,13 +16559,13 @@
      "opp_id": "2567",
      "seed": null,
      "record": "7-0",
-     "live": 66
+     "live": 72
     },
     "time": "7:00 PM",
     "line": "LSU -6.5",
     "live": {
-     "detail": "6:25 2nd",
-     "as_of": "9:22 PM"
+     "detail": "1:02 2nd",
+     "as_of": "9:32 PM"
     }
    },
    {
@@ -16589,7 +16589,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 19
+     "live": 28
     },
     "home": {
      "team": "Kansas St.",
@@ -16607,13 +16607,13 @@
      "opp_id": "333",
      "seed": null,
      "record": "3-3",
-     "live": 16
+     "live": 19
     },
     "time": "9:00 PM",
     "line": "ALA -13.5",
     "live": {
-     "detail": "11:42 1st",
-     "as_of": "9:22 PM"
+     "detail": "8:14 1st",
+     "as_of": "9:32 PM"
     }
    },
    {
@@ -16644,7 +16644,7 @@
      "opp_id": "2599",
      "seed": null,
      "record": "4-1",
-     "live": 28
+     "live": 34
     },
     "home": {
      "team": "St. John's",
@@ -16664,13 +16664,13 @@
      "opp_id": "97",
      "seed": null,
      "record": "6-0",
-     "live": 17
+     "live": 25
     },
     "time": "9:00 PM",
     "line": "SJU -1.5",
     "live": {
-     "detail": "11:44 1st",
-     "as_of": "9:22 PM"
+     "detail": "9:22 1st",
+     "as_of": "9:32 PM"
     }
    },
    {
@@ -17609,5 +17609,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "9:22 PM"
+ "scores_updated": "9:32 PM"
 }
