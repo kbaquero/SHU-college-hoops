@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 23:13 EST",
+ "updated": "2026-11-26 23:23 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16583,7 +16583,7 @@
      "final": null,
      "won": null,
      "record": "5-1",
-     "live": 94
+     "live": 104
     },
     "home": {
      "team": "Kansas St.",
@@ -16601,13 +16601,13 @@
      "opp_id": "333",
      "seed": null,
      "record": "3-3",
-     "live": 82
+     "live": 86
     },
     "time": "9:00 PM",
     "line": "ALA -13.5",
     "live": {
-     "detail": "3:22 2nd",
-     "as_of": "11:13 PM"
+     "detail": "0:37 2nd",
+     "as_of": "11:23 PM"
     }
    },
    {
@@ -16638,7 +16638,7 @@
      "opp_id": "2599",
      "seed": null,
      "record": "4-1",
-     "live": 87
+     "live": 90
     },
     "home": {
      "team": "St. John's",
@@ -16658,13 +16658,13 @@
      "opp_id": "97",
      "seed": null,
      "record": "6-0",
-     "live": 77
+     "live": 88
     },
     "time": "9:00 PM",
     "line": "SJU -1.5",
     "live": {
-     "detail": "2:51 2nd",
-     "as_of": "11:13 PM"
+     "detail": "0:19 2nd",
+     "as_of": "11:23 PM"
     }
    },
    {
@@ -17603,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "11:13 PM"
+ "scores_updated": "11:23 PM"
 }
