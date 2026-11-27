@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 01:13 EST",
+ "updated": "2026-11-27 01:23 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16695,13 +16695,13 @@
      "final": null,
      "won": null,
      "record": "4-1",
-     "live": 47
+     "live": 54
     },
     "time": "11:30 PM",
     "line": "GONZ -2.5",
     "live": {
-     "detail": "13:15 2nd",
-     "as_of": "1:13 AM"
+     "detail": "10:12 2nd",
+     "as_of": "1:23 AM"
     }
    }
   ]
@@ -17597,5 +17597,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "1:13 AM"
+ "scores_updated": "1:23 AM"
 }
