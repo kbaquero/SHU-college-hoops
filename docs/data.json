@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 22:02 EST",
+ "updated": "2026-11-26 22:12 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16519,10 +16519,10 @@
     "tbd": false,
     "tv": "CBSSN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
-    "final_label": "Final",
+    "final_label": "Final OT",
     "event": "Acrisure Series",
     "away": {
      "team": "SMU",
@@ -16532,16 +16532,15 @@
       "Mike C.",
       "Dennis S."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "LSU",
      "pts": 0,
-     "final": null,
+     "final": 86,
      "opp_final": null,
      "opp_id": "99",
      "seed": null,
-     "record": "6-1",
-     "live": 83
+     "record": "6-2"
     },
     "home": {
      "team": "LSU",
@@ -16550,23 +16549,18 @@
      "owners": [
       "Mike C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "SMU",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 95,
      "opp_final": null,
      "opp_id": "2567",
      "seed": null,
-     "record": "7-0",
-     "live": 92
+     "record": "8-0"
     },
     "time": "7:00 PM",
-    "line": "LSU -6.5",
-    "live": {
-     "detail": "0:31 OT",
-     "as_of": "10:02 PM"
-    }
+    "line": "LSU -6.5"
    },
    {
     "id": "401920539",
@@ -17609,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "10:02 PM"
+ "scores_updated": "10:12 PM"
 }
