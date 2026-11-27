@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 19:18 EST",
+ "updated": "2026-11-26 19:28 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16489,7 +16489,7 @@
      "opp_id": "26",
      "seed": null,
      "record": "6-1",
-     "live": 70
+     "live": 78
     },
     "home": {
      "team": "UCLA",
@@ -16510,13 +16510,13 @@
      "opp_id": "2608",
      "seed": null,
      "record": "6-0",
-     "live": 57
+     "live": 66
     },
     "time": "5:00 PM",
     "line": "UCLA -7.5",
     "live": {
-     "detail": "6:50 2nd",
-     "as_of": "7:18 PM"
+     "detail": "3:03 2nd",
+     "as_of": "7:28 PM"
     }
    },
    {
@@ -17597,5 +17597,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "7:18 PM"
+ "scores_updated": "7:28 PM"
 }
