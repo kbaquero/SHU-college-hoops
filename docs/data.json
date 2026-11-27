@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 19:28 EST",
+ "updated": "2026-11-26 19:38 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16467,7 +16467,7 @@
     "tbd": false,
     "tv": "FS1",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -16480,16 +16480,15 @@
       "Dennis S.",
       "Ben D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "UCLA",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 85,
      "opp_final": null,
      "opp_id": "26",
      "seed": null,
-     "record": "6-1",
-     "live": 78
+     "record": "7-1"
     },
     "home": {
      "team": "UCLA",
@@ -16501,23 +16500,18 @@
       "Drew & Bob D.",
       "Mike L."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Saint Mary's",
      "pts": 0,
-     "final": null,
+     "final": 70,
      "opp_final": null,
      "opp_id": "2608",
      "seed": null,
-     "record": "6-0",
-     "live": 66
+     "record": "6-1"
     },
     "time": "5:00 PM",
-    "line": "UCLA -7.5",
-    "live": {
-     "detail": "3:03 2nd",
-     "as_of": "7:28 PM"
-    }
+    "line": "UCLA -7.5"
    },
    {
     "id": "401918972",
@@ -16702,7 +16696,7 @@
      "record": "4-1"
     },
     "time": "11:30 PM",
-    "line": "GONZ -3.5"
+    "line": "GONZ -2.5"
    }
   ]
  },
@@ -17597,5 +17591,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "7:28 PM"
+ "scores_updated": "7:38 PM"
 }
