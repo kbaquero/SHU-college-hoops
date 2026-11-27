@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 14:08 EST",
+ "updated": "2026-11-27 14:18 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -16559,7 +16559,7 @@
      "opp_id": "66",
      "seed": null,
      "record": "6-1",
-     "live": 38
+     "live": 39
     },
     "home": {
      "team": "Iowa St.",
@@ -16571,13 +16571,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 40
+     "live": 42
     },
     "time": "1:00 PM",
     "line": "SJU -1.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "1:58 PM"
+     "detail": "18:27 2nd",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -16612,7 +16612,7 @@
      "opp_id": "2771",
      "seed": null,
      "record": "3-4",
-     "live": 37
+     "live": 43
     },
     "home": {
      "team": "Merrimack",
@@ -16624,13 +16624,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 32
+     "live": 46
     },
     "time": "1:00 PM",
     "line": "UVM -1.5",
     "live": {
-     "detail": "16:20 2nd",
-     "as_of": "2:08 PM"
+     "detail": "12:09 2nd",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -16654,7 +16654,7 @@
      "final": null,
      "won": null,
      "record": "2-5",
-     "live": 5
+     "live": 15
     },
     "home": {
      "team": "Le Moyne",
@@ -16672,13 +16672,13 @@
      "opp_id": "311",
      "seed": null,
      "record": "3-4",
-     "live": 2
+     "live": 8
     },
     "time": "2:00 PM",
     "line": "LEM -1.5",
     "live": {
-     "detail": "16:57 1st",
-     "as_of": "2:08 PM"
+     "detail": "12:16 1st",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -16708,7 +16708,7 @@
      "opp_id": "2217",
      "seed": null,
      "record": "5-3",
-     "live": 0
+     "live": 9
     },
     "home": {
      "team": "Fairfield",
@@ -16720,13 +16720,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 8
+     "live": 16
     },
     "time": "2:00 PM",
     "line": "FAIR -5.5",
     "live": {
-     "detail": "17:14 1st",
-     "as_of": "2:08 PM"
+     "detail": "13:05 1st",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -16758,7 +16758,7 @@
      "opp_id": "238",
      "seed": null,
      "record": "1-6",
-     "live": 4
+     "live": 8
     },
     "home": {
      "team": "Vanderbilt",
@@ -16776,13 +16776,13 @@
      "opp_id": "2582",
      "seed": null,
      "record": "7-0",
-     "live": 10
+     "live": 21
     },
     "time": "2:00 PM",
     "line": "VAN -38.5",
     "live": {
-     "detail": "16:08 1st",
-     "as_of": "2:08 PM"
+     "detail": "13:02 1st",
+     "as_of": "2:18 PM"
     }
    },
    {
@@ -18273,5 +18273,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "2:08 PM"
+ "scores_updated": "2:18 PM"
 }
