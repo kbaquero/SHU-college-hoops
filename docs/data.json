@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 13:03 EST",
+ "updated": "2026-11-27 13:07 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -16605,7 +16605,8 @@
      "opp_final": null,
      "opp_id": "2771",
      "seed": null,
-     "record": "3-4"
+     "record": "3-4",
+     "live": 11
     },
     "home": {
      "team": "Merrimack",
@@ -16616,10 +16617,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "1-4"
+     "record": "1-4",
+     "live": 5
     },
     "time": "1:00 PM",
-    "line": "UVM -1.5"
+    "line": "UVM -1.5",
+    "live": {
+     "detail": "16:51 1st",
+     "as_of": "1:07 PM"
+    }
    },
    {
     "id": "401919786",
@@ -17280,7 +17286,7 @@
      "record": "7-0"
     },
     "time": "6:00 PM",
-    "line": "IU -22.5"
+    "line": "IU -21.5"
    },
    {
     "id": "401921185",
@@ -18243,5 +18249,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "1:03 PM"
+ "scores_updated": "1:07 PM"
 }
