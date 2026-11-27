@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 17:38 EST",
+ "updated": "2026-11-27 17:48 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -16956,7 +16956,7 @@
      "final": null,
      "won": null,
      "record": "3-3",
-     "live": 70
+     "live": 77
     },
     "home": {
      "team": "Maryland",
@@ -16974,13 +16974,13 @@
      "opp_id": "2483",
      "seed": null,
      "record": "3-4",
-     "live": 56
+     "live": 61
     },
     "time": "3:30 PM",
     "line": "MD -3.5",
     "live": {
-     "detail": "6:58 2nd",
-     "as_of": "5:38 PM"
+     "detail": "3:59 2nd",
+     "as_of": "5:48 PM"
     }
    },
    {
@@ -17010,7 +17010,7 @@
      "opp_id": "245",
      "seed": null,
      "record": "4-3",
-     "live": 28
+     "live": 40
     },
     "home": {
      "team": "Texas A&M",
@@ -17022,13 +17022,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 30
+     "live": 37
     },
     "time": "5:00 PM",
     "line": "MARQ -1.5",
     "live": {
-     "detail": "4:22 1st",
-     "as_of": "5:38 PM"
+     "detail": "Halftime",
+     "as_of": "5:48 PM"
     }
    },
    {
@@ -17052,7 +17052,7 @@
      "final": null,
      "won": null,
      "record": "7-0",
-     "live": 13
+     "live": 18
     },
     "home": {
      "team": "Saint Mary's",
@@ -17071,13 +17071,13 @@
      "opp_id": "251",
      "seed": null,
      "record": "7-1",
-     "live": 18
+     "live": 27
     },
     "time": "5:00 PM",
     "line": "TEX -7.5",
     "live": {
-     "detail": "10:45 1st",
-     "as_of": "5:38 PM"
+     "detail": "7:37 1st",
+     "as_of": "5:48 PM"
     }
    },
    {
@@ -17107,7 +17107,7 @@
      "opp_id": "2305",
      "seed": null,
      "record": "5-2",
-     "live": 17
+     "live": 18
     },
     "home": {
      "team": "Kansas",
@@ -17119,13 +17119,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 15
+     "live": 20
     },
     "time": "5:00 PM",
     "line": "KU -10.5",
     "live": {
-     "detail": "7:54 1st",
-     "as_of": "5:38 PM"
+     "detail": "5:40 1st",
+     "as_of": "5:48 PM"
     }
    },
    {
@@ -17167,13 +17167,13 @@
      "opp_id": "295",
      "seed": null,
      "record": "6-1",
-     "live": 26
+     "live": 34
     },
     "time": "5:00 PM",
     "line": "VT -17.5",
     "live": {
-     "detail": "3:41 1st",
-     "as_of": "5:38 PM"
+     "detail": "0:00 1st",
+     "as_of": "5:48 PM"
     }
    },
    {
@@ -17206,7 +17206,8 @@
      "opp_final": null,
      "opp_id": "2306",
      "seed": null,
-     "record": "3-4"
+     "record": "3-4",
+     "live": 10
     },
     "home": {
      "team": "Kansas St.",
@@ -17223,10 +17224,15 @@
      "opp_final": null,
      "opp_id": "130",
      "seed": null,
-     "record": "3-4"
+     "record": "3-4",
+     "live": 3
     },
     "time": "5:30 PM",
-    "line": "MICH -10.5"
+    "line": "MICH -10.5",
+    "live": {
+     "detail": "16:24 1st",
+     "as_of": "5:48 PM"
+    }
    },
    {
     "id": "401913531",
@@ -18273,5 +18279,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "5:38 PM"
+ "scores_updated": "5:48 PM"
 }
