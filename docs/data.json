@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 13:17 EST",
+ "updated": "2026-11-27 13:27 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -16559,7 +16559,7 @@
      "opp_id": "66",
      "seed": null,
      "record": "6-1",
-     "live": 8
+     "live": 15
     },
     "home": {
      "team": "Iowa St.",
@@ -16571,13 +16571,13 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 7
+     "live": 15
     },
     "time": "1:00 PM",
     "line": "SJU -1.5",
     "live": {
-     "detail": "15:24 1st",
-     "as_of": "1:17 PM"
+     "detail": "11:42 1st",
+     "as_of": "1:27 PM"
     }
    },
    {
@@ -16612,7 +16612,7 @@
      "opp_id": "2771",
      "seed": null,
      "record": "3-4",
-     "live": 19
+     "live": 26
     },
     "home": {
      "team": "Merrimack",
@@ -16624,13 +16624,13 @@
      "final": null,
      "won": null,
      "record": "1-4",
-     "live": 7
+     "live": 9
     },
     "time": "1:00 PM",
     "line": "UVM -1.5",
     "live": {
-     "detail": "11:06 1st",
-     "as_of": "1:17 PM"
+     "detail": "6:54 1st",
+     "as_of": "1:27 PM"
     }
    },
    {
@@ -18255,5 +18255,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "1:17 PM"
+ "scores_updated": "1:27 PM"
 }
