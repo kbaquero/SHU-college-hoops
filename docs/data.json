@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 18:08 EST",
+ "updated": "2026-11-27 18:18 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17004,7 +17004,7 @@
      "opp_id": "245",
      "seed": null,
      "record": "4-3",
-     "live": 44
+     "live": 53
     },
     "home": {
      "team": "Texas A&M",
@@ -17016,13 +17016,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 38
+     "live": 46
     },
     "time": "5:00 PM",
     "line": "MARQ -1.5",
     "live": {
-     "detail": "17:38 2nd",
-     "as_of": "6:08 PM"
+     "detail": "14:07 2nd",
+     "as_of": "6:18 PM"
     }
    },
    {
@@ -17046,7 +17046,7 @@
      "final": null,
      "won": null,
      "record": "7-0",
-     "live": 26
+     "live": 27
     },
     "home": {
      "team": "Saint Mary's",
@@ -17070,8 +17070,8 @@
     "time": "5:00 PM",
     "line": "TEX -7.5",
     "live": {
-     "detail": "1:34 1st",
-     "as_of": "6:08 PM"
+     "detail": "Halftime",
+     "as_of": "6:18 PM"
     }
    },
    {
@@ -17113,13 +17113,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 29
+     "live": 31
     },
     "time": "5:00 PM",
     "line": "KU -10.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "6:08 PM"
+     "detail": "19:43 2nd",
+     "as_of": "6:18 PM"
     }
    },
    {
@@ -17143,7 +17143,7 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 29
+     "live": 40
     },
     "home": {
      "team": "Virginia Tech",
@@ -17161,13 +17161,13 @@
      "opp_id": "295",
      "seed": null,
      "record": "6-1",
-     "live": 37
+     "live": 43
     },
     "time": "5:00 PM",
     "line": "VT -17.5",
     "live": {
-     "detail": "17:43 2nd",
-     "as_of": "6:08 PM"
+     "detail": "14:05 2nd",
+     "as_of": "6:18 PM"
     }
    },
    {
@@ -17201,7 +17201,7 @@
      "opp_id": "2306",
      "seed": null,
      "record": "3-4",
-     "live": 27
+     "live": 36
     },
     "home": {
      "team": "Kansas St.",
@@ -17219,13 +17219,13 @@
      "opp_id": "130",
      "seed": null,
      "record": "3-4",
-     "live": 18
+     "live": 23
     },
     "time": "5:30 PM",
     "line": "MICH -10.5",
     "live": {
-     "detail": "7:41 1st",
-     "as_of": "6:08 PM"
+     "detail": "3:53 1st",
+     "as_of": "6:18 PM"
     }
    },
    {
@@ -17249,7 +17249,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 7
+     "live": 14
     },
     "home": {
      "team": "Illinois",
@@ -17267,13 +17267,13 @@
      "opp_id": "98",
      "seed": null,
      "record": "6-1",
-     "live": 5
+     "live": 16
     },
     "time": "6:00 PM",
     "line": "ILL -26.5",
     "live": {
-     "detail": "15:48 1st",
-     "as_of": "6:08 PM"
+     "detail": "11:48 1st",
+     "as_of": "6:18 PM"
     }
    },
    {
@@ -17297,7 +17297,7 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 7
+     "live": 10
     },
     "home": {
      "team": "Indiana",
@@ -17315,13 +17315,13 @@
      "opp_id": "189",
      "seed": null,
      "record": "7-0",
-     "live": 14
+     "live": 21
     },
     "time": "6:00 PM",
     "line": "IU -22.5",
     "live": {
-     "detail": "15:05 1st",
-     "as_of": "6:08 PM"
+     "detail": "11:46 1st",
+     "as_of": "6:18 PM"
     }
    },
    {
@@ -18285,5 +18285,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "6:08 PM"
+ "scores_updated": "6:18 PM"
 }
