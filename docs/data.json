@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 20:52 EST",
+ "updated": "2026-11-26 21:02 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16541,7 +16541,7 @@
      "opp_id": "99",
      "seed": null,
      "record": "6-1",
-     "live": 49
+     "live": 54
     },
     "home": {
      "team": "LSU",
@@ -16559,13 +16559,13 @@
      "opp_id": "2567",
      "seed": null,
      "record": "7-0",
-     "live": 50
+     "live": 57
     },
     "time": "7:00 PM",
     "line": "LSU -6.5",
     "live": {
-     "detail": "15:25 2nd",
-     "as_of": "8:52 PM"
+     "detail": "12:07 2nd",
+     "as_of": "9:02 PM"
     }
    },
    {
@@ -16588,7 +16588,8 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 0
     },
     "home": {
      "team": "Kansas St.",
@@ -16605,10 +16606,15 @@
      "opp_final": null,
      "opp_id": "333",
      "seed": null,
-     "record": "3-3"
+     "record": "3-3",
+     "live": 0
     },
     "time": "9:00 PM",
-    "line": "ALA -13.5"
+    "line": "ALA -13.5",
+    "live": {
+     "detail": "19:49 1st",
+     "as_of": "9:02 PM"
+    }
    },
    {
     "id": "401920530",
@@ -17597,5 +17603,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "8:52 PM"
+ "scores_updated": "9:02 PM"
 }
