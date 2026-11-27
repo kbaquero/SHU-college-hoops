@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 19:52 EST",
+ "updated": "2026-11-26 20:02 EST",
  "through": "Wed, Nov 25",
  "season": 2027,
  "standings": [
@@ -16541,7 +16541,7 @@
      "opp_id": "99",
      "seed": null,
      "record": "6-1",
-     "live": 19
+     "live": 25
     },
     "home": {
      "team": "LSU",
@@ -16559,13 +16559,13 @@
      "opp_id": "2567",
      "seed": null,
      "record": "7-0",
-     "live": 8
+     "live": 14
     },
     "time": "7:00 PM",
     "line": "LSU -6.5",
     "live": {
-     "detail": "12:43 1st",
-     "as_of": "7:52 PM"
+     "detail": "9:17 1st",
+     "as_of": "8:02 PM"
     }
    },
    {
@@ -17597,5 +17597,5 @@
   "date": "2026-11-26",
   "id": "401920537"
  },
- "scores_updated": "7:52 PM"
+ "scores_updated": "8:02 PM"
 }
