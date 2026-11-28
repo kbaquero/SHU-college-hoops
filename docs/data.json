@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 20:53 EST",
+ "updated": "2026-11-27 21:03 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17345,7 +17345,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 75
+     "live": 80
     },
     "home": {
      "team": "Georgia",
@@ -17363,13 +17363,13 @@
      "opp_id": "2116",
      "seed": null,
      "record": "6-1",
-     "live": 64
+     "live": 71
     },
     "time": "7:00 PM",
     "line": "UGA -5.5",
     "live": {
-     "detail": "3:46 2nd",
-     "as_of": "8:53 PM"
+     "detail": "1:29 2nd",
+     "as_of": "9:03 PM"
     }
    },
    {
@@ -17420,7 +17420,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -17433,16 +17433,15 @@
       "Sean F.",
       "Sean P."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "North Carolina",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 72,
      "opp_final": null,
      "opp_id": "153",
      "seed": null,
-     "record": "4-2",
-     "live": 69
+     "record": "5-2"
     },
     "home": {
      "team": "North Carolina",
@@ -17451,23 +17450,18 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "West Virginia",
      "pts": 0,
-     "final": null,
+     "final": 59,
      "opp_final": null,
      "opp_id": "277",
      "seed": null,
-     "record": "5-1",
-     "live": 54
+     "record": "5-2"
     },
     "time": "7:00 PM",
-    "line": "WVU -3.5",
-    "live": {
-     "detail": "3:50 2nd",
-     "as_of": "8:53 PM"
-    }
+    "line": "WVU -3.5"
    },
    {
     "id": "401929289",
@@ -17490,7 +17484,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 34
+     "live": 37
     },
     "home": {
      "team": "Mississippi St.",
@@ -17508,13 +17502,13 @@
      "opp_id": "213",
      "seed": null,
      "record": "5-2",
-     "live": 45
+     "live": 52
     },
     "time": "7:30 PM",
     "line": "MSST -6.5",
     "live": {
-     "detail": "16:02 2nd",
-     "as_of": "8:53 PM"
+     "detail": "12:44 2nd",
+     "as_of": "9:03 PM"
     }
    },
    {
@@ -17544,7 +17538,7 @@
      "opp_id": "249",
      "seed": null,
      "record": "3-5",
-     "live": 32
+     "live": 35
     },
     "home": {
      "team": "North Texas",
@@ -17556,13 +17550,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 27
+     "live": 37
     },
     "time": "8:00 PM",
     "line": "UNT -5.5",
     "live": {
-     "detail": "3:11 1st",
-     "as_of": "8:53 PM"
+     "detail": "0:08 1st",
+     "as_of": "9:03 PM"
     }
    },
    {
@@ -17595,7 +17589,7 @@
      "opp_id": "333",
      "seed": null,
      "record": "6-2",
-     "live": 23
+     "live": 34
     },
     "home": {
      "team": "Alabama",
@@ -17607,13 +17601,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 12
+     "live": 30
     },
     "time": "8:30 PM",
     "line": "MIA -2.5",
     "live": {
-     "detail": "11:26 1st",
-     "as_of": "8:53 PM"
+     "detail": "7:16 1st",
+     "as_of": "9:03 PM"
     }
    },
    {
@@ -18273,5 +18267,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "8:53 PM"
+ "scores_updated": "9:03 PM"
 }
