@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 21:03 EST",
+ "updated": "2026-11-27 21:13 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17330,7 +17330,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -17342,10 +17342,9 @@
      "owners": [],
      "id": "2116",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-3",
-     "live": 80
+     "final": 88,
+     "won": true,
+     "record": "5-3"
     },
     "home": {
      "team": "Georgia",
@@ -17354,23 +17353,18 @@
      "owners": [
       "Dennis S."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "UCF",
      "pts": 0,
-     "final": null,
+     "final": 76,
      "opp_final": null,
      "opp_id": "2116",
      "seed": null,
-     "record": "6-1",
-     "live": 71
+     "record": "6-2"
     },
     "time": "7:00 PM",
-    "line": "UGA -5.5",
-    "live": {
-     "detail": "1:29 2nd",
-     "as_of": "9:03 PM"
-    }
+    "line": "UGA -5.5"
    },
    {
     "id": "401926756",
@@ -17484,7 +17478,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 37
+     "live": 47
     },
     "home": {
      "team": "Mississippi St.",
@@ -17502,13 +17496,13 @@
      "opp_id": "213",
      "seed": null,
      "record": "5-2",
-     "live": 52
+     "live": 54
     },
     "time": "7:30 PM",
     "line": "MSST -6.5",
     "live": {
-     "detail": "12:44 2nd",
-     "as_of": "9:03 PM"
+     "detail": "9:02 2nd",
+     "as_of": "9:13 PM"
     }
    },
    {
@@ -17538,7 +17532,7 @@
      "opp_id": "249",
      "seed": null,
      "record": "3-5",
-     "live": 35
+     "live": 37
     },
     "home": {
      "team": "North Texas",
@@ -17550,13 +17544,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 37
+     "live": 39
     },
     "time": "8:00 PM",
     "line": "UNT -5.5",
     "live": {
-     "detail": "0:08 1st",
-     "as_of": "9:03 PM"
+     "detail": "Halftime",
+     "as_of": "9:13 PM"
     }
    },
    {
@@ -17589,7 +17583,7 @@
      "opp_id": "333",
      "seed": null,
      "record": "6-2",
-     "live": 34
+     "live": 40
     },
     "home": {
      "team": "Alabama",
@@ -17601,13 +17595,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 30
+     "live": 38
     },
     "time": "8:30 PM",
     "line": "MIA -2.5",
     "live": {
-     "detail": "7:16 1st",
-     "as_of": "9:03 PM"
+     "detail": "3:19 1st",
+     "as_of": "9:13 PM"
     }
    },
    {
@@ -17636,7 +17630,8 @@
      "opp_final": null,
      "opp_id": "97",
      "seed": null,
-     "record": "7-0"
+     "record": "7-0",
+     "live": 10
     },
     "home": {
      "team": "Louisville",
@@ -17654,10 +17649,15 @@
      "opp_final": null,
      "opp_id": "2633",
      "seed": null,
-     "record": "5-1"
+     "record": "5-1",
+     "live": 9
     },
     "time": "9:00 PM",
-    "line": "LOU -3.5"
+    "line": "LOU -3.5",
+    "live": {
+     "detail": "15:48 1st",
+     "as_of": "9:13 PM"
+    }
    }
   ]
  },
@@ -18267,5 +18267,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "9:03 PM"
+ "scores_updated": "9:13 PM"
 }
