@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 20:03 EST",
+ "updated": "2026-11-27 20:13 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17246,7 +17246,7 @@
     "tbd": false,
     "tv": "BTN",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -17258,10 +17258,9 @@
      "owners": [],
      "id": "189",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "4-2",
-     "live": 57
+     "final": 57,
+     "won": false,
+     "record": "4-3"
     },
     "home": {
      "team": "Indiana",
@@ -17270,23 +17269,18 @@
      "owners": [
       "Marty C."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Bowling Green",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 93,
      "opp_final": null,
      "opp_id": "189",
      "seed": null,
-     "record": "7-0",
-     "live": 93
+     "record": "8-0"
     },
     "time": "6:00 PM",
-    "line": "IU -22.5",
-    "live": {
-     "detail": "0:21 2nd",
-     "as_of": "8:03 PM"
-    }
+    "line": "IU -22.5"
    },
    {
     "id": "401921185",
@@ -17309,7 +17303,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 46
+     "live": 52
     },
     "home": {
      "team": "Penn",
@@ -17332,8 +17326,8 @@
     "time": "6:00 PM",
     "line": "PENN -3.5",
     "live": {
-     "detail": "12:47 2nd",
-     "as_of": "8:03 PM"
+     "detail": "10:34 2nd",
+     "as_of": "8:13 PM"
     }
    },
    {
@@ -17357,7 +17351,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 50
+     "live": 54
     },
     "home": {
      "team": "Georgia",
@@ -17375,13 +17369,13 @@
      "opp_id": "2116",
      "seed": null,
      "record": "6-1",
-     "live": 39
+     "live": 43
     },
     "time": "7:00 PM",
     "line": "UGA -5.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "8:03 PM"
+     "detail": "17:12 2nd",
+     "as_of": "8:13 PM"
     }
    },
    {
@@ -17411,7 +17405,7 @@
      "opp_id": "2540",
      "seed": null,
      "record": "4-3",
-     "live": 24
+     "live": 30
     },
     "home": {
      "team": "UC Santa Barbara",
@@ -17423,13 +17417,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 41
+     "live": 43
     },
     "time": "7:00 PM",
     "line": "UCSB -13.5",
     "live": {
-     "detail": "17:03 2nd",
-     "as_of": "8:03 PM"
+     "detail": "12:32 2nd",
+     "as_of": "8:13 PM"
     }
    },
    {
@@ -17460,7 +17454,7 @@
      "opp_id": "153",
      "seed": null,
      "record": "4-2",
-     "live": 41
+     "live": 45
     },
     "home": {
      "team": "North Carolina",
@@ -17483,8 +17477,8 @@
     "time": "7:00 PM",
     "line": "WVU -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "7:53 PM"
+     "detail": "18:36 2nd",
+     "as_of": "8:13 PM"
     }
    },
    {
@@ -17508,7 +17502,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 17
+     "live": 26
     },
     "home": {
      "team": "Mississippi St.",
@@ -17526,13 +17520,13 @@
      "opp_id": "213",
      "seed": null,
      "record": "5-2",
-     "live": 20
+     "live": 30
     },
     "time": "7:30 PM",
     "line": "MSST -6.5",
     "live": {
-     "detail": "8:30 1st",
-     "as_of": "8:03 PM"
+     "detail": "3:49 1st",
+     "as_of": "8:13 PM"
     }
    },
    {
@@ -17561,7 +17555,8 @@
      "opp_final": null,
      "opp_id": "249",
      "seed": null,
-     "record": "3-5"
+     "record": "3-5",
+     "live": 5
     },
     "home": {
      "team": "North Texas",
@@ -17572,10 +17567,15 @@
      "seed": null,
      "final": null,
      "won": null,
-     "record": "3-2"
+     "record": "3-2",
+     "live": 2
     },
     "time": "8:00 PM",
-    "line": "UNT -5.5"
+    "line": "UNT -5.5",
+    "live": {
+     "detail": "17:15 1st",
+     "as_of": "8:13 PM"
+    }
    },
    {
     "id": "401920543",
@@ -18279,5 +18279,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "8:03 PM"
+ "scores_updated": "8:13 PM"
 }
