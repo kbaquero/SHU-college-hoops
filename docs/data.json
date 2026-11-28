@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 22:54 EST",
+ "updated": "2026-11-27 23:04 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17613,7 +17613,7 @@
      "opp_id": "97",
      "seed": null,
      "record": "7-0",
-     "live": 52
+     "live": 56
     },
     "home": {
      "team": "Louisville",
@@ -17632,13 +17632,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "5-1",
-     "live": 66
+     "live": 75
     },
     "time": "9:00 PM",
     "line": "LOU -3.5",
     "live": {
-     "detail": "6:54 2nd",
-     "as_of": "10:54 PM"
+     "detail": "4:41 2nd",
+     "as_of": "11:04 PM"
     }
    }
   ]
@@ -18249,5 +18249,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "10:54 PM"
+ "scores_updated": "11:04 PM"
 }
