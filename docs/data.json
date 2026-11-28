@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 22:14 EST",
+ "updated": "2026-11-27 22:24 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17526,7 +17526,7 @@
      "opp_id": "249",
      "seed": null,
      "record": "3-5",
-     "live": 59
+     "live": 68
     },
     "home": {
      "team": "North Texas",
@@ -17538,13 +17538,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 58
+     "live": 68
     },
     "time": "8:00 PM",
     "line": "UNT -5.5",
     "live": {
-     "detail": "5:59 2nd",
-     "as_of": "10:14 PM"
+     "detail": "2:25 2nd",
+     "as_of": "10:24 PM"
     }
    },
    {
@@ -17577,7 +17577,7 @@
      "opp_id": "333",
      "seed": null,
      "record": "6-2",
-     "live": 74
+     "live": 77
     },
     "home": {
      "team": "Alabama",
@@ -17589,13 +17589,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 67
+     "live": 72
     },
     "time": "8:30 PM",
     "line": "MIA -2.5",
     "live": {
-     "detail": "7:32 2nd",
-     "as_of": "10:14 PM"
+     "detail": "4:22 2nd",
+     "as_of": "10:24 PM"
     }
    },
    {
@@ -17625,7 +17625,7 @@
      "opp_id": "97",
      "seed": null,
      "record": "7-0",
-     "live": 28
+     "live": 37
     },
     "home": {
      "team": "Louisville",
@@ -17644,13 +17644,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "5-1",
-     "live": 40
+     "live": 46
     },
     "time": "9:00 PM",
     "line": "LOU -3.5",
     "live": {
-     "detail": "Halftime",
-     "as_of": "10:03 PM"
+     "detail": "15:38 2nd",
+     "as_of": "10:24 PM"
     }
    }
   ]
@@ -18261,5 +18261,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "10:14 PM"
+ "scores_updated": "10:24 PM"
 }
