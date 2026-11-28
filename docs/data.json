@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 22:44 EST",
+ "updated": "2026-11-27 22:54 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17547,7 +17547,7 @@
     "tbd": false,
     "tv": "ESPNU",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -17562,16 +17562,15 @@
       "Jason H.",
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Alabama",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 87,
      "opp_final": null,
      "opp_id": "333",
      "seed": null,
-     "record": "6-2",
-     "live": 83
+     "record": "7-2"
     },
     "home": {
      "team": "Alabama",
@@ -17580,17 +17579,12 @@
      "owners": [],
      "id": "333",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "6-1",
-     "live": 78
+     "final": 81,
+     "won": false,
+     "record": "6-2"
     },
     "time": "8:30 PM",
-    "line": "MIA -2.5",
-    "live": {
-     "detail": "0:08 2nd",
-     "as_of": "10:44 PM"
-    }
+    "line": "MIA -2.5"
    },
    {
     "id": "401920534",
@@ -17619,7 +17613,7 @@
      "opp_id": "97",
      "seed": null,
      "record": "7-0",
-     "live": 48
+     "live": 52
     },
     "home": {
      "team": "Louisville",
@@ -17638,13 +17632,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "5-1",
-     "live": 58
+     "live": 66
     },
     "time": "9:00 PM",
     "line": "LOU -3.5",
     "live": {
-     "detail": "8:35 2nd",
-     "as_of": "10:44 PM"
+     "detail": "6:54 2nd",
+     "as_of": "10:54 PM"
     }
    }
   ]
@@ -18255,5 +18249,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "10:44 PM"
+ "scores_updated": "10:54 PM"
 }
