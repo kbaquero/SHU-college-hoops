@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 23:14 EST",
+ "updated": "2026-11-27 23:24 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17592,7 +17592,7 @@
     "tbd": false,
     "tv": "ESPN",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -17604,16 +17604,15 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Louisville",
      "pts": 0,
-     "final": null,
+     "final": 64,
      "opp_final": null,
      "opp_id": "97",
      "seed": null,
-     "record": "7-0",
-     "live": 59
+     "record": "7-1"
     },
     "home": {
      "team": "Louisville",
@@ -17623,23 +17622,18 @@
       "Chris C.",
       "Connor C. & Conor G."
      ],
-     "won": null,
+     "won": true,
      "score": "",
      "opp": "Tennessee",
-     "pts": 0,
-     "final": null,
+     "pts": 1,
+     "final": 84,
      "opp_final": null,
      "opp_id": "2633",
      "seed": null,
-     "record": "5-1",
-     "live": 78
+     "record": "6-1"
     },
     "time": "9:00 PM",
-    "line": "LOU -3.5",
-    "live": {
-     "detail": "2:33 2nd",
-     "as_of": "11:14 PM"
-    }
+    "line": "LOU -3.5"
    }
   ]
  },
@@ -18249,5 +18243,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "11:14 PM"
+ "scores_updated": "11:24 PM"
 }
