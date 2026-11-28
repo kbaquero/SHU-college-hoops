@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 19:13 EST",
+ "updated": "2026-11-27 19:23 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17040,7 +17040,7 @@
      "final": null,
      "won": null,
      "record": "7-0",
-     "live": 50
+     "live": 61
     },
     "home": {
      "team": "Saint Mary's",
@@ -17059,13 +17059,13 @@
      "opp_id": "251",
      "seed": null,
      "record": "7-1",
-     "live": 55
+     "live": 57
     },
     "time": "5:00 PM",
     "line": "TEX -7.5",
     "live": {
-     "detail": "5:54 2nd",
-     "as_of": "7:13 PM"
+     "detail": "2:52 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -17074,7 +17074,7 @@
     "tbd": false,
     "tv": "ESPN2",
     "neutral": false,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -17086,16 +17086,15 @@
      "owners": [
       "Sean F."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Kansas",
      "pts": 0,
-     "final": null,
+     "final": 50,
      "opp_final": null,
      "opp_id": "2305",
      "seed": null,
-     "record": "5-2",
-     "live": 50
+     "record": "5-3"
     },
     "home": {
      "team": "Kansas",
@@ -17104,17 +17103,12 @@
      "owners": [],
      "id": "2305",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "6-1",
-     "live": 61
+     "final": 65,
+     "won": true,
+     "record": "7-1"
     },
     "time": "5:00 PM",
-    "line": "KU -10.5",
-    "live": {
-     "detail": "0:53 2nd",
-     "as_of": "7:13 PM"
-    }
+    "line": "KU -10.5"
    },
    {
     "id": "401920382",
@@ -17189,7 +17183,7 @@
      "opp_id": "2306",
      "seed": null,
      "record": "3-4",
-     "live": 73
+     "live": 85
     },
     "home": {
      "team": "Kansas St.",
@@ -17207,13 +17201,13 @@
      "opp_id": "130",
      "seed": null,
      "record": "3-4",
-     "live": 45
+     "live": 53
     },
     "time": "5:30 PM",
     "line": "MICH -10.5",
     "live": {
-     "detail": "11:01 2nd",
-     "as_of": "7:13 PM"
+     "detail": "7:36 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -17237,7 +17231,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 49
+     "live": 57
     },
     "home": {
      "team": "Illinois",
@@ -17255,13 +17249,13 @@
      "opp_id": "98",
      "seed": null,
      "record": "6-1",
-     "live": 64
+     "live": 71
     },
     "time": "6:00 PM",
     "line": "ILL -26.5",
     "live": {
-     "detail": "18:14 2nd",
-     "as_of": "7:13 PM"
+     "detail": "15:26 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -17285,7 +17279,7 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 25
+     "live": 28
     },
     "home": {
      "team": "Indiana",
@@ -17303,13 +17297,13 @@
      "opp_id": "189",
      "seed": null,
      "record": "7-0",
-     "live": 51
+     "live": 57
     },
     "time": "6:00 PM",
     "line": "IU -22.5",
     "live": {
-     "detail": "17:00 2nd",
-     "as_of": "7:13 PM"
+     "detail": "13:37 2nd",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -17333,7 +17327,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 18
+     "live": 24
     },
     "home": {
      "team": "Penn",
@@ -17351,13 +17345,13 @@
      "opp_id": "119",
      "seed": null,
      "record": "4-3",
-     "live": 20
+     "live": 30
     },
     "time": "6:00 PM",
     "line": "PENN -3.5",
     "live": {
-     "detail": "9:14 1st",
-     "as_of": "7:13 PM"
+     "detail": "4:37 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -17381,7 +17375,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 8
+     "live": 12
     },
     "home": {
      "team": "Georgia",
@@ -17399,13 +17393,13 @@
      "opp_id": "2116",
      "seed": null,
      "record": "6-1",
-     "live": 12
+     "live": 22
     },
     "time": "7:00 PM",
     "line": "UGA -5.5",
     "live": {
-     "detail": "14:14 1st",
-     "as_of": "7:13 PM"
+     "detail": "10:44 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -17435,7 +17429,7 @@
      "opp_id": "2540",
      "seed": null,
      "record": "4-3",
-     "live": 4
+     "live": 11
     },
     "home": {
      "team": "UC Santa Barbara",
@@ -17447,13 +17441,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 11
+     "live": 13
     },
     "time": "7:00 PM",
     "line": "UCSB -13.5",
     "live": {
-     "detail": "13:44 1st",
-     "as_of": "7:13 PM"
+     "detail": "9:34 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -17484,7 +17478,7 @@
      "opp_id": "153",
      "seed": null,
      "record": "4-2",
-     "live": 12
+     "live": 18
     },
     "home": {
      "team": "North Carolina",
@@ -17507,8 +17501,8 @@
     "time": "7:00 PM",
     "line": "WVU -3.5",
     "live": {
-     "detail": "15:21 1st",
-     "as_of": "7:13 PM"
+     "detail": "12:03 1st",
+     "as_of": "7:23 PM"
     }
    },
    {
@@ -18297,5 +18291,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "7:13 PM"
+ "scores_updated": "7:23 PM"
 }
