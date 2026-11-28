@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 21:43 EST",
+ "updated": "2026-11-27 21:53 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17463,7 +17463,7 @@
     "tbd": false,
     "tv": "SEC Network",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -17475,10 +17475,9 @@
      "owners": [],
      "id": "213",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "5-2",
-     "live": 66
+     "final": 68,
+     "won": true,
+     "record": "6-2"
     },
     "home": {
      "team": "Mississippi St.",
@@ -17487,23 +17486,18 @@
      "owners": [
       "Drew & Bob D."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "Penn St.",
      "pts": 0,
-     "final": null,
+     "final": 63,
      "opp_final": null,
      "opp_id": "213",
      "seed": null,
-     "record": "5-2",
-     "live": 61
+     "record": "5-3"
     },
     "time": "7:30 PM",
-    "line": "MSST -6.5",
-    "live": {
-     "detail": "0:26 2nd",
-     "as_of": "9:43 PM"
-    }
+    "line": "MSST -6.5"
    },
    {
     "id": "401925829",
@@ -17532,7 +17526,7 @@
      "opp_id": "249",
      "seed": null,
      "record": "3-5",
-     "live": 45
+     "live": 49
     },
     "home": {
      "team": "North Texas",
@@ -17544,13 +17538,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 46
+     "live": 51
     },
     "time": "8:00 PM",
     "line": "UNT -5.5",
     "live": {
-     "detail": "13:49 2nd",
-     "as_of": "9:43 PM"
+     "detail": "11:25 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -17583,7 +17577,7 @@
      "opp_id": "333",
      "seed": null,
      "record": "6-2",
-     "live": 56
+     "live": 64
     },
     "home": {
      "team": "Alabama",
@@ -17595,13 +17589,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 46
+     "live": 54
     },
     "time": "8:30 PM",
     "line": "MIA -2.5",
     "live": {
-     "detail": "17:38 2nd",
-     "as_of": "9:43 PM"
+     "detail": "14:19 2nd",
+     "as_of": "9:53 PM"
     }
    },
    {
@@ -17631,7 +17625,7 @@
      "opp_id": "97",
      "seed": null,
      "record": "7-0",
-     "live": 24
+     "live": 28
     },
     "home": {
      "team": "Louisville",
@@ -17650,13 +17644,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "5-1",
-     "live": 30
+     "live": 36
     },
     "time": "9:00 PM",
     "line": "LOU -3.5",
     "live": {
-     "detail": "5:32 1st",
-     "as_of": "9:43 PM"
+     "detail": "2:09 1st",
+     "as_of": "9:53 PM"
     }
    }
   ]
@@ -18267,5 +18261,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "9:43 PM"
+ "scores_updated": "9:53 PM"
 }
