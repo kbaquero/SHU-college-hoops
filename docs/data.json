@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 22:34 EST",
+ "updated": "2026-11-27 22:44 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17505,7 +17505,7 @@
     "tbd": false,
     "tv": "YouTube",
     "neutral": true,
-    "completed": false,
+    "completed": true,
     "kind": "nonconf",
     "round": null,
     "final_label": "Final",
@@ -17517,16 +17517,15 @@
      "owners": [
       "Jason H."
      ],
-     "won": null,
+     "won": false,
      "score": "",
      "opp": "North Texas",
      "pts": 0,
-     "final": null,
+     "final": 73,
      "opp_final": null,
      "opp_id": "249",
      "seed": null,
-     "record": "3-5",
-     "live": 73
+     "record": "3-6"
     },
     "home": {
      "team": "North Texas",
@@ -17535,17 +17534,12 @@
      "owners": [],
      "id": "249",
      "seed": null,
-     "final": null,
-     "won": null,
-     "record": "3-2",
-     "live": 74
+     "final": 75,
+     "won": true,
+     "record": "4-2"
     },
     "time": "8:00 PM",
-    "line": "UNT -5.5",
-    "live": {
-     "detail": "0:05 2nd",
-     "as_of": "10:34 PM"
-    }
+    "line": "UNT -5.5"
    },
    {
     "id": "401920543",
@@ -17577,7 +17571,7 @@
      "opp_id": "333",
      "seed": null,
      "record": "6-2",
-     "live": 81
+     "live": 83
     },
     "home": {
      "team": "Alabama",
@@ -17589,13 +17583,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 75
+     "live": 78
     },
     "time": "8:30 PM",
     "line": "MIA -2.5",
     "live": {
-     "detail": "1:11 2nd",
-     "as_of": "10:34 PM"
+     "detail": "0:08 2nd",
+     "as_of": "10:44 PM"
     }
    },
    {
@@ -17625,7 +17619,7 @@
      "opp_id": "97",
      "seed": null,
      "record": "7-0",
-     "live": 38
+     "live": 48
     },
     "home": {
      "team": "Louisville",
@@ -17644,13 +17638,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "5-1",
-     "live": 49
+     "live": 58
     },
     "time": "9:00 PM",
     "line": "LOU -3.5",
     "live": {
-     "detail": "12:30 2nd",
-     "as_of": "10:34 PM"
+     "detail": "8:35 2nd",
+     "as_of": "10:44 PM"
     }
    }
   ]
@@ -18261,5 +18255,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "10:34 PM"
+ "scores_updated": "10:44 PM"
 }
