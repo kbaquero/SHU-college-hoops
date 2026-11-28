@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 19:23 EST",
+ "updated": "2026-11-27 19:33 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17040,7 +17040,7 @@
      "final": null,
      "won": null,
      "record": "7-0",
-     "live": 61
+     "live": 69
     },
     "home": {
      "team": "Saint Mary's",
@@ -17059,13 +17059,13 @@
      "opp_id": "251",
      "seed": null,
      "record": "7-1",
-     "live": 57
+     "live": 63
     },
     "time": "5:00 PM",
     "line": "TEX -7.5",
     "live": {
-     "detail": "2:52 2nd",
-     "as_of": "7:23 PM"
+     "detail": "0:38 2nd",
+     "as_of": "7:33 PM"
     }
    },
    {
@@ -17183,7 +17183,7 @@
      "opp_id": "2306",
      "seed": null,
      "record": "3-4",
-     "live": 85
+     "live": 98
     },
     "home": {
      "team": "Kansas St.",
@@ -17201,13 +17201,13 @@
      "opp_id": "130",
      "seed": null,
      "record": "3-4",
-     "live": 53
+     "live": 64
     },
     "time": "5:30 PM",
     "line": "MICH -10.5",
     "live": {
-     "detail": "7:36 2nd",
-     "as_of": "7:23 PM"
+     "detail": "2:39 2nd",
+     "as_of": "7:33 PM"
     }
    },
    {
@@ -17249,13 +17249,13 @@
      "opp_id": "98",
      "seed": null,
      "record": "6-1",
-     "live": 71
+     "live": 79
     },
     "time": "6:00 PM",
     "line": "ILL -26.5",
     "live": {
-     "detail": "15:26 2nd",
-     "as_of": "7:23 PM"
+     "detail": "12:36 2nd",
+     "as_of": "7:33 PM"
     }
    },
    {
@@ -17279,7 +17279,7 @@
      "final": null,
      "won": null,
      "record": "4-2",
-     "live": 28
+     "live": 37
     },
     "home": {
      "team": "Indiana",
@@ -17297,13 +17297,13 @@
      "opp_id": "189",
      "seed": null,
      "record": "7-0",
-     "live": 57
+     "live": 68
     },
     "time": "6:00 PM",
     "line": "IU -22.5",
     "live": {
-     "detail": "13:37 2nd",
-     "as_of": "7:23 PM"
+     "detail": "10:33 2nd",
+     "as_of": "7:33 PM"
     }
    },
    {
@@ -17327,7 +17327,7 @@
      "final": null,
      "won": null,
      "record": "3-4",
-     "live": 24
+     "live": 32
     },
     "home": {
      "team": "Penn",
@@ -17345,13 +17345,13 @@
      "opp_id": "119",
      "seed": null,
      "record": "4-3",
-     "live": 30
+     "live": 34
     },
     "time": "6:00 PM",
     "line": "PENN -3.5",
     "live": {
-     "detail": "4:37 1st",
-     "as_of": "7:23 PM"
+     "detail": "0:00 1st",
+     "as_of": "7:33 PM"
     }
    },
    {
@@ -17375,7 +17375,7 @@
      "final": null,
      "won": null,
      "record": "4-3",
-     "live": 12
+     "live": 25
     },
     "home": {
      "team": "Georgia",
@@ -17393,13 +17393,13 @@
      "opp_id": "2116",
      "seed": null,
      "record": "6-1",
-     "live": 22
+     "live": 35
     },
     "time": "7:00 PM",
     "line": "UGA -5.5",
     "live": {
-     "detail": "10:44 1st",
-     "as_of": "7:23 PM"
+     "detail": "6:22 1st",
+     "as_of": "7:33 PM"
     }
    },
    {
@@ -17429,7 +17429,7 @@
      "opp_id": "2540",
      "seed": null,
      "record": "4-3",
-     "live": 11
+     "live": 15
     },
     "home": {
      "team": "UC Santa Barbara",
@@ -17441,13 +17441,13 @@
      "final": null,
      "won": null,
      "record": "6-0",
-     "live": 13
+     "live": 26
     },
     "time": "7:00 PM",
     "line": "UCSB -13.5",
     "live": {
-     "detail": "9:34 1st",
-     "as_of": "7:23 PM"
+     "detail": "4:10 1st",
+     "as_of": "7:33 PM"
     }
    },
    {
@@ -17478,7 +17478,7 @@
      "opp_id": "153",
      "seed": null,
      "record": "4-2",
-     "live": 18
+     "live": 26
     },
     "home": {
      "team": "North Carolina",
@@ -17496,13 +17496,13 @@
      "opp_id": "277",
      "seed": null,
      "record": "5-1",
-     "live": 8
+     "live": 17
     },
     "time": "7:00 PM",
     "line": "WVU -3.5",
     "live": {
-     "detail": "12:03 1st",
-     "as_of": "7:23 PM"
+     "detail": "7:26 1st",
+     "as_of": "7:33 PM"
     }
    },
    {
@@ -18291,5 +18291,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "7:23 PM"
+ "scores_updated": "7:33 PM"
 }
