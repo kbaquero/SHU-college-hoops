@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 21:23 EST",
+ "updated": "2026-11-27 21:33 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17478,7 +17478,7 @@
      "final": null,
      "won": null,
      "record": "5-2",
-     "live": 54
+     "live": 63
     },
     "home": {
      "team": "Mississippi St.",
@@ -17496,13 +17496,13 @@
      "opp_id": "213",
      "seed": null,
      "record": "5-2",
-     "live": 59
+     "live": 60
     },
     "time": "7:30 PM",
     "line": "MSST -6.5",
     "live": {
-     "detail": "6:34 2nd",
-     "as_of": "9:23 PM"
+     "detail": "3:31 2nd",
+     "as_of": "9:33 PM"
     }
    },
    {
@@ -17532,7 +17532,7 @@
      "opp_id": "249",
      "seed": null,
      "record": "3-5",
-     "live": 38
+     "live": 45
     },
     "home": {
      "team": "North Texas",
@@ -17544,13 +17544,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 41
+     "live": 44
     },
     "time": "8:00 PM",
     "line": "UNT -5.5",
     "live": {
-     "detail": "18:52 2nd",
-     "as_of": "9:23 PM"
+     "detail": "15:30 2nd",
+     "as_of": "9:33 PM"
     }
    },
    {
@@ -17583,7 +17583,7 @@
      "opp_id": "333",
      "seed": null,
      "record": "6-2",
-     "live": 50
+     "live": 52
     },
     "home": {
      "team": "Alabama",
@@ -17600,8 +17600,8 @@
     "time": "8:30 PM",
     "line": "MIA -2.5",
     "live": {
-     "detail": "0:34 1st",
-     "as_of": "9:23 PM"
+     "detail": "Halftime",
+     "as_of": "9:33 PM"
     }
    },
    {
@@ -17631,7 +17631,7 @@
      "opp_id": "97",
      "seed": null,
      "record": "7-0",
-     "live": 14
+     "live": 19
     },
     "home": {
      "team": "Louisville",
@@ -17650,13 +17650,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "5-1",
-     "live": 12
+     "live": 21
     },
     "time": "9:00 PM",
     "line": "LOU -3.5",
     "live": {
-     "detail": "12:36 1st",
-     "as_of": "9:23 PM"
+     "detail": "8:34 1st",
+     "as_of": "9:33 PM"
     }
    }
   ]
@@ -18267,5 +18267,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "9:23 PM"
+ "scores_updated": "9:33 PM"
 }
