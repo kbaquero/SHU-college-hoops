@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 21:53 EST",
+ "updated": "2026-11-27 22:03 EST",
  "through": "Thu, Nov 26",
  "season": 2027,
  "standings": [
@@ -17526,7 +17526,7 @@
      "opp_id": "249",
      "seed": null,
      "record": "3-5",
-     "live": 49
+     "live": 54
     },
     "home": {
      "team": "North Texas",
@@ -17538,13 +17538,13 @@
      "final": null,
      "won": null,
      "record": "3-2",
-     "live": 51
+     "live": 55
     },
     "time": "8:00 PM",
     "line": "UNT -5.5",
     "live": {
-     "detail": "11:25 2nd",
-     "as_of": "9:53 PM"
+     "detail": "9:05 2nd",
+     "as_of": "10:03 PM"
     }
    },
    {
@@ -17577,7 +17577,7 @@
      "opp_id": "333",
      "seed": null,
      "record": "6-2",
-     "live": 64
+     "live": 72
     },
     "home": {
      "team": "Alabama",
@@ -17589,13 +17589,13 @@
      "final": null,
      "won": null,
      "record": "6-1",
-     "live": 54
+     "live": 61
     },
     "time": "8:30 PM",
     "line": "MIA -2.5",
     "live": {
-     "detail": "14:19 2nd",
-     "as_of": "9:53 PM"
+     "detail": "9:46 2nd",
+     "as_of": "10:03 PM"
     }
    },
    {
@@ -17644,13 +17644,13 @@
      "opp_id": "2633",
      "seed": null,
      "record": "5-1",
-     "live": 36
+     "live": 40
     },
     "time": "9:00 PM",
     "line": "LOU -3.5",
     "live": {
-     "detail": "2:09 1st",
-     "as_of": "9:53 PM"
+     "detail": "Halftime",
+     "as_of": "10:03 PM"
     }
    }
   ]
@@ -18261,5 +18261,5 @@
   "date": "2026-11-27",
   "id": "401921717"
  },
- "scores_updated": "9:53 PM"
+ "scores_updated": "10:03 PM"
 }
